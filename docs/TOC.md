@@ -1,4 +1,4 @@
-# [SharePoint Framework](spfx.md)
+# SharePoint Framework
 ## [Overview](spfx/sharepoint-framework-overview.md)
 ## [Roadmap](spfx/roadmap.md)
 ## [Tools and libraries](spfx/tools-and-libraries.md)
@@ -6,7 +6,7 @@
 ## [Set up your development environment](spfx/set-up-your-development-environment.md)
 ## [Enterprise Guidance](spfx/enterprise-guidance.md)
 ## [Team-based development](spfx/team-based-development-on-sharepoint-framework.md)
-## [Toolchain](spfx/toolchain/sharepoint-framework-toolchain.md)
+## Toolchain
 ### [SharePoint Framework Toolchain](spfx/toolchain/sharepoint-framework-toolchain.md)
 ### [Yeoman Sharepoint generator](spfx/toolchain/scaffolding-projects-using-yeoman-sharepoint-generator.md)
 ### [Update SharePoint Framework packages](spfx/toolchain/update-latest-packages.md)
@@ -14,22 +14,22 @@
 ### [Integrate gulp tasks in SharePoint Framework toolchain](spfx/toolchain/integrate-gulp-tasks-in-build-pipeline.md)
 ### [Extending Webpack in SharePoint Framework toolchain](spfx/toolchain/extending-webpack-in-build-pipeline.md)
 ### [Provision SharePoint assets](spfx/toolchain/provision-sharepoint-assets.md)
-## [Web parts](spfx/web-parts.md)
+## Web parts
 ### [Overview](spfx/web-parts/overview-client-side-web-parts.md)
-### [Get started](spfx/web-parts/get-started.md)
+### Get started
 #### [Build your first web part](spfx/web-parts/get-started/build-a-hello-world-web-part.md)
 #### [Connect to SharePoint](spfx/web-parts/get-started/connect-to-sharepoint.md)
 #### [Deploy your web part to a SharePoint page](spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page.md)
 #### [Deploy to a CDN](spfx/web-parts/get-started/deploy-web-part-to-cdn.md)
 #### [Add jQueryUI Accordion](spfx/web-parts/get-started/add-jqueryui-accordion-to-web-part.md)
 #### [Use Office UI Fabric React components](spfx/web-parts/get-started/use-fabric-react-components.md)
-### [Basics](spfx/web-parts/basics.md)
+### Basics
 #### [Design considerations](spfx/web-parts/basics/design-considerations-for-web-parts.md)
 #### [Add properties to the property pane](spfx/web-parts/basics/integrate-with-property-pane.md)
 #### [Add an external library](spfx/web-parts/basics/add-an-external-library.md)
 #### [Working with the original __RequestDigest](spfx/web-parts/basics/working-with-requestdigest.md)
 #### [Notes on solution packaging](spfx/web-parts/basics/notes-on-solution-packaging.md)
-### [Guidance](spfx/web-parts/guidance.md)
+### Guidance
 #### [Use existing JavaScript libraries](spfx/web-parts/guidance/use-existing-javascript-libraries.md)
 #### [Reference third-party CSS styles](spfx/web-parts/guidance/reference-third-party-css-styles.md)
 #### [Using preconfigured entries](spfx/web-parts/guidance/simplify-adding-web-parts-with-preconfigured-entries.md)
@@ -44,8 +44,8 @@
 #### [Migrating Angular applications](spfx/web-parts/guidance/migrate-angular-1-x-applications-to-sharepoint-framework.md)
 #### [Localization](spfx/web-parts/guidance/localize-web-parts.md)
 #### [Call the Microsoft Graph API](spfx/web-parts/guidance/call-microsoft-graph-from-your-web-part.md)
-# [SharePoint APIs](apis.md)
-## [REST](apis/rest.md)
+# SharePoint APIs
+## REST
 ### [SharePoint REST service](apis/rest/get-to-know-the-sharepoint-rest-service.md)
 ### [Basic operations](apis/rest/complete-basic-operations-using-sharepoint-rest-endpoints.md)
 ### [Lists and list items](apis/rest/working-with-lists-and-list-items-with-rest.md)
@@ -57,18 +57,18 @@
 ### [Upload a file](apis/rest/upload-a-file-by-using-the-rest-api-and-jquery.md)
 ### [Manage permissions](apis/rest/set-custom-permissions-on-a-list-by-using-the-rest-interface.md)
 ### [Batch requests](apis/rest/make-batch-requests-with-the-rest-apis.md)
-## [Webhooks](apis/webhooks.md)
+## Webhooks
 ### [Overview](apis/webhooks/overview-sharepoint-webhooks.md)
 ### [Get started](apis/webhooks/get-started-webhooks.md)
 ### [Reference implementation](apis/webhooks/webhooks-reference-implementation.md)
 ### [Azure Functions and SharePoint webhooks](apis/webhooks/sharepoint-webhooks-using-azure-functions.md)
-### [SharePoint lists](apis/webhooks/lists.md)
+### SharePoint lists
 #### [Overview](apis/webhooks/lists/overview-sharepoint-list-webhooks.md)
 #### [Create a subscription](apis/webhooks/lists/create-subscription.md)
 #### [Update a subscription](apis/webhooks/lists/update-subscription.md)
 #### [Delete a subscription](apis/webhooks/lists/delete-subscription.md)
 #### [Get subscriptions](apis/webhooks/lists/get-subscription.md)
-# [Additional SharePoint Resources](external.md)
+# Additional SharePoint Resources
 ## [SharePoint Add-ins Docs](https://msdn.microsoft.comlibrary/office/fp179930.aspx.md)
 # [SharePoint Framework Reference](https://dev.office.com/sharepoint/reference/spfx/sharepoint-framework-reference-overview.md)
 # [SharePoint Framework Code Samples](http://aka.ms/spfx-samples.md)
