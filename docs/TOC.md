@@ -79,7 +79,7 @@
 ### [2. Add custom columns to a SharePoint-hosted SharePoint Add-in](sp-add-ins/add-custom-columns-to-a-sharepoint-hostedsharepoint-add-in.md)
 ### [3. Add a custom content type to a SharePoint-hosted SharePoint Add-in](sp-add-ins/add-a-custom-content-type-to-a-sharepoint-hostedsharepoint-add-in.md)
 ### [4. Add a Web Part to a page in a SharePoint-hosted SharePoint Add-in](sp-add-ins/add-a-web-part-to-a-page-in-a-sharepoint-hosted-sharepoint-add-in.md)
-### [5. Add a workflow to a SharePoint-hosted SharePoint Add-in](articles/add-a-workflow-to-a-sharepoint-hosted-sharepoint-add-in.md)
+### [5. Add a workflow to a SharePoint-hosted SharePoint Add-in](sp-add-ins/add-a-workflow-to-a-sharepoint-hosted-sharepoint-add-in.md)
 ### [6. Add a custom page and style to a SharePoint-hosted SharePoint Add-in](sp-add-ins/add-a-custom-page-and-style-to-a-sharepoint-hosted-sharepoint-add-in.md)
 ### [7. Add custom client-side rendering to a SharePoint-hosted SharePoint Add-in](sp-add-ins/add-custom-client-side-rendering-to-a-sharepoint-hosted-sharepoint-add-in.md)
 ### [8. Create a custom ribbon button in the host web of a SharePoint Add-in](sp-add-ins/create-a-custom-ribbon-button-in-the-host-web-of-a-sharepoint-add-in.md)
