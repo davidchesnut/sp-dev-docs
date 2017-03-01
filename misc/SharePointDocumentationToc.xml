@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SupportedProduct="|SharePoint" SupportedVersion="|V1.0|">
 	<Item text="SharePoint Framework" url="spfx" SEODescription="">
 		<Item text="Overview" url="spfx/sharepoint-framework-overview" SEODescription="The SharePoint Framework provides a modern developer experience for extending SharePoint."/>
