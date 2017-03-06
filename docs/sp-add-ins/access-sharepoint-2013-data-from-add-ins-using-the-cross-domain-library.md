@@ -52,9 +52,6 @@ In this example, there is a simple page hosted outside of SharePoint that uses a
 
  
 To read data from the add-in web, you must do the following:
- 
-
- 
 
 1. Create a SharePoint Add-in and web projects.
     
