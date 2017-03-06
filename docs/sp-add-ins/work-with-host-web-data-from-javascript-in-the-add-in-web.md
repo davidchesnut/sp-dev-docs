@@ -77,7 +77,7 @@ Open the host web -- your developer test website -- and verify that there is a c
     
     **Custom calendar**
     
-    ![A calendar named Employee Orientation Schedule with an item on June 1st that says "Orient Cassie Hicks"](../../images/d2066862-41c1-424d-9bfb-b6c5342bcf2c.PNG)
+    ![A calendar named Employee Orientation Schedule with an item on June 1st that says "Orient Cassie Hicks"](../images/d2066862-41c1-424d-9bfb-b6c5342bcf2c.PNG)
 
 ## Create the JavaScript and a button to invoke it
 
