@@ -66,7 +66,7 @@ The OAuth authentication and authorization flow for a SharePoint provider-hosted
  
 
  
-![OAuth authorization process flow](../../images/833fcdcc-1755-438b-9ada-dce9646564c0.gif)
+![OAuth authorization process flow](../images/833fcdcc-1755-438b-9ada-dce9646564c0.gif)
  
 These are the steps that correspond to the numbers in the figure:
  

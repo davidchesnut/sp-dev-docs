@@ -35,7 +35,7 @@ The following diagram shows a cross-zone scenario in which the proxy page cannot
  
 
  
-![Cross-zone scenario, proxy page cannot be loaded](../../images/Crosszone_loaderror.png)
+![Cross-zone scenario, proxy page cannot be loaded](../images/Crosszone_loaderror.png)
  
 The following are some examples in which the cross-domain library may not be able to load the proxy page:
  
@@ -75,7 +75,7 @@ The following diagram shows a cross-zone scenario being handled by using the app
  
 
  
-![Cross-zone scenario handling by using the apphost](../../images/Crosszone_loadsuccess.png)
+![Cross-zone scenario handling by using the apphost](../images/Crosszone_loadsuccess.png)
  
 The code required for the apphost page is simple. The main portion of the apphost page is an  **SPAppIFrame** element. You must use CSS to make the **IFrame** invisible so that it doesn't interfere with your add-in.
  

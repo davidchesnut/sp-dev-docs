@@ -71,7 +71,7 @@ Figure 1 shows a SharePoint webpage that is using the style sheet.
  
 
  
-![A web page using the stylesheet control](../../images/StylesheetControl_result.png)
+![A web page using the stylesheet control](../images/StylesheetControl_result.png)
  
 
 ### To create the SharePoint Add-in and remote web projects
@@ -248,7 +248,7 @@ Figure 1 shows a SharePoint webpage that is using the style sheet.
 
  
 
-     ![Stylesheet control used in a web page](../../images/StylesheetControl_result2.png)
+     ![Stylesheet control used in a web page](../images/StylesheetControl_result2.png)
  
 
  

@@ -45,7 +45,7 @@ Keep in mind that you can also access certain data using (5)  *remote event rece
  
 
  
-![Options for using SharePoint data in your add-in](../../images/DataAccess_SharePointData.png)
+![Options for using SharePoint data in your add-in](../images/DataAccess_SharePointData.png)
  
 Figure 2 shows the options that you have for accessing external data on your add-in. When you are working with these scenarios, you have to decide whether you want to use (1) the  *web proxy*  , (2) *external content types*  , or (3) the *cross-domain library with a custom proxy page*  to authenticate and communicate with external services or systems. You can also use (4) theclient object model (JavaScript/.NET client object models), or (5) Representational State Transfer (REST).
  
@@ -57,7 +57,7 @@ Figure 2 shows the options that you have for accessing external data on your add
  
 
  
-![Options for using external data in your add-in](../../images/5950bc8a-ed73-4f14-b616-a88c14c4fe56.png)
+![Options for using external data in your add-in](../images/5950bc8a-ed73-4f14-b616-a88c14c4fe56.png)
  
 
  

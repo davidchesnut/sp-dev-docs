@@ -70,7 +70,7 @@ There are three ways to get an Office 365 plan.
  
 
  
-![Page 2 of Sign up form for Office 365 account](../../images/ff384c69-56bf-4ceb-81c3-8b874e2407f0.png)
+![Page 2 of Sign up form for Office 365 account](../images/ff384c69-56bf-4ceb-81c3-8b874e2407f0.png)
  
 
  
@@ -108,7 +108,7 @@ After you finish the signup process, your browser opens the Office 365 installat
  
 
  
-![Screenshot that shows the Office 365 admin center.](../../images/SP15_Office365AdminInset_border.png)
+![Screenshot that shows the Office 365 admin center.](../images/SP15_Office365AdminInset_border.png)
  
 
  
@@ -128,7 +128,7 @@ After you finish the signup process, your browser opens the Office 365 installat
  
 
  
-![Screenshot that shows the Developer site homepage.](../../images/SP15_DeveloperSiteHome_border.png)
+![Screenshot that shows the Developer site homepage.](../images/SP15_DeveloperSiteHome_border.png)
  
 
  
@@ -208,7 +208,7 @@ For your first SharePoint-hosted SharePoint Add-in, we'll include the classic Sh
 
  
 
-     ![List folder with child NewEmployeeOrientation template, which itself has three children; a NewEmployeeOrientationInstance, an elements.xml file, and a schema.xml file. The instance itself has a child named elements.xml.](../../images/10e5d116-d24b-4a44-bfff-cfbf2f971b1e.PNG)
+     ![List folder with child NewEmployeeOrientation template, which itself has three children; a NewEmployeeOrientationInstance, an elements.xml file, and a schema.xml file. The instance itself has a child named elements.xml.](../images/10e5d116-d24b-4a44-bfff-cfbf2f971b1e.PNG)
  
 
     
@@ -342,7 +342,7 @@ For your first SharePoint-hosted SharePoint Add-in, we'll include the classic Sh
 
  
 
-     ![The add-in's default page is shown with its title New Employees by Location. There is a link labeled New Employees in Seattle. An arrow from this link points to the list view page for the list. It is titled New Employees in Seattle, with the list below.](../../images/9dc5cefe-083a-4807-bee6-473001f23db9.png)
+     ![The add-in's default page is shown with its title New Employees by Location. There is a link labeled New Employees in Seattle. An arrow from this link points to the list view page for the list. It is titled New Employees in Seattle, with the list below.](../images/9dc5cefe-083a-4807-bee6-473001f23db9.png)
  
 
     

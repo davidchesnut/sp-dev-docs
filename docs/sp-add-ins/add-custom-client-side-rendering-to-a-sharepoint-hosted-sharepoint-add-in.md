@@ -125,7 +125,7 @@ The start tag for the  **Field** element will now look like the following.
     
 **List with custom client-side rendering**
 
-![New employees in Seattle list with Orientation Stage values of "Not started" in red and values of "Completed" in green. Other values in black.](../../images/dc8e2b7d-1747-4b65-aab4-6fc93c6867d4.PNG)
+![New employees in Seattle list with Orientation Stage values of "Not started" in red and values of "Completed" in green. Other values in black.](../images/dc8e2b7d-1747-4b65-aab4-6fc93c6867d4.PNG)
   
 - To end the debugging session, close the browser window or stop debugging in Visual Studio. Each time that you press F5, Visual Studio will retract the previous version of the add-in and install the latest one.
     

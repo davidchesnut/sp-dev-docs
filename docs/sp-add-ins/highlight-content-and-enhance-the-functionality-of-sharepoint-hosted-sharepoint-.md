@@ -10,7 +10,7 @@ When you do searches in a SharePoint 2013 site, you'll see examples of the callo
  
 
  
-![Example of the callout control on a SharePoint 2013 search results page](../../images/S15_CalloutControlExample.png)
+![Example of the callout control on a SharePoint 2013 search results page](../images/S15_CalloutControlExample.png)
  
 
  
@@ -94,7 +94,7 @@ You can use these members to control the display of callout.
 |content|Display HTML inside the control whenever there is no value for the  `contentElement` member.|string containing HTML,  **null**, must be null if `contentElement` has a value|
 |contentElement|Display an HTML element inside the control when there is no value for the  `content` member.|any HTML element,  **null**, must be null if `content` has a value|
 |contentWidth|Specify the width, in pixels, of the callout body container. This container also has a 1-pixel border and 15-pixel padding on each side, so the control is 32 pixels wider than the body width that you specify. The control's CSS  `overflow` property is set to `hidden`, so your content will be clipped if it does not fit inside the width that you specify. If you set this member on an open callout, the change will take effect immediately. This is not true of the other members.|Any number between 240 and 610,  **350** (making the control 382 pixels wide by default)|
-|beakOrientation|Specify the orientation of the beak or pointer of the callout control.|**topBottom**, to look like this (Figure 2):**Figure 2. Where the callout control's beak appears with the topBottom orientation** ![Where the callout control's beak appears with the topbottom orientation](../../images/SP15_CalloutTopBottom.png) **leftRight**, to look like this (Figure 3):**Figure 3. Where the callout control's beak appears with the leftright orientation** ![Where the callout control's beak appears with the leftright orientation](../../images/SP15_CalloutLeftRight.png)|
+|beakOrientation|Specify the orientation of the beak or pointer of the callout control.|**topBottom**, to look like this (Figure 2):**Figure 2. Where the callout control's beak appears with the topBottom orientation** ![Where the callout control's beak appears with the topbottom orientation](../images/SP15_CalloutTopBottom.png) **leftRight**, to look like this (Figure 3):**Figure 3. Where the callout control's beak appears with the leftright orientation** ![Where the callout control's beak appears with the leftright orientation](../images/SP15_CalloutLeftRight.png)|
 
 ## How to customize the behavior of the callout control
 <a name="Behavior"> </a>
@@ -212,7 +212,7 @@ When a callout action contains a menu instead of a single action, the user sees 
  
 
  
-![A callout action displays a menu when a user clicks on the arrow next to the action label.](../../images/SP15_CalloutMenu.png)
+![A callout action displays a menu when a user clicks on the arrow next to the action label.](../images/SP15_CalloutMenu.png)
  
 You can create as many menu entries as you want and add them to the callout action by passing them in an array, as the value of the  `menuEntries` member of the `CalloutAction` object.
  

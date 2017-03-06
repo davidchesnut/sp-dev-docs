@@ -53,7 +53,7 @@ In this article you add a custom content type to the Employee Orientation ShareP
     
     **Content Type Tab**
 
-     ![The Content Type Designer showing 'NewEmployee' as the type name, 'Represents a new employee' as the description, and 'Employee Orientation' as the group.](../../images/8a9768f4-315d-45c0-88d7-687dbf84495c.PNG)
+     ![The Content Type Designer showing 'NewEmployee' as the type name, 'Represents a new employee' as the description, and 'Employee Orientation' as the group.](../images/8a9768f4-315d-45c0-88d7-687dbf84495c.PNG)
  
  
 7. Open the  **Columns** tab in the designer.
@@ -62,7 +62,7 @@ In this article you add a custom content type to the Employee Orientation ShareP
     
     **Columns Tab**
 
-    ![The Columns tab of the Content Type Designer with "Employee", "Division", and "Orientation Stage" listed in the grid.](../../images/835e78b3-a073-45b2-b4ee-3f9be9d88495.PNG)
+    ![The Columns tab of the Content Type Designer with "Employee", "Division", and "Orientation Stage" listed in the grid.](../images/835e78b3-a073-45b2-b4ee-3f9be9d88495.PNG)
  
  
 9. Save the file and close the designer.
@@ -104,7 +104,7 @@ In this article you add a custom content type to the Employee Orientation ShareP
     
     **Content Type Settings dialog box**
 
-    ![The Content Type Settings dialog with just a single content type, named NewEmployee, listed.](../../images/b90699f4-40de-4f50-ad47-3e8773d0eb92.PNG)
+    ![The Content Type Settings dialog with just a single content type, named NewEmployee, listed.](../images/b90699f4-40de-4f50-ad47-3e8773d0eb92.PNG)
  
 19.  Choose **OK** to close the dialog box, and then save and close the file.
     
@@ -176,7 +176,7 @@ In this article you add a custom content type to the Employee Orientation ShareP
     
     **New Employees in Seattle list**
 
-    ![The "New Employees in Seattle" list with the Division and Orientation Stage columns already present.](../../images/b654af45-663e-425c-b7c7-b8b5524cb316.PNG) 
+    ![The "New Employees in Seattle" list with the Division and Orientation Stage columns already present.](../images/b654af45-663e-425c-b7c7-b8b5524cb316.PNG) 
  
 4. Try adding new items to the list and editing existing items.
     

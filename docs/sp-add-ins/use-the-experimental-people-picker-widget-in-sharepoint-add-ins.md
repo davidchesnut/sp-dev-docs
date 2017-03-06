@@ -20,7 +20,7 @@ You can use the experimental People Picker widget in add-ins to help your users 
  
 
  
-![People Picker experimental control on a page](../../images/PeoplePicker_basic.png)
+![People Picker experimental control on a page](../images/PeoplePicker_basic.png)
  
 
  
@@ -416,7 +416,7 @@ As a developer, you might want to customize the look &amp; feel of the widget. T
  
 
  
-![HTML hierarchy in the People Picker control](../../images/PeoplePicker_HTMLHierarchy.png)
+![HTML hierarchy in the People Picker control](../images/PeoplePicker_HTMLHierarchy.png)
  
 The widget defines many classes prefixed by  **office-peoplepicker**, which you can find and customize in the **Office.Controls.css** style sheet.
  

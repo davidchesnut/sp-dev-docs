@@ -75,7 +75,7 @@ Figure 2 shows a webpage that displays the data on the add-in web.
  
 
  
-![Cross domain read items sample result screen](../../images/CrossDomainReadItemsResult.png)
+![Cross domain read items sample result screen](../images/CrossDomainReadItemsResult.png)
  
 
 ### Create a SharePoint Add-in and web projects

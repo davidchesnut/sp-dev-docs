@@ -21,7 +21,7 @@ You can use the List View widget to display the data in a SharePoint list simila
  
 
  
-![Desktop List View experimental control on a page](../../images/DesktopListView_basic.png)
+![Desktop List View experimental control on a page](../images/DesktopListView_basic.png)
  
 
  

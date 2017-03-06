@@ -30,7 +30,7 @@ Within 24 hours after you upload your update to an organization's add-in catalog
  
 
  
-![The UI steps for updating an app](../../images/UpdatingApp_AppTileUpdateNotice.png)
+![The UI steps for updating an app](../images/UpdatingApp_AppTileUpdateNotice.png)
  
 
     

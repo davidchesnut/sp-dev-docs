@@ -36,7 +36,7 @@ The following diagram shows the main scenarios and options to consider when you 
  
 
  
-![App UX main scenarios](../../images/AppUX_landscape.png)
+![App UX main scenarios](../images/AppUX_landscape.png)
  
 In choosing your design, you should fundamentally consider which parts of your add-in are hosted in SharePoint and which are not. You should also consider how your add-in interacts with the host web.
  

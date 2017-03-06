@@ -70,7 +70,7 @@ Figure 1 shows a client-side rendered view of an announcements list.
  
 
  
-![Custom view of an announcements list](../../images/CSRListView_result.png)
+![Custom view of an announcements list](../images/CSRListView_result.png)
  
 
 ### To create the SharePoint Add-in project
@@ -88,7 +88,7 @@ Figure 1 shows a client-side rendered view of an announcements list.
 
  
 
-     ![App for SharePoint 2013 Visual Studio template](../../images/AppForSharePointVSTemplate.PNG)
+     ![App for SharePoint 2013 Visual Studio template](../images/AppForSharePointVSTemplate.PNG)
  
 
  

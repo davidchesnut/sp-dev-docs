@@ -387,7 +387,7 @@ SharePoint Add-ins that are installed to SharePoint are granted permissions when
  
 
  
-![Regranting permissions to an app](../../images/RegrantPermissionsToAnApp.png)
+![Regranting permissions to an app](../images/RegrantPermissionsToAnApp.png)
  
 When you are developing an add-in or troubleshooting an add-in, there may be occasions when you want to change, or regrant, the permissions of an add-in that has already been installed. You can do so with these steps:
  

@@ -245,7 +245,7 @@ Installation and updating errors can be seen in the SharePoint UI, as shown in t
  
 
  
-![Steps to see add-in installation errors in SharePoint.](../../images/1edb644e-b3d4-4a9b-b92e-4ae2c07341c2.png)
+![Steps to see add-in installation errors in SharePoint.](../images/1edb644e-b3d4-4a9b-b92e-4ae2c07341c2.png)
  
 
 #### Add-in event handler architecture strategies
@@ -424,7 +424,7 @@ Figure 1 shows how remote event receivers work:
  
 
  
-![How remote event receivers work in SharePoint 2013](../../images/SP15Con_Remote_Event_Receivers_FAQ_fig1.png)
+![How remote event receivers work in SharePoint 2013](../images/SP15Con_Remote_Event_Receivers_FAQ_fig1.png)
  
 
  

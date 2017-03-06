@@ -14,7 +14,7 @@ You can update your SharePoint Add-in by using the updating support built into S
  
 
  
-![The UI steps for updating an app](../../images/UpdatingApp_AppTileUpdateNotice.png)
+![The UI steps for updating an app](../images/UpdatingApp_AppTileUpdateNotice.png)
  
 A user can install the update without first uninstalling the earlier version. The update infrastructure tests the update installation and rolls it back if there are any errors.
  
@@ -178,7 +178,7 @@ Figure 2 illustrates these steps.
  
 
  
-![Immediate app upgrade process](../../images/UpdatingApp_ImmediateUpgradeProcess.png)
+![Immediate app upgrade process](../images/UpdatingApp_ImmediateUpgradeProcess.png)
  
 
     

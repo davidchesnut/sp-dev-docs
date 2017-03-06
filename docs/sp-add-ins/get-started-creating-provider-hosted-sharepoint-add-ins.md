@@ -69,7 +69,7 @@ There are three ways to get an Office 365 plan.
  
 
  
-![Page 2 of Sign up form for Office 365 account](../../images/ff384c69-56bf-4ceb-81c3-8b874e2407f0.png)
+![Page 2 of Sign up form for Office 365 account](../images/ff384c69-56bf-4ceb-81c3-8b874e2407f0.png)
  
 
  
@@ -107,7 +107,7 @@ After you finish the signup process, your browser opens the Office 365 installat
  
 
  
-![Screenshot that shows the Office 365 admin center.](../../images/SP15_Office365AdminInset_border.png)
+![Screenshot that shows the Office 365 admin center.](../images/SP15_Office365AdminInset_border.png)
  
 
  
@@ -127,7 +127,7 @@ After you finish the signup process, your browser opens the Office 365 installat
  
 
  
-![Screenshot that shows the Developer site homepage.](../../images/SP15_DeveloperSiteHome_border.png)
+![Screenshot that shows the Developer site homepage.](../images/SP15_DeveloperSiteHome_border.png)
  
 
  
@@ -491,7 +491,7 @@ namespace SampleAddInWeb
 
  
 
-     ![Basic self-hosted app launch page](../../images/SP15_basicself-hostedapp.gif)
+     ![Basic self-hosted app launch page](../images/SP15_basicself-hostedapp.gif)
  
 
  

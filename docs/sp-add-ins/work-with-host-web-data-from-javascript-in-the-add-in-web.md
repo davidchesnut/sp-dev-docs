@@ -344,7 +344,7 @@ Your add-in automatically has full control permission to its own add-in web, so 
 
  
 
-     ![The list of permissionson the Permissions tab in the Visual Studio add-in manifest designer with the Edit button visible in the cell of the Properties column.](../../images/03780b79-aca8-44d1-b0bf-d80833d08627.PNG)
+     ![The list of permissionson the Permissions tab in the Visual Studio add-in manifest designer with the Edit button visible in the cell of the Properties column.](../images/03780b79-aca8-44d1-b0bf-d80833d08627.PNG)
  
 
  
@@ -369,7 +369,7 @@ Your add-in automatically has full control permission to its own add-in web, so 
 
  
 
-     ![The Permissions tab of the add-in manifest designer in Visual Studio showing that the add-in wants Manage permission to lists that have base type 106.](../../images/14d5a820-ab44-4d12-98de-6672884bf344.PNG)
+     ![The Permissions tab of the add-in manifest designer in Visual Studio showing that the add-in wants Manage permission to lists that have base type 106.](../images/14d5a820-ab44-4d12-98de-6672884bf344.PNG)
  
 
  
@@ -398,7 +398,7 @@ Your add-in automatically has full control permission to its own add-in web, so 
 
  
 
-     ![The SharePoint add-in consent prompt with brief description of the permissions the add-in needs and buttons to "Trust It" or "Cancel".](../../images/99209248-8927-4fc2-abfc-53d530376516.PNG)
+     ![The SharePoint add-in consent prompt with brief description of the permissions the add-in needs and buttons to "Trust It" or "Cancel".](../images/99209248-8927-4fc2-abfc-53d530376516.PNG)
  
 
  
@@ -410,7 +410,7 @@ Your add-in automatically has full control permission to its own add-in web, so 
 
  
 
-     ![The Employee Orientation home page with a new button added which has the label "Ensure Items are Scheduled".](../../images/72b78f79-78c0-41db-90d5-8f67e1c17b0e.PNG)
+     ![The Employee Orientation home page with a new button added which has the label "Ensure Items are Scheduled".](../images/72b78f79-78c0-41db-90d5-8f67e1c17b0e.PNG)
  
 
  
@@ -428,7 +428,7 @@ Your add-in automatically has full control permission to its own add-in web, so 
 
  
 
-     ![Employee Orientation calendar with new events added for the orientation of two employees on the 10th and 11th of the month](../../images/f8037509-4bf1-4c69-a673-ee6fe0f0dcb7.PNG)
+     ![Employee Orientation calendar with new events added for the orientation of two employees on the 10th and 11th of the month](../images/f8037509-4bf1-4c69-a673-ee6fe0f0dcb7.PNG)
  
 
  

@@ -18,7 +18,7 @@ As a developer, you can use the web proxy exposed in client APIs, such as the Ja
  
 
  
-![Symbols for "your code", "SharePoint Web Proxy" and "Data source" showing that data requests pass through the web proxy.](../../images/3fbdcfae-6af9-452b-9a07-48575de7e86a.png)
+![Symbols for "your code", "SharePoint Web Proxy" and "Data source" showing that data requests pass through the web proxy.](../images/3fbdcfae-6af9-452b-9a07-48575de7e86a.png)
  
 
  
@@ -84,7 +84,7 @@ Figure 1 shows the browser window with data from the remote service in a SharePo
  
 
  
-![SharePoint page with data from the remote service](../../images/WebProxy_result.png)
+![SharePoint page with data from the remote service](../images/WebProxy_result.png)
  
 
 ### To create the SharePoint Add-in project
@@ -102,7 +102,7 @@ Figure 1 shows the browser window with data from the remote service in a SharePo
 
  
 
-     ![App for SharePoint 2013 Visual Studio template](../../images/AppForSharePointVSTemplate.PNG)
+     ![App for SharePoint 2013 Visual Studio template](../images/AppForSharePointVSTemplate.PNG)
  
 
  
@@ -413,7 +413,7 @@ Figure 1 shows the browser window with data from the remote service in a SharePo
 
  
 
-     ![SharePoint page with data from the remote service](../../images/WebProxy_result.png)
+     ![SharePoint page with data from the remote service](../images/WebProxy_result.png)
  
 
  

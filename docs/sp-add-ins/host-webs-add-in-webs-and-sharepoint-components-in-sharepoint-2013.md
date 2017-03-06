@@ -24,7 +24,7 @@ Figure 1 shows a host web with two SharePoint Add-ins installed. Add-in 1 has re
  
 
  
-![Host web, app web, and their components.](../../images/HostWebAndAppWeb.png)
+![Host web, app web, and their components.](../images/HostWebAndAppWeb.png)
  
 For example, suppose that an add-in, with SharePoint components beyond just the UI elements that can be deployed to a host web, is installed on a host website at the following URL:
  
