@@ -439,5 +439,5 @@
 ### [The Timer Job Framework](pnp-guidance/timerjob-framework.md)
 ### [Create remote timer jobs in SharePoint](pnp-guidance/create-remote-timer-jobs-in-sharepoint.md)
 ### [Getting Started with WebJobs ("timer jobs")](pnp-guidance/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites.md)
-## [PnP PowerShell reference](pnp-guidance/https://msdn.microsoft.com/en-us/pnp_powershell/pnp-powershell-overview)
+## [PnP PowerShell reference](https://msdn.microsoft.com/en-us/pnp_powershell/pnp-powershell-overview)
 
