@@ -3,7 +3,7 @@ title: How to Save to the Server to Prepare for Programmatic Access
 keywords: how to,howdoi,howto
 f1_keywords:
 - how to,howdoi,howto
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 80b34a29-3d40-4d11-9ba1-b4886ffcfd42
 ---
 

@@ -3,7 +3,7 @@ title: Excel Services Development Roadmap
 keywords: roadmap
 f1_keywords:
 - roadmap
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 5c789f58-9cdb-4601-9047-9c6f83f2fbba
 ---
 
