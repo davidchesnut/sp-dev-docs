@@ -1,5 +1,6 @@
 {
   "build": {
+    "need_generate_pdf": true,
     "content": [
       {
         "files": [
@@ -33,5 +34,4 @@
     "template": [],
     "dest": "sharepoint-test"
   }
-  "need_generate_pdf": true
 }
