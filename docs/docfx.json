@@ -33,4 +33,5 @@
     "template": [],
     "dest": "sharepoint-test"
   }
+  "need_generate_pdf": true
 }
