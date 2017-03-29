@@ -1,6 +1,6 @@
 ---
 title: Understanding Coordination actions in SharePoint Designer 2013
-ms.prod: SHAREPOINT
+ms.prod: SHAREPOINTDESIGNER
 ms.assetid: 33fbcf91-0a5d-47ab-85a9-9d2d556a204d
 ---
 
@@ -15,15 +15,15 @@ Coordination Actions in SharePoint Designer 2013 are designed to start a workflo
 ## Coordination Actions in SharePoint Designer 2013
 <a name="section1"> </a>
 
-There are two Coordination Actions available in SharePoint Designer 2013. Both actions are only available for the SharePoint 2013 Workflow platform. These actions are: 
+There are two Coordination Actions available in SharePoint Designer 2013. Both actions are only available for the SharePoint 2013 Workflow platform. These actions are:
   
     
     
 
-- Start a List Workflow: Used to start a workflow developed for a specific list. 
+- Start a List Workflow: Used to start a workflow developed for a specific list.
     
   
-- Start a Site Workflow: Used to start a workflow developed for the site. 
+- Start a Site Workflow: Used to start a workflow developed for the site.
     
   
 Coordination Actions appear in the **Actions** drop-down menu when you build a workflow based on the SharePoint 2013 Workflow platform, as shown in the figure.
@@ -44,7 +44,7 @@ Coordination Actions appear in the **Actions** drop-down menu when you build a w
   
     
     
-Both actions are designed to start a workflow built on the SharePoint 2010 Workflow platform from a workflow built on the SharePoint 2013 Workflow platform. 
+Both actions are designed to start a workflow built on the SharePoint 2010 Workflow platform from a workflow built on the SharePoint 2013 Workflow platform.
   
     
     
@@ -60,11 +60,11 @@ Both actions are designed to start a workflow built on the SharePoint 2010 Workf
 ## Using Coordination Actions
 <a name="section2"> </a>
 
-There are a number of actions that have been deprecated in the SharePoint 2013 Workflow platform. To accommodate legacy workflows you can use Coordination Actions. Coordination Actions can be used to start a List workflow or a Site workflow that has been built by using the SharePoint 2010 Workflow platform. 
+There are a number of actions that have been deprecated in the SharePoint 2013 Workflow platform. To accommodate legacy workflows you can use Coordination Actions. Coordination Actions can be used to start a List workflow or a Site workflow that has been built by using the SharePoint 2010 Workflow platform.
   
     
     
-A Coordination Action includes three editable regions, as shown in the figure. 
+A Coordination Action includes three editable regions, as shown in the figure.
   
     
     
@@ -96,7 +96,7 @@ The three editable regions are:
 - **this item** The item which the 2010 workflow should be run on.
     
   
-Click an editable link to enter information. For example, to select the 2010 workflow to start, click the link **SharePoint 2010 list workflow**. A dialog box appears that can be used to select the workflow, as shown in the figure. 
+Click an editable link to enter information. For example, to select the 2010 workflow to start, click the link **SharePoint 2010 list workflow**. A dialog box appears that can be used to select the workflow, as shown in the figure.
   
     
     
@@ -126,7 +126,7 @@ Click an editable link to enter information. For example, to select the 2010 wor
   
     
     
-The SharePoint 2010 Workflow platform workflow instances that are coordinated from within a SharePoint 2013 workflow are listed on the workflow status page in the Subworkflows section, as shown in the figure. 
+The SharePoint 2010 Workflow platform workflow instances that are coordinated from within a SharePoint 2013 workflow are listed on the workflow status page in the Subworkflows section, as shown in the figure.
   
     
     

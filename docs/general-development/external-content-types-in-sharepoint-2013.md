@@ -6,19 +6,19 @@ ms.assetid: 11d7adb5-5388-4517-ae03-beb7be1c6981
 
 
 # External content types in SharePoint 2013
-Learn what you can do with external content types and what you need to start creating them in SharePoint 2013. 
+Learn what you can do with external content types and what you need to start creating them in SharePoint 2013.
 ## What is an external content type?
 <a name="SP15ectoverview_what"> </a>
 
-The external content type is a core concept of Business Connectivity Services (BCS). Used throughout the functionality and services offered by BCS, external content types are reusable metadata descriptions of connectivity information and data definitions plus the behaviors you want to apply to a certain category of external data. 
+The external content type is a core concept of Business Connectivity Services (BCS). Used throughout the functionality and services offered by BCS, external content types are reusable metadata descriptions of connectivity information and data definitions plus the behaviors you want to apply to a certain category of external data.
   
     
     
-External content types enable you to manage and reuse the metadata and behaviors of a business entity, such as a customer or order from a central location, and enable users to interact with that external data and processes in a more meaningful way. 
+External content types enable you to manage and reuse the metadata and behaviors of a business entity, such as a customer or order from a central location, and enable users to interact with that external data and processes in a more meaningful way.
   
     
     
-The following are some of the benefits of using external content types: 
+The following are some of the benefits of using external content types:
   
     
     
@@ -48,26 +48,26 @@ The following are some of the benefits of using external content types:
 ## Prerequisites for working with BCS external content types
 <a name="SP15ectoverview_prereq"> </a>
 
-To get started creating external content types, you will need the following: 
+To get started creating external content types, you will need the following:
   
     
     
 
-- SharePoint 2013 
+- SharePoint 2013
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
-- Office Developer Tools for Visual Studio 2012 
+- Office Developer Tools for Visual Studio 2012
     
-    or 
-    
-  
-- SharePoint Designer 2013 
+    or
     
   
-To set up a development environment for creating external content types, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md). 
+- SharePoint Designer 2013
+    
+  
+To set up a development environment for creating external content types, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
   
     
     
@@ -75,28 +75,28 @@ To set up a development environment for creating external content types, see  [S
 ## What can you do with external content types?
 <a name="SP15ectoverview_whattodo"> </a>
 
-When SharePoint is configured to communicate with the external system, you can use the external content types to create the following objects to present the underlying data: 
+When SharePoint is configured to communicate with the external system, you can use the external content types to create the following objects to present the underlying data:
   
     
     
 
 - **External lists**
     
-    An external list enables access to data from external systems in the same way that SharePoint list data is accessed. External lists use external content types as their data sources. External lists enable you to use the metadata that is already defined about an external content type to create a SharePoint list that has external data that looks and performs like any other SharePoint list. 
+    An external list enables access to data from external systems in the same way that SharePoint list data is accessed. External lists use external content types as their data sources. External lists enable you to use the metadata that is already defined about an external content type to create a SharePoint list that has external data that looks and performs like any other SharePoint list.
     
-    You can also take external lists offline to be used in Outlook 2013. This allows you to work with external data just like native Outlook Item types, such as Contacts, Tasks, and Posts, and use the external data in Office client applications. 
+    You can also take external lists offline to be used in Outlook 2013. This allows you to work with external data just like native Outlook Item types, such as Contacts, Tasks, and Posts, and use the external data in Office client applications.
     
     External lists enable writing back to the external system if the external system allows it, and if it is modeled accordingly by the external content type. This implies that users can edit external data directly from within. Any changes that were made to the items in the list are synchronized automatically with the external system. Also by using the **Refresh data** button in the list, you can synchronize and get updated data from the external system automatically.
     
   
 - **External Data Columns**
     
-    The external data column enables users to add data from external content types to standard SharePoint lists. Just like an external list, external data columns can display data from any external content type that is modeled in Business Connectivity Services (BCS). 
+    The external data column enables users to add data from external content types to standard SharePoint lists. Just like an external list, external data columns can display data from any external content type that is modeled in Business Connectivity Services (BCS).
     
   
 - **Business Data Web Parts**
     
-    SharePoint 2013 provides five different Web Parts for working with external data: Business Data List, Business Data Item, Business Data Item Builder, Business Data Related List, and Business Data Actions. 
+    SharePoint 2013 provides five different Web Parts for working with external data: Business Data List, Business Data Item, Business Data Item Builder, Business Data Related List, and Business Data Actions.
     
   
 - **External Content Type Picker**
@@ -111,15 +111,15 @@ When SharePoint is configured to communicate with the external system, you can u
   
 - **Profile Pages**
     
-    Profile Pages are SharePoint pages in SharePoint 2013 that display the details about an external item. Just like any other SharePoint Web Parts page, you can customize this page to show details of an external item. 
+    Profile Pages are SharePoint pages in SharePoint 2013 that display the details about an external item. Just like any other SharePoint Web Parts page, you can customize this page to show details of an external item.
     
   
 - **Custom pages and applications**
     
-    You can use the SharePoint 2013 programmability options, such as the SharePoint object model, client object model, and Representational State Transfer (REST) URLs. 
+    You can use the SharePoint 2013 programmability options, such as the SharePoint object model, client object model, and Representational State Transfer (REST) URLs.
     
   
-Table 1 contains examples of tasks that illustrate working with external content types. 
+Table 1 contains examples of tasks that illustrate working with external content types.
   
     
     

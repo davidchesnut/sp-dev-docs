@@ -7,12 +7,12 @@ ms.assetid: e7d8c919-7aa6-466a-acb0-27366129061c
 
 # Configuration, administration, and resources in SharePoint 2013
 
-For information about planning, administration, configuration, deployment, migration, upgrades, setting up claims, or security in general, see the IT and administrators documentation and guidelines on  [Microsoft TechNet](http://technet.microsoft.com/en-us/sharepoint/ee263910.aspx). 
+For information about planning, administration, configuration, deployment, migration, upgrades, setting up claims, or security in general, see the IT and administrators documentation and guidelines on  [Microsoft TechNet](http://technet.microsoft.com/en-us/sharepoint/ee263910.aspx).
   
     
     
 
-The following are links to some of the documentation and guidelines on TechNet: 
+The following are links to some of the documentation and guidelines on TechNet:
 -  [Plan for authentication methods](http://technet.microsoft.com/en-us/library/cc288475.aspx)
     
   
@@ -66,19 +66,19 @@ The following are links to some of the documentation and guidelines on TechNet:
   
 
 > [!NOTE]
-> For information about Windows Identity Foundation (WIF), see the  [Windows Identity Foundation SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=C148B2DF-C7AF-46BB-9162-2C9422208504&amp;amp;displaylang=en). 
+> For information about Windows Identity Foundation (WIF), see the  [Windows Identity Foundation SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=C148B2DF-C7AF-46BB-9162-2C9422208504&amp;amp;displaylang=en).
   
     
     
 
-The following tables list blogs, forums, and additional resources about claims-based identity and general security in SharePoint Server. 
+The following tables list blogs, forums, and additional resources about claims-based identity and general security in SharePoint Server.
 **Table 1. Blogs**
 
 
 |** **Blog Name****|** **Links****|
 |:-----|:-----|
-|Share-n-dipity | [Blog home page](http://blogs.technet.com/speschka/)|
-|Microsoft SharePoint Developer Team Blog | [Blog home page](http://blogs.msdn.com/b/sharepointdev/)|
+|Share-n-dipity| [Blog home page](http://blogs.technet.com/speschka/)|
+|Microsoft SharePoint Developer Team Blog| [Blog home page](http://blogs.msdn.com/b/sharepointdev/)|
 |||
    
 
@@ -87,7 +87,7 @@ The following tables list blogs, forums, and additional resources about claims-b
 
 |** **Forum Name****|** **Links****|
 |:-----|:-----|
-|SharePoint Products and Technologies Forums | [Forum home page](http://social.msdn.microsoft.com/Forums/en-US/category/sharepoint)|
+|SharePoint Products and Technologies Forums| [Forum home page](http://social.msdn.microsoft.com/Forums/en-US/category/sharepoint)|
    
 
 **Table 3. Additional resources**

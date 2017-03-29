@@ -6,10 +6,10 @@ ms.assetid: c26c4160-31be-4358-89cf-082b8a1e6a6c
 
 
 # Virtual directories in SharePoint 2013 solutions
-Learn about how changes in the virtual directory system affect how you create farm solutions in SharePoint 2013. 
+Learn about how changes in the virtual directory system affect how you create farm solutions in SharePoint 2013.
 ## Make your solutions compatible with the new UI mode system
 
-When you are using the Microsoft SharePoint 2010 Software Development Kit (SDK), but developing for SharePoint 2013, there is a change in the virtual directory system that you need to consider as you work. The change is a side effect of the new SharePoint 2013 feature that enables a site collection to run in either SharePoint 2010 mode or SharePoint 2013 mode. The modes are sometimes called compatibility levels orUI versions. For files in the virtual folders  `_layouts` or `_controltemplates`, SharePoint needs to use the version of the files in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ (sometimes called the 15 hive) or in the corresponding 14 hive, depending on the mode of the site collection. SharePoint adds "/15" into the virtual directory path just after the virtual directory name to signal that the SharePoint 2013 files should be used. The absence of that extra string indicates that SharePoint 2010 files should be used. 
+When you are using the Microsoft SharePoint 2010 Software Development Kit (SDK), but developing for SharePoint 2013, there is a change in the virtual directory system that you need to consider as you work. The change is a side effect of the new SharePoint 2013 feature that enables a site collection to run in either SharePoint 2010 mode or SharePoint 2013 mode. The modes are sometimes called compatibility levels orUI versions. For files in the virtual folders  `_layouts` or `_controltemplates`, SharePoint needs to use the version of the files in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ (sometimes called the 15 hive) or in the corresponding 14 hive, depending on the mode of the site collection. SharePoint adds "/15" into the virtual directory path just after the virtual directory name to signal that the SharePoint 2013 files should be used. The absence of that extra string indicates that SharePoint 2010 files should be used.
   
     
     

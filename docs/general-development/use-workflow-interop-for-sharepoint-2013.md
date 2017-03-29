@@ -6,7 +6,7 @@ ms.assetid: 6c70e941-3836-4cf5-b848-f192fefddbd4
 
 
 # Use workflow interop for SharePoint 2013
-Provides a discussion of using SharePoint workflow Interop in the Visual Studio 2012 workflow designer. Workflow interop allows you to invoke a SharePoint 2010 workflow from within a SharePoint 2013 workflow. This is an important feature that allows you to reuse existing workflow features, and to call on workflow activities that are not integrated into SharePoint 2013. 
+Provides a discussion of using SharePoint workflow Interop in the Visual Studio 2012 workflow designer. Workflow interop allows you to invoke a SharePoint 2010 workflow from within a SharePoint 2013 workflow. This is an important feature that allows you to reuse existing workflow features, and to call on workflow activities that are not integrated into SharePoint 2013.
 
   
     
@@ -23,11 +23,11 @@ Provides a discussion of using SharePoint workflow Interop in the Visual Studio 
 ## SharePoint workflow interop
 <a name="bkm_interop"> </a>
 
-Here's the problem. You have legacy SharePoint 2010 workflows that you wish to reuse on your SharePoint 2013 platform. Or, worse, you are creating new SharePoint 2013 workflows and you need to invoke activities that are only available in the SharePoint 2010 platform. And you don't know what to do. Actually, the solution is simple: use SharePoint workflow Interop. 
+Here's the problem. You have legacy SharePoint 2010 workflows that you wish to reuse on your SharePoint 2013 platform. Or, worse, you are creating new SharePoint 2013 workflows and you need to invoke activities that are only available in the SharePoint 2010 platform. And you don't know what to do. Actually, the solution is simple: use SharePoint workflow Interop.
   
     
     
-SharePoint workflow interop enables SharePoint 2010 workflows (built on Windows Workflow Foundation 3) to work smoothly with the SharePoint 2013 workflow engine, which is based on Windows Workflow Foundation 4. While the new Windows Workflow Foundation 4 execution engine is hosted in Workflow Manager, which runs as an external service, SharePoint 2013 still contains the legacy SharePoint workflow host which it uses to process SharePoint 2010 workflows. SharePoint workflow interop negotiates the two execution environments, as depicted in Figure 1. 
+SharePoint workflow interop enables SharePoint 2010 workflows (built on Windows Workflow Foundation 3) to work smoothly with the SharePoint 2013 workflow engine, which is based on Windows Workflow Foundation 4. While the new Windows Workflow Foundation 4 execution engine is hosted in Workflow Manager, which runs as an external service, SharePoint 2013 still contains the legacy SharePoint workflow host which it uses to process SharePoint 2010 workflows. SharePoint workflow interop negotiates the two execution environments, as depicted in Figure 1.
   
     
     
@@ -45,7 +45,7 @@ SharePoint workflow interop enables SharePoint 2010 workflows (built on Windows 
   
     
     
-Let's walk through the process depicted in Figure 1. Use the letters to reference points of emphasis in the illustration: 
+Let's walk through the process depicted in Figure 1. Use the letters to reference points of emphasis in the illustration:
   
     
     
@@ -100,9 +100,9 @@ Let's walk through the process depicted in Figure 1. Use the letters to referenc
   
     
     
-> ( **D** ) The practical effect of selecting **true** or **false** on the **Wait** property (or **Yes** or **No** in the properties dialog box) is depicted here. If **Wait** is **true**, then the 2010 workflow passes a  [WorkflowCompleted](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.WorkflowInteropEventReceiver.WorkflowCompleted.aspx) event (and, optionally, returns data as a [DynamicValue](http://msdn.microsoft.com/library/2af7983b-8357-4e0f-9ba9-dfdeed05a8a7.aspx) property). For more information about dynamic values, see [Understanding Dynamic Value](http://msdn.microsoft.com/library/c5702628-9625-4d19-95c5-13923e91fea1.aspx). 
+> ( **D** ) The practical effect of selecting **true** or **false** on the **Wait** property (or **Yes** or **No** in the properties dialog box) is depicted here. If **Wait** is **true**, then the 2010 workflow passes a  [WorkflowCompleted](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.WorkflowInteropEventReceiver.WorkflowCompleted.aspx) event (and, optionally, returns data as a [DynamicValue](http://msdn.microsoft.com/library/2af7983b-8357-4e0f-9ba9-dfdeed05a8a7.aspx) property). For more information about dynamic values, see [Understanding Dynamic Value](http://msdn.microsoft.com/library/c5702628-9625-4d19-95c5-13923e91fea1.aspx).
     
-    Of course, if **Wait** is set to **false**, then your 2010 workflow executes, then terminates normally. 
+    Of course, if **Wait** is set to **false**, then your 2010 workflow executes, then terminates normally.
     
   
 

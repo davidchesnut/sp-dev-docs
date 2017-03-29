@@ -28,7 +28,7 @@ Because a failed **CloseWorkbook** method call is not actionable, you do not nee
     
     
 
-To close the workbook asynchronously, you must do two things: 
+To close the workbook asynchronously, you must do two things:
 - Make sure you do not dispose the Excel Web Services proxy class—if you do, non-Excel Services exceptions may occur. 
     
   
@@ -55,7 +55,7 @@ You don't have to implement the event that is called when the **CloseWorkbookAsy
 Calling the **CloseWorkbookAsync** method or **BeginCloseWorkbook** method means the call to close a workbook will be executed asynchronously and not cost your application any significant amount of time.
 ## Example
 
-The following example shows how to close a workbook asynchronously using Visual Studio 2005. 
+The following example shows how to close a workbook asynchronously using Visual Studio 2005.
   
     
     
@@ -177,7 +177,7 @@ Make sure that you add a Web reference to an Excel Web Services site that you ha
   
     
     
-In addition, make changes to the workbook path, sheet name, and so on, as appropriate. 
+In addition, make changes to the workbook path, sheet name, and so on, as appropriate.
   
     
     

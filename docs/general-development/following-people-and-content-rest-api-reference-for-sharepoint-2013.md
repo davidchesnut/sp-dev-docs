@@ -15,12 +15,12 @@ You can use the SharePoint 2013 Representational State Transfer (REST) service t
 
 The endpoint URI for most Following tasks begins with the **SocialRestFollowingManager** resource ( `social.following`) and ends with the resource that performs the specific task. For example, you use the URI  `http://www.contoso.com/_api/social.following/follow` to make the current user start following people or content, and the URI `https://www.contoso.com/sites/devSite/_api/social.following/followed` to get the people or content the current user is following.
 > [!NOTE]
-> This article shows the endpoint URI and parameter components of HTTP requests. For examples of complete requests, see  [How to: Follow documents, sites, and tags by using the REST service in SharePoint 2013](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md). 
+> This article shows the endpoint URI and parameter components of HTTP requests. For examples of complete requests, see  [How to: Follow documents, sites, and tags by using the REST service in SharePoint 2013](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md).
   
     
     
 
-We recommend that you use the **SocialRestFollowingManager** API for Following People and Following Content tasks, but you can use the **PeopleManager** resource for some Following People tasks that **SocialRestFollowingManager** doesn't support. For example, you can find out whether someone is following the current user or get another user's followers. For these tasks, you send HTTP **GET** requests to endpoint URIs that begin with the **PeopleManager** resource ( `sp.userprofiles.peoplemanager`) and end with the resource that performs the specific task. If the endpoint takes a parameter, the parameter metadata is sent in the URI or in the request body in XML or JavaScript Object Notation (JSON) format. You can make HTTP requests in any language, including JavaScript and C#. By default, the REST service returns responses that are formatted by using the Atom protocol, but you can request the JSON format by using HTTP **Accept** headers. See [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx). 
+We recommend that you use the **SocialRestFollowingManager** API for Following People and Following Content tasks, but you can use the **PeopleManager** resource for some Following People tasks that **SocialRestFollowingManager** doesn't support. For example, you can find out whether someone is following the current user or get another user's followers. For these tasks, you send HTTP **GET** requests to endpoint URIs that begin with the **PeopleManager** resource ( `sp.userprofiles.peoplemanager`) and end with the resource that performs the specific task.If the endpoint takes a parameter, the parameter metadata is sent in the URI or in the request body in XML or JavaScript Object Notation (JSON) format. You can make HTTP requests in any language, including JavaScript and C#. By default, the REST service returns responses that are formatted by using the Atom protocol, but you can request the JSON format by using HTTP **Accept** headers. See [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx).
 ## Resource endpoints for Following People and Following Content tasks
 <a name="bk_Overview"> </a>
 
@@ -33,7 +33,7 @@ We recommend that you use the **SocialRestFollowingManager** API for Following P
 ## Follow
 <a name="bk_Follow"> </a>
 
-Makes the current user start following a user, document, site, or tag. 
+Makes the current user start following a user, document, site, or tag.
   
     
     
@@ -55,7 +55,7 @@ Type: **SP.Social.SocialActorInfo**
   
     
     
-The actor to start following. 
+The actor to start following.
   
     
     
@@ -175,7 +175,7 @@ http://<siteCollection>/<site>/_api/social.following/follow(ActorType=3,TagGuid=
 }
 ```
 
-You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid). 
+You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid).
   
     
     
@@ -190,11 +190,11 @@ Type: **SP.Social.SocialFollowResult**
   
     
     
-The status of the request: 0 = OK; 1 = AlreadyFollowing; 2 = LimitReached; or 3 = InternalError. 
+The status of the request: 0 = OK; 1 = AlreadyFollowing; 2 = LimitReached; or 3 = InternalError.
   
     
     
-The following response indicates that the request succeeded. 
+The following response indicates that the request succeeded.
   
     
     
@@ -210,7 +210,7 @@ The following response indicates that the request succeeded.
 ## StopFollowing
 <a name="bk_StopFollowing"> </a>
 
-Makes the current user stop following a user, document, site, or tag. 
+Makes the current user stop following a user, document, site, or tag.
   
     
     
@@ -232,7 +232,7 @@ Type: **SP.Social.SocialActorInfo**
   
     
     
-The actor to stop following. 
+The actor to stop following.
   
     
     
@@ -351,14 +351,14 @@ http://<siteCollection>/<site>/_api/social.following/stopfollowing(ActorType=3,T
 }
 ```
 
-You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid). 
+You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid).
   
     
     
 
 ### Response
 
-None. 
+None.
   
     
     
@@ -372,7 +372,7 @@ None.
 ## IsFollowed
 <a name="bk_IsFollowed"> </a>
 
-Indicates whether the current user is following a specified user, document, site, or tag. 
+Indicates whether the current user is following a specified user, document, site, or tag.
   
     
     
@@ -394,7 +394,7 @@ Type: **SP.Social.SocialActorInfo**
   
     
     
-The actor to find the following status for. 
+The actor to find the following status for.
   
     
     
@@ -513,7 +513,7 @@ http://<siteCollection>/<site>/_api/social.following/isfollowed(ActorType=3,TagG
 }
 ```
 
-You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid). 
+You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid).
   
     
     
@@ -528,11 +528,11 @@ Type: **bool**
   
     
     
- **true** if the current user is following the actor; otherwise **false**. 
+ **true** if the current user is following the actor; otherwise **false**.
   
     
     
-The following response indicates that the user is not following the specified actor. 
+The following response indicates that the user is not following the specified actor.
   
     
     
@@ -562,7 +562,7 @@ Gets information about the **SocialRestFollowingManager** instance and informati
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -634,7 +634,7 @@ Gets the URI to the **Docs I'm following** page for the current user.
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -683,7 +683,7 @@ Gets the URI to the **Sites I'm following** page for the current user.
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -717,7 +717,7 @@ The following response represents the **FollowedSitesUri** for the current user.
 ## My/Followed
 <a name="bk_Followed"> </a>
 
-Gets users, documents, sites, and tags that the current user is following. 
+Gets users, documents, sites, and tags that the current user is following.
   
     
     
@@ -739,7 +739,7 @@ Type: **Int32**
   
     
     
-The actor types to include. Users = 1, Documents = 2, Sites = 4, Tags = 8. Bitwise combinations are allowed. 
+The actor types to include. Users = 1, Documents = 2, Sites = 4, Tags = 8. Bitwise combinations are allowed.
   
     
     
@@ -754,7 +754,7 @@ Type: Array of **SP.Social.SocialActor**
   
     
     
-The users, documents, sites, and tags that the current user is following. 
+The users, documents, sites, and tags that the current user is following.
   
     
     
@@ -829,7 +829,7 @@ The following response represents a document, a site, and a tag. The  _types_ pa
 ## My/FollowedCount
 <a name="bk_FollowedCount"> </a>
 
-Gets the count of users, documents, sites, and tags that the current user is following. 
+Gets the count of users, documents, sites, and tags that the current user is following.
   
     
     
@@ -851,7 +851,7 @@ Type: **Int32**
   
     
     
-The types of actors to include. Users = 1, Documents = 2, Sites = 4, Tags = 8. Bitwise combinations are allowed. 
+The types of actors to include. Users = 1, Documents = 2, Sites = 4, Tags = 8. Bitwise combinations are allowed.
   
     
     
@@ -866,7 +866,7 @@ Type: **Int32**
   
     
     
-The count of users, documents, sites, and tags that the current user is following. 
+The count of users, documents, sites, and tags that the current user is following.
   
     
     
@@ -886,7 +886,7 @@ The following response indicates that the current user is following 3 actors of 
 ## My/Followers
 <a name="bk_Followers"> </a>
 
-Gets the users who are following the current user. 
+Gets the users who are following the current user.
   
     
     
@@ -900,7 +900,7 @@ Gets the users who are following the current user.
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -919,7 +919,7 @@ Type: Array of **SP.Social.SocialActor**
   
     
     
-The following response represents one user who is following the current user. 
+The following response represents one user who is following the current user.
   
     
     
@@ -953,13 +953,13 @@ The following response represents one user who is following the current user.
 ## My/Suggestions
 <a name="bk_Suggestions"> </a>
 
-Gets users who the current user might want to follow. 
+Gets users who the current user might want to follow.
   
     
     
 
 > [!NOTE]
-> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint-2013.md#bk_PeopleSuggestions). 
+> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint-2013.md#bk_PeopleSuggestions).
   
     
     
@@ -974,7 +974,7 @@ Gets users who the current user might want to follow.
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -989,7 +989,7 @@ Type: Array of **SP.Social.SocialActor**
   
     
     
-Users who the current user might want to follow. 
+Users who the current user might want to follow.
   
     
     
@@ -997,13 +997,13 @@ Users who the current user might want to follow.
 ## GetMySuggestions
 <a name="bk_GetMySuggestions"> </a>
 
-Gets users who the current user might want to follow. 
+Gets users who the current user might want to follow.
   
     
     
 
 > [!NOTE]
-> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint-2013.md#bk_PeopleSuggestions). 
+> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint-2013.md#bk_PeopleSuggestions).
   
     
     
@@ -1018,7 +1018,7 @@ Gets users who the current user might want to follow.
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -1033,7 +1033,7 @@ Type: List of **SP.UserProfiles.PersonProperties**
   
     
     
-Users who the current user might want to follow. 
+Users who the current user might want to follow.
   
     
     
@@ -1055,7 +1055,7 @@ Finds out whether the **People I'm Following** list for the current user is publ
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -1070,11 +1070,11 @@ Type: **bool**
   
     
     
- **true** if the current user's people list is public; otherwise **false**. 
+ **true** if the current user's people list is public; otherwise **false**.
   
     
     
-The following response indicates that the current user's people list is public. 
+The following response indicates that the current user's people list is public.
   
     
     
@@ -1090,7 +1090,7 @@ The following response indicates that the current user's people list is public.
 ## AmIFollowedBy
 <a name="bk_AmIFollowedBy"> </a>
 
-Finds out whether a specified user is following the current user. 
+Finds out whether a specified user is following the current user.
   
     
     
@@ -1116,7 +1116,7 @@ Type: **String**
   
     
     
-The account name of the target user. 
+The account name of the target user.
   
     
     
@@ -1131,11 +1131,11 @@ Type: **bool**
   
     
     
- **true** if the specified user is following the current user; otherwise **false**. 
+ **true** if the specified user is following the current user; otherwise **false**.
   
     
     
-The following response indicates that the specified user is not following the current user. 
+The following response indicates that the specified user is not following the current user.
   
     
     
@@ -1150,7 +1150,7 @@ The following response indicates that the specified user is not following the cu
 ## GetPeopleFollowedBy
 <a name="bk_GetPeopleFollowedBy"> </a>
 
-Gets the users followed by a specified user. 
+Gets the users followed by a specified user.
   
     
     
@@ -1176,7 +1176,7 @@ Type: **String**
   
     
     
-The account name of the target user. 
+The account name of the target user.
   
     
     
@@ -1191,11 +1191,11 @@ Type: List of **SP.UserProfiles.PersonProperties**
   
     
     
-The users followed by the specified user. 
+The users followed by the specified user.
   
     
     
-The following response represents two users followed by the specified user. 
+The following response represents two users followed by the specified user.
   
     
     
@@ -1379,7 +1379,7 @@ The following response represents two users followed by the specified user.
 ## GetFollowersFor
 <a name="bk_GetFollowersFor"> </a>
 
-Gets the users who are following a specified user. 
+Gets the users who are following a specified user.
   
     
     
@@ -1405,7 +1405,7 @@ Type: **String**
   
     
     
-The account name of the target user. 
+The account name of the target user.
   
     
     
@@ -1420,11 +1420,11 @@ Type: List of **SP.UserProfiles.PersonProperties**
   
     
     
-The users who are following the specified user. 
+The users who are following the specified user.
   
     
     
-The following response represents a user who is following the specified user. 
+The following response represents a user who is following the specified user.
   
     
     

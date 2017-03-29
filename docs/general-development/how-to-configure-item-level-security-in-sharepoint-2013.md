@@ -6,11 +6,11 @@ ms.assetid: ffd730f2-e7b7-4707-b677-d073da7df7d7
 
 
 # How to: Configure item-level security in SharePoint 2013
-Learn how to configure item level security when crawling external data with BCS indexing connectors in SharePoint 2013. 
+Learn how to configure item level security when crawling external data with BCS indexing connectors in SharePoint 2013.
 ## External systems with NTLM authentication
 <a name="ItemLevelSecurity_NTLMAuth"> </a>
 
-For external systems that support NTLM authentication, the security descriptor can be obtained for each instance of the external content type at crawl time and stored in the content index. During query time, the security descriptor of the user who is submitting the search query is compared to the stored security descriptor to determine whether the user has access to the item. This is the fastest way to perform security trimming on the result set. The metadata model for the external system must indicate where the security descriptor can be found as an external content type field or method. 
+For external systems that support NTLM authentication, the security descriptor can be obtained for each instance of the external content type at crawl time and stored in the content index. During query time, the security descriptor of the user who is submitting the search query is compared to the stored security descriptor to determine whether the user has access to the item. This is the fastest way to perform security trimming on the result set. The metadata model for the external system must indicate where the security descriptor can be found as an external content type field or method.
   
     
     
@@ -75,7 +75,7 @@ DefaultDisplayName="ReadSecurity">
 
 
 > [!NOTE]
-> If you return the security descriptor as a field of the external content type, you cannot use client caching. This is because cached items are limited to a specific size, which access control lists (ACL) can easily exceed. Therefore, the Search connector framework ignores requests to cache items if they contain a security descriptor field. 
+> If you return the security descriptor as a field of the external content type, you cannot use client caching. This is because cached items are limited to a specific size, which access control lists (ACL) can easily exceed. Therefore, the Search connector framework ignores requests to cache items if they contain a security descriptor field.
   
     
     
@@ -129,7 +129,7 @@ ReturnTypeDescriptorLevel="0">
 </Method>
 ```
 
-The following code is the method signature for the method that is specified in the previous example. 
+The following code is the method signature for the method that is specified in the previous example.
   
     
     

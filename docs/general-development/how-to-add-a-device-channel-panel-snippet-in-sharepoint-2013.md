@@ -6,11 +6,11 @@ ms.assetid: 612780a8-6267-49f6-a32d-33600bb5f6b4
 
 
 # How to: Add a Device Channel Panel snippet in SharePoint 2013
-A Device Channel Panel is a snippet that you can add to a master page or page layout to control what content is rendered for each channel that you create. The primary purpose of a Device Channel Panel is to selectively display different page fields on different channels from a single page layout. 
+A Device Channel Panel is a snippet that you can add to a master page or page layout to control what content is rendered for each channel that you create. The primary purpose of a Device Channel Panel is to selectively display different page fields on different channels from a single page layout.
 ## Introduction to the Device Channel Panel snippet
 <a name="Introduction"> </a>
 
-A Device Channel Panel is a control that you can add to a master page or page layout to control what content is rendered in each channel that you create. A Device Channel Panel is a container that specifies one or more channels; if one or more of those channels are active when the page is rendered, all of the contents of the Device Channel Panel are also rendered. A Device Channel Panel can include almost any type of content, including a link to a CSS file or a .js file. It is an easy way to include specific content for specific channels. 
+A Device Channel Panel is a control that you can add to a master page or page layout to control what content is rendered in each channel that you create. A Device Channel Panel is a container that specifies one or more channels; if one or more of those channels are active when the page is rendered, all of the contents of the Device Channel Panel are also rendered. A Device Channel Panel can include almost any type of content, including a link to a CSS file or a .js file. It is an easy way to include specific content for specific channels.
   
     
     
@@ -18,11 +18,11 @@ Perhaps the most common scenario for using Device Channel Panels is to selective
   
     
     
-You can also use Device Channel Panels on master pages. For example, if you have a master page that can accommodate two different devices (or two different browsers) with only minimal changes, you can use Device Channel Panels to hold the content on the master page that is specific to either of those devices. 
+You can also use Device Channel Panels on master pages. For example, if you have a master page that can accommodate two different devices (or two different browsers) with only minimal changes, you can use Device Channel Panels to hold the content on the master page that is specific to either of those devices.
   
     
     
-There are two limitations to using a Device Channel Panel: 
+There are two limitations to using a Device Channel Panel:
   
     
     
@@ -37,7 +37,7 @@ There are two limitations to using a Device Channel Panel:
 ## Inserting a Device Channel Panel snippet
 <a name="InsertSnippet"> </a>
 
-Like all snippets, you add a Device Channel Panel snippet from the Snippet Gallery. To navigate to the Snippet Gallery, you must first select a master page or page layout to edit. 
+Like all snippets, you add a Device Channel Panel snippet from the Snippet Gallery. To navigate to the Snippet Gallery, you must first select a master page or page layout to edit.
   
     
     
@@ -45,25 +45,25 @@ Like all snippets, you add a Device Channel Panel snippet from the Snippet Galle
 ### To insert a Device Channel Panel snippet
 
 
-1. Browse to your publishing site. 
+1. Browse to your publishing site.
     
   
-2. In the upper-right corner of the page, choose the Settings gear, and then choose **Design Manager**. 
+2. In the upper-right corner of the page, choose the Settings gear, and then choose **Design Manager**.
     
   
-3. In Design Manager, in the left navigation pane, choose **Edit Master Pages** or **Edit Page Layouts**, depending on what type of file you're editing. 
+3. In Design Manager, in the left navigation pane, choose **Edit Master Pages** or **Edit Page Layouts**, depending on what type of file you're editing.
     
   
-4. Select the name of the master page or page layout that you want to add the snippet to. 
+4. Select the name of the master page or page layout that you want to add the snippet to.
     
   
 5. To open the Snippet Gallery, choose **Snippets** in the upper-right corner of the server-side preview.
     
   
-6. On the ribbon, on the **Design** tab, choose **Device Channel Panel**. 
+6. On the ribbon, on the **Design** tab, choose **Device Channel Panel**.
     
   
-7. On the right side of the Snippet Gallery, under **About this Component**, click or select section headers to expand or collapse groups of properties, and then configure any custom settings that you want. 
+7. On the right side of the Snippet Gallery, under **About this Component**, click or select section headers to expand or collapse groups of properties, and then configure any custom settings that you want.
     
     The section named **Important** contains the properties that are key to how this particular snippet works. For a Device Channel Panel, the **IncludedChannels** property is the most important. For this property, enter the alias of each Device Channel that you want to display the content contained in this Device Channel Panel. If you enter more than one alias, separate each with a comma.
     
@@ -72,17 +72,17 @@ Like all snippets, you add a Device Channel Panel snippet from the Snippet Galle
 8. After you configure any other properties, choose **Update**. This updates the HTML snippet on the left side of the page, so that the markup reflects your custom settings. You can always choose **Reset** to return all properties to their default settings.
     
   
-9. On the left side of the Snippet Gallery, under **HTML Snippet**, choose **Copy to Clipboard**. 
+9. On the left side of the Snippet Gallery, under **HTML Snippet**, choose **Copy to Clipboard**.
     
   
-10. In your HTML editor, open the mapped network drive on your computer, and then open the HTML file for the master page or page layout that you're adding the snippet to. 
+10. In your HTML editor, open the mapped network drive on your computer, and then open the HTML file for the master page or page layout that you're adding the snippet to.
     
-    For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md). 
+    For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md).
     
   
-11. In the HTML file, paste the snippet where you want the markup to appear. 
+11. In the HTML file, paste the snippet where you want the markup to appear.
     
-    If you are adding the snippet to a page layout, make sure to paste the snippet inside **PlaceHolderMain**. 
+    If you are adding the snippet to a page layout, make sure to paste the snippet inside **PlaceHolderMain**.
     
   
 12. Replace the **<div>** where `class="DefaultContentBlock"` with your own specific content.
@@ -90,7 +90,7 @@ Like all snippets, you add a Device Channel Panel snippet from the Snippet Galle
     Typically, if you're adding a Device Channel Panel to a page layout, you replace the **<div>** by copying page fields inside the panel.
     
   
-13. Save the page, and then refresh the server-side preview in Design Manager to make sure the Device Channel Panel appears as expected. 
+13. Save the page, and then refresh the server-side preview in Design Manager to make sure the Device Channel Panel appears as expected.
     
     To preview the panel on different channels, you can add query string parameters to the URL. For example, you can append the query string variable  `"DeviceChannel=YourChannelAlias"` to the URL of any page in the server-side preview.
     

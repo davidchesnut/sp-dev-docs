@@ -6,8 +6,8 @@ ms.assetid: 3c96be6a-a8ff-43ad-8361-999293aff71f
 
 
 # What's new in Business Connectivity Services in SharePoint 2013
-Learn about changes and new features in Business Connectivity Services (BCS) for SharePoint 2013, including enhanced support for REST, OData, external events, and app-scoped external content types. 
-Business Connectivity Services (BCS) was introduced in SharePoint 2010 as an improvement to the Business Data Catalog created for Office SharePoint Server 2007. BCS enables SharePoint to access data from external data systems such as SAP, ERP, and CRM, in addition to other data-driven applications that are exposed through Windows Communication Foundation (WCF) services or Open Data (OData) endpoints. 
+Learn about changes and new features in Business Connectivity Services (BCS) for SharePoint 2013, including enhanced support for REST, OData, external events, and app-scoped external content types.
+Business Connectivity Services (BCS) was introduced in SharePoint 2010 as an improvement to the Business Data Catalog created for Office SharePoint Server 2007. BCS enables SharePoint to access data from external data systems such as SAP, ERP, and CRM, in addition to other data-driven applications that are exposed through Windows Communication Foundation (WCF) services or Open Data (OData) endpoints.
   
     
     
@@ -16,7 +16,7 @@ Business Connectivity Services (BCS) was introduced in SharePoint 2010 as an imp
 ## New features and functionality in Business Connectivity Services in SharePoint 2013
 <a name="SP15whatsnewBCS_newfeatures"> </a>
 
-BCS is improved and enhanced for SharePoint 2013, including the new functionality listed in Table 1. 
+BCS is improved and enhanced for SharePoint 2013, including the new functionality listed in Table 1.
   
     
     

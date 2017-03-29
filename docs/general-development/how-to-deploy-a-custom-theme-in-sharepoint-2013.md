@@ -6,8 +6,8 @@ ms.assetid: f703df24-8e56-4e6a-bc37-95acbb3c83e8
 
 
 # How to: Deploy a custom theme in SharePoint 2013
-Learn how to deploy a custom theme to a SharePoint 2013 site by using the user interface or by implementing a feature receiver. 
-SharePoint 2013 includes preinstalled themes. You can create custom themes by creating additional color palettes, font schemes, and master pages. After the files are uploaded to the Theme Gallery and the Master Page Gallery, you can deploy a theme to a site by using the user interface or by using code. For more information about color palettes and font schemes, see  [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md). 
+Learn how to deploy a custom theme to a SharePoint 2013 site by using the user interface or by implementing a feature receiver.
+SharePoint 2013 includes preinstalled themes. You can create custom themes by creating additional color palettes, font schemes, and master pages. After the files are uploaded to the Theme Gallery and the Master Page Gallery, you can deploy a theme to a site by using the user interface or by using code. For more information about color palettes and font schemes, see  [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md).
   
     
     
@@ -16,7 +16,7 @@ SharePoint 2013 includes preinstalled themes. You can create custom themes by cr
 ## Core concepts to know to deploy a theme
 <a name="core"> </a>
 
-Table 1 lists articles that can help you understand the core concepts of deploying themes. 
+Table 1 lists articles that can help you understand the core concepts of deploying themes.
   
     
     
@@ -26,35 +26,35 @@ Table 1 lists articles that can help you understand the core concepts of deployi
 
 |**Article title**|**Description**|
 |:-----|:-----|
-| [Themes overview for SharePoint 2013](themes-overview-for-sharepoint-2013.md)|Learn about the theming experience in SharePoint 2013. |
-| [Feature Events](http://msdn.microsoft.com/en-us/library/ms469501.aspx)|Learn about feature events, which enable you to trap and respond to an event that occurs when a feature is installed in the server farm. |
+| [Themes overview for SharePoint 2013](themes-overview-for-sharepoint-2013.md)|Learn about the theming experience in SharePoint 2013.|
+| [Feature Events](http://msdn.microsoft.com/en-us/library/ms469501.aspx)|Learn about feature events, which enable you to trap and respond to an event that occurs when a feature is installed in the server farm.|
    
 
 ## Upload files to the Theme Gallery and the Master Page Gallery
 <a name="section1"> </a>
 
-You can create custom themes by creating additional color palettes and font schemes and uploading them to the Theme Gallery. The new color palettes and font schemes are then available to you when you modify a design in the theming experience or when you apply a theme programmatically. Similarly, if you want to have additional site layouts to choose from, you can upload additional master pages, and corresponding preview files, to the Master Page Gallery. The following list describes where to place the files: 
+You can create custom themes by creating additional color palettes and font schemes and uploading them to the Theme Gallery. The new color palettes and font schemes are then available to you when you modify a design in the theming experience or when you apply a theme programmatically. Similarly, if you want to have additional site layouts to choose from, you can upload additional master pages, and corresponding preview files, to the Master Page Gallery. The following list describes where to place the files:
   
     
     
 
 - **Master Page Gallery** Lists the master page files, and their corresponding preview files (.preview files). A master page preview file is required if you want the master page to be available in the **Change the look** wizard. JavaScript files and other design assets can also be uploaded to the Master Page Gallery.
     
-    To access the Master Page Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, choose **Master pages**. You can also navigate directly to the site (http://  _SiteName_/_catalogs/masterpage/). 
+    To access the Master Page Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, choose **Master pages**. You can also navigate directly to the site (http://  _SiteName_/_catalogs/masterpage/).
     
   
 - **Theme Gallery** Lists the color palettes and font schemes that are available to the theming experience. SharePoint looks in the **15** folder to determine the available color palettes and font schemes.
     
-    To access the Theme Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, choose **Themes**. You can also navigate directly to the site (http:// _SiteCollectionName_/_catalogs/theme/15/). 
+    To access the Theme Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, choose **Themes**. You can also navigate directly to the site (http:// _SiteCollectionName_/_catalogs/theme/15/).
     
   
-- **Style library** Lists custom CSS files that you want to use in the theming experience. You can navigate directly to the Style library (replace _SiteCollectionName_ and _language_ in this URL: http:// _SiteCollectionName_/Style Library/ _language_/Themable/). 
+- **Style library** Lists custom CSS files that you want to use in the theming experience. You can navigate directly to the Style library (replace _SiteCollectionName_ and _language_ in this URL: http:// _SiteCollectionName_/Style Library/ _language_/Themable/).
     
    > [!NOTE]
-   > Place the custom CSS files in the Themable folder in the Style library, not the Themable folder in the Master Page Gallery. Only CSS files that are stored in the Themable folder in the Style library are recognized by the theming engine. 
+   > Place the custom CSS files in the Themable folder in the Style library, not the Themable folder in the Master Page Gallery. Only CSS files that are stored in the Themable folder in the Style library are recognized by the theming engine.
 
 > [!NOTE]
-> If you have versioning enabled on the Master Page Gallery and the Theme Gallery, you must also publish the design files before they can be used by the theming engine. 
+> If you have versioning enabled on the Master Page Gallery and the Theme Gallery, you must also publish the design files before they can be used by the theming engine.
   
     
     
@@ -63,13 +63,13 @@ You can create custom themes by creating additional color palettes and font sche
 ## Deploy a theme by using the user interface
 <a name="section2"> </a>
 
-A composed look, or design, is the color palette, font scheme, background image, and master page that determine the look and feel of a site. The Composed Looks list contains the composed looks that are available in the design gallery. You create a design by adding a list item in the Composed Looks list and specifying the master page, color palette, font scheme, and background image to use. 
+A composed look, or design, is the color palette, font scheme, background image, and master page that determine the look and feel of a site. The Composed Looks list contains the composed looks that are available in the design gallery. You create a design by adding a list item in the Composed Looks list and specifying the master page, color palette, font scheme, and background image to use.
   
     
     
 
 > [!NOTE]
-> A master page preview file is required if you want the master page to be available in the design gallery. 
+> A master page preview file is required if you want the master page to be available in the design gallery.
   
     
     
@@ -78,13 +78,13 @@ A composed look, or design, is the color palette, font scheme, background image,
 ### To add a composed look
 
 
-1. Choose the **Settings** icon, and then choose **Site settings**. 
+1. Choose the **Settings** icon, and then choose **Site settings**.
     
   
-2. Under **Web Designer Galleries**, choose **Composed looks**. 
+2. Under **Web Designer Galleries**, choose **Composed looks**.
     
   
-3. In the **Composed Looks** list, select **new item**. 
+3. In the **Composed Looks** list, select **new item**.
     
   
 4. In the **Title** text box, enter a title for the design.
@@ -108,10 +108,10 @@ A composed look, or design, is the color palette, font scheme, background image,
 10. In the **Display Order** text box, enter the display order number. This determines where the design appears in the design gallery.
     
   
-11. Choose **Save**. 
+11. Choose **Save**.
     
    > [!NOTE]
-   > If there is an issue with the composed look values, the composed look is not added to the design gallery, and no message is recorded in the log files. The following are possible reasons why a composed look cannot be added: a file cannot be found, there is a formatting issue with one of the files, or SharePoint is unable to access the files. 
+   > If there is an issue with the composed look values, the composed look is not added to the design gallery, and no message is recorded in the log files. The following are possible reasons why a composed look cannot be added: a file cannot be found, there is a formatting issue with one of the files, or SharePoint is unable to access the files.
 You can now use the design gallery to apply the new design to your site. For more information, see  [Choose a theme for your publishing site](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/choose-a-theme-for-your-publishing-site-HA102891580.aspx) on Office.com.
   
     
@@ -120,7 +120,7 @@ You can now use the design gallery to apply the new design to your site. For mor
 ## Deploy a theme by using code
 <a name="section3"> </a>
 
-You can deploy a theme by implementing a feature receiver. 
+You can deploy a theme by implementing a feature receiver.
   
     
     
@@ -133,7 +133,7 @@ You can deploy a theme by implementing a feature receiver.
   
 2. In the  [FeatureActivated](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPFeatureReceiver.FeatureActivated.aspx) method, create an [SPTheme](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPTheme.aspx) object that uses the color palette and font scheme, and then apply the theme to your site.
     
-    The following code example shows how to deploy a custom color palette and font scheme to a site. 
+    The following code example shows how to deploy a custom color palette and font scheme to a site.
     
 
 

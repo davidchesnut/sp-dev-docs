@@ -1,16 +1,16 @@
 ---
 title: Getting familiar with Visual Designer for workflow in SharePoint Designer 2013
-ms.prod: SHAREPOINTDESIGNER
+ms.prod: SHAREPOINT
 ms.assetid: ff9b0314-eea1-47e4-87c7-53ed4de98c30
 ---
 
 
 # Getting familiar with Visual Designer for workflow in SharePoint Designer 2013
-Learn the basic features of the Visual Designer in SharePoint Designer 2013. 
+Learn the basic features of the Visual Designer in SharePoint Designer 2013.
 ## Overview of the Visual Designer in SharePoint Designer 2013
 <a name="section1"> </a>
 
-SharePoint Designer 2013 includes a new workflow design surface called Visual Designer. You use Visual Designer to develop a workflow by dragging shapes onto the design surface. 
+SharePoint Designer 2013 includes a new workflow design surface called Visual Designer. You use Visual Designer to develop a workflow by dragging shapes onto the design surface.
   
     
     
@@ -57,7 +57,7 @@ The **Shapes** pane on the left contains workflow shapes that you can drag to th
     
     
 
-The figure shows a workflow in Visual Designer. 
+The figure shows a workflow in Visual Designer.
   
     
     
@@ -119,7 +119,7 @@ You can switch between **Views** in the **Manage** portion of the **Workflow** r
   
     
     
-A workflow can be developed in either the Text-Based Designer or the Visual Designer or both. For example, if you are developing a workflow by using the Text-Based Designer you can switch the view to the Visual Designer and continue to develop the same workflow. Likewise, you can also begin developing a workflow by using the Visual Designer and then switch the view to the Text-Based Designer and continue to develop the same workflow. Moving back and forth between views provides flexibility in workflow development. 
+A workflow can be developed in either the Text-Based Designer or the Visual Designer or both. For example, if you are developing a workflow by using the Text-Based Designer you can switch the view to the Visual Designer and continue to develop the same workflow. Likewise, you can also begin developing a workflow by using the Visual Designer and then switch the view to the Text-Based Designer and continue to develop the same workflow. Moving back and forth between views provides flexibility in workflow development.
   
     
     

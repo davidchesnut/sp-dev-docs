@@ -6,36 +6,36 @@ ms.assetid: 7923d60d-84b9-44d6-8185-e5236efaf502
 
 
 # Create a SharePoint workflow app using Visual Studio 2012
-Walk through the process of creating a workflow SharePoint Add-in using Microsoft Visual Studio 2012. 
+Walk through the process of creating a workflow SharePoint Add-in using Microsoft Visual Studio 2012.
 ## Prerequisites
 <a name="bmPreReq"> </a>
 
-This development scenario presumes that a SharePoint Server 2013 farm and a Workflow Manager 1.0 farm are installed and paired. These two farms can be located on the same or on separate server computers. The scenario further presumes that workflow development is taking place remotely - that is, on a computer separate from either of the server computers - and is using Microsoft Visual Studio 2012 or later. 
+This development scenario presumes that a SharePoint Server 2013 farm and a Workflow Manager 1.0 farm are installed and paired. These two farms can be located on the same or on separate server computers. The scenario further presumes that workflow development is taking place remotely - that is, on a computer separate from either of the server computers - and is using Microsoft Visual Studio 2012 or later.
   
     
     
 
-- On the server platforms: 
+- On the server platforms:
     
-  - Windows Server 2008 R2. 
-    
-  
-  - Microsoft SharePoint Server 2013 
+  - Windows Server 2008 R2.
     
   
-  - Workflow Manager 1.0 
+  - Microsoft SharePoint Server 2013
     
   
-- On the development platform: 
-    
-  - Microsoft Visual Studio 2012 or later. 
+  - Workflow Manager 1.0
     
   
-  - Office Developer Tools for Visual Studio 2013. 
+- On the development platform:
+    
+  - Microsoft Visual Studio 2012 or later.
+    
+  
+  - Office Developer Tools for Visual Studio 2013.
     
    > [!NOTE]
-   > Office Developer Tools for Visual Studio 2013 is only required when using Visual Studio 2012. Later versions of Visual Studio include the Office Developer Tools. 
-For assistance setting up and configuring your SharePoint workflow development environment, see the following: 
+   > Office Developer Tools for Visual Studio 2013 is only required when using Visual Studio 2012. Later versions of Visual Studio include the Office Developer Tools.
+For assistance setting up and configuring your SharePoint workflow development environment, see the following:
   
     
     
@@ -53,11 +53,11 @@ For assistance setting up and configuring your SharePoint workflow development e
 ## Get started
 <a name="bmGetStarted"> </a>
 
-A common workflow scenario in business settings is the document review and approval process. In this walkthrough, we create an SharePoint Add-in that automates the routing, notifications, and approval (or rejection) of a document using a SharePoint workflow. We create this workflow using the SharePoint workflow designer in Microsoft Visual Studio 2012. 
+A common workflow scenario in business settings is the document review and approval process. In this walkthrough, we create an SharePoint Add-in that automates the routing, notifications, and approval (or rejection) of a document using a SharePoint workflow. We create this workflow using the SharePoint workflow designer in Microsoft Visual Studio 2012.
   
     
     
-Here's a flowchart that depicts the course of the workflow we're going to create. 
+Here's a flowchart that depicts the course of the workflow we're going to create.
   
     
     
@@ -84,22 +84,22 @@ In summary, the workflow does the following:
     
     
 
-1. A document change event associated with a specific document library launches the workflow instance. 
+1. A document change event associated with a specific document library launches the workflow instance.
     
   
-2. If the document's status is set to "Ready For Review," the workflow assigns a task to a prearranged reviewer, then sends the reviewer an email notification about the task. 
+2. If the document's status is set to "Ready For Review," the workflow assigns a task to a prearranged reviewer, then sends the reviewer an email notification about the task.
     
   
-3. If the reviewer fails to approve the document, the document file remains in the Draft Documents library; however, the document status is set to "Rejected." 
+3. If the reviewer fails to approve the document, the document file remains in the Draft Documents library; however, the document status is set to "Rejected."
     
   
-4. If the reviewer approves the document, the workflow copies the document into a Published Documents library. The original file remains in the Draft Documents library, but its status is set to "Published." 
+4. If the reviewer approves the document, the workflow copies the document into a Published Documents library. The original file remains in the Draft Documents library, but its status is set to "Published."
     
   
 
     
 > [!IMPORTANT]
-> Before you start this walkthrough, ensure that you have a properly installed and configured workflow development environment. For more information, see  [Prepare to set up and configure a SharePoint workflow development environment](prepare-to-set-up-and-configure-a-sharepoint-workflow-development-environment.md). Also, ensure that you have a SharePoint Server 2013 instance that you can develop your workflow against. For more information, see  [Install SharePoint 2013](http://technet.microsoft.com/en-us/library/cc303424.aspx). 
+> Before you start this walkthrough, ensure that you have a properly installed and configured workflow development environment. For more information, see  [Prepare to set up and configure a SharePoint workflow development environment](prepare-to-set-up-and-configure-a-sharepoint-workflow-development-environment.md). Also, ensure that you have a SharePoint Server 2013 instance that you can develop your workflow against. For more information, see  [Install SharePoint 2013](http://technet.microsoft.com/en-us/library/cc303424.aspx).
   
     
     
@@ -108,7 +108,7 @@ In summary, the workflow does the following:
 ## Prepare your environment
 <a name="bmPrepare"> </a>
 
-The first step is preparing our SharePoint site with document libraries that our workflow will use. 
+The first step is preparing our SharePoint site with document libraries that our workflow will use.
   
     
     
@@ -116,7 +116,7 @@ The first step is preparing our SharePoint site with document libraries that our
 1. Launch Visual Studio 2012 and create a new project using the **App for SharePoint 2013** template, as depicted in Figure 2.
     
    > [!NOTE]
-   > In this walkthrough, the solution file is named "DocApprovalWorkflow1". It is recommended that you use the same name. However, if you name your solution differently, be sure that you make necessary adjustments in the instructions that follow. 
+   > In this walkthrough, the solution file is named "DocApprovalWorkflow1". It is recommended that you use the same name. However, if you name your solution differently, be sure that you make necessary adjustments in the instructions that follow.
 
    **Figure 2. Create new project in Visual Studio 2012**
 
@@ -128,15 +128,15 @@ The first step is preparing our SharePoint site with document libraries that our
   
 
   
-2. On your associated SharePoint site, create two new document libraries by doing the following: 
+2. On your associated SharePoint site, create two new document libraries by doing the following:
     
-  - In **Solution Explorer**, right-click on the "DocApprovalWorkflow1" icon and select **Add** > **New Item** and then select **List**. 
+  - In **Solution Explorer**, right-click on the "DocApprovalWorkflow1" icon and select **Add** > **New Item** and then select **List**.
     
   
   - In the resulting **SharePoint Customization Wizard**, enter "Draft Documents" in the name field; then select "Document Library" in the drop-down under the first radio button, as depicted in Figure 3. 
     
   
-  - Click **Next**, then take default settings, and then click **Finish**. 
+  - Click **Next**, then take default settings, and then click **Finish**.
     
    **Figure 3. SharePoint customization wizard for List settings.**
 
@@ -148,7 +148,7 @@ The first step is preparing our SharePoint site with document libraries that our
   
 
   
-3. Create the second document library using the same steps as above, except name this second library "Published Documents". 
+3. Create the second document library using the same steps as above, except name this second library "Published Documents".
     
   
 4. Add two custom columns to **both** of the new document libraries that you just created:
@@ -161,19 +161,19 @@ The first step is preparing our SharePoint site with document libraries that our
   
 5. On the **Document Status** column, add five choices by expanding the **Type** property in the property grid, then clicking the ellipsis button ( **…**) on the **Items** property. Enter the choice values in the dialog box that appears, as shown in Figure 4.
     
-  - Draft in Progress 
+  - Draft in Progress
     
   
-  - Ready for Review 
+  - Ready for Review
     
   
-  - Approved for Publishing 
+  - Approved for Publishing
     
   
-  - Rejected 
+  - Rejected
     
   
-  - Published 
+  - Published
     
   
 
@@ -191,7 +191,7 @@ The first step is preparing our SharePoint site with document libraries that our
 ## Create the basic workflow
 <a name="bmCreateWorkflow"> </a>
 
-Now we're ready to create the workflow itself. 
+Now we're ready to create the workflow itself.
   
     
     
@@ -220,7 +220,7 @@ Now we're ready to create the workflow itself.
   
 
   
-3. In the **SharePoint Customization Wizard**, associate the new workflow with the Draft Document library; then, opt to create a new history list and a new workflow task list, as shown in Figure 7. Then click **Next**. 
+3. In the **SharePoint Customization Wizard**, associate the new workflow with the Draft Document library; then, opt to create a new history list and a new workflow task list, as shown in Figure 7. Then click **Next**.
     
    **Figure 7. Completing the SharePoint Customization Wizard for the new workflow.**
 
@@ -232,7 +232,7 @@ Now we're ready to create the workflow itself.
   
 
   
-4. Set the workflow to start automatically when an item in the Draft Documents library is changed. You can also leave the check box for manually starting the workflow selected; this allows you to easily test the workflow without needing to change a document. See Figure 8. 
+4. Set the workflow to start automatically when an item in the Draft Documents library is changed. You can also leave the check box for manually starting the workflow selected; this allows you to easily test the workflow without needing to change a document. See Figure 8.
     
    **Figure 8. Set the activation parameters for the workflow.**
 
@@ -243,7 +243,7 @@ Now we're ready to create the workflow itself.
 
     
    > [!NOTE]
-   > You can change the workflow association type after the workflow has been created by using the property grid with the workflow selected in **Solution Explorer** (see Figure 9). Then click **Finish**. 
+   > You can change the workflow association type after the workflow has been created by using the property grid with the workflow selected in **Solution Explorer** (see Figure 9). Then click **Finish**.
 
    **Figure 9. The workflow property grid.**
 
@@ -255,19 +255,19 @@ Now we're ready to create the workflow itself.
   
 
   
-5. Finally, configure your SharePoint Server to manage outgoing email using the SMTP service. For instructions, see  [Configure outgoing email for a SharePoint 2013 farm](http://technet.microsoft.com/en-us/library/cc263462.aspx). This is necessary to allow the workflow to send email notifications related to workflow tasks. 
+5. Finally, configure your SharePoint Server to manage outgoing email using the SMTP service. For instructions, see  [Configure outgoing email for a SharePoint 2013 farm](http://technet.microsoft.com/en-us/library/cc263462.aspx). This is necessary to allow the workflow to send email notifications related to workflow tasks.
     
   
 
 ## Implement the workflow logic
 <a name="bmImplementLogic"> </a>
 
-Now that we have our SharePoint Server set up and our basic workflow created, we can now design the workflow logic. 
+Now that we have our SharePoint Server set up and our basic workflow created, we can now design the workflow logic.
   
     
     
 
-1. Open the workflow designer by double-clicking on the workflow project item in **Solution Explorer**. You will see the workflow designer surface (and the workflow toolbox); the designer is populated with an initial workflow stage named **Sequence**. 
+1. Open the workflow designer by double-clicking on the workflow project item in **Solution Explorer**. You will see the workflow designer surface (and the workflow toolbox); the designer is populated with an initial workflow stage named **Sequence**.
     
   
 2. Our first step is to grab the **LookupSPListItem** activity from the toolbox (see Figure 10) and drop it in the **Sequence** stage on the designer surface. We use this activity to get the status of the document at any given time, which the **LookupSPListItem** activity returns as a [DynamicValue](http://msdn.microsoft.com/en-us/library/windowsazure/microsoft.activities.dynamicvalue%28v=azure.10%29.aspx) object that contains a set of SharePoint list item properties as key-value pairs.
@@ -284,7 +284,7 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
 1. To configure the **LookupSPListItem** activity, first click on it in the designer to select it. This activates the property grid for the activity.
     
   
-2. Use the combo boxes in the property grid to configure the **LookupSPListItem** activity to use "current item" for **ItemId** and "current list" as **ListId**, as shown in Figure 11. 
+2. Use the combo boxes in the property grid to configure the **LookupSPListItem** activity to use "current item" for **ItemId** and "current list" as **ListId**, as shown in Figure 11.
     
    **Figure 11. Configuring LookupSPListItem properties.**
 
@@ -315,7 +315,7 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
 
   
 
-1. For **Entity Type**, select **List Item of Draft Documents**. 
+1. For **Entity Type**, select **List Item of Draft Documents**.
     
   
 2. In the data grid, in the **Path** column, click *Create Property*  to open a combo box that contains available properties for list items in the Draft Documents library. Select **Document Status** from the combo box.
@@ -336,12 +336,12 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
   
 
   
-5. We now have the list item values that we need. Next step is to set up the workflow to check whether the document is "ready for review" and to take the appropriate action when it is. 
+5. We now have the list item values that we need. Next step is to set up the workflow to check whether the document is "ready for review" and to take the appropriate action when it is.
     
 1. From the toolbox, drag the **If** activity onto the workflow designer surface. (You'll find the **If** activity in the **Control Flow** section of the toolbox.)
     
   
-2. Set the **If** condition to `DocumentStatus.Equals("Ready for Review")`, as shown in Figure 14. 
+2. Set the **If** condition to `DocumentStatus.Equals("Ready for Review")`, as shown in Figure 14.
     
    **Figure 14. Creating an If/Then clause to trigger a task.**
 
@@ -356,7 +356,7 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
 3. Next, from the **SP - Task** section of the toolbox, drag a **SingleTask** activity and drop it in the **Then** box of your **If** activity. In effect, you have configured the workflow such that **If** the document is ready for review, **Then** it will then complete this task.
     
   
-6. Our next step is to configure the task that we just created using the configuration dialog box, shown in Figure 15. 
+6. Our next step is to configure the task that we just created using the configuration dialog box, shown in Figure 15.
     
    **Figure 15. Task configuration dialog box.**
 
@@ -395,16 +395,16 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
      ![Cast the "Approver" variable to string data type](images/ngGK_Fig16.png)
   
 
-    At the present point in this walkthrough you have created and configured a workflow task that does two things: It sets a document to be reviewed, but also sends an email to the task assignee (the "Approver" in this case) notifying him or her that a task has been assigned and is waiting for actions. 
+    At the present point in this walkthrough you have created and configured a workflow task that does two things: It sets a document to be reviewed, but also sends an email to the task assignee (the "Approver" in this case) notifying him or her that a task has been assigned and is waiting for actions.
     
   
-7. Let's look at the property grid for the **SingleTask** activity. Scroll to the bottom of the property grid and note in the **Output** section there are two properties, **Outcome** and **TaskItemId**, which are out-arguments. 
+7. Let's look at the property grid for the **SingleTask** activity. Scroll to the bottom of the property grid and note in the **Output** section there are two properties, **Outcome** and **TaskItemId**, which are out-arguments.
     
     Note the name of the **Outcome** variable: _outcome_0_ (or similar). We use this variable to check the outcome of the task - that is, whether the approver has approved or rejected the document.
     
    > [!NOTE]
    > The **Outcome** out-argument returns an **Int32** value corresponding to the index of the outcome - that is, **0** for "Approved" and **1** for "Rejected". These integers are the default values provided in the out-of-box SharePoint site column named "Task Outcome."
-8. Now, in order for the workflow to check the outcome of the task, we need to add another **If** activity and place it following the **SingleTask** activity, but inside the **Then** area, as shown in Figure 17. Setting the **If** condition to " `outcome_0 == 0`" tells us whether the document was approved. 
+8. Now, in order for the workflow to check the outcome of the task, we need to add another **If** activity and place it following the **SingleTask** activity, but inside the **Then** area, as shown in Figure 17. Setting the **If** condition to " `outcome_0 == 0`" tells us whether the document was approved.
     
    **Figure 17. Adding the IF activity to check the task status.**
 
@@ -416,7 +416,7 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
   
 
   
-9. If the approver has set the task to "Approved," we update the document status to "Approved for Publishing," then copy the document file to the Published Documents library. Alternatively, if the approver has rejected the document, we need to set the document status to "Rejected." 
+9. If the approver has set the task to "Approved," we update the document status to "Approved for Publishing," then copy the document file to the Published Documents library. Alternatively, if the approver has rejected the document, we need to set the document status to "Rejected."
     
 1. In this new **If** activity, drag an **UpdateListItem** activity into the **Then** box.
     
@@ -436,7 +436,7 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
   
 
   
-4. In the dialog box, first use the combo box to set **Entity Type** to **List Item of Draft Documents** (shown in Figure 18). Then, in the data grid, click **Create Property** and from the drop-down list select "Document Status." Then, under the **Value** column, type "Approved for Publication" (including quotation marks) and click **OK**. 
+4. In the dialog box, first use the combo box to set **Entity Type** to **List Item of Draft Documents** (shown in Figure 18). Then, in the data grid, click **Create Property** and from the drop-down list select "Document Status." Then, under the **Value** column, type "Approved for Publication" (including quotation marks) and click **OK**.
     
   
 10. In the **Then** area of the current **If** activity, drag a **CopyItem** activity and place it directly below the **UpdateListItem** activity, as shown in Figure 19.
@@ -460,7 +460,7 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
 
     
    > [!NOTE]
-   > For the purpose of this walkthrough we are going to assume that all of our published documents come out of the Draft Documents library; therefore, we do not need to worry about controlling for duplicate file names. 
+   > For the purpose of this walkthrough we are going to assume that all of our published documents come out of the Draft Documents library; therefore, we do not need to worry about controlling for duplicate file names.
 11. Finally, we need to add an activity to handle the case where the reviewer rejects the document. We do this by adding an **UpdateListItem** activity to the **Else** area of our current **If** activity. Configure this **UpdateListItem** activity just as you did the prior one in step 9(c), except that now we want to set the document status to "Rejected," as shown in Figure 21.
     
    **Figure 21. Configuring properties of UpdateListItem activity for rejected documents.**
@@ -473,7 +473,7 @@ Now that we have our SharePoint Server set up and our basic workflow created, we
   
 
   
-This completes "Creating a SharePoint document approval workflow." The completed workflow is shown in Figure 22. 
+This completes "Creating a SharePoint document approval workflow." The completed workflow is shown in Figure 22.
   
     
     
@@ -503,7 +503,7 @@ This completes "Creating a SharePoint document approval workflow." The completed
 ## Package and deploy the workflow
 <a name="bk_deploy"> </a>
 
-Following are resources that provide guidance for packaging and deploying your workflow as an SharePoint Add-in: 
+Following are resources that provide guidance for packaging and deploying your workflow as an SharePoint Add-in:
   
     
     

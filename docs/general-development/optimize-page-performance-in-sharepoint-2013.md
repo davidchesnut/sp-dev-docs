@@ -7,21 +7,21 @@ ms.assetid: 262caeef-64fd-4e02-b947-d772faf01159
 
 
 # Optimize page performance in SharePoint 2013
-Learn about features to improve performance in pages in SharePoint 2013. These features can be used to enhance the experience in geographically distributed implementations. 
+Learn about features to improve performance in pages in SharePoint 2013. These features can be used to enhance the experience in geographically distributed implementations.
  * **Provided by: *** David Crawford, Microsoft Corporation
   
     
     
 
-This article provides instructions that will help optimize performance in SharePoint. SharePoint 2013 includes features that help optimize page loading over a Wide Area Network (WAN). Designing pages to make them as small and responsive as possible complements these performance improvements. 
+This article provides instructions that will help optimize performance in SharePoint. SharePoint 2013 includes features that help optimize page loading over a Wide Area Network (WAN). Designing pages to make them as small and responsive as possible complements these performance improvements.
 ## Minimal Download Strategy (MDS)
 <a name="MDS"> </a>
 
-Minimal Download Strategy (MDS) relies on the ability to download only specific portions of a page that is rendered fully on the server. Downloading only the specific portions provides a very efficient loading model. The fully rendered page is not returned to the client. The server must be able to accurately identify those pieces that must be part of the response and those that are not necessary. The pieces that may or may be not part of the response include scripts, styles, and markup. 
+Minimal Download Strategy (MDS) relies on the ability to download only specific portions of a page that is rendered fully on the server. Downloading only the specific portions provides a very efficient loading model. The fully rendered page is not returned to the client. The server must be able to accurately identify those pieces that must be part of the response and those that are not necessary. The pieces that may or may be not part of the response include scripts, styles, and markup.
   
     
     
-The following table shows some benefits of using MDS. 
+The following table shows some benefits of using MDS.
   
     
     
@@ -31,11 +31,11 @@ The following table shows some benefits of using MDS.
 
 |**Performance**|**Visuals**|
 |:-----|:-----|
-|Fewer amounts of data downloaded per page request. |No browser flashing caused by full page reload. |
-|Browser needs to update only the regions of the page that changed since the last request. |Easy to identify animations. |
-|Small amount of processing required on the client. > [!NOTE]> Half of client Page-Load-Time 1 (PLT1) is due to chrome cascading style sheet (CSS) rendering and JavaScript parsing and execution.           |Changes in the page attract user's attention. |
+|Fewer amounts of data downloaded per page request.|No browser flashing caused by full page reload.|
+|Browser needs to update only the regions of the page that changed since the last request.|Easy to identify animations.|
+|Small amount of processing required on the client. > [!NOTE]> Half of client Page-Load-Time 1 (PLT1) is due to chrome cascading style sheet (CSS) rendering and JavaScript parsing and execution.          |Changes in the page attract user's attention.|
    
-Both AJAX and MDS are technologies that request only sections of the page to minimize data download and improve page responsiveness. The following figure shows the MDS architecture. 
+Both AJAX and MDS are technologies that request only sections of the page to minimize data download and improve page responsiveness. The following figure shows the MDS architecture.
   
     
     
@@ -53,7 +53,7 @@ Both AJAX and MDS are technologies that request only sections of the page to min
   
     
     
-The MDS framework assumes that a master page defines a chrome and content regions. In MDS, SharePoint navigating to a page means requesting just the content for those regions and the resources that the page depends on. Once that content downloads to the browser, script code applies the markup or resources to the page as appropriate. The browser behaves as if the requested page had been loaded completely from the server. 
+The MDS framework assumes that a master page defines a chrome and content regions. In MDS, SharePoint navigating to a page means requesting just the content for those regions and the resources that the page depends on. Once that content downloads to the browser, script code applies the markup or resources to the page as appropriate. The browser behaves as if the requested page had been loaded completely from the server.
   
     
     
@@ -75,7 +75,7 @@ When users are browsing a SharePoint website in MDS mode, they will not cause fu
   
     
     
-The following table shows some examples of URLs formatted in MDS mode. 
+The following table shows some examples of URLs formatted in MDS mode.
   
     
     
@@ -85,9 +85,9 @@ The following table shows some examples of URLs formatted in MDS mode.
 
 |**Non-MDS URL**|**MDS URL**|
 |:-----|:-----|
-|http://server/SitePages/ |http://server/_layouts/15/start.aspx#/SitePages/ |
-|http://server/subsite/SitePages/home.aspx |http://server/subsite/_layouts/15/start.aspx#/SitePages/home.aspx |
-|http://server/_layouts/15/viewlsts.aspx?BaseType=0 |http://server/_layouts/15/start.aspx#/_layouts/viewlsts.aspx?BaseType=0 |
+|http://server/SitePages/|http://server/_layouts/15/start.aspx#/SitePages/|
+|http://server/subsite/SitePages/home.aspx|http://server/subsite/_layouts/15/start.aspx#/SitePages/home.aspx|
+|http://server/_layouts/15/viewlsts.aspx?BaseType=0|http://server/_layouts/15/start.aspx#/_layouts/viewlsts.aspx?BaseType=0|
    
 The object used for the AJAX navigation is **AjaxNavigate**. By default, there is an instance of **AjaxNavigate** available for you to use named **ajaxNavigate**. To use the **ajaxNavigate** instance:
   
@@ -105,7 +105,7 @@ If you want a control or Web Part to listen to the navigation events, you can us
   
     
     
-MDS also supports multiple hash marks in key/value pairs. MDS appends the hash marks after the URL. The format of hash marks in the URL is: http://server/_layouts/15/start.aspx#/SitePages/page.aspx#key1=value1#key2=value2. The following code example shows how to update the hash marks. 
+MDS also supports multiple hash marks in key/value pairs. MDS appends the hash marks after the URL. The format of hash marks in the URL is: http://server/_layouts/15/start.aspx#/SitePages/page.aspx#key1=value1#key2=value2. The following code example shows how to update the hash marks.
   
     
     
@@ -119,28 +119,28 @@ ajaxNavigate.update(null, updateParts);
 
 ```
 
-If you find that the pages in your website constantly fall back to download the full page, you might want to consider turning the MDS feature off. You might also want to turn the MDS feature off if you need to use a different strategy to improve performance. 
+If you find that the pages in your website constantly fall back to download the full page, you might want to consider turning the MDS feature off. You might also want to turn the MDS feature off if you need to use a different strategy to improve performance.
   
     
     
-A particular element in the page must make sure that the critical resources needed to work are known to the MDS infrastructure at server rendering time. To convert an existing project to use MDS, you need to update the following files and components: 
+A particular element in the page must make sure that the critical resources needed to work are known to the MDS infrastructure at server rendering time. To convert an existing project to use MDS, you need to update the following files and components:
   
     
     
 
-- Master pages 
+- Master pages
     
   
-- ASP.NET pages 
+- ASP.NET pages
     
   
-- Custom master pages for errors 
+- Custom master pages for errors
     
   
-- JavaScript files 
+- JavaScript files
     
   
-- Controls and Web Parts 
+- Controls and Web Parts
     
   
 
@@ -226,7 +226,7 @@ To include a JavaScript file, use the **SharePoint:ScriptLink** control. The fol
 
 
 > [!CAUTION]
-> Including a JavaScript file using the HTML script tag is not supported in MDS mode, because the server logic cannot identify the file as a required resource when the response is rendered. 
+> Including a JavaScript file using the HTML script tag is not supported in MDS mode, because the server logic cannot identify the file as a required resource when the response is rendered.
   
     
     
@@ -309,13 +309,13 @@ You should replace HTML inline script elements with **SharePoint:ScriptBlock** c
 
 |
    
-The introduction of the **SharePoint:ScriptBlock** in the page can change the scope of variables in page. Sometimes it is necessary to move the declaration of variables from `<% %>` to `<script runat="server"> <script>`. To test this, load the page in the browser after you perform updates. 
+The introduction of the **SharePoint:ScriptBlock** in the page can change the scope of variables in page. Sometimes it is necessary to move the declaration of variables from `<% %>` to `<script runat="server"> <script>`. To test this, load the page in the browser after you perform updates.
   
     
     
 
 > [!NOTE]
-> The MDS infrastructure does not support VBScript, because it cannot be registered as a script in ASP.NET. Scripts have to be converted to JavaScript. 
+> The MDS infrastructure does not support VBScript, because it cannot be registered as a script in ASP.NET. Scripts have to be converted to JavaScript.
   
     
     
@@ -366,7 +366,7 @@ Although the master page for the error page and the master page for **start.aspx
 
 ### JavaScript files
 
-JavaScript files should include only function declarations. Nonetheless, there are many legacy scripts that contain global variable initializations. Global variables need to be reinitialized when a new page is rendered in MDS mode. You can use the **ExecuteAndRegisterBeginEndFunctions** to initialize global variables. The following code example shows how to use the **ExecuteAndRegisterBeginEndFunctions**. 
+JavaScript files should include only function declarations. Nonetheless, there are many legacy scripts that contain global variable initializations. Global variables need to be reinitialized when a new page is rendered in MDS mode. You can use the **ExecuteAndRegisterBeginEndFunctions** to initialize global variables. The following code example shows how to use the **ExecuteAndRegisterBeginEndFunctions**.
   
     
     
@@ -382,16 +382,16 @@ The **ExecuteAndRegisterBeginEndFunctions** has the following parameters:
     
     
 
--  _tag_: The name of the file that registers the callbacks; it is used only for debugging purposes. 
+-  _tag_: The name of the file that registers the callbacks; it is used only for debugging purposes.
     
   
--  _beginFunc_: A function that is called before you request the page delta. 
+-  _beginFunc_: A function that is called before you request the page delta.
     
   
--  _endFunc_: A function that is called after you retrieve the delta, but before the HTML and JavaScript for the new page are applied. 
+-  _endFunc_: A function that is called after you retrieve the delta, but before the HTML and JavaScript for the new page are applied.
     
   
--  _loadFunc_: A function that is called after the HTML and JavaScript for the new page is applied. 
+-  _loadFunc_: A function that is called after the HTML and JavaScript for the new page is applied.
     
   
 
@@ -445,7 +445,7 @@ SPPageContentManager.RegisterClientScriptBlock(this, typeof(MyType), "MyKey", "v
     
     
 
-The MDS engine uses the first parameter to filter the scripts. Here are the rules for filtering when a page is rendered in MDS delta mode: 
+The MDS engine uses the first parameter to filter the scripts. Here are the rules for filtering when a page is rendered in MDS delta mode:
   
     
     
@@ -456,14 +456,14 @@ The MDS engine uses the first parameter to filter the scripts. Here are the rule
 - If the first argument is not of type **Page** and the control falls under a **SharePoint:AsyncDelta**, the scripts will execute in the browser.
     
   
-- If the first argument is a Web Part, the scripts will execute in the browser. 
+- If the first argument is a Web Part, the scripts will execute in the browser.
     
   
-Many APIs in previous versions of SharePoint did not provide the current control as an argument. The public object model in SharePoint 2013 was designed to provide an alternate method to register the resources. The methods that do not provide the current control as an argument are still in the API for backward compatibility. 
+Many APIs in previous versions of SharePoint did not provide the current control as an argument. The public object model in SharePoint 2013 was designed to provide an alternate method to register the resources. The methods that do not provide the current control as an argument are still in the API for backward compatibility.
   
     
     
-You can navigate between two pages by using a new function named **SPUpdatePage**. When a control or Web Part is rendered in MDS delta mode, the **HyperLink** controls must add the **onclick** handler and call **SPUpdatePage**. 
+You can navigate between two pages by using a new function named **SPUpdatePage**. When a control or Web Part is rendered in MDS delta mode, the **HyperLink** controls must add the **onclick** handler and call **SPUpdatePage**.
   
     
     
@@ -475,11 +475,11 @@ You must update the XSLT used by Web Parts because all the resources must be add
 ## Optimize page downloads
 <a name="MDS"> </a>
 
-Once you understand the composition of a page, you can use different methods to optimize the download experience for that page. In general, the goal is to minimize the number of round trips between client and server computers and to reduce the amount of data that goes over the network. The guidance in this article includes recommendations that you can apply broadly to a variety of different implementations of SharePoint 2013. 
+Once you understand the composition of a page, you can use different methods to optimize the download experience for that page. In general, the goal is to minimize the number of round trips between client and server computers and to reduce the amount of data that goes over the network. The guidance in this article includes recommendations that you can apply broadly to a variety of different implementations of SharePoint 2013.
   
     
     
-Table 7 shows example loading times that illustrate the difference between the first, second, and subsequent page loads. 
+Table 7 shows example loading times that illustrate the difference between the first, second, and subsequent page loads.
   
     
     
@@ -488,38 +488,38 @@ Table 7 shows example loading times that illustrate the difference between the f
 
 |||
 |:-----|:-----|
-|First page load |3-4 seconds |
-|Second page load |1.5 seconds |
-|Subsequent page loads |1 second |
+|First page load|3-4 seconds|
+|Second page load|1.5 seconds|
+|Subsequent page loads|1 second|
    
 
 > [!NOTE]
-> Loading times might be different in your particular scenario. Loading times are affected by many variables, including, but not limited to, page size, latency, and server load. 
+> Loading times might be different in your particular scenario. Loading times are affected by many variables, including, but not limited to, page size, latency, and server load.
   
     
     
 
-You should categorize page optimization techniques into one of two categories: first page request and subsequent page requests. Optimizations for the first page request (page load time 1 or PLT1) are those kinds of optimizations that are effective the first time the page is requested, but that don't necessarily affect subsequent page requests. The following are some optimizations for PLT1: 
+You should categorize page optimization techniques into one of two categories: first page request and subsequent page requests. Optimizations for the first page request (page load time 1 or PLT1) are those kinds of optimizations that are effective the first time the page is requested, but that don't necessarily affect subsequent page requests. The following are some optimizations for PLT1:
   
     
     
 
-- Optimize HTML markup. 
+- Optimize HTML markup.
     
   
-- Use consolidated images and files; for example, combine multiple CSS files into one. Combine images into an image strip or cluster. 
+- Use consolidated images and files; for example, combine multiple CSS files into one. Combine images into an image strip or cluster.
     
   
-- Use compression (crunch) techniques. For more information, see  [Compress (crunch) JavaScript and CSS files](optimize-page-performance-in-sharepoint-2013.md#OptimizingPagePerformance_Crunch). 
+- Use compression (crunch) techniques. For more information, see  [Compress (crunch) JavaScript and CSS files](optimize-page-performance-in-sharepoint-2013.md#OptimizingPagePerformance_Crunch).
     
   
-- Verify that you are referencing the production version of common JavaScript libraries, such as jQuery, instead of the debug versions. 
+- Verify that you are referencing the production version of common JavaScript libraries, such as jQuery, instead of the debug versions.
     
   
-- Consider using a well-known content delivery network (CDN) such as the  [Microsoft Ajax Content Delivery Network](http://www.asp.net/ajaxlibrary/cdn.ashx). The files required in your pages may already be cached by the client browser. 
+- Consider using a well-known content delivery network (CDN) such as the  [Microsoft Ajax Content Delivery Network](http://www.asp.net/ajaxlibrary/cdn.ashx). The files required in your pages may already be cached by the client browser.
     
   
-Optimizations for subsequent page requests are those that can improve the user experience for a subsequent page load. The key is that you need to balance loss in functionality against the gain achieved. If gain is only realized the first time a user hits a site, the optimization might not be worth the loss in functionality. 
+Optimizations for subsequent page requests are those that can improve the user experience for a subsequent page load. The key is that you need to balance loss in functionality against the gain achieved. If gain is only realized the first time a user hits a site, the optimization might not be worth the loss in functionality.
   
     
     
@@ -527,11 +527,11 @@ Optimizations for subsequent page requests are those that can improve the user e
 ## Compress (crunch) JavaScript and CSS files
 <a name="OptimizingPagePerformance_Crunch"> </a>
 
-Files that contain JavaScript and styles may be significantly reduced in size by removing whitespaces, style inheritance, and code reuse. Some libraries come in both regular (debug) and compressed (crunched) versions. You can find a variety of tools to automate file crunching by searching the Internet. 
+Files that contain JavaScript and styles may be significantly reduced in size by removing whitespaces, style inheritance, and code reuse. Some libraries come in both regular (debug) and compressed (crunched) versions. You can find a variety of tools to automate file crunching by searching the Internet.
   
     
     
-Verify that the compressed versions are deployed to production servers. This example shows how a CSS file can be reduced in size through some relatively simple rewriting. 
+Verify that the compressed versions are deployed to production servers. This example shows how a CSS file can be reduced in size through some relatively simple rewriting.
   
     
     
@@ -582,7 +582,7 @@ Verify that the compressed versions are deployed to production servers. This exa
 
 ```
 
-You can usually find ways to achieve the same styling and reduce the size of your files by efficiently rewriting your CSS files. The following example shows how to optimize the previous CSS size by inheriting the styles from a parent element. 
+You can usually find ways to achieve the same styling and reduce the size of your files by efficiently rewriting your CSS files. The following example shows how to optimize the previous CSS size by inheriting the styles from a parent element.
   
     
     
@@ -599,7 +599,7 @@ BODY {font:100% Tahoma,sans-serif}
 .art-Txt {font: 83%}
 ```
 
-The first version of the CSS is 783 characters long, and the second is 140 characters long. 
+The first version of the CSS is 783 characters long, and the second is 140 characters long.
   
     
     
@@ -615,15 +615,15 @@ Entity tags (ETags) can cause the client to unnecessarily reload files. ETags ar
 ## Cache settings
 <a name="OptimizingPagePerformance_Crunch"> </a>
 
-Use Fiddler or a similar tool to verify whether the cache is serving requests. Some common reasons caching not serving requests include: 
+Use Fiddler or a similar tool to verify whether the cache is serving requests. Some common reasons caching not serving requests include:
   
     
     
 
-- Resources do not have an expiration date value. 
+- Resources do not have an expiration date value.
     
   
-- The query string constantly changes. 
+- The query string constantly changes.
     
   
 - The sum of **max-age** cache-control directive plus **last-modified** header results in a date previous to today.
@@ -639,7 +639,7 @@ Use Fiddler or a similar tool to verify whether the cache is serving requests. S
 ## Number and size of images
 <a name="OptimizingPagePerformance_Crunch"> </a>
 
-You should minimize the number of images in your site. To help with that effort, you can embed multiple images in a single file and then reference individual images in your page. Not only will file download size decrease, but fewer files result in less network traffic. It is more complicated to author pages by using this technique, but in situations where every round trip and file size counts, it can prove to be valuable way to help improve performance. Figure 3 shows an example of a single image file that contains multiple images. 
+You should minimize the number of images in your site. To help with that effort, you can embed multiple images in a single file and then reference individual images in your page. Not only will file download size decrease, but fewer files result in less network traffic. It is more complicated to author pages by using this technique, but in situations where every round trip and file size counts, it can prove to be valuable way to help improve performance. Figure 3 shows an example of a single image file that contains multiple images.
   
     
     
@@ -657,7 +657,7 @@ You should minimize the number of images in your site. To help with that effort,
   
     
     
-Figure 4 shows how the image file is subsequently changed to display as individual pictures in a table. 
+Figure 4 shows how the image file is subsequently changed to display as individual pictures in a table.
   
     
     
@@ -702,7 +702,7 @@ BODY {font:100% Tahoma,sans-serif}
 }
 ```
 
-Each image has a class associated with it based on the identifier (ID) for the image. That style clips the picture and defines an offset from the initial picture in the cluster. Those classes are as follows. 
+Each image has a class associated with it based on the identifier (ID) for the image. That style clips the picture and defines an offset from the initial picture in the cluster. Those classes are as follows.
   
     
     
@@ -741,25 +741,25 @@ Each image has a class associated with it based on the identifier (ID) for the i
 ## List view pages
 <a name="OptimizingPagePerformance_Crunch"> </a>
 
-Microsoft has worked to quantify and improve the performance of list view page rendering times. A list view page is the AllItems.aspx page that is used by each list and library to enable browsing of content. The rendering time of that page can vary widely based on the number of columns that are visible in the view and the format of the columns. For example, displaying options and enabling presence icons can greatly affect rendering time. The collapsed grouping option took significantly longer to render than the expanded grouping option, and both were slower than no grouping option at all. 
+Microsoft has worked to quantify and improve the performance of list view page rendering times. A list view page is the AllItems.aspx page that is used by each list and library to enable browsing of content. The rendering time of that page can vary widely based on the number of columns that are visible in the view and the format of the columns. For example, displaying options and enabling presence icons can greatly affect rendering time. The collapsed grouping option took significantly longer to render than the expanded grouping option, and both were slower than no grouping option at all.
   
     
     
-These sorts of nuances are why it is important to carefully consider how views are constructed in list view pages, especially over slow network connections. When working with lists that contain a lot of data, it is important to carefully design all views, especially the default view. In general, you can speed up the rendering time of list view pages by using the following recommendations: 
+These sorts of nuances are why it is important to carefully consider how views are constructed in list view pages, especially over slow network connections. When working with lists that contain a lot of data, it is important to carefully design all views, especially the default view. In general, you can speed up the rendering time of list view pages by using the following recommendations:
   
     
     
 
-- Show only the strictly required columns. 
+- Show only the strictly required columns.
     
   
-- If possible, exclude columns that include presence information. 
+- If possible, exclude columns that include presence information.
     
   
-- Use a link instead of an edit menu to view the item details. 
+- Use a link instead of an edit menu to view the item details.
     
   
-The following table describes customizations that reduce the time that is required for a view to render. 
+The following table describes customizations that reduce the time that is required for a view to render.
   
     
     
@@ -769,12 +769,12 @@ The following table describes customizations that reduce the time that is requir
 
 |**Item**|**Description**|
 |:-----|:-----|
-|View type |Create a view as a datasheet view instead of a standard view. |
-|View: Item limit |Anything over 1,000 will likely render slowly. Over a slow connection, it is important to experiment to find the right balance between the quantity of data shown at a time and the number of round trips necessary to view all the data. The more rows that display at a time, the fewer round trips, but larger pages. |
-|View: Filter |Use **[Today]** and **[Me]** keywords to filter items by freshness or assignment. Use Status fields to show only active items in default views.|
-|View: Columns |Include the smallest number of columns. Create a default view with few columns that allows high-level browsing after which people can drill down. |
+|View type|Create a view as a datasheet view instead of a standard view.|
+|View: Item limit|Anything over 1,000 will likely render slowly. Over a slow connection, it is important to experiment to find the right balance between the quantity of data shown at a time and the number of round trips necessary to view all the data. The more rows that display at a time, the fewer round trips, but larger pages.|
+|View: Filter|Use **[Today]** and **[Me]** keywords to filter items by freshness or assignment. Use Status fields to show only active items in default views.|
+|View: Columns|Include the smallest number of columns. Create a default view with few columns that allows high-level browsing after which people can drill down.|
    
-The following table describes customizations that will increase the time that is required for a view to render. Each additional column increases rendering time by a slight amount: up to a half-second per column over a fast network connection for a list of 1,000 items. Some columns increase rendering time more than others, as noted in the table. 
+The following table describes customizations that will increase the time that is required for a view to render. Each additional column increases rendering time by a slight amount: up to a half-second per column over a fast network connection for a list of 1,000 items. Some columns increase rendering time more than others, as noted in the table.
   
     
     
@@ -784,18 +784,18 @@ The following table describes customizations that will increase the time that is
 
 |**Item**|**Description**|
 |:-----|:-----|
-|Group By |Grouping adds HTML and JScript, which slows down rendering for large lists. Making all groups collapsed by default actually increases rendering time further because of additional operations on the browser object model. |
-|Column - title linked to item with edit menu |The option "linked to item with edit menu" takes the longest; the similar option "linked to item" does not increase rendering time noticeably. |
+|Group By|Grouping adds HTML and JScript, which slows down rendering for large lists. Making all groups collapsed by default actually increases rendering time further because of additional operations on the browser object model.|
+|Column - title linked to item with edit menu|The option "linked to item with edit menu" takes the longest; the similar option "linked to item" does not increase rendering time noticeably.|
    
 
 ## Developer Dashboard
 <a name="DeveloperDashboard"> </a>
 
-The Developer Dashboard is rebuilt for SharePoint 2013 to provide more information, including MDS. It runs in a separate window to avoid affecting rendering of the actual page, and it provides detailed request information per page with a chart view. It also includes a dedicated tab for Unified Logging System (ULS) log entries for a particular request. Additional detailed information is included for request analysis. It uses a dedicated Windows Communication Foundation (WCF) service (diagnosticsdata.svc) designed to provide tracing information. 
+The Developer Dashboard is rebuilt for SharePoint 2013 to provide more information, including MDS. It runs in a separate window to avoid affecting rendering of the actual page, and it provides detailed request information per page with a chart view. It also includes a dedicated tab for Unified Logging System (ULS) log entries for a particular request. Additional detailed information is included for request analysis. It uses a dedicated Windows Communication Foundation (WCF) service (diagnosticsdata.svc) designed to provide tracing information.
   
     
     
-To learn more about the Developer Dashboard: 
+To learn more about the Developer Dashboard:
   
     
     
@@ -806,7 +806,7 @@ To learn more about the Developer Dashboard:
 -  [Renewed Developer Dashboard](http://download.microsoft.com/download/7/7/3/773CA2C2-579B-408C-808E-A6F561194E20/Ig15_SP_IT_M10V3_devdash.pptx) (PowerPoint slide deck).
     
   
-To enable the Developer Dashboard, use the following Windows PowerShell snippet code. 
+To enable the Developer Dashboard, use the following Windows PowerShell snippet code.
   
     
     
@@ -822,7 +822,7 @@ $appsetting.Update()
 
 ```
 
-Figure 5 shows the Developer Dashboard. 
+Figure 5 shows the Developer Dashboard.
   
     
     
@@ -840,7 +840,7 @@ Figure 5 shows the Developer Dashboard.
   
     
     
-It is important to understand how these requests and the number of images and queries affect performance. There are similarities when it comes to server-side rendered list views (XSL or CAML) as they follow the same size recommendations as client-side rendered list views. However, server list view guidance is to create only list views necessary to accomplish your requirements when your goal is optimal performance, as thousands of views will cause greater degradation in performance due to compilation cache management. The physical characteristics of the computer, such as memory and processor speed, will factor into the overall speed. There is also consideration for where the requests route or how they are distributed. To better understand how SharePoint routes and distributes requests, you can use the Request Manager tool. However, discussing request distribution is beyond the scope of this article. For more information, see  [Configure Request Manager in SharePoint Server 2013](http://technet.microsoft.com/library/jj712708.aspx). 
+It is important to understand how these requests and the number of images and queries affect performance. There are similarities when it comes to server-side rendered list views (XSL or CAML) as they follow the same size recommendations as client-side rendered list views. However, server list view guidance is to create only list views necessary to accomplish your requirements when your goal is optimal performance, as thousands of views will cause greater degradation in performance due to compilation cache management. The physical characteristics of the computer, such as memory and processor speed, will factor into the overall speed. There is also consideration for where the requests route or how they are distributed. To better understand how SharePoint routes and distributes requests, you can use the Request Manager tool. However, discussing request distribution is beyond the scope of this article. For more information, see  [Configure Request Manager in SharePoint Server 2013](http://technet.microsoft.com/library/jj712708.aspx).
   
     
     
@@ -848,7 +848,7 @@ It is important to understand how these requests and the number of images and qu
 ## Conclusion
 <a name="bk_conclusion"> </a>
 
-Much of the guidance for SharePoint 2010 page performance optimization applies to SharePoint 2013. This article provides some of the elements of guidance for SharePoint 2010 while diving into new areas that would specifically benefit performance. We covered some obvious changes or enhancements, for example, MDS and the enhanced Developer Dashboard. We wrapped up with the classic guidance: crunch down JavaScript and cascading style sheets, use a CDN for common JavaScript libraries if possible for caching, combine and compress images as much as possible, limit or remove unnecessary data from view, and construct list views judiciously. The techniques and features discussed in this article contribute to supporting your performance goals. 
+Much of the guidance for SharePoint 2010 page performance optimization applies to SharePoint 2013. This article provides some of the elements of guidance for SharePoint 2010 while diving into new areas that would specifically benefit performance. We covered some obvious changes or enhancements, for example, MDS and the enhanced Developer Dashboard. We wrapped up with the classic guidance: crunch down JavaScript and cascading style sheets, use a CDN for common JavaScript libraries if possible for caching, combine and compress images as much as possible, limit or remove unnecessary data from view, and construct list views judiciously. The techniques and features discussed in this article contribute to supporting your performance goals.
   
     
     

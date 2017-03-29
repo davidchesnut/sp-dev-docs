@@ -6,15 +6,15 @@ ms.assetid: 5251d35a-d659-49b3-8e0d-dfd4a7faee6b
 
 
 # How to: Use multiple SharePoint 2013 lists in a Windows Phone app
-Create Windows Phone apps that use data from multiple SharePoint lists. 
-You can use multiple SharePoint lists in your app in several ways. When you create a Windows Phone app based on the Windows Phone SharePoint List Application template, you specify a single target SharePoint list, but the architecture of the resulting project is extensible enough to accommodate the integration of multiple lists. 
+Create Windows Phone apps that use data from multiple SharePoint lists.
+You can use multiple SharePoint lists in your app in several ways. When you create a Windows Phone app based on the Windows Phone SharePoint List Application template, you specify a single target SharePoint list, but the architecture of the resulting project is extensible enough to accommodate the integration of multiple lists.
   
     
     
 
 
 > [!IMPORTANT]
-> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7. > For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md). 
+> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7.> For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md).
   
     
     
@@ -23,7 +23,7 @@ You can use multiple SharePoint lists in your app in several ways. When you crea
 ## Create a solution involving SharePoint lists based on the same schema
 <a name="BKMK_SameSchemaProject"> </a>
 
-If you have two SharePoint lists based on the same schema, you can take advantage of the classes implemented by the Windows Phone SharePoint List Application template and create objects of those classes specific to each list. 
+If you have two SharePoint lists based on the same schema, you can take advantage of the classes implemented by the Windows Phone SharePoint List Application template and create objects of those classes specific to each list.
   
     
     
@@ -116,7 +116,7 @@ To display or modify the data from the second list in your project, however, you
 </phone:PhoneApplicationPage>
 ```
 
-In the associated code-behind file, SecondaryList.xaml.cs, replace all references to "App.MainViewModel" with references to "App.SecondaryViewModel". For example, the constructor in the file should be as follows. 
+In the associated code-behind file, SecondaryList.xaml.cs, replace all references to "App.MainViewModel" with references to "App.SecondaryViewModel". For example, the constructor in the file should be as follows.
   
     
     
@@ -197,7 +197,7 @@ The approach in the preceding section works as far as it goes (that is, for Shar
   
     
     
-Suppose, as in the preceding section, that you have a SharePoint list, Marketing Team (based on the Contacts list template), containing members of a marketing team. Suppose also that you have a second list, named Orders (based on the Custom list template), containing the columns and field types shown in Table 1. 
+Suppose, as in the preceding section, that you have a SharePoint list, Marketing Team (based on the Contacts list template), containing members of a marketing team. Suppose also that you have a second list, named Orders (based on the Custom list template), containing the columns and field types shown in Table 1.
   
     
     
@@ -207,15 +207,15 @@ Suppose, as in the preceding section, that you have a SharePoint list, Marketing
 
 |**Column**|**Field Type**|**Required**|
 |:-----|:-----|:-----|
-|Product (i.e., Title) |Single line of text (Text) |Yes |
-|Unit Price |Currency |Yes |
-|Quantity |Number |No (defaults to zero) |
-|Order Value |Calculated (Unit Price * Quantity) |No |
-|Order Date |Date and Time (Datetime) |No |
-|Order Status |Choice |No |
-|Customer |Single line of text (Text) |No |
+|Product (i.e., Title)|Single line of text (Text)|Yes|
+|Unit Price|Currency|Yes|
+|Quantity|Number|No (defaults to zero)|
+|Order Value|Calculated (Unit Price * Quantity)|No|
+|Order Date|Date and Time (Datetime)|No|
+|Order Status|Choice|No|
+|Customer|Single line of text (Text)|No|
    
-As in the example in the preceding section, you can instantiate a separate **ListDataProvider** object and another **ListViewModel** object to manage the Orders list. Assume that the instantiated **ListDataProvider** object is named **OrdersListDataProvider**, as in the following code. 
+As in the example in the preceding section, you can instantiate a separate **ListDataProvider** object and another **ListViewModel** object to manage the Orders list. Assume that the instantiated **ListDataProvider** object is named **OrdersListDataProvider**, as in the following code.
   
     
     
@@ -242,7 +242,7 @@ public static ListDataProvider OrdersListDataProvider
 }
 ```
 
-And assume that the instantiated **ListViewModel** object for the Orders list is named **OrdersListViewModel**, as in the following code. 
+And assume that the instantiated **ListViewModel** object for the Orders list is named **OrdersListViewModel**, as in the following code.
   
     
     
@@ -357,7 +357,7 @@ Then, as in the preceding section, you can create view forms for the list, bound
 ...
 ```
 
-A convenient way to create suitable XAML markup is to use the Windows Phone SharePoint List Application template to generate a separate project based on the Orders list and then copy the generated XAML from that project to the project with multiple lists, taking care to change the name of the **PivotItem** control (which defaults to "View1") to "View2" and to change the **Binding** declaration of the **ListBox** control as shown here. You would also need to change all references in the associated code-behind file for the form to specify the appropriate **ListViewModel** and **DataProvider** objects (as, for example, **OrdersListViewModel** and **OrdersListDataProvider**). 
+A convenient way to create suitable XAML markup is to use the Windows Phone SharePoint List Application template to generate a separate project based on the Orders list and then copy the generated XAML from that project to the project with multiple lists, taking care to change the name of the **PivotItem** control (which defaults to "View1") to "View2" and to change the **Binding** declaration of the **ListBox** control as shown here. You would also need to change all references in the associated code-behind file for the form to specify the appropriate **ListViewModel** and **DataProvider** objects (as, for example, **OrdersListViewModel** and **OrdersListDataProvider**).
   
     
     
@@ -369,11 +369,11 @@ This approach works because in the associated code-behind file (named, in this c
 ## An alternative approach for a solution involving SharePoint lists based on different schemas
 <a name="BKMK_DifferentSchemasAlternative"> </a>
 
-As an alternative to the approach in the preceding section, you can use the Windows Phone SharePoint List Application template to create a Windows Phone app project in a Microsoft Visual Studio 2010 solution based on a given SharePoint list and then add projects built based on other lists to that same solution. This approach allows you to take advantage of the template for generating forms specific to each SharePoint list. You can then customize the solution according to your needs to control how users interact with the lists. The procedures in this section demonstrate that approach. 
+As an alternative to the approach in the preceding section, you can use the Windows Phone SharePoint List Application template to create a Windows Phone app project in a Microsoft Visual Studio 2010 solution based on a given SharePoint list and then add projects built based on other lists to that same solution. This approach allows you to take advantage of the template for generating forms specific to each SharePoint list. You can then customize the solution according to your needs to control how users interact with the lists. The procedures in this section demonstrate that approach.
   
     
     
-Assume for the following procedures that you have a SharePoint list named Orders (based on the Custom list template), with the columns and field types as shown in Table 1 in the preceding section. In addition, assume you have another SharePoint list (again, based on the Custom list template), named Customers, with the columns and field types shown in Table 2. 
+Assume for the following procedures that you have a SharePoint list named Orders (based on the Custom list template), with the columns and field types as shown in Table 1 in the preceding section. In addition, assume you have another SharePoint list (again, based on the Custom list template), named Customers, with the columns and field types shown in Table 2.
   
     
     
@@ -383,12 +383,12 @@ Assume for the following procedures that you have a SharePoint list named Orders
 
 |**Column**|**Field Type**|**Required**|
 |:-----|:-----|:-----|
-|Customer Name (i.e., Title) |Single line of text (Text) |Yes |
-|Contact Number |Single line of text (Text) |No |
-|E-mail Address |Single line of text (Text) |No |
-|Company |Single line of text (Text) |No |
+|Customer Name (i.e., Title)|Single line of text (Text)|Yes|
+|Contact Number|Single line of text (Text)|No|
+|E-mail Address|Single line of text (Text)|No|
+|Company|Single line of text (Text)|No|
    
-In the following procedures, you create a Windows Phone app that uses both of these lists. The primary list in the app is the Customers list. When you display the details for a given customer in the Display form, a button is included on the form that allows users to display all the orders (from the Orders list) associated with that customer. 
+In the following procedures, you create a Windows Phone app that uses both of these lists. The primary list in the app is the Customers list. When you display the details for a given customer in the Display form, a button is included on the form that allows users to display all the orders (from the Orders list) associated with that customer.
   
     
     
@@ -410,13 +410,13 @@ In the following procedures, you create a Windows Phone app that uses both of th
 4. In the **Templates** pane, choose the Windows Phone SharePoint List Application template.
     
   
-5. Name the app, for example, OrdersSPListApp, and then choose **OK**. 
+5. Name the app, for example, OrdersSPListApp, and then choose **OK**.
     
   
 6. Follow the procedure described in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md) to create another Windows Phone app project, specifying a SharePoint list defined based on the columns and field types show in Table 1 as the target list for the project. You should now have two projects in your solution, named "CustomersSPListApp" and "OrdersSPListApp" (if you are following the naming conventions in this procedure).
     
   
-7. In **Solution Explorer**, choose the CustomerSPListApp project node. 
+7. In **Solution Explorer**, choose the CustomerSPListApp project node.
     
   
 8. On the **Project** menu, choose **Add Reference**. 
@@ -427,7 +427,7 @@ In the following procedures, you create a Windows Phone app that uses both of th
 9. On the **Projects** tab, choose the OrdersSPListApp project in the solution, and then choose the **OK** button. The project is added under the **References** node of the CustomersSPListApp project.
     
   
-Next, configure the two projects in the solution. You essentially configure the OrdersSPListApp project (based on the Orders list) to operate as a "look-up" project for the CustomerSPListApp project (based on the Customers List). 
+Next, configure the two projects in the solution. You essentially configure the OrdersSPListApp project (based on the Orders list) to operate as a "look-up" project for the CustomerSPListApp project (based on the Customers List).
   
     
     
@@ -435,17 +435,17 @@ Next, configure the two projects in the solution. You essentially configure the 
 ### To configure the OrdersSPListApp project
 
 
-1. Change the navigation paths in the view forms of the OrdersSPListApp project to include the primary namespace of the project ("OrdersSPListApp") and the "component" designation. For example, in the handler for the OnNewButtonClick event in the List.xaml.cs file of the OrdersSPListApp project, change the call to the Navigate method of the NavigationService object from this: 
+1. Change the navigation paths in the view forms of the OrdersSPListApp project to include the primary namespace of the project ("OrdersSPListApp") and the "component" designation. For example, in the handler for the OnNewButtonClick event in the List.xaml.cs file of the OrdersSPListApp project, change the call to the Navigate method of the NavigationService object from this:
     
      `NavigationService.Navigate(new Uri("/Views/NewForm.xaml", UriKind.Relative));`
     
-    To this: 
+    To this:
     
      `NavigationService.Navigate(new Uri("/OrdersSPListApp;component/Views/NewForm.xaml", UriKind.Relative));`
     
     The easiest way to make these changes is to use the **Quick Replace** command in the OrdersSPListApp project.
     
-1. In **Solution Explorer**, choose the OrdersSPListApp project node. 
+1. In **Solution Explorer**, choose the OrdersSPListApp project node.
     
   
 2. Press Ctrl+H to display the **Quick Replace** dialog box.
@@ -464,16 +464,16 @@ Next, configure the two projects in the solution. You essentially configure the 
 5. Ensure that **Current Project** is selected in the **Look in** drop-down list.
     
   
-6. Choose **Replace All**. 
+6. Choose **Replace All**.
     
   
-7. Save all changed files in the project. 
+7. Save all changed files in the project.
     
   
-2. Add a member property to the App.xaml.cs file of the OrdersSPListApp project. In **Solution Explorer**, under the OrdersSPListApp project node, choose the App.xaml file. 
+2. Add a member property to the App.xaml.cs file of the OrdersSPListApp project. In **Solution Explorer**, under the OrdersSPListApp project node, choose the App.xaml file.
     
   
-3. Press F7 to open its associated code-behind file, App.xaml.cs, for editing. 
+3. Press F7 to open its associated code-behind file, App.xaml.cs, for editing.
     
   
 4. Within the code block (demarcated by opening and closing braces) that implements the **App** partial class, add the following code.
@@ -483,10 +483,10 @@ Next, configure the two projects in the solution. You essentially configure the 
 public static string CustomerName { get; set; }
   ```
 
-5. In **Solution Explorer**, under the OrdersSPListApp project node, choose the List.xaml file. 
+5. In **Solution Explorer**, under the OrdersSPListApp project node, choose the List.xaml file.
     
   
-6. Press F7 to open its associated code-behind file, List.xaml.cs, for editing. 
+6. Press F7 to open its associated code-behind file, List.xaml.cs, for editing.
     
   
 7. Modify the **OnNavigatedTo** event handler in the file to parse the **QueryString** property of the **NavigationContext** object to set the value of the **CustomerName** variable declared in step 4. You can also set the **Header** property of the **PivotItem** control on the List form to match the customer name, for the convenience of your users. The modified handler should be as follows.
@@ -601,7 +601,7 @@ private void OnNewButtonClick(object sender, EventArgs e)
 }
   ```
 
-12. In the **OnNavigatedTo** event handler for the New form, check the query string for a customer name and, if it's available, assign it to the Customer field of the ViewModel for the form. In **Solution Explorer**, under the OrdersSPListApp project, choose the NewForm.xaml file and press F7 to open its associated code-behind file, NewForm.xaml.cs, for editing. 
+12. In the **OnNavigatedTo** event handler for the New form, check the query string for a customer name and, if it's available, assign it to the Customer field of the ViewModel for the form. In **Solution Explorer**, under the OrdersSPListApp project, choose the NewForm.xaml file and press F7 to open its associated code-behind file, NewForm.xaml.cs, for editing.
     
   
 13. Modify the **OnNavigatedTo** event handler in the file to match the following code.
@@ -720,7 +720,7 @@ public override void LoadData(string ViewName, Action<LoadViewCompletedEventArgs
 }
   ```
 
-17. Add a **Cancel** button to the **ApplicationBar** element in the List.xaml file in the OrdersSPListApp project. In **Solution Explorer**, under the OrdersSPListApp node, choose the List.xaml file, and then press SHIFT+F7 to open the file for editing in the designer. 
+17. Add a **Cancel** button to the **ApplicationBar** element in the List.xaml file in the OrdersSPListApp project. In **Solution Explorer**, under the OrdersSPListApp node, choose the List.xaml file, and then press SHIFT+F7 to open the file for editing in the designer.
     
   
 18. Add XAML to declare a **Cancel** button within the `<phone:PhoneApplicationPage.ApplicationBar>` tag, as shown in the following markup.
@@ -738,7 +738,7 @@ public override void LoadData(string ViewName, Action<LoadViewCompletedEventArgs
 </phone:PhoneApplicationPage.ApplicationBar>
   ```
 
-19. With the List.xaml file selected in **Solution Explorer**, press F7 to open the associated code-behind file, List.xaml.cs, for editing. 
+19. With the List.xaml file selected in **Solution Explorer**, press F7 to open the associated code-behind file, List.xaml.cs, for editing.
     
   
 20. Within the code block (demarcated by opening and closing braces) that implements the **ListForm** partial class, add the following handler for the **OnCancelButtonClick** event.
@@ -751,10 +751,10 @@ private void OnCancelButtonClick(object sender, EventArgs e)
 }
   ```
 
-21. Save the files in the project. 
+21. Save the files in the project.
     
   
-Now, it remains to add a button to the Display form in the CustomersSPListApp project to show the orders associated with a given customer. 
+Now, it remains to add a button to the Display form in the CustomersSPListApp project to show the orders associated with a given customer.
   
     
     
@@ -762,10 +762,10 @@ Now, it remains to add a button to the Display form in the CustomersSPListApp pr
 ### To configure the CustomersSPListApp project
 
 
-1. In **Solution Explorer**, under the node for the CustomersSPListApp project, choose the DisplayForm.xaml file. 
+1. In **Solution Explorer**, under the node for the CustomersSPListApp project, choose the DisplayForm.xaml file.
     
   
-2. Press Shift + F7 (or double-click the file) to open the file for editing in the designer. 
+2. Press Shift + F7 (or double-click the file) to open the file for editing in the designer.
     
   
 3. Add XAML declarations for a **Button** control within a containing **StackPanel** control after the final **StackPanel** control container for the last field of the list item, as in the following markup.
@@ -816,7 +816,7 @@ Now, it remains to add a button to the Display form in the CustomersSPListApp pr
 ...
   ```
 
-4. With the DisplayForm.xaml file selected in **Solution Explorer**, press F7 to open the associated code-behind file, DisplayForm.xaml.cs, for editing. 
+4. With the DisplayForm.xaml file selected in **Solution Explorer**, press F7 to open the associated code-behind file, DisplayForm.xaml.cs, for editing.
     
   
 5. Within the code block (demarcated by opening and closing braces) that implements the **DisplayForm** partial class, add the following handler for the **OnButtonOrdersClick** event.
@@ -830,10 +830,10 @@ private void OnOrdersButtonClick(object sender, RoutedEventArgs e)
 }
   ```
 
-6. Save the file. 
+6. Save the file.
     
   
-If you build the solution and deploy it to the Windows Phone Emulator, the List form for the Customers list appears. If you choose an item in the list to show the Display form for a given customer, you see a button to retrieve the orders associated with that customer (Figure 1). 
+If you build the solution and deploy it to the Windows Phone Emulator, the List form for the Customers list appears. If you choose an item in the list to show the Display form for a given customer, you see a button to retrieve the orders associated with that customer (Figure 1).
   
     
     

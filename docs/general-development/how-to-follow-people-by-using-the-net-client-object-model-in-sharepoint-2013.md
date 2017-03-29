@@ -6,7 +6,7 @@ ms.assetid: 0fdb7ca5-d408-4256-b52b-886c4bc3b5b8
 
 
 # How to: Follow people by using the .NET client object model in SharePoint 2013
-Learn how to work with Following People features by using the SharePoint Server 2013 .NET client object model. 
+Learn how to work with Following People features by using the SharePoint Server 2013 .NET client object model.
 ## Why use Following People features in SharePoint Server 2013?
 
 In SharePoint Server 2013, when a user follows people, the posts and activities of the followed people show up in the user's newsfeed. By using Following People features to focus on the people who users care about, you can improve the relevance of your app or solution. In the .NET client object model, people that you follow are represented by  [SocialActor](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialActor.aspx) objects. To perform core Following People tasks in the .NET client object model, you use the [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) object. This article shows how to use the .NET client object model to work with Following People features.
@@ -23,15 +23,15 @@ In SharePoint Server 2013, when a user follows people, the posts and activities 
 
 ## Prerequisites for setting up your development environment to work with Following People features by using the SharePoint 2013 .NET client object model
 
-To create a console application that uses the .NET client object model to work with Following People features, you'll need the following: 
+To create a console application that uses the .NET client object model to work with Following People features, you'll need the following:
   
     
     
 
-- SharePoint Server 2013 with My Site configured, and with user profiles and personal sites created for the current user and a target user 
+- SharePoint Server 2013 with My Site configured, and with user profiles and personal sites created for the current user and a target user
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
 - **Full Control** access permissions to the User Profile service application for the logged-on user
@@ -49,7 +49,7 @@ To create a console application that uses the .NET client object model to work w
 <a name="bkmk_CreateConsoleApp"> </a>
 
 
-1. Open Visual Studio, and choose **File**, **New**, **Project**. 
+1. Open Visual Studio, and choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
@@ -61,7 +61,7 @@ To create a console application that uses the .NET client object model to work w
 4. Name the project FollowPeopleCSOM, and then choose the **OK** button.
     
   
-5. Add references to the following assemblies: 
+5. Add references to the following assemblies:
     
   - **Microsoft.SharePoint.Client**
     
@@ -80,14 +80,14 @@ To create a console application that uses the .NET client object model to work w
   -  [Get followers and followed people](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint-2013.md#bkmk_GetFollowednFollowers)
     
   
-7. To test the console application, on the menu bar, choose **Debug**, **Start Debugging**. 
+7. To test the console application, on the menu bar, choose **Debug**, **Start Debugging**.
     
   
 
 ## Code example: Start or stop following people by using the SharePoint 2013 .NET client object model
 <a name="bkmk_FollowPeople"> </a>
 
-The following code example makes the current user start following or stop following a target user. It shows how to: 
+The following code example makes the current user start following or stop following a target user. It shows how to:
   
     
     
@@ -205,7 +205,7 @@ namespace FollowPeopleCSOM
 ## Code example: Get followers and followed people by using the SharePoint 2013 .NET client object model
 <a name="bkmk_GetFollowednFollowers"> </a>
 
-The following code example gets the people who the current user is following, gets the people who are followed by the current user, and gets information about the current user's Following People status. It shows how to: 
+The following code example gets the people who the current user is following, gets the people who are followed by the current user, and gets information about the current user's Following People status. It shows how to:
   
     
     
@@ -222,7 +222,7 @@ The following code example gets the people who the current user is following, ge
 - Get the people who are following the current user by using the  [GetFollowers](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.GetFollowers.aspx) method.
     
   
-- Iterate through the groups of people and get each person's display name, personal URI, and picture URI. 
+- Iterate through the groups of people and get each person's display name, personal URI, and picture URI.
     
   
 

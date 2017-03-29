@@ -6,11 +6,11 @@ ms.assetid: 16117716-6ce5-4890-a829-5312f76164d0
 
 
 # How to: Create scorecard transforms for PerformancePoint Services in SharePoint 2013
-Learn how to create custom scorecard transforms for PerformancePoint Services in SharePoint Server 2013. 
+Learn how to create custom scorecard transforms for PerformancePoint Services in SharePoint Server 2013.
 ## What are scorecard transforms in PerformancePoint Services?
 <a name="bk_intro"> </a>
 
-In PerformancePoint Services, scorecard transforms change the appearance, content, or functionality of scorecard views before they render in a dashboard. For more information, see  [Types of Transforms](http://msdn.microsoft.com/library/d69d171b-827a-48a8-a3e1-7aaf0bfbc7f8%28Office.15%29.aspx). 
+In PerformancePoint Services, scorecard transforms change the appearance, content, or functionality of scorecard views before they render in a dashboard. For more information, see  [Types of Transforms](http://msdn.microsoft.com/library/d69d171b-827a-48a8-a3e1-7aaf0bfbc7f8%28Office.15%29.aspx).
   
     
     
@@ -19,15 +19,15 @@ In PerformancePoint Services, scorecard transforms change the appearance, conten
 <a name="BKMK_CreateClass"> </a>
 
 
-1. Install PerformancePoint Services, or copy the DLLs that are installed with PerformancePoint Services to your computer. For more information, see  [DLLs with Class Libraries](http://msdn.microsoft.com/library/41e92619-8253-481d-82f9-35b6a6abc477%28Office.15%29.aspx). 
+1. Install PerformancePoint Services, or copy the DLLs that are installed with PerformancePoint Services to your computer. For more information, see  [DLLs with Class Libraries](http://msdn.microsoft.com/library/41e92619-8253-481d-82f9-35b6a6abc477%28Office.15%29.aspx).
     
   
-2. In Visual Studio, create a C# class library. If you have already created a class library for your extension, add a new C# class. 
+2. In Visual Studio, create a C# class library. If you have already created a class library for your extension, add a new C# class.
     
-    You must sign your DLL with a strong name, and ensure that all assemblies referenced by your DLL have strong names. To learn how to sign an assembly with a strong name and how to create a public/private key pair, see  [How to: Create a Public/Private Key Pair](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114.aspx). 
+    You must sign your DLL with a strong name, and ensure that all assemblies referenced by your DLL have strong names. To learn how to sign an assembly with a strong name and how to create a public/private key pair, see  [How to: Create a Public/Private Key Pair](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114.aspx).
     
   
-3. Add Microsoft.PerformancePoint.Scorecards.Client.dll as an assembly reference to the project. 
+3. Add Microsoft.PerformancePoint.Scorecards.Client.dll as an assembly reference to the project.
     
   
 4. Add **using** directives for the following namespaces:
@@ -44,16 +44,16 @@ In PerformancePoint Services, scorecard transforms change the appearance, conten
 5. Implement the  [IGridViewTransform](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.aspx) interface.
     
   
-6. Override the  [GetId](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.GetId.aspx) method to return the string identifier for your transform. [GetId](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.GetId.aspx) must return the same string as the **key** attribute that is registered for the transform in the PerformancePoint Services web.config file. For more information about registering scorecard transforms, see [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx). 
+6. Override the  [GetId](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.GetId.aspx) method to return the string identifier for your transform. [GetId](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.GetId.aspx) must return the same string as the **key** attribute that is registered for the transform in the PerformancePoint Services web.config file. For more information about registering scorecard transforms, see [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx).
     
   
-7. Override the  [GetTransformType](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.GetTransformType.aspx) method to specify when to run the transform. The point at which a transform runs depends on its type, as defined by the [GridViewTransformType](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.GridViewTransformType.aspx) enumeration: **PreQuery**, **PostQuery**, or **PreRender**. For more information, see  [Types of Transforms](http://msdn.microsoft.com/library/d69d171b-827a-48a8-a3e1-7aaf0bfbc7f8%28Office.15%29.aspx). 
+7. Override the  [GetTransformType](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.GetTransformType.aspx) method to specify when to run the transform. The point at which a transform runs depends on its type, as defined by the [GridViewTransformType](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.GridViewTransformType.aspx) enumeration: **PreQuery**, **PostQuery**, or **PreRender**. For more information, see  [Types of Transforms](http://msdn.microsoft.com/library/d69d171b-827a-48a8-a3e1-7aaf0bfbc7f8%28Office.15%29.aspx).
     
   
 8. Override the  [Execute](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Extensions.IGridViewTransform.Execute.aspx) method to define how to transform the scorecard. The following code examples show how to add a column to a scorecard view and how to change the formatting of empty scorecard cells.
     
   
-After you sign and build your DLL, install the extension as described in  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx). 
+After you sign and build your DLL, install the extension as described in  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx).
 ## Code example 1: Add a column to PerformancePoint Services scorecards
 <a name="bk_example1"> </a>
 
@@ -61,7 +61,7 @@ The following code example creates a **PreQuery** transform that adds a column t
   
     
     
-Before you can compile this code example, you must configure your development environment as described in  [Create transforms for PerformancePoint Services scorecards](#BKMK_CreateClass). 
+Before you can compile this code example, you must configure your development environment as described in  [Create transforms for PerformancePoint Services scorecards](#BKMK_CreateClass).
   
     
     

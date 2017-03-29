@@ -6,13 +6,13 @@ ms.assetid: f31a3594-c328-4731-b8eb-5da6b85103ad
 
 
 # How to: Add a Geolocation column to a list programmatically in SharePoint 2013
-Learn how to programmatically add a Geolocation column to a list in SharePoint 2013. Integrate location information and maps in SharePoint lists and location-based websites by using the new Geolocation field creating your own Geolocation-based field type. 
-SharePoint 2013 introduces a new field type named Geolocation that enables you to annotate SharePoint lists with location information. In columns of type Geolocation, you can enter location information as a pair of latitude and longitude coordinates in decimal degrees or retrieve the coordinates of the user's current location from the browser if it implements the W3C Geolocation API. For more information about the Geolocation column, see [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md). The Geolocation column is not available by default in SharePoint lists. To add the column to a SharePoint list, you have to write code. In this article, learn how to add the Geolocation field to a list programmatically by using the SharePoint client object model. 
+Learn how to programmatically add a Geolocation column to a list in SharePoint 2013. Integrate location information and maps in SharePoint lists and location-based websites by using the new Geolocation field creating your own Geolocation-based field type.
+SharePoint 2013 introduces a new field type named Geolocation that enables you to annotate SharePoint lists with location information. In columns of type Geolocation, you can enter location information as a pair of latitude and longitude coordinates in decimal degrees or retrieve the coordinates of the user's current location from the browser if it implements the W3C Geolocation API. For more information about the Geolocation column, see [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md). The Geolocation column is not available by default in SharePoint lists. To add the column to a SharePoint list, you have to write code. In this article, learn how to add the Geolocation field to a list programmatically by using the SharePoint client object model.
   
     
     
 
-An MSI package named SQLSysClrTypes.msi must be installed on every SharePoint front-end web server to view the geolocation field value or data in a list. This package installs components that implement the new geometry, geography, and hierarchy ID types in SQL Server 2008. By default, this file is installed for SharePoint Online. However, it is not for an on-premises deployment of SharePoint Server 2013. You must be a member of the Farm Administrators group to perform this operation. To download SQLSysClrTypes.msi, see  [Microsoft SQL Server 2008 R2 SP1 Feature Pack](http://www.microsoft.com/en-us/download/details.aspx?id=26728) for SQL Server 2008, or [Microsoft SQL Server 2012 Feature Pack](http://www.microsoft.com/en-us/download/details.aspx?id=29065)for SQL Server 2012 in the Microsoft Download Center. 
+An MSI package named SQLSysClrTypes.msi must be installed on every SharePoint front-end web server to view the geolocation field value or data in a list. This package installs components that implement the new geometry, geography, and hierarchy ID types in SQL Server 2008. By default, this file is installed for SharePoint Online. However, it is not for an on-premises deployment of SharePoint Server 2013. You must be a member of the Farm Administrators group to perform this operation. To download SQLSysClrTypes.msi, see  [Microsoft SQL Server 2008 R2 SP1 Feature Pack](http://www.microsoft.com/en-us/download/details.aspx?id=26728) for SQL Server 2008, or [Microsoft SQL Server 2012 Feature Pack](http://www.microsoft.com/en-us/download/details.aspx?id=29065)for SQL Server 2012 in the Microsoft Download Center.
 ## Prerequisites for adding a Geolocation column
 <a name="SP15addgeo_prereq"> </a>
 
@@ -21,21 +21,21 @@ An MSI package named SQLSysClrTypes.msi must be installed on every SharePoint fr
     
     
 
-- Access to a SharePoint 2013 list, with sufficient privileges to add a column. 
+- Access to a SharePoint 2013 list, with sufficient privileges to add a column.
     
   
-- A valid Bing Maps key set at the farm or web level, which can be obtained from the  [Bing Maps Account Center](https://www.bingmapsportal.com/). 
+- A valid Bing Maps key set at the farm or web level, which can be obtained from the  [Bing Maps Account Center](https://www.bingmapsportal.com/).
     
    > [!IMPORTANT]
-   > Please note that you are responsible for compliance with terms and conditions applicable to your use of the Bing Maps key, and any necessary disclosures to users of your application regarding data passed to the Bing Maps service. 
-- Visual Studio 2010. 
+   > Please note that you are responsible for compliance with terms and conditions applicable to your use of the Bing Maps key, and any necessary disclosures to users of your application regarding data passed to the Bing Maps service.
+- Visual Studio 2010.
     
   
 
 ## Code example: Add a Geolocation column to a list programmatically
 <a name="SP15addgeo_addcolumn"> </a>
 
-Follow these steps to add the Geolocation column to a list using the SharePoint 2013 client object model. 
+Follow these steps to add the Geolocation column to a list using the SharePoint 2013 client object model.
   
     
     
@@ -43,7 +43,7 @@ Follow these steps to add the Geolocation column to a list using the SharePoint 
 ### To add the Geolocation column to a list using the client object model
 
 
-1. Start Visual Studio. 
+1. Start Visual Studio.
     
   
 2. On the menu bar, choose **File, New Project**. The **New Project** dialog box opens.
@@ -55,11 +55,11 @@ Follow these steps to add the Geolocation column to a list using the SharePoint 
 4. Give the project a name, and then choose the **OK** button.
     
   
-5. Visual Studio creates the project. Add a reference to the following assemblies, and choose **OK**. 
+5. Visual Studio creates the project. Add a reference to the following assemblies, and choose **OK**.
     
-    Microsoft.SharePoint.Client.dll 
+    Microsoft.SharePoint.Client.dll
     
-    Microsoft.SharePoint.Client.Runtime.dll 
+    Microsoft.SharePoint.Client.Runtime.dll
     
   
 6. In the default .cs file, add a **using** directive as follows.
@@ -90,7 +90,7 @@ class Program
     }
   ```
 
-8. Replace <Site Url> and <List Title> with valid values. 
+8. Replace <Site Url> and <List Title> with valid values.
     
   
 9.  Set the target framework in Project Properties as .NET Framework 4.0 or 3.5, and run the example.
@@ -120,7 +120,7 @@ After the Geolocation field is added to a SharePoint list, the developer can add
 ### Method A: Pass the FieldGeolocationValue object to the Geolocation field
 
 
-- The following method adds a list item by passing the Geolocation value as an object. 
+- The following method adds a list item by passing the Geolocation value as an object.
     
   ```cs
   
@@ -149,7 +149,7 @@ private void AddListItem()
 ### Method B: Pass a raw value to the Geolocation field
 
 
-- The following method adds a list item to the SharePoint list by passing raw values to the Geolocation field. 
+- The following method adds a list item to the SharePoint list by passing raw values to the Geolocation field.
     
   ```cs
   

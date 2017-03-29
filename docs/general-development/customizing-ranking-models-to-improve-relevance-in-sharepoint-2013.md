@@ -6,39 +6,39 @@ ms.assetid: c166ecdd-7f93-4bbb-b543-2687992dd2bc
 
 
 # Customizing ranking models to improve relevance in SharePoint 2013
-Improve search relevance by customizing ranking models to calculate rank scores (relevance rank) accurately using rank features in SharePoint Server 2013. 
+Improve search relevance by customizing ranking models to calculate rank scores (relevance rank) accurately using rank features in SharePoint Server 2013.
 You can  [sort search results in SharePoint 2013](sorting-search-results-in-sharepoint-2013.md) in four ways, one of which is by rank score. When you sort search results by rank score, SharePoint Server 2013 places the most relevant results on top in the search result set.
   
     
     
 
-A search result is relevant if it receives a high rank score, which is a specific numeric score calculated by the search engine using a ranking model. A ranking model is a list of one or more rank stages that contain a set of rank features. 
-The ranking model defines how the search engine calculates the relevance rank using various factors, which are represented in the ranking model as rank features. Factors used to calculate the relevance rank include, but are not limited to, the following: 
+A search result is relevant if it receives a high rank score, which is a specific numeric score calculated by the search engine using a ranking model. A ranking model is a list of one or more rank stages that contain a set of rank features.
+The ranking model defines how the search engine calculates the relevance rank using various factors, which are represented in the ranking model as rank features. Factors used to calculate the relevance rank include, but are not limited to, the following:
   
     
     
 
 
-- The appearance of query terms in the full-text index, which includes information such as a document's title and body. 
+- The appearance of query terms in the full-text index, which includes information such as a document's title and body.
     
   
-- The metadata associated with a particular item, such as a document's file type or URL length. 
+- The metadata associated with a particular item, such as a document's file type or URL length.
     
   
-- The anchor text associated with URL links that point to a particular item. 
+- The anchor text associated with URL links that point to a particular item.
     
   
-- The information about user clicks for each item. 
+- The information about user clicks for each item.
     
   
-- The proximity of query terms in a document's body or title. 
+- The proximity of query terms in a document's body or title.
     
   
 
 ## Start your ranking model customization based on a SharePoint ranking model template
 <a name="sp15_using_custom_ranking_model"> </a>
 
-To make your customization easier, start by using one of the default ranking models in SharePoint Server 2013 as a template. Then, modify that ranking model to suit your data set. 
+To make your customization easier, start by using one of the default ranking models in SharePoint Server 2013 as a template. Then, modify that ranking model to suit your data set.
   
     
     
@@ -53,7 +53,7 @@ SharePoint Server 2013 provides 14 ranking models by default. See  [What is a ra
     
     
 
-You use the following Windows PowerShell cmdlets to customize ranking models: 
+You use the following Windows PowerShell cmdlets to customize ranking models:
   
     
     
@@ -74,10 +74,10 @@ You use the following Windows PowerShell cmdlets to customize ranking models:
 ### To list all available ranking models
 
 
-1. Open the SharePoint Management Shell as an Administrator. 
+1. Open the SharePoint Management Shell as an Administrator.
     
   
-2. Run the following sequence of Windows PowerShell cmdlets. 
+2. Run the following sequence of Windows PowerShell cmdlets.
     
   ```
   
@@ -90,7 +90,7 @@ Get-SPEnterpriseSearchRankingModel -SearchApplication $ssa -Owner $owner
 ### To retrieve a default ranking model to use as a template
 
 
-1. Open the SharePoint Management Shell as an Administrator. 
+1. Open the SharePoint Management Shell as an Administrator.
     
   
 2. Run the following sequence of Windows PowerShell cmdlets;  *filename.xml*  is the name of a file in which you want to save the ranking model.
@@ -104,7 +104,7 @@ $defaultRankingModel.RankingModelXML > filename.xml
 
   ```
 
-If you install the SharePoint Server 2013 cumulative update of August 2013, you can use the following procedure to retrieve the search ranking model with two linear stages to use as a template for your custom ranking model. 
+If you install the SharePoint Server 2013 cumulative update of August 2013, you can use the following procedure to retrieve the search ranking model with two linear stages to use as a template for your custom ranking model.
   
     
     
@@ -112,7 +112,7 @@ If you install the SharePoint Server 2013 cumulative update of August 2013, you 
 ### To retrieve the search ranking model with two linear stages to use as a template
 
 
-1. Open the SharePoint Management Shell as an Administrator. 
+1. Open the SharePoint Management Shell as an Administrator.
     
   
 2. Run the following sequence of Windows PowerShell cmdlets;  *filename.xml*  is the name of a file in which you want to save the ranking model.
@@ -133,7 +133,7 @@ $twoLinearStagesRankingModel.RankingModelXML > filename.xml
 1. From the list of available ranking models, copy the GUID of the ranking model that you want to use as a template. (See  [To list all available ranking models](#sp15_list_available_ranking_models) for the sequence of Windows PowerShell cmdlets to use.)
     
   
-2. Run the following sequence of Windows PowerShell cmdlets using the GUID copied in step 1 for  _<GUID>_. 
+2. Run the following sequence of Windows PowerShell cmdlets using the GUID copied in step 1 for  _<GUID>_.
     
   ```
   
@@ -163,7 +163,7 @@ $newrm = New-SPEnterpriseSearchRankingModel -SearchApplication $ssa -Owner $owne
 
 
 > [!IMPORTANT]
-> We provide the rank detail and the accompanying ExplainRank page as a convenience and only to assist you in tuning and debugging your own custom ranking models. The contents of the rank detail and the accompanying ExplainRank page are not supported, and are subject to change without notice in future software patches and updates. 
+> We provide the rank detail and the accompanying ExplainRank page as a convenience and only to assist you in tuning and debugging your own custom ranking models. The contents of the rank detail and the accompanying ExplainRank page are not supported, and are subject to change without notice in future software patches and updates.
   
     
     
@@ -172,11 +172,11 @@ The rank detail is an XML document that provides detailed information about rank
   
     
     
-Each rank feature in a ranking model has a separate XML node in the rank detail that describes details of the rank score calculation. The rank detail is provided only for queries that have search results that don't exceed 100 items. 
+Each rank feature in a ranking model has a separate XML node in the rank detail that describes details of the rank score calculation. The rank detail is provided only for queries that have search results that don't exceed 100 items.
   
     
     
-Conceptually, the overall format of the rank detail looks like the following example. 
+Conceptually, the overall format of the rank detail looks like the following example.
   
     
     
@@ -202,7 +202,7 @@ Conceptually, the overall format of the rank detail looks like the following exa
 </rank_log>
 ```
 
-To retrieve the rank detail, you need to be the administrator of the Search service application (SSA). 
+To retrieve the rank detail, you need to be the administrator of the Search service application (SSA).
   
     
     
@@ -210,7 +210,7 @@ To retrieve the rank detail, you need to be the administrator of the Search serv
 ### To retrieve the rank detail
 
 
-1. Open the SharePoint Management Shell as an Administrator. 
+1. Open the SharePoint Management Shell as an Administrator.
     
   
 2. Run the following sequence of Windows PowerShell cmdlets, and substitute  _<query_text>_ and _<url>_ with actual values.
@@ -232,7 +232,7 @@ $resultTables[([Microsoft.Office.Server.Search.Query.ResultType]::RelevantResult
 
 ### Understanding the rank score calculation via the ExplainRank page
 
-SharePoint Server 2013 provides the **ExplainRank** page that is located in the layouts folder ( `<searchCenter>/_layouts/15/`). This page contains detailed information on the rank score for each rank feature based on a given search query, a document ID, and an optional ranking model ID. The information is obtained and parsed from the rank detail. 
+SharePoint Server 2013 provides the **ExplainRank** page that is located in the layouts folder ( `<searchCenter>/_layouts/15/`). This page contains detailed information on the rank score for each rank feature based on a given search query, a document ID, and an optional ranking model ID. The information is obtained and parsed from the rank detail.
   
     
     
@@ -244,7 +244,7 @@ You can access the **ExplainRank** page with the following URL:
   
     
     
-Where: 
+Where:
   
     
     
@@ -266,25 +266,25 @@ Just like with the rank detail, to view the **ExplainRank** page, you need to be
 ## Tune your ranking model with rank features
 <a name="sp15_rank_features"> </a>
 
-Rank features work like tuning dials for a ranking model. The following sections describe the rank features that are available in the default SharePoint Server 2013 ranking model and how they contribute to relevance rank calculation. 
+Rank features work like tuning dials for a ranking model. The following sections describe the rank features that are available in the default SharePoint Server 2013 ranking model and how they contribute to relevance rank calculation.
   
     
     
 
 ### BM25
 
-The BM25 rank feature ranks items based on the appearance of query terms in the full-text index. The input to BM25 can be any of the managed properties in the full-text index. 
+The BM25 rank feature ranks items based on the appearance of query terms in the full-text index. The input to BM25 can be any of the managed properties in the full-text index.
   
     
     
 
 > [!NOTE]
-> The BM25 rank feature used in this context is the fielded version, BM25F. 
+> The BM25 rank feature used in this context is the fielded version, BM25F.
   
     
     
 
-The BM25 rank feature calculates the relevance rank score using the following formula. 
+The BM25 rank feature calculates the relevance rank score using the following formula.
   
     
     
@@ -296,7 +296,7 @@ The BM25 rank feature calculates the relevance rank score using the following fo
   
     
     
-Where: 
+Where:
   
     
     
@@ -304,22 +304,22 @@ Where:
 -  _D_ is a document, represented as a list of textual fields such as the title or body.
     
   
--  _Q_ is the user query, represented as a list of query terms, _t_. 
+-  _Q_ is the user query, represented as a list of query terms, _t_.
     
   
 -  _S_ defines the list of fields that contribute to relevance ranking; this list is defined by the ranking model.
     
   
--  _w_f is a numeric value that defines the relative weight of the field _f_ ∈ _S_; this value is defined by the ranking model. 
+-  _w_f is a numeric value that defines the relative weight of the field _f_ ∈ _S_; this value is defined by the ranking model.
     
   
--  _b_f is a numeric value that defines the document length normalization for each field _f_ ∈ _S_. 
+-  _b_f is a numeric value that defines the document length normalization for each field _f_ ∈ _S_.
     
   
--  _TF_f _(t,D)_ is the number of occurrences of query term _t_ in the field _f_ of document _D_. 
+-  _TF_f _(t,D)_ is the number of occurrences of query term _t_ in the field _f_ of document _D_.
     
   
--  _DL_f _(D)_ is the total number of words in field _f_ of document _D_. 
+-  _DL_f _(D)_ is the total number of words in field _f_ of document _D_.
     
   
 -  _N_ is the total amount of documents in the index.
@@ -342,7 +342,7 @@ Within a user query, query terms that are part of the following operators are ex
   
     
     
-In addition, query terms that are under scope, for example,  `title:apple AND body:orange`, are excluded from relevance rank calculations. 
+In addition, query terms that are under scope, for example,  `title:apple AND body:orange`, are excluded from relevance rank calculations.
   
     
     
@@ -437,7 +437,7 @@ The static rank feature ranks items based on numeric managed properties that are
   
     
     
-Before the static rank feature can be aggregated with other rank features, each static rank feature is preprocessed via a single transformation. Table 1 lists all supported transform functions. 
+Before the static rank feature can be aggregated with other rank features, each static rank feature is preprocessed via a single transformation. Table 1 lists all supported transform functions.
   
     
     
@@ -566,7 +566,7 @@ Every document has an associated file type that the content processing component
   
     
     
-The content processing component detects the language for each document automatically before it's added to the search index. When you use the bucketed static rank feature to rank documents based on their language, you can define how to calculate the rank score based on whether the document's language that was automatically detected matches the query's language. 
+The content processing component detects the language for each document automatically before it's added to the search index. When you use the bucketed static rank feature to rank documents based on their language, you can define how to calculate the rank score based on whether the document's language that was automatically detected matches the query's language.
   
     
     
@@ -577,11 +577,11 @@ At query time, information about the user's language is written to the search en
 
 ### Proximity
 
-The proximity rank feature ranks items depending on the distance between query terms inside the full-text index. The rank score is boosted if two query terms appear in the same managed properties within the full-text index. Proximity calculations are expensive in terms of disk activity and CPU consumption; as a result, proximity boost is carried out only during the second stage of the default SharePoint Server 2013 rank model (if available). 
+The proximity rank feature ranks items depending on the distance between query terms inside the full-text index. The rank score is boosted if two query terms appear in the same managed properties within the full-text index. Proximity calculations are expensive in terms of disk activity and CPU consumption; as a result, proximity boost is carried out only during the second stage of the default SharePoint Server 2013 rank model (if available).
   
     
     
-You can evaluate the proximity rank feature by using several different options, controlled by attributes described in Table 2. 
+You can evaluate the proximity rank feature by using several different options, controlled by attributes described in Table 2.
   
     
     
@@ -591,10 +591,10 @@ You can evaluate the proximity rank feature by using several different options, 
 
 |**Attributes**|**Description**|
 |:-----|:-----|
-| `isExact=0`|In this mode, the proximity algorithm attempts to find the minimal span (distance) of the subset of query terms in a document. The proximity algorithm considers fragments that contain query terms in the same orders as they appear in the user query. If no fragment exists for all of the query terms, then the proximity algorithm considers fragments that contain all but one of the query terms. This process is iterated with the number of query terms reduced each time, until the length of the fragment exceeds  `maxMinSpan`.  `maxMinSpan` is an attribute within the proximity rank feature that specifies a threshold defining the maximum length of a fragment.An ideal fragment is one that contains all query terms but is less than  `maxMinSpan`. |
-| `isExact=1`|In this mode, the proximity algorithm attempts to find a consecutive snippet of document that contains all of the query terms (or query phrase). |
+| `isExact=0`|In this mode, the proximity algorithm attempts to find the minimal span (distance) of the subset of query terms in a document.The proximity algorithm considers fragments that contain query terms in the same orders as they appear in the user query. If no fragment exists for all of the query terms, then the proximity algorithm considers fragments that contain all but one of the query terms. This process is iterated with the number of query terms reduced each time, until the length of the fragment exceeds  `maxMinSpan`. `maxMinSpan` is an attribute within the proximity rank feature that specifies a threshold defining the maximum length of a fragment.An ideal fragment is one that contains all query terms but is less than  `maxMinSpan`.|
+| `isExact=1`|In this mode, the proximity algorithm attempts to find a consecutive snippet of document that contains all of the query terms (or query phrase).|
 | `isDiscounted`|This attribute is applicable to both  `isExact=1` and `isExact=0`. When  `isDiscounted` is enabled, the proximity value is multiplied by this fraction: (number of occurrences of the best fragment or exact hits) divided by (number of occurrences of the rarest query term in this context).|
-| `proximity="complete"`|In this mode, the proximity rank feature only boosts documents where the whole user query text occurs within a specific managed property. |
+| `proximity="complete"`|In this mode, the proximity rank feature only boosts documents where the whole user query text occurs within a specific managed property.|
 | `proximity="perfect"`|This mode is similar to  `complete` mode, but is applied to short fields, such as **title**. The proximity rank feature only boosts documents where the whole user query text matches an exact **title** within a specific managed property. If the **title** contains additional terms outside of the user query, the item isn't considered by the proximity algorithm.|
 | `default`|This attribute applies only to single-term queries. For items that contain the query term, the  `default` value is used as the rank score output by the proximity rank feature.The  `perfect` proximity is an exception to this rule. For `perfect` proximity, the default value is never used. Instead, single-term queries are processed in the same way as other queries.|
    
@@ -602,7 +602,7 @@ You can evaluate the proximity rank feature by using several different options, 
   
     
     
-The following example is an excerpt from the default SharePoint Server 2013 rank model. In this model, the proximity feature is only part of the second stage calculation, which involves a neural network. Therefore, the example contains multiple weight elements,  `<LayerWeights>`, which correspond to the number of neurons in the hidden layer of the neural network. 
+The following example is an excerpt from the default SharePoint Server 2013 rank model. In this model, the proximity feature is only part of the second stage calculation, which involves a neural network. Therefore, the example contains multiple weight elements,  `<LayerWeights>`, which correspond to the number of neurons in the hidden layer of the neural network.
   
     
     
@@ -650,13 +650,13 @@ You must map the managed properties used in proximity rank features to the defau
 
 ### Dynamic
 
-The dynamic rank feature ranks an item depending on whether the query property matches a given managed property. If there is a match, the item's rank score is multiplied with a specific value to distinguish that particular item. The weight attribute is used to control how much this feature affects the overall rank score. 
+The dynamic rank feature ranks an item depending on whether the query property matches a given managed property. If there is a match, the item's rank score is multiplied with a specific value to distinguish that particular item. The weight attribute is used to control how much this feature affects the overall rank score.
   
     
     
 
 > [!NOTE]
-> The dynamic rank feature is not customizable; it's for internal use only. However, if you install the SharePoint Server 2013 cumulative update of August 2013, the AnchortextComplete rank feature is a customizable dynamic rank feature that is part of the default ranking model. 
+> The dynamic rank feature is not customizable; it's for internal use only. However, if you install the SharePoint Server 2013 cumulative update of August 2013, the AnchortextComplete rank feature is a customizable dynamic rank feature that is part of the default ranking model.
   
     
     
@@ -685,7 +685,7 @@ The default SharePoint 2013 ranking model doesn't boost the rank of search resul
   
     
     
-The freshness transform is based on the following formula: 
+The freshness transform is based on the following formula:
   
     
     
@@ -697,7 +697,7 @@ The freshness transform is based on the following formula:
   
     
     
-Where: 
+Where:
   
     
     
@@ -758,26 +758,26 @@ Where:
 ## Aggregation of rank features
 <a name="sp15_aggregation_of_rank_features"> </a>
 
-A ranking model consists of various rank features that are considered together to calculate a rank score. 
+A ranking model consists of various rank features that are considered together to calculate a rank score.
   
     
     
 
 ### Two-stage ranking models
 
-A ranking model can have two rank stages. In the first stage, the ranking model applies relatively inexpensive rank features to get a gross ranking of the results. In the second stage, the ranking model applies additional and more expensive rank features to the items with the highest rank scores. 
+A ranking model can have two rank stages. In the first stage, the ranking model applies relatively inexpensive rank features to get a gross ranking of the results. In the second stage, the ranking model applies additional and more expensive rank features to the items with the highest rank scores.
   
     
     
-The SharePoint Server 2013 default ranking model is an example of two-stage ranking model. In this model, the second stage works with the top 1000 items with the highest rank score that result from the first stage. 
+The SharePoint Server 2013 default ranking model is an example of two-stage ranking model. In this model, the second stage works with the top 1000 items with the highest rank score that result from the first stage.
   
     
     
-When the ranking process in the first stage is complete, the search engine re-sorts all of the items, including the items that were excluded from the second stage. This usually results in items from the second stage having a lower rank score when compared to items in the first stage. 
+When the ranking process in the first stage is complete, the search engine re-sorts all of the items, including the items that were excluded from the second stage. This usually results in items from the second stage having a lower rank score when compared to items in the first stage.
   
     
     
-However, to ensure that the search engine re-sorts the items accurately, items from the second stage must have a higher rank score than items from the first stage. To solve this dilemma, the rank scores of the second stage are boosted. The search engine performs this calculation automatically, based on a combination of rank features. 
+However, to ensure that the search engine re-sorts the items accurately, items from the second stage must have a higher rank score than items from the first stage. To solve this dilemma, the rank scores of the second stage are boosted. The search engine performs this calculation automatically, based on a combination of rank features.
   
     
     
@@ -791,11 +791,11 @@ However, to ensure that the search engine re-sorts the items accurately, items f
 
 #### Linear model
 
-The liner model defines a linear combination of rank scores from rank features. 
+The liner model defines a linear combination of rank scores from rank features.
   
     
     
-The rank score provided by linear models is computed using the following formula: 
+The rank score provided by linear models is computed using the following formula:
   
     
     
@@ -815,7 +815,7 @@ The rank score provided by linear models is computed using the following formula
   
     
     
-Where: 
+Where:
   
     
     
@@ -838,11 +838,11 @@ Where:
 
 #### Neural network
 
-The neural network defines a nonlinear combination of rank scores from rank features. Currently, SharePoint Server 2013 supports neural networks that are limited to one hidden layer with up to eight neurons. 
+The neural network defines a nonlinear combination of rank scores from rank features. Currently, SharePoint Server 2013 supports neural networks that are limited to one hidden layer with up to eight neurons.
   
     
     
-The ranking score produced by a neural network is computed using the following formula: 
+The ranking score produced by a neural network is computed using the following formula:
   
     
     
@@ -862,7 +862,7 @@ The ranking score produced by a neural network is computed using the following f
   
     
     
-Where: 
+Where:
   
     
     
@@ -891,7 +891,7 @@ Where:
 -  _b_i,k is the addition from the _k_th bucketed static feature to _i_th hidden neuron.
     
   
-The overall schema of rank score computation with a two-layer neural network is represented in the following diagram. This diagram doesn't consider the bucketed static rank feature that contributes to neural networks by adding custom values directly into hidden nodes, without any transformation or normalization. 
+The overall schema of rank score computation with a two-layer neural network is represented in the following diagram. This diagram doesn't consider the bucketed static rank feature that contributes to neural networks by adding custom values directly into hidden nodes, without any transformation or normalization.
   
     
     
@@ -921,11 +921,11 @@ The overall schema of rank score computation with a two-layer neural network is 
 ## Precalculation in BM25 and static rank features
 <a name="sp15_precalculation_BM25_static_rank_features"> </a>
 
-In a ranking model, BM25 and static rank features can benefit from precalculations to improve query latency for query terms that frequently occur in items. This query latency improvement is achieved with the cost of additional indexing, both in terms of disk space used by the search index and CPU consumption. 
+In a ranking model, BM25 and static rank features can benefit from precalculations to improve query latency for query terms that frequently occur in items. This query latency improvement is achieved with the cost of additional indexing, both in terms of disk space used by the search index and CPU consumption.
   
     
     
-You should use precalculation only in the first stage of a ranking model. Consequently, if precalculation is enabled, the rank detail of the first stage will not be complete. 
+You should use precalculation only in the first stage of a ranking model. Consequently, if precalculation is enabled, the rank detail of the first stage will not be complete.
   
     
     
@@ -937,7 +937,7 @@ To enable precalculation, set the  `precalcEnabled` attribute to **1** in the ra
 ## Query properties
 <a name="sp15_query_properties_ranking"> </a>
 
-Query properties is a ranking mechanism that populates additional information useful for rank score calculation. For example, query properties can be the time and date when the query was run, which can be used by the freshness rank feature. Table 3 lists the query properties available for ranking. You can't configure query properties. 
+Query properties is a ranking mechanism that populates additional information useful for rank score calculation. For example, query properties can be the time and date when the query was run, which can be used by the freshness rank feature. Table 3 lists the query properties available for ranking. You can't configure query properties.
   
     
     
@@ -947,11 +947,11 @@ Query properties is a ranking mechanism that populates additional information us
 
 |**Query property**|**Description**|
 |:-----|:-----|
-|AnchortextCompleteQueryProperty |Boosts complete anchor text. |
-|DateTimeUtcNow |Current date and time. This query property can be used by the freshness rank feature. |
-|DetectedLanguageRanking |ID of the query language. This query property is used by the **DetectedLanguageRanking** rank feature.|
-|PersonalizationData |Ranks personalized data. |
-|RecommendedforQueryProperty |Ranks recommendations. |
+|AnchortextCompleteQueryProperty|Boosts complete anchor text.|
+|DateTimeUtcNow|Current date and time. This query property can be used by the freshness rank feature.|
+|DetectedLanguageRanking|ID of the query language. This query property is used by the **DetectedLanguageRanking** rank feature.|
+|PersonalizationData|Ranks personalized data.|
+|RecommendedforQueryProperty|Ranks recommendations.|
    
 
 ## Example 1: Basic ranking model with one linear stage containing a single static rank feature
@@ -999,10 +999,10 @@ This ranking model with one linear stage contains these four rank features:
     
     
 
--  `BM25` This rank feature is based on managed properties **Title** and **body**; the  `w` attribute for **title** is set so that hits of query terms in **Title** are two times (2x) more important than hits of query terms in **body**. 
+-  `BM25` This rank feature is based on managed properties **Title** and **body**; the  `w` attribute for **title** is set so that hits of query terms in **Title** are two times (2x) more important than hits of query terms in **body**.
     
   
--  `UrlDepth` This rank feature is based on the **UrlDepth** managed property, which is available by default in SharePoint installations. **UrlDepth** contains the number of backslashes (\\) in the URL of a document. The inverse rational ( `InvRational`) transform ensures that documents with shorter URLs receive higher rank scores. 
+-  `UrlDepth` This rank feature is based on the **UrlDepth** managed property, which is available by default in SharePoint installations. **UrlDepth** contains the number of backslashes (\\) in the URL of a document. The inverse rational ( `InvRational`) transform ensures that documents with shorter URLs receive higher rank scores.
     
   
 -  `TitleProximity` This rank feature boosts documents if some of the query terms occur close to each other in the **title** of these documents.

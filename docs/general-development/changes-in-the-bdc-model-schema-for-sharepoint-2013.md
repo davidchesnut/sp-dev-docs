@@ -6,17 +6,17 @@ ms.assetid: 882ea867-9acb-4313-99c9-865a523b72fd
 
 
 # Changes in the BDC model schema for SharePoint 2013
-Learn what has changed in SharePoint 2013 for the BDC model schema. 
-The number of changes in the schema (BDCMetadata.xsd) for creating BDC models in SharePoint 2013 is relatively small. But these changes have significant impact on the feature set offerings of Business Connectivity Services (BCS). 
+Learn what has changed in SharePoint 2013 for the BDC model schema.
+The number of changes in the schema (BDCMetadata.xsd) for creating BDC models in SharePoint 2013 is relatively small. But these changes have significant impact on the feature set offerings of Business Connectivity Services (BCS).
   
     
     
 
-For more information about the BDCMetadata schema, see  [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint-2013.md). 
+For more information about the BDCMetadata schema, see  [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint-2013.md).
 ## Changes to complex type elements in BDCMetadata.xsd
 <a name="bkmk_ChangesToElements"> </a>
 
-The following table shows what changes have been made to the top-level elements in the BDCMetadata schema. 
+The following table shows what changes have been made to the top-level elements in the BDCMetadata schema.
   
     
     
@@ -26,14 +26,14 @@ The following table shows what changes have been made to the top-level elements 
 
 |**Element**|**Description**|
 |:-----|:-----|
-|IndividuallySecurableMetadataObject |Used to designate that the specified **MetadataObject** is able to be secured explicitly and not by association to its parent.|
-|MetadataObject |Used to store additional metadata about the connection to the external data source. |
+|IndividuallySecurableMetadataObject|Used to designate that the specified **MetadataObject** is able to be secured explicitly and not by association to its parent.|
+|MetadataObject|Used to store additional metadata about the connection to the external data source.|
    
 
 ## Changes to simple type elements in BDCMetadata.xsd
 <a name="bkmk_ChangesToSimpleTypes"> </a>
 
-The following table lists the changes that have been made to the attributes of each element. 
+The following table lists the changes that have been made to the attributes of each element.
   
     
     
@@ -43,13 +43,13 @@ The following table lists the changes that have been made to the attributes of e
 
 |**Element**|**Description**|
 |:-----|:-----|
-|No changes ||
+|No changes||
    
 
 ## Changes to attributes in BDCMetadata.xsd
 <a name="bkmk_ChangesToAttributes"> </a>
 
-The following table lists the changes to the attributes of each element. 
+The following table lists the changes to the attributes of each element.
   
     
     

@@ -7,7 +7,7 @@ ms.assetid: 3cfeb8d7-84b8-4673-bc92-b176cba4ac3e
 
 # How to: Create a mashup that uses an embedded workbook and Bing Maps
 
-This article walks you through a powerful Web-based mashup that combines an embedded Excel workbook and Bing Maps. 
+This article walks you through a powerful Web-based mashup that combines an embedded Excel workbook and Bing Maps.
   
     
     
@@ -15,11 +15,11 @@ This article walks you through a powerful Web-based mashup that combines an embe
 
 ## About the "Destination Explorer"
 
-The Destination Explorer is a mashup that lets the user choose a region, a destination type (city or park), a specific destination within the region, and then see weather information or number of visitors to the destination by month. 
+The Destination Explorer is a mashup that lets the user choose a region, a destination type (city or park), a specific destination within the region, and then see weather information or number of visitors to the destination by month.
   
     
     
-When the user selects different options from the UI, JavaScript is used to process the events and pass the changes to the workbook on OneDrive. The workbook recalculates itself based on the changes and notifies the Destination Explorer when it is finished using callback functions. Depending on what the user changed, the Destination Explorer may either get more data from the Travel workbook, update the view of the Bing Map, hide the charts, or swap the chart that is currently showing. 
+When the user selects different options from the UI, JavaScript is used to process the events and pass the changes to the workbook on OneDrive. The workbook recalculates itself based on the changes and notifies the Destination Explorer when it is finished using callback functions. Depending on what the user changed, the Destination Explorer may either get more data from the Travel workbook, update the view of the Bing Map, hide the charts, or swap the chart that is currently showing.
   
     
     
@@ -27,7 +27,7 @@ When the user selects different options from the UI, JavaScript is used to proce
   
     
     
-The Destination Explorer depends heavily on an embedded workbook that contains all the destination names, statistics for weather and visitor numbers, and two charts for displaying monthly weather data and monthly visitor data. 
+The Destination Explorer depends heavily on an embedded workbook that contains all the destination names, statistics for weather and visitor numbers, and two charts for displaying monthly weather data and monthly visitor data.
   
     
     
@@ -35,7 +35,7 @@ The Destination Explorer depends heavily on an embedded workbook that contains a
   
     
     
-The mashup uses the Excel Services JavaScript API to embed the workbook and to interact with it. To use the Excel Services JavaScript API, you only have to reference the API source location in your code. Once you have access to the Excel Services JavaScript API, you can programmatically embed and work with an Excel workbook. 
+The mashup uses the Excel Services JavaScript API to embed the workbook and to interact with it. To use the Excel Services JavaScript API, you only have to reference the API source location in your code. Once you have access to the Excel Services JavaScript API, you can programmatically embed and work with an Excel workbook.
   
     
     
@@ -43,14 +43,14 @@ The mashup uses the Excel Services JavaScript API to embed the workbook and to i
   
     
     
-The mashup also uses the Bing Maps API to display the locations selected on the workbook inside a Bing Map. Just like any other JavaScript library, all you have to do is reference the API library in your code in order to include a Bing Map in your mashup. 
+The mashup also uses the Bing Maps API to display the locations selected on the workbook inside a Bing Map. Just like any other JavaScript library, all you have to do is reference the API library in your code in order to include a Bing Map in your mashup.
   
     
     
 
 ## Creating the "Destination Explorer" Mashup
 
-To create this mashup, we followed 3 basic steps: 
+To create this mashup, we followed 3 basic steps:
   
     
     
@@ -58,10 +58,10 @@ To create this mashup, we followed 3 basic steps:
 1. Store the workbook on OneDrive. Find more information on the  [OneDrive](https://onedrive.live.com/about/en-us/) page.
     
   
-2. Embed the workbook on the page. Find more information on embedding workbooks from OneDrive  [here](http://office.microsoft.com/en-us/excel-help/share-it-embed-an-excel-workbook-on-your-blog-HA102029502.aspx?CTT=5&amp;origin=HA102775335). 
+2. Embed the workbook on the page. Find more information on embedding workbooks from OneDrive  [here](http://office.microsoft.com/en-us/excel-help/share-it-embed-an-excel-workbook-on-your-blog-HA102029502.aspx?CTT=5&amp;origin=HA102775335).
     
   
-3. Mash it up with Bing Maps. This step is covered in more detail in the following sections. 
+3. Mash it up with Bing Maps. This step is covered in more detail in the following sections.
     
   
 
@@ -75,18 +75,18 @@ After storing the workbook in a public folder on OneDrive, and after embedding t
   
     
     
-The integration happens in the following 3 steps: 
+The integration happens in the following 3 steps:
   
     
     
 
-- Create the page structure for the mashup 
+- Create the page structure for the mashup
     
   
-- Initialize the embedded workbook charts and the Bing Map 
+- Initialize the embedded workbook charts and the Bing Map
     
   
-- Create the appropriate callback functions 
+- Create the appropriate callback functions
     
   
 
@@ -204,7 +204,7 @@ Ewa.EwaControl.loadEwaAsync(fileToken, "chartDiv", props, onEwaChartLoaded);
   ```
 
 
-    The callback used here is **onEwaChartLoaded**. This launches the following chain of calls to the Excel Services JavaScript API and callbacks within the Destination Explorer. The callbacks used in this chain are: 
+    The callback used here is **onEwaChartLoaded**. This launches the following chain of calls to the Excel Services JavaScript API and callbacks within the Destination Explorer. The callbacks used in this chain are:
     
   - **onEwaChartLoaded()** - This function saves a reference to the Excel Web Access Control associated with the chart. After it has the control, it calls the method **getRangeA1Async()** to get the range represented by the name *OutputTopFiveDetails*  .
     

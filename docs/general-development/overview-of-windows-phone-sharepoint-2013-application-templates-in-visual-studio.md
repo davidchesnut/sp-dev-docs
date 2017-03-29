@@ -6,22 +6,22 @@ ms.assetid: 6ae27957-fa41-4e6f-92e3-db11dae1f6c2
 
 
 # Overview of Windows Phone SharePoint 2013 application templates in Visual Studio
-Learn about the Visual Studio templates installed by the Windows Phone SharePoint Software Development Kit for mobile app development. 
+Learn about the Visual Studio templates installed by the Windows Phone SharePoint Software Development Kit for mobile app development.
 ## Templates installed by the Windows Phone SharePoint Software Development Kit
 <a name="BKMK_TemplatesInstalled"> </a>
 
-After you set up your development environment and install the Windows Phone SharePoint Software Development Kit (SDK), two additional Silverlight for Windows Phone templates are available for projects: 
+After you set up your development environment and install the Windows Phone SharePoint Software Development Kit (SDK), two additional Silverlight for Windows Phone templates are available for projects:
   
     
     
 
-- The Windows Phone Empty SharePoint Application template 
+- The Windows Phone Empty SharePoint Application template
     
   
-- The Windows Phone SharePoint List Application template 
+- The Windows Phone SharePoint List Application template
     
   
-Currently, these templates are designed to be used only in C# projects. They are not available for Visual Basic projects. The templates are available, however, for use in Visual Studio 2012 and Visual Studio Express 2012 for Windows Phone 8 and in Visual Studio 2010 and Visual Studio 2010 Express for Windows Phone 7. 
+Currently, these templates are designed to be used only in C# projects. They are not available for Visual Basic projects. The templates are available, however, for use in Visual Studio 2012 and Visual Studio Express 2012 for Windows Phone 8 and in Visual Studio 2010 and Visual Studio 2010 Express for Windows Phone 7.
   
     
     
@@ -46,7 +46,7 @@ When you create a project based on either one of these templates, you are not gi
 
 
 > [!NOTE]
-> For more information about settings in the WMAppManifest.xml file, see  [Application Manifest File for Windows Phone](http://msdn.microsoft.com/en-us/library/ff769509.aspx). 
+> For more information about settings in the WMAppManifest.xml file, see  [Application Manifest File for Windows Phone](http://msdn.microsoft.com/en-us/library/ff769509.aspx).
   
     
     
@@ -55,13 +55,13 @@ When you create a project based on either one of these templates, you are not gi
 ## Starting a project based on the Windows Phone Empty SharePoint Application template
 <a name="BKMK_EmptySPAppTemplate"> </a>
 
-If you create a Visual Studio project based on the Windows Phone Empty SharePoint Application template, the starting project is similar to a project created by using the basic Windows Phone Application template (installed by the Windows Phone SDK 7.1), with the addition of references to DLLs installed by the Windows Phone SharePoint SDK (Microsoft.SharePoint.Client.Phone.dll, Microsoft.SharePoint.Client.Phone.Auth.UI, and Microsoft.SharePoint.Client.Phone.Runtime.dll as shown in Figure 1) and a few other reconfigurations. 
+If you create a Visual Studio project based on the Windows Phone Empty SharePoint Application template, the starting project is similar to a project created by using the basic Windows Phone Application template (installed by the Windows Phone SDK 7.1), with the addition of references to DLLs installed by the Windows Phone SharePoint SDK (Microsoft.SharePoint.Client.Phone.dll, Microsoft.SharePoint.Client.Phone.Auth.UI, and Microsoft.SharePoint.Client.Phone.Runtime.dll as shown in Figure 1) and a few other reconfigurations.
   
     
     
 
 > [!NOTE]
-> The same templates are available for Windows Phone 8 in Visual Studio Express 2012. 
+> The same templates are available for Windows Phone 8 in Visual Studio Express 2012.
   
     
     
@@ -80,7 +80,7 @@ If you create a Visual Studio project based on the Windows Phone Empty SharePoin
   
     
     
-The files in a project based on the Windows Phone Empty SharePoint Application template are the standard files of a Silverlight Windows Phone app. The MainPage.xaml file contains XAML declarations that constitute the user interface (UI) of the app. A code-behind file, MainPage.xaml.cs, is associated with the MainPage.xaml file by using the mechanism of partial classes, as are the other code-behind files in the project. (See  [Code-Behind and Partial Classes](http://msdn.microsoft.com/en-us/library/cc221357.aspx).) The MainPage.xaml.cs file contains procedural code to implement logic to support operations and events in the UI. The App.xaml file represents the overall Windows app. The associated code-behind file, App.xaml.cs, includes procedural code to handle life-cycle events for the app. 
+The files in a project based on the Windows Phone Empty SharePoint Application template are the standard files of a Silverlight Windows Phone app. The MainPage.xaml file contains XAML declarations that constitute the user interface (UI) of the app. A code-behind file, MainPage.xaml.cs, is associated with the MainPage.xaml file by using the mechanism of partial classes, as are the other code-behind files in the project. (See  [Code-Behind and Partial Classes](http://msdn.microsoft.com/en-us/library/cc221357.aspx).) The MainPage.xaml.cs file contains procedural code to implement logic to support operations and events in the UI. The App.xaml file represents the overall Windows app. The associated code-behind file, App.xaml.cs, includes procedural code to handle life-cycle events for the app.
   
     
     
@@ -88,13 +88,13 @@ The files in a project based on the Windows Phone Empty SharePoint Application t
 ## Starting a project based on the Windows Phone SharePoint List Application template
 <a name="BKMK_SPListAppTemplate"> </a>
 
-The Windows Phone SharePoint List Application template is considerably more powerful than the Windows Phone Empty SharePoint Application template. This template was designed to help you create Windows Phone apps to handle a likely scenario in mobile application development for SharePoint: accessing and manipulating data stored in a SharePoint list from a Windows Phone. When you create a Visual Studio project based on this template, a wizard guides you through the necessary configuration steps and generates solution files for a functional Windows Phone app that can work with SharePoint list data. You can build and deploy the app from the generated files with little or no modification. 
+The Windows Phone SharePoint List Application template is considerably more powerful than the Windows Phone Empty SharePoint Application template. This template was designed to help you create Windows Phone apps to handle a likely scenario in mobile application development for SharePoint: accessing and manipulating data stored in a SharePoint list from a Windows Phone. When you create a Visual Studio project based on this template, a wizard guides you through the necessary configuration steps and generates solution files for a functional Windows Phone app that can work with SharePoint list data. You can build and deploy the app from the generated files with little or no modification.
   
     
     
 
 > [!NOTE]
-> The same templates are available for Windows Phone 8 in Visual Studio Express 2012. 
+> The same templates are available for Windows Phone 8 in Visual Studio Express 2012.
   
     
     
@@ -102,7 +102,7 @@ The Windows Phone SharePoint List Application template is considerably more powe
 
 ### Understanding the solution files in a Windows Phone SharePoint List Application project
 
-The files generated for a Visual Studio project using the Windows Phone SharePoint List Application template are shown in Figure 2. (References to other assemblies—not shown in Figure 2—such as System.Runtime.Serialization.dll and Microsoft.Phone.Controls.dll are additional to those references included by the Windows Phone Empty SharePoint Application template. These additional assemblies support the management of SharePoint list data and the visual controls to represent that data.) 
+The files generated for a Visual Studio project using the Windows Phone SharePoint List Application template are shown in Figure 2. (References to other assemblies—not shown in Figure 2—such as System.Runtime.Serialization.dll and Microsoft.Phone.Controls.dll are additional to those references included by the Windows Phone Empty SharePoint Application template. These additional assemblies support the management of SharePoint list data and the visual controls to represent that data.)
   
     
     
@@ -120,7 +120,7 @@ The files generated for a Visual Studio project using the Windows Phone SharePoi
   
     
     
-The project files for are described in Table 1. 
+The project files for are described in Table 1.
   
     
     
@@ -146,7 +146,7 @@ The project files for are described in Table 1.
 |ListViewModel.cs |Serves as the data source for the List.xaml file. |
 |NewItemViewModel.cs |Serves as the data source for the NewForm.xaml file. You write code in this file to validate data entered by users when adding a new list item. |
    
-For the details of the steps involved in creating a Windows Phone app by using the Windows Phone SharePoint List Application template, see  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md). 
+For the details of the steps involved in creating a Windows Phone app by using the Windows Phone SharePoint List Application template, see  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md).
   
     
     

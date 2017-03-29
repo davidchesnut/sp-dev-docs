@@ -1,6 +1,6 @@
 ---
 title: Loop-Back SOAP Calls and Direct Linking
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: bffc6565-636f-40d4-ba17-2511070ba5db
 ---
 

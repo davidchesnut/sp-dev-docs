@@ -6,19 +6,19 @@ ms.assetid: 642175cb-8fcb-4210-8d1e-626ad1f58bb0
 
 
 # How to: Create report renderers for PerformancePoint Services in SharePoint 2013
-Learn how to create the renderer component in a custom report extension for PerformancePoint Services. 
+Learn how to create the renderer component in a custom report extension for PerformancePoint Services.
 ## What are custom report renderers for PerformancePoint Services?
 <a name="bk_intro"> </a>
 
-In PerformancePoint Services, custom report renderers are web server controls that render a custom report in a Web Part. A renderer writes the HTML for the report visualization (such as a table or chart), provides logic to handle report parameters, and retrieves the report object from the repository. 
+In PerformancePoint Services, custom report renderers are web server controls that render a custom report in a Web Part. A renderer writes the HTML for the report visualization (such as a table or chart), provides logic to handle report parameters, and retrieves the report object from the repository.
   
     
     
-The following procedures and code examples are based on the **SampleReportRenderer** class from the [custom objects sample](http://msdn.microsoft.com/library/af021d52-7562-4e7a-9de4-e1fc5784a59d%28Office.15%29.aspx). The renderer renders a table and populates it with values received from a linked filter. For the complete code for the class, see  [Code example: Create a renderer for custom PerformancePoint Services reports in SharePoint Server 2013](#bk_example). 
+The following procedures and code examples are based on the **SampleReportRenderer** class from the [custom objects sample](http://msdn.microsoft.com/library/af021d52-7562-4e7a-9de4-e1fc5784a59d%28Office.15%29.aspx). The renderer renders a table and populates it with values received from a linked filter. For the complete code for the class, see  [Code example: Create a renderer for custom PerformancePoint Services reports in SharePoint Server 2013](#bk_example).
   
     
     
-We recommend that you use the sample report renderer as a template. The sample shows how to call objects in the PerformancePoint Services API and demonstrates best practices for PerformancePoint Services development. 
+We recommend that you use the sample report renderer as a template. The sample shows how to call objects in the PerformancePoint Services API and demonstrates best practices for PerformancePoint Services development.
   
     
     
@@ -34,24 +34,24 @@ We recommend that you use the sample report renderer as a template. The sample s
 1. Install PerformancePoint Services, or copy the DLLs that your extension uses (listed in step 3) to your computer. For more information, see  [DLLs with Class Libraries](http://msdn.microsoft.com/library/41e92619-8253-481d-82f9-35b6a6abc477%28Office.15%29.aspx). 
     
   
-2. In Visual Studio, create a C# class library. If you have already created a class library for your extension, add a new C# class. 
+2. In Visual Studio, create a C# class library. If you have already created a class library for your extension, add a new C# class.
     
-    You must sign your DLL with a strong name. In addition, ensure that all assemblies referenced by your DLL have strong names. For information about how to sign an assembly with a strong name and how to create a public/private key pair, see  [How to: Create a Public/Private Key Pair](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114.aspx). 
-    
-  
-3. Add the following PerformancePoint Services DLLs as assembly references to the project: 
-    
-  - Microsoft.PerformancePoint.Scorecards.Client.dll 
+    You must sign your DLL with a strong name. In addition, ensure that all assemblies referenced by your DLL have strong names. For information about how to sign an assembly with a strong name and how to create a public/private key pair, see  [How to: Create a Public/Private Key Pair](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114.aspx).
     
   
-  - Microsoft.PerformancePoint.Scorecards.Server.dll 
+3. Add the following PerformancePoint Services DLLs as assembly references to the project:
+    
+  - Microsoft.PerformancePoint.Scorecards.Client.dll
     
   
-  - Microsoft.PerformancePoint.Scorecards.Store.dll 
+  - Microsoft.PerformancePoint.Scorecards.Server.dll
+    
+  
+  - Microsoft.PerformancePoint.Scorecards.Store.dll
     
   
 
-    Depending on your extension's functionality, other project references may be required. 
+    Depending on your extension's functionality, other project references may be required.
     
   
 4. In your renderer class, add **using** directives for the following PerformancePoint Services namespaces:
@@ -85,11 +85,11 @@ We recommend that you use the sample report renderer as a template. The sample s
 ## Code example: Create a renderer for custom PerformancePoint Services reports in SharePoint Server 2013
 <a name="bk_example"> </a>
 
-The class in the following code example creates a report renderer that displays stock information passed in from the sample filter. 
+The class in the following code example creates a report renderer that displays stock information passed in from the sample filter.
   
     
     
-Before you can compile this code example, you must configure your development environment as described in  [To create and configure the renderer class](#BKMK_ConfigRR). 
+Before you can compile this code example, you must configure your development environment as described in  [To create and configure the renderer class](#BKMK_ConfigRR).
   
     
     
@@ -260,7 +260,7 @@ namespace Microsoft.PerformancePoint.SDK.Samples.SampleReport
 ## Next steps
 <a name="bk_next"> </a>
 
-After you create a report renderer and a report editor (including its user interface, if required), deploy the extension as described in  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx). 
+After you create a report renderer and a report editor (including its user interface, if required), deploy the extension as described in  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx).
   
     
     

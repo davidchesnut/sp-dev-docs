@@ -6,11 +6,11 @@ ms.assetid: c6e1ca38-134f-428a-8d21-b8b2615b161b
 
 
 # How to: Retrieve user profile properties by using the JavaScript object model in SharePoint 2013
-Learn how to retrieve user properties and user profile properties programmatically by using the SharePoint 2013 JavaScript object model. 
+Learn how to retrieve user properties and user profile properties programmatically by using the SharePoint 2013 JavaScript object model.
 ## What are user properties and user profile properties in SharePoint 2013?
 <a name="bkmk_WhatIs"> </a>
 
-User properties and user profile properties provide information about SharePoint users, such as display name, email, title, and other business and personal information. In client-side APIs, you access these properties from the  [PersonProperties](http://msdn.microsoft.com/library/0274d97f-b697-f436-2aaf-f5bcf9b70df8%28Office.15%29.aspx) object and its [userProfileProperties](http://msdn.microsoft.com/library/56516666-7425-4993-222f-f745cf266e89%28Office.15%29.aspx) property. The [userProfileProperties](http://msdn.microsoft.com/library/56516666-7425-4993-222f-f745cf266e89%28Office.15%29.aspx) property contains all user profile properties, but the [PersonProperties](http://msdn.microsoft.com/library/0274d97f-b697-f436-2aaf-f5bcf9b70df8%28Office.15%29.aspx) object contains commonly used properties (such as [accountName](http://msdn.microsoft.com/library/ad1551bf-dad8-d54e-880a-8a4388fad44e%28Office.15%29.aspx),  [displayName](http://msdn.microsoft.com/library/ffc35ed6-5f3e-c86d-6931-97ff9d825a8b%28Office.15%29.aspx), and  [email](http://msdn.microsoft.com/library/74302f73-aaf6-920b-0605-812b0dbf4568%28Office.15%29.aspx)) that are easier to access. 
+User properties and user profile properties provide information about SharePoint users, such as display name, email, title, and other business and personal information. In client-side APIs, you access these properties from the  [PersonProperties](http://msdn.microsoft.com/library/0274d97f-b697-f436-2aaf-f5bcf9b70df8%28Office.15%29.aspx) object and its [userProfileProperties](http://msdn.microsoft.com/library/56516666-7425-4993-222f-f745cf266e89%28Office.15%29.aspx) property. The [userProfileProperties](http://msdn.microsoft.com/library/56516666-7425-4993-222f-f745cf266e89%28Office.15%29.aspx) property contains all user profile properties, but the [PersonProperties](http://msdn.microsoft.com/library/0274d97f-b697-f436-2aaf-f5bcf9b70df8%28Office.15%29.aspx) object contains commonly used properties (such as [accountName](http://msdn.microsoft.com/library/ad1551bf-dad8-d54e-880a-8a4388fad44e%28Office.15%29.aspx),  [displayName](http://msdn.microsoft.com/library/ffc35ed6-5f3e-c86d-6931-97ff9d825a8b%28Office.15%29.aspx), and  [email](http://msdn.microsoft.com/library/74302f73-aaf6-920b-0605-812b0dbf4568%28Office.15%29.aspx)) that are easier to access.
   
     
     
@@ -25,7 +25,7 @@ The  [PeopleManager](http://msdn.microsoft.com/library/985fd2df-0e31-6ece-b846-b
 - The  [getUserProfilePropertiesFor](http://msdn.microsoft.com/library/8674e96f-d320-4a50-1580-9a4568842ee5%28Office.15%29.aspx) method and the [getUserProfilePropertyFor](http://msdn.microsoft.com/library/da048bfa-54c6-8216-e8ef-09bd84f68d8d%28Office.15%29.aspx) method return the values of the user profile properties that you specify.
     
   
-User profile properties from client APIs are read-only (except the profile picture, which you can change by using the  [PeopleManager.setMyProfilePicture](http://msdn.microsoft.com/library/a4f8d745-f211-e750-4fd0-047091804683%28Office.15%29.aspx) method). If you want to change other user profile properties, you must use the server object model. For more information about working with user profiles, see [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md). 
+User profile properties from client APIs are read-only (except the profile picture, which you can change by using the  [PeopleManager.setMyProfilePicture](http://msdn.microsoft.com/library/a4f8d745-f211-e750-4fd0-047091804683%28Office.15%29.aspx) method). If you want to change other user profile properties, you must use the server object model. For more information about working with user profiles, see [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md).
   
     
     
@@ -40,18 +40,18 @@ User profile properties from client APIs are read-only (except the profile pictu
 ## Prerequisites for setting up your development environment to retrieve user properties by using the SharePoint 2013 JavaScript object model
 <a name="bk_Prereqs"> </a>
 
-To create an application page that uses the JavaScript object model to retrieve user properties, you'll need: 
+To create an application page that uses the JavaScript object model to retrieve user properties, you'll need:
   
     
     
 
-- SharePoint Server 2013 with profiles created for the current user and a target user 
+- SharePoint Server 2013 with profiles created for the current user and a target user
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
-- Office Developer Tools for Visual Studio 2013 
+- Office Developer Tools for Visual Studio 2013
     
   
 - **Full Control** connection permissions to access the User Profile service application for the current user
@@ -62,7 +62,7 @@ To create an application page that uses the JavaScript object model to retrieve 
 <a name="bk_CreateAppPage"> </a>
 
 
-1. On the server running SharePoint Server 2013, open Visual Studio and choose **File**, **New**, **Project**. 
+1. On the server running SharePoint Server 2013, open Visual Studio and choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
@@ -80,11 +80,11 @@ To create an application page that uses the JavaScript object model to retrieve 
 6. In **Solution Explorer**, open the shortcut menu for the UserProfilesJSOM project, and then add a SharePoint "Layouts" mapped folder.
     
   
-7. In the **Layouts** folder, open the shortcut menu for theUserProfilesJSOM folder, and then add a new SharePoint application page namedUserProfiles.aspx. 
+7. In the **Layouts** folder, open the shortcut menu for theUserProfilesJSOM folder, and then add a new SharePoint application page namedUserProfiles.aspx.
     
    > [!NOTE]
-   > The code examples in this article define custom code in the page markup but do not use the code-behind class file that Visual Studio creates for the page. 
-8. Open the shortcut menu for the UserProfiles.aspx page, and then choose **Set as Startup Item**. 
+   > The code examples in this article define custom code in the page markup but do not use the code-behind class file that Visual Studio creates for the page.
+8. Open the shortcut menu for the UserProfiles.aspx page, and then choose **Set as Startup Item**.
     
   
 9. In the markup for the UserProfiles.aspx page, paste the following code inside the "Main" **asp:Content** tags. This code adds a **span** control that displays the results of the query, **SharePoint:ScriptLink** controls that reference SharePoint JavaScript class library files, and **script** tags to contain your custom logic.
@@ -201,7 +201,7 @@ The following code example retrieves the values for a specified set of user prof
 - Get the values of the specified properties by using the  [getUserProfilePropertiesFor](http://msdn.microsoft.com/library/8674e96f-d320-4a50-1580-9a4568842ee5%28Office.15%29.aspx) method and passing in the [UserProfilePropertiesForUser](http://msdn.microsoft.com/library/97bc94ec-62c8-dc38-d204-c5ad9ee8faee%28Office.15%29.aspx) object. (To retrieve the value for only one user profile property, use the [getUserProfilePropertyFor](http://msdn.microsoft.com/library/da048bfa-54c6-8216-e8ef-09bd84f68d8d%28Office.15%29.aspx) method.)
     
   
-- Get the values from the returned array of property values. 
+- Get the values from the returned array of property values.
     
   
 

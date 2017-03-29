@@ -6,11 +6,11 @@ ms.assetid: c21cc3e2-45bd-4d34-a57d-dd0954436bd8
 
 
 # Troubleshooting SharePoint Server workflow validation errors in Visio
-Use this reference to resolve validation and error-checking issues in the Microsoft SharePoint 2013 Workflow template in Microsoft Visio 2013 and Microsoft SharePoint Designer 2013. 
+Use this reference to resolve validation and error-checking issues in the Microsoft SharePoint 2013 Workflow template in Microsoft Visio 2013 and Microsoft SharePoint Designer 2013.
 ## SharePoint workflow validation issues
 <a name="VSSPD_Trouble_Issues"> </a>
 
-The following table lists all of the validation issues that can appear in the Issues pane in Microsoft Visio 2013 or the Visual Designer in Microsoft SharePoint Designer 2013. Each error has a suggested action to take for resolving the problem. 
+The following table lists all of the validation issues that can appear in the Issues pane in Microsoft Visio 2013 or the Visual Designer in Microsoft SharePoint Designer 2013. Each error has a suggested action to take for resolving the problem.
   
     
     

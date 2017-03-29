@@ -9,7 +9,7 @@ ms.assetid: 87ee28e6-8170-4dba-8c9d-f04ab9e632dc
  **Summary:** Learn how to back up and restore a search service application in SharePoint 2013 by using the Volume Shadow Copy Service (VSS).
 ## Prerequisites for backing up and restoring SharePoint with the Volume Shadow Copy Service
 
-To program a backup and restore solution for SharePoint 2013, you need to understand how VSS works and the SharePoint interface with it. 
+To program a backup and restore solution for SharePoint 2013, you need to understand how VSS works and the SharePoint interface with it.
   
     
     
@@ -19,8 +19,8 @@ To program a backup and restore solution for SharePoint 2013, you need to unders
 
 |**Article**|**Description**|
 |:-----|:-----|
-| [Volume Shadow Copy Service](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx) and its child articles.|Learn about the VSS and how to program for it. |
-| [Windows SharePoint Services and the Volume Shadow Copy Service](http://msdn.microsoft.com/library/adae101a-078e-40b9-9cfa-db2cfb10270a%28Office.15%29.aspx) and its child articles.|Overview information and step-by-step, how-to procedures for backing up and restoring SharePoint 2013 data using the VSS and the SharePoint interface with VSS. |
+| [Volume Shadow Copy Service](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx) and its child articles.|Learn about the VSS and how to program for it.|
+| [Windows SharePoint Services and the Volume Shadow Copy Service](http://msdn.microsoft.com/library/adae101a-078e-40b9-9cfa-db2cfb10270a%28Office.15%29.aspx) and its child articles.|Overview information and step-by-step, how-to procedures for backing up and restoring SharePoint 2013 data using the VSS and the SharePoint interface with VSS.|
    
 
 ## Use the Volume Shadow Copy Service to back up and restore a search service application
@@ -30,13 +30,13 @@ The following procedures are intended to help developers with creating a backup/
   
     
     
- **Prerequisite:** Download and install [Microsoft Windows SDK for Windows 7 and .NET Framework 4](http://www.microsoft.com/en-us/download/details.aspx?id=8279) to the server with the search service application (SSA) and to every server with a search index component. Among other things, this will install vshadow.exe and betest.exe to `C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin\\x64\\vsstools`. 
+ **Prerequisite:** Download and install [Microsoft Windows SDK for Windows 7 and .NET Framework 4](http://www.microsoft.com/en-us/download/details.aspx?id=8279) to the server with the search service application (SSA) and to every server with a search index component. Among other things, this will install vshadow.exe and betest.exe to `C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin\\x64\\vsstools`.
   
     
     
 
 > [!TIP]
-> For details about the Windows PowerShell cmdlets mentioned in this article, see  [Windows PowerShell for SharePoint 2013 reference](http://technet.microsoft.com/en-us/library/ee890108.aspx). 
+> For details about the Windows PowerShell cmdlets mentioned in this article, see  [Windows PowerShell for SharePoint 2013 reference](http://technet.microsoft.com/en-us/library/ee890108.aspx).
   
     
     
@@ -45,12 +45,12 @@ The following procedures are intended to help developers with creating a backup/
 ### To register the SharePoint VSS Writer and prepare the servers for backing up and restoring
 
 
-- Register the SharePoint VSS Writer with either of these methods: 
+- Register the SharePoint VSS Writer with either of these methods:
     
   - Open **Services** in **Administrative Tools** and start the **SharePoint VSS Writer** service.
     
   
-  - Open a command console and execute  `stsadm.exe -o registerwsswriter`. The stsadm utility is found in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\BIN. Verify that the service is running in **Services** in **Administrative Tools**. 
+  - Open a command console and execute  `stsadm.exe -o registerwsswriter`. The stsadm utility is found in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\BIN. Verify that the service is running in **Services** in **Administrative Tools**.
     
   
 
@@ -60,7 +60,7 @@ The following procedures are intended to help developers with creating a backup/
 1. Get VSS metadata by executing  `vshadow.exe -wm > writers.txt` at a command line on each server that contains an index component and also on the computer that is running SQL Server where the search databases are located. The writers.txt file that is created lists all VSS writers associated with the server. You use this file in the next steps to generate manifest files for the search service application (SSA) and search index.
     
   
-2. Follow these steps to create a manifest for the SSA on the computer that is running SQL Server where the search databases are located. 
+2. Follow these steps to create a manifest for the SSA on the computer that is running SQL Server where the search databases are located.
     
 1. Create an XML file and copy the following into it: 
     
@@ -93,24 +93,24 @@ The following procedures are intended to help developers with creating a backup/
 
 |**Placeholder**|**Where the information is located in writers.txt.**|
 |:-----|:-----|
-| _SharePoint Services Writer ID_|The WriterId GUID listed under the "SharePoint Services Writer" entry |
-| _PathSSA_|The logical path entry listed with the name of the Search Service Application in the "SharePoint Services Writer" entry |
-| _PathC_|The logical path entry listed for the component named " _SSA__CrawlStore" in the "SharePoint Services Writer" entry |
+| _SharePoint Services Writer ID_|The WriterId GUID listed under the "SharePoint Services Writer" entry|
+| _PathSSA_|The logical path entry listed with the name of the Search Service Application in the "SharePoint Services Writer" entry|
+| _PathC_|The logical path entry listed for the component named " _SSA__CrawlStore" in the "SharePoint Services Writer" entry|
 | _PathA_|The logical path entry listed for the component named " _SSA_ _AnalyticsReportingStore" in the "SharePoint Services Writer" entry|
-| _PathL_|The logical path entry listed for the component named " _SSA__LinksStore" in the "SharePoint Services Writer" entry |
-| _SQL Server Writer ID_|The WriterId GUID listed under the "SqlServerWriter" entry |
-| _PathDbSSA_|The logical path entry listed for the component with the name of the Search Service Application in the "SqlServerWriter" entry |
+| _PathL_|The logical path entry listed for the component named " _SSA__LinksStore" in the "SharePoint Services Writer" entry|
+| _SQL Server Writer ID_|The WriterId GUID listed under the "SqlServerWriter" entry|
+| _PathDbSSA_|The logical path entry listed for the component with the name of the Search Service Application in the "SqlServerWriter" entry|
 | _PathDbC_|The logical path entry listed for the component named " _SSA__CrawlStore" in the "SqlServerWriter" entry |
-| _PathDbA_|The logical path entry listed for the component named " _SSA__AnalyticsReportingStore" in the "SqlServerWriter" entry |
-| _PathDbL_|The logical path entry listed for the component named " _SSA__LinksStore" in the "SqlServerWriter" entry |
+| _PathDbA_|The logical path entry listed for the component named " _SSA__AnalyticsReportingStore" in the "SqlServerWriter" entry|
+| _PathDbL_|The logical path entry listed for the component named " _SSA__LinksStore" in the "SqlServerWriter" entry|
    
 
-    This is the SSA manifest file. For an example of a completed SSA manifest file, see  [Example manifest files](#Examples). 
+    This is the SSA manifest file. For an example of a completed SSA manifest file, see  [Example manifest files](#Examples).
     
   
-3. Follow these steps to create a manifest for the search index files. Repeat these steps on every server that has an index component. 
+3. Follow these steps to create a manifest for the search index files. Repeat these steps on every server that has an index component.
     
-1. Create an XML file and copy the following into it: 
+1. Create an XML file and copy the following into it:
     
   ```XML
   
@@ -124,22 +124,22 @@ The following procedures are intended to help developers with creating a backup/
 </BETest>
   ```
 
-2. Replace the six placeholders in this file with appropriate values from the writer.txt file that you generated in the first step. Use the following table as a guide. 
+2. Replace the six placeholders in this file with appropriate values from the writer.txt file that you generated in the first step. Use the following table as a guide.
     
    **Table 3. Search index manifest file placeholders and values from writer.txt**
 
 
 |**Placeholder**|**Where the information is located in writers.txt**|
 |:-----|:-----|
-| _SharePoint Services Writer ID_|The WriterId GUID listed under the "SharePoint Services Writer" entry |
-| _PathIndex_|The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry |
-| _NameIndex_|The name entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry |
-| _OSearch15 Writer ID_|The WriterId GUID listed under the "OSearch15 VSS Writer" entry |
-| _PathOSearch15_|The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry. It is normally empty. |
-| _IndexComponentGroup_|The name entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry |
+| _SharePoint Services Writer ID_|The WriterId GUID listed under the "SharePoint Services Writer" entry|
+| _PathIndex_|The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry|
+| _NameIndex_|The name entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry|
+| _OSearch15 Writer ID_|The WriterId GUID listed under the "OSearch15 VSS Writer" entry|
+| _PathOSearch15_|The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry. It is normally empty.|
+| _IndexComponentGroup_|The name entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry|
    
 
-    This is the search index manifest file. For an example of a completed search index manifest file, see  [Example manifest files](#Examples). 
+    This is the search index manifest file. For an example of a completed search index manifest file, see  [Example manifest files](#Examples).
     
   
 4. (Optional) Record the sizes of **IndexComponent** folders on each server that contains an index component. You can use this information later to verify the backup.
@@ -153,7 +153,7 @@ $ssa = Get-SpenterpriseSearchServiceApplication -Identity "name of search servic
 Suspend-SPEnterpriseSearchServiceApplication -Identity $ssa
   ```
 
-6. Perform backups of the SSA databases and the index by following these steps: 
+6. Perform backups of the SSA databases and the index by following these steps:
     
 1. On the server with the SSA databases, execute the following command at a command line, where  _destination backup folder_ is the full path of the folder for the backup files, _backup log file_ is the full path and name of the backup log file, and _SSA manifest file_ is the path and file name of the SSA manifest file.
     
@@ -168,7 +168,7 @@ betest.exe /v /b /d "destination backup folder" /s "backup log file" /x "SSA man
   Export-SPEnterpriseSearchTopology -SearchApplication $ssa -Filename "topology file name"
   ```
 
-3. Verify that the file is created. 
+3. Verify that the file is created.
     
   
 4. On each server that has an index component, execute the following at a command line, where  _destination backup folder_ is the full path of the folder for the backup files, _backup log file_ is the full path and name of the backup log file, and _index manifest file_ is the path and file name of the index manifest.
@@ -177,7 +177,7 @@ betest.exe /v /b /d "destination backup folder" /s "backup log file" /x "SSA man
   betest.exe /v /b /d "destination backup folder" /s "backup log file" /x "index manifest file"
   ```
 
-5. (Optional) Inspect the index folders that have been backed up. Verify that folder names and sizes match with those recorded in the earlier step. 
+5. (Optional) Inspect the index folders that have been backed up. Verify that folder names and sizes match with those recorded in the earlier step.
     
   
 
@@ -220,12 +220,12 @@ New-SPEnterpriseSearchServiceApplicationProxy -Name "name of SSA proxy" -SearchA
 5. (Optional) Verify that the SSA and its proxy exist by opening **Central Administration**. Choose **Manage Service Applications** and verify that the SSA and its proxy are listed.
     
   
-6. (Optional) Click the SSA on the list of services, and then, on the page that opens, verify that the **Search Application Topology** table matches the typology that you exported in the backup procedure. (You can also verify the topology with the cmdlet **Get-SPEnterpriseSearchStatus**.) 
+6. (Optional) Click the SSA on the list of services, and then, on the page that opens, verify that the **Search Application Topology** table matches the typology that you exported in the backup procedure. (You can also verify the topology with the cmdlet **Get-SPEnterpriseSearchStatus**.)
     
   
 7. Restore the index files with the following procedure **on all servers with index components**.
     
-1. Stop the Host Controller service either in **Administrative Tools > Services**, or by executing the following cmdlet in SharePoint Management Shell: 
+1. Stop the Host Controller service either in **Administrative Tools > Services**, or by executing the following cmdlet in SharePoint Management Shell:
     
   ```
   
@@ -238,48 +238,48 @@ stop-service SPSearchHostController
   betest.exe /v /r /d "destination backup folder" /s "backup log file" /x "index manifest file"
   ```
 
-3. (Optional) Verify that the folder names and sizes match those that you recorded in the backup procedure. 
+3. (Optional) Verify that the folder names and sizes match those that you recorded in the backup procedure.
     
   
-4. For every index component, rename data under the data folder by following these steps: 
+4. For every index component, rename data under the data folder by following these steps:
     
-1. In SharePoint Management Shell, execute the following cmdlet. 
+1. In SharePoint Management Shell, execute the following cmdlet.
     
   ```
   Get-SPEnterpriseSearchVssDataPath
   ```
 
-2. From the output of the cmdlet, record the last part of each GUID. For example, if one line of the output is  `IndexComponentGroup_e255918b-6ab0-4d7c-8049-720b2744c62f`, record 720b2744c62f. 
+2. From the output of the cmdlet, record the last part of each GUID. For example, if one line of the output is  `IndexComponentGroup_e255918b-6ab0-4d7c-8049-720b2744c62f`, record 720b2744c62f.
     
   
 3. In **File Explorer** (or **Windows Explorer** on Windows Server 2008), navigate to `C:\\Program Files\\Microsoft Office Servers\\15.0\\Data\\Office Server\\Applications\\Search\\Nodes\\24488A\\IndexComponentN\\storage\\data`, where  *N*  is the number of an index component.
     
   
-4. Each of these folders has a subfolder whose name begins with "SP" followed by 12 hex digits followed by a version number. For each of these subfolders where the 12 hex digits match one of the GUID endings that you recorded in the earlier step, rename the subfolder to importindex. In the continuing example, you would rename the subfolder  `SP720b2744c62f.1.I.1.0` toimportindex. 
+4. Each of these folders has a subfolder whose name begins with "SP" followed by 12 hex digits followed by a version number. For each of these subfolders where the 12 hex digits match one of the GUID endings that you recorded in the earlier step, rename the subfolder to importindex. In the continuing example, you would rename the subfolder  `SP720b2744c62f.1.I.1.0` toimportindex.
     
   
-5. Restart the host controller service either in **Administrative Tools > Services**, or by executing the following cmdlet in SharePoint Management Shell: 
+5. Restart the host controller service either in **Administrative Tools > Services**, or by executing the following cmdlet in SharePoint Management Shell:
     
   ```
   start-service SPSearchHostController
   ```
 
-6. Verify that the index data folder names have reverted back to their previous name. (In the continuing example, this would be "'SP720b2744c62f.1.I.1.0".) 
+6. Verify that the index data folder names have reverted back to their previous name. (In the continuing example, this would be "'SP720b2744c62f.1.I.1.0".)
     
   
 8. (Optional) Verify that the sizes of **IndexComponent** folders match the sizes you recorded in the backup procedure.
     
   
-9. Restart the SSA. 
+9. Restart the SSA.
     
   
-10. On all the affected servers, run the following cmdlet in SharePoint Management Shell to verify that the search application service is running properly: 
+10. On all the affected servers, run the following cmdlet in SharePoint Management Shell to verify that the search application service is running properly:
     
   ```
   Get-SPEnterpriseSearchStatus
   ```
 
-11. Verify that feeding and searching for new documents works. For example, check the size of the index by using the query "size>=0". Also add a new document and verify that it is searchable. 
+11. Verify that feeding and searching for new documents works. For example, check the size of the index by using the query "size>=0". Also add a new document and verify that it is searchable.
     
   
 

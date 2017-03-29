@@ -6,15 +6,15 @@ ms.assetid: 11ecb65e-6dc5-4cf1-80ca-3c16418697b6
 
 
 # Add SharePoint 2013 capabilities
-Find overview and how-to information about adding SharePoint 2013 features and capabilities to custom apps. 
+Find overview and how-to information about adding SharePoint 2013 features and capabilities to custom apps.
 ## What are SharePoint capabilities in SharePoint 2013?
 <a name="bkmk_whatIs"> </a>
 
-SharePoint capabilities represent the features that you work with on SharePoint sites, such as workflows, social feeds, and search. By adding SharePoint capabilities to your app, you can help users to do things better and more quickly. 
+SharePoint capabilities represent the features that you work with on SharePoint sites, such as workflows, social feeds, and search. By adding SharePoint capabilities to your app, you can help users to do things better and more quickly.
   
     
     
-You can add SharePoint capabilities to whatever kind of app you're developing: SharePoint Add-ins, solutions, sites, components, and mobile apps. 
+You can add SharePoint capabilities to whatever kind of app you're developing: SharePoint Add-ins, solutions, sites, components, and mobile apps.
   
     
     
@@ -22,7 +22,7 @@ You can add SharePoint capabilities to whatever kind of app you're developing: S
 ## Kinds of SharePoint capabilities you can add to your apps
 <a name="bkmk_inThisSection"> </a>
 
-The following table shows SharePoint capabilities that you can add to your app, and provides links to articles that give more information about each capability. 
+The following table shows SharePoint capabilities that you can add to your app, and provides links to articles that give more information about each capability.
   
     
     

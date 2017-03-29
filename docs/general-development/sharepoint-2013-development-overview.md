@@ -6,7 +6,7 @@ ms.assetid: f86e2695-4d7a-4fc5-bc23-689de96c4b06
 
 
 # SharePoint 2013 development overview
-SharePoint 2013 is a development platform for SharePoint Add-ins and farm solutions. Get acquainted with the capabilities and features of SharePoint 2013 to start your development. 
+SharePoint 2013 is a development platform for SharePoint Add-ins and farm solutions. Get acquainted with the capabilities and features of SharePoint 2013 to start your development.
 ## Introducing the SharePoint 2013 development platform
 <a name="bk_introduction"> </a>
 
@@ -18,7 +18,7 @@ SharePoint 2013 is a versatile development platform for building add-ins and sol
 ## What kinds of development can you do with SharePoint 2013?
 <a name="bk_whatkinds"> </a>
 
-Developers familiar with SharePoint know they can build server-side farm solutions that extend core SharePoint capabilities. SharePoint 2013 offers a new flexible development model—you can use SharePoint 2013 to create SharePoint Add-ins that take advantage of standard web technologies, such as JavaScript, OAuth, and OData. And SharePoint 2013 provides you with functionality to interact with SharePoint resources and a wide range of hosting options. The new SharePoint Add-in development model gives you the ability to build add-ins that take advantage of SharePoint capabilities and that run in the cloud instead of on your SharePoint farm. This flexible development model, along with the integration of standard web technologies, makes SharePoint development work more like other kinds of web development that you may already be doing. 
+Developers familiar with SharePoint know they can build server-side farm solutions that extend core SharePoint capabilities. SharePoint 2013 offers a new flexible development model—you can use SharePoint 2013 to create SharePoint Add-ins that take advantage of standard web technologies, such as JavaScript, OAuth, and OData. And SharePoint 2013 provides you with functionality to interact with SharePoint resources and a wide range of hosting options. The new SharePoint Add-in development model gives you the ability to build add-ins that take advantage of SharePoint capabilities and that run in the cloud instead of on your SharePoint farm. This flexible development model, along with the integration of standard web technologies, makes SharePoint development work more like other kinds of web development that you may already be doing.
   
     
     
@@ -26,7 +26,7 @@ Developers familiar with SharePoint know they can build server-side farm solutio
   
     
     
-The following article can help you get acquainted with SharePoint Add-ins and determine whether they are a good option for you. 
+The following article can help you get acquainted with SharePoint Add-ins and determine whether they are a good option for you.
   
     
     
@@ -38,11 +38,11 @@ The following article can help you get acquainted with SharePoint Add-ins and de
   
     
     
-If you want to develop farm solutions, you can take advantage of many new capabilities, including features for social applications, integration with remote data stores (Business Connectivity Services), and mobile development. Start with our guidance in  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md). 
+If you want to develop farm solutions, you can take advantage of many new capabilities, including features for social applications, integration with remote data stores (Business Connectivity Services), and mobile development. Start with our guidance in  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md).
   
     
     
-The following sections describe how to create mobile solutions for SharePoint 2013. 
+The following sections describe how to create mobile solutions for SharePoint 2013.
   
     
     
@@ -72,7 +72,7 @@ The following sections provide information about SharePoint 2013 features that a
   
     
     
-Table 1 shows the resources for setting up a development environment and beginning to take advantage of the new capabilities for building farm solutions with SharePoint 2013. 
+Table 1 shows the resources for setting up a development environment and beginning to take advantage of the new capabilities for building farm solutions with SharePoint 2013.
   
     
     
@@ -86,11 +86,11 @@ Table 1 shows the resources for setting up a development environment and beginni
 
 |**Topic**|**Description**|
 |:-----|:-----|
-| [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md)|Contains step-by-step instructions on how to install the components of a SharePoint 2013 development environment. |
-| [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)|Describes the several sets of APIs that are provided in SharePoint 2013, including the server object model and the various client-side object models, and the REST/OData web service. |
-| [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md)|Provides a gateway to detailed information about new features and functionality in SharePoint 2013. |
-| [Programming models in SharePoint 2013](programming-models-in-sharepoint-2013.md)|Provides a quick overview of the different kinds of SharePoint development projects that you can create with SharePoint 2013. |
-| [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)|Provides a gateway to detailed information about using the capabilities of SharePoint 2013 in your solutions. |
+| [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md)|Contains step-by-step instructions on how to install the components of a SharePoint 2013 development environment.|
+| [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)|Describes the several sets of APIs that are provided in SharePoint 2013, including the server object model and the various client-side object models, and the REST/OData web service.|
+| [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md)|Provides a gateway to detailed information about new features and functionality in SharePoint 2013.|
+| [Programming models in SharePoint 2013](programming-models-in-sharepoint-2013.md)|Provides a quick overview of the different kinds of SharePoint development projects that you can create with SharePoint 2013.|
+| [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)|Provides a gateway to detailed information about using the capabilities of SharePoint 2013 in your solutions.|
    
  **For SharePoint Add-ins development**
   
@@ -100,7 +100,7 @@ If you want to get started development SharePoint Add-ins, first think about the
   
     
     
-When you know the kinds of SharePoint Add-in that you want to create, we provide guidance to help you match them to the appropriate development environment. Table 2 shows the resources for setting up your SharePoint development environment and beginning to create your add-ins. 
+When you know the kinds of SharePoint Add-in that you want to create, we provide guidance to help you match them to the appropriate development environment. Table 2 shows the resources for setting up your SharePoint development environment and beginning to create your add-ins.
   
     
     

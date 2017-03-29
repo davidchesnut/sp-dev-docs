@@ -6,60 +6,60 @@ ms.assetid: 1a782bac-48ee-4baf-8751-0f943a306e0f
 
 
 # SharePoint 2013 Design Manager display templates
-Learn about display templates, including: how they relate to Search Web Parts, how the templates are structured, how to map properties and use variables and jQuery, and how to create a custom display template in SharePoint Server 2013. 
+Learn about display templates, including: how they relate to Search Web Parts, how the templates are structured, how to map properties and use variables and jQuery, and how to create a custom display template in SharePoint Server 2013.
 ## Introduction to display templates
 <a name="bk_introduction"> </a>
 
-Display templates in SharePoint Server 2013 are templates used in Web Parts that use search technology (referred to in this article as Search Web Parts) to show the results of a query made to the search index. Display templates control which managed properties are shown in the search results, and how they appear in the Web Part. Each display template is made of two files: an HTML version of the display template that you can edit in your HTML editor, and a .js file that SharePoint uses. 
+Display templates in SharePoint Server 2013 are templates used in Web Parts that use search technology (referred to in this article as Search Web Parts) to show the results of a query made to the search index. Display templates control which managed properties are shown in the search results, and how they appear in the Web Part. Each display template is made of two files: an HTML version of the display template that you can edit in your HTML editor, and a .js file that SharePoint uses.
   
     
     
 
 > [!NOTE]
-> Only Search Web Parts can use display templates. The Content Query Web Part is not search-driven, and so does not use display templates. 
+> Only Search Web Parts can use display templates. The Content Query Web Part is not search-driven, and so does not use display templates.
   
     
     
 
-You can view existing display templates in Design Manager, but you don't create them in Design Manager the way that you create master pages and page layouts. Instead, you: 
+You can view existing display templates in Design Manager, but you don't create them in Design Manager the way that you create master pages and page layouts. Instead, you:
   
     
     
 
-- Open your  [mapped network drive to the Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md). 
+- Open your  [mapped network drive to the Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md).
     
   
 - Open one of the four folders in the **Display Templates** folder.
     
    > [!NOTE]
-   > The folder you choose depends on the type of display template you want to use. For example, if your site uses cross-site publishing, copy a display template from the **Content Web Parts** folder. For more information, see [Display template reference in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj944947.aspx). 
-- Copy the HTML file for an existing display template that's similar to what you want. The exact location that you copy the file to does not matter, as long as it is in the **Master Page Gallery**. 
+   > The folder you choose depends on the type of display template you want to use. For example, if your site uses cross-site publishing, copy a display template from the **Content Web Parts** folder. For more information, see [Display template reference in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj944947.aspx).
+- Copy the HTML file for an existing display template that's similar to what you want. The exact location that you copy the file to does not matter, as long as it is in the **Master Page Gallery**.
     
   
-- Open and modify your copy in an HTML editor. 
+- Open and modify your copy in an HTML editor.
     
   
-By using an existing display template as a starting point for a new display template, you can benefit from helpful information about the customization process in the comments of the default display templates, and you have a framework in place for basic tasks such as mapping input fields. It also guarantees that your templates use the correct basic page structure. 
+By using an existing display template as a starting point for a new display template, you can benefit from helpful information about the customization process in the comments of the default display templates, and you have a framework in place for basic tasks such as mapping input fields. It also guarantees that your templates use the correct basic page structure.
   
     
     
-When you create a display template by copying the HTML file for an existing display template in the **Display Templates** folder in the **Master Page Gallery**: 
+When you create a display template by copying the HTML file for an existing display template in the **Display Templates** folder in the **Master Page Gallery**:
   
     
     
 
-- A .js file that has the same name is created in the location where you copied the HTML file. 
+- A .js file that has the same name is created in the location where you copied the HTML file.
     
   
-- All markup required by SharePoint Server 2013 is added to the .js file so that the display template displays correctly. 
+- All markup required by SharePoint Server 2013 is added to the .js file so that the display template displays correctly.
     
   
-- The HTML file and the .js file are associated, so that any later edits to the HTML file are synched to the .js file when the HTML file is saved. 
+- The HTML file and the .js file are associated, so that any later edits to the HTML file are synched to the .js file when the HTML file is saved.
     
   
 
 > [!NOTE]
-> The syncing goes in one direction only. Changes to the HTML display template are synched to the associated .js file. Unlike master pages and page layouts, when working with display templates you can't choose to work only with the .js file by breaking the association between the files. You must enter all the HTML and JavaScript in the HTML file. 
+> The syncing goes in one direction only. Changes to the HTML display template are synched to the associated .js file. Unlike master pages and page layouts, when working with display templates you can't choose to work only with the .js file by breaking the association between the files. You must enter all the HTML and JavaScript in the HTML file.
   
     
     
@@ -68,7 +68,7 @@ When you create a display template by copying the HTML file for an existing disp
 ## Understanding the relationship between display templates and Search Web Parts
 <a name="bk_DTandSWP"> </a>
 
-There are two primary types of display templates: 
+There are two primary types of display templates:
   
     
     
@@ -79,11 +79,11 @@ There are two primary types of display templates:
 - **Item templates** determine how each result in the set is displayed. Includes images, text, video, and other items.
     
   
-For more information about these and other display templates, see  [Display template reference in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj944947.aspx). 
+For more information about these and other display templates, see  [Display template reference in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj944947.aspx).
   
     
     
-After you add a Search Web Part (such as the Content Search Web Part) to a page, to configure the Web Part, you select both a control display template and an item display template, as shown in Figure 1. 
+After you add a Search Web Part (such as the Content Search Web Part) to a page, to configure the Web Part, you select both a control display template and an item display template, as shown in Figure 1.
   
     
     
@@ -101,15 +101,15 @@ After you add a Search Web Part (such as the Content Search Web Part) to a page,
   
     
     
-The control display template provides HTML to structure the overall layout for how you want to present the search results. For example, the control display template might provide the HTML for a heading and the beginning and end of a list. The control display template is rendered only once in the Web Part. 
+The control display template provides HTML to structure the overall layout for how you want to present the search results. For example, the control display template might provide the HTML for a heading and the beginning and end of a list. The control display template is rendered only once in the Web Part.
   
     
     
-The item display template provides HTML that determines how each item in the result set is displayed. For example, the item display template might provide the HTML for a list item that contains a picture, and three lines of text that are mapped to different managed properties associated with the item. The item display template is rendered one time for each item in the result set. So, if the result set contains ten items, the item display template creates its section of HTML ten times. 
+The item display template provides HTML that determines how each item in the result set is displayed. For example, the item display template might provide the HTML for a list item that contains a picture, and three lines of text that are mapped to different managed properties associated with the item. The item display template is rendered one time for each item in the result set. So, if the result set contains ten items, the item display template creates its section of HTML ten times.
   
     
     
-When used together in this way, the control display template and the item display template combine to create a cohesive block of HTML that is rendered in the Web Part, as shown in Figure 2. 
+When used together in this way, the control display template and the item display template combine to create a cohesive block of HTML that is rendered in the Web Part, as shown in Figure 2.
   
     
     
@@ -127,7 +127,7 @@ When used together in this way, the control display template and the item displa
   
     
     
-For more information about display templates, see the "Search-driven Web Parts and display templates" section in  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-2013-page-model.md). 
+For more information about display templates, see the "Search-driven Web Parts and display templates" section in  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-2013-page-model.md).
   
     
     
@@ -135,7 +135,7 @@ For more information about display templates, see the "Search-driven Web Parts a
 ## Understanding the display template structure
 <a name="bk_DTstructure"> </a>
 
-The HTML file that is used for a display template is a fully-formed HTML document, but it does not represent a full HTML webpage. SharePoint converts the pieces of the display template HTML file into JavaScript. This section describes the four major sections of a display template. 
+The HTML file that is used for a display template is a fully-formed HTML document, but it does not represent a full HTML webpage. SharePoint converts the pieces of the display template HTML file into JavaScript. This section describes the four major sections of a display template.
   
     
     
@@ -169,13 +169,13 @@ Immediately after the **<title>** tag, there is a set of custom elements bounded
 
 ```
 
-These elements and their properties provide important information to the SharePoint environment about the display template. Table 1 describes the custom properties that are used in display templates. 
+These elements and their properties provide important information to the SharePoint environment about the display template. Table 1 describes the custom properties that are used in display templates.
   
     
     
 
 > [!NOTE]
-> Not all custom properties are used in every display template. Also, some properties can be changed by editing the display template file properties in Design Manager. 
+> Not all custom properties are used in every display template. Also, some properties can be changed by editing the display template file properties in Design Manager.
   
     
     
@@ -186,14 +186,14 @@ These elements and their properties provide important information to the SharePo
 
 |**Property**|**Description**|
 |:-----|:-----|
-|**TemplateHidden**|Boolean value that indicates whether to hide the display template from the list of available templates in the Web Part. This value can be changed in the display template file properties. |
-|**ManagedPropertyMapping**|Maps fields exposed by search result items into properties available for JavaScript. Used only in item templates. |
-|**MasterPageDescription**|Provides a friendly description of the display template. This is shown to users in the SharePoint editing environment. This value can be changed in the display template file properties. |
-|**ContentTypeId**|The ID of the content type associated with the display template. |
-|**TargetControlType**|Indicates the context in which the display template is used. This value can be changed in the display template file properties. |
-|**HtmlDesignAssociated**|Boolean value that indicates whether a display template HTML file has a .js file associated with it. |
-|**HtmlDesignConversionSucceeded**|Indicates whether the conversion process was successful. This value is automatically added to the file by SharePoint, and is used only in custom display templates. |
-|**HtmlDesignStatusAndPreview**|Contains the URL to the HTML file and the text for the **Status** column (either **Conversion successful** or **Warnings and Errors**). This value is automatically added to the file by SharePoint, and is used only in custom display templates. |
+|**TemplateHidden**|Boolean value that indicates whether to hide the display template from the list of available templates in the Web Part. This value can be changed in the display template file properties.|
+|**ManagedPropertyMapping**|Maps fields exposed by search result items into properties available for JavaScript. Used only in item templates.|
+|**MasterPageDescription**|Provides a friendly description of the display template. This is shown to users in the SharePoint editing environment. This value can be changed in the display template file properties.|
+|**ContentTypeId**|The ID of the content type associated with the display template.|
+|**TargetControlType**|Indicates the context in which the display template is used. This value can be changed in the display template file properties.|
+|**HtmlDesignAssociated**|Boolean value that indicates whether a display template HTML file has a .js file associated with it.|
+|**HtmlDesignConversionSucceeded**|Indicates whether the conversion process was successful. This value is automatically added to the file by SharePoint, and is used only in custom display templates.|
+|**HtmlDesignStatusAndPreview**|Contains the URL to the HTML file and the text for the **Status** column (either **Conversion successful** or **Warnings and Errors**). This value is automatically added to the file by SharePoint, and is used only in custom display templates.|
    
 
 ### Script block
@@ -221,14 +221,14 @@ By default, this line is included in all display templates. You can add more lin
 
 |**If you want to include the following:**|**Use the following code:**|
 |:-----|:-----|
-|A JavaScript file that is part of the current site collection | `$includeScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Content Web Parts/MyScripts.js");`|
-|An external JavaScript file | `$includeScript(this.url, "http://www.contoso.com/ExternalScript.js");`|
-|A CSS file that is part of the current site collection | `$includeCSS(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Content Web Parts/MyCSS.css");`|
-|A CSS file that is in a location relative to the current display template | `$includeCSS(this.url,"../../MyStyles/MyCSS.css");`|
+|A JavaScript file that is part of the current site collection| `$includeScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Content Web Parts/MyScripts.js");`|
+|An external JavaScript file| `$includeScript(this.url, "http://www.contoso.com/ExternalScript.js");`|
+|A CSS file that is part of the current site collection| `$includeCSS(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Content Web Parts/MyCSS.css");`|
+|A CSS file that is in a location relative to the current display template| `$includeCSS(this.url,"../../MyStyles/MyCSS.css");`|
    
 
 > [!NOTE]
-> If **Content Approval** is required for items in the Master Page Gallery, all resource files (including CSS and .js files) must be published before they are available to master pages and page layouts. For more information, see [Require approval of items in a site list or library](http://office.microsoft.com/en-us/sharepoint-help/require-approval-of-items-in-a-site-list-or-library-HA102853936.aspx?CTT=1). 
+> If **Content Approval** is required for items in the Master Page Gallery, all resource files (including CSS and .js files) must be published before they are available to master pages and page layouts. For more information, see [Require approval of items in a site list or library](http://office.microsoft.com/en-us/sharepoint-help/require-approval-of-items-in-a-site-list-or-library-HA102853936.aspx?CTT=1).
   
     
     
@@ -272,11 +272,11 @@ _#-->
 ## Mapping input properties and getting their values
 <a name="bk_mapproperties"> </a>
 
-The header section of an item display template has a custom document property named **ManagedPropertyMapping**. This property takes the managed properties that are used by search and maps them to values that can be used by the display template. The property is a comma-delimited list of values that uses the following format: ' _property display name_'{ _property name_}:' _managed property_'. For example,  `'Picture URL'{Picture URL}:'PublishingImage;PictureURL;PictureThumbnailURL'`. 
+The header section of an item display template has a custom document property named **ManagedPropertyMapping**. This property takes the managed properties that are used by search and maps them to values that can be used by the display template. The property is a comma-delimited list of values that uses the following format: ' _property display name_'{ _property name_}:' _managed property_'. For example,  `'Picture URL'{Picture URL}:'PublishingImage;PictureURL;PictureThumbnailURL'`.
   
     
     
-Let's look at the format in more detail: 
+Let's look at the format in more detail:
   
     
     
@@ -294,11 +294,11 @@ After you map a property, you can get its value in script by using the following
   
     
     
-The second parameter that is passed to **$getItemValue()** must match the property display name in single quotes used in the **ManagedPropertyMapping** element. In this example, **Picture URL** is the property name that is passed to **$getItemValue()**. 
+The second parameter that is passed to **$getItemValue()** must match the property display name in single quotes used in the **ManagedPropertyMapping** element. In this example, **Picture URL** is the property name that is passed to **$getItemValue()**.
   
     
     
-This code returns a value information object ( **valueInfoObj**). This object contains a raw representation of the input value, together with the value with a default encoding applied to it. 
+This code returns a value information object ( **valueInfoObj**). This object contains a raw representation of the input value, together with the value with a default encoding applied to it.
   
     
     
@@ -310,7 +310,7 @@ You can use variables within the sections of JavaScript as you typically would, 
 ## Using jQuery with display templates
 <a name="bk_jQuery"> </a>
 
-You can use jQuery with your display templates. But, be aware of two important factors: 
+You can use jQuery with your display templates. But, be aware of two important factors:
   
     
     
@@ -327,7 +327,7 @@ You can use jQuery with your display templates. But, be aware of two important f
 ## Create a display template
 <a name="bk_createDT"> </a>
 
-Before you can create a display template by using the following procedure, you must have a mapped network drive that points to the **Master Page Gallery**. For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md). 
+Before you can create a display template by using the following procedure, you must have a mapped network drive that points to the **Master Page Gallery**. For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md).
   
     
     
@@ -335,24 +335,24 @@ Before you can create a display template by using the following procedure, you m
 ### To create a display template
 
 
-1. Using Windows Explorer, open the mapped network drive to the **Master Page Gallery**. 
+1. Using Windows Explorer, open the mapped network drive to the **Master Page Gallery**.
     
   
 2. Open the **Display Templates** folder, and then open the **Content Web Parts** folder.
     
   
-3. Copy the HTML file for a display template that is similar to what you want to create. For a list of the default display templates and their descriptions, see  [Display template reference in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj944947.aspx). 
+3. Copy the HTML file for a display template that is similar to what you want to create. For a list of the default display templates and their descriptions, see  [Display template reference in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj944947.aspx).
     
-    At this point, SharePoint Server 2013 copies the HTML file into a .js file that has the same name. For example, if the copied HTML file is named Item_Picture3Line_copy.html, a corresponding .js file named Item_Picture3Lines_copy.js is also created. If you choose to rename the file, the corresponding .js file name also changes. 
-    
-  
-4. To customize the display template, edit the HTML file that resides on the server by using an HTML editor to open and edit the HTML file in the mapped drive. Each time that you save the HTML file, any changes are synched to the associated .js file. 
+    At this point, SharePoint Server 2013 copies the HTML file into a .js file that has the same name. For example, if the copied HTML file is named Item_Picture3Line_copy.html, a corresponding .js file named Item_Picture3Lines_copy.js is also created. If you choose to rename the file, the corresponding .js file name also changes.
     
   
-5. Browse to your publishing site. 
+4. To customize the display template, edit the HTML file that resides on the server by using an HTML editor to open and edit the HTML file in the mapped drive. Each time that you save the HTML file, any changes are synched to the associated .js file.
     
   
-6. In the upper-right corner of the page, choose **Settings**, and then choose **Design Manager**. 
+5. Browse to your publishing site.
+    
+  
+6. In the upper-right corner of the page, choose **Settings**, and then choose **Design Manager**.
     
   
 7. In Design Manager, in the left navigation pane, choose **Edit Display Templates**. Your HTML file now appears with a **Status** column that shows one of two statuses:
@@ -366,7 +366,7 @@ Before you can create a display template by using the following procedure, you m
 
    > [!NOTE]
    > Unlike master pages and page layouts, you can't use the preview page to see a live server-side preview of your display template. To preview the display template, you must add a Content Search Web Part to a page, and then apply the display template in the Content Search Web Part edit pane. If there are any errors in the display template, the Content Search Web Part displays an error message. Errors must be fixed before the display template can display correctly. 
-8. To fix any errors, edit the HTML file that resides on the server by using an HTML editor to open and edit the HTML file on the mapped drive. Save the display template, and then reload the page that contains the Content Search Web Part that uses the display template. 
+8. To fix any errors, edit the HTML file that resides on the server by using an HTML editor to open and edit the HTML file on the mapped drive. Save the display template, and then reload the page that contains the Content Search Web Part that uses the display template.
     
   
 

@@ -61,7 +61,7 @@ using Microsoft.Office.Excel.Server.Udf;
   <UdfClass>_
   ```
 
-2. Create a function that takes a number (of type **double**), and in the function, multiply the number by 9. The function is a UDF method that is nonvolatile. Add the following code to  `Class1`: 
+2. Create a function that takes a number (of type **double**), and in the function, multiply the number by 9. The function is a UDF method that is nonvolatile. Add the following code to  `Class1`:
     
   ```cs
   [UdfMethod]
@@ -82,8 +82,8 @@ End Function
 
 
    > [!NOTE]
-   > The default value for the **IsVolatile** property is **false**, which means that particular UDF method is nonvolatile. Therefore, it is sufficient to mark a nonvolatile UDF method as  `[UdfMethod]`. It is not necessary to mark it as  `[UdfMethod(IsVolatile = false)]`. 
-3. Create another function that returns the current date using the **System.DateTime.Today** property. The function is a UDF method that is volatile. Add the following code to `Class1`: 
+   > The default value for the **IsVolatile** property is **false**, which means that particular UDF method is nonvolatile. Therefore, it is sufficient to mark a nonvolatile UDF method as  `[UdfMethod]`. It is not necessary to mark it as  `[UdfMethod(IsVolatile = false)]`.
+3. Create another function that returns the current date using the **System.DateTime.Today** property. The function is a UDF method that is volatile. Add the following code to `Class1`:
     
   ```cs
   
@@ -107,7 +107,7 @@ End Function
 ### To build the project
 
 
-1. On the **Build** menu, click **Build Solution**. 
+1. On the **Build** menu, click **Build Solution**.
     
   
 2. You should find SampleUdf.dll assembly in the directory where you have saved your project. 
@@ -116,7 +116,7 @@ End Function
 
 ### Complete Code
 
-The following code sample is the complete code in the Class1.cs example file described in the previous procedures. 
+The following code sample is the complete code in the Class1.cs example file described in the previous procedures.
   
     
     

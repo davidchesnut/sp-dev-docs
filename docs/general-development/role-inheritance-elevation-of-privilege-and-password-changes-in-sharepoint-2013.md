@@ -18,11 +18,11 @@ The role definition, or permission level, is the list of rights associated with 
   
     
     
-The role assignment is the relationship among the role definition, the users and groups, and the scope (for example, one user may be a reader on list 1, while another user is a reader on list 2). The relationship expressed through the role assignment is the key to making SharePoint 2013 security management role-based. All permissions are managed through roles; you never assign rights directly to a user. You assign only meaningful collections of rights (role definitions) that are well-defined and consistent. You manage unique permissions by adding or removing users and groups to or from role definitions through role assignments. 
+The role assignment is the relationship among the role definition, the users and groups, and the scope (for example, one user may be a reader on list 1, while another user is a reader on list 2). The relationship expressed through the role assignment is the key to making SharePoint 2013 security management role-based. All permissions are managed through roles; you never assign rights directly to a user. You assign only meaningful collections of rights (role definitions) that are well-defined and consistent. You manage unique permissions by adding or removing users and groups to or from role definitions through role assignments.
   
     
     
-The website administrator can customize the default role definitions and create additional custom roles by using the Manage Roles page, which lists the available role definitions in the site. 
+The website administrator can customize the default role definitions and create additional custom roles by using the Manage Roles page, which lists the available role definitions in the site.
   
     
     
@@ -30,33 +30,33 @@ The website administrator can customize the default role definitions and create 
 ## Role definition inheritance
 <a name="SP15_RoleInheritance_RoleDefInheritance"> </a>
 
-SharePoint 2013 supports inheriting role definitions similarly to how it supports inheriting permissions, and breaking role definition inheritance requires also breaking permissions inheritance. 
+SharePoint 2013 supports inheriting role definitions similarly to how it supports inheriting permissions, and breaking role definition inheritance requires also breaking permissions inheritance.
   
     
     
-Each SharePoint object can have its own set of permissions or inherit its permissions from its parent container. SharePoint 2013 does not support partial inheritance, where an object would inherit all the permissions of its parent and also have some of its own permissions. Permissions are either unique or inherited. SharePoint 2013 does not support directed inheritance. For example, an object can inherit only from its parent container, not from some other object or container. 
+Each SharePoint object can have its own set of permissions or inherit its permissions from its parent container. SharePoint 2013 does not support partial inheritance, where an object would inherit all the permissions of its parent and also have some of its own permissions. Permissions are either unique or inherited. SharePoint 2013 does not support directed inheritance. For example, an object can inherit only from its parent container, not from some other object or container.
   
     
     
-When a website inherits role definitions, the roles are read-only, like the read-only permissions in an inherited website. The user can navigate to the parent site that holds the unique role definitions via a link. The default setting for all new websites, even sites with unique permissions, is to inherit role definitions from the parent website. When the permissions are unique, role definitions can be reverted to inherited role definitions or edited as local role definitions. 
+When a website inherits role definitions, the roles are read-only, like the read-only permissions in an inherited website. The user can navigate to the parent site that holds the unique role definitions via a link. The default setting for all new websites, even sites with unique permissions, is to inherit role definitions from the parent website. When the permissions are unique, role definitions can be reverted to inherited role definitions or edited as local role definitions.
   
     
     
-Role definition inheritance in a website affects permissions inheritance following these rules: 
+Role definition inheritance in a website affects permissions inheritance following these rules:
   
     
     
 
-- Cannot inherit permissions unless it also inherits role definitions. 
+- Cannot inherit permissions unless it also inherits role definitions.
     
   
-- Cannot create unique role definitions unless it also creates unique permissions. 
+- Cannot create unique role definitions unless it also creates unique permissions.
     
   
-- Cannot revert to inherited role definitions unless it also reverts all unique permissions within the website. The existing permissions are dependent on the role definitions. 
+- Cannot revert to inherited role definitions unless it also reverts all unique permissions within the website. The existing permissions are dependent on the role definitions.
     
   
-- Cannot revert to inherited permissions unless it also reverts to inherited role definitions. The permissions for a website are always tied to the role definitions for that website. 
+- Cannot revert to inherited permissions unless it also reverts to inherited role definitions. The permissions for a website are always tied to the role definitions for that website.
     
   
 
@@ -75,11 +75,11 @@ If the user account is a membership user, SharePoint queries the ASP.NET **RoleM
   
     
     
-If SharePoint can't obtain the user's group memberships from Active Directory or **<roleManager>**, the newly generated token contains only the user's unique security ID (SID). No exception is thrown, but an entry is written into the ULS server log. The new token is also written into the SharePoint database so that it will not be regenerated within 24 hours. 
+If SharePoint can't obtain the user's group memberships from Active Directory or **<roleManager>**, the newly generated token contains only the user's unique security ID (SID). No exception is thrown, but an entry is written into the ULS server log. The new token is also written into the SharePoint database so that it will not be regenerated within 24 hours.
   
     
     
-After SharePoint obtains a fresh token, from the SharePoint database or by generating a new token, SharePoint sets the timestamp to be the current time and then returns it to the caller. This guarantees that the token is fresh for 24 hours. 
+After SharePoint obtains a fresh token, from the SharePoint database or by generating a new token, SharePoint sets the timestamp to be the current time and then returns it to the caller. This guarantees that the token is fresh for 24 hours.
   
     
     
@@ -99,7 +99,7 @@ Elevation of privilege, a feature that was added in Windows SharePoint Services 
   
     
     
-The following is a standard use of **RunWithElevatedPrivileges**. 
+The following is a standard use of **RunWithElevatedPrivileges**.
   
     
     
@@ -132,7 +132,7 @@ SPSecurity.RunWithElevatedPrivileges(delegate()
 });
 ```
 
-Although elevation of privilege provides a powerful technique for managing security, it should be used with care. You should not expose direct, uncontrolled mechanisms for people with low privileges to circumvent the permissions granted to them. 
+Although elevation of privilege provides a powerful technique for managing security, it should be used with care. You should not expose direct, uncontrolled mechanisms for people with low privileges to circumvent the permissions granted to them.
   
     
     
@@ -147,31 +147,31 @@ Although elevation of privilege provides a powerful technique for managing secur
 ## Automatic password changes
 <a name="SP15_RoleInheritance_AutomaticPasswordChange"> </a>
 
-The automatic password change feature enables you to update and deploy passwords without performing manual password update tasks across multiple accounts, services, and web applications. This makes managing password in SharePoint 2013 simpler. You can use the automatic password change feature to determine whether a password is about to expire and to reset the password by using a long, cryptographically strong random string. 
+The automatic password change feature enables you to update and deploy passwords without performing manual password update tasks across multiple accounts, services, and web applications. This makes managing password in SharePoint 2013 simpler. You can use the automatic password change feature to determine whether a password is about to expire and to reset the password by using a long, cryptographically strong random string.
   
     
     
 
 ### Managed account
 
-You use managed accounts to implement the automatic password change feature. Managed accounts improve security and ensure application isolation. With managed accounts, you can: 
+You use managed accounts to implement the automatic password change feature. Managed accounts improve security and ensure application isolation. With managed accounts, you can:
   
     
     
 
-- Configure the automatic password change feature to deploy passwords across all services in a farm. 
+- Configure the automatic password change feature to deploy passwords across all services in a farm.
     
   
-- Configure SharePoint web applications and services, that are running on application servers in a SharePoint farm, to use different domain accounts. 
+- Configure SharePoint web applications and services, that are running on application servers in a SharePoint farm, to use different domain accounts.
     
   
-- Map managed accounts to various services and web applications in a farm. 
+- Map managed accounts to various services and web applications in a farm.
     
   
-- Create multiple accounts in Active Directory Domain Services (AD DS), and then register each of these accounts in SharePoint. 
+- Create multiple accounts in Active Directory Domain Services (AD DS), and then register each of these accounts in SharePoint.
     
   
-You can also register managed accounts and enable SharePoint 2013 to control account passwords. Users have to be notified about planned password changes and related service interruptions, but the accounts used by a SharePoint farm, web applications, and various services can be automatically reset and deployed within the farm as necessary, based on individually configured password reset schedules. 
+You can also register managed accounts and enable SharePoint 2013 to control account passwords. Users have to be notified about planned password changes and related service interruptions, but the accounts used by a SharePoint farm, web applications, and various services can be automatically reset and deployed within the farm as necessary, based on individually configured password reset schedules.
   
     
     
@@ -180,22 +180,22 @@ Operations that you can use the  [SPManagedAccount](https://msdn.microsoft.com/l
     
     
 
-- Change password 
+- Change password
     
   
-- Set a password change schedule 
+- Set a password change schedule
     
   
-- Propagate password change 
+- Propagate password change
     
   
-- Find out when a password was last changed 
+- Find out when a password was last changed
     
   
-- Enforce minimum length for password 
+- Enforce minimum length for password
     
   
-For more information about the managed account API, see the following links: 
+For more information about the managed account API, see the following links:
   
     
     

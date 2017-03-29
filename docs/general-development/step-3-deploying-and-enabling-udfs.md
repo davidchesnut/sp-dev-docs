@@ -1,25 +1,25 @@
 ---
 title: Step 3 Deploying and Enabling UDFs
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 1e5e2a0a-041a-481c-a18b-578562a60e24
 ---
 
 
 # Step 3: Deploying and Enabling UDFs
 
-In this step, you will: 
+In this step, you will:
   
     
     
 
 
-1. Deploy SampleUdf.dll, which you created in  [Step 2: Creating a Managed-Code UDF](step-2-creating-a-managed-code-udf.md), to a folder on a computer that has Microsoft SharePoint Server 2010 installed. 
+1. Deploy SampleUdf.dll, which you created in  [Step 2: Creating a Managed-Code UDF](step-2-creating-a-managed-code-udf.md), to a folder on a computer that has Microsoft SharePoint Server 2010 installed.
     
   
 2. Allow user-defined functions (UDFs) to be called from a specific trusted location, for example, trusted Shared Documents location. 
     
   
-3. Enable SampleUdf.dll. 
+3. Enable SampleUdf.dll.
     
   
 
@@ -29,10 +29,10 @@ In this step, you will:
 ### To deploy UDFs
 
 
-1. Create a folder named "UDFs" on the local drive of the computer to which you want to deploy UDFs. For example, "C:\\UDFs". 
+1. Create a folder named "UDFs" on the local drive of the computer to which you want to deploy UDFs. For example, "C:\\UDFs".
     
   
-2. Copy the SampleUdf.dll assembly. 
+2. Copy the SampleUdf.dll assembly.
     
   
 3. Save SampleUdf.dll in "C:\\UDFs". 
@@ -51,13 +51,13 @@ In this step, you will:
 2. Point to **Microsoft SharePoint 2010 Products** and click **SharePoint Central Administration**. 
     
   
-3. Under **Application Management** click **Manage service applications**. 
+3. Under **Application Management** click **Manage service applications**.
     
   
-4. On the Manage Service Applications page, click **Excel Services Application**. 
+4. On the Manage Service Applications page, click **Excel Services Application**.
     
   
-5. On the **Excel Services Application** page, click **Trusted File Locations**. 
+5. On the **Excel Services Application** page, click **Trusted File Locations**.
     
   
 6. On the Trusted File Locations page, click **Add Trusted File Location**. 
@@ -66,7 +66,7 @@ In this step, you will:
 7. On the Add Trusted File Location page, in the **Address** box, type the location where you will save your workbook—for example, _http://MyServer002/Shared%20Documents_. 
     
   
-8. Under **Location type**, click the appropriate location type. In this example, select Microsoft SharePoint Foundation. 
+8. Under **Location type**, click the appropriate location type. In this example, select Microsoft SharePoint Foundation.
     
   
 9. Under **Trust Children**, select **Children trusted** to trust child libraries or directories.
@@ -75,13 +75,13 @@ In this step, you will:
 10. Under **Allow User-Defined Functions**, select **User-defined functions allowed** to allow UDFs to be called from workbooks stored in this trusted location.
     
   
-11. Click **OK**. 
+11. Click **OK**.
     
   
 
 ## Enabling UDFs
 
-To do the following steps, you need a computer that has SharePoint Server 2010 installed. 
+To do the following steps, you need a computer that has SharePoint Server 2010 installed.
   
     
     
@@ -89,25 +89,25 @@ To do the following steps, you need a computer that has SharePoint Server 2010 i
 ### To enable UDFs
 
 
-1. Follow steps 1 through 3 in the previous procedure ("To trust a location") to display the Shared Services home page for an SSP. 
+1. Follow steps 1 through 3 in the previous procedure ("To trust a location") to display the Shared Services home page for an SSP.
     
   
 2. Under **Excel Services Settings**, click **User-defined function assemblies**. 
     
   
-3. On the Excel Services User-Defined Functions page, click **Add User-Defined Function** to open the Excel ****Services Add User-Defined Function Assembly page. 
+3. On the Excel Services User-Defined Functions page, click **Add User-Defined Function** to open the Excel ****Services Add User-Defined Function Assembly page.
     
   
-4. In the **Assembly** box, type the path to the SampleUdf.dll assembly. In this example, it would be _C:\\UDFs\\SampleUdf.dll_. 
+4. In the **Assembly** box, type the path to the SampleUdf.dll assembly. In this example, it would be _C:\\UDFs\\SampleUdf.dll_.
     
   
-5. Under **Assembly Location**, click **File path**. 
+5. Under **Assembly Location**, click **File path**.
     
   
 6. Under **Enable Assembly**, the **Assembly enabled** check box should be selected by default.
     
   
-7. Click **OK**. 
+7. Click **OK**.
     
   
 
@@ -128,7 +128,7 @@ If you change the **AllowUdfs** value to **true** after a session has started, t
   
     
     
-For more information about resetting IIS, see  [How to: Enable UDFs](how-to-enable-udfs.md). 
+For more information about resetting IIS, see  [How to: Enable UDFs](how-to-enable-udfs.md).
   
     
     

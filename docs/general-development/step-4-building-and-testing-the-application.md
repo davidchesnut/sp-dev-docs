@@ -1,22 +1,22 @@
 ---
 title: Step 4 Building and Testing the Application
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: f2feeecb-1b4c-4049-be4e-11d414f13d9f
 ---
 
 
 # Step 4: Building and Testing the Application
 
-In this step, you will build and test your application. Visual Studio offers several methods to build and run a console application from the IDE, such as: 
+In this step, you will build and test your application. Visual Studio offers several methods to build and run a console application from the IDE, such as:
   
     
     
 
 
-- Start Without Debugging ( **CTRL + F5**) 
+- Start Without Debugging ( **CTRL + F5**)
     
   
-- Start ( **F5**) 
+- Start ( **F5**)
     
   
 
@@ -29,10 +29,10 @@ In this step, you will build and test your application. Visual Studio offers sev
 1. On the **Debug** menu, click **Start Without Debugging** or press **CTRL + F5**. This ensures that the console window remains open after the program has finished executing. 
     
   
-2. The application prints the following output to the console. 
+2. The application prints the following output to the console.
     
    > [!NOTE]
-   > These values vary depending on the values you have in your workbook, session ID, and so on. 
+   > These values vary depending on the values you have in your workbook, session ID, and so on.
 
   ```
   
@@ -41,14 +41,14 @@ Total rows in range: 18
 Value in range is: 4245.955129
   ```
 
-3. Press any key to close SampleApplication.exe. 
+3. Press any key to close SampleApplication.exe.
     
   
 
 ### File Not Found Exception
 
 
-1. If the path to the workbook you provided is wrong, you will get a "file not found" exception, which is caught by the following code: 
+1. If the path to the workbook you provided is wrong, you will get a "file not found" exception, which is caught by the following code:
     
   ```cs
   
@@ -66,7 +66,7 @@ Console.WriteLine("SOAP Exception Message: {0}", e.Message)
 End Try
   ```
 
-2. The application prints the following SOAP exception output to the console: 
+2. The application prints the following SOAP exception output to the console:
     
   ```
   
@@ -89,7 +89,7 @@ The sessionID is : 64.28e58e90-b757-4658-b1c4-890ad68ef6cbRmqR4IINXfkMeOJRG8Iq0Y
 Total rows in range: 18
   ```
 
-2. Then you will get an unhandled exception that says: 
+2. Then you will get an unhandled exception that says:
     
   ```
   
@@ -131,7 +131,7 @@ Console.ReadLine();
   Console.ReadLine()
   ```
 
-2. Press any key to close SampleApplication.exe. 
+2. Press any key to close SampleApplication.exe.
     
   
 

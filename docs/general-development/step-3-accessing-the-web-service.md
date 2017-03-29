@@ -1,6 +1,6 @@
 ---
 title: Step 3 Accessing the Web Service
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: d27f654d-242f-4f34-8385-be857c170532
 ---
 
@@ -13,7 +13,7 @@ After you have added a reference to Excel Web Services to your project, the next
     
 
 First you create an instance of the Web service's proxy class, ExcelWebService. Next you call several of the Web service's methods and properties using the proxy class. 
-You use the calls to open a workbook, get the session ID, pass in the default credentials, define the range coordinate object, get the range that uses the range coordinate object, close the workbook, and catch the SOAP exceptions. 
+You use the calls to open a workbook, get the session ID, pass in the default credentials, define the range coordinate object, get the range that uses the range coordinate object, close the workbook, and catch the SOAP exceptions.
   
     
     
@@ -51,7 +51,7 @@ Imports System.Web.Services.Protocols
 ### To call the Web service
 
 
-1. Instantiate and initialize the Web service proxy object by adding the following code after the opening bracket in  `static void Main(string[] args)`: 
+1. Instantiate and initialize the Web service proxy object by adding the following code after the opening bracket in  `static void Main(string[] args)`:
     
   ```cs
   
@@ -63,7 +63,7 @@ ExcelService es = new ExcelService();
   Dim es As New ExcelService()
   ```
 
-2. Add the following code to create a status array and range coordinate objects: 
+2. Add the following code to create a status array and range coordinate objects:
     
   ```cs
   Status[] outStatus;
@@ -92,7 +92,7 @@ string sheetName = "Sheet1";
 
    > [!NOTE]
    > Make sure the workbook you want to open has a worksheet called "Sheet1" that contains values. Alternatively, you can change "Sheet1" in the code to the name of your worksheet. 
-4.  `Add the following code to point to the workbook you want to open`: 
+4.  `Add the following code to point to the workbook you want to open`:
     
   ```cs
   string targetWorkbookPath = "http://myserver02/example/Shared%20Documents/Book1.xlsx";
@@ -105,7 +105,7 @@ string sheetName = "Sheet1";
 
 
    > [!IMPORTANT]
-   > Change the workbook path to match the location of the workbook you are using for this walkthrough. Make sure the workbook exists and that the location where the workbook is saved is a trusted location. Using an HTTP URL to point to the location of a workbook allows you to access it remotely. 
+   > Change the workbook path to match the location of the workbook you are using for this walkthrough. Make sure the workbook exists and that the location where the workbook is saved is a trusted location. Using an HTTP URL to point to the location of a workbook allows you to access it remotely.
 
    > [!NOTE]
    > You can get the path to a workbook in Microsoft SharePoint Server 2010 by right-clicking the workbook and selecting **Copy Shortcut**. Alternatively, you can select **Properties** and copy the path to the workbook from there.
@@ -204,13 +204,13 @@ End Try
 
 ## Complete Code
 
-The following code sample is the complete code in the Class1.cs example file described in the previous procedures. 
+The following code sample is the complete code in the Class1.cs example file described in the previous procedures.
   
     
     
 
 > [!IMPORTANT]
-> Make changes to the workbook path, sheet name, and so on, as appropriate. 
+> Make changes to the workbook path, sheet name, and so on, as appropriate.
   
     
     

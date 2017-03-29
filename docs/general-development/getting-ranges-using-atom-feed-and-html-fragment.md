@@ -7,7 +7,7 @@ ms.assetid: 45d4ef08-02d6-48dd-b0ef-a748db1a0c6a
 
 # Getting Ranges Using Atom Feed and HTML Fragment
 
-This topic describes two ways to access ranges—Atom feed and HTML fragment, by using the REST API in Excel Services. 
+This topic describes two ways to access ranges—Atom feed and HTML fragment, by using the REST API in Excel Services.
   
     
     
@@ -23,7 +23,7 @@ This topic describes two ways to access ranges—Atom feed and HTML fragment, by
 
 ## Accessing Ranges
 
-The REST API in Excel Services supports two mechanisms for getting ranges. The first is used mainly to enable applications to get to the raw-data of a workbook, that is, the raw numbers or values from a worksheet. The second is to get HTML fragments from inside a browser. 
+The REST API in Excel Services supports two mechanisms for getting ranges. The first is used mainly to enable applications to get to the raw-data of a workbook, that is, the raw numbers or values from a worksheet. The second is to get HTML fragments from inside a browser.
   
     
     
@@ -39,7 +39,7 @@ As described in the  [Discovery in Excel Services REST API](discovery-in-excel-s
 http://<ServerName>/_vti_bin/ExcelRest.aspx/<DocumentLibrary>/<FileName>/model
 ```
 
-Therefore, for a workbook with the file name **sampleWorkbook.xlsx** that is saved to `http://` _<ServerName>_ `/Docs/Documents/sampleWorkbook.xlsx`, following is the URI to the model page: 
+Therefore, for a workbook with the file name **sampleWorkbook.xlsx** that is saved to `http://` _<ServerName>_ `/Docs/Documents/sampleWorkbook.xlsx`, following is the URI to the model page:
   
     
     
@@ -56,14 +56,14 @@ Using the discovery mechanism described in  [Discovery in Excel Services REST AP
     
 
 > [!IMPORTANT]
-> You can also specify arbitrary ranges, and not just the ranges returned by discovery. Colon ":" must be replaced with "|". For example use "A1|G5" instead of "A1:G5". 
+> You can also specify arbitrary ranges, and not just the ranges returned by discovery. Colon ":" must be replaced with "|". For example use "A1|G5" instead of "A1:G5".
   
     
     
 
 
 > [!NOTE]
-> Characters like "?" and "#" are unsupported. To correctly reference sheet names that contain special characters, the basic guideline is "see what the Excel client does" when referencing a formula to a sheet with special characters and follow that example. 
+> Characters like "?" and "#" are unsupported. To correctly reference sheet names that contain special characters, the basic guideline is "see what the Excel client does" when referencing a formula to a sheet with special characters and follow that example.
   
     
     
@@ -94,7 +94,7 @@ If you click **SampleNamedRange** in the range discovery page, you navigate to t
 http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('SampleNamedRange')?$format=atom
 ```
 
-Note that, in Internet Explorer, the resulting page looks like an error, as shown in the following screen shot. 
+Note that, in Internet Explorer, the resulting page looks like an error, as shown in the following screen shot.
   
     
     
@@ -112,7 +112,7 @@ Note that, in Internet Explorer, the resulting page looks like an error, as show
   
     
     
-Internet Explorer cannot show a single-entry Atom feed item. But viewing the source of the page shows the XML that the feed item contains: 
+Internet Explorer cannot show a single-entry Atom feed item. But viewing the source of the page shows the XML that the feed item contains:
   
     
     
@@ -212,7 +212,7 @@ Using XML gives you an easier way to get data out of an Excel range so that you 
 
 ### Accessing Ranges by Using HTML
 
-If you look at the URL to access a named range by using Atom feed, note that the final part of the URL contains a parameter called  `$format`, which is set to  `atom`. This parameter can also take the value of  `html`. If you change the  `atom` value to `html`, the URL returns an HTML fragment instead of an Atom feed. Following is an example of the URL: 
+If you look at the URL to access a named range by using Atom feed, note that the final part of the URL contains a parameter called  `$format`, which is set to  `atom`. This parameter can also take the value of  `html`. If you change the  `atom` value to `html`, the URL returns an HTML fragment instead of an Atom feed. Following is an example of the URL:
   
     
     
@@ -222,7 +222,7 @@ If you look at the URL to access a named range by using Atom feed, note that the
 http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('SampleNamedRange')?$format=html
 ```
 
-In Internet Explorer, the page looks similar to the following figure. 
+In Internet Explorer, the page looks similar to the following figure.
   
     
     

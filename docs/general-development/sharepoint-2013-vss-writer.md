@@ -15,7 +15,7 @@ The VSS included with Windows Server is the infrastructure that provides built-i
 
 ## Characteristics of the System
 
-Following are the SharePoint Foundation VSS solution features and characteristics: 
+Following are the SharePoint Foundation VSS solution features and characteristics:
   
     
     
@@ -26,7 +26,7 @@ Following are the SharePoint Foundation VSS solution features and characteristic
 - **Full farm backup and restore for catastrophe.** The SPF-VSS Writer enables a backup application (requestor) to access the VSS API to request a backup or a restore operation for an entire SharePoint Foundation farm, including a single box setup or a farm configuration. (The IIS configuration store, which is primarily the `applicationhost.config` file, is not included. It must be backed up and restored separately.)
     
   
-- **Database level granularity**. The SPF-VSS Writer enables a requestor to select all databases, a segment of the databases (multiple select), or a single database (single select) for both backup and restore operations. All databases, except configuration and the Central Administration content database, are selectable through the writer. The configuration and Central Administration content databases can be backed up and restored only as part of the whole farm. (The IIS configuration store is not included. It must be backed up and restored separately.) 
+- **Database level granularity**. The SPF-VSS Writer enables a requestor to select all databases, a segment of the databases (multiple select), or a single database (single select) for both backup and restore operations. All databases, except configuration and the Central Administration content database, are selectable through the writer. The configuration and Central Administration content databases can be backed up and restored only as part of the whole farm. (The IIS configuration store is not included. It must be backed up and restored separately.)
     
   
 - **Inventory of databases.** Before backup, the SPF-VSS Writer generates a flat list of databases selected for backup within the farm. The list is returned to the requestor so that backup can be run on the location where the database is physically located.
@@ -61,17 +61,17 @@ Following are the SharePoint Foundation VSS solution features and characteristic
 
 ## Functions Performed by the SPF-VSS Writer
 
-The SPF-VSS Writer performs the following functions: 
+The SPF-VSS Writer performs the following functions:
   
     
     
 
-1. Builds SharePoint Foundation components. 
+1. Builds SharePoint Foundation components.
     
-  - Generates a full list of all components within the SharePoint Foundation farm. 
+  - Generates a full list of all components within the SharePoint Foundation farm.
     
   
-  - Is not necessarily tied to backup process or restore process. 
+  - Is not necessarily tied to backup process or restore process.
     
   
 
@@ -81,9 +81,9 @@ The SPF-VSS Writer performs the following functions:
   
 
   
-2. Backs up farm or database. 
+2. Backs up farm or database.
     
-  - Requests a SharePoint Foundation (farm/database) backup via VSS. 
+  - Requests a SharePoint Foundation (farm/database) backup via VSS.
     
   
 
@@ -93,9 +93,9 @@ The SPF-VSS Writer performs the following functions:
   
 
   
-3. Restores a farm or database. 
+3. Restores a farm or database.
     
-  - Requests a SharePoint Foundation (farm/database) recovery via VSS. 
+  - Requests a SharePoint Foundation (farm/database) recovery via VSS.
     
   
   - Implements **postRestore()** to synchronize sites table.
@@ -112,7 +112,7 @@ The SPF-VSS Writer performs the following functions:
 ## Next steps
 <a name="Next"> </a>
 
-Learn how to create and use a VSS requestor for SharePoint 2013: 
+Learn how to create and use a VSS requestor for SharePoint 2013:
   
     
     

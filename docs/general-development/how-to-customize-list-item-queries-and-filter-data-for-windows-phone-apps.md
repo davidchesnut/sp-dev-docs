@@ -6,15 +6,15 @@ ms.assetid: 32f89b97-8274-4cb0-9164-7898735a18aa
 
 
 # How to: Customize list item queries and filter data for Windows Phone apps
-Customize the data queries on which the views in a Windows Phone app are based. 
-With projects created from the Windows Phone SharePoint List Application template, developers can take advantage of a design pattern implemented in the template that allows them to customize parts of the data layer for a Windows Phone app. A view of a SharePoint list in a Windows Phone app can be configured in Microsoft SharePoint Server and included as is in the app on the phone, or a custom view can be created for the app. 
+Customize the data queries on which the views in a Windows Phone app are based.
+With projects created from the Windows Phone SharePoint List Application template, developers can take advantage of a design pattern implemented in the template that allows them to customize parts of the data layer for a Windows Phone app. A view of a SharePoint list in a Windows Phone app can be configured in Microsoft SharePoint Server and included as is in the app on the phone, or a custom view can be created for the app.
   
     
     
 
 
 > [!IMPORTANT]
-> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7. > For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md). 
+> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7.> For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md).
   
     
     
@@ -23,7 +23,7 @@ With projects created from the Windows Phone SharePoint List Application templat
 ## Configure list views on the server for use in Windows Phone apps
 <a name="BKMK_ConfiguringLists"> </a>
 
-When you create a SharePoint list app for a Windows Phone by using the Windows Phone SharePoint List Application template, you can choose to include in your app any existing views that are associated with the target SharePoint list. One of the ways to filter items in a SharePoint list as the list appears on the phone, then, is to configure a filtered view for the list on the server and then to select that view to be included in your Windows Phone app. The Windows Phone SharePoint List Application template wizard generates a Collaborative Application Markup Language (CAML) query for the selected view that includes the filtering conditions configured for the view on the server. You might, for example, have a list on the server that is based on the Tasks list template. You can create a view for the list named "Holiday Party" that includes only items related to, for example, planning a company holiday party by adding a filter condition to show list items only when the Description field contains the words "holiday" or "party". In the Windows Phone app, the CAML markup generated for the view would resemble the following (depending on the fields chosen to be included in your app). 
+When you create a SharePoint list app for a Windows Phone by using the Windows Phone SharePoint List Application template, you can choose to include in your app any existing views that are associated with the target SharePoint list. One of the ways to filter items in a SharePoint list as the list appears on the phone, then, is to configure a filtered view for the list on the server and then to select that view to be included in your Windows Phone app. The Windows Phone SharePoint List Application template wizard generates a Collaborative Application Markup Language (CAML) query for the selected view that includes the filtering conditions configured for the view on the server. You might, for example, have a list on the server that is based on the Tasks list template. You can create a view for the list named "Holiday Party" that includes only items related to, for example, planning a company holiday party by adding a filter condition to show list items only when the Description field contains the words "holiday" or "party". In the Windows Phone app, the CAML markup generated for the view would resemble the following (depending on the fields chosen to be included in your app).
   
     
     
@@ -90,20 +90,20 @@ In a project based on the Windows Phone SharePoint List Application template, th
   
 4. The **LoadData** method in ListDataProvider.cs calls the **LoadDataFromServer** method also implemented in that same file. The **LoadDataFromServer** method then does the following:
     
-1. Gets the CAML query string associated with a given view. 
+1. Gets the CAML query string associated with a given view.
     
   ```cs
   
 CamlQuery query = CamlQueryBuilder.GetCamlQuery(ViewName);
   ```
 
-2. Registers with the client object model the list to be retrieved. 
+2. Registers with the client object model the list to be retrieved.
     
   ```cs
   ListItemCollection items = Context.Web.Lists.GetByTitle(ListTitle).GetItems(query);
   ```
 
-3. Indicates to the client object model that it should return the list items and the fields of those list items (as text values). 
+3. Indicates to the client object model that it should return the list items and the fields of those list items (as text values).
     
   ```cs
   Context.Load(items);
@@ -121,11 +121,11 @@ Context.Load(items, listItems => listItems.Include(item => item.FieldValuesAsTex
 ## Add a custom list view query and corresponding UI elements
 <a name="BKMK_AddingCustomizations"> </a>
 
-In your own projects, you can take advantage of the way the data layer is designed to add your own custom CAML query strings and list views. 
+In your own projects, you can take advantage of the way the data layer is designed to add your own custom CAML query strings and list views.
   
     
     
-For the following code sample, assume again that the target installation of SharePoint Server has a Product Orders list created from the Custom List template, configured with the fields and types indicated in Table 1 in the topic  [How to: Implement business logic and data validation in a Windows Phone app for SharePoint 2013](how-to-implement-business-logic-and-data-validation-in-a-windows-phone-app-for-s.md). Create a project based on the Windows Phone SharePoint List Application template that uses a list like the Product Orders list as a source (as described in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md)). For the purposes of this example, we add a custom view to the Windows Phone app (not to the list on the server) that is filtered to display only those product orders in which the quantity ordered is 100 or more. 
+For the following code sample, assume again that the target installation of SharePoint Server has a Product Orders list created from the Custom List template, configured with the fields and types indicated in Table 1 in the topic  [How to: Implement business logic and data validation in a Windows Phone app for SharePoint 2013](how-to-implement-business-logic-and-data-validation-in-a-windows-phone-app-for-s.md). Create a project based on the Windows Phone SharePoint List Application template that uses a list like the Product Orders list as a source (as described in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md)). For the purposes of this example, we add a custom view to the Windows Phone app (not to the list on the server) that is filtered to display only those product orders in which the quantity ordered is 100 or more.
   
     
     
@@ -133,7 +133,7 @@ For the following code sample, assume again that the target installation of Shar
 ### To add a custom query and view
 
 
-1. In **Solution Explorer**, double-click the ListDataProvider.cs file (or choose the file and press F7) to open the file for editing. 
+1. In **Solution Explorer**, double-click the ListDataProvider.cs file (or choose the file and press F7) to open the file for editing.
     
   
 2. Update the definition of the **ViewXmls** **Dictionary** type in the static **CamlQueryBuilder** class to include an additional CAML query, with a WHERE clause stipulating the appropriate filtering condition.
@@ -153,7 +153,7 @@ static Dictionary<string, string> ViewXmls = new Dictionary<string, string>()
 };
   ```
 
-3. Double-click the List.xaml file to open the file for editing. 
+3. Double-click the List.xaml file to open the file for editing.
     
   
 4. Add markup to define an additional child **PivotItem** control within the main **Pivot** control. The **Grid** element in which the UI elements that define the main application page are declared should resemble the following code.
@@ -225,7 +225,7 @@ When you start your project (by pressing F5), the **Pivot** control for the app 
   
     
     
-And the custom view, as defined in the preceding procedure, displays a filtered list of items that includes only those orders for which a quantity of 100 or more is specified, as shown in Figure 2. 
+And the custom view, as defined in the preceding procedure, displays a filtered list of items that includes only those orders for which a quantity of 100 or more is specified, as shown in Figure 2.
   
     
     
@@ -243,7 +243,7 @@ And the custom view, as defined in the preceding procedure, displays a filtered 
   
     
     
-You can make many other customizations both to the CAML queries on which views are based and to the UI elements associated with views. 
+You can make many other customizations both to the CAML queries on which views are based and to the UI elements associated with views.
   
     
     

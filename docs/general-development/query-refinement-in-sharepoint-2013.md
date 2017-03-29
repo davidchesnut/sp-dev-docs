@@ -7,17 +7,17 @@ ms.assetid: ec31782e-1bc5-4dc3-8df7-c29cd5f7f05c
 
 
 # Query Refinement in SharePoint 2013
-Learn how to use SharePoint Server 2013 query refinement features programmatically when you are working with search queries and results. 
-You can use query refinement features to provide end users with refinement options that are relevant for their queries. These features let the end user drill down into search results by using refinement data computed for the results. Refinement data is calculated by the index component, based on the aggregation of managed property statistics for all of the results of a search query. 
+Learn how to use SharePoint Server 2013 query refinement features programmatically when you are working with search queries and results.
+You can use query refinement features to provide end users with refinement options that are relevant for their queries. These features let the end user drill down into search results by using refinement data computed for the results. Refinement data is calculated by the index component, based on the aggregation of managed property statistics for all of the results of a search query.
   
     
     
 
-Typically, query refinement is used for metadata associated with the indexed items, such as creation date, author, or file types that appear in the item. By using the refinement options, you can refine your query to display only items created during a certain time period, or display only items of a specific file type. 
+Typically, query refinement is used for metadata associated with the indexed items, such as creation date, author, or file types that appear in the item. By using the refinement options, you can refine your query to display only items created during a certain time period, or display only items of a specific file type.
 ## Using refiners in the Query Object Model
 <a name="SP15_Using_refiners"> </a>
 
-There are two queries involved in query refinement: 
+There are two queries involved in query refinement:
   
     
     
@@ -28,7 +28,7 @@ There are two queries involved in query refinement:
 2. You can use the refinement data to drill down into the search results by,  [creating a refined query](#SP15_Creating_refined_query). Add the  [RefinementFilters](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Query.KeywordQuery.RefinementFilters.aspx) property to the query so that the final search results will meet the requirements of both the original query text from the end user and the selected refinement option from the refinement data.
     
   
-The following sections describe these steps in detail, and provide code examples. 
+The following sections describe these steps in detail, and provide code examples.
   
     
     
@@ -60,7 +60,7 @@ Each  `refiner` has the following format:
   
     
     
-Where: 
+Where:
   
     
     
@@ -73,11 +73,11 @@ Where:
   
 
 > [!NOTE]
-> When you specify refiners, the minimum requirement is to specify a  `refiner-name`, which is a managed property. > **Example**
+> When you specify refiners, the minimum requirement is to specify a  `refiner-name`, which is a managed property.> **Example**
   
     
     
- `Refiners = "FileType"`> > Or, you can also use the advanced syntax to adjust the refiner settings. > **Example**
+ `Refiners = "FileType"`> > Or, you can also use the advanced syntax to adjust the refiner settings.> **Example**
   
     
     
@@ -92,7 +92,7 @@ Where:
 
 |**Parameter**|**Description**|
 |:-----|:-----|
-| _deephits_|Overrides the default number of hits that is used as the basis for refinement computation. When refiners are produced, all results for the query will be evaluated. Normally, using this parameter will improve search performance. **Syntax**          `deephits=<integer value>` **Example**          `price(deephits=1000)`> [!NOTE]> This limit applies within each index partition. The actual number of hits that are evaluated will be larger than this value due to the aggregation across search partitions.           |
+| _deephits_|Overrides the default number of hits that is used as the basis for refinement computation. When refiners are produced, all results for the query will be evaluated. Normally, using this parameter will improve search performance. **Syntax**          `deephits=<integer value>` **Example**          `price(deephits=1000)`> [!NOTE]> This limit applies within each index partition. The actual number of hits that are evaluated will be larger than this value due to the aggregation across search partitions.          |
 | _discretize_| Specifies custom intervals (refinement bins) for numeric refiners. **Syntax**          `discretize=manual/<threshold>/<threshold>[/<threshold>]*` **Example**          `write(discretize=manual/2013-01-01/2013-08-22/2013-09-15/2013-09-21/2013-09-22)` The `<threshold>` attribute specifies the threshold for each refinement bin. There is one interval for everything below the first threshold specified, one interval between each consecutive threshold, and one interval for everything above the last threshold. For a refiner of type **DateTime**, specify the threshold according to one of the following ISO 8601-compatible formats:  _YYYY-MM-DD_ _YYYY-MM-DDThh:mm:ss_ _YYYY-MM-DDThh:mm:ss:Z_ The format values specify the following: _YYYY_ - Four-digit year. Only four-digit years are supported. _MM_ - Two-digit month. 01 = January. _DD_ - Two-digit day of month (01 through 31). _T_ - The letter "T". _hh_ - Two-digit hour (00 through 23). A.M. or P.M. indication is not allowed. _mm_ - Two-digit minute (00 through 59). _ss_ - Two-digit second (00 through 59).> [!IMPORTANT]>  All date/time values must be specified according to the Coordinated Universal Time (UTC), also known as Greenwich Mean Time (GMT) zone. The UTC zone identifier (a trailing "Z" character) is optional.          |
 | _sort_| Defines how to sort the bins within a string refiner. **Syntax**          `sort=<property>/<direction>` The attributes perform the following: _<property>_ - Specifies the sorting algorithm. These lowercase values are valid: **frequency** - Orders by occurrence within the bins. **name** - Orders by label name. **number** - Treats the strings as numeric and uses numeric sorting. This value can be useful to specify discrete values, for example, to perform numeric sorting of a value that is contained in a managed property of type **String**.  _<direction>_ - Specifies the sorting direction. These lowercase values are valid : **descending** **ascending** **Example**          `sort=name/ascending` **Default**: frequency/descending |
 | _filter_| Defines how bins within a refiner of type **String** are filtered before they are returned to the client. **Syntax**          `filter=<bins>/<freq>/<prefix>[<levels>]` The attributes perform the following: _<bins>_ - Specifies the maximum number of returned bins. After sorting the bins within the refiner, use this attribute to truncate any trailing bins. For example, if bins=10, only the first 10 bins are returned, according to the specified sorting algorithm. _<freq>_ - Limits the number of returned bins. Use this attribute to remove bins that have low frequency counts. For example, _freq_=2 indicates that only the bins with 2 or more members are returned.  _<prefix>_ - Specifies that only bins with a name that begins with this prefix are returned. The wildcard character "*" will match all names. **Example** `filter=30/2/*` _<levels>_ - Specifies the levels of taxonomy. Use this attribute to filter hierarchical refiner output based on taxonomy levels. The attribute should be a positive integer _n_. The **default** value is _n_=0. If  _n_>0, only refiner entries that contain less than  _n_ taxonomy path separator symbols ("/") will be returned. If _n_=0, no level filtering is performed. The level separator is the forward slash character ("/").  Be aware of the performance cost of using a large taxonomy navigator. The filtering is performed as part of the result processing.> [!NOTE]>  This parameter applies application-specific result-side filtering. This differs from the cutoff parameter, which applies limitations in every index partition for performance reasons.          |
@@ -154,17 +154,17 @@ If you have enabled query refinement for a managed property in your query, the q
 
 |**Parameter**|**Description**|
 |:-----|:-----|
-|**RefinerName**|The name of the query refiner. |
-|**RefinementName**|The string that represents the refinement bin. This string is typically used when presenting the refinement options to the users on a search result page. |
-|**RefinementValue**|An implementation-specific formatted string that represents refinement. This data is returned for debugging and is typically not required for the client. |
+|**RefinerName**|The name of the query refiner.|
+|**RefinementName**|The string that represents the refinement bin. This string is typically used when presenting the refinement options to the users on a search result page.|
+|**RefinementValue**|An implementation-specific formatted string that represents refinement. This data is returned for debugging and is typically not required for the client.|
 |**RefinementToken**|A string that represents the refinement bin to use with **RefinerName** when you perform a refined query.|
-|**RefinementCount**|The result count for this refinement bin. This data represents the number of items (including duplicates) in the search result with a value for the given managed property that falls into this refinement bin. |
+|**RefinementCount**|The result count for this refinement bin. This data represents the number of items (including duplicates) in the search result with a value for the given managed property that falls into this refinement bin.|
    
 
 ### Example: Refinement data
 <a name="SP15_Example_refinement_data"> </a>
 
-Table 3 below contains two rows of refinement data. The first row holds refinement data for indexed items, where the file type is HTML. The second row holds refinement data for indexed items, where the last modified time is from 2013/09/21 until 2013/09/22. 
+Table 3 below contains two rows of refinement data. The first row holds refinement data for indexed items, where the file type is HTML. The second row holds refinement data for indexed items, where the last modified time is from 2013/09/21 until 2013/09/22.
   
     
     
@@ -174,8 +174,8 @@ Table 3 below contains two rows of refinement data. The first row holds refineme
 
 |**RefinerName**|**RefinementName**|**RefinementValue**|**RefinementToken**|**RefinementCount**|
 |:-----|:-----|:-----|:-----|:-----|
-|FileType |Html |Html |"ǂǂ68746d6c" |50553 |
-|Write |From 2013-09-21T00:00:00Z up to 2013-09-22T00:00:00Z |From 2013-09-21T00:00:00Z up to 2013-09-22T00:00:00Z |range(2013-09-21T00:00:00Z, 2013-09-22T00:00:00Z) |37 |
+|FileType|Html|Html|"ǂǂ68746d6c"|50553|
+|Write|From 2013-09-21T00:00:00Z up to 2013-09-22T00:00:00Z|From 2013-09-21T00:00:00Z up to 2013-09-22T00:00:00Z|range(2013-09-21T00:00:00Z, 2013-09-22T00:00:00Z)|37|
    
 
 ## Creating a refined query
@@ -200,7 +200,7 @@ You can provide one or more refinement filters for a refined query by adding ref
 
 ### Example 1: Creating a refined query for HTML file types
 
-The following CSOM example shows how to programmatically perform a refinement, to limit the search results to those of HTML file type only. As mentioned in  [Example: Refinement data](#SP15_Example_refinement_data), refinement data related to this refinement option has **RefinerName** set to _Filetype_ and **RefinementToken** set to _"ǂǂ68746d6c"_. 
+The following CSOM example shows how to programmatically perform a refinement, to limit the search results to those of HTML file type only. As mentioned in  [Example: Refinement data](#SP15_Example_refinement_data), refinement data related to this refinement option has **RefinerName** set to _Filetype_ and **RefinementToken** set to _"ǂǂ68746d6c"_.
   
     
     
@@ -234,7 +234,7 @@ using (var context = new ClientContext("http://<serverName>/<siteCollectionPath>
 
 ### Example 2: Creating a refined query by using previously obtained refinement data
 
-The following CSOM example shows how to run a query with a refiner spec to create refinement data which is subsequently used to perform refinement. This example simulates the process of an end user selecting the first refinement option. 
+The following CSOM example shows how to run a query with a refiner spec to create refinement data which is subsequently used to perform refinement. This example simulates the process of an end user selecting the first refinement option.
   
     
     

@@ -16,10 +16,10 @@ For this walkthrough, you will create an ECMAScript (JavaScript, JScript) text f
 ### To create an ECMAScript text file
 
 
-1. Create a text file and name it JSOM_FeedToContentEditor.txt. 
+1. Create a text file and name it JSOM_FeedToContentEditor.txt.
     
   
-2. Add the following script to the JSOM_FeedToContentEditor.txt file. 
+2. Add the following script to the JSOM_FeedToContentEditor.txt file.
     
     **Sample code provided by:** Vidya Joshi, Microsoft Corporation.
     
@@ -107,7 +107,7 @@ function writelog(output, indentLevel)
 
   ```
 
-3. Save the text file. 
+3. Save the text file.
     
   
 
@@ -117,11 +117,11 @@ function writelog(output, indentLevel)
 1. Upload the text file that you created in the previous procedure to a trusted SharePoint document library. 
     
   
-2. Note the URL to the text file. For example: 
+2. Note the URL to the text file. For example:
     
      `http://` _myserver_ `/Docs/Documents/JSOM_FeedToContentEditor.txt`
     
-    In the next procedure, you will need this URL to feed to the Content Editor Web Part. 
+    In the next procedure, you will need this URL to feed to the Content Editor Web Part.
     
   
 

@@ -6,17 +6,17 @@ ms.assetid: d08a74c0-5674-4f26-8646-11ea1f081c85
 
 
 # SharePoint 2013 Design Manager image renditions
-Learn how to create an image rendition, how to add it to a page, and how to crop it. An image rendition defines the dimensions that are used to display images in SharePoint publishing sites. 
+Learn how to create an image rendition, how to add it to a page, and how to crop it. An image rendition defines the dimensions that are used to display images in SharePoint publishing sites.
 Image renditions enable you to display differently sized versions of an image on different pages in a publishing site, based on the same source image. When you create an image rendition, you specify the width and/or height for all images that use that image rendition. The image renditions are available for every image that is uploaded to a library in that site collection. For example, designers can create an image rendition to display thumbnail images and another image rendition to display banner images. When an image is added to a page, the author can specify the image rendition to use on that image. Authors can also crop the image rendition to specify the portion of the image to use in the image rendition. The correct image size is displayed when the page is rendered.
   
     
     
 
-Image renditions enable you to render a single image in multiple ways. An image can be displayed in various sizes or with different cropping. The first time that an image is requested, SharePoint Server uses the specified image rendition to generate the image. When a user views a SharePoint site, the correctly sized version of the image is downloaded to the client computer. This reduces the size of the file that is downloaded to the client, which improves site performance. 
+Image renditions enable you to render a single image in multiple ways. An image can be displayed in various sizes or with different cropping. The first time that an image is requested, SharePoint Server uses the specified image rendition to generate the image. When a user views a SharePoint site, the correctly sized version of the image is downloaded to the client computer. This reduces the size of the file that is downloaded to the client, which improves site performance.
 ## Prerequisites for managing image renditions
 <a name="Prerequisites"> </a>
 
-Because image renditions have dependencies on other features in SharePoint Server 2013, make sure that you meet the prerequisites in this section before you perform the procedures in this topic. Prerequisites include: 
+Because image renditions have dependencies on other features in SharePoint Server 2013, make sure that you meet the prerequisites in this section before you perform the procedures in this topic. Prerequisites include:
   
     
     
@@ -34,7 +34,7 @@ Because image renditions have dependencies on other features in SharePoint Serve
 ## Create an image rendition
 <a name="Create"> </a>
 
-When an image rendition is created, SharePoint Server 2013 creates a unique ID that identifies that image rendition. An image is generated when SharePoint Server first receives a request for the image rendition. 
+When an image rendition is created, SharePoint Server 2013 creates a unique ID that identifies that image rendition. An image is generated when SharePoint Server first receives a request for the image rendition.
   
     
     
@@ -42,30 +42,30 @@ When an image rendition is created, SharePoint Server 2013 creates a unique ID t
 ### To create an image rendition
 
 
-1. Verify that the user account that is performing this procedure has, at minimum, Design permissions to the top-level site of the site collection. 
+1. Verify that the user account that is performing this procedure has, at minimum, Design permissions to the top-level site of the site collection.
     
   
-2. In a browser, go to the top-level site of the publishing site collection. 
+2. In a browser, go to the top-level site of the publishing site collection.
     
   
-3. Choose the **Settings** icon. On the **Site Settings** page, in the **Look and Feel** section, choose **Image Renditions**. 
+3. Choose the **Settings** icon. On the **Site Settings** page, in the **Look and Feel** section, choose **Image Renditions**.
     
    > [!NOTE]
-   > The Image Renditions page can also be opened from the default home page of the publishing site. In the **I'm the Visual Designer** section, choose **Configure image renditions**. 
-4. On the **Image Renditions** page, choose **Add new item**. 
+   > The Image Renditions page can also be opened from the default home page of the publishing site. In the **I'm the Visual Designer** section, choose **Configure image renditions**.
+4. On the **Image Renditions** page, choose **Add new item**.
     
   
-5. On the **New Image Rendition** page, in the **Name** box, enter a name for the rendition. For example, enterThumbnail_Small. 
+5. On the **New Image Rendition** page, in the **Name** box, enter a name for the rendition. For example, enterThumbnail_Small.
     
   
-6. In the **Width** and **Height** text boxes, enter the width and height, in pixels, of the rendition, and then choose **Save**. 
+6. In the **Width** and **Height** text boxes, enter the width and height, in pixels, of the rendition, and then choose **Save**.
     
   
 
 ## Edit an image rendition
 <a name="Edit"> </a>
 
-When an image rendition is edited, the new dimensions take effect the next time that the image is requested. If there is an image that was generated previously from the image rendition, the image is regenerated with the new dimensions the next time that the image is requested. 
+When an image rendition is edited, the new dimensions take effect the next time that the image is requested. If there is an image that was generated previously from the image rendition, the image is regenerated with the new dimensions the next time that the image is requested.
   
     
     
@@ -73,13 +73,13 @@ When an image rendition is edited, the new dimensions take effect the next time 
 ### To edit an image rendition
 
 
-1. Verify that the user account that is performing this procedure has, at minimum, Design permissions to the top-level site of the site collection. 
+1. Verify that the user account that is performing this procedure has, at minimum, Design permissions to the top-level site of the site collection.
     
   
-2. In a browser, go to the top-level site of the publishing site collection. 
+2. In a browser, go to the top-level site of the publishing site collection.
     
   
-3. Choose the **Settings** icon. On the **Site Settings** page, in the **Look and Feel** section, choose **Image Renditions**. 
+3. Choose the **Settings** icon. On the **Site Settings** page, in the **Look and Feel** section, choose **Image Renditions**.
     
    > [!NOTE]
    > The **Image Renditions** page can also be opened from the default home page of the publishing site. In the **I'm the Visual Designer** section, choose **Configure image renditions**. 
@@ -93,14 +93,14 @@ When an image rendition is edited, the new dimensions take effect the next time 
 ## Add an image rendition
 <a name="Add"> </a>
 
-When you add an image to a page in a SharePoint publishing site, you can specify the image rendition to use for that image. When the page is rendered in a browser, the correct image size is displayed. You can specify the image rendition in the Rich Text Editor, in an image field control, or in the image URL. 
+When you add an image to a page in a SharePoint publishing site, you can specify the image rendition to use for that image. When the page is rendered in a browser, the correct image size is displayed. You can specify the image rendition in the Rich Text Editor, in an image field control, or in the image URL.
   
     
     
 
 ### Specify the image rendition by using the Rich Text Editor
 
-When an image is inserted in a page, you can specify the image rendition to use so that the correct image size is displayed when the page is rendered. You can specify the image rendition in the Rich Text Editor only for images that are stored in the same site collection as the page that is being edited. 
+When an image is inserted in a page, you can specify the image rendition to use so that the correct image size is displayed when the page is rendered. You can specify the image rendition in the Rich Text Editor only for images that are stored in the same site collection as the page that is being edited.
   
     
     
@@ -108,29 +108,29 @@ When an image is inserted in a page, you can specify the image rendition to use 
 ### To specify an image rendition by using the Rich Text Editor
 
 
-1. On the **Page** tab, choose **Edit**. 
+1. On the **Page** tab, choose **Edit**.
     
   
-2. Choose the **Settings** icon, and then choose **Add a page**. 
+2. Choose the **Settings** icon, and then choose **Add a page**.
     
   
-3. In the **Add a page** window, enter a name for the page, and then choose **Create**. 
+3. In the **Add a page** window, enter a name for the page, and then choose **Create**.
     
   
 4. Place the pointer in the **Page Content** field.
     
   
-5. On the **Insert** tab, choose **Picture**, and then choose **From SharePoint**. 
+5. On the **Insert** tab, choose **Picture**, and then choose **From SharePoint**.
     
   
-6. Locate the image that you want to add to the page, select the image, and then choose **Insert**. The image will be displayed at full size. 
+6. Locate the image that you want to add to the page, select the image, and then choose **Insert**. The image will be displayed at full size.
     
   
-7. On the **Design** tab, in the **Select** group, choose **Pick Rendition**, and then select an image rendition. The image will display according to the size specified for the image rendition. 
+7. On the **Design** tab, in the **Select** group, choose **Pick Rendition**, and then select an image rendition. The image will display according to the size specified for the image rendition.
     
    > [!NOTE]
    > The **Pick Rendition** command is available only for images that are stored in the same site collection as the page that is being edited.
-8. If you want to crop the image rendition, choose **Pick Rendition**, and then choose **Edit Renditions**. 
+8. If you want to crop the image rendition, choose **Pick Rendition**, and then choose **Edit Renditions**.
     
     For more information about cropping image renditions, see the  [Crop an image rendition](#Crop) section of this article.
     
@@ -138,7 +138,7 @@ When an image is inserted in a page, you can specify the image rendition to use 
 
 ### Specify the image rendition in the image URL
 
-You can specify the image rendition by adding the RenditionID, Width, or Height parameters to the image URL. 
+You can specify the image rendition by adding the RenditionID, Width, or Height parameters to the image URL.
   
     
     
@@ -160,12 +160,12 @@ You can specify the image rendition by adding the RenditionID, Width, or Height 
     
 
 > [!NOTE]
-> If the image URL includes the RenditionID parameter and Width and Height parameters, the Width and Height parameters are ignored. 
+> If the image URL includes the RenditionID parameter and Width and Height parameters, the Width and Height parameters are ignored.
   
     
     
 
-The following example shows how to use the RenditionID parameter: 
+The following example shows how to use the RenditionID parameter:
   
     
     
@@ -177,7 +177,7 @@ The following example shows how to use the RenditionID parameter:
 <img src="/sites/pub/Assets/Lighthouse.jpg?RenditionID=2" />
 ```
 
-The following example shows how to use the Width and Height parameters: 
+The following example shows how to use the Width and Height parameters:
   
     
     
@@ -191,7 +191,7 @@ The following example shows how to use the Width and Height parameters:
 
 ### Specify the image rendition in the image field control
 
-A developer can specify the image rendition to use in the image field control. Use the **RenditionId** property to set the ID of the image rendition. For more information, see **RenditionId**. 
+A developer can specify the image rendition to use in the image field control. Use the **RenditionId** property to set the ID of the image rendition. For more information, see **RenditionId**.
   
     
     
@@ -235,22 +235,22 @@ An image rendition can be cropped in the asset library or on a page, without cha
   
     
     
-Image renditions can be cropped in the following ways: 
+Image renditions can be cropped in the following ways:
   
     
     
 
-- Designers can crop an image rendition in the asset library. For example, a designer may want to specify how an image appears in the thumbnail image rendition. 
+- Designers can crop an image rendition in the asset library. For example, a designer may want to specify how an image appears in the thumbnail image rendition.
     
   
-- Authors can crop an image rendition when they insert an image into a page. This enables them to customize the look of their page. When an author crops an image rendition, this also changes the image rendition for that image. Anyone who uses that image rendition sees the cropped image. 
+- Authors can crop an image rendition when they insert an image into a page. This enables them to customize the look of their page. When an author crops an image rendition, this also changes the image rendition for that image. Anyone who uses that image rendition sees the cropped image.
     
    > [!NOTE]
-   > An author can crop an image rendition only when the original image is stored in a library that is in the same site collection as the page that is being edited. For example, in cross-site publishing scenarios, an author can crop the image rendition only if the image is stored in the same site collection as the catalog content. Otherwise, the image rendition must be cropped in the asset library. 
+   > An author can crop an image rendition only when the original image is stored in a library that is in the same site collection as the page that is being edited. For example, in cross-site publishing scenarios, an author can crop the image rendition only if the image is stored in the same site collection as the catalog content. Otherwise, the image rendition must be cropped in the asset library.
 
 ### Crop an image rendition in the asset library
 
-Designers can crop an image rendition in the asset library. 
+Designers can crop an image rendition in the asset library.
   
     
     
@@ -258,37 +258,37 @@ Designers can crop an image rendition in the asset library.
 ### To crop an image rendition in the asset library
 
 
-1. Verify that the user account that is performing this procedure has Write permissions to the asset library where the image is located. 
+1. Verify that the user account that is performing this procedure has Write permissions to the asset library where the image is located.
     
   
-2. In a browser, go to the asset library. 
+2. In a browser, go to the asset library.
     
   
-3. Position the pointer in the lower-right corner of the image whose rendition you want to change, select the ellipses ( **...**) that appears, and then choose **EDIT RENDITIONS**. 
+3. Position the pointer in the lower-right corner of the image whose rendition you want to change, select the ellipses ( **...**) that appears, and then choose **EDIT RENDITIONS**.
     
    > [!NOTE]
-   > You can also open the **Edit Renditions** page by placing the pointer over the preview image in the asset library, and then selecting the check box that appears at the bottom of the preview image. Then, on the **Design** tab, choose **Edit Renditions**. 
+   > You can also open the **Edit Renditions** page by placing the pointer over the preview image in the asset library, and then selecting the check box that appears at the bottom of the preview image. Then, on the **Design** tab, choose **Edit Renditions**.
 
-    The Edit Renditions page displays a preview image for each image rendition that is defined in the site collection. 
+    The Edit Renditions page displays a preview image for each image rendition that is defined in the site collection.
     
   
-4. Locate the image rendition that you want to change, and then choose **Click to change**. 
+4. Locate the image rendition that you want to change, and then choose **Click to change**.
     
   
 5. In the **Crop Rendition** window, use the image tool to select the portion of the image that you want to use in the image rendition.
     
   
-6. Choose **Save**. 
+6. Choose **Save**.
     
   
-If the image and the page that is being edited are in the same site collection, you also can crop an image rendition by using the Rich Text Editor. 
+If the image and the page that is being edited are in the same site collection, you also can crop an image rendition by using the Rich Text Editor.
   
     
     
 
 ### Crop an image rendition on a page
 
-Authors can crop an image rendition when they insert an image into a page. This enables them to customize the look of their page. When an author crops an image rendition, this also changes the image rendition for that image. Anyone who uses that image rendition sees the cropped image. 
+Authors can crop an image rendition when they insert an image into a page. This enables them to customize the look of their page. When an author crops an image rendition, this also changes the image rendition for that image. Anyone who uses that image rendition sees the cropped image.
   
     
     
@@ -296,38 +296,38 @@ Authors can crop an image rendition when they insert an image into a page. This 
 ### To crop an image rendition on a page
 
 
-1. Verify that the user account that is performing this procedure has Write permissions to the asset library where the image is located. 
+1. Verify that the user account that is performing this procedure has Write permissions to the asset library where the image is located.
     
   
-2. In a browser, go to the SharePoint site that contains the image. 
+2. In a browser, go to the SharePoint site that contains the image.
     
   
-3. On the **Page** tab, choose **Edit**. 
+3. On the **Page** tab, choose **Edit**.
     
   
-4. Select the image that you want to crop. 
+4. Select the image that you want to crop.
     
   
-5. On the **Image** tab of the ribbon, in the **Select** group, choose **Pick Rendition**, and then choose **Edit Renditions**. 
+5. On the **Image** tab of the ribbon, in the **Select** group, choose **Pick Rendition**, and then choose **Edit Renditions**.
     
     The **Edit Renditions** page displays a preview image for each image rendition that is defined in the site collection.
     
    > [!NOTE]
    > The **Pick Rendition** command is available only for images that are stored in the same site collection as the page that is being edited.
-6. Locate the image rendition that you want to change, and then choose **Click to change**. 
+6. Locate the image rendition that you want to change, and then choose **Click to change**.
     
   
 7. In the **Crop Rendition** window, use the image tool to select the portion of the image to use in the image rendition.
     
   
-8. Choose **Save**. 
+8. Choose **Save**.
     
   
 
 ## Delete an image rendition
 <a name="Delete"> </a>
 
-When an image rendition is deleted, that image rendition is no longer generated for images. If a site requests the deleted image rendition, the original image is returned. 
+When an image rendition is deleted, that image rendition is no longer generated for images. If a site requests the deleted image rendition, the original image is returned.
   
     
     
@@ -335,17 +335,17 @@ When an image rendition is deleted, that image rendition is no longer generated 
 ### To delete an image rendition
 
 
-1. Verify that the user account that is performing this procedure has, at minimum, Design permissions to the top-level site of the site collection. 
+1. Verify that the user account that is performing this procedure has, at minimum, Design permissions to the top-level site of the site collection.
     
   
-2. In a browser, go to the top-level site of the publishing site collection. 
+2. In a browser, go to the top-level site of the publishing site collection.
     
   
-3. Choose the **Settings** icon. On the **Site Settings** page, in the **Look and Feel** section, choose **Image Renditions**. 
+3. Choose the **Settings** icon. On the **Site Settings** page, in the **Look and Feel** section, choose **Image Renditions**.
     
    > [!NOTE]
    > The **Image Renditions** page can also be opened from the default home page of the publishing site. In the **I'm the Visual Designer** section, choose **Configure image renditions**. 
-4. On the **Image Renditions** page, locate the image rendition that you want to delete, and then choose **Delete**. 
+4. On the **Image Renditions** page, locate the image rendition that you want to delete, and then choose **Delete**.
     
   
 

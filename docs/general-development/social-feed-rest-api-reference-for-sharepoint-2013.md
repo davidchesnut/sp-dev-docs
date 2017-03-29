@@ -27,26 +27,26 @@ If the resource endpoint takes a parameter, the parameter metadata is specified 
 
 |||
 |:-----|:-----|
-| [My](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_my)|Gets information about the current user. |
-| [My/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeedPost)|Creates a root post in the current user's feed. |
-| [My/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeed)|Gets the feed of activity by the current user. |
-| [My/News](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myNews)|Gets the feed of activity by the current user and by people and content the user is following. |
-| [My/TimelineFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myTimelineFeed)|Gets the feed of activity by the current user and by people and content the user is following, sorted by created date. |
-| [My/Likes](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myLikes)|Gets the feed of posts that the current user likes. |
-| [My/MentionFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeed)|Gets the feed of posts that mention the current user. |
-| [My/MentionFeed/ClearUnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeedClearUnreadMentionCount)|Gets the feed of posts that mention the current user and clears the unread mention count. |
-| [My/UnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myUnreadMentionCount)|Gets the count of unread mentions for the current user. |
-| [Actor](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actor)|Gets information about the specified user and the current user. |
-| [Actor/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeed)|Gets the feed of activity by the specified user. |
-| [Actor/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeedPost)|Creates a root post in the specified site feed. |
-| [Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_post)|Gets a full thread that contains the specified post. |
-| [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply)|Posts a reply to the specified post. |
-| [Post/Delete](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postDelete)|Deletes the specified post. |
-| [Post/Like](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLike)|Makes the current user a liker of the specified post. |
-| [Post/Unlike](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlike)|Removes the current user from the list of likers for the specified post. |
-| [Post/Likers](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLikers)|Gets the users who like the specified post. |
-| [Post/Lock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLock)|Locks the specified thread. |
-| [Post/Unlock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlock)|Unlocks the specified thread. |
+| [My](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_my)|Gets information about the current user.|
+| [My/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeedPost)|Creates a root post in the current user's feed.|
+| [My/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeed)|Gets the feed of activity by the current user.|
+| [My/News](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myNews)|Gets the feed of activity by the current user and by people and content the user is following.|
+| [My/TimelineFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myTimelineFeed)|Gets the feed of activity by the current user and by people and content the user is following, sorted by created date.|
+| [My/Likes](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myLikes)|Gets the feed of posts that the current user likes.|
+| [My/MentionFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeed)|Gets the feed of posts that mention the current user.|
+| [My/MentionFeed/ClearUnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeedClearUnreadMentionCount)|Gets the feed of posts that mention the current user and clears the unread mention count.|
+| [My/UnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myUnreadMentionCount)|Gets the count of unread mentions for the current user.|
+| [Actor](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actor)|Gets information about the specified user and the current user.|
+| [Actor/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeed)|Gets the feed of activity by the specified user.|
+| [Actor/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeedPost)|Creates a root post in the specified site feed.|
+| [Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_post)|Gets a full thread that contains the specified post.|
+| [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply)|Posts a reply to the specified post.|
+| [Post/Delete](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postDelete)|Deletes the specified post.|
+| [Post/Like](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLike)|Makes the current user a liker of the specified post.|
+| [Post/Unlike](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlike)|Removes the current user from the list of likers for the specified post.|
+| [Post/Likers](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLikers)|Gets the users who like the specified post.|
+| [Post/Lock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLock)|Locks the specified thread.|
+| [Post/Unlock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlock)|Unlocks the specified thread.|
    
 
 > [!NOTE]
@@ -59,7 +59,7 @@ If the resource endpoint takes a parameter, the parameter metadata is specified 
 ## My
 <a name="bk_my"> </a>
 
-Gets information about the current user. 
+Gets information about the current user.
   
     
     
@@ -77,7 +77,7 @@ The **my** endpoint sets the current user as the context for any subsequent reso
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -88,7 +88,7 @@ Type:  [SP.Social.SocialRestActor](social-feed-rest-api-reference-for-sharepoint
   
     
     
-Information about the current user. 
+Information about the current user.
   
     
     
@@ -96,7 +96,7 @@ You can call **SocialRestActor** properties individually in the URI, for example
   
     
     
-The following response example represents information about the current user. 
+The following response example represents information about the current user.
   
     
     
@@ -140,11 +140,11 @@ The following response example represents information about the current user.
 ## My/Feed/Post
 <a name="bk_myFeedPost"> </a>
 
-Creates a root post in the current user's feed. 
+Creates a root post in the current user's feed.
   
     
     
-You can post only in the context of the current user. You cannot create a root post in a different user's feed, but you can reply to another user's post. See  [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply). 
+You can post only in the context of the current user. You cannot create a root post in a different user's feed, but you can reply to another user's post. See  [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply).
   
     
     
@@ -202,11 +202,11 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A thread that contains the new root post. 
+A thread that contains the new root post.
   
     
     
-The following response example represents the thread that contains the new root post. 
+The following response example represents the thread that contains the new root post.
   
     
     
@@ -328,11 +328,11 @@ Type:  [SP.Social.SocialRestFeed](social-feed-rest-api-reference-for-sharepoint-
   
     
     
-The current user's personal feed. 
+The current user's personal feed.
   
     
     
-The following response example represents the current user's personal feed. 
+The following response example represents the current user's personal feed.
   
     
     
@@ -683,11 +683,11 @@ Type:  [SP.Social.SocialRestFeed](social-feed-rest-api-reference-for-sharepoint-
   
     
     
-The current user's newsfeed. 
+The current user's newsfeed.
   
     
     
-The following response example represents the current user's newsfeed. 
+The following response example represents the current user's newsfeed.
   
     
     
@@ -916,11 +916,11 @@ Type:  [SP.Social.SocialRestFeed](social-feed-rest-api-reference-for-sharepoint-
   
     
     
-The current user's timeline feed. 
+The current user's timeline feed.
   
     
     
-The following response example represents the current user's timeline feed, which is sorted by created date. 
+The following response example represents the current user's timeline feed, which is sorted by created date.
   
     
     
@@ -1066,7 +1066,7 @@ The following response example represents the current user's timeline feed, whic
 ## My/Likes
 <a name="bk_myLikes"> </a>
 
-Gets the feed of microblog posts that the current user likes, represented by **LikeReference** thread types. See [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md). 
+Gets the feed of microblog posts that the current user likes, represented by **LikeReference** thread types. See [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md).
   
     
     
@@ -1107,7 +1107,7 @@ Type:  [SP.Social.SocialRestFeed](social-feed-rest-api-reference-for-sharepoint-
   
     
     
-A feed that contains posts that the current user likes. 
+A feed that contains posts that the current user likes.
   
     
     
@@ -1267,7 +1267,7 @@ The following response example represents a reference to a post that the current
 ## My/MentionFeed
 <a name="bk_myMentionFeed"> </a>
 
-Gets the feed of microblog posts that mention the current user, represented by **MentionReference** thread types. See [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md). 
+Gets the feed of microblog posts that mention the current user, represented by **MentionReference** thread types. See [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md).
   
     
     
@@ -1308,7 +1308,7 @@ Type:  [SP.Social.SocialRestFeed](social-feed-rest-api-reference-for-sharepoint-
   
     
     
-A feed that contains posts that mention the current user. 
+A feed that contains posts that mention the current user.
   
     
     
@@ -1461,7 +1461,7 @@ The following response example represents one thread that mentions the current u
 ## My/MentionFeed/ClearUnreadMentionCount
 <a name="bk_myMentionFeedClearUnreadMentionCount"> </a>
 
-Gets the feed of microblog posts that mention the current user, represented by **MentionReference** thread types, and sets the user's unread mention count to 0. See [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md). 
+Gets the feed of microblog posts that mention the current user, represented by **MentionReference** thread types, and sets the user's unread mention count to 0. See [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md).
   
     
     
@@ -1504,7 +1504,7 @@ Type:  [SP.Social.SocialRestFeed](social-feed-rest-api-reference-for-sharepoint-
   
     
     
-The current user's mention feed. 
+The current user's mention feed.
   
     
     
@@ -1657,7 +1657,7 @@ The following response example represents the current user's mention feed. The t
 ## My/UnreadMentionCount
 <a name="bk_myUnreadMentionCount"> </a>
 
-Gets the count of unread mentions for the current user. 
+Gets the count of unread mentions for the current user.
   
     
     
@@ -1671,7 +1671,7 @@ Gets the count of unread mentions for the current user.
 
 ### Request parameter
 
-None. 
+None.
   
     
     
@@ -1682,11 +1682,11 @@ Type: **Int32**
   
     
     
-The count of unread mentions for the current user. 
+The count of unread mentions for the current user.
   
     
     
-The following response example represents an unread mention count of 1. 
+The following response example represents an unread mention count of 1.
   
     
     
@@ -1702,7 +1702,7 @@ The following response example represents an unread mention count of 1.
 ## Actor
 <a name="bk_actor"> </a>
 
-Gets information about the specified user and the current user. 
+Gets information about the specified user and the current user.
   
     
     
@@ -1735,7 +1735,7 @@ Type: **String**
   
     
     
-The account name of the specified user. 
+The account name of the specified user.
   
     
     
@@ -1750,7 +1750,7 @@ Type:  [SP.Social.SocialRestActor](social-feed-rest-api-reference-for-sharepoint
   
     
     
-Information about the specified user and the current user. 
+Information about the specified user and the current user.
   
     
     
@@ -1758,7 +1758,7 @@ You can call **SocialRestActor** properties individually in the URI, for example
   
     
     
-The following response example represents information about the specified user and the current user. 
+The following response example represents information about the specified user and the current user.
   
     
     
@@ -1869,11 +1869,11 @@ Type:  [SP.Social.SocialRestFeed](social-feed-rest-api-reference-for-sharepoint-
   
     
     
-The personal feed of the specified user or the site feed at the specified URI. 
+The personal feed of the specified user or the site feed at the specified URI.
   
     
     
-The following response example represents personal feed of the specified user. 
+The following response example represents personal feed of the specified user.
   
     
     
@@ -2055,11 +2055,11 @@ The following response example represents personal feed of the specified user.
 ## Actor/Feed/Post
 <a name="bk_actorFeedPost"> </a>
 
-Creates a root post in the specified site feed. 
+Creates a root post in the specified site feed.
   
     
     
-You can post only in the context of the current user. You cannot create a root post in a different user's feed, but you can reply to another user's post. See  [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply). 
+You can post only in the context of the current user. You cannot create a root post in a different user's feed, but you can reply to another user's post. See  [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply).
   
     
     
@@ -2117,11 +2117,11 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A thread that contains the new root post. 
+A thread that contains the new root post.
   
     
     
-The following response example represents the thread that contains the new root post. 
+The following response example represents the thread that contains the new root post.
   
     
     
@@ -2221,7 +2221,7 @@ The following response example represents the thread that contains the new root 
 ## Post
 <a name="bk_post"> </a>
 
-Gets a full thread that contains the specified microblog post. 
+Gets a full thread that contains the specified microblog post.
   
     
     
@@ -2243,7 +2243,7 @@ Type: **String**
   
     
     
-The unique identifier of the post, as shown in the following example. 
+The unique identifier of the post, as shown in the following example.
   
     
     
@@ -2260,11 +2260,11 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A full thread that contains the specified post. 
+A full thread that contains the specified post.
   
     
     
-The following response example represents the full thread that contains the specified post. Unlike digest threads (which contain only the two most recent replies), a full thread contains all replies. 
+The following response example represents the full thread that contains the specified post. Unlike digest threads (which contain only the two most recent replies), a full thread contains all replies.
   
     
     
@@ -2383,7 +2383,7 @@ The following response example represents the full thread that contains the spec
 ## Post/Reply
 <a name="bk_postReply"> </a>
 
-Posts a reply to the specified post. 
+Posts a reply to the specified post.
   
     
     
@@ -2405,7 +2405,7 @@ Type:  [SP.Social.SocialRestPostCreationData](social-feed-rest-api-reference-for
   
     
     
-The ID of the post to reply to and the properties of the reply, as shown in the following example. 
+The ID of the post to reply to and the properties of the reply, as shown in the following example.
   
     
     
@@ -2434,11 +2434,11 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A digest of the modified thread that includes the specified post. 
+A digest of the modified thread that includes the specified post.
   
     
     
-The following response example represents the thread that contains the specified post and reply. 
+The following response example represents the thread that contains the specified post and reply.
   
     
     
@@ -2544,7 +2544,7 @@ The following response example represents the thread that contains the specified
 ## Post/Delete
 <a name="bk_postDelete"> </a>
 
-Deletes the specified microblog post. If the post is the root post, the whole thread is deleted. 
+Deletes the specified microblog post. If the post is the root post, the whole thread is deleted.
   
     
     
@@ -2566,7 +2566,7 @@ Type: **String**
   
     
     
-The ID of the post to delete, as shown in the following example. 
+The ID of the post to delete, as shown in the following example.
   
     
     
@@ -2579,7 +2579,7 @@ The ID of the post to delete, as shown in the following example.
 
 ### Response
 
-None. 
+None.
   
     
     
@@ -2592,7 +2592,7 @@ None.
 ## Post/Like
 <a name="bk_postLike"> </a>
 
-Makes the current user a liker of the specified microblog post. 
+Makes the current user a liker of the specified microblog post.
   
     
     
@@ -2614,7 +2614,7 @@ Type: **String**
   
     
     
-The ID of the post to like, as shown in the following example. 
+The ID of the post to like, as shown in the following example.
   
     
     
@@ -2630,11 +2630,11 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A digest thread that contains the specified post. 
+A digest thread that contains the specified post.
   
     
     
-The following response example represents the thread that contains the liked post. 
+The following response example represents the thread that contains the liked post.
   
     
     
@@ -2739,7 +2739,7 @@ The following response example represents the thread that contains the liked pos
 ## Post/Unlike
 <a name="bk_postUnlike"> </a>
 
-Removes the current user from the list of likers for the specified microblog post. If the current user is not a liker of the post, this request is ignored. 
+Removes the current user from the list of likers for the specified microblog post. If the current user is not a liker of the post, this request is ignored.
   
     
     
@@ -2761,7 +2761,7 @@ Type: **String**
   
     
     
-The ID of the post to stop liking, as shown in the following example. 
+The ID of the post to stop liking, as shown in the following example.
   
     
     
@@ -2778,11 +2778,11 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A digest of the modified thread that includes the specified post. 
+A digest of the modified thread that includes the specified post.
   
     
     
-The following response example represents the thread that contains the post that the user stopped liking. 
+The following response example represents the thread that contains the post that the user stopped liking.
   
     
     
@@ -2886,7 +2886,7 @@ The following response example represents the thread that contains the post that
 ## Post/Likers
 <a name="bk_postLikers"> </a>
 
-Gets the users who like the specified microblog post. 
+Gets the users who like the specified microblog post.
   
     
     
@@ -2908,7 +2908,7 @@ Type: **String**
   
     
     
-The ID of the post to get the likers for, as shown in the following example. 
+The ID of the post to get the likers for, as shown in the following example.
   
     
     
@@ -2929,11 +2929,11 @@ Type:  [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9
   
     
     
-The users who like the specified post. 
+The users who like the specified post.
   
     
     
-The following response example represents the users that like the specified post. 
+The following response example represents the users that like the specified post.
   
     
     
@@ -2971,7 +2971,7 @@ The following response example represents the users that like the specified post
 ## Post/Lock
 <a name="bk_postLock"> </a>
 
-Locks the specified thread. If a thread is locked, no reply posts can be added to the thread until it is unlocked. 
+Locks the specified thread. If a thread is locked, no reply posts can be added to the thread until it is unlocked.
   
     
     
@@ -2993,7 +2993,7 @@ Type: **String**
   
     
     
-The ID of the thread to lock, as shown in the following example. 
+The ID of the thread to lock, as shown in the following example.
   
     
     
@@ -3010,7 +3010,7 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A digest of the locked thread. 
+A digest of the locked thread.
   
     
     
@@ -3120,7 +3120,7 @@ The following response example represents a locked thread. The **Attributes** pr
 ## Post/Unlock
 <a name="bk_postUnlock"> </a>
 
-Unlocks the specified thread. 
+Unlocks the specified thread.
   
     
     
@@ -3142,7 +3142,7 @@ Type: **String**
   
     
     
-The ID of the thread to unlock, as shown in the following example. 
+The ID of the thread to unlock, as shown in the following example.
   
     
     
@@ -3159,7 +3159,7 @@ Type:  [SP.Social.SocialRestThread](social-feed-rest-api-reference-for-sharepoin
   
     
     
-A digest of the unlocked thread. 
+A digest of the unlocked thread.
   
     
     
@@ -3387,7 +3387,7 @@ To publish a reply to a specified thread, send a **POST** request to the **Reply
 ## Resources used in feed-related REST requests and responses
 <a name="bk_FeedRelatedRestResources"> </a>
 
-The following REST resources are used as parameters in client-side requests or are returned in server responses. 
+The following REST resources are used as parameters in client-side requests or are returned in server responses.
   
     
     
@@ -3395,7 +3395,7 @@ The following REST resources are used as parameters in client-side requests or a
 ### SP.Social.SocialFeedOptions
 <a name="bk_SocialFeedOptions"> </a>
 
-Represents options that you can specify when retrieving a feed. 
+Represents options that you can specify when retrieving a feed.
   
     
     
@@ -3406,10 +3406,10 @@ Client-side **GET** requests for feeds can optionally specify **SocialFeedOption
 
 ||||
 |:-----|:-----|:-----|
-|MaxThreadCount |**Int32**|The maximum number of threads to retrieve. The default number is 20. |
-|NewerThan |**String**|The "newer than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary.|
-|OlderThan |**String**|The "older than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary.|
-|SortOrder |**Int32**|The sort order of the threads in the feed. The default sort order is by modified date, except for the timeline feed, which is sorted by created date.          **0** sorts threads by modified time, according to the most recent modification times of their posts.          **1** sorts threads by created time, according to the creation times of their root posts.|
+|MaxThreadCount|**Int32**|The maximum number of threads to retrieve. The default number is 20.|
+|NewerThan|**String**|The "newer than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary.|
+|OlderThan|**String**|The "older than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary.|
+|SortOrder|**Int32**|The sort order of the threads in the feed. The default sort order is by modified date, except for the timeline feed, which is sorted by created date.          **0** sorts threads by modified time, according to the most recent modification times of their posts.          **1** sorts threads by created time, according to the creation times of their root posts.|
    
 
   
@@ -3423,7 +3423,7 @@ Client-side **GET** requests for feeds can optionally specify **SocialFeedOption
 ### SP.Social.SocialRestActor
 <a name="bk_SocialRestActor"> </a>
 
-Represents a user, document, site, or tag. 
+Represents a user, document, site, or tag.
   
     
     
@@ -3438,9 +3438,9 @@ The server returns a **SocialRestActor** resource in the response to a client-si
 
 ||||
 |:-----|:-----|:-----|
-|FollowableItem |**String**|The unique identifier of the specified actor. Returns the account name for a user or the URI for a document, site, or tag. |
-|FollowableItemActor | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)|The specified user. Returns **null** if the user is the current user or if the resource is not a user-type actor.|
-|Me | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)|The current user. |
+|FollowableItem|**String**|The unique identifier of the specified actor. Returns the account name for a user or the URI for a document, site, or tag.|
+|FollowableItemActor| [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)|The specified user. Returns **null** if the user is the current user or if the resource is not a user-type actor.|
+|Me| [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)|The current user.|
    
 
   
@@ -3454,7 +3454,7 @@ The server returns a **SocialRestActor** resource in the response to a client-si
 ### SP.Social.SocialRestFeed
 <a name="bk_SocialRestFeed"> </a>
 
-Represents a social feed. 
+Represents a social feed.
   
     
     
@@ -3469,11 +3469,11 @@ The server returns a **SocialRestFeed** resource in the response to a client-sid
 
 ||||
 |:-----|:-----|:-----|
-|Attributes | [SP.Social.SocialFeedAttributes](http://msdn.microsoft.com/library/9ea7d3c5-7f96-88a6-5bdf-d7749b044ad3%28Office.15%29.aspx)|A bitwise set of attributes that apply to the feed. |
-|NewestProcessed |**DateTime**|The date and time of the newest retrieved post. |
-|OldestProcessed |**DateTime**|The date and time of the oldest retrieved post. |
-|Threads | [SP.Social.SocialThread](http://msdn.microsoft.com/library/46aa4beb-d708-f20e-471e-626c8a7efab7%28Office.15%29.aspx)[] |The threads that make up the feed. |
-|UnreadMentionCount |**Int32**|The count of unread mentions for the current user. |
+|Attributes| [SP.Social.SocialFeedAttributes](http://msdn.microsoft.com/library/9ea7d3c5-7f96-88a6-5bdf-d7749b044ad3%28Office.15%29.aspx)|A bitwise set of attributes that apply to the feed.|
+|NewestProcessed|**DateTime**|The date and time of the newest retrieved post.|
+|OldestProcessed|**DateTime**|The date and time of the oldest retrieved post.|
+|Threads| [SP.Social.SocialThread](http://msdn.microsoft.com/library/46aa4beb-d708-f20e-471e-626c8a7efab7%28Office.15%29.aspx)[]|The threads that make up the feed.|
+|UnreadMentionCount|**Int32**|The count of unread mentions for the current user.|
    
 
   
@@ -3487,7 +3487,7 @@ The server returns a **SocialRestFeed** resource in the response to a client-sid
 ### SP.Social.SocialRestPostCreationData
 <a name="bk_SocialRestPostCreationData"> </a>
 
-Represents content and related information for a new post. 
+Represents content and related information for a new post.
   
     
     
@@ -3502,7 +3502,7 @@ Clients specify **SocialRestPostCreationData** properties as parameters in a req
 
 ||||
 |:-----|:-----|:-----|
-|ID (required) |**null** or **String**|The target destination for the post. The value can be one of the following:           **null** to publish a root post to the current user's feed           The ID of a post to reply to           The URL of a site feed to post to (for example: `http://<teamSiteURL>/newsfeed.aspx`) |
+|ID (required)|**null** or **String**|The target destination for the post. The value can be one of the following:           **null** to publish a root post to the current user's feed           The ID of a post to reply to           The URL of a site feed to post to (for example: `http://<teamSiteURL>/newsfeed.aspx`)|
    
 The following properties belong to the **SocialPostCreationData** object.
   
@@ -3511,12 +3511,12 @@ The following properties belong to the **SocialPostCreationData** object.
 
 ||||
 |:-----|:-----|:-----|
-|Attachment | [SP.Social.SocialAttachment](http://msdn.microsoft.com/library/dfdee790-a1b0-19c8-0e92-5a6e058ba4db%28Office.15%29.aspx)|An image, video, or document attachment for the post. |
-|ContentItems | [SP.Social.SocialDataItem](http://msdn.microsoft.com/library/757e7b62-66a6-b03f-0ff0-769a42eb2b4a%28Office.15%29.aspx)[] |The items to replace the corresponding tokens in the post's content text |
-|ContentText |**String**|The plain text of the post, which can include positional insertion tokens (for example, "Today is {0}'s birthday!"). |
-|SecurityUris |**String[]**|String representations of the URIs to SharePoint objects that define access permissions for the post. |
-|Source | [SP.Social.SocialLink](http://msdn.microsoft.com/library/c71efc66-c9ca-ea35-b1c0-cb9ec3bbfcd3%28Office.15%29.aspx)|The source of the post. |
-|UpdateStatusText |**Boolean**|A value that controls whether the post's plain-text content should replace the current user's status text. |
+|Attachment| [SP.Social.SocialAttachment](http://msdn.microsoft.com/library/dfdee790-a1b0-19c8-0e92-5a6e058ba4db%28Office.15%29.aspx)|An image, video, or document attachment for the post.|
+|ContentItems| [SP.Social.SocialDataItem](http://msdn.microsoft.com/library/757e7b62-66a6-b03f-0ff0-769a42eb2b4a%28Office.15%29.aspx)[]|The items to replace the corresponding tokens in the post's content text|
+|ContentText|**String**|The plain text of the post, which can include positional insertion tokens (for example, "Today is {0}'s birthday!").|
+|SecurityUris|**String[]**|String representations of the URIs to SharePoint objects that define access permissions for the post.|
+|Source| [SP.Social.SocialLink](http://msdn.microsoft.com/library/c71efc66-c9ca-ea35-b1c0-cb9ec3bbfcd3%28Office.15%29.aspx)|The source of the post.|
+|UpdateStatusText|**Boolean**|A value that controls whether the post's plain-text content should replace the current user's status text.|
    
 
   
@@ -3530,7 +3530,7 @@ The following properties belong to the **SocialPostCreationData** object.
 ### SP.Social.SocialRestThread
 <a name="bk_SocialRestThread"> </a>
 
-Represents a thread that contains a root post and a set of replies. 
+Represents a thread that contains a root post and a set of replies.
   
     
     
@@ -3545,7 +3545,7 @@ The server returns a **SocialRestThread** resource in the response to a client-s
 
 ||||
 |:-----|:-----|:-----|
-|ID |**String**|The unique identifier of the thread. |
+|ID|**String**|The unique identifier of the thread.|
    
 The following properties belong to the **SocialThread** object.
   
@@ -3583,6 +3583,6 @@ The following properties belong to the **SocialThread** object.
 -  [Following people and content REST API reference for SharePoint 2013](following-people-and-content-rest-api-reference-for-sharepoint-2013.md)
     
   
-- To see the members in the **SP.Social** OData schema used by the SharePoint 2013 REST service, browse to `http://<siteUri>/_api/$metadata`. 
+- To see the members in the **SP.Social** OData schema used by the SharePoint 2013 REST service, browse to `http://<siteUri>/_api/$metadata`.
     
   

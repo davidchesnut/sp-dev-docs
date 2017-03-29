@@ -6,7 +6,7 @@ ms.assetid: e48e4812-a185-43c5-b243-04b1d79b88ee
 
 
 # External events and alerts in SharePoint 2013
-Learn the concepts behind creating remote event receivers in SharePoint 2013 that can be attached to external lists and execute when the external data that the list represents is updated. 
+Learn the concepts behind creating remote event receivers in SharePoint 2013 that can be attached to external lists and execute when the external data that the list represents is updated.
 ## What are event receivers?
 <a name="Externalevents_overview"> </a>
 
@@ -14,11 +14,11 @@ An event receiver is a piece of managed code that responds to SharePoint trigger
   
     
     
-Event receivers let you perform business logic when a specific event occurs. Essentially, these are the hooks where you can create code to handle certain conditions, make notifications, update other systems, and so on. When you create event receivers, a DLL is generated. You can place that DLL into the global assembly cache, so that the event receivers are invoked in response to any changes in an external system. 
+Event receivers let you perform business logic when a specific event occurs. Essentially, these are the hooks where you can create code to handle certain conditions, make notifications, update other systems, and so on. When you create event receivers, a DLL is generated. You can place that DLL into the global assembly cache, so that the event receivers are invoked in response to any changes in an external system.
   
     
     
-The following example contains a simple external event receiver in C# that executes when a new item is added to the list. 
+The following example contains a simple external event receiver in C# that executes when a new item is added to the list.
   
     
     
@@ -50,17 +50,17 @@ Remote event receivers are new for SharePoint 2013. In a traditional SharePoint 
   
     
     
-Business Connectivity Services (BCS) uses remote event receivers attached to external lists and entities to allow you to write code that can react to changes in data hosted in the external system. 
+Business Connectivity Services (BCS) uses remote event receivers attached to external lists and entities to allow you to write code that can react to changes in data hosted in the external system.
   
     
     
-To accommodate this, two stereotypes have been added to the schema of the BDC model: **EventSubscriber** and **EventUnsubscriber**. 
+To accommodate this, two stereotypes have been added to the schema of the BDC model: **EventSubscriber** and **EventUnsubscriber**.
   
     
     
 
 > [!NOTE]
-> Event receivers are not supported in sandboxed solutions. 
+> Event receivers are not supported in sandboxed solutions.
   
     
     
@@ -69,7 +69,7 @@ To accommodate this, two stereotypes have been added to the schema of the BDC mo
 ## What features and capabilities does the new external event receiver infrastructure provide?
 <a name="FeaturesAddedWithRER"> </a>
 
-By using and extending the SharePoint 2013 event receiver features, BCS is able to add alerts, external list event receivers, and entity receivers to provide extended functionality. 
+By using and extending the SharePoint 2013 event receiver features, BCS is able to add alerts, external list event receivers, and entity receivers to provide extended functionality.
   
     
     
@@ -83,7 +83,7 @@ By using and extending the SharePoint 2013 event receiver features, BCS is able 
 - **Entity event receivers:** Entity event receivers provide flexibility by letting you write more robust code that allows other operations like providing user context for filtering data. This can allow better personalization and customized security.
     
   
-Remote eventing in SharePoint 2013 makes several interesting scenarios possible. For example, you might have a "Sales Lead Tracking" application that lets a sales team be notified when new sales leads are entered into an external lead application. When a new sales lead is entered, SharePoint is notified through the notification system that is part of the lead application. SharePoint receives the notification and then creates new tasks for the specified salespeople to follow up on each new lead. By configuring the sales lead entry application on the external system to send a notification to SharePoint on the creation of each new lead, SharePoint is kept completely up to date. 
+Remote eventing in SharePoint 2013 makes several interesting scenarios possible. For example, you might have a "Sales Lead Tracking" application that lets a sales team be notified when new sales leads are entered into an external lead application. When a new sales lead is entered, SharePoint is notified through the notification system that is part of the lead application. SharePoint receives the notification and then creates new tasks for the specified salespeople to follow up on each new lead. By configuring the sales lead entry application on the external system to send a notification to SharePoint on the creation of each new lead, SharePoint is kept completely up to date.
   
     
     
@@ -91,18 +91,18 @@ Remote eventing in SharePoint 2013 makes several interesting scenarios possible.
 ## Prerequisites for using event receivers for external lists
 <a name="bkmk_Prerequisites"> </a>
 
-To use event receivers for external lists, you need the following: 
+To use event receivers for external lists, you need the following:
   
     
     
 
-- SharePoint 2013 
+- SharePoint 2013
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
-For more information about setting up a SharePoint 2013 development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md). 
+For more information about setting up a SharePoint 2013 development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
   
     
     
@@ -110,11 +110,11 @@ For more information about setting up a SharePoint 2013 development environment,
 ## Configure the external system to notify SharePoint of external events
 <a name="Externalevents_components"> </a>
 
-For external events to work, a number of components have to be installed and configured on both the SharePoint host and the external system. 
+For external events to work, a number of components have to be installed and configured on both the SharePoint host and the external system.
   
     
     
-You have to configure the external system so that it can do the following: 
+You have to configure the external system so that it can do the following:
   
     
     
@@ -132,7 +132,7 @@ You have to configure the external system so that it can do the following:
 ## Configure SharePoint 2013 to allow communication with external systems
 <a name="bkmk_configureSP"> </a>
 
-To allow communication with the external system, SharePoint must be configured with the following: 
+To allow communication with the external system, SharePoint must be configured with the following:
   
     
     
@@ -140,7 +140,7 @@ To allow communication with the external system, SharePoint must be configured w
 - A BDC model with **EventSubscriber** and **EventUnsubscriber** stereotypes configured
     
   
-- Event receivers 
+- Event receivers
     
   
 
@@ -156,7 +156,7 @@ You can enable external eventing in SharePoint 2013 through **Site Settings** or
 <ActivationDependency FeatureTitle="BCSEvents" FeatureId="60c8481d-4b54-4853-ab9f-ed7e1c21d7e4" />
 ```
 
-Eventing for an external system is enabled when SharePoint creates the delivery address and sends it to the external system during the Subscribe process. 
+Eventing for an external system is enabled when SharePoint creates the delivery address and sends it to the external system during the Subscribe process.
   
     
     
@@ -164,7 +164,7 @@ Eventing for an external system is enabled when SharePoint creates the delivery 
 ## Overall flow of external eventing between SharePoint and external systems
 <a name="bkmk_overallflow"> </a>
 
-In Figure 1, notice that there are three distinct steps involved when using external event receivers: subscribe, notification, and unsubscribe. 
+In Figure 1, notice that there are three distinct steps involved when using external event receivers: subscribe, notification, and unsubscribe.
   
     
     
@@ -198,7 +198,7 @@ For a user (SharePoint object) to receive notifications when the underlying data
   
     
     
-Figure 2 demonstrates the flow of information between SharePoint and the external system during the Subscribe process. 
+Figure 2 demonstrates the flow of information between SharePoint and the external system during the Subscribe process.
   
     
     
@@ -216,7 +216,7 @@ Figure 2 demonstrates the flow of information between SharePoint and the externa
   
     
     
-The following describes the general flow of the subscription process: 
+The following describes the general flow of the subscription process:
   
     
     
@@ -240,7 +240,7 @@ The following describes the general flow of the subscription process:
 5. **External system generates a subscriptionId.** A new **subscriptionId** is generated using code in the line-of-business (LOB) application. The **subscriptionId** should be a GUID.
     
   
-6. **External system records the subscription.** The external system application records the **subscriptionId**, delivery address, event type, and other information sent from SharePoint into the subscription store. 
+6. **External system records the subscription.** The external system application records the **subscriptionId**, delivery address, event type, and other information sent from SharePoint into the subscription store.
     
   
 7. **External system sends the subscriptionId back to SharePoint.** For SharePoint to correctly route the updates that are sent by the external system, the **subscriptionId** is sent back to SharePoint and SharePoint records that information in its database.
@@ -379,22 +379,22 @@ Table 1 lists the important attributes of the BDC model that are needed to make 
 |**Attribute**|**Description**|
 |:-----|:-----|
 |**IsDeliveryAddress**|A **Boolean** flag used on a **TypeDescriptor** to indicate whether the delivery address provided is to be used to deliver notifications.|
-|**IsEventType**|A **Boolean** flag used on a **TypeDescriptor** to indicate whether the event type provided is to be used as the event type. Valid event types are **ItemAdded**, **ItemUpdated**, **ItemDeleted**, and so on. |
+|**IsEventType**|A **Boolean** flag used on a **TypeDescriptor** to indicate whether the event type provided is to be used as the event type. Valid event types are **ItemAdded**, **ItemUpdated**, **ItemDeleted**, and so on.|
 |**SubscriptionIdName**|A string used on a **TypeDescriptor** that represents the name of a **subscriptionId** part.|
    
 
 ## Notifications
 <a name="bkmk_notifications"> </a>
 
-In SharePoint 2013, the event-handling infrastructure has been enhanced to allow external data sources to notify SharePoint when information in the external system has been modified. Then, when SharePoint receives a notification, event receivers that are associated with the SharePoint external list or entity can execute code to perform specified actions. 
+In SharePoint 2013, the event-handling infrastructure has been enhanced to allow external data sources to notify SharePoint when information in the external system has been modified. Then, when SharePoint receives a notification, event receivers that are associated with the SharePoint external list or entity can execute code to perform specified actions.
   
     
     
-When a subscription is created, the external system needs a way to tell SharePoint about the changes that have occurred on a particular entity. The external system is expected to deliver notifications to the delivery address as provided by SharePoint to the external system during the Subscribe process using an OData Atom-formatted payload. 
+When a subscription is created, the external system needs a way to tell SharePoint about the changes that have occurred on a particular entity. The external system is expected to deliver notifications to the delivery address as provided by SharePoint to the external system during the Subscribe process using an OData Atom-formatted payload.
   
     
     
-Figure 3 shows the communication flow between the external system and SharePoint when a new record is added to the data in the external system. 
+Figure 3 shows the communication flow between the external system and SharePoint when a new record is added to the data in the external system.
   
     
     
@@ -429,7 +429,7 @@ Figure 3 shows the communication flow between the external system and SharePoint
 
 ### Notification payload
 
-In constructing the notification, the LOB system has to create an HTTP payload that includes either the full details of the item that changed, or just the identity of the item that changed. 
+In constructing the notification, the LOB system has to create an HTTP payload that includes either the full details of the item that changed, or just the identity of the item that changed.
   
     
     
@@ -442,16 +442,16 @@ In constructing the notification, the LOB system has to create an HTTP payload t
   
 
 > [!NOTE]
-> The full item is only supported when you use the OData connector. 
+> The full item is only supported when you use the OData connector.
   
     
     
 
-The type of payload that is being sent by the external system must be indicated during the subscription process. 
+The type of payload that is being sent by the external system must be indicated during the subscription process.
   
     
     
-The following is an example of the BDC model property used for notifications. 
+The following is an example of the BDC model property used for notifications.
   
     
     
@@ -466,14 +466,14 @@ The following is an example of the BDC model property used for notifications.
 
 ```
 
-If it is not specified, the default payload is an identity payload. 
+If it is not specified, the default payload is an identity payload.
   
     
     
 
 ### Notification delivery address (virtual address)
 
-The subscription process initiated from SharePoint results in a virtual address being created by SharePoint, allowing an entry point for the external system to post notifications. The delivery address is used by the external system to post those notifications. The delivery address is also passed to the external system during the subscription request. 
+The subscription process initiated from SharePoint results in a virtual address being created by SharePoint, allowing an entry point for the external system to post notifications. The delivery address is used by the external system to post those notifications. The delivery address is also passed to the external system during the subscription request.
   
     
     
@@ -506,7 +506,7 @@ The **Unsubscribe** operation removes a subscription from the notifications list
 
 ### BDC model for Unsubscribe
 
-The following XML example shows how you can create a BDC model that unsubscribes from the external system event notifications. 
+The following XML example shows how you can create a BDC model that unsubscribes from the external system event notifications.
   
     
     
@@ -598,7 +598,7 @@ The following XML example shows how you can create a BDC model that unsubscribes
 ## Code example: Attach an event receiver to an external list
 <a name="AttachingRER"> </a>
 
-The following code provides an example of how to attach an event receiver to an external list. After it is attached, the event receiver listens for notifications from the external system about updates, additions, and deletions that are performed on the native data. 
+The following code provides an example of how to attach an event receiver to an external list. After it is attached, the event receiver listens for notifications from the external system about updates, additions, and deletions that are performed on the native data.
   
     
     
@@ -635,7 +635,7 @@ private static void AddEventReceiver(string siteUrl, string listTitle)
 ## Beyond the basics: Learn more about using external event receivers
 <a name="Externalevents_Learnmore"> </a>
 
-For more information about external events and alerts, see the following. 
+For more information about external events and alerts, see the following.
   
     
     

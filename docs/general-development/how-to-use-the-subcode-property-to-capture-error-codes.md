@@ -3,7 +3,7 @@ title: How to Use the SubCode Property to Capture Error Codes
 keywords: how to,howdoi,howto,subcode
 f1_keywords:
 - how to,howdoi,howto,subcode
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 8ce4d5b2-111b-49e7-9d07-8c2c586221ec
 ---
 
@@ -22,7 +22,7 @@ The following examples show how to capture the error codes using the  [SubCode](
     
     
 
-For a list of error codes, see  [Excel Services Error Codes](excel-services-error-codes.md). 
+For a list of error codes, see  [Excel Services Error Codes](excel-services-error-codes.md).
 ### To capture error codes when using SOAP
 
 
@@ -348,7 +348,7 @@ Make sure that you add a Web reference to an Excel Web Services site that you ha
   
     
     
-In addition, make changes to the workbook path, sheet name, and so on, as appropriate. 
+In addition, make changes to the workbook path, sheet name, and so on, as appropriate.
   
     
     

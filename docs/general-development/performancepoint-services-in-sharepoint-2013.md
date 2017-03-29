@@ -9,8 +9,8 @@ ms.assetid: fb159708-d6b4-40c1-b5cc-4bb2071a7930
 
 
 # PerformancePoint Services in SharePoint 2013
-Learn about supported development scenarios and the extensibility architecture for PerformancePoint Services in SharePoint Server 2013. 
-PerformancePoint Services is a SharePoint Server 2013 service application. It enables users to create business intelligence (BI) dashboards that provide insight into an organization's performance. You can create custom reports, filters, tabular data sources, and scorecard transforms to extend the native functionality of PerformancePoint Services. For example, you can create a custom report visualization that is optimized for the medical industry and then integrate it into a reusable vertical solution. 
+Learn about supported development scenarios and the extensibility architecture for PerformancePoint Services in SharePoint Server 2013.
+PerformancePoint Services is a SharePoint Server 2013 service application. It enables users to create business intelligence (BI) dashboards that provide insight into an organization's performance. You can create custom reports, filters, tabular data sources, and scorecard transforms to extend the native functionality of PerformancePoint Services. For example, you can create a custom report visualization that is optimized for the medical industry and then integrate it into a reusable vertical solution.
   
     
     
@@ -26,7 +26,7 @@ You can extend native PerformancePoint Services  [ReportView](https://msdn.micro
 
 ### Renderers and providers for PerformancePoint Services extensions
 
-The type of object that you are extending determines whether it uses a renderer or a provider. Report and filter extensions use renderers, and filter and data source extensions use providers. 
+The type of object that you are extending determines whether it uses a renderer or a provider. Report and filter extensions use renderers, and filter and data source extensions use providers.
   
     
     
@@ -34,16 +34,16 @@ The type of object that you are extending determines whether it uses a renderer 
 - Report extensions require a renderer for the report visualization. 
     
   
-- Filter extensions require a renderer for the selection control. The renderer can be a custom renderer or a native PerformancePoint Services renderer. If you are using a PerformancePoint Services renderer, you simply register it in your extension. If you are using a custom renderer, you must also include it in your extension. 
+- Filter extensions require a renderer for the selection control. The renderer can be a custom renderer or a native PerformancePoint Services renderer. If you are using a PerformancePoint Services renderer, you simply register it in your extension. If you are using a custom renderer, you must also include it in your extension.
     
   
-- Filter extensions require a data provider to connect to the underlying data source. 
+- Filter extensions require a data provider to connect to the underlying data source.
     
   
-- Data source extensions require a provider to connect to the underlying data source. 
+- Data source extensions require a provider to connect to the underlying data source.
     
   
-For more information, see the following topics about creating renderers and providers: 
+For more information, see the following topics about creating renderers and providers:
   
     
     
@@ -60,11 +60,11 @@ For more information, see the following topics about creating renderers and prov
 
 ### Editor applications for PerformancePoint Services extensions in SharePoint Server 2013
 
-Custom editors enable users to define properties for a custom object, interact with objects in the repository, and initialize endpoints for custom reports and filters. Your editor should expose the properties that you want to enable users to view and modify. Editors can be opened from objects in PerformancePoint Dashboard Designer or from items in the PerformancePoint Content List or PerformancePoint Data Connections Library. To integrate into the Dashboard Designer authoring experience, your editor must be able to open from a uniform resource identifier (URI), and the URI must be registered for the custom object in the PerformancePoint Services web.config file. 
+Custom editors enable users to define properties for a custom object, interact with objects in the repository, and initialize endpoints for custom reports and filters. Your editor should expose the properties that you want to enable users to view and modify. Editors can be opened from objects in PerformancePoint Dashboard Designer or from items in the PerformancePoint Content List or PerformancePoint Data Connections Library. To integrate into the Dashboard Designer authoring experience, your editor must be able to open from a uniform resource identifier (URI), and the URI must be registered for the custom object in the PerformancePoint Services web.config file.
   
     
     
-For more information about creating editors, see the following topics: 
+For more information about creating editors, see the following topics:
   
     
     
@@ -80,7 +80,7 @@ For more information about creating editors, see the following topics:
   
 
 > [!NOTE]
-> PerformancePoint Dashboard Designer can create and delete custom objects, so your editor does not need to provide logic for creating or deleting objects. 
+> PerformancePoint Dashboard Designer can create and delete custom objects, so your editor does not need to provide logic for creating or deleting objects.
   
     
     
@@ -92,11 +92,11 @@ You must specify metadata for your extension in the PerformancePoint Services we
   
     
     
-To create a custom object, Dashboard Designer retrieves the object's metadata from the PerformancePoint Services web.config file and then creates the object as a content type in the Dashboard Designer repository. After creating the custom object, Dashboard Designer displays a link to the editor. 
+To create a custom object, Dashboard Designer retrieves the object's metadata from the PerformancePoint Services web.config file and then creates the object as a content type in the Dashboard Designer repository. After creating the custom object, Dashboard Designer displays a link to the editor.
   
     
     
-For more information about extension metadata, see  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx). 
+For more information about extension metadata, see  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx).
   
     
     
@@ -104,11 +104,11 @@ For more information about extension metadata, see  [How to: Manually Register P
 ## Custom transforms for PerformancePoint Services scorecards in SharePoint Server 2013
 <a name="bkmk_CreateCustomObjects"> </a>
 
-Transforms change the appearance, contents, or functionality of scorecards before querying the data source, after querying the data source, or before rendering the scorecard in the Web Part. For example, PerformancePoint Services uses transforms to perform several operations before rendering a scorecard view, such as expanding named sets, computing rollups, and computing aggregations. These changes are applied at run time and they do not modify the definition of the scorecard object. 
+Transforms change the appearance, contents, or functionality of scorecards before querying the data source, after querying the data source, or before rendering the scorecard in the Web Part. For example, PerformancePoint Services uses transforms to perform several operations before rendering a scorecard view, such as expanding named sets, computing rollups, and computing aggregations. These changes are applied at run time and they do not modify the definition of the scorecard object.
   
     
     
-For more information about scorecard transforms, see  [How to: Create scorecard transforms for PerformancePoint Services in SharePoint 2013](how-to-create-scorecard-transforms-for-performancepoint-services-in-sharepoint-2.md). 
+For more information about scorecard transforms, see  [How to: Create scorecard transforms for PerformancePoint Services in SharePoint 2013](how-to-create-scorecard-transforms-for-performancepoint-services-in-sharepoint-2.md).
   
     
     
@@ -123,7 +123,7 @@ For more information about scorecard transforms, see  [How to: Create scorecard 
 ## Extensibility architecture for PerformancePoint Services in SharePoint Server 2013
 <a name="bkmk_PerfPointArch"> </a>
 
-Supported extensions run within a PerformancePoint Services application instance, either on the front-end web server or on the application server, as shown in the following diagram. 
+Supported extensions run within a PerformancePoint Services application instance, either on the front-end web server or on the application server, as shown in the following diagram.
   
     
     
@@ -158,7 +158,7 @@ Custom editors (and other supported custom applications) run on the front-end we
 
 ### PerformancePoint Services extensions that run on the SharePoint Server 2013 application server
 
-Custom renderers, providers, and scorecard transforms run on the application server. The application server hosts the middle-tier business logic for the PerformancePoint Services instance. 
+Custom renderers, providers, and scorecard transforms run on the application server. The application server hosts the middle-tier business logic for the PerformancePoint Services instance.
   
     
     

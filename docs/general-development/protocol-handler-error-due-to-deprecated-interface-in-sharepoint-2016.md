@@ -15,7 +15,7 @@ Protocol handler implementations using the interfaces listed in this article in 
 
 ## Symptom
 
-You see the following error message when you load the protocol handler: 
+You see the following error message when you load the protocol handler:
   
     
     
@@ -35,7 +35,7 @@ You are using the **srchprth.h** header file in your protocol handler implementa
 
 ### Resolution
 
-Replace the deprecated interfaces in your protocol handler implementation with those that are currently supported: 
+Replace the deprecated interfaces in your protocol handler implementation with those that are currently supported:
   
     
     
@@ -50,7 +50,7 @@ Replace the deprecated interfaces in your protocol handler implementation with t
 ## Deprecated Interfaces
 <a name="bk_addresources"> </a>
 
-The deprecated interfaces include the following: 
+The deprecated interfaces include the following:
   
     
     
@@ -184,7 +184,7 @@ struct AccessorInitParameters
                      }      AccessorInitParams;
 ```
 
-* AccessorInitParams contains many parameters, some of which may be optional. These parameters are mostly an expansion of previous deprecated structs. 
+* AccessorInitParams contains many parameters, some of which may be optional. These parameters are mostly an expansion of previous deprecated structs.
   
     
     
@@ -192,7 +192,7 @@ struct AccessorInitParameters
 ## Additional Resources
 <a name="bk_addresources"> </a>
 
-For more information, see  [Enterprise Search Protocol Handlers](https://msdn.microsoft.com/en-us/library/office/aa981260%28v=office.12%29.aspx). 
+For more information, see  [Enterprise Search Protocol Handlers](https://msdn.microsoft.com/en-us/library/office/aa981260%28v=office.12%29.aspx).
   
     
     

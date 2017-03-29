@@ -12,7 +12,7 @@ SharePoint 2013 introduces a new field type named **Geolocation** that enables y
     
     
 
-To display a map view in a SharePoint list, you must use the Bing Maps services. The **Geolocation** field is not available when you create a list by using the UI. Instead, this field must be inserted programmatically. For information about how to render and work with this data type programmatically, see [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md). 
+To display a map view in a SharePoint list, you must use the Bing Maps services. The **Geolocation** field is not available when you create a list by using the UI. Instead, this field must be inserted programmatically. For information about how to render and work with this data type programmatically, see [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md).
 The **Geolocation** field and the map view enable you to give spatial context to any information by integrating data from SharePoint into a mapping experience in web and mobile apps. This article does not explain how to render the **Geolocation** field or provide developer guidance for creating a location-based mobile application; it does provide instruction for creating map views programmatically and from the SharePoint UI by using Bing Maps.
   
     
@@ -23,7 +23,7 @@ An MSI package named SQLSysClrTypes.msi must be installed on every SharePoint fr
 <a name="SP15CreatingMapViews_Preqs"> </a>
 
 
-- Access to a SharePoint 2013 list, with sufficient privileges to create a view. 
+- Access to a SharePoint 2013 list, with sufficient privileges to create a view.
     
   
 - A SharePoint 2013 list that contains a **Geolocation** column
@@ -32,8 +32,8 @@ An MSI package named SQLSysClrTypes.msi must be installed on every SharePoint fr
 - A valid Bing Maps key set at the farm or web level, which can be obtained from the  [Bing Maps Account Center](http://www.bingmapsportal.com/)
     
    > [!IMPORTANT]
-   > You are responsible for compliance with terms and conditions applicable to your use of the Bing Maps key, and any necessary disclosures to users of your application regarding data passed to the Bing Maps service. 
-- Visual Studio 2012 or Visual Studio 2010 
+   > You are responsible for compliance with terms and conditions applicable to your use of the Bing Maps key, and any necessary disclosures to users of your application regarding data passed to the Bing Maps service.
+- Visual Studio 2012 or Visual Studio 2010
     
   
 
@@ -55,7 +55,7 @@ A map view is a SharePoint view that displays a map (with data obtained from the
 ## Create a map view from the SharePoint UI
 <a name="SP15CreatingMapViews_FromSharePointUI"> </a>
 
-The following steps demonstrate how to create a map view from the SharePoint 2013 UI. 
+The following steps demonstrate how to create a map view from the SharePoint 2013 UI.
   
     
     
@@ -75,7 +75,7 @@ The following steps demonstrate how to create a map view from the SharePoint 201
   
 
   
-3. On the **Choose a view type** page, choose **Map View**, as shown in Figure 2. 
+3. On the **Choose a view type** page, choose **Map View**, as shown in Figure 2.
     
    **Figure 2. Choosing a view type**
 
@@ -87,7 +87,7 @@ The following steps demonstrate how to create a map view from the SharePoint 201
   
 
   
-4. After you choose a view type, you can select various fields to display in the map view, as shown in Figure 3. 
+4. After you choose a view type, you can select various fields to display in the map view, as shown in Figure 3.
     
    **Figure 3. Choosing fields for a map view**
 
@@ -99,7 +99,7 @@ The following steps demonstrate how to create a map view from the SharePoint 201
     
    > [!NOTE]
    > At least one **Geolocation** field is required to create a map view. You cannot select multiple **Geolocation** fields for a map view, although you can create two different map views that use two different **Geolocation** fields.
-5. After you add the required **Geolocation** field and any other field you need, choose **OK**. A map view is created, as shown in Figure 4. 
+5. After you add the required **Geolocation** field and any other field you need, choose **OK**. A map view is created, as shown in Figure 4.
     
    **Figure 4. Completed map view**
 
@@ -115,12 +115,12 @@ The following steps demonstrate how to create a map view from the SharePoint 201
 ## Create a map view programmatically
 <a name="SP15CreatingMapViews_ByProgramatically"> </a>
 
-Follow these steps to create a map view for a SharePoint list programmatically. 
+Follow these steps to create a map view for a SharePoint list programmatically.
   
     
     
 
-1. Start Visual Studio. 
+1. Start Visual Studio.
     
   
 2. On the menu bar, choose **File, New Project**. The **New Project** dialog box opens.
@@ -132,12 +132,12 @@ Follow these steps to create a map view for a SharePoint list programmatically.
 4. Give the project a name, and then choose the **OK** button.
     
   
-5. Visual Studio creates the project. Add a reference to the following assemblies, and choose **OK**. 
+5. Visual Studio creates the project. Add a reference to the following assemblies, and choose **OK**.
     
-  - Microsoft.SharePoint.Client.dll 
+  - Microsoft.SharePoint.Client.dll
     
   
-  - Microsoft.SharePoint.Client.Runtime.dll 
+  - Microsoft.SharePoint.Client.Runtime.dll
     
   
 6. In the default .cs file, add a **using** directive as follows.
@@ -148,7 +148,7 @@ Follow these steps to create a map view for a SharePoint list programmatically.
 7. Add the following code to the **Main** method in the .cs file.
     
    > [!NOTE]
-   > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list. 
+   > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list.
 
   ```cs
   
@@ -179,14 +179,14 @@ class Program
 8. Replace  _<Site Url>_ and _<List Title>_ with valid values.
     
   
-9. Navigate to the list. You should be able to see a newly created view that has the name you specified in the preceding code. 
+9. Navigate to the list. You should be able to see a newly created view that has the name you specified in the preceding code.
     
   
 
 ## Understand color-coded pushpins in a map view
 <a name="SP15CreatingMapViews_ColorCode"> </a>
 
-A map view providesthree colors of pushpins (as shown in Figure 5), each of which provides a difference user experience. A pushpin on the map has the same color as the pushpin of the matching item in the left pane. 
+A map view providesthree colors of pushpins (as shown in Figure 5), each of which provides a difference user experience. A pushpin on the map has the same color as the pushpin of the matching item in the left pane.
   
     
     
@@ -214,7 +214,7 @@ A map view providesthree colors of pushpins (as shown in Figure 5), each of whic
   
     
     
-After you create a map view, all items appear as pushpins. The user can get more information about an item by hovering over a pushpin, as shown in Figure 6. 
+After you create a map view, all items appear as pushpins. The user can get more information about an item by hovering over a pushpin, as shown in Figure 6.
   
     
     

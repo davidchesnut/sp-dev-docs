@@ -3,7 +3,7 @@ title: Excel Services Error Codes
 keywords: alerts
 f1_keywords:
 - alerts
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: ff128d67-f3ac-4a8f-ae8e-1e19e343014e
 ---
 

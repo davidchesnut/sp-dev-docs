@@ -6,15 +6,15 @@ ms.assetid: 70d5ca8d-520d-40a9-b24e-52bb31bd6c22
 
 
 # Workflow activity classes in SharePoint 2013
-Provides a summary of the SharePoint workflow activity classes that are available in SharePoint 2013. 
-The palette of activity classes has been revised for SharePoint 2013. Table 1 lists the current catalog of 49 available activities grouped by their respective activity categories. 
+Provides a summary of the SharePoint workflow activity classes that are available in SharePoint 2013.
+The palette of activity classes has been revised for SharePoint 2013. Table 1 lists the current catalog of 49 available activities grouped by their respective activity categories.
   
     
     
 
 
 > [!NOTE]
-> In future releases, the activities listed in this table will provide links to the API reference documentation for their respective managed classes. 
+> In future releases, the activities listed in this table will provide links to the API reference documentation for their respective managed classes.
   
     
     

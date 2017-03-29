@@ -45,7 +45,7 @@ Public Sub Refresh(ByVal sessionId As String, ByVal connectionName As String, <S
 End Sub
 ```
 
-The  `connectionName` argument refers to the connection name in a Microsoft Office Excel 2007 workbook.You can use the **Refresh** method to refresh a single data connection in the workbook, or to refresh all connections. This is useful particularly when the connections are created without refresh-on-open functionality.When you refresh a connection, the data and all objects using the connection will be refreshed. To refresh all available connections in the workbook, you pass in an empty connection string or **null** for the connection name argument.The refresh operations will be attempted regardless of the type of authentication used, without any further confirmation or prompt. For more information about the **Refresh** method, see the Excel Web Services reference documentation.
+The  `connectionName` argument refers to the connection name in a Microsoft Office Excel 2007 workbook.You can use the **Refresh** method to refresh a single data connection in the workbook, or to refresh all connections. This is useful particularly when the connections are created without refresh-on-open functionality.When you refresh a connection, the data and all objects using the connection will be refreshed. To refresh all available connections in the workbook, you pass in an empty connection string or **null** for the connection name argument.The refresh operations will be attempted regardless of the type of authentication used, without any further confirmation or prompt.For more information about the **Refresh** method, see the Excel Web Services reference documentation.
 ## Example
 
 The following code sample shows how to call the **Refresh** method using Excel Web Services. The connection name in this example is "MyInventoryConnection":
@@ -119,7 +119,7 @@ xlservice.SetCell(sessionId, sheetName, 0, 8, 300)
 xlservice.Refresh(sessionId, "MyInventoryConnection")
 ```
 
-If you link directly to Microsoft.Office.Excel.Server.WebServices.dll, the equivalent code is: 
+If you link directly to Microsoft.Office.Excel.Server.WebServices.dll, the equivalent code is:
   
     
     

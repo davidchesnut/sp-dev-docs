@@ -6,14 +6,14 @@ ms.assetid: 7386bbf9-3ed6-4732-bcdb-b27baed7397e
 
 
 # Workflow initiation and configuration properties
-See an overview of the initiation and association properties that SharePoint sets on workflows. 
+See an overview of the initiation and association properties that SharePoint sets on workflows.
 ## 
 
 When you launch a workflow, SharePoint automatically sets a number of association and initiation properties that support the workflow. These are listed below. The set of properties that are set differs slightly depending whether it is a **site** workflows or a **list** workflow. These differences are identified in the lists.
   
     
     
-Use the following guidelines to associate and launch (initiate) your workflows using the workflow object model: 
+Use the following guidelines to associate and launch (initiate) your workflows using the workflow object model:
   
     
     
@@ -61,36 +61,36 @@ Following is a list of association properties that are set by default for both *
 -  [ParentContentTypeId()](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.WorkflowConfigurationPropertyName.ParentContentTypeId.aspx)
     
   
-- **HistoryListId*** 
+- **HistoryListId***
     
   
-- **TaskListId*** 
+- **TaskListId***
     
   
-- **FormData*** 
+- **FormData***
     
   
-- **SharePointWorkflowContext.Subscription.EventSourceId*** 
+- **SharePointWorkflowContext.Subscription.EventSourceId***
     
   
-- **SharePointWorkflowContext.Subscription.EventType*** 
+- **SharePointWorkflowContext.Subscription.EventType***
     
   
-- **SharePointWorkflowContext.Subscription.DisplayName*** 
+- **SharePointWorkflowContext.Subscription.DisplayName***
     
   
-- **SharePointWorkflowContext.Subscription.Id*** 
+- **SharePointWorkflowContext.Subscription.Id***
     
   
-- **SharePointWorkflowContext.Subscription.Name*** 
+- **SharePointWorkflowContext.Subscription.Name***
     
   
-- **SharePointWorkflowContext.Subscription.CreatedDate*** 
+- **SharePointWorkflowContext.Subscription.CreatedDate***
     
   
 
 > [!IMPORTANT]
-> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values. 
+> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values.
   
     
     
@@ -106,22 +106,22 @@ In the case of **list** workflows, there are four additional association propert
 -  [ListName](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.WorkflowConfigurationPropertyName.ListName.aspx)
     
   
-- **StatusColumnCreated*** 
+- **StatusColumnCreated***
     
   
-- **StatusFieldName*** 
+- **StatusFieldName***
     
   
 
 > [!IMPORTANT]
-> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values. 
+> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values.
   
     
     
 
 
 > [!NOTE]
-> You can add custom association properties by using an association form. 
+> You can add custom association properties by using an association form.
   
     
     
@@ -137,7 +137,7 @@ External variable values are specific to each workflow instance (as opposed to a
   
     
     
-All workflow instances (both list and site) have some external variables that are set by default when you call **StartWorkflow**: 
+All workflow instances (both list and site) have some external variables that are set by default when you call **StartWorkflow**:
   
     
     

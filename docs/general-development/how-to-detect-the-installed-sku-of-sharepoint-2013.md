@@ -6,11 +6,11 @@ ms.assetid: d5d84d6f-6a8e-4ead-9296-7025baf1e154
 
 
 # How to: Detect the installed SKU of SharePoint 2013
-If the behavior of your solutions depends on the locally installed SKU of SharePoint 2013 or Project Server 2013, use the code example in this article to find the SKU information you need. 
+If the behavior of your solutions depends on the locally installed SKU of SharePoint 2013 or Project Server 2013, use the code example in this article to find the SKU information you need.
 ## Detect the installed SKU of SharePoint 2013 or Project Server 2013 by using code
 <a name="SP15DetectSKU_detect"> </a>
 
-The following code example demonstrates how to retrieve the registry key of the installed SKU of SharePoint 2013, Microsoft Project Server 2013, and other Office server products, and how to match the SKU with a hash table that stores the names and keys for all of the known SKUs of these products. The console output displays the name of the installed SKU. 
+The following code example demonstrates how to retrieve the registry key of the installed SKU of SharePoint 2013, Microsoft Project Server 2013, and other Office server products, and how to match the SKU with a hash table that stores the names and keys for all of the known SKUs of these products. The console output displays the name of the installed SKU.
   
     
     

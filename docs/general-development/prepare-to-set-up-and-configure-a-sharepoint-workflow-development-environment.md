@@ -14,19 +14,19 @@ Although workflows have been a part of SharePoint since early versions, workflow
     
     
 
-- First, SharePoint workflows are now built on  [Windows Workflow Foundation 4.5](http://msdn.microsoft.com/library/dd489441%28v=vs.110%29), which is part of the .NET Framework 4.5. 
+- First, SharePoint workflows are now built on  [Windows Workflow Foundation 4.5](http://msdn.microsoft.com/library/dd489441%28v=vs.110%29), which is part of the .NET Framework 4.5.
     
   
-- Second, the workflow execution engine,  [Workflow Manager](http://msdn.microsoft.com/library/windowsazure/jj193528%28v=azure.10%29.aspx), has been decoupled from SharePoint and runs independently. This provides both flexibility and scalability. (Note that for backward compatibility, the legacy 2010 workflow engine remains a part of SharePoint 2013.) 
+- Second, the workflow execution engine,  [Workflow Manager](http://msdn.microsoft.com/library/windowsazure/jj193528%28v=azure.10%29.aspx), has been decoupled from SharePoint and runs independently. This provides both flexibility and scalability. (Note that for backward compatibility, the legacy 2010 workflow engine remains a part of SharePoint 2013.)
     
   
-- Instead of developing workflows by writing C# code, you now build workflows in Visual Studio using a workflow designer that uses declarative expressions. 
+- Instead of developing workflows by writing C# code, you now build workflows in Visual Studio using a workflow designer that uses declarative expressions.
     
   
-- SharePoint 2013 workflows integrate with the new app model, which means you can now implement workflows in SharePoint Add-ins. 
+- SharePoint 2013 workflows integrate with the new app model, which means you can now implement workflows in SharePoint Add-ins.
     
   
-- You can also develop SharePoint 2013 workflows using SharePoint Designer 2013. For more information, see  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md). 
+- You can also develop SharePoint 2013 workflows using SharePoint Designer 2013. For more information, see  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md).
     
   
 
@@ -45,11 +45,11 @@ First off, get acquainted with the new app model and the concepts underlying Sha
 | [SharePoint 2013 development overview](sharepoint-2013-development-overview.md)|SharePoint 2013 is a development platform for apps for SharePoint and farm solutions. Get acquainted with the capabilities and features of SharePoint 2013 to start your development. |
 | [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md)|Provides a high-level overview of the workflow infrastructure in SharePoint 2013, including a view of the platform architecture and the workflow interop bridge. |
    
-Your next step is to ensure that you have an up-to-date workflow development environment installed. You don't need to develop on the SharePoint server machine, but of course you do need a SharePoint Server installation to develop against. 
+Your next step is to ensure that you have an up-to-date workflow development environment installed. You don't need to develop on the SharePoint server machine, but of course you do need a SharePoint Server installation to develop against.
   
     
     
-Here are the components you need. It is important that you install these items in the order presented here: 
+Here are the components you need. It is important that you install these items in the order presented here:
   
     
     
@@ -84,7 +84,7 @@ Here are the components you need. It is important that you install these items i
 
 ### If you have the "Preview" version
 
-If you have pre-release (that is, "Preview") versions of SharePoint Server, Workflow Manager 1.0, or Office Developer Tools for Visual Studio 2013 (versions prior to March 2013), you must update your installation. Following is a list of appropriate updates: 
+If you have pre-release (that is, "Preview") versions of SharePoint Server, Workflow Manager 1.0, or Office Developer Tools for Visual Studio 2013 (versions prior to March 2013), you must update your installation. Following is a list of appropriate updates:
   
     
     
@@ -101,31 +101,31 @@ If you have pre-release (that is, "Preview") versions of SharePoint Server, Work
 
 ### You must also update workflow projects created with the "Preview" version
 
-The release version of the Visual Studio workflow components and their related updates introduce important changes that enhance performance, scalability, and reliability. Unfortunately, these upgrades require you to update workflow projects that you created using the Preview tools. 
+The release version of the Visual Studio workflow components and their related updates introduce important changes that enhance performance, scalability, and reliability. Unfortunately, these upgrades require you to update workflow projects that you created using the Preview tools.
   
     
     
-To make this process easier, we provide a conversion tool that you can get through CodePlex. The tool is called the  [SharePoint 2013 Workflow Converter for Visual Studio 2012](http://wfconverter.codeplex.com/). 
+To make this process easier, we provide a conversion tool that you can get through CodePlex. The tool is called the  [SharePoint 2013 Workflow Converter for Visual Studio 2012](http://wfconverter.codeplex.com/).
   
     
     
-Here is a summary of changes that require you to update your workflow projects: 
+Here is a summary of changes that require you to update your workflow projects:
   
     
     
 
-- Activity references to **Item Guid** are replaced by **Item Id**. This change has important consequences: 
+- Activity references to **Item Guid** are replaced by **Item Id**. This change has important consequences:
     
-  - The  [LookupSPListItemGuid](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.Activities.LookupSPListItemGuid.aspx) and [GetCurrentItemGuid](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.Activities.GetCurrentItemGuid.aspx) activities are removed from the tooling; their replacement activities are **LookupSPListItemId** and **GetCurrentItemId**. 
+  - The  [LookupSPListItemGuid](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.Activities.LookupSPListItemGuid.aspx) and [GetCurrentItemGuid](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.Activities.GetCurrentItemGuid.aspx) activities are removed from the tooling; their replacement activities are **LookupSPListItemId** and **GetCurrentItemId**.
     
   
   - For other activities that use **Item Guid**, you will find **Item Id** added and **Item Guid** hidden. Your existing projects that use **Item Guid** will continue to work (except on very large lists with more than 5000 items, which is one of the reasons for the change).
     
   
-- There is a new packaging format for workflows in apps. 
+- There is a new packaging format for workflows in apps.
     
   
-- The workflow activities assembly reference in XAML has been changed to point to a new design-time proxy assembly instead of the actual SP activities assembly. 
+- The workflow activities assembly reference in XAML has been changed to point to a new design-time proxy assembly instead of the actual SP activities assembly.
     
   
 

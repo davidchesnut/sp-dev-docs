@@ -1,13 +1,13 @@
 ---
 title: Accessing a Schema
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 02613912-36f6-4edc-a915-165d12e60bc8
 ---
 
 
 # Accessing a Schema
 
-This topic shows one example of how you can access and look at a schema for the REST service in Excel Services. This topic assumes that you have read  [Sample URI For Excel Services REST API](sample-uri-for-excel-services-rest-api.md).d 
+This topic shows one example of how you can access and look at a schema for the REST service in Excel Services. This topic assumes that you have read  [Sample URI For Excel Services REST API](sample-uri-for-excel-services-rest-api.md).d
   
     
     
@@ -33,11 +33,11 @@ This topic shows one example of how you can access and look at a schema for the 
 http://myserver/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('Sheet1!A1|H3')?$format=atom
 ```
 
-Right-click the Web page, and then click **View Source**. 
+Right-click the Web page, and then click **View Source**.
   
     
     
-You should see a schema that looks similar to the following example: 
+You should see a schema that looks similar to the following example:
   
     
     

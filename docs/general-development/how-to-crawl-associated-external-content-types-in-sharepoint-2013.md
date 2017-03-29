@@ -6,7 +6,7 @@ ms.assetid: 187ec42e-f749-4e22-abef-1df604143063
 
 
 # How to: Crawl associated external content types in SharePoint 2013
-Learn how to use the search specific properties in the Business Data Connectivity (BDC) service metadata model for crawling associations, and the different user experiences that you can enable. 
+Learn how to use the search specific properties in the Business Data Connectivity (BDC) service metadata model for crawling associations, and the different user experiences that you can enable.
 ## Crawling the associated external content type
 <a name="HowToCrawlAssociations_CrawlingAssociatedExternalTypes"> </a>
 
@@ -14,18 +14,18 @@ Microsoft Business Connectivity Services (BCS) enables you to link two related e
   
     
     
-In the context of the Search connector framework, the source external content type of an association is referred to as the parent external content type. The Search crawler can crawl external content types that are associated with the parent in two ways: as attachments or as children. These external content type associations affect the following: 
+In the context of the Search connector framework, the source external content type of an association is referred to as the parent external content type. The Search crawler can crawl external content types that are associated with the parent in two ways: as attachments or as children. These external content type associations affect the following:
   
     
     
 
-- User experience 
+- User experience
     
   
-- Incremental crawls 
+- Incremental crawls
     
   
-- Processing crawl deletions 
+- Processing crawl deletions
     
   
 
@@ -35,7 +35,7 @@ A child external content type has its own search result URL and profile page, if
   
     
     
-The external content type for an attachment does not have its own search result URL. So if the user searches for a term in the attachment external item, the URL for the parent external content type is displayed instead. You can set this URL to the profile page URL of the parent. The profile page for the parent external content type will display all the fields from the attachment external content type that are exposed by the association navigator. 
+The external content type for an attachment does not have its own search result URL. So if the user searches for a term in the attachment external item, the URL for the parent external content type is displayed instead. You can set this URL to the profile page URL of the parent. The profile page for the parent external content type will display all the fields from the attachment external content type that are exposed by the association navigator.
   
     
     
@@ -46,14 +46,14 @@ Child external items are re-crawled and updated for timestamp-based incremental 
   
     
     
-For attachment external content types, the timestamp of the parent external item is interpreted as the timestamp of the attachment external item. This means that any changes in the attachment external item are picked up by an incremental crawl only when the timestamp of the parent external item changes. 
+For attachment external content types, the timestamp of the parent external item is interpreted as the timestamp of the attachment external item. This means that any changes in the attachment external item are picked up by an incremental crawl only when the timestamp of the parent external item changes.
   
     
     
 
 ### Processing crawl deletions effects from external content type associations
 
-When processing crawl deletions, if the parent external content type is deleted from the index, the Search crawler deletes the associated attachment external content types and child external content types from the index. 
+When processing crawl deletions, if the parent external content type is deleted from the index, the Search crawler deletes the associated attachment external content types and child external content types from the index.
   
     
     

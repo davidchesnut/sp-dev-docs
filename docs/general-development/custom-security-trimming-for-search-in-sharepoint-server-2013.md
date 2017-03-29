@@ -7,8 +7,8 @@ ms.assetid: fbbf0cc4-e135-426a-9996-34eb954dbd5a
 
 
 # Custom security trimming for Search in SharePoint Server 2013
-Learn about the two kinds of custom security trimmer interfaces, **ISecurityTrimmerPre** and **ISecurityTrimmerPost**, and the steps you must take to create a custom security trimmer. 
-At query time, Search in SharePoint 2013 performs security trimming of search results that are based on the identity of the user submitting the query, by using the security information obtained from the crawl component. 
+Learn about the two kinds of custom security trimmer interfaces, **ISecurityTrimmerPre** and **ISecurityTrimmerPost**, and the steps you must take to create a custom security trimmer.
+At query time, Search in SharePoint 2013 performs security trimming of search results that are based on the identity of the user submitting the query, by using the security information obtained from the crawl component.
   
     
     
@@ -27,7 +27,7 @@ The **ISecurityTrimmerPre** interface carries out pre-trimming, or pre-query eva
   
     
     
-We recommend the use of pre-trimming for performance and general correctness; pre-trimming prevents information leakage for refiner data and hit count instances. Post-trimmers can be used in cases where the security trimming cannot be represented accurately with query filters; for example, if there is a need to filter away documents depending on the local time of the user issuing the query, such as during official business hours only. 
+We recommend the use of pre-trimming for performance and general correctness; pre-trimming prevents information leakage for refiner data and hit count instances. Post-trimmers can be used in cases where the security trimming cannot be represented accurately with query filters; for example, if there is a need to filter away documents depending on the local time of the user issuing the query, such as during official business hours only.
   
     
     
@@ -81,7 +81,7 @@ To create a custom security post-trimmer for search results, you must create a c
   
     
     
-The **ISecurityTrimmerPost** interface contains two methods that you must implement: [Initialize(NameValueCollection, SearchServiceApplication)](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Query.ISecurityTrimmerPost.Initialize.aspx) and **CheckAccess(IList<String>, IList<String>, IDictionary<String, Object>, IIdentity)**. 
+The **ISecurityTrimmerPost** interface contains two methods that you must implement: [Initialize(NameValueCollection, SearchServiceApplication)](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Query.ISecurityTrimmerPost.Initialize.aspx) and **CheckAccess(IList<String>, IList<String>, IDictionary<String, Object>, IIdentity)**.
   
     
     
@@ -106,7 +106,7 @@ The **CheckAccess** method is executed once per post-trimmer, for each result se
   
     
     
-Four parameters are passed into this method: 
+Four parameters are passed into this method:
   
     
     
@@ -123,7 +123,7 @@ Four parameters are passed into this method:
 -  _userIdentity_: An  [IIdentity](https://msdn.microsoft.com/library/System.Security.Principal.IIdentity.aspx) object from which implementers can retrieve the user's identity.
     
   
-The **CheckAccess** method returns a [BitArray](https://msdn.microsoft.com/library/System.Collections.BitArray.aspx) object that represents an array of **true** or **false** values, one for each content item URL in the **IList** object that is passed as the first parameter of the method. The query processing component uses these values to perform the security post-trimming of the results. If the array value for a particular content item is **true**, the item is included in the returned results; if the array value is **false**, the item is removed. 
+The **CheckAccess** method returns a [BitArray](https://msdn.microsoft.com/library/System.Collections.BitArray.aspx) object that represents an array of **true** or **false** values, one for each content item URL in the **IList** object that is passed as the first parameter of the method. The query processing component uses these values to perform the security post-trimming of the results. If the array value for a particular content item is **true**, the item is included in the returned results; if the array value is **false**, the item is removed.
   
     
     
@@ -134,7 +134,7 @@ When implementing the **CheckAccess** method, you can use two pieces of informat
 
 #### Retrieving the user identity for your security trimmer
 
-You can retrieve the user's identity by accessing the thread's current principal, as shown in the following code example. 
+You can retrieve the user's identity by accessing the thread's current principal, as shown in the following code example.
   
     
     
@@ -144,7 +144,7 @@ You can retrieve the user's identity by accessing the thread's current principal
 IIdentity userIdentity = System.Threading.Thread.CurrentPrincipal.Identity;
 ```
 
-You must also include the following namespace directive. 
+You must also include the following namespace directive.
   
     
     
@@ -178,7 +178,7 @@ When working with post-trimmers, it is important to notice that there are two ty
     
     
 
-- Exclude the sensitive refiners from the refinement panel in the default Web Part so that no information is leaked via the refiners. 
+- Exclude the sensitive refiners from the refinement panel in the default Web Part so that no information is leaked via the refiners.
     
   
 - Use a custom Web Part to display results or refiners when using post-trimmers so that the **RefinementResults** may be elegantly hidden in cases where the **RefinementResults** count exceeds the **RelevantResults** count.
@@ -187,7 +187,7 @@ When working with post-trimmers, it is important to notice that there are two ty
 
 ### Retrieving individual configuration properties for your security trimmer
 
-You can access an individual configuration property by using the property name that was specified when the security post-trimmer was registered. For example, the following code retrieves the value for a configuration property named **CheckLimit**. 
+You can access an individual configuration property by using the property name that was specified when the security post-trimmer was registered. For example, the following code retrieves the value for a configuration property named **CheckLimit**.
   
     
     
@@ -214,7 +214,7 @@ After you create the custom security trimmer, you must deploy it to the global a
 ## Registering the custom security trimmer
 <a name="Registering_the_trimmer"> </a>
 
-For post-trimmers, you must associate a custom security trimmer registration with a specific Search service application and crawl rule; for pre-trimmers, this is optional. 
+For post-trimmers, you must associate a custom security trimmer registration with a specific Search service application and crawl rule; for pre-trimmers, this is optional.
   
     
     
@@ -222,7 +222,7 @@ You use the **SPEnterpriseSearchSecurityTrimmer** cmdlet of the SharePoint Manag
   
     
     
-The following table describes the parameters that the cmdlet uses. 
+The following table describes the parameters that the cmdlet uses.
   
     
     
@@ -232,13 +232,13 @@ The following table describes the parameters that the cmdlet uses.
 
 |**Parameter**|**Description**|
 |:-----|:-----|
-| _SearchApplication_|Required. The name of the Search service application, for example "Search Service Application". |
-| _typeName_|Required. The strong name of the custom security trimmer assembly. |
-| _RulePath_|Required for post-trimmers; optional for pre-trimmers. The crawl rule for the security trimmer. > [!NOTE]> We recommend using one crawl rule per content source.           |
-| _id_|Required. The security trimmer identifier (ID). This value is unique; if a security trimmer is registered with an ID that is already registered for another security trimmer, the registration for the first trimmer is overwritten with the registration for the second trimmer. |
+| _SearchApplication_|Required. The name of the Search service application, for example "Search Service Application".|
+| _typeName_|Required. The strong name of the custom security trimmer assembly.|
+| _RulePath_|Required for post-trimmers; optional for pre-trimmers. The crawl rule for the security trimmer.> [!NOTE]> We recommend using one crawl rule per content source.           |
+| _id_|Required. The security trimmer identifier (ID). This value is unique; if a security trimmer is registered with an ID that is already registered for another security trimmer, the registration for the first trimmer is overwritten with the registration for the second trimmer.|
 | _properties_|Optional. The name-value pairs specifying the configuration properties. Must be in the following format:  `Name1~Value1~Name2~Value~…`|
    
-For an example of a basic command for registering a custom security trimmer and a sample that specifies the configuration properties, see  [How to: Use a custom security trimmer for SharePoint Server search results](how-to-use-a-custom-security-trimmer-for-sharepoint-server-search-results.md). 
+For an example of a basic command for registering a custom security trimmer and a sample that specifies the configuration properties, see  [How to: Use a custom security trimmer for SharePoint Server search results](how-to-use-a-custom-security-trimmer-for-sharepoint-server-search-results.md).
   
     
     

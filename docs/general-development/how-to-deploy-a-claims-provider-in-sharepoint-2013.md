@@ -14,7 +14,7 @@ The easiest way to deploy a claims provider is by using the features infrastruct
   
     
     
-The following is an example of how to do this. 
+The following is an example of how to do this.
   
     
     

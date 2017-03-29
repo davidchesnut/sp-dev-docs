@@ -6,7 +6,7 @@ ms.assetid: d9922e4b-4948-4c4a-a8ca-1623168143a3
 
 
 # How to: Retrieve the URL of a Pages library
-Learn how to retrieve the URL for the pages list for a publishing web in a site collection that differs from the current context. 
+Learn how to retrieve the URL for the pages list for a publishing web in a site collection that differs from the current context.
 ## Core concepts to know for retrieving the URL of a Pages list
 <a name="SP15_Core_Concepts_URL_MP"> </a>
 
@@ -24,10 +24,10 @@ If you need to retrieve the URL for the Pages list for a different web applicati
 
 |**Article title**|**Description**|
 |:-----|:-----|
-|Pages Library |A document library that contains all the content pages for a publishing site. |
-| [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx)|Represents a SharePoint Foundation website. |
+|Pages Library|A document library that contains all the content pages for a publishing site.|
+| [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx)|Represents a SharePoint Foundation website.|
 | [Properties](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.Properties.aspx)|Gets a  [SPPropertyBag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPPropertyBag.aspx) object with metadata for the current website.|
-| [SPPropertyBag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPPropertyBag.aspx)|Stores arbitrary key and value pairs that contain custom property settings. |
+| [SPPropertyBag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPPropertyBag.aspx)|Stores arbitrary key and value pairs that contain custom property settings.|
 | [PublishingWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.Publishing.PublishingWeb.aspx)|Provides publishing behavior for an instance of **SPWeb** that supports publishing.|
    
 
@@ -42,10 +42,10 @@ This example console application accesses the  [Properties](https://msdn.microso
 ### To query the SPWeb.Properties property for the URL to the Pages list
 
 
-1. Write the console application. 
+1. Write the console application.
     
   
-2. View the output in the console. 
+2. View the output in the console.
     
   
 
@@ -88,7 +88,7 @@ namespace Test
 
 ```
 
-The output that this application prints to the console varies from website to website, but it might look like the following: 
+The output that this application prints to the console varies from website to website, but it might look like the following:
   
     
     

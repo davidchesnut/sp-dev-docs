@@ -1,13 +1,13 @@
 ---
 title: Excel Services Known Issues and Tips
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: b4a41437-4f00-4f88-8510-627fa0252004
 ---
 
 
 # Excel Services Known Issues and Tips
 
-The following are a known issues and tips for working with Excel Services. 
+The following are a known issues and tips for working with Excel Services.
   
     
     
@@ -22,7 +22,7 @@ You can view the Excel Web Services Web Services Description Language (WSDL) pag
   
     
     
-If you do not have a custom site, you can view the WSDL by using the following URL: 
+If you do not have a custom site, you can view the WSDL by using the following URL:
   
     
     
@@ -30,14 +30,14 @@ If you do not have a custom site, you can view the WSDL by using the following U
   
     
     
-For more information, see  [Accessing the SOAP API](accessing-the-soap-api.md). 
+For more information, see  [Accessing the SOAP API](accessing-the-soap-api.md).
   
     
     
 
 ### Understanding Excel Web Services and Namespaces
 
-The following are Excel web services and namespaces: 
+The following are Excel web services and namespaces:
   
     
     
@@ -48,7 +48,7 @@ The following are Excel web services and namespaces:
 - The schema namespace:  `http://schemas.microsoft.com/office/excel/server/webservices`
     
   
-- The web service page name: ExcelService.asmx 
+- The web service page name: ExcelService.asmx
     
   
 
@@ -58,7 +58,7 @@ In certain scenarios, you should link directly to Microsoft.Office.Excel.Server.
   
     
     
-For more information and guidelines on when to use direct linking, see  [Loop-Back SOAP Calls and Direct Linking](loop-back-soap-calls-and-direct-linking.md). 
+For more information and guidelines on when to use direct linking, see  [Loop-Back SOAP Calls and Direct Linking](loop-back-soap-calls-and-direct-linking.md).
   
     
     
@@ -69,7 +69,7 @@ The calls to the **GetCell** and **GetRange** methods will fail if the workbook 
   
     
     
-For example, if a cell contains characters with hexadecimal values 0x1, 0x2 ... 0x8, the ASP.NET parser will throw an exception that the value of the character being written to the XML response is invalid: 
+For example, if a cell contains characters with hexadecimal values 0x1, 0x2 ... 0x8, the ASP.NET parser will throw an exception that the value of the character being written to the XML response is invalid:
   
     
     
@@ -77,7 +77,7 @@ For example, if a cell contains characters with hexadecimal values 0x1, 0x2 ... 
   
     
     
-This behavior is expected. The XML specification that defines which characters are allowed in a valid XML response specifies that hexadecimal values 0x1, 0x2 ... 0x8 are invalid XML characters: 
+This behavior is expected. The XML specification that defines which characters are allowed in a valid XML response specifies that hexadecimal values 0x1, 0x2 ... 0x8 are invalid XML characters:
   
     
     
@@ -96,7 +96,7 @@ When you make changes to a workbook—for example, by setting values to a range 
   
     
     
-If you want to save changes to a workbook, you can use the **GetWorkbook** method and then save the workbook using the API of the destination file store. For more information, see [How to: Get an Entire Workbook or a Snapshot](how-to-get-an-entire-workbook-or-a-snapshot.md) and [How to: Save a Workbook](http://msdn.microsoft.com/library/feb74f7a-2d8f-4672-911b-de85f8852aea%28Office.15%29.aspx). 
+If you want to save changes to a workbook, you can use the **GetWorkbook** method and then save the workbook using the API of the destination file store. For more information, see [How to: Get an Entire Workbook or a Snapshot](how-to-get-an-entire-workbook-or-a-snapshot.md) and [How to: Save a Workbook](http://msdn.microsoft.com/library/feb74f7a-2d8f-4672-911b-de85f8852aea%28Office.15%29.aspx).
   
     
     
@@ -151,12 +151,12 @@ For more information, see  [WebClientProtocol.Url Property](http://go.microsoft.
 
 ### Using Workbook Permissions
 
-Beware of the following issues regarding workbook permissions: 
+Beware of the following issues regarding workbook permissions:
   
     
     
 
-- Excel Web Services uses the Microsoft SharePoint Foundation authorization scheme to verify that the caller has the right to call APIs (that is, make web service calls) on the SharePoint Foundation site (that is, the Web site where Excel Web Services is located) remotely. If the caller does not have the "Use Remote API" right, the Excel Web Services returns an "HTTP 401 (Unauthorized)" error, and logs an "API authorization failed" event. Excel Web Services performs these authorization checks only for calls that originate as SOAP calls. Calls from applications that link locally to Microsoft.Office.Excel.Server.WebServices.dll are not considered remote calls. Therefore, they are not subject to authorization checks. However, if the application that links locally to Microsoft.Office.Excel.Server.WebServices.dll is itself a SOAP service, and handles the service's SOAP calls, the call to Excel Web Services will seem like a SOAP call (even though the application links directly to Microsoft.Office.Excel.Server.WebServices.dll). In this scenario, Excel Web Services will perform the authorization checks. 
+- Excel Web Services uses the Microsoft SharePoint Foundation authorization scheme to verify that the caller has the right to call APIs (that is, make web service calls) on the SharePoint Foundation site (that is, the Web site where Excel Web Services is located) remotely. If the caller does not have the "Use Remote API" right, the Excel Web Services returns an "HTTP 401 (Unauthorized)" error, and logs an "API authorization failed" event. Excel Web Services performs these authorization checks only for calls that originate as SOAP calls. Calls from applications that link locally to Microsoft.Office.Excel.Server.WebServices.dll are not considered remote calls. Therefore, they are not subject to authorization checks. However, if the application that links locally to Microsoft.Office.Excel.Server.WebServices.dll is itself a SOAP service, and handles the service's SOAP calls, the call to Excel Web Services will seem like a SOAP call (even though the application links directly to Microsoft.Office.Excel.Server.WebServices.dll). In this scenario, Excel Web Services will perform the authorization checks.
     
   
 - To get the entire workbook (for example, by calling the **GetWorkbook** method using the `WorkbookType.FullWorkbook` argument), the caller needs "open" permission for the workbook or "read" permission in a file share.
@@ -165,17 +165,17 @@ Beware of the following issues regarding workbook permissions:
 - To call the **GetApiVersion** method, no permission is necessary.
     
   
-- For the rest of the Excel Web Services methods, besides credentials, the caller needs "view" permission (in SharePoint Foundation) or "read" permission (in a file share) for the workbook. 
+- For the rest of the Excel Web Services methods, besides credentials, the caller needs "view" permission (in SharePoint Foundation) or "read" permission (in a file share) for the workbook.
     
   
 
 ### Trusted Location
 
-The workbooks you want to open in Excel Services must be placed in a trusted location. If not, the Excel Web Services calls to open the workbook will fail. 
+The workbooks you want to open in Excel Services must be placed in a trusted location. If not, the Excel Web Services calls to open the workbook will fail.
   
     
     
-For information about how to trust a location, see  [How to: Trust a Location](how-to-trust-a-location.md) and [How to: Trust Workbook Locations Using Script](http://msdn.microsoft.com/library/79ab6ced-7a0c-4275-b852-bb246fc6be57%28Office.15%29.aspx). 
+For information about how to trust a location, see  [How to: Trust a Location](how-to-trust-a-location.md) and [How to: Trust Workbook Locations Using Script](http://msdn.microsoft.com/library/79ab6ced-7a0c-4275-b852-bb246fc6be57%28Office.15%29.aspx).
   
     
     
@@ -193,7 +193,7 @@ If a method has no return value, and one or more **out** arguments, the first **
   
     
     
-The affected Excel Web Services methods are: 
+The affected Excel Web Services methods are:
   
     
     
@@ -237,15 +237,15 @@ The affected Excel Web Services methods are:
 
 ### Global Assembly Cache is Checked First, Then the Local Folder
 
-By design in the Microsoft .NET Framework, an assembly in a global assembly cache will be loaded instead of the same assembly in a local folder. The common language runtime will look for an assembly in the global assembly cache first before searching in the local folders. 
+By design in the Microsoft .NET Framework, an assembly in a global assembly cache will be loaded instead of the same assembly in a local folder. The common language runtime will look for an assembly in the global assembly cache first before searching in the local folders.
   
     
     
-Therefore, if an assembly is installed in the global assembly cache and is in the UDF list but disabled (or removed from the UDF list altogether), and an identical assembly is installed in a local folder and enabled, the assembly in the global assembly cache will still get loaded and used instead of the same assembly in the local folder. 
+Therefore, if an assembly is installed in the global assembly cache and is in the UDF list but disabled (or removed from the UDF list altogether), and an identical assembly is installed in a local folder and enabled, the assembly in the global assembly cache will still get loaded and used instead of the same assembly in the local folder.
   
     
     
-This does not affect upgrade scenarios in which the assembly version has been modified, which means the assembly is not the same anymore. 
+This does not affect upgrade scenarios in which the assembly version has been modified, which means the assembly is not the same anymore.
   
     
     
@@ -255,7 +255,7 @@ This does not affect upgrade scenarios in which the assembly version has been mo
 
 ### Order of Strings in Sharedstring.xml is Not Maintained
 
-Excel Services does not maintain the original order of strings in a workbook shared-string table (the Sharedstrings.xml part within the Microsoft Office Excel XML Format file). For example, execute the following steps: 
+Excel Services does not maintain the original order of strings in a workbook shared-string table (the Sharedstrings.xml part within the Microsoft Office Excel XML Format file). For example, execute the following steps:
   
     
     
@@ -266,23 +266,23 @@ Excel Services does not maintain the original order of strings in a workbook sha
 2. Save the file in .xlsx file format. 
     
   
-3. Upload the file to a document library that is a trusted location. 
+3. Upload the file to a document library that is a trusted location.
     
   
-4. Open the file in the document library by using Excel Web Access. 
+4. Open the file in the document library by using Excel Web Access.
     
   
-5. Click **Open in Excel**. 
+5. Click **Open in Excel**.
     
   
-6. Save the file in .xlsx file format. 
+6. Save the file in .xlsx file format.
     
   
-If you compare the Sharedstrings.xml file created in Step 2 with the one created in Step 6, you will find the order of the Sharedstrings.xml parts might be different. 
+If you compare the Sharedstrings.xml file created in Step 2 with the one created in Step 6, you will find the order of the Sharedstrings.xml parts might be different.
   
     
     
-You should not write an application that assumes the order of strings in the shared-string table is fixed. For example, you cannot replace the shared-string table with an existing localized translation table. You must adjust to the new ordering of strings in the shared-string table. 
+You should not write an application that assumes the order of strings in the shared-string table is fixed. For example, you cannot replace the shared-string table with an existing localized translation table. You must adjust to the new ordering of strings in the shared-string table.
   
     
     

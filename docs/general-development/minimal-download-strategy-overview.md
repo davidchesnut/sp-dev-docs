@@ -6,8 +6,8 @@ ms.assetid: 9caa7d99-1e74-4889-96c7-ba5a10772ad7
 
 
 # Minimal Download Strategy overview
-Learn about Minimal Download Strategy (MDS), a new feature in SharePoint 2013 that reduces page load time by sending only the differences when users navigate to a new page. 
-Minimal Download Strategy (MDS) is a new technology in SharePoint 2013 that reduces the amount of data that the browser has to download when users navigate from one page to another in a SharePoint site. When users browse an MDS-enabled site, the client processes only the differences (or delta) between the current page and the requested page. Figure 1 shows the sections that change from page to page and therefore require an update. The delta usually includes the data in the (1) content areas, as well as other components such as (2) navigation controls. 
+Learn about Minimal Download Strategy (MDS), a new feature in SharePoint 2013 that reduces page load time by sending only the differences when users navigate to a new page.
+Minimal Download Strategy (MDS) is a new technology in SharePoint 2013 that reduces the amount of data that the browser has to download when users navigate from one page to another in a SharePoint site. When users browse an MDS-enabled site, the client processes only the differences (or delta) between the current page and the requested page. Figure 1 shows the sections that change from page to page and therefore require an update. The delta usually includes the data in the (1) content areas, as well as other components such as (2) navigation controls.
   
     
     
@@ -30,7 +30,7 @@ You can identify a site that has MDS enabled by looking at the URL. An MDS-enabl
 ## Enable MDS
 <a name="SP15MDSOverview_Enable"> </a>
 
-You can enable MDS in your site by using either the site administration pages or the SharePoint client object models. 
+You can enable MDS in your site by using either the site administration pages or the SharePoint client object models.
   
     
     
@@ -75,7 +75,7 @@ function errorHandler() {
 ## Benefits of using MDS
 <a name="SP15MDSOverview_Benefits"> </a>
 
-Using MDS provides several benefits, including: 
+Using MDS provides several benefits, including:
   
     
     
@@ -96,7 +96,7 @@ Using MDS provides several benefits, including:
 ## MDS architecture
 <a name="SP15MDSOverview_Architecture"> </a>
 
-The basic mechanics of MDS are pretty simple. The main components of MDS are two engines, one in the server and another in the client, that work together to calculate the changes and render the pages in the browser when the user navigates from page to page in the site. Figure 2 shows the MDS flow when a user navigates through an MDS-enabled site. 
+The basic mechanics of MDS are pretty simple. The main components of MDS are two engines, one in the server and another in the client, that work together to calculate the changes and render the pages in the browser when the user navigates from page to page in the site. Figure 2 shows the MDS flow when a user navigates through an MDS-enabled site.
   
     
     
@@ -119,19 +119,19 @@ The basic mechanics of MDS are pretty simple. The main components of MDS are two
     
     
 
-1. The browser requests the changes between the current page and a new one in the SharePoint site. 
+1. The browser requests the changes between the current page and a new one in the SharePoint site.
     
   
-2. The MDS engine in the server calculates the delta between the current and the new pages. 
+2. The MDS engine in the server calculates the delta between the current and the new pages.
     
   
-3. The MDS engine in the server sends the delta to the MDS engine in the client. 
+3. The MDS engine in the server sends the delta to the MDS engine in the client.
     
   
-4. The MDS engine in the client replaces the changed areas on the current page with the new page content. 
+4. The MDS engine in the client replaces the changed areas on the current page with the new page content.
     
   
-The resulting page is exactly as it would have been if the page had been downloaded without MDS. 
+The resulting page is exactly as it would have been if the page had been downloaded without MDS.
   
     
     
@@ -139,7 +139,7 @@ The MDS engine in the client includes a download manager. All requests in the pa
   
     
     
-The MDS engine in the server sends the information back to the client. This information can contain HTML with embedded scripts and styles, XML, or JavaScript Object Notation (JSON). 
+The MDS engine in the server sends the information back to the client. This information can contain HTML with embedded scripts and styles, XML, or JavaScript Object Notation (JSON).
   
     
     
@@ -152,35 +152,35 @@ As mentioned previously in this article, in some situations it's not possible to
     
     
 
-- The new page has a different master page. 
+- The new page has a different master page.
     
   
-- The current master page has changed. 
+- The current master page has changed.
     
   
-- The MDS engine detects non-compliant HTML, for example: 
+- The MDS engine detects non-compliant HTML, for example:
     
-  - Pages using ASP.NET 2.0 
-    
-  
-  - CSS or scripts not registered in the MDS engine 
+  - Pages using ASP.NET 2.0
     
   
-  - Illegal HTML 
+  - CSS or scripts not registered in the MDS engine
     
   
-- There are non-compliant controls on the page, for example: 
-    
-  - The control is not in the MDS engine whitelist. 
+  - Illegal HTML
     
   
-  - The control assembly is not marked as compliant. 
+- There are non-compliant controls on the page, for example:
+    
+  - The control is not in the MDS engine whitelist.
     
   
-  - The control class doesn't have the MDS attribute. 
+  - The control assembly is not marked as compliant.
     
   
-The MDS engine tries to recover from a failover after the user navigates to yet another new page. 
+  - The control class doesn't have the MDS attribute.
+    
+  
+The MDS engine tries to recover from a failover after the user navigates to yet another new page.
   
     
     
@@ -188,18 +188,18 @@ The MDS engine tries to recover from a failover after the user navigates to yet 
 ## Developer controls
 <a name="SP15MDSOverview_DevControls"> </a>
 
-Thanks to the failover mechanism, your controls work seamlessly whether or not MDS is enabled in your users' websites. However, it is a good idea to update your SharePoint controls and components to take full advantage of MDS. Users get a better experience when your pages and controls are MDS compliant. The following components are good candidates to get optimized for MDS: 
+Thanks to the failover mechanism, your controls work seamlessly whether or not MDS is enabled in your users' websites. However, it is a good idea to update your SharePoint controls and components to take full advantage of MDS. Users get a better experience when your pages and controls are MDS compliant. The following components are good candidates to get optimized for MDS:
   
     
     
 
-- Master pages 
+- Master pages
     
   
-- ASP.NET pages 
+- ASP.NET pages
     
   
-- Controls and Web Parts 
+- Controls and Web Parts
     
   
 

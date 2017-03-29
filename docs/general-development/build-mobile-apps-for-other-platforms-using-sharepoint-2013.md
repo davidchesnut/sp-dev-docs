@@ -6,14 +6,14 @@ ms.assetid: 017df869-44fb-4ffe-82fb-4654e01329ad
 
 
 # Build mobile apps for other platforms using SharePoint 2013
-Learn how to use Representational State Transfer (REST) to create a SharePoint 2013 mobile app for any platform. 
-Mobile devices have become more powerful and easy to use nowadays. Laptops, netbooks, tablet PCs, and mobile phones provide workers access to the information and applications that they need to do their jobs. And developing applications for mobile devices is now easier than ever. As a result, more and more business scenarios demand integrating client applications together with their business processes. This article describes how to integrate mobile client apps together with SharePoint 2013. You can create a mobile app to browse SharePoint content from any location and connect with SharePoint lists and libraries to access data. 
+Learn how to use Representational State Transfer (REST) to create a SharePoint 2013 mobile app for any platform.
+Mobile devices have become more powerful and easy to use nowadays. Laptops, netbooks, tablet PCs, and mobile phones provide workers access to the information and applications that they need to do their jobs. And developing applications for mobile devices is now easier than ever. As a result, more and more business scenarios demand integrating client applications together with their business processes. This article describes how to integrate mobile client apps together with SharePoint 2013. You can create a mobile app to browse SharePoint content from any location and connect with SharePoint lists and libraries to access data.
   
     
     
 
-To develop a mobile app that interacts with SharePoint 2013, you can use common services that can be accessed using open protocols. SharePoint Foundation 2010 introduced the client object models, which enabled developers to perform remote communication with SharePoint by using the web programming technology of their choice: .NET Framework, Microsoft Silverlight, or JavaScript. SharePoint 2013 introduces a Representational State Transfer (REST) service that is fully comparable to the client object models. In SharePoint 2013, nearly every API in the client object models will have a corresponding REST endpoint. Now, developers can interact remotely with the SharePoint object model by using any technology that supports REST web requests. REST can be consumed by any programming language that you want to use for your mobile application development. 
-You can perform basic create, read, update, and delete (CRUD) operations by using the REST interface provided by SharePoint 2013. REST exposes all of the SharePoint entities and operations that are available in the other SharePoint client APIs. One advantage of using REST is that you don't have to add references to any SharePoint 2013 libraries or client assemblies. Instead, you make HTTP requests to the appropriate endpoints to retrieve or update SharePoint entities, such as webs, lists, and list items. For a thorough introduction to the SharePoint 2013 REST interface and its architecture, see  [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx). 
+To develop a mobile app that interacts with SharePoint 2013, you can use common services that can be accessed using open protocols. SharePoint Foundation 2010 introduced the client object models, which enabled developers to perform remote communication with SharePoint by using the web programming technology of their choice: .NET Framework, Microsoft Silverlight, or JavaScript. SharePoint 2013 introduces a Representational State Transfer (REST) service that is fully comparable to the client object models. In SharePoint 2013, nearly every API in the client object models will have a corresponding REST endpoint. Now, developers can interact remotely with the SharePoint object model by using any technology that supports REST web requests. REST can be consumed by any programming language that you want to use for your mobile application development.
+You can perform basic create, read, update, and delete (CRUD) operations by using the REST interface provided by SharePoint 2013. REST exposes all of the SharePoint entities and operations that are available in the other SharePoint client APIs. One advantage of using REST is that you don't have to add references to any SharePoint 2013 libraries or client assemblies. Instead, you make HTTP requests to the appropriate endpoints to retrieve or update SharePoint entities, such as webs, lists, and list items. For a thorough introduction to the SharePoint 2013 REST interface and its architecture, see  [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx).
   
     
     
@@ -22,7 +22,7 @@ You can perform basic create, read, update, and delete (CRUD) operations by usin
 ## REST endpoints in SharePoint 2013
 <a name="BuildMobileAppsInSharePoint2013ForNonWindowsPhone_REST_EndpointsInSharePoint2013"> </a>
 
-To use the REST capabilities that are built into SharePoint 2013, you can construct a RESTful HTTP request using the Open Data Protocol (OData) standard that corresponds to the desired client object model API. The client.svc web service handles the HTTP request and serves the appropriate response, in either Atom or JavaScript Object Notation (JSON) format. The client application must then parse that response. Figure 1 shows a high-level view of the SharePoint REST architecture. 
+To use the REST capabilities that are built into SharePoint 2013, you can construct a RESTful HTTP request using the Open Data Protocol (OData) standard that corresponds to the desired client object model API. The client.svc web service handles the HTTP request and serves the appropriate response, in either Atom or JavaScript Object Notation (JSON) format. The client application must then parse that response. Figure 1 shows a high-level view of the SharePoint REST architecture.
   
     
     
@@ -40,11 +40,11 @@ To use the REST capabilities that are built into SharePoint 2013, you can constr
   
     
     
-The endpoints in the SharePoint 2013 REST service correspond to the types and members in the SharePoint client object models. By using HTTP requests, you can use these REST endpoints to perform typical CRUD operations against SharePoint artifacts, such as lists and sites. 
+The endpoints in the SharePoint 2013 REST service correspond to the types and members in the SharePoint client object models. By using HTTP requests, you can use these REST endpoints to perform typical CRUD operations against SharePoint artifacts, such as lists and sites.
   
     
     
-In general: 
+In general:
   
     
     
@@ -58,7 +58,7 @@ In general:
 - Endpoints that represent update or insert operations map to HTTP **PUT** commands.
     
   
-In choosing an HTTP request to use, you should also consider the following: 
+In choosing an HTTP request to use, you should also consider the following:
   
     
     
@@ -72,26 +72,26 @@ In choosing an HTTP request to use, you should also consider the following:
 - Use **PUT**, **PATCH**, and **MERGE** operations to update existing SharePoint objects. Any service endpoint that represents an object property **set** operation supports both **PUT** requests and **MERGE** requests. For **MERGE** requests, setting properties is optional; any properties that you do not explicitly set retain their current property. But for **PUT** commands, any properties you do not explicitly set are set to their default properties. In addition, if you do not specify all settable properties in object updates when you use HTTP **PUT** commands, the REST service returns an exception.
     
   
-- Use the HTTP **DELETE** command against the specific endpoint URL to delete the SharePoint object represented by that endpoint. For recyclable objects, such as lists, files, and list items, this results in a **Recycle** operation. For more information, see [Get to know the SharePoint 2013 REST service](http://msdn.microsoft.com/library/2de035a0-ac75-43bd-9665-5c5a59c4c590%28Office.15%29.aspx). 
+- Use the HTTP **DELETE** command against the specific endpoint URL to delete the SharePoint object represented by that endpoint. For recyclable objects, such as lists, files, and list items, this results in a **Recycle** operation. For more information, see [Get to know the SharePoint 2013 REST service](http://msdn.microsoft.com/library/2de035a0-ac75-43bd-9665-5c5a59c4c590%28Office.15%29.aspx).
     
   
 
 ## Authenticate users to SharePoint
 <a name="BuildMobileAppsInSharePoint2013ForNonWindowsPhone_AuthenticatingNonWindowsAppForSharePoint"> </a>
 
-To authenticate your mobile app with SharePoint, you can use the MS-OFBA protocol. For more information, see  [[MS-OFBA]: Office Forms Based Authentication Protocol Specification](http://msdn.microsoft.com/library/30c7bbe9-b284-421f-b866-4e7ed4866027%28Office.15%29.aspx). The protocol client is configured to store and transmit cookies. The protocol client relies on the remote protocol server to set the user's identity as one or more HTTP cookies. After the user's identity is established, the client then sends each cookie with each subsequent HHT request. 
+To authenticate your mobile app with SharePoint, you can use the MS-OFBA protocol. For more information, see  [[MS-OFBA]: Office Forms Based Authentication Protocol Specification](http://msdn.microsoft.com/library/30c7bbe9-b284-421f-b866-4e7ed4866027%28Office.15%29.aspx). The protocol client is configured to store and transmit cookies. The protocol client relies on the remote protocol server to set the user's identity as one or more HTTP cookies. After the user's identity is established, the client then sends each cookie with each subsequent HHT request.
   
     
     
-When a user signs in to SharePoint 2013, the user's token is validated and then used to sign in to SharePoint. The user's token is a security token that is issued by an identity provider. SharePoint 2013 supports several kinds of authentication. For more information, see  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md). To authenticate a user, you can use the REST interface. The authorization process verifies that an authenticated subject (an app or a user the app is acting on behalf of) has permission to perform certain operations or to access specific resources (for example, a list or a SharePoint document folder). 
+When a user signs in to SharePoint 2013, the user's token is validated and then used to sign in to SharePoint. The user's token is a security token that is issued by an identity provider. SharePoint 2013 supports several kinds of authentication. For more information, see  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md). To authenticate a user, you can use the REST interface. The authorization process verifies that an authenticated subject (an app or a user the app is acting on behalf of) has permission to perform certain operations or to access specific resources (for example, a list or a SharePoint document folder).
   
     
     
-OData lets you access a data source, such as a database, by browsing to a specially constructed URL. This allows for a simplified approach for connecting to, and working with, data sources that are hosted within an organization. OData is a protocol that uses HTTP, Atom, and JavaScript Object Notation (JSON) to enable developers to write applications that communicate with an ever-growing number of data sources. Microsoft supports the creation of this standard as a way to enable the exchange of data between applications and data stores that can be accessed from the web. The new OData connector enables SharePoint to communicate with OData providers. For more information, see  [Open Data Protocol](http://www.odata.org). 
+OData lets you access a data source, such as a database, by browsing to a specially constructed URL. This allows for a simplified approach for connecting to, and working with, data sources that are hosted within an organization. OData is a protocol that uses HTTP, Atom, and JavaScript Object Notation (JSON) to enable developers to write applications that communicate with an ever-growing number of data sources. Microsoft supports the creation of this standard as a way to enable the exchange of data between applications and data stores that can be accessed from the web. The new OData connector enables SharePoint to communicate with OData providers. For more information, see  [Open Data Protocol](http://www.odata.org).
   
     
     
-The following code demonstrates how to authenticate your app to SharePoint 2013 using REST endpoints for basic or forms-based authentication. The following code example is written in C#, but any other programming language can be used to create the Http request, as per the requirement of the platform. 
+The following code demonstrates how to authenticate your app to SharePoint 2013 using REST endpoints for basic or forms-based authentication. The following code example is written in C#, but any other programming language can be used to create the Http request, as per the requirement of the platform.
   
     
     
@@ -182,7 +182,7 @@ headers:
 
 ```
 
-The following XML shows an example of the list item properties that are returned when you request the XML content type. 
+The following XML shows an example of the list item properties that are returned when you request the XML content type.
   
     
     
@@ -288,7 +288,7 @@ headers:
 
 ```
 
-For more information, see  [Complete basic operations using SharePoint 2013 REST endpoints](http://msdn.microsoft.com/library/e3000415-50a0-426e-b304-b7de18f2f7d9%28Office.15%29.aspx). 
+For more information, see  [Complete basic operations using SharePoint 2013 REST endpoints](http://msdn.microsoft.com/library/e3000415-50a0-426e-b304-b7de18f2f7d9%28Office.15%29.aspx).
   
     
     

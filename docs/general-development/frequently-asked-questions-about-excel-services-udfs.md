@@ -3,7 +3,7 @@ title: Frequently Asked Questions About Excel Services UDFs
 keywords: faqs
 f1_keywords:
 - faqs
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 3d94d040-eecf-4f8e-a316-6d1cca95e7eb
 ---
 
@@ -21,14 +21,14 @@ Here are some frequently asked questions about Excel Services user-defined funct
 
 ### What is a supported UDF class?
 
-The UDF class in a UDF assembly must be public. It can be sealed. It cannot be abstract, internal, or private. It must have a parameterless, public constructor. For languages that automatically generate a parameterless, public constructor (for example, C#), you can have no constructor at all. 
+The UDF class in a UDF assembly must be public. It can be sealed. It cannot be abstract, internal, or private. It must have a parameterless, public constructor. For languages that automatically generate a parameterless, public constructor (for example, C#), you can have no constructor at all.
   
     
     
 
 ### What is a supported UDF method?
 
-The UDF method in a UDF assembly must be public. The UDF method must be thread-safe. 
+The UDF method in a UDF assembly must be public. The UDF method must be thread-safe.
   
     
     
@@ -46,17 +46,17 @@ A UDF method cannot have:
 - **Optional** arguments
     
   
-- unsupported data types 
+- unsupported data types
     
   
-The UDF method must also have a supported return type. For a list of supported data types, see the "Data Types" section of this topic. 
+The UDF method must also have a supported return type. For a list of supported data types, see the "Data Types" section of this topic.
   
     
     
 
 ### Can I call a Web service from a UDF assembly?
 
-Yes. For an example, see the following UDF sample code. Also see  [How to: Create a UDF That Calls a Web Service](how-to-create-a-udf-that-calls-a-web-service.md). 
+Yes. For an example, see the following UDF sample code. Also see  [How to: Create a UDF That Calls a Web Service](how-to-create-a-udf-that-calls-a-web-service.md).
   
     
     
@@ -149,21 +149,21 @@ End Namespace
 
 ### What are the data types that can be used as UDF parameters?
 
-The supported data types are as follows: 
+The supported data types are as follows:
   
     
     
 
-- Numeric types: Double, Single, Int32, UInt32, Int16, UInt16, Byte, Sbyte 
+- Numeric types: Double, Single, Int32, UInt32, Int16, UInt16, Byte, Sbyte
     
   
-- String 
+- String
     
   
-- Boolean 
+- Boolean
     
   
-- Object arrays: one- or two- dimensional arrays, that is, object [] and object [,] 
+- Object arrays: one- or two- dimensional arrays, that is, object [] and object [,]
     
   
 - DateTime 
@@ -172,27 +172,27 @@ The supported data types are as follows:
 
 ### What are the supported return value types?
 
-The supported return value types are as follows: 
+The supported return value types are as follows:
   
     
     
 
-- Numeric types: Double, Single, Int32, UInt32, Int16, UInt16, Byte, Sbyte 
+- Numeric types: Double, Single, Int32, UInt32, Int16, UInt16, Byte, Sbyte
     
   
-- String 
+- String
     
   
-- Boolean 
+- Boolean
     
   
-- Object arrays: one- or two-dimensional arrays, that is, object [], object [,], int[] and int[,]) 
+- Object arrays: one- or two-dimensional arrays, that is, object [], object [,], int[] and int[,])
     
   
 - DateTime 
     
   
-- Object 
+- Object
     
   
 
@@ -201,7 +201,7 @@ The supported return value types are as follows:
 
 ### Are XLLs supported?
 
-Not directly. Excel Services will load and call only managed-code UDFs. However, you can write a managed-code wrapper to call the XLLs and deploy the XLLs to the server, together with the managed-code wrapper assembly. 
+Not directly. Excel Services will load and call only managed-code UDFs. However, you can write a managed-code wrapper to call the XLLs and deploy the XLLs to the server, together with the managed-code wrapper assembly.
   
     
     

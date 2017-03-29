@@ -6,7 +6,7 @@ ms.assetid: c8d68632-1b55-454c-961a-f3ddad731bf6
 
 
 # How to: Create and delete posts and retrieve the social feed by using the .NET client object model in SharePoint 2013
-Learn how to create and delete microblog posts and retrieve social feeds by using the SharePoint 2013 .NET client object model. 
+Learn how to create and delete microblog posts and retrieve social feeds by using the SharePoint 2013 .NET client object model.
 ## What are social feeds in SharePoint Server 2013?
 <a name="bk_intro"> </a>
 
@@ -14,7 +14,7 @@ In SharePoint Server 2013, a social feed is a collection of threads that represe
   
     
     
-For more information about working with  [SocialFeedManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.aspx) or for information about using other APIs to work with social feeds, see [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md). 
+For more information about working with  [SocialFeedManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.aspx) or for information about using other APIs to work with social feeds, see [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md).
   
     
     
@@ -22,15 +22,15 @@ For more information about working with  [SocialFeedManager](https://msdn.micros
 ## Prerequisites for setting up your development environment to work with social feeds by using the SharePoint 2013 .NET client object model
 <a name="bkmk_SetUpDevEnv"> </a>
 
-To create a console application that uses the .NET client object model to work with social feeds, you'll need: 
+To create a console application that uses the .NET client object model to work with social feeds, you'll need:
   
     
     
 
-- SharePoint Server 2013 with My Site configured, with personal sites created for the current user and a target user, with the current user following the target user, and with a few posts written by the target user 
+- SharePoint Server 2013 with My Site configured, with personal sites created for the current user and a target user, with the current user following the target user, and with a few posts written by the target user
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
 - **Full Control** access permissions to the User Profile service application for the logged-on user
@@ -48,7 +48,7 @@ To create a console application that uses the .NET client object model to work w
 <a name="bk_createconsole"> </a>
 
 
-1. Open Visual Studio and choose **File**, **New**, **Project**. 
+1. Open Visual Studio and choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
@@ -60,7 +60,7 @@ To create a console application that uses the .NET client object model to work w
 4. Name the project SocialFeedCSOM, and then choose the **OK** button.
     
   
-5. Add references to the following assemblies: 
+5. Add references to the following assemblies:
     
   - **Microsoft.SharePoint.Client**
     
@@ -82,19 +82,19 @@ To create a console application that uses the .NET client object model to work w
   -  [Delete posts and replies from the social feed](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-net-cli.md#bkmk_DeletePosts)
     
   
-7. To test the console application, on the menu bar, choose **Debug**, **Start Debugging**. 
+7. To test the console application, on the menu bar, choose **Debug**, **Start Debugging**.
     
   
 
 ## Code example: Publish posts and replies to the social feed by using the SharePoint 2013 .NET client object model
 <a name="bkmk_PubPosts"> </a>
 
-The following code example publishes a post and a reply from the current user. It shows how to: 
+The following code example publishes a post and a reply from the current user. It shows how to:
   
     
     
 
-- Define post content. This example includes a link in the post. 
+- Define post content. This example includes a link in the post.
     
   
 - Publish a post to the current user's feed by using the  [CreatePost](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.CreatePost.aspx) method and passing **null** as the _targetId_ parameter.
@@ -103,7 +103,7 @@ The following code example publishes a post and a reply from the current user. I
 - Get the  [News](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedType.News.aspx) feed type for the current user by using the [GetFeed](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.GetFeed.aspx) method.
     
   
-- Iterate through the feed to find all threads that can be replied to and to get information about threads and posts. 
+- Iterate through the feed to find all threads that can be replied to and to get information about threads and posts.
     
   
 - Reply to a post by using the  [CreatePost](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.CreatePost.aspx) method and passing the thread identifier as the _targetId_ parameter.
@@ -219,7 +219,7 @@ namespace SocialFeedCSOM
 ## Code example: Retrieve social feeds by using the SharePoint 2013 .NET client object model
 <a name="bkmk_GetFeeds"> </a>
 
-The following code example retrieves feeds for the current user and a target user. It shows how to: 
+The following code example retrieves feeds for the current user and a target user. It shows how to:
   
     
     
@@ -233,7 +233,7 @@ The following code example retrieves feeds for the current user and a target use
 - Iterate through the feeds to find all non-reference threads and to get information about threads and posts. Reference threads represent notifications that contain information about another thread. For example, if a user mentions someone in a post, the server generates a  [MentionReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.MentionReference.aspx) -type thread that contains the link to the original post and other metadata about the post.
     
   
-For more information about feed types, see  [Overview of feed types](work-with-social-feeds-in-sharepoint-2013.md#bkmk_FeedTypes). For more information about reference threads, see  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md). 
+For more information about feed types, see  [Overview of feed types](work-with-social-feeds-in-sharepoint-2013.md#bkmk_FeedTypes). For more information about reference threads, see  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md).
   
     
     
@@ -347,7 +347,7 @@ namespace SocialFeedCSOM
 ## Code example: Delete posts and replies from the social feed by using the SharePoint 2013 .NET client object model
 <a name="bkmk_DeletePosts"> </a>
 
-The following code example deletes a post or a reply from the current user's personal feed. It shows how to: 
+The following code example deletes a post or a reply from the current user's personal feed. It shows how to:
   
     
     
@@ -355,7 +355,7 @@ The following code example deletes a post or a reply from the current user's per
 - Get the  [Personal](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedType.Personal.aspx) feed type for the current user by using the [GetFeed](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.GetFeed.aspx) method.
     
   
-- Iterate through the threads in the feed to get information about the root post and replies. 
+- Iterate through the threads in the feed to get information about the root post and replies.
     
   
 - Delete a root post, reply, or thread by using the  [DeletePost](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.DeletePost.aspx) method (deleting a root post deletes the whole thread).

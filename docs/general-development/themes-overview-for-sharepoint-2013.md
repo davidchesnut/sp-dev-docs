@@ -6,11 +6,11 @@ ms.assetid: ae585dd3-82fe-46bb-ac93-065edc0a16f4
 
 
 # Themes overview for SharePoint 2013
-Learn about the theming experience in SharePoint 2013 and how themes can be used to customize the look and feel of sites. 
+Learn about the theming experience in SharePoint 2013 and how themes can be used to customize the look and feel of sites.
 ## Themes overview
 <a name="section1"> </a>
 
-Themes provide a quick and easy way to apply lightweight branding to a SharePoint 2013 site. A theme lets a site owner, or a user who has designer rights, customize a site by changing the site layout, color palette, font scheme, and background image. 
+Themes provide a quick and easy way to apply lightweight branding to a SharePoint 2013 site. A theme lets a site owner, or a user who has designer rights, customize a site by changing the site layout, color palette, font scheme, and background image.
   
     
     
@@ -29,7 +29,7 @@ The theming experience in SharePoint 2013 was redesigned to simplify the process
 ## Theming experience components
 <a name="section2"> </a>
 
-The theming experience includes the following: 
+The theming experience includes the following:
   
     
     
@@ -37,7 +37,7 @@ The theming experience includes the following:
   
     
     
-Color palettes are XML files (.spcolor files). They are stored in the Theme Gallery of the root site of the site collection in the **15** folder (http:// _SiteCollectionName_/_catalogs/theme/15/). 
+Color palettes are XML files (.spcolor files). They are stored in the Theme Gallery of the root site of the site collection in the **15** folder (http:// _SiteCollectionName_/_catalogs/theme/15/).
   
     
     
@@ -45,7 +45,7 @@ Color palettes are XML files (.spcolor files). They are stored in the Theme Gall
   
     
     
-Font schemes are XML files (.spfont files). They are stored in the Theme Gallery of the root site of the site collection in the **15** folder (http:// _SiteCollectionName_/_catalogs/theme/15/). 
+Font schemes are XML files (.spfont files). They are stored in the Theme Gallery of the root site of the site collection in the **15** folder (http:// _SiteCollectionName_/_catalogs/theme/15/).
   
     
     
@@ -61,7 +61,7 @@ Font schemes are XML files (.spfont files). They are stored in the Theme Gallery
   
     
     
-Master page preview files (.preview files) are stored in the Master Page Gallery of the site (http://  _SiteName_/_catalogs/masterpage/). 
+Master page preview files (.preview files) are stored in the Master Page Gallery of the site (http://  _SiteName_/_catalogs/masterpage/).
   
     
     
@@ -69,11 +69,11 @@ Master page preview files (.preview files) are stored in the Master Page Gallery
   
     
     
-The theming experience uses the Composed Looks list to determine the available designs. You can create additional designs by creating list items in the Composed Looks list. To access the composed looks list, on the **Site Settings** page, under **Web Designer Galleries**, choose **Composed looks**. 
+The theming experience uses the Composed Looks list to determine the available designs. You can create additional designs by creating list items in the Composed Looks list. To access the composed looks list, on the **Site Settings** page, under **Web Designer Galleries**, choose **Composed looks**.
   
     
     
- **Change the look** The **Change the look** wizard is the entry point to the theming experience that lets users change the look and feel of their site. To access the **Change the look** wizard, choose the **Settings** icon, and then choose **Change the look**. 
+ **Change the look** The **Change the look** wizard is the entry point to the theming experience that lets users change the look and feel of their site. To access the **Change the look** wizard, choose the **Settings** icon, and then choose **Change the look**.
   
     
     
@@ -85,29 +85,29 @@ The theming experience uses the Composed Looks list to determine the available d
 ## Using themes
 <a name="section3"> </a>
 
-SharePoint 2013 includes preinstalled themes (also referred to as designs or composed looks). You can use the preinstalled themes or create custom themes. 
+SharePoint 2013 includes preinstalled themes (also referred to as designs or composed looks). You can use the preinstalled themes or create custom themes.
   
     
     
 
 ### Preinstalled themes
 
-The theming experience lets users customize the preinstalled themes by changing the colors, fonts, layout, or background image. You do not have to create custom themes unless you want additional font schemes or color palettes. 
+The theming experience lets users customize the preinstalled themes by changing the colors, fonts, layout, or background image. You do not have to create custom themes unless you want additional font schemes or color palettes.
   
     
     
-When a preinstalled theme is modified, a new theme named Current is created automatically after the theme changes are applied. There is only one Current theme for a site. SharePoint 2013 does not give the user a way to save themes from the user interface. If you modify a preinstalled theme, apply the changes (creating a new theme named Current), and then modify a second preinstalled theme, the second preinstalled theme becomes the Current theme when the settings are applied. To save a modified theme, you can create a list item in the Composed Looks list that contains the same master page, color palette, font scheme, and background image URLs of the modified theme (the modified theme is listed as Current in the Composed Looks list). 
+When a preinstalled theme is modified, a new theme named Current is created automatically after the theme changes are applied. There is only one Current theme for a site. SharePoint 2013 does not give the user a way to save themes from the user interface. If you modify a preinstalled theme, apply the changes (creating a new theme named Current), and then modify a second preinstalled theme, the second preinstalled theme becomes the Current theme when the settings are applied. To save a modified theme, you can create a list item in the Composed Looks list that contains the same master page, color palette, font scheme, and background image URLs of the modified theme (the modified theme is listed as Current in the Composed Looks list).
   
     
     
 
 ### Custom themes
 
-You can create custom themes by creating additional color palettes and font schemes and uploading them to the Theme Gallery. The new color palettes and font schemes are then available to you in the theming experience or when you want to apply a theme programmatically. Similarly, if you want to have additional site layouts to choose from, you can upload additional master pages, and corresponding preview files, to the Master Page Gallery. 
+You can create custom themes by creating additional color palettes and font schemes and uploading them to the Theme Gallery. The new color palettes and font schemes are then available to you in the theming experience or when you want to apply a theme programmatically. Similarly, if you want to have additional site layouts to choose from, you can upload additional master pages, and corresponding preview files, to the Master Page Gallery.
   
     
     
-You can create new designs by creating new list items in the Composed Looks list. Create a list item and specify the master page, color palette, font scheme, and background image for the new design. 
+You can create new designs by creating new list items in the Composed Looks list. Create a list item and specify the master page, color palette, font scheme, and background image for the new design.
   
     
     

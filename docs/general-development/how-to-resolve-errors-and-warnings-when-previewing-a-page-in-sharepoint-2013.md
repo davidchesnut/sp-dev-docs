@@ -6,23 +6,23 @@ ms.assetid: 03f72f65-b22b-4304-be92-f44ce0619372
 
 
 # How to: Resolve errors and warnings when previewing a page in SharePoint 2013
-After you convert an HTML file into a SharePoint 2013 master page, or after you create a page layout, you can preview that page in the browser. But before you can preview a master page or page layout, you may have to resolve any issues that prevent the server-side preview from rendering your page. 
+After you convert an HTML file into a SharePoint 2013 master page, or after you create a page layout, you can preview that page in the browser. But before you can preview a master page or page layout, you may have to resolve any issues that prevent the server-side preview from rendering your page.
 ## Introduction to resolving preview errors
 <a name="Introduction"> </a>
 
-After you convert an HTML file into a SharePoint 2013 master page, or after you create a page layout, you can preview that page in the browser. As you edit and save your HTML master page or page layout, you can refresh the preview to see exactly how SharePoint 2013 renders your page. 
+After you convert an HTML file into a SharePoint 2013 master page, or after you create a page layout, you can preview that page in the browser. As you edit and save your HTML master page or page layout, you can refresh the preview to see exactly how SharePoint 2013 renders your page.
   
     
     
-The preview in Design Manager is a live server-side preview, so any snippets or controls on your page, such as a navigation control or a search-driven Web Part, use live data. Also, when you preview a master page or page layout, you can choose a generic preview of just that file, or you can choose to preview how a specific page in your site renders with that master page or page layout. The server-side preview is a highly useful tool that complements the design-time preview in an HTML editor. For more information, see  [How to: Change the preview page in SharePoint 2013 Design Manager](how-to-change-the-preview-page-in-sharepoint-2013-design-manager.md). 
+The preview in Design Manager is a live server-side preview, so any snippets or controls on your page, such as a navigation control or a search-driven Web Part, use live data. Also, when you preview a master page or page layout, you can choose a generic preview of just that file, or you can choose to preview how a specific page in your site renders with that master page or page layout. The server-side preview is a highly useful tool that complements the design-time preview in an HTML editor. For more information, see  [How to: Change the preview page in SharePoint 2013 Design Manager](how-to-change-the-preview-page-in-sharepoint-2013-design-manager.md).
   
     
     
-But before you can preview a master page or page layout, you may have to resolve any issues that prevent the server-side preview from rendering your page. If the server-side preview isn't working, this means that the master page or page layout also won't work after they're applied to your site. In Design Manager, after you convert a master page or create a page layout, you can click the file name or conversion status to preview that file. On the preview page, the notification area at the top of the page displays any errors or warnings. 
+But before you can preview a master page or page layout, you may have to resolve any issues that prevent the server-side preview from rendering your page. If the server-side preview isn't working, this means that the master page or page layout also won't work after they're applied to your site. In Design Manager, after you convert a master page or create a page layout, you can click the file name or conversion status to preview that file. On the preview page, the notification area at the top of the page displays any errors or warnings.
   
     
     
-Here are the preview errors and warnings that you might encounter, and help for how to resolve them. 
+Here are the preview errors and warnings that you might encounter, and help for how to resolve them.
   
     
     
@@ -60,7 +60,7 @@ If you want an HTML **<form>** tag in the page layout, you should put the form w
 <!--CE: End Create Snippets From Custom ASP.NET Markup Snippet-->
 ```
 
-You can also add the HTML Form Web Part or the InfoPath Form Web Part to your page from the Snippet Gallery. For more information, see  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md). 
+You can also add the HTML Form Web Part or the InfoPath Form Web Part to your page from the Snippet Gallery. For more information, see  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md).
   
     
     
@@ -78,7 +78,7 @@ You can also add the HTML Form Web Part or the InfoPath Form Web Part to your pa
 
 ### Resolution
 
-For an HTML file to be converted into the corresponding ASP.NET file, the HTML file must be XML-compliant. This error identifies specific markup in your HTML file that is not XML-compliant. Run the HTML file through an XML validator, fix any issues in your HTML editor, save the file, and then refresh the preview. 
+For an HTML file to be converted into the corresponding ASP.NET file, the HTML file must be XML-compliant. This error identifies specific markup in your HTML file that is not XML-compliant. Run the HTML file through an XML validator, fix any issues in your HTML editor, save the file, and then refresh the preview.
   
     
     
@@ -107,7 +107,7 @@ For an HTML file to be converted into the corresponding ASP.NET file, the HTML f
 
 ### Resolution
 
-You see this error when there is a problem with a SharePoint snippet in your HTML file. To fix this error, undo whatever change caused the error, or replace the problematic snippet with a new one, either from the Snippet Gallery or from a different master page or page layout file that has a working version of the snippet. In your HTML editor, after you fix or replace the snippet, save the page, and then refresh the preview. 
+You see this error when there is a problem with a SharePoint snippet in your HTML file. To fix this error, undo whatever change caused the error, or replace the problematic snippet with a new one, either from the Snippet Gallery or from a different master page or page layout file that has a working version of the snippet. In your HTML editor, after you fix or replace the snippet, save the page, and then refresh the preview.
   
     
     
@@ -125,7 +125,7 @@ You see this error when there is a problem with a SharePoint snippet in your HTM
 
 ### Resolution
 
-For a page layout to work with a given master page, the two must have the same set of content placeholders. If you create a page layout based on a particular master page, and then edit that HTML master page, you'll see this message. Even if you know that changes to the master page didn't add or remove content placeholders, you should update the content regions of your page layout anyway, so that you can preview any changes from the master page that might affect your page layout. 
+For a page layout to work with a given master page, the two must have the same set of content placeholders. If you create a page layout based on a particular master page, and then edit that HTML master page, you'll see this message. Even if you know that changes to the master page didn't add or remove content placeholders, you should update the content regions of your page layout anyway, so that you can preview any changes from the master page that might affect your page layout.
   
     
     

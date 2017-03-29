@@ -1,26 +1,26 @@
 ---
 title: Step 4 Testing and Calling UDFs from Cells
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: d3e6aa72-2eb8-4b4b-a0eb-273486890d00
 ---
 
 
 # Step 4: Testing and Calling UDFs from Cells
 
-In this step, you will test the SampleUdf.dll assembly you created, deployed, and enabled in the previous steps. To test the user-defined function (UDF), you will: 
+In this step, you will test the SampleUdf.dll assembly you created, deployed, and enabled in the previous steps. To test the user-defined function (UDF), you will:
   
     
     
 
 
-1. Create a workbook with a named range and formulas that call the functions in SampleUdf.dll. 
+1. Create a workbook with a named range and formulas that call the functions in SampleUdf.dll.
     
   
-2. Save the workbook to a SharePoint document library that is a trusted location. 
+2. Save the workbook to a SharePoint document library that is a trusted location.
     
    > [!NOTE]
-   > It is assumed that you have already created a SharePoint document library and made it a trusted location. For information about how to trust a location, see the "Trusting a Location" section in  [Step 3: Deploying and Enabling UDFs](step-3-deploying-and-enabling-udfs.md). 
-3. Change parameters to recalculate the workbook. 
+   > It is assumed that you have already created a SharePoint document library and made it a trusted location. For information about how to trust a location, see the "Trusting a Location" section in  [Step 3: Deploying and Enabling UDFs](step-3-deploying-and-enabling-udfs.md).
+3. Change parameters to recalculate the workbook.
     
   
 
@@ -30,32 +30,32 @@ In this step, you will test the SampleUdf.dll assembly you created, deployed, an
 ### To call UDFs from cells
 
 
-1. Start Microsoft Office Excel 2007. 
+1. Start Microsoft Office Excel 2007.
     
   
-2. In cell A1, type the formula to call the  `MyDouble` function in SampleUdf.dll. The `MyDouble` function takes an argument of type **double**. In this example, you will take the argument from cell B1. In cell A1, type =MyDouble(B1). 
+2. In cell A1, type the formula to call the  `MyDouble` function in SampleUdf.dll. The `MyDouble` function takes an argument of type **double**. In this example, you will take the argument from cell B1. In cell A1, type =MyDouble(B1).
     
    > [!NOTE]
    > The formula will evaluate to "#NAME?" in Excel. The formula will be evaluated only when the workbook is displayed in Excel Services. 
 
    > [!NOTE]
-   > You can run UDFs on both the client and server. A future article published on MSDN will explain the details. They are omitted here for the sake of simplicity. 
-3. In cell B1, type the number 8. 
+   > You can run UDFs on both the client and server. A future article published on MSDN will explain the details. They are omitted here for the sake of simplicity.
+3. In cell B1, type the number 8.
     
   
-4. Make cell B1 a named range. First click the **Formulas** tab. Then click cell B1 to select it. On the **Formulas** tab, in the **Named Cells** group, click **Name a Range**. In the **New Name** dialog box, in the **Name** box, type **MyDoubleParam**. 
+4. Make cell B1 a named range. First click the **Formulas** tab. Then click cell B1 to select it. On the **Formulas** tab, in the **Named Cells** group, click **Name a Range**. In the **New Name** dialog box, in the **Name** box, type **MyDoubleParam**.
     
   
-5. In cell A2, type the formula to call the  `ReturnDateTimeToday` function. Type=ReturnDateTimeToday(). 
+5. In cell A2, type the formula to call the  `ReturnDateTimeToday` function. Type=ReturnDateTimeToday().
     
   
-6. In cell A3, type the formula to call the  `ReturnDateTimeToday` function. Type=ReturnDateTimeToday(). Next, right-click cell A3 to display the menu. Click **Format Cells**. 
+6. In cell A3, type the formula to call the  `ReturnDateTimeToday` function. Type=ReturnDateTimeToday(). Next, right-click cell A3 to display the menu. Click **Format Cells**.
     
   
 7. In the **Format Cells** dialog box, on the **Number** tab, select **Date**. Select a date format type from the **Type** list—for example, *3/4/2001.
     
   
-8. Click **OK**. 
+8. Click **OK**.
     
   
 9. Save the workbook to a location of your choice on the local drive. Name the workbook "TestSampleUdf.xlsx". 
@@ -68,7 +68,7 @@ In this step, you will test the SampleUdf.dll assembly you created, deployed, an
 1. Click the **Microsoft Office Button**, point to **Save As**, and click **Save for Excel Services**. 
     
   
-2. In the **Save As** dialog box, click **Excel Services Options**. 
+2. In the **Save As** dialog box, click **Excel Services Options**.
     
   
 3. In the **Excel Services Options** dialog box, on the **Show** tab, make sure that **Entire Workbook** is selected.
@@ -83,13 +83,13 @@ In this step, you will test the SampleUdf.dll assembly you created, deployed, an
 6. Click **OK**. You should now see "MyDoubleParam" listed in the **Parameters** list.
     
   
-7. Click **OK**. 
+7. Click **OK**.
     
   
 8. In the **Save As** dialog box, make sure that the **Open this workbook in my browser after I save** check box is selected.
     
   
-9. In the **File name** box, type the path to the trusted SharePoint document library where you want to store this workbook. For example, _http://MyServer002/Shared%20Documents/TestSampleUdf.xlsx_. 
+9. In the **File name** box, type the path to the trusted SharePoint document library where you want to store this workbook. For example, _http://MyServer002/Shared%20Documents/TestSampleUdf.xlsx_.
     
   
 10. Click **Save**. You should see TestSampleUdf.xlsx in Excel Web Access. In cell A1, you should see the number "72" because cell B1 * 9 = 8 * 9, which is 72. In cell A2 you should see a number. In cell A3, you should see the current date. 

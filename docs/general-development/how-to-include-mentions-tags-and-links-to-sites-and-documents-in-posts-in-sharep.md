@@ -14,7 +14,7 @@ In a social feed, the simplest form of post content contains only text, but you 
 
 
 > [!NOTE]
-> To add embedded pictures, videos, or documents to a post's content, you add a  [SocialAttachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialAttachment.aspx) object to the [SocialPostCreationData.Attachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.Attachment.aspx) property. For more information, see [How to: Embed images, videos, and documents in posts in SharePoint Server 2013](how-to-embed-images-videos-and-documents-in-posts-in-sharepoint-server-2013.md). 
+> To add embedded pictures, videos, or documents to a post's content, you add a  [SocialAttachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialAttachment.aspx) object to the [SocialPostCreationData.Attachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.Attachment.aspx) property. For more information, see [How to: Embed images, videos, and documents in posts in SharePoint Server 2013](how-to-embed-images-videos-and-documents-in-posts-in-sharepoint-server-2013.md).
   
     
     
@@ -29,21 +29,21 @@ The API described in this article is from the .NET client object model. However,
 ## Prerequisites for using the code examples to add links to a post in SharePoint Server 2013
 <a name="bk_preReqs"> </a>
 
-The code examples in this article show how to add links to microblog posts. These examples are from console applications that use the following SharePoint assemblies: 
+The code examples in this article show how to add links to microblog posts. These examples are from console applications that use the following SharePoint assemblies:
   
     
     
 
-- Microsoft.SharePoint.Client 
+- Microsoft.SharePoint.Client
     
   
-- Microsoft.SharePoint.Client.Runtime 
+- Microsoft.SharePoint.Client.Runtime
     
   
-- Microsoft.SharePoint.Client.UserProfilies 
+- Microsoft.SharePoint.Client.UserProfilies
     
   
-For instructions about how to set up your development environment and create a console application, see  [How to: Create and delete posts and retrieve the social feed by using the .NET client object model in SharePoint 2013](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-net-cli.md). 
+For instructions about how to set up your development environment and create a console application, see  [How to: Create and delete posts and retrieve the social feed by using the .NET client object model in SharePoint 2013](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-net-cli.md).
   
     
     
@@ -51,7 +51,7 @@ For instructions about how to set up your development environment and create a c
 ## Example: Include links to websites, SharePoint sites, and documents in a post in SharePoint Server 2013
 <a name="bkmk_addLinks"> </a>
 
-The following code example publishes a post that contains links to a website, a SharePoint site, and a document. It shows how to: 
+The following code example publishes a post that contains links to a website, a SharePoint site, and a document. It shows how to:
   
     
     
@@ -59,7 +59,7 @@ The following code example publishes a post that contains links to a website, a 
 - Create  [SocialDataItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItem.aspx) objects that represent the links. Each instance sets the [SocialDataItemType](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItemType.aspx) field for the link type, the display text for the link, and the link URI.
     
   
-- Add placeholders to the post text to indicate where the link's display text should appear. 
+- Add placeholders to the post text to indicate where the link's display text should appear.
     
   
 - Add the link objects to the  [ContentItems](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.ContentItems.aspx) property of the [SocialPostCreationData](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.aspx) object that's used to create the post.
@@ -72,13 +72,13 @@ The following code example publishes a post that contains links to a website, a 
     
     
 
-In the social feed, clicking a link to a website, SharePoint site, or document opens the item in a separate browser window. 
+In the social feed, clicking a link to a website, SharePoint site, or document opens the item in a separate browser window.
   
     
     
 
 > [!NOTE]
-> Change the placeholder values for the URL variables before you run the code. 
+> Change the placeholder values for the URL variables before you run the code.
   
     
     
@@ -172,7 +172,7 @@ namespace IncludeLinksInPost
 ## Example: Mention someone in a post in SharePoint Server 2013
 <a name="bkmk_addMention"> </a>
 
-The following code example publishes a post that mentions a user. It shows how to: 
+The following code example publishes a post that mentions a user. It shows how to:
   
     
     
@@ -180,7 +180,7 @@ The following code example publishes a post that mentions a user. It shows how t
 - Create a  [SocialDataItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItem.aspx) object to represent a mention, which is a link to a user. The [SocialDataItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItem.aspx) specifies the [SocialDataItemType.User](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItemType.User.aspx) field and the mentioned person's account name. You can set the account name by using either the person's login or email address.
     
   
-- Add a placeholder to the post text to indicate where the mentioned person's display name should appear. 
+- Add a placeholder to the post text to indicate where the mentioned person's display name should appear.
     
   
 - Add the  [SocialDataItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItem.aspx) to the [ContentItems](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.ContentItems.aspx) property of the [SocialPostCreationData](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.aspx) object that's used to create the post.
@@ -264,7 +264,7 @@ namespace IncludeMentionInPost
 ## Example: Include a tag in a post in SharePoint Server 2013
 <a name="bkmk_addTag"> </a>
 
-The following code example publishes a post that includes a tag. It shows how to: 
+The following code example publishes a post that includes a tag. It shows how to:
   
     
     
@@ -272,7 +272,7 @@ The following code example publishes a post that includes a tag. It shows how to
 - Create a  [SocialDataItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItem.aspx) object to represent the tag. The [SocialDataItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItem.aspx) specifies the [SocialDataItemType.Tag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItemType.Tag.aspx) field and the tag name, which must include a **#** character.
     
   
-- Add a placeholder to the post text to indicate where the tag should appear. 
+- Add a placeholder to the post text to indicate where the tag should appear.
     
   
 - Add the  [SocialDataItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialDataItem.aspx) to the [ContentItems](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.ContentItems.aspx) property of the [SocialPostCreationData](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.aspx) object that's used to create the post.

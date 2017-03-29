@@ -7,12 +7,12 @@ ms.assetid: eb819681-5a4f-49ae-b7f4-334366c51112
 
 # How to: Set Various Credentials
 
-You must set credentials for your users before they can call Excel Web Services by using your custom application. You must explicitly set credentials even if you intend to use the default credentials. Excel Web Services uses the authentication schemes that Microsoft SharePoint Foundation supports. For more information about SharePoint Foundation authentication schemes, see the SharePoint Foundation documentation in this SDK and  [Incoming claims: Signing into SharePoint 2013](incoming-claims-signing-into-sharepoint-2013.md). 
+You must set credentials for your users before they can call Excel Web Services by using your custom application. You must explicitly set credentials even if you intend to use the default credentials. Excel Web Services uses the authentication schemes that Microsoft SharePoint Foundation supports. For more information about SharePoint Foundation authentication schemes, see the SharePoint Foundation documentation in this SDK and  [Incoming claims: Signing into SharePoint 2013](incoming-claims-signing-into-sharepoint-2013.md).
   
     
     
 
-The following examples show how to set credentials. 
+The following examples show how to set credentials.
 ## To use the current user's credentials
 
 The following code uses the current user's logon credentials to make a request to the Web service. 
@@ -236,7 +236,7 @@ In this example, **LoginNameTextBox**, **LoginPWDTextBox**, and **LoginDomainTex
   
     
     
-For more information about how to use the **CredentialCache** class and the **NetworkCredential** class, and how to use them securely, see the Microsoft Visual Studio documentation, or [NetworkCredential Class](http://msdn.microsoft.com/library/60b63419-9606-4fdc-a30f-257ded236f16.aspx). 
+For more information about how to use the **CredentialCache** class and the **NetworkCredential** class, and how to use them securely, see the Microsoft Visual Studio documentation, or [NetworkCredential Class](http://msdn.microsoft.com/library/60b63419-9606-4fdc-a30f-257ded236f16.aspx).
   
     
     

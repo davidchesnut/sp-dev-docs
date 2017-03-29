@@ -6,7 +6,7 @@ ms.assetid: 15a81428-da94-40b8-8ed4-6a12f05661e2
 
 
 # Machine Translation Services in SharePoint 2013
-Learn about the Machine Translation Service, which is a new service application in SharePoint 2013 that provides automatic machine translation of files and sites. 
+Learn about the Machine Translation Service, which is a new service application in SharePoint 2013 that provides automatic machine translation of files and sites.
 ## Machine Translation Service overview
 <a name="TranslationSvc_Overview"> </a>
 
@@ -21,7 +21,7 @@ Machine Translation Service is a new service application in SharePoint 2013 that
   
     
     
-The Machine Translation Service application processes translation requests asynchronously and synchronously. Asynchronous translation requests are processed when the translation timer job executes. The default interval of the translation timer job is 15 minutes; you can manage this setting in Central Administration or by using Windows PowerShell. You can also set the timer to execute immediately using the following command: 
+The Machine Translation Service application processes translation requests asynchronously and synchronously. Asynchronous translation requests are processed when the translation timer job executes. The default interval of the translation timer job is 15 minutes; you can manage this setting in Central Administration or by using Windows PowerShell. You can also set the timer to execute immediately using the following command:
   
     
     
@@ -34,7 +34,7 @@ $tj = get-sptimerjob "Sharepoint Translation Services"
 $tj.Runnow()
 ```
 
-Synchronous translation requests are processed as soon as they are submitted. 
+Synchronous translation requests are processed as soon as they are submitted.
   
     
     
@@ -42,11 +42,11 @@ Synchronous translation requests are processed as soon as they are submitted.
 ### Shared components with Word Automation Services
 <a name="TranslationSvc_SharedWAS"> </a>
 
-The Machine Translation Service architecture shares several components from the Microsoft Word Automation Services architecture. For more information about the Word Automation Services architecture, see  [Word Automation Services Architecture](http://msdn.microsoft.com/library/567bf68d-46bb-4ee8-981d-186549b9e5b8%28Office.15%29.aspx). 
+The Machine Translation Service architecture shares several components from the Microsoft Word Automation Services architecture. For more information about the Word Automation Services architecture, see  [Word Automation Services Architecture](http://msdn.microsoft.com/library/567bf68d-46bb-4ee8-981d-186549b9e5b8%28Office.15%29.aspx).
   
     
     
-The Machine Translation Service object model is modeled after the Word Automation Services object model, so if you are familiar with Word Automation Services programming, you'll find similarities with programming against the Machine Translation Service object model. 
+The Machine Translation Service object model is modeled after the Word Automation Services object model, so if you are familiar with Word Automation Services programming, you'll find similarities with programming against the Machine Translation Service object model.
   
     
     
@@ -58,7 +58,7 @@ Applications that use the server object model must run directly on a server that
   
     
     
-Using the server object model, you can submit requests to the Machine Translation Service application asynchronously or synchronously (for instant translation). The Machine Translation Service application has two working queues for storing translation requests: the asynchronous queue and the synchronous queue. Requests in the synchronous queue are treated as higher priority and are translated before requests in the asynchronous queue. The requests are routed to one of these queues based on the class that you use. 
+Using the server object model, you can submit requests to the Machine Translation Service application asynchronously or synchronously (for instant translation). The Machine Translation Service application has two working queues for storing translation requests: the asynchronous queue and the synchronous queue. Requests in the synchronous queue are treated as higher priority and are translated before requests in the asynchronous queue. The requests are routed to one of these queues based on the class that you use.
   
     
     
@@ -70,7 +70,7 @@ Using the server object model, you can submit requests to the Machine Translatio
   
     
     
-For sample code demonstrating how to use the server object model from a console application, see  [SharePoint 2013: Access Machine Translation Service using server object model](http://code.msdn.microsoft.com/SharePoint-2013-Access-86639c3d ). 
+For sample code demonstrating how to use the server object model from a console application, see  [SharePoint 2013: Access Machine Translation Service using server object model](http://code.msdn.microsoft.com/SharePoint-2013-Access-86639c3d ).
   
     
     
@@ -81,7 +81,7 @@ The **TranslationJob** class defines a set of items to be translated. This can b
   
     
     
-The following code shows how to translate a single file asynchronously. 
+The following code shows how to translate a single file asynchronously.
   
     
     
@@ -97,7 +97,7 @@ job.Start();
 
 ```
 
-The following code shows how to translate every file within a folder asynchronously. 
+The following code shows how to translate every file within a folder asynchronously.
   
     
     
@@ -123,7 +123,7 @@ using (SPSite siteIn = new SPSite(inputFolder))
 }
 ```
 
-The following code shows how to translate every file within a document library asynchronously. 
+The following code shows how to translate every file within a document library asynchronously.
   
     
     
@@ -159,7 +159,7 @@ You use the **SyncTranslator** class to request instant translation for files an
   
     
     
-The following code shows how to translate a single file synchronously. 
+The following code shows how to translate a single file synchronously.
   
     
     
@@ -174,7 +174,7 @@ TranslationItemInfo itemInfo = job.Translate(input, output);
 
 ```
 
-The following code shows how to translate a stream synchronously. 
+The following code shows how to translate a stream synchronously.
   
     
     
@@ -194,7 +194,7 @@ outputStream.Close();
 
 ```
 
-The following code shows how to translate a sequence of bytes synchronously. 
+The following code shows how to translate a sequence of bytes synchronously.
   
     
     
@@ -222,7 +222,7 @@ outputStream.Close();
 ### Permissions
 <a name="TranslationSvc_Permissions"> </a>
 
-If the user who the translation request is running for can access the file to be translated, and that user can access the output location for the file, the user clears the security check and the file is translated. 
+If the user who the translation request is running for can access the file to be translated, and that user can access the output location for the file, the user clears the security check and the file is translated.
   
     
     
@@ -230,7 +230,7 @@ If the user who the translation request is running for can access the file to be
 ## Using the Machine Translation Services client object model
 <a name="TranslationSvc_UsingCSOM"> </a>
 
-Machine Translation Service also includes a client object model (CSOM) that enables access to the Machine Translation Service API for online, on-premises, and mobile development. Client applications can use the CSOM to access server content and functionality. The CSOM implements most of the translation functionality of the server, but the CSOM and the server-side object model do not have one-to-one parity. Asynchronous translation of individual files, and files in a document library or folder are supported. Synchronous translation of files is supported, but file streams are not supported. 
+Machine Translation Service also includes a client object model (CSOM) that enables access to the Machine Translation Service API for online, on-premises, and mobile development. Client applications can use the CSOM to access server content and functionality. The CSOM implements most of the translation functionality of the server, but the CSOM and the server-side object model do not have one-to-one parity. Asynchronous translation of individual files, and files in a document library or folder are supported. Synchronous translation of files is supported, but file streams are not supported.
   
     
     
@@ -238,7 +238,7 @@ The Machine Translation Service CSOM includes a .NET managed client-side object 
   
     
     
-For more information about the SharePoint CSOM, see  [SharePoint 2010 Client Object Model](http://msdn.microsoft.com/library/8c086b11-2b8b-41ec-82ae-cd4fef0aeac6%28Office.15%29.aspx). For more information about the **ClientContext** object, which is the entry point to the CSOM, see [Client Context as Central Object](http://msdn.microsoft.com/library/6299f0df-ab4c-40e6-b709-ec80271c99b3%28Office.15%29.aspx). 
+For more information about the SharePoint CSOM, see  [SharePoint 2010 Client Object Model](http://msdn.microsoft.com/library/8c086b11-2b8b-41ec-82ae-cd4fef0aeac6%28Office.15%29.aspx). For more information about the **ClientContext** object, which is the entry point to the CSOM, see [Client Context as Central Object](http://msdn.microsoft.com/library/6299f0df-ab4c-40e6-b709-ec80271c99b3%28Office.15%29.aspx).
   
     
     
@@ -252,11 +252,11 @@ Table 1 shows the equivalent objects that the CSOM APIs provide for the Machine 
 
 |**Server**|**.NET Managed and Silverlight**|**JavaScript**|
 |:-----|:-----|:-----|
-|Microsoft.Office.TranslationServices.TranslationJob |Microsoft.Office.TranslationServices.Client.TranslationJob |SP.Translation.TranslationJob |
-|Microsoft.Office.TranslationServices.TranslationJobInfo |Microsoft.Office.TranslationServices.Client.TranslationJobInfo |SP.Translation.TranslationJobInfo |
-|Microsoft.Office.TranslationServices.TranslationItemInfo |Microsoft.Office.TranslationServices.Client.TranslationItemInfo |SP.Translation.TranslationItemInfo |
-|Microsoft.Office.TranslationServices.TranslationJobStatus |Microsoft.Office.TranslationServices.Client.TranslationJobStatus |SP.Translation.TranslationJobStatus |
-|Microsoft.Office.TranslationServices.SyncTranslator |Microsoft.Office.TranslationServices.Client.SyncTranslator |SP.Translation.SyncTranslator |
+|Microsoft.Office.TranslationServices.TranslationJob|Microsoft.Office.TranslationServices.Client.TranslationJob|SP.Translation.TranslationJob|
+|Microsoft.Office.TranslationServices.TranslationJobInfo|Microsoft.Office.TranslationServices.Client.TranslationJobInfo|SP.Translation.TranslationJobInfo|
+|Microsoft.Office.TranslationServices.TranslationItemInfo|Microsoft.Office.TranslationServices.Client.TranslationItemInfo|SP.Translation.TranslationItemInfo|
+|Microsoft.Office.TranslationServices.TranslationJobStatus|Microsoft.Office.TranslationServices.Client.TranslationJobStatus|SP.Translation.TranslationJobStatus|
+|Microsoft.Office.TranslationServices.SyncTranslator|Microsoft.Office.TranslationServices.Client.SyncTranslator|SP.Translation.SyncTranslator|
    
 
 ### Machine Translation Service .NET managed CSOM and Silverlight CSOM
@@ -274,7 +274,7 @@ For the .NET managed CSOM, get a **ClientContext** instance (located in the **Mi
   
     
     
-For sample code demonstrating how to use the .NET Managed CSOM, see  [SharePoint 2013: Access Machine Translation Service using the client object model](http://code.msdn.microsoft.com/SharePoint-2013-Perform-a-8e53b06a). 
+For sample code demonstrating how to use the .NET Managed CSOM, see  [SharePoint 2013: Access Machine Translation Service using the client object model](http://code.msdn.microsoft.com/SharePoint-2013-Perform-a-8e53b06a).
   
     
     
@@ -290,11 +290,11 @@ For the Silverlight CSOM, get a **ClientContext** instance (located in the **Mic
   
     
     
-For sample code demonstrating how to use the Silverlight CSOM, see  [SharePoint 2013: Access Machine Translation Service from Silverlight application](http://code.msdn.microsoft.com/SharePoint-2013-Access-cdaff6b2). 
+For sample code demonstrating how to use the Silverlight CSOM, see  [SharePoint 2013: Access Machine Translation Service from Silverlight application](http://code.msdn.microsoft.com/SharePoint-2013-Access-cdaff6b2).
   
     
     
-To translate a single file asynchronously: 
+To translate a single file asynchronously:
   
     
     
@@ -318,7 +318,7 @@ clientContext.ExecuteQuery();
 string jobID = job.JobId;
 ```
 
-To translate a folder asynchronously: 
+To translate a folder asynchronously:
   
     
     
@@ -342,7 +342,7 @@ clientContext.ExecuteQuery();
 string jobID = job.JobId;
 ```
 
-To translate a library asynchronously: 
+To translate a library asynchronously:
   
     
     
@@ -366,7 +366,7 @@ clientContext.ExecuteQuery();
 string jobID = job.JobId;
 ```
 
-To translate a single file synchronously: 
+To translate a single file synchronously:
   
     
     
@@ -394,7 +394,7 @@ string inProgressStatus = clientContext.Value.InProgress;
 string notStartedStatus = clientContext.Value.NotStarted;
 ```
 
-To retrieve all languages that are supported by the Machine Translation Service: 
+To retrieve all languages that are supported by the Machine Translation Service:
   
     
     
@@ -412,7 +412,7 @@ foreach (string item in supportedLanguages)
 }
 ```
 
-To check whether a specific language is supported: 
+To check whether a specific language is supported:
   
     
     
@@ -427,7 +427,7 @@ isSupported = TranslationJob.IsLanguageSupported(clientContext, "language");
 clientContext.ExecuteQuery();
 ```
 
-To retrieve all the file name extensions that are supported by the Machine Translation Service: 
+To retrieve all the file name extensions that are supported by the Machine Translation Service:
   
     
     
@@ -445,7 +445,7 @@ foreach (string item in fileExt)
 }
 ```
 
-To check whether a specific file name extension is supported: 
+To check whether a specific file name extension is supported:
   
     
     
@@ -461,7 +461,7 @@ clientContext.ExecuteQuery();
 
 ```
 
-To check the file size limit for a specific file name extension: 
+To check the file size limit for a specific file name extension:
   
     
     
@@ -492,11 +492,11 @@ For the JavaScript CSOM, get an **SP.ClientContext** instance, and then use the 
   
     
     
-For sample code demonstrating how to use the JavaScript CSOM, see  [SharePoint 2013: Accessing the Machine Translation Service with JavaScript](http://code.msdn.microsoft.com/SharePoint-2013-Accessing-647f6dd9). 
+For sample code demonstrating how to use the JavaScript CSOM, see  [SharePoint 2013: Accessing the Machine Translation Service with JavaScript](http://code.msdn.microsoft.com/SharePoint-2013-Accessing-647f6dd9).
   
     
     
-To translate a single file asynchronously: 
+To translate a single file asynchronously:
   
     
     
@@ -517,7 +517,7 @@ clientContext.load(asyncJob);
 clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceededASync),Function.createDelegate(this, this.onQueryFailed));
 ```
 
-To translate a folder asynchronously: 
+To translate a folder asynchronously:
   
     
     
@@ -540,7 +540,7 @@ clientContext.load(asyncJob);
 clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceededASync),Function.createDelegate(this, this.onQueryFailed));
 ```
 
-To translate a library asynchronously: 
+To translate a library asynchronously:
   
     
     
@@ -563,7 +563,7 @@ clientContext.load(asyncJob);
 clientContext.executeQueryAsync(Function.createDelegate(this,this.onQuerySucceededASync),Function.createDelegate(this, this.onQueryFailed));
 ```
 
-To translate a single file synchronously: 
+To translate a single file synchronously:
   
     
     
@@ -582,7 +582,7 @@ clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySuccee
 Function.createDelegate(this, this.onQueryFailed));
 ```
 
-To retrieve all languages that are supported by the Machine Translation Service: 
+To retrieve all languages that are supported by the Machine Translation Service:
   
     
     
@@ -597,7 +597,7 @@ var result= SP.Translation.TranslationJob.enumerateSupportedLanguages(clientCont
 clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceededListAllLang),Function.createDelegate(this, this.onQueryFailed));
 ```
 
-To check whether a specific language is supported: 
+To check whether a specific language is supported:
   
     
     
@@ -612,7 +612,7 @@ var result= SP.Translation.TranslationJob.isLanguageSupported(clientContext," la
 clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceededTestLang),Function.createDelegate(this, this.onQueryFailed));
 ```
 
-To retrieve all the file name extensions that are supported by the Machine Translation Service: 
+To retrieve all the file name extensions that are supported by the Machine Translation Service:
   
     
     
@@ -627,7 +627,7 @@ var result= SP.Translation.TranslationJob.enumerateSupportedFileExtensions(clien
 clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceededListAllFileExt),Function.createDelegate(this, this.onQueryFailed));
 ```
 
-To check whether a specific file name extension is supported: 
+To check whether a specific file name extension is supported:
   
     
     
@@ -646,7 +646,7 @@ clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySuccee
 ## Machine Translation Service REST service
 <a name="TranslationSvc_REST"> </a>
 
-SharePoint 2013 includes a Representational State Transfer (REST) service that enables you to remotely interact with the Machine Translation Service application by using any technology that supports REST web requests. For general information about REST in SharePoint 2013, see  [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx). 
+SharePoint 2013 includes a Representational State Transfer (REST) service that enables you to remotely interact with the Machine Translation Service application by using any technology that supports REST web requests. For general information about REST in SharePoint 2013, see  [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx).
   
     
     
@@ -699,7 +699,7 @@ The Machine Translation Service REST service supports only synchronous translati
 
 ### Additional Machine Translation Service REST APIs
 
-The Machine Translation Service REST service includes additional APIs that you can use to retrieve information about the Machine Translation Service application capabilities and translation job status. 
+The Machine Translation Service REST service includes additional APIs that you can use to retrieve information about the Machine Translation Service application capabilities and translation job status.
   
     
     
@@ -779,7 +779,7 @@ To cancel an asynchronous translation job:
 ## Requirements for Microsoft Word Documents
 <a name="TranslationSvc_REST"> </a>
 
-SharePoint Machine Translation Service uses the paragraph language as the Source Language when it translates Microsoft Word documents. For example, if the paragraph is written in Spanish but the language for the paragraph is set to English, the Translation Service will not translate it to English. This is because it is already set to English. 
+SharePoint Machine Translation Service uses the paragraph language as the Source Language when it translates Microsoft Word documents. For example, if the paragraph is written in Spanish but the language for the paragraph is set to English, the Translation Service will not translate it to English. This is because it is already set to English.
   
     
     
@@ -787,7 +787,7 @@ SharePoint Machine Translation Service uses the paragraph language as the Source
 ### To set the paragraph language, follow these steps:
 
 
-1. Select the paragraph. 
+1. Select the paragraph.
     
   
 2.  Click the Review Ribbon tab.

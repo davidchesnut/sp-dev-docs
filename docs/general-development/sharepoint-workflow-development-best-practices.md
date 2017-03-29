@@ -6,10 +6,10 @@ ms.assetid: 63d9c867-0c5e-4f89-bc61-eeefb0320844
 
 
 # SharePoint workflow development best practices
-Provides a collection of best practices for developers using Visual Studio to create workflows in SharePoint 2013. 
+Provides a collection of best practices for developers using Visual Studio to create workflows in SharePoint 2013.
 ## Workflow development best practices
 
-To develop error-free workflows for SharePoint, it is best to follow some general guidelines, or "best practices." This is the case whether you are using SharePoint Designer 2013 or Visual Studio 2012 for workflow development. 
+To develop error-free workflows for SharePoint, it is best to follow some general guidelines, or "best practices." This is the case whether you are using SharePoint Designer 2013 or Visual Studio 2012 for workflow development.
   
     
     
@@ -115,7 +115,7 @@ For more information, see the following:
 ### Output a trace log before and after each step or important unit of work in the workflow
 <a name="bkm_03"> </a>
 
-To assist with debugging workflows, it is important that you capture meaningful information prior to and following each significant unit of work; this information should be committed to trace logs. For more information, see the following: 
+To assist with debugging workflows, it is important that you capture meaningful information prior to and following each significant unit of work; this information should be committed to trace logs. For more information, see the following:
   
     
     
@@ -130,7 +130,7 @@ To assist with debugging workflows, it is important that you capture meaningful 
 ### Verify that variables are non-null and contain expected values
 <a name="bkm_04"> </a>
 
-Before using variables in your workflows, ensure there are no null variables. Also, ensure that variables contain expected values and are of the correct data type. For more information, see  [Variables and Arguments](http://msdn.microsoft.com/en-us/library/dd489456.aspx). 
+Before using variables in your workflows, ensure there are no null variables. Also, ensure that variables contain expected values and are of the correct data type. For more information, see  [Variables and Arguments](http://msdn.microsoft.com/en-us/library/dd489456.aspx).
   
     
     
@@ -138,7 +138,7 @@ Before using variables in your workflows, ensure there are no null variables. Al
 ### Ensure that strings in workflow text fields do not exceed 255 characters
 <a name="bkm_05"> </a>
 
-The maximum allowable length for strings in workflow text fields is 255 characters. If you set your text field to exceed this limit, its content will be truncated to 255 characters. 
+The maximum allowable length for strings in workflow text fields is 255 characters. If you set your text field to exceed this limit, its content will be truncated to 255 characters.
   
     
     
@@ -146,11 +146,11 @@ The maximum allowable length for strings in workflow text fields is 255 characte
 ### Use elevated permissions on a neutral account when using impersonation
 <a name="bkm_06"> </a>
 
-When using impersonation steps in a workflow, you should author the workflow using a neutral account (that is, an account that is not tied to a specific user). This prevents your workflows from breaking if the author's account becomes obsolete for any reason. 
+When using impersonation steps in a workflow, you should author the workflow using a neutral account (that is, an account that is not tied to a specific user). This prevents your workflows from breaking if the author's account becomes obsolete for any reason.
   
     
     
-For more information, see  [Create a workflow with elevated permissions by using the SharePoint 2013 Workflow platform](create-a-workflow-with-elevated-permissions-by-using-the-sharepoint-2013-workflo.md). 
+For more information, see  [Create a workflow with elevated permissions by using the SharePoint 2013 Workflow platform](create-a-workflow-with-elevated-permissions-by-using-the-sharepoint-2013-workflo.md).
   
     
     
@@ -158,7 +158,7 @@ For more information, see  [Create a workflow with elevated permissions by using
 ### In reusable workflows, use Association columns to ensure error-free list fields
 <a name="bkm_07"> </a>
 
-If you create a reusable workflow that relies on its list having a specific field, you may either (1) restrict the workflow to a content type that has the specified field, or (2) make the field an association column. Option 2 is recommended because it's possible that a content type will change and cause the workflow to break. 
+If you create a reusable workflow that relies on its list having a specific field, you may either (1) restrict the workflow to a content type that has the specified field, or (2) make the field an association column. Option 2 is recommended because it's possible that a content type will change and cause the workflow to break.
   
     
     
@@ -166,7 +166,7 @@ If you create a reusable workflow that relies on its list having a specific fiel
 ### Workflow design: Model a business process in a single workflow
 <a name="bkm_08"> </a>
 
-Where possible, it is much better to model a business process in a single workflow than to break the workflow logic into several smaller workflows. 
+Where possible, it is much better to model a business process in a single workflow than to break the workflow logic into several smaller workflows.
   
     
     

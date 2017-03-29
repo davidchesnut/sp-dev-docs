@@ -7,7 +7,7 @@ ms.assetid: d73cf6c2-0677-4726-8a3e-2ad130e1a12c
 
 # Basic URI Structure and Path
 
-This topic explains how to construct the URI structure and path for REST service commands in Excel Services. 
+This topic explains how to construct the URI structure and path for REST service commands in Excel Services.
   
     
     
@@ -37,7 +37,7 @@ The REST API in Excel Services gives you the ability to access resources like ch
 3. **Resource Location** The path to the requested resource inside the workbook
     
   
-Following is the construct for the REST URL to a specific element in a workbook: 
+Following is the construct for the REST URL to a specific element in a workbook:
   
     
     
@@ -49,7 +49,7 @@ Following is the construct for the REST URL to a specific element in a workbook:
 http://<ServerName>/_vti_bin/ExcelRest.aspx/<DocumentLibrary>/<FileName>/<ResourceLocation>
 ```
 
-Following is an example of how a REST URL in Excel Services looks with all three parts combined. In this example, the REST URL is accessing a workbook called "sampleWorkbook.xlsx" that contains a chart called "SampleChart": 
+Following is an example of how a REST URL in Excel Services looks with all three parts combined. In this example, the REST URL is accessing a workbook called "sampleWorkbook.xlsx" that contains a chart called "SampleChart":
   
     
     
@@ -60,11 +60,11 @@ Following is an example of how a REST URL in Excel Services looks with all three
 http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('SampleChart')
 ```
 
-The workbook is stored in a document library. The full path to the workbook is  `http://` _<ServerName>_ `/Docs/Documents/sampleWorkbook.xlsx`. 
+The workbook is stored in a document library. The full path to the workbook is  `http://` _<ServerName>_ `/Docs/Documents/sampleWorkbook.xlsx`.
   
     
     
-The three parts of the REST URL are: 
+The three parts of the REST URL are:
   
     
     
@@ -81,7 +81,7 @@ The three parts of the REST URL are:
 
 ### Accessing by Using the Discovery User Interface
 
-You can also access the chart by using the discovery user interface. To learn how access resources like charts, tables, PivotTables, and ranges by using the discovery mechanism shown in the following screen shot, see  [Discovery in Excel Services REST API](discovery-in-excel-services-rest-api.md). 
+You can also access the chart by using the discovery user interface. To learn how access resources like charts, tables, PivotTables, and ranges by using the discovery mechanism shown in the following screen shot, see  [Discovery in Excel Services REST API](discovery-in-excel-services-rest-api.md).
   
     
     
@@ -108,7 +108,7 @@ You can also access the chart by using the discovery user interface. To learn ho
 
 ### Marker Path
 
-Following is the aspx page for the REST service in Excel Services: 
+Following is the aspx page for the REST service in Excel Services:
   
     
     
@@ -117,7 +117,7 @@ Following is the aspx page for the REST service in Excel Services:
 http://<ServerName>/_vti_bin/ExcelRest.aspx
 ```
 
-To access the REST service in Excel Services, you must preface the URL with  `http://` _<ServerName>_ `/_vti_bin/ExcelRest.aspx`. 
+To access the REST service in Excel Services, you must preface the URL with  `http://` _<ServerName>_ `/_vti_bin/ExcelRest.aspx`.
   
     
     
@@ -133,7 +133,7 @@ The workbook location is the relative path to the workbook that has resources th
 http://<ServerName>/Docs/Documents/sampleWorkbook.xlsx
 ```
 
-You take the relative path to the workbook ( `Docs/Documents/sampleWorkbook.xlsx`) and append it to the marker path. Following is the URL with the marker path and workbook location appended: 
+You take the relative path to the workbook ( `Docs/Documents/sampleWorkbook.xlsx`) and append it to the marker path. Following is the URL with the marker path and workbook location appended:
   
     
     
@@ -147,11 +147,11 @@ http://<ServerName>/_vti_bin/ExcelRest.aspx
 
 ### Resource Location
 
-The resource location is the path inside the workbook to the element that you request. For example, if you want to get a chart, the resource location would be similar to  `/model/Charts('Chart 1')`. 
+The resource location is the path inside the workbook to the element that you request. For example, if you want to get a chart, the resource location would be similar to  `/model/Charts('Chart 1')`.
   
     
     
-For the full URL, you append this to the marker path and the relative path to the workbook. Following is the full example URL: 
+For the full URL, you append this to the marker path and the relative path to the workbook. Following is the full example URL:
   
     
     

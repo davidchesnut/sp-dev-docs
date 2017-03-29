@@ -23,7 +23,7 @@ In SharePoint 2010, Microsoft introduced features and capabilities that encourag
   
     
     
-In SharePoint 2013, Microsoft added even more capabilities; these updates were oriented toward cloud deployments. Specifically, Microsoft introduced the new SharePoint app model, which went further than the sandboxed solution in that, unlike sandboxed solution, they explicitly blocked server-side code from running in the SharePoint process. Microsoft also built up existing technologies in SharePoint, such as the client-side object model (CSOM), and introduced new capabilities, like support for app identities using  [OAuth](http://msdn.microsoft.com/library/office/fp142382.aspx). 
+In SharePoint 2013, Microsoft added even more capabilities; these updates were oriented toward cloud deployments. Specifically, Microsoft introduced the new SharePoint app model, which went further than the sandboxed solution in that, unlike sandboxed solution, they explicitly blocked server-side code from running in the SharePoint process. Microsoft also built up existing technologies in SharePoint, such as the client-side object model (CSOM), and introduced new capabilities, like support for app identities using  [OAuth](http://msdn.microsoft.com/library/office/fp142382.aspx).
   
     
     
@@ -31,11 +31,11 @@ And then, with the introduction of SharePoint Server 2013, Microsoft introduced 
   
     
     
-The most prominent change in the new architecture is that workflow execution in SharePoint Server 2013 no longer takes place in SharePoint. Instead, SharePoint Server 2013 uses a completely new execution engine: Workflow Manager 1.0. Workflow Manager hosts the Windows Workflow Foundation runtime and all the necessary services required by Windows Workflow Foundation. When a workflow is published, or a new instance of a published workflow is started, SharePoint notifies Workflow Manager, which in turn processes the workflow episodes. When the workflow access information in SharePoint, such as list item properties or user properties, it authenticates using the OAuth support and communicates over new and improved REST APIs. 
+The most prominent change in the new architecture is that workflow execution in SharePoint Server 2013 no longer takes place in SharePoint. Instead, SharePoint Server 2013 uses a completely new execution engine: Workflow Manager 1.0. Workflow Manager hosts the Windows Workflow Foundation runtime and all the necessary services required by Windows Workflow Foundation. When a workflow is published, or a new instance of a published workflow is started, SharePoint notifies Workflow Manager, which in turn processes the workflow episodes. When the workflow access information in SharePoint, such as list item properties or user properties, it authenticates using the OAuth support and communicates over new and improved REST APIs.
   
     
     
-These changes in the workflow architecture had significant impacts in certain areas, such as custom workflow forms, as discussed in the MSDN article How to: Create Custom SharePoint Server 2013 Workflow Forms with Visual Studio 2012. This article touches on one of the things that Microsoft added to SharePoint 2013 to support the new style of creating custom workflow forms: the improvements to the CSOM and addition of the Workflow Services CSOM API. 
+These changes in the workflow architecture had significant impacts in certain areas, such as custom workflow forms, as discussed in the MSDN article How to: Create Custom SharePoint Server 2013 Workflow Forms with Visual Studio 2012. This article touches on one of the things that Microsoft added to SharePoint 2013 to support the new style of creating custom workflow forms: the improvements to the CSOM and addition of the Workflow Services CSOM API.
   
     
     
@@ -46,19 +46,19 @@ In SharePoint 2007 and SharePoint 2010, the workflow API was manifested only in 
   
     
     
-However, the new and preferred workflow architecture introduced with SharePoint 2013 that uses Workflow Manager includes a brand new server-side API. In SharePoint 2013, Microsoft extended the CSOM to include a robust API for the new workflow architecture. Note that this addition to the CSOM only applies to the new SharePoint 2013 and Workflow Manager 1.0 workflow architecture, not the legacy version that is still hosted by SharePoint. 
+However, the new and preferred workflow architecture introduced with SharePoint 2013 that uses Workflow Manager includes a brand new server-side API. In SharePoint 2013, Microsoft extended the CSOM to include a robust API for the new workflow architecture. Note that this addition to the CSOM only applies to the new SharePoint 2013 and Workflow Manager 1.0 workflow architecture, not the legacy version that is still hosted by SharePoint.
   
     
     
-The Workflow Services CSOM API, like the rest of the CSOM, is implemented both in a .NET Silverlight managed API and a JavaScript API known as the JavaScript Object Model (JSOM). JSOM is what developers must use when creating custom workflow forms as those forms will be ASP.NET web forms that must not have any server-side code. Thus the Workflow Services JSOM API is used in custom association forms to create workflow associations as well as on initiation forms to start new workflow instances. 
+The Workflow Services CSOM API, like the rest of the CSOM, is implemented both in a .NET Silverlight managed API and a JavaScript API known as the JavaScript Object Model (JSOM). JSOM is what developers must use when creating custom workflow forms as those forms will be ASP.NET web forms that must not have any server-side code. Thus the Workflow Services JSOM API is used in custom association forms to create workflow associations as well as on initiation forms to start new workflow instances.
   
     
     
-However, the possibilities do not stop there. The Workflow Services CSOM and JSOM is very robust and enables developers to do almost anything with workflows in SharePoint 2013. Aside from creating workflow associations and instances, developers can also programmatically deploy new workflow definitions and even communicate with running workflow instances from the CSOM and JSOM, as is discussed in the remainder of this article. 
+However, the possibilities do not stop there. The Workflow Services CSOM and JSOM is very robust and enables developers to do almost anything with workflows in SharePoint 2013. Aside from creating workflow associations and instances, developers can also programmatically deploy new workflow definitions and even communicate with running workflow instances from the CSOM and JSOM, as is discussed in the remainder of this article.
   
     
     
-This article focuses on the topic of workflow forms in the context of SharePoint Sever 2013. It is based on the SharePoint Server 2013 with the March 2013 Public Update applied and Office Developer Tools for Visual Studio 2013. Everything in this article applies to both SharePoint Server 2013 on-premises deployments as well as Office 365. 
+This article focuses on the topic of workflow forms in the context of SharePoint Sever 2013. It is based on the SharePoint Server 2013 with the March 2013 Public Update applied and Office Developer Tools for Visual Studio 2013. Everything in this article applies to both SharePoint Server 2013 on-premises deployments as well as Office 365.
   
     
     
@@ -71,37 +71,37 @@ This article focuses on the Workflow Services CSOM API and thus, by extension, t
     
 
 > [!NOTE]
-> There is one additional service that is not present in the CSOM, but is present instead with the server-side API. This is the Messaging Service, which is used to manage message queuing and message transport. 
+> There is one additional service that is not present in the CSOM, but is present instead with the server-side API. This is the Messaging Service, which is used to manage message queuing and message transport.
   
     
     
 
-To work with the Workflow Services CSOM and JSOM APIs, developers must add the necessary references to their projects (in the case of CSOM) and pages (in the case of JSOM). Both implementations have the same requirements: 
+To work with the Workflow Services CSOM and JSOM APIs, developers must add the necessary references to their projects (in the case of CSOM) and pages (in the case of JSOM). Both implementations have the same requirements:
   
     
     
 
-- Reference the core SharePoint 2013 CSOM and JSOM libraries: 
+- Reference the core SharePoint 2013 CSOM and JSOM libraries:
     
-  - Microsoft.SharePoint.Client.dll 
-    
-  
-  - Microsoft.SharePoint.Client.Runtime.dll 
+  - Microsoft.SharePoint.Client.dll
     
   
-  - Microsoft.SharePoint.Client.WorkflowServices.dll 
+  - Microsoft.SharePoint.Client.Runtime.dll
+    
+  
+  - Microsoft.SharePoint.Client.WorkflowServices.dll
     
   
 
-- Reference the Workflow Services CSOM and JSOM libraries: 
+- Reference the Workflow Services CSOM and JSOM libraries:
     
-  - SP.js 
-    
-  
-  - SP.Runtime.js 
+  - SP.js
     
   
-  - SP.WorkflowServices.js 
+  - SP.Runtime.js
+    
+  
+  - SP.WorkflowServices.js
     
   
 
@@ -136,7 +136,7 @@ var workflowServicesManager = SP.WorkflowServices.WorkflowServicesManager.newObj
 
 ### Deployment service
 
-When you create custom workflows using Visual Studio 2012, either using a solution package (*.wsp) or as a SharePoint app (*.app), you are creating workflow definitions. A definition is the workflow process and all business rules and attributes defined within it, such as the location of custom association and initiation forms. On their own, these definitions are not very useful because they cannot be run outside the context of an association with a site, list, or document library. The workflow definitions published and available in a site can be found by going to the page where a new workflow association can be created, as shown in the following figure. 
+When you create custom workflows using Visual Studio 2012, either using a solution package (*.wsp) or as a SharePoint app (*.app), you are creating workflow definitions. A definition is the workflow process and all business rules and attributes defined within it, such as the location of custom association and initiation forms. On their own, these definitions are not very useful because they cannot be run outside the context of an association with a site, list, or document library. The workflow definitions published and available in a site can be found by going to the page where a new workflow association can be created, as shown in the following figure.
   
     
     
@@ -154,7 +154,7 @@ When you create custom workflows using Visual Studio 2012, either using a soluti
   
     
     
-The collection of published workflow definitions is accessible through the deployment service. This service enables you to get a list of all currently saved and published definitions on the site, as well as to publish both saved and new definitions, remove existing definitions, and determine what workflow actions are available to SharePoint Designer 2013-authored workflows. 
+The collection of published workflow definitions is accessible through the deployment service. This service enables you to get a list of all currently saved and published definitions on the site, as well as to publish both saved and new definitions, remove existing definitions, and determine what workflow actions are available to SharePoint Designer 2013-authored workflows.
   
     
     
@@ -189,7 +189,7 @@ var workflowDeploymentService = workflowServicesManager.getWorkflowDeploymentSer
 
 ### Subscription service
 
-Recall from the previous section that you create workflows and publish them to SharePoint as definitions. To use these definitions, a user must create an association that links the definition to a specific SharePoint site, list, or document library along with additional metadata. This process basically works and behaves the same way in SharePoint 2010 but the implementation in SharePoint 2013 is very different. Workflow Manager 1.0 takes advantage of an instance of Microsoft Azure Service Bus 1.0. 
+Recall from the previous section that you create workflows and publish them to SharePoint as definitions. To use these definitions, a user must create an association that links the definition to a specific SharePoint site, list, or document library along with additional metadata. This process basically works and behaves the same way in SharePoint 2010 but the implementation in SharePoint 2013 is very different. Workflow Manager 1.0 takes advantage of an instance of Microsoft Azure Service Bus 1.0.
   
     
     
@@ -201,7 +201,7 @@ SharePoint 2013 and Workflow Manager 1.0 use the PubSub model to create associat
   
     
     
-This should clarify, then, why workflow associations are now called subscriptions within the API (that is, under the covers). You can use a Subscription Service in the Workflow Services CSOM to explore existing associations and subscriptions, create and delete associations and subscriptions, and request to be notified of events. 
+This should clarify, then, why workflow associations are now called subscriptions within the API (that is, under the covers). You can use a Subscription Service in the Workflow Services CSOM to explore existing associations and subscriptions, create and delete associations and subscriptions, and request to be notified of events.
   
     
     
@@ -236,7 +236,7 @@ var workflowSubscriptionService = workflowServicesManager.getWorkflowSubscriptio
 
 ### Instance service
 
-The final service that we'll cover is the instance service. You can use this service to perform several tasks with workflow instances, such as starting, suspending, resuming, terminating, and cancelling workflow instances. You can also use it to collect debug information, as well as enumerate through all currently running workflows, as well as those that have already completed. Finally, you can use this service to publish events to workflows that are currently running, as we'll see later in this article. 
+The final service that we'll cover is the instance service. You can use this service to perform several tasks with workflow instances, such as starting, suspending, resuming, terminating, and cancelling workflow instances. You can also use it to collect debug information, as well as enumerate through all currently running workflows, as well as those that have already completed. Finally, you can use this service to publish events to workflows that are currently running, as we'll see later in this article.
   
     
     
@@ -271,11 +271,11 @@ var workflowInstanceService = workflowServicesManager.getWorkflowInstanceService
 
 ### Interop service
 
-In previous versions of SharePoint, specifically SharePoint 2007 and SharePoint 2010, SharePoint hosted the Windows Workflow Foundation runtime. As previously explained, Microsoft moved away from this approach in SharePoint 2013 by introducing a dependency on Workflow Manager 1.0, which hosts the workflow runtime outside of SharePoint. Consequently, workflows are no longer executed and managed within SharePoint; instead, SharePoint hands off workflow management and execution responsibilities to Workflow Manager 1.0. 
+In previous versions of SharePoint, specifically SharePoint 2007 and SharePoint 2010, SharePoint hosted the Windows Workflow Foundation runtime. As previously explained, Microsoft moved away from this approach in SharePoint 2013 by introducing a dependency on Workflow Manager 1.0, which hosts the workflow runtime outside of SharePoint. Consequently, workflows are no longer executed and managed within SharePoint; instead, SharePoint hands off workflow management and execution responsibilities to Workflow Manager 1.0.
   
     
     
-However, to provide backward compatibility, Microsoft retained the legacy model of hosting pre-SharePoint 2013-style workflows within SharePoint by keeping the Windows Workflow Foundation runtime engine. Therefore, all workflows created in SharePoint 2010 will still run as expected in a SharePoint 2013 environment. In addition, Microsoft included a new activity, **InvokeSharePointWorkflow**, which can be used in a SharePoint 2013 workflow to start an existing workflow in the SharePoint 2010 workflow host that is included in SharePoint 2013. This allows you to take advantage of existing workflow investments migrated from previous versions. 
+However, to provide backward compatibility, Microsoft retained the legacy model of hosting pre-SharePoint 2013-style workflows within SharePoint by keeping the Windows Workflow Foundation runtime engine. Therefore, all workflows created in SharePoint 2010 will still run as expected in a SharePoint 2013 environment. In addition, Microsoft included a new activity, **InvokeSharePointWorkflow**, which can be used in a SharePoint 2013 workflow to start an existing workflow in the SharePoint 2010 workflow host that is included in SharePoint 2013. This allows you to take advantage of existing workflow investments migrated from previous versions.
   
     
     
@@ -384,7 +384,7 @@ Once you have obtained a workflow definition using the example above, use the  [
 -  [EnumerateSubscriptionsByList](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.WorkflowServices.WorkflowSubscriptionService.EnumerateSubscriptionsByList.aspx)
     
   
-The following code example demonstrates getting associations and subscriptions. 
+The following code example demonstrates getting associations and subscriptions.
   
     
     
@@ -426,30 +426,30 @@ foreach (var association in workflowAssociations) {
 
 ### Creating a workflow association
 
-Creating a new workflow association, which can also be referred to as a subscription, requires additional effort before actually publishing the association to SharePoint. This is because each subscription needs to have additional information, which is usually collected on the association page. This metadata includes the following: 
+Creating a new workflow association, which can also be referred to as a subscription, requires additional effort before actually publishing the association to SharePoint. This is because each subscription needs to have additional information, which is usually collected on the association page. This metadata includes the following:
   
     
     
 
-- The ID of the workflow definition the association is based on. 
+- The ID of the workflow definition the association is based on.
     
   
-- The ID of the SharePoint site, list or document library the workflow association is created on. 
+- The ID of the SharePoint site, list or document library the workflow association is created on.
     
   
 - The display name of the association. 
     
   
-- The startup options (whether started manually or automatically when a list item is added or updated). 
+- The startup options (whether started manually or automatically when a list item is added or updated).
     
   
-- The ID of the list that will store all history list messages for this association. 
+- The ID of the list that will store all history list messages for this association.
     
   
-- The ID of the list that will store all tasks for this association. 
+- The ID of the list that will store all tasks for this association.
     
   
-- Optionally, a collection of any name/value pairs that should be sent to the workflow. These are the fields that are usually passed in from a custom association form. 
+- Optionally, a collection of any name/value pairs that should be sent to the workflow. These are the fields that are usually passed in from a custom association form.
     
   
 
@@ -481,13 +481,13 @@ var workflowSubscriptionService = workflowServicesManager.GetWorkflowSubscriptio
   
 3. Set the required properties on the **WorkflowSubscription** object, as illustrated in the following code example. In the example, code comments explain each of the property settings. Note that some properties that are not relevant to CSOM workflow services have been left out for readability. These properties have been omitted:
     
-1. **listId**. The ID of the list on which the association is created. 
+1. **listId**. The ID of the list on which the association is created.
     
   
-2. **historyListId**. The ID of the list that stores all history list messages for the association. 
+2. **historyListId**. The ID of the list that stores all history list messages for the association.
     
   
-3. **taskListId**. The ID of the list that will store all tasks for the association. 
+3. **taskListId**. The ID of the list that will store all tasks for the association.
     
   
 4. Once created, the subscription must be published to SharePoint using the  [PublishSubscriptionForList](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.WorkflowServices.WorkflowSubscriptionService.PublishSubscriptionForList.aspx) method, as demonstrated in the following code example:
@@ -530,7 +530,7 @@ clientContext.ExecuteQuery();
 
 ### Get all workflow instances
 
-You can also use the Workflow Services instance service to view all workflow instances that are running on a SharePoint site, list, or document library. The instance object that is returned contains information on the instance, such as when it was last updated, the current status, and any errors that may have occurred when it ran previously. Additionally, it provides a collection of name/value pairs that were submitted to the workflow from the custom initiation form. 
+You can also use the Workflow Services instance service to view all workflow instances that are running on a SharePoint site, list, or document library. The instance object that is returned contains information on the instance, such as when it was last updated, the current status, and any errors that may have occurred when it ran previously. Additionally, it provides a collection of name/value pairs that were submitted to the workflow from the custom initiation form.
   
     
     
@@ -552,7 +552,7 @@ Each of theses methods also has an alternate ***WithOffset()** method (for examp
   
     
     
-The following code example illustrates getting workflow instances: 
+The following code example illustrates getting workflow instances:
   
     
     
@@ -578,7 +578,7 @@ foreach (var instance in workflowInstances)
 
 ### Start a workflow instance
 
-Starting a new instance of a workflow association involves repeating many of the steps that have been demonstrated in the previous examples. To start a workflow on an item in a list or document library, first obtain a reference to the workflow association and the ID of the item in the list. A collection of name/value pairs of information can be sent to the workflow when it is started. This happens when there is a custom initiation form that is used to collect data from the user starting the workflow. Then pass in a collection, even if it is an empty collection, when starting the workflow or the workflow will fail to start and return an error. 
+Starting a new instance of a workflow association involves repeating many of the steps that have been demonstrated in the previous examples. To start a workflow on an item in a list or document library, first obtain a reference to the workflow association and the ID of the item in the list. A collection of name/value pairs of information can be sent to the workflow when it is started. This happens when there is a custom initiation form that is used to collect data from the user starting the workflow. Then pass in a collection, even if it is an empty collection, when starting the workflow or the workflow will fail to start and return an error.
   
     
     
@@ -593,7 +593,7 @@ Building from previous examples, use the  [GetWorkflowInstanceService](https://m
 -  [StartWorkflowOnListItem](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.WorkflowServices.WorkflowInstanceService.StartWorkflowOnListItem.aspx) . Starts a workflow on a specific list item. Using this method requires you to pass in the ID of the desired list item, in addition to other parameter values required by the **StartWorkflow** method.
     
   
-The following code example demonstrates how to start a workflow instance. 
+The following code example demonstrates how to start a workflow instance.
   
     
     
@@ -637,7 +637,7 @@ clientContext.ExecuteQuery();
 
 ### Publishing messages and events to running workflows
 
-Another powerful feature that was added in SharePoint 2013 is the ability to publish custom events to running workflow instances. These workflows can have an activity, **WaitForCustomEvent**, which listens for a specific event to be published to the workflow. The event can also contain a string as part of the message, which the activity can store as a variable. 
+Another powerful feature that was added in SharePoint 2013 is the ability to publish custom events to running workflow instances. These workflows can have an activity, **WaitForCustomEvent**, which listens for a specific event to be published to the workflow. The event can also contain a string as part of the message, which the activity can store as a variable.
   
     
     
@@ -681,18 +681,18 @@ To receive the message in the workflow, add a **WaitForCustomEvent** activity an
   
     
     
-This technique of publishing a custom event is demonstrated in the MSDN Code Sample: SharePoint 2013: Route Workflows to States Depending on Actions and Events. 
+This technique of publishing a custom event is demonstrated in the MSDN Code Sample: SharePoint 2013: Route Workflows to States Depending on Actions and Events.
   
     
     
 
 ## Conclusion
 
-Microsoft introduced workflows into the SharePoint 2007 platform, and the workflow platform remained largely unchanged in SharePoint 2010. This was also true when it came to Custom Forms in SharePoint workflows. SharePoint 2013, on the other hand, introduced many changes to workflow platform and architecture. 
+Microsoft introduced workflows into the SharePoint 2007 platform, and the workflow platform remained largely unchanged in SharePoint 2010. This was also true when it came to Custom Forms in SharePoint workflows. SharePoint 2013, on the other hand, introduced many changes to workflow platform and architecture.
   
     
     
-One of the major improvements to workflows in SharePoint 2013 is the expansion of CSOM to include a complete Workflow Services API. This addition enables developers to interact with workflow definitions, associations, and subscriptions, and to create and interact with instances of these workflows. 
+One of the major improvements to workflows in SharePoint 2013 is the expansion of CSOM to include a complete Workflow Services API. This addition enables developers to interact with workflow definitions, associations, and subscriptions, and to create and interact with instances of these workflows.
   
     
     

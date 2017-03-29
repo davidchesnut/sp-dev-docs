@@ -3,26 +3,26 @@ title: How to Specify a Range Address and Sheet Name
 keywords: how to,howdoi,howto,set range
 f1_keywords:
 - how to,howdoi,howto,set range
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 8bfefc48-1fbc-4b65-8156-1b7d0a8453ee
 ---
 
 
 # How to: Specify a Range Address and Sheet Name
 
-This example shows how to specify range addresses by using range coordinates, named ranges, rows, and columns. It also shows how to specify a sheet name and the relationship between a sheet name and a range address. 
+This example shows how to specify range addresses by using range coordinates, named ranges, rows, and columns. It also shows how to specify a sheet name and the relationship between a sheet name and a range address.
   
     
     
 
-Range coordinates are the four integer coordinates used to select a contiguous range. Range coordinates enable you to specify Excel ranges by using direct integer indexing as an alternative to "A1" expressions. The coordinates you can specify are the top row, left column, height, and width. It is easier to use range coordinates when you have code that iterates through a set of cells in a loop, or when the range coordinates are calculated dynamically as part of the algorithm. 
+Range coordinates are the four integer coordinates used to select a contiguous range. Range coordinates enable you to specify Excel ranges by using direct integer indexing as an alternative to "A1" expressions. The coordinates you can specify are the top row, left column, height, and width. It is easier to use range coordinates when you have code that iterates through a set of cells in a loop, or when the range coordinates are calculated dynamically as part of the algorithm.
 A range specification must contain a sheet name; Excel Web Services does not recognize the "current sheet." There are a few ways to specify the sheet name: 
   
     
     
 
 
-- As part of the range address—for example, "Sheet3!B12:D18"—in which case the sheet name argument can be empty: 
+- As part of the range address—for example, "Sheet3!B12:D18"—in which case the sheet name argument can be empty:
     
   ```cs
   
@@ -34,7 +34,7 @@ object[] rangeResult1 = xlservice.GetRangeA1(sessionId, String.Empty, "Sheet2!A1
   Dim rangeResult1() As Object = xlservice.GetRangeA1(sessionId, String.Empty, "Sheet2!A12:G18", True, outStatus)
   ```
 
-- In a separate sheet name argument, in which case the range address argument does not have to include the sheet name: 
+- In a separate sheet name argument, in which case the range address argument does not have to include the sheet name:
     
   ```cs
   xlservice.SetCell(sessionId, "Sheet3", 0, 11, 1000);
@@ -45,7 +45,7 @@ object[] rangeResult1 = xlservice.GetRangeA1(sessionId, String.Empty, "Sheet2!A1
   xlservice.SetCell(sessionId, "Sheet3", 0, 11, 1000)
   ```
 
-- In both the sheet name and range address, in which case the name of the sheet must match: 
+- In both the sheet name and range address, in which case the name of the sheet must match:
     
   ```cs
   object[] rangeResult = xlservice.GetCellA1(sessionId, "Sheet3", "Sheet3!G18", true, out outStatus);
@@ -56,7 +56,7 @@ object[] rangeResult1 = xlservice.GetRangeA1(sessionId, String.Empty, "Sheet2!A1
   Dim rangeResult() As Object = xlservice.GetCellA1(sessionId, "Sheet3", "Sheet3!G18", True, outStatus)
   ```
 
-The only case that does not require a sheet name is a named range, because some named ranges have a workbook scope. For example, you can refer to named ranges without specifying the sheet name argument: 
+The only case that does not require a sheet name is a named range, because some named ranges have a workbook scope. For example, you can refer to named ranges without specifying the sheet name argument:
 
 
 ```cs
@@ -70,12 +70,12 @@ xlServices.SetCellA1(sessionId, String.Empty, "MyNamedRange", 8);
 xlServices.SetCellA1(sessionId, String.Empty, "MyNamedRange", 8)
 ```
 
-If you specify a sheet name, the ranges you reference must exist on the sheet you specify. If you specify a sheet that does not exist, the call will fail and you will get a Simple Object Access Protocol (SOAP) exception, saying that the sheet does not exist. 
+If you specify a sheet name, the ranges you reference must exist on the sheet you specify. If you specify a sheet that does not exist, the call will fail and you will get a Simple Object Access Protocol (SOAP) exception, saying that the sheet does not exist.
 ## Example
 
 
 > [!NOTE]
-> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information about this, see  [How to: Trust a Location](how-to-trust-a-location.md) and [How to: Trust Workbook Locations Using Script](http://msdn.microsoft.com/library/79ab6ced-7a0c-4275-b852-bb246fc6be57%28Office.15%29.aspx). 
+> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information about this, see  [How to: Trust a Location](how-to-trust-a-location.md) and [How to: Trust Workbook Locations Using Script](http://msdn.microsoft.com/library/79ab6ced-7a0c-4275-b852-bb246fc6be57%28Office.15%29.aspx).
   
     
     
@@ -243,7 +243,7 @@ End Namespace
 
 ## Robust programming
 
-Make sure you add a Web reference to an Excel Web Services site to which you have access. Change the following: 
+Make sure you add a Web reference to an Excel Web Services site to which you have access. Change the following:
   
     
     

@@ -30,12 +30,12 @@ For information on how to write a word breaker refer to the following articles
     
     
 
-Take the following steps to replace the existing word breaker with a custom word breaker or replace the existing word breaker with a word breaker in another language. 
+Take the following steps to replace the existing word breaker with a custom word breaker or replace the existing word breaker with a word breaker in another language.
   
     
     
 
-1. Open the Registry Editor, as follows: 
+1. Open the Registry Editor, as follows:
     
 1. Choose **Start**, and then choose **Run**.
     
@@ -43,7 +43,7 @@ Take the following steps to replace the existing word breaker with a custom word
 2. In the **Open** dialog box, type **Regedit**, and then choose **OK**.
     
   
-2. In Registry Editor, select the following registry subkey: 
+2. In Registry Editor, select the following registry subkey:
     
     **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office Server\\15.0\\Search\\Setup\\ContentIndexCommon\\LanguageResources\\Default\\** _language from the list below_
     
@@ -60,217 +60,217 @@ Take the following steps to replace the existing word breaker with a custom word
 6. In the **Edit String** dialog box, in the **Value data** box, type the class ID of your custom word breaker, and then choose **OK**.
     
   
-7. Restart the SharePoint Search Host Controller and SharePoint Server 2013. 
+7. Restart the SharePoint Search Host Controller and SharePoint Server 2013.
     
   
-8. Do a full re-crawl. 
+8. Do a full re-crawl.
     
   
 
 ## Supported languages for word breaker customizations in SharePoint Server 2013
 <a name="SP15_SupportedLanguages"> </a>
 
-The following languages are supported for word breaker customization: 
+The following languages are supported for word breaker customization:
   
     
     
-Arabic 
+Arabic
   
     
     
-Bengali 
+Bengali
   
     
     
-Bulgarian 
+Bulgarian
   
     
     
-Catalan 
+Catalan
   
     
     
-Chinese (People's Republic of China) 
+Chinese (People's Republic of China)
   
     
     
-Chinese (Taiwan) 
+Chinese (Taiwan)
   
     
     
-Croatian 
+Croatian
   
     
     
-Czech 
+Czech
   
     
     
-Danish 
+Danish
   
     
     
-Dutch (Dutch) 
+Dutch (Dutch)
   
     
     
-English (United States) 
+English (United States)
   
     
     
-Estonian 
+Estonian
   
     
     
-Finnish 
+Finnish
   
     
     
-French (Standard) 
+French (Standard)
   
     
     
-German (Standard) 
+German (Standard)
   
     
     
-Greek 
+Greek
   
     
     
-Gujarati 
+Gujarati
   
     
     
-Hebrew 
+Hebrew
   
     
     
-Hindi 
+Hindi
   
     
     
-Hungarian 
+Hungarian
   
     
     
-Icelandic 
+Icelandic
   
     
     
-Indonesian 
+Indonesian
   
     
     
-Italian (Default) 
+Italian (Default)
   
     
     
-Japanese 
+Japanese
   
     
     
-Kannada 
+Kannada
   
     
     
-Kazakh 
+Kazakh
   
     
     
-Korean 
+Korean
   
     
     
-Latvian 
+Latvian
   
     
     
-Lithuanian 
+Lithuanian
   
     
     
-Malay 
+Malay
   
     
     
-Malayalam 
+Malayalam
   
     
     
-Marathi 
+Marathi
   
     
     
-Norwegian 
+Norwegian
   
     
     
-Polish 
+Polish
   
     
     
-Portuguese (Portuguese) 
+Portuguese (Portuguese)
   
     
     
-Punjabi 
+Punjabi
   
     
     
-Romanian 
+Romanian
   
     
     
-Russian 
+Russian
   
     
     
-Serbian (Cyrillic) 
+Serbian (Cyrillic)
   
     
     
-Slovak 
+Slovak
   
     
     
-Slovenian 
+Slovenian
   
     
     
-Spanish (Modern Sort) 
+Spanish (Modern Sort)
   
     
     
-Swedish 
+Swedish
   
     
     
-Tamil 
+Tamil
   
     
     
-Telugu 
+Telugu
   
     
     
-Thai 
+Thai
   
     
     
-Turkish 
+Turkish
   
     
     
-Ukrainian 
+Ukrainian
   
     
     
-Urdu 
+Urdu
   
     
     
-Vietnamese 
+Vietnamese
   
     
     

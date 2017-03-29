@@ -6,28 +6,28 @@ ms.assetid: de4b50a3-84da-48ce-9ba0-fe06571e52a8
 
 
 # How to: Create an add-in-scoped external content type in SharePoint 2013
-Learn how to create external content types that can be installed, secured, and used in an SharePoint Add-in. 
+Learn how to create external content types that can be installed, secured, and used in an SharePoint Add-in.
 ## Prerequisites for developing add-in-scoped external content types
 <a name="bkmk_Prerequisites"> </a>
 
-To get started developing add-in-scoped external content types, you need the following: 
+To get started developing add-in-scoped external content types, you need the following:
   
     
     
 
-- SharePoint 2013 
+- SharePoint 2013
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
-- Office Developer Tools for Visual Studio 2012 
+- Office Developer Tools for Visual Studio 2012
     
   
-- A published OData service available through the Internet 
+- A published OData service available through the Internet
     
   
-For information about setting up a SharePoint development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md). 
+For information about setting up a SharePoint development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
   
     
     
@@ -35,7 +35,7 @@ For information about setting up a SharePoint development environment, see  [Set
 ## Create an add-in-scoped external content type
 <a name="bkmk_CreateECT"> </a>
 
-The following steps show how to create an external content type based on an Open Data protocol (OData) source, and how to modify it to be scoped to your SharePoint Add-in. 
+The following steps show how to create an external content type based on an Open Data protocol (OData) source, and how to modify it to be scoped to your SharePoint Add-in.
   
     
     
@@ -43,19 +43,19 @@ The following steps show how to create an external content type based on an Open
 ### To create a new SharePoint Add-in
 
 
-1. Open Visual Studio 2012. 
+1. Open Visual Studio 2012.
     
   
 2. Create an **Add-in for SharePoint 2013** project.
     
   
-3. Specify the add-in settings, including add-in name, the site URL for debugging the add-in, and how you would like to host the add-in (Autohosted, Provider-hosted, or SharePoint-hosted). For more information, see  [Choose patterns for developing and hosting your SharePoint Add-in](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457%28Office.15%29.aspx). 
+3. Specify the add-in settings, including add-in name, the site URL for debugging the add-in, and how you would like to host the add-in (Autohosted, Provider-hosted, or SharePoint-hosted). For more information, see  [Choose patterns for developing and hosting your SharePoint Add-in](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457%28Office.15%29.aspx).
     
   
 4. Choose **Finish** to create the app.
     
   
-For complete steps for creating SharePoint Add-ins, see the following: 
+For complete steps for creating SharePoint Add-ins, see the following:
   
     
     
@@ -73,25 +73,25 @@ For complete steps for creating SharePoint Add-ins, see the following:
 ### To generate the external content type
 
 
-1. In **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**. 
+1. In **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**.
     
-    This starts a wizard that helps you find the selected data source and create the BDC model. 
+    This starts a wizard that helps you find the selected data source and create the BDC model.
     
   
-2. On the **Set OData Source** page, enter the URL of the OData service that you want to connect to. The URL should look something like this: `http://services.odata.org/Northwind/Northwind.svc/`. 
+2. On the **Set OData Source** page, enter the URL of the OData service that you want to connect to. The URL should look something like this: `http://services.odata.org/Northwind/Northwind.svc/`.
     
-    Specify a name for your OData source. 
+    Specify a name for your OData source.
     
    > [!NOTE]
    > For this example, you will use the Northwind service that is available from the producers list located on the  [Open Data Protocol website](http://www.odata.org). 
-3. A list appears showing data entities that are being exposed by the OData Service. Select one or more of the entities, and choose **Finish**. 
+3. A list appears showing data entities that are being exposed by the OData Service. Select one or more of the entities, and choose **Finish**.
     
   
 
 ### To deploy the add-in-scoped external content type
 
 
-- Press F5 to compile the project and upload the project files to SharePoint. 
+- Press F5 to compile the project and upload the project files to SharePoint.
     
   
 

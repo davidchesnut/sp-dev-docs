@@ -6,19 +6,19 @@ ms.assetid: b42b4452-90f8-464c-828f-d3abac40670c
 
 
 # How to: Create report editors for PerformancePoint Services in SharePoint 2013
-Learn how to create the editor component of a custom report extension for PerformancePoint Services. 
+Learn how to create the editor component of a custom report extension for PerformancePoint Services.
 ## What are custom report editors for PerformancePoint Services?
 <a name="bi_intro"> </a>
 
-In PerformancePoint Services, custom report editors enable users to set properties on custom reports. Report editors also initialize the report endpoint, which receives parameter values from scorecard and filter providers. For more information about editor requirements and functionality, see  [Editors for Custom PerformancePoint Services Objects](http://msdn.microsoft.com/library/7c5924f1-91f3-436a-9d94-2e0dc454c8cc%28Office.15%29.aspx). 
+In PerformancePoint Services, custom report editors enable users to set properties on custom reports. Report editors also initialize the report endpoint, which receives parameter values from scorecard and filter providers. For more information about editor requirements and functionality, see  [Editors for Custom PerformancePoint Services Objects](http://msdn.microsoft.com/library/7c5924f1-91f3-436a-9d94-2e0dc454c8cc%28Office.15%29.aspx).
   
     
     
-The following procedures and examples are based on the **SampleReportViewEditor** class from the [custom objects sample](http://msdn.microsoft.com/library/af021d52-7562-4e7a-9de4-e1fc5784a59d%28Office.15%29.aspx). The editor is a thin web application that enables users to modify the report's name and description. For the complete code for the class, see  [Code example: Create, retrieve, and update custom PerformancePoint Services reports in SharePoint Server 2013](#bk_example). 
+The following procedures and examples are based on the **SampleReportViewEditor** class from the [custom objects sample](http://msdn.microsoft.com/library/af021d52-7562-4e7a-9de4-e1fc5784a59d%28Office.15%29.aspx). The editor is a thin web application that enables users to modify the report's name and description. For the complete code for the class, see  [Code example: Create, retrieve, and update custom PerformancePoint Services reports in SharePoint Server 2013](#bk_example).
   
     
     
-We recommend that you use the sample editor as a template. The sample shows how to call objects in the PerformancePoint Services API, provides helper objects that simplify calls for repository operations (such as creating and updating objects), and demonstrates best practices for PerformancePoint Services development. 
+We recommend that you use the sample editor as a template. The sample shows how to call objects in the PerformancePoint Services API, provides helper objects that simplify calls for repository operations (such as creating and updating objects), and demonstrates best practices for PerformancePoint Services development.
   
     
     
@@ -31,44 +31,44 @@ We recommend that you use the sample editor as a template. The sample shows how 
     
     
 
-1. Install PerformancePoint Services, or copy the DLLs that your extension uses (listed in step 3) to your computer. For more information, see  [DLLs with Class Libraries](http://msdn.microsoft.com/library/41e92619-8253-481d-82f9-35b6a6abc477%28Office.15%29.aspx). 
+1. Install PerformancePoint Services, or copy the DLLs that your extension uses (listed in step 3) to your computer. For more information, see  [DLLs with Class Libraries](http://msdn.microsoft.com/library/41e92619-8253-481d-82f9-35b6a6abc477%28Office.15%29.aspx).
     
   
-2. In Visual Studio, create a C# class library. If you have already created a class library for your extension, add a new C# class. 
+2. In Visual Studio, create a C# class library. If you have already created a class library for your extension, add a new C# class.
     
-    You must sign your DLL with a strong name. In addition, ensure that all assemblies referenced by your DLL have strong names. For information about how to sign an assembly with a strong name and how to create a public/private key pair, see  [How to: Create a public/private key pair](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114.aspx). 
-    
-  
-3. Add the following DLLs as assembly references to the project: 
-    
-  - Microsoft.PerformancePoint.Scorecards.Client.dll 
+    You must sign your DLL with a strong name. In addition, ensure that all assemblies referenced by your DLL have strong names. For information about how to sign an assembly with a strong name and how to create a public/private key pair, see  [How to: Create a public/private key pair](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114.aspx).
     
   
-  - Microsoft.PerformancePoint.Scorecards.ServerCommon.dll 
+3. Add the following DLLs as assembly references to the project:
+    
+  - Microsoft.PerformancePoint.Scorecards.Client.dll
     
   
-  - Microsoft.PerformancePoint.Scorecards.Store.dll (used by helper classes) 
+  - Microsoft.PerformancePoint.Scorecards.ServerCommon.dll
     
   
-  - Microsoft.SharePoint.dll (used by helper classes) 
+  - Microsoft.PerformancePoint.Scorecards.Store.dll (used by helper classes)
+    
+  
+  - Microsoft.SharePoint.dll (used by helper classes)
     
   
 
-    The sample editor also contains assembly references to System.Web.dll and System.Web.Services.dll. Depending on your extension's functionality, other project references may be required. 
+    The sample editor also contains assembly references to System.Web.dll and System.Web.Services.dll. Depending on your extension's functionality, other project references may be required.
     
   
-4. Add the following classes from the sample to the project. The editor uses these helper classes to interact with the PerformancePoint Services repository: 
+4. Add the following classes from the sample to the project. The editor uses these helper classes to interact with the PerformancePoint Services repository:
     
-  - DataSourceConsumerHelper.cs 
-    
-  
-  - ExtensionRepositoryHelper.cs 
+  - DataSourceConsumerHelper.cs
     
   
-  - ReportViewRepositoryHelper.cs 
+  - ExtensionRepositoryHelper.cs
     
   
-  - IDataSourceConsumer.cs 
+  - ReportViewRepositoryHelper.cs
+    
+  
+  - IDataSourceConsumer.cs
     
   
 
@@ -92,7 +92,7 @@ We recommend that you use the sample editor as a template. The sample shows how 
 7. Declare variables for the controls that expose the properties that you want users to view or modify. The sample report editor first declares variables for the web server controls that are defined in the user interface component, which is an ASPX page. The sample editor also defines a button control that enables users to submit changes. Then, the editor calls the  [CreateChildControls()](https://msdn.microsoft.com/library/System.Web.UI.Control.CreateChildControls.aspx) method to make the controls available on the page.
     
    > [!NOTE]
-   > The editor defines programming logic separately from the user interface. Instructions for creating the user interface component of the editor are beyond the scope of this documentation. 
+   > The editor defines programming logic separately from the user interface. Instructions for creating the user interface component of the editor are beyond the scope of this documentation.
 
     The sample report editor performs steps 8 through 12 in the **Page_Load** method. **Page_Load** is also used to initialize and validate variables and controls, populate controls, and save state information for the custom report and helper objects.
     
@@ -100,7 +100,7 @@ We recommend that you use the sample editor as a template. The sample shows how 
 8. Set the  [AllowUnsafeUpdates](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.ServerCommon.ServerUtils.AllowUnsafeUpdates.aspx) property to **true**. This enables the report editor to write data to the repository without using form **POST** operations.
     
   
-9. Retrieve the parameters from the query string and set them as values for local variables, as shown in the following code example. 
+9. Retrieve the parameters from the query string and set them as values for local variables, as shown in the following code example.
     
   ```cs
   
@@ -115,7 +115,7 @@ string action = Request.QueryString[ClickOnceLaunchKeys.LaunchOperation];
   ```
 
 
-    For information about the query string parameters, see  [Editors for Custom PerformancePoint Services Objects](http://msdn.microsoft.com/library/7c5924f1-91f3-436a-9d94-2e0dc454c8cc%28Office.15%29.aspx). 
+    For information about the query string parameters, see  [Editors for Custom PerformancePoint Services Objects](http://msdn.microsoft.com/library/7c5924f1-91f3-436a-9d94-2e0dc454c8cc%28Office.15%29.aspx).
     
   
 10. Retrieve the **ReportViewRepositoryHelper** object, which is used to make calls to the repository, as shown in the following code example.
@@ -125,13 +125,13 @@ string action = Request.QueryString[ClickOnceLaunchKeys.LaunchOperation];
 reportviewRepositoryHelper = new ReportViewRepositoryHelper();
   ```
 
-11. Set the report location based on the query string parameter, as shown in the following code example. 
+11. Set the report location based on the query string parameter, as shown in the following code example.
     
   ```cs
   RepositoryLocation repositoryReportViewLocation = RepositoryLocation.CreateFromUriString(itemLocation);
   ```
 
-12. Retrieve the operation to perform ( _OpenItem_ or _CreateItem_) from the query string, and then retrieve or create the custom report. 
+12. Retrieve the operation to perform ( _OpenItem_ or _CreateItem_) from the query string, and then retrieve or create the custom report.
     
   - To retrieve the custom report, use the **ReportViewRepositoryHelper.Get** method.
     
@@ -171,8 +171,8 @@ reportviewRepositoryHelper = new ReportViewRepositoryHelper();
 
 
    > [!NOTE]
-   > By default, users can create custom objects from PerformancePoint Dashboard Designer only. To enable users to create a custom object outside of Dashboard Designer, you must add a menu item that sends a  _CreateItem_ request to your editor from the content type in the repository. For more information, see [Editors for Custom PerformancePoint Services Objects](http://msdn.microsoft.com/library/7c5924f1-91f3-436a-9d94-2e0dc454c8cc%28Office.15%29.aspx). 
-13. Define the report's endpoint, which enables the report to receive data from filters and scorecards. The sample report editor defines the required properties for the endpoint, as shown in the following code example. 
+   > By default, users can create custom objects from PerformancePoint Dashboard Designer only. To enable users to create a custom object outside of Dashboard Designer, you must add a menu item that sends a  _CreateItem_ request to your editor from the content type in the repository. For more information, see [Editors for Custom PerformancePoint Services Objects](http://msdn.microsoft.com/library/7c5924f1-91f3-436a-9d94-2e0dc454c8cc%28Office.15%29.aspx).
+13. Define the report's endpoint, which enables the report to receive data from filters and scorecards. The sample report editor defines the required properties for the endpoint, as shown in the following code example.
     
   ```cs
   
@@ -200,16 +200,16 @@ if (0 == reportview.EndPoints.Count)
 14. Update the report with user-defined changes. The **buttonOK_Click** method in the sample report editor calls the **ReportViewRepositoryHelper.Update** method to update the report's [Name](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Name.aspx) and [Description](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Description.aspx) properties in the repository. **buttonOK_Click** is also used to validate the contents of the controls and retrieve state information for the custom report and the helper object.
     
    > [!NOTE]
-   > Users can edit a custom object's  [Name](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Name.aspx) , [Description](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Description.aspx) , and [Owner](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Owner.aspx) ( **Person Responsible**) properties and delete custom objects directly from Dashboard Designer and the PerformancePoint Services repository. 
+   > Users can edit a custom object's  [Name](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Name.aspx) , [Description](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Description.aspx) , and [Owner](https://msdn.microsoft.com/library/Microsoft.PerformancePoint.Scorecards.Element.Owner.aspx) ( **Person Responsible**) properties and delete custom objects directly from Dashboard Designer and the PerformancePoint Services repository.
 
 ## Code example: Create, retrieve, and update custom PerformancePoint Services reports in SharePoint Server 2013
 <a name="bk_example"> </a>
 
-The following code example creates, retrieves, and updates custom reports. This code is from the editor's code-behind class, which provides the programming logic for controls that are defined in an ASPX page. 
+The following code example creates, retrieves, and updates custom reports. This code is from the editor's code-behind class, which provides the programming logic for controls that are defined in an ASPX page.
   
     
     
-Before you can compile this code example, you must configure your development environment as described in  [Create editors for custom PerformancePoint Services reports](#BKMK_ConfigREditor). 
+Before you can compile this code example, you must configure your development environment as described in  [Create editors for custom PerformancePoint Services reports](#BKMK_ConfigREditor).
   
     
     
@@ -466,7 +466,7 @@ namespace Microsoft.PerformancePoint.SDK.Samples.SampleReport
 ## Next steps
 <a name="bk_next"> </a>
 
-After you create a report editor (including its user interface, if required) and a report renderer, deploy the extension as described in  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx). 
+After you create a report editor (including its user interface, if required) and a report renderer, deploy the extension as described in  [How to: Manually Register PerformancePoint Services Extensions](http://msdn.microsoft.com/library/3aa6d340-4b05-46b3-9648-2b6e18e04e09%28Office.15%29.aspx).
   
     
     

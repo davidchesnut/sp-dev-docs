@@ -10,29 +10,29 @@ Learn about trigger expressions you can use to create trigger conditions to conf
 ## Elements used in the syntax of trigger expressions
 <a name="SP15triggerex_elements"> </a>
 
-Elements that can be used in a trigger expression are: 
+Elements that can be used in a trigger expression are:
   
     
     
 
-- Operators 
+- Operators
     
   
-- Managed property value access 
+- Managed property value access
     
   
-- Literals 
+- Literals
     
   
-- Functions 
+- Functions
     
   
-- Constants 
+- Constants
     
   
 
 > [!NOTE]
-> The string " **Null**" is reserved for the value **Null**. 
+> The string " **Null**" is reserved for the value **Null**.
   
     
     
@@ -41,7 +41,7 @@ Elements that can be used in a trigger expression are:
 ## Operators in trigger expression syntax
 <a name="SP15triggerex_operators"> </a>
 
-Table 1 describes the operators supported by the trigger expression language, with order of precedence being from highest to lowest. Operators in the same category have equal precedence. Several operators have two versions of their syntax. 
+Table 1 describes the operators supported by the trigger expression language, with order of precedence being from highest to lowest. Operators in the same category have equal precedence. Several operators have two versions of their syntax.
   
     
     
@@ -51,18 +51,18 @@ Table 1 describes the operators supported by the trigger expression language, wi
 
 |**Category**|**Expression**|**Description**|
 |:-----|:-----|:-----|
-|Unary |- !, NOT |Arithmetic negation Logical negation |
-|Multiplicative |* / %, mod |Multiplication Division Remainder |
-|Additive |+ - &amp; |Addition Subtraction String concatenation |
-|Relational |=, == !=, <> < > <= >= |Equality Inequality Less than Greater than Less than or equal Greater than or equal |
-|Logical AND |&amp;&amp;, AND |Logical AND |
-|Logical OR |||, OR |Logical OR |
+|Unary|-!, NOT|Arithmetic negationLogical negation|
+|Multiplicative|*/%, mod|MultiplicationDivisionRemainder|
+|Additive|+-&amp;|AdditionSubtractionString concatenation|
+|Relational|=, ==!=, <><><=>=|EqualityInequalityLess thanGreater thanLess than or equalGreater than or equal|
+|Logical AND|&amp;&amp;, AND|Logical AND|
+|Logical OR|||, OR|Logical OR|
    
 
 ## Managed property access in trigger expressions
 <a name="SP15triggerex_managed"> </a>
 
-Managed properties in the crawled items are referenced by their name; the name is not in quotation marks ("") and is case-sensitive. 
+Managed properties in the crawled items are referenced by their name; the name is not in quotation marks ("") and is case-sensitive.
   
     
     
@@ -70,7 +70,7 @@ Managed properties in the crawled items are referenced by their name; the name i
 ## Literals in trigger expressions
 <a name="SP15triggerex_literals"> </a>
 
-The following data types can be expressed as literals: **String**, **Int32**, **Double**, and **Boolean**. 
+The following data types can be expressed as literals: **String**, **Int32**, **Double**, and **Boolean**.
   
     
     
@@ -78,7 +78,7 @@ The following data types can be expressed as literals: **String**, **Int32**, **
 ## Functions in trigger expressions
 <a name="SP15triggerex_functions"> </a>
 
-A wide collection of functions ranging from mathematical functions such as  `Floor` to functions for use with particular data types, such as `Lists`. You can use these functions individually or you can nest them. 
+A wide collection of functions ranging from mathematical functions such as  `Floor` to functions for use with particular data types, such as `Lists`. You can use these functions individually or you can nest them.
   
     
     
@@ -228,7 +228,7 @@ A wide collection of functions ranging from mathematical functions such as  `Flo
 ## Constants in trigger expressions
 <a name="SP15triggerex_constants"> </a>
 
-There are two sets of constants that can be used with specific functions: **DatePartConstant** and **RegexOptionConstant**. Table 2 lists the two examples of these constants and where you can use them. 
+There are two sets of constants that can be used with specific functions: **DatePartConstant** and **RegexOptionConstant**. Table 2 lists the two examples of these constants and where you can use them.
   
     
     

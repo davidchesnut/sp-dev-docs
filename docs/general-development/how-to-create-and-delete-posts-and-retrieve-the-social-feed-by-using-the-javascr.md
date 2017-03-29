@@ -6,7 +6,7 @@ ms.assetid: e8c21960-6ea0-43c0-821e-2db2a0ecec90
 
 
 # How to: Create and delete posts and retrieve the social feed by using the JavaScript object model in SharePoint 2013
-Learn how to create and delete microblog posts and retrieve social feeds by using the SharePoint 2013 JavaScript object model. 
+Learn how to create and delete microblog posts and retrieve social feeds by using the SharePoint 2013 JavaScript object model.
 ## What are social feeds in SharePoint Server 2013?
 <a name="bk_intro"> </a>
 
@@ -14,7 +14,7 @@ In SharePoint Server 2013, a social feed is a collection of threads that represe
   
     
     
-For more information about working with  [SocialFeedManager](http://msdn.microsoft.com/library/651fdf0f-841d-88f9-1e07-fcb3ad8c9410%28Office.15%29.aspx) or for information about using other APIs to work with social feeds, see [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md). 
+For more information about working with  [SocialFeedManager](http://msdn.microsoft.com/library/651fdf0f-841d-88f9-1e07-fcb3ad8c9410%28Office.15%29.aspx) or for information about using other APIs to work with social feeds, see [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md).
   
     
     
@@ -22,21 +22,21 @@ For more information about working with  [SocialFeedManager](http://msdn.microso
 ## Prerequisites for setting up your development environment to work with social feeds in the SharePoint 2013 JavaScript object model
 <a name="bkmk_SetUpDevEnv"> </a>
 
-To create an application page that uses the JavaScript object model to work with social feeds, you'll need: 
+To create an application page that uses the JavaScript object model to work with social feeds, you'll need:
   
     
     
 
-- SharePoint Server 2013 with My Site configured as public, with personal sites created for the current user and a target user, with the current user following the target user, and with a few posts written by the target user 
+- SharePoint Server 2013 with My Site configured as public, with personal sites created for the current user and a target user, with the current user following the target user, and with a few posts written by the target user
     
   
-- Visual Studio 2012 or Visual Studio 2013 with Office Developer Tools for Visual Studio 2013 
+- Visual Studio 2012 or Visual Studio 2013 with Office Developer Tools for Visual Studio 2013
     
   
 - **Full Control** access permissions to the User Profile service application and permissions to deploy a farm solution for the logged-on user
     
   
-- Sufficient permissions for the application pool account to access the content database of the My Sites web application 
+- Sufficient permissions for the application pool account to access the content database of the My Sites web application
     
   
 
@@ -44,7 +44,7 @@ To create an application page that uses the JavaScript object model to work with
 <a name="bk_CreateApp"> </a>
 
 
-1. Open Visual Studio and choose **File**, **New**, **Project**. 
+1. Open Visual Studio and choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
@@ -62,11 +62,11 @@ To create an application page that uses the JavaScript object model to work with
 6. In **Solution Explorer**, open the shortcut menu for the SocialFeedJSOM project, and then add a SharePoint "Layouts" mapped folder.
     
   
-7. In the **Layouts** folder, open the shortcut menu for theSocialFeedJSOM folder, and then add a new SharePoint application page namedSocialFeed.aspx. 
+7. In the **Layouts** folder, open the shortcut menu for theSocialFeedJSOM folder, and then add a new SharePoint application page namedSocialFeed.aspx.
     
    > [!NOTE]
-   > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page. 
-8. Open the shortcut menu for the SocialFeed.aspx page, and then choose **Set as Startup Item**. 
+   > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page.
+8. Open the shortcut menu for the SocialFeed.aspx page, and then choose **Set as Startup Item**.
     
   
 9. In the markup for the SocialFeed.aspx page, define controls inside the "Main" **asp:Content** tags, as shown in the following code.
@@ -116,12 +116,12 @@ To create an application page that uses the JavaScript object model to work with
 ## Code example: Publish posts and replies to the social feed by using the SharePoint 2013 JavaScript object model
 <a name="bkmk_PubPosts"> </a>
 
-The following code example publishes a post and a reply. It shows how to: 
+The following code example publishes a post and a reply. It shows how to:
   
     
     
 
-- Define post content. This example includes a link in the post. 
+- Define post content. This example includes a link in the post.
     
   
 - Publish a post to the current user's feed by using the **createPost** method and passing **null** as the _targetId_ parameter.
@@ -193,7 +193,7 @@ function PostFailed(sender, args) {
 ## Code example: Retrieve social feeds by using the SharePoint 2013 JavaScript object model
 <a name="bkmk_GetFeeds"> </a>
 
-The following code example retrieves feeds for the current user and a target user. It shows how to: 
+The following code example retrieves feeds for the current user and a target user. It shows how to:
   
     
     
@@ -204,10 +204,10 @@ The following code example retrieves feeds for the current user and a target use
 - Get the **Personal** feed type for a target user by using the **getFeedFor** method.
     
   
-- Iterate through the feeds to find all non-reference threads and to get information about threads and posts. Reference threads represent notifications that contain information about another thread. For example, if a user mentions someone in a post, the server generates a **MentionReference**-type thread that contains the link to the original post and other metadata about the post. 
+- Iterate through the feeds to find all non-reference threads and to get information about threads and posts. Reference threads represent notifications that contain information about another thread. For example, if a user mentions someone in a post, the server generates a **MentionReference**-type thread that contains the link to the original post and other metadata about the post.
     
   
-For more information about feed types, see  [Overview of feed types in the My Site Social API](work-with-social-feeds-in-sharepoint-2013.md#bkmk_FeedTypes). For more information about reference threads, see  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md). 
+For more information about feed types, see  [Overview of feed types in the My Site Social API](work-with-social-feeds-in-sharepoint-2013.md#bkmk_FeedTypes). For more information about reference threads, see  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md).
   
     
     
@@ -330,7 +330,7 @@ function RequestFailed(sender, args) {
 ## Code example: Delete posts and replies from the social feed by using the SharePoint 2013 JavaScript object model
 <a name="bkmk_DeletePosts"> </a>
 
-The following code example deletes a post or a reply. It shows how to: 
+The following code example deletes a post or a reply. It shows how to:
   
     
     

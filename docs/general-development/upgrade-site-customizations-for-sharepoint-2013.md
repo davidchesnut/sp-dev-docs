@@ -6,23 +6,23 @@ ms.assetid: 4b515860-69ae-4af8-8013-cd071c0ddca6
 
 
 # Upgrade site customizations for SharePoint 2013
-Learn about potential issues and get recommendations for upgrading your SharePoint 2010 site customizations to SharePoint 2013. 
-SharePoint 2013 introduces significant changes to the user interface (UI) that let you customize sites using faster, more agile components. But when you upgrade from SharePoint 2010, you might encounter some issues with the new components that have been built into SharePoint 2013 to handle the improvements to the UI. 
+Learn about potential issues and get recommendations for upgrading your SharePoint 2010 site customizations to SharePoint 2013.
+SharePoint 2013 introduces significant changes to the user interface (UI) that let you customize sites using faster, more agile components. But when you upgrade from SharePoint 2010, you might encounter some issues with the new components that have been built into SharePoint 2013 to handle the improvements to the UI.
   
     
     
 
-This article will help SharePoint developers and those responsible for administering the upgrade process from SharePoint 2010 to identify potential problems after upgrading. 
+This article will help SharePoint developers and those responsible for administering the upgrade process from SharePoint 2010 to identify potential problems after upgrading.
 ## General recommendations for upgrading
 
-In general, we recommend that you create a new "evaluation" site where you can test your customizations and redesign them for a SharePoint 2013 environment. For more information about creating an evaluation site collection, see  [Upgrade a site collection](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/upgrade-a-site-collection-HA102865473.aspx?CTT=5&amp;origin=HA104034491). 
+In general, we recommend that you create a new "evaluation" site where you can test your customizations and redesign them for a SharePoint 2013 environment. For more information about creating an evaluation site collection, see  [Upgrade a site collection](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/upgrade-a-site-collection-HA102865473.aspx?CTT=5&amp;origin=HA104034491).
   
     
     
 
 ### Upgrading custom components
 
-Table 1 lists the possible after-upgrade problems for custom components and information about how to address them. 
+Table 1 lists the possible after-upgrade problems for custom components and information about how to address them.
   
     
     

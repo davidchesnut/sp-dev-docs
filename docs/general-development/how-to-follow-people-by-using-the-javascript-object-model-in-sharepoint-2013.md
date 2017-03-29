@@ -6,7 +6,7 @@ ms.assetid: 2643c286-47c9-4a7a-9273-7474394477d6
 
 
 # How to: Follow people by using the JavaScript object model in SharePoint 2013
-Learn how to work with Following People features by using the SharePoint Server 2013 JavaScript object model. 
+Learn how to work with Following People features by using the SharePoint Server 2013 JavaScript object model.
 ## Why use Following People features in SharePoint Server 2013?
 <a name="bk_FollowingPeopleFeatures"> </a>
 
@@ -25,24 +25,24 @@ In SharePoint Server 2013, Following People features help users to stay connecte
 ## Prerequisites for setting up your development environment to work with Following People features by using the SharePoint 2013 JavaScript object model
 <a name="bk_Prereqs"> </a>
 
-To create the farm solution that uses the JavaScript object model to work with Following People features, you'll need: 
+To create the farm solution that uses the JavaScript object model to work with Following People features, you'll need:
   
     
     
 
-- SharePoint Server 2013 with My Site configured, and with user profiles and personal sites created for the current user and a target user 
+- SharePoint Server 2013 with My Site configured, and with user profiles and personal sites created for the current user and a target user
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
-- Office Developer Tools for Visual Studio 2012 
+- Office Developer Tools for Visual Studio 2012
     
   
 - **Full Control** access permissions to the User Profile service application for the logged-on user
     
   
-- Local administrator permissions for the logged-on user 
+- Local administrator permissions for the logged-on user
     
   
 
@@ -50,7 +50,7 @@ To create the farm solution that uses the JavaScript object model to work with F
 <a name="bk_CreateSolution"> </a>
 
 
-1. Run Visual Studio as administrator, and choose **File**, **New**, **Project**. 
+1. Run Visual Studio as administrator, and choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
@@ -68,11 +68,11 @@ To create the farm solution that uses the JavaScript object model to work with F
 6. In **Solution Explorer**, open the shortcut menu for the **FollowPeopleJSOM** project, and then add a SharePoint "Layouts" mapped folder.
     
   
-7. In the **Layouts** folder, open the shortcut menu for the **FollowPeopleJSOM** folder, and then add a new SharePoint application page namedFollowPeople.aspx. 
+7. In the **Layouts** folder, open the shortcut menu for the **FollowPeopleJSOM** folder, and then add a new SharePoint application page namedFollowPeople.aspx.
     
    > [!NOTE]
-   > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page. 
-8. Open the shortcut menu for the FollowPeople.aspx page, and then choose **Set as Startup Item**. 
+   > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page.
+8. Open the shortcut menu for the FollowPeople.aspx page, and then choose **Set as Startup Item**.
     
   
 9. In the markup of the FollowPeople.aspx file, paste the following code between the "Main" **asp:Content** tags. This code defines controls and script references.
@@ -97,7 +97,7 @@ To create the farm solution that uses the JavaScript object model to work with F
 
 
    > [!NOTE]
-   > The "Get followers and followed people" example doesn't use the button control or the form digest control, which is only required for operations that update server content. A form digest generates a message digest used for security validation. 
+   > The "Get followers and followed people" example doesn't use the button control or the form digest control, which is only required for operations that update server content. A form digest generates a message digest used for security validation.
 10. Replace the comment between the **script** tags with the code example from one of the following scenarios:
     
   -  [Start or stop following people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint-2013.md#bk_FollowPeople)
@@ -106,14 +106,14 @@ To create the farm solution that uses the JavaScript object model to work with F
   -  [Get followers and followed people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint-2013.md#bk_GetFollowers)
     
   
-11. To test the solution, on the menu bar, choose **Debug**, **Start Debugging**. 
+11. To test the solution, on the menu bar, choose **Debug**, **Start Debugging**.
     
   
 
 ## Code example: Start or stop following people by using the SharePoint 2013 JavaScript object model
 <a name="bk_FollowPeople"> </a>
 
-The following code example makes the current user start following or stop following a target user. It shows how to: 
+The following code example makes the current user start following or stop following a target user. It shows how to:
   
     
     
@@ -212,7 +212,7 @@ function requestFailed(sender, args) {
 ## Code example: Get followers and followed people by using the SharePoint 2013 JavaScript object model
 <a name="bk_GetFollowers"> </a>
 
-The following code example gets the people who the current user is following and gets the people who are followed by the current user. It shows how to: 
+The following code example gets the people who the current user is following and gets the people who are followed by the current user. It shows how to:
   
     
     
@@ -223,7 +223,7 @@ The following code example gets the people who the current user is following and
 - Get the people who are following the current user by using the  [getFollowers](http://msdn.microsoft.com/library/ae4a944b-c043-05fb-c74b-101d2ce4a813%28Office.15%29.aspx) method and passing **1** to represent **User** actor types.
     
   
-- Iterate through the groups of people and get each person's display name, personal site URI, and picture URI. 
+- Iterate through the groups of people and get each person's display name, personal site URI, and picture URI.
     
   
 

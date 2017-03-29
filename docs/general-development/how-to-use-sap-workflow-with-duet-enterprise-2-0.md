@@ -10,11 +10,11 @@ ms.assetid: 816e28ed-8cea-4e33-98e5-d3d27136e2e6
 ## Introduction
 <a name="bkmk_Introduction"> </a>
 
-SAP Business Workflow provides a way to automate business processes, and with Duet Enterprise 2.0, those workflows can be integrated within an SharePoint Add-in. 
+SAP Business Workflow provides a way to automate business processes, and with Duet Enterprise 2.0, those workflows can be integrated within an SharePoint Add-in.
   
     
     
-The following steps show how to create an app, configure it, and then how to display the information retrieved from the SAP workflows. 
+The following steps show how to create an app, configure it, and then how to display the information retrieved from the SAP workflows.
   
     
     
@@ -22,7 +22,7 @@ The following steps show how to create an app, configure it, and then how to dis
 ## Create an app for SharePoint and Duet Enterprise 2.0
 <a name="bkmk_CreateApp"> </a>
 
-The first step is to create an SharePoint Add-in that will contain the connection information using an external content type for Business Connectivity Services (BCS), external lists and any customizations you might want to use to present the data. 
+The first step is to create an SharePoint Add-in that will contain the connection information using an external content type for Business Connectivity Services (BCS), external lists and any customizations you might want to use to present the data.
   
     
     
@@ -30,28 +30,28 @@ The first step is to create an SharePoint Add-in that will contain the connectio
 ### To create an app for SharePoint:
 
 
-1. Start Visual Studio 2012 as an administrator. 
+1. Start Visual Studio 2012 as an administrator.
     
   
-2. Choose **File**, **New**, **New Project**. 
+2. Choose **File**, **New**, **New Project**.
     
   
 3. In the **New Project** dialog box, expand the **Visual C#** node, expand the **Office/SharePoint** node, and then choose the **Apps** node.
     
   
-4. Choose **App for SharePoint 2013**. 
+4. Choose **App for SharePoint 2013**.
     
   
-5. Name the project and click **OK**. 
+5. Name the project and click **OK**.
     
   
-6. In the first **Specify the App for SharePoint Settings** dialog box, name your app and choose **SharePoint-hosted** under **How do you want to host your app for SharePoint**. Also specify the URL of the **Duet Workflow site** you want to debug against under **What SharePoint site do you want to use for debugging your app** and choose **Finish**. 
+6. In the first **Specify the App for SharePoint Settings** dialog box, name your app and choose **SharePoint-hosted** under **How do you want to host your app for SharePoint**. Also specify the URL of the **Duet Workflow site** you want to debug against under **What SharePoint site do you want to use for debugging your app** and choose **Finish**.
     
   
 7. On the Build menu, choose **Deploy** *<your app name>*  .
     
   
-After the app is deployed, Visual Studio will launch the default page for the app. 
+After the app is deployed, Visual Studio will launch the default page for the app.
   
     
     
@@ -59,7 +59,7 @@ After the app is deployed, Visual Studio will launch the default page for the ap
 ## Add the external content type and external lists to the app
 <a name="bkmk_AddECT"> </a>
 
-BCS must be made aware of the external data source. This is done using an external content type. 
+BCS must be made aware of the external data source. This is done using an external content type.
   
     
     
@@ -67,7 +67,7 @@ BCS must be made aware of the external data source. This is done using an extern
 ### To add an external content type:
 
 
-1. In the **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**. 
+1. In the **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**.
     
   
 2. On the **Specify OData Source** page, enter the URL of the Duet Enterprise Workflow Service. The following is an example of a Duet service URL:
@@ -75,13 +75,13 @@ BCS must be made aware of the external data source. This is done using an extern
      *https://<<DUETGATEWAY>>:<<PORT>>/sap/opu/odata/IWWRK/DUET_WORKFLOW_CORE;mo;c=SHAREPOINT_DE* 
     
   
-3. Choose a name for your ODATA source, for example, SAPWorkflows, and then choose **Next**. 
+3. Choose a name for your ODATA source, for example, SAPWorkflows, and then choose **Next**.
     
   
-4. Specify the SAP username and password to connect to the service metadata. 
+4. Specify the SAP username and password to connect to the service metadata.
     
   
-5. A list of data entities that are being exposed by the OData Service appears. Select the entities you wish to include in the external content type. In this example, using the SAP workflow services, select from the following: 
+5. A list of data entities that are being exposed by the OData Service appears. Select the entities you wish to include in the external content type. In this example, using the SAP workflow services, select from the following:
     
   - **AttachmentCollection**
     
@@ -110,12 +110,12 @@ BCS must be made aware of the external data source. This is done using an extern
 6. Select the **Create list instances for the selected data entities (except Service Operations)** check box.
     
   
-7. Choose **Finish**. 
+7. Choose **Finish**.
     
   
 
 > [!NOTE]
-> Make sure SAP workflow service allows basic authentication as the BDC auto-generation tools in Visual Studio. 
+> Make sure SAP workflow service allows basic authentication as the BDC auto-generation tools in Visual Studio.
   
     
     
@@ -124,7 +124,7 @@ BCS must be made aware of the external data source. This is done using an extern
 ## Add a custom action feature to a Duet Enterprise 2.0 workflow list
 <a name="bkmk_AddCustomAction"> </a>
 
-In order to provide a way for the user to work with the new functionality added to a SharePoint list, the following steps will add an item to the Site Actions menu. 
+In order to provide a way for the user to work with the new functionality added to a SharePoint list, the following steps will add an item to the Site Actions menu.
   
     
     
@@ -137,15 +137,15 @@ In order to provide a way for the user to work with the new functionality added 
   
 2. Open the **Elements.xml** file of the custom action host web feature. By replacing the code in the file with the following XML, the custom action will:
     
-  - Declare an ECB custom action and its attributes. 
+  - Declare an ECB custom action and its attributes.
     
   
-  - Declare a Ribbon custom action and its attributes. 
+  - Declare a Ribbon custom action and its attributes.
     
   
   - Declare the app webpage target and the values that are passed to it through the query string. 
     
-    The **UrlAction** element uses several tokens. For more information, see [URL strings and tokens in SharePoint Add-ins](http://msdn.microsoft.com/library/800ec8cd-a448-46bc-b41e-d4030eeb4048%28Office.15%29.aspx). 
+    The **UrlAction** element uses several tokens. For more information, see [URL strings and tokens in SharePoint Add-ins](http://msdn.microsoft.com/library/800ec8cd-a448-46bc-b41e-d4030eeb4048%28Office.15%29.aspx).
     
   
 
@@ -199,18 +199,18 @@ In order to provide a way for the user to work with the new functionality added 
 </Elements>
   ```
 
-3. Add a new page, ViewDetails.aspx page to the project. 
+3. Add a new page, ViewDetails.aspx page to the project.
     
   
 4. Press **F5** to build and deploy the SharePoint app.
     
   
-5. Go to the **WorkItem** list in the host web and choose **View Details** in the context menu. You will be redirected to **ViewDetails.aspx**. 
+5. Go to the **WorkItem** list in the host web and choose **View Details** in the context menu. You will be redirected to **ViewDetails.aspx**.
     
   
 
 > [!NOTE]
-> Make sure the SAP workflow service allows basic authentication. The BDC auto-generation tools in Visual Studio currently only support anonymous and basic authentication. 
+> Make sure the SAP workflow service allows basic authentication. The BDC auto-generation tools in Visual Studio currently only support anonymous and basic authentication.
   
     
     
@@ -219,11 +219,11 @@ If you deploy the app and then navigate to **Lists/WorkflowTaskCollection** insi
   
     
     
-"Message from External System: 'LobSystem (External System) returned authentication error.'". 
+"Message from External System: 'LobSystem (External System) returned authentication error.'".
   
     
     
-To fix this, you will need to add single sign-on to the app to provide authentication credentials to BCS and the SAP backend. 
+To fix this, you will need to add single sign-on to the app to provide authentication credentials to BCS and the SAP backend.
   
     
     
@@ -231,7 +231,7 @@ To fix this, you will need to add single sign-on to the app to provide authentic
 ## Add single sign-on security to the app
 <a name="bkmk_AddSSO"> </a>
 
-Duet Enterprise Single Sign-On will allow users to be authenticated so that they can access resources on both the SharePoint and SAP sides with one sign in. 
+Duet Enterprise Single Sign-On will allow users to be authenticated so that they can access resources on both the SharePoint and SAP sides with one sign in.
   
     
     
@@ -239,7 +239,7 @@ Duet Enterprise Single Sign-On will allow users to be authenticated so that they
 ### To add single sign-on:
 
 
-1. Create an OData connection by executing the following command on the SharePoint Management Shell. 
+1. Create an OData connection by executing the following command on the SharePoint Management Shell.
     
   ```XML
   
@@ -253,16 +253,16 @@ DUET_WORKFLOW_CORE;mo;c=SHAREPOINT_DE"
 
   ```
 
-2. Double click on **WorkflowTaskCollection.ect**. 
+2. Double click on **WorkflowTaskCollection.ect**.
     
   
 3. In the Properties window, update the value of  `ODataConnectionSettingId` to *SAPWorkflow*  .
     
   
-4. Allow the App to use the Connection. 
+4. Allow the App to use the Connection.
     
   
-5. Open the **AppManifest.xml**. 
+5. Open the **AppManifest.xml**.
     
   
 6. In **Permission Requests**, select **Scope**, **BCS** then **Permission** = Read.
@@ -277,14 +277,14 @@ DUET_WORKFLOW_CORE;mo;c=SHAREPOINT_DE"
 9. Choose the **Trust It** button.
     
   
-10. Navigate to **../Lists/WorkflowTaskCollection**. You should see the SAP tasks assigned to you coming directly from the SAP system. 
+10. Navigate to **../Lists/WorkflowTaskCollection**. You should see the SAP tasks assigned to you coming directly from the SAP system.
     
   
 
 ## Access workflow tasks and associated items using JSOM
 <a name="bkmk_UseJSOM"> </a>
 
-Since SharePoint Add-ins must use client code to communicate with SharePoint, the following will demonstrate how to interact with the SAP workflow tasks using the JavaScript object model. 
+Since SharePoint Add-ins must use client code to communicate with SharePoint, the following will demonstrate how to interact with the SAP workflow tasks using the JavaScript object model.
   
     
     
@@ -319,10 +319,10 @@ Since SharePoint Add-ins must use client code to communicate with SharePoint, th
 
   ```
 
-3. Right-click the **Scripts** folder and add a JavaScript file. Name it **ViewDetails.js**. 
+3. Right-click the **Scripts** folder and add a JavaScript file. Name it **ViewDetails.js**.
     
   
-4. This markup will do the following: 
+4. This markup will do the following:
     
   - Retrieves the  `ClientContext` for the parent web.
     
@@ -333,16 +333,16 @@ Since SharePoint Add-ins must use client code to communicate with SharePoint, th
   - Parses the  `TaskInstanceParentId` to get SAP Origin and the ID for the workflow in SAP.
     
   
-  - Loads the entities for the external content types. 
+  - Loads the entities for the external content types.
     
   
-  - Reads the specific workflow task from SAP using specific finder by passing SAP Origin and the workflow task ID for SAP as parameters. 
+  - Reads the specific workflow task from SAP using specific finder by passing SAP Origin and the workflow task ID for SAP as parameters.
     
   
-  - Reads the associated elements for the workflow task from SAP. 
+  - Reads the associated elements for the workflow task from SAP.
     
   
-5. The following is the complete HTML and JavaScript for the page. 
+5. The following is the complete HTML and JavaScript for the page.
     
   ```
   
@@ -537,7 +537,7 @@ function getQueryStringParameter(paramToRetrieve) {
 ## Using HTML and JavaScript to render Custom UI
 <a name="bkmk_UseJSOM"> </a>
 
-In ViewDetails.aspx, replace the following code with your own HTML and JavaScript to render your own custom UI. 
+In ViewDetails.aspx, replace the following code with your own HTML and JavaScript to render your own custom UI.
   
     
     
@@ -556,7 +556,7 @@ alert("# of extensible elements: " + exElementsCollection.get_count() +
 ## Adding Lync Control to your details page
 <a name="bkmk_UseJSOM"> </a>
 
-Here is one option for your custom user interface. Adding a Lync control will give you the ability to communicate with your Lync contacts from the custom page. 
+Here is one option for your custom user interface. Adding a Lync control will give you the ability to communicate with your Lync contacts from the custom page.
   
     
     
@@ -564,15 +564,15 @@ Here is one option for your custom user interface. Adding a Lync control will gi
 ### To add a Lync control:
 
 
-1. Right-click the **Scripts** folder in solution explorer, add a JavaScript file and name it **People.js**. 
+1. Right-click the **Scripts** folder in solution explorer, add a JavaScript file and name it **People.js**.
     
   
-2. The following markup will: 
+2. The following markup will:
     
-  - Add presence control for the participants of the task. 
+  - Add presence control for the participants of the task.
     
   
-  - Lync integration in callout for participants for one-click collaboration for the task. 
+  - Lync integration in callout for participants for one-click collaboration for the task.
     
   
 
@@ -775,14 +775,14 @@ function RegisterCallOut(divId, displayName, aboutme, userUrl, isFollowed) {
 
 
    > [!NOTE]
-   > The user name of the participant in company's network is same as that in SAP. 
+   > The user name of the participant in company's network is same as that in SAP.
 3. Open the **AppManifest.xml** page.
     
   
 4. In **Permission Requests**, select **Scope**, **User Profiles and Permission** and set its value to *Read*  .
     
   
-5. Copy the following markup and paste it in the  `PlaceHolderAdditionalPageHead` section in **ViewDetails.aspx**. 
+5. Copy the following markup and paste it in the  `PlaceHolderAdditionalPageHead` section in **ViewDetails.aspx**.
     
   ```HTML
   

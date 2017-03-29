@@ -6,20 +6,20 @@ ms.assetid: 1b30f6df-643a-4570-ae5c-d3d8df5609b8
 
 
 # Customizing search results in SharePoint 2013
-Learn how to group similar items or remove duplicate items in a search result set in SharePoint Server 2013 so you can display these results in a concise, readable way. 
-In search results, grouping collapses two or more similar items in a search result set to make their display more readable for a user. Duplicate removal of search results is a part of grouping, where items that are identical or nearly identical are removed from the result set. Depending on the settings set by the SharePoint administrator, the user might be able to expand the search result set later and see the individual results that were collapsed. 
+Learn how to group similar items or remove duplicate items in a search result set in SharePoint Server 2013 so you can display these results in a concise, readable way.
+In search results, grouping collapses two or more similar items in a search result set to make their display more readable for a user. Duplicate removal of search results is a part of grouping, where items that are identical or nearly identical are removed from the result set. Depending on the settings set by the SharePoint administrator, the user might be able to expand the search result set later and see the individual results that were collapsed.
   
     
     
 
-The following are examples of ways to group search results: 
-- Duplicate detection, where nearly identical documents are removed from the result set. 
+The following are examples of ways to group search results:
+- Duplicate detection, where nearly identical documents are removed from the result set.
     
   
-- Site collapsing, where only the most relevant item found in each site is shown in the result set. 
+- Site collapsing, where only the most relevant item found in each site is shown in the result set.
     
   
-- Document set collapsing, where only one hit is displayed for each document library in SharePoint. 
+- Document set collapsing, where only one hit is displayed for each document library in SharePoint.
     
   
 You can specify the criteria for collapsing or duplicate trimming programmatically by using the following  [KeywordQuery](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Query.KeywordQuery.aspx) properties within the Query object model:
@@ -67,11 +67,11 @@ The following table lists the fields of the  _Spec_ parameter.
 | _Spec_| `Subspec(<space>Subspec)*`|
 | _Subspec_| `Prop(','Prop)*[':'Dups]`|
 | _Prop_|A valid managed property or an alias of a managed property.  _Prop_ is case-insensitive. The managed property must be queryable and either sortable or refineable.|
-| _Dups_|An integer specifying the number of items to retain. The default value is 1. |
+| _Dups_|An integer specifying the number of items to retain. The default value is 1.|
 | _<space>_|Properties are combined by using the **OR** operator.|
 | _,_|Properties are combined by using the **AND** operator.|
-| _*_|Indicates more items. |
-| _() or []_|Indicates optional items. |
+| _*_|Indicates more items.|
+| _() or []_|Indicates optional items.|
    
 If the fields in  _Spec_ are separated by commas, the fields are combined by using the **AND** operator. If all of the specified fields are matched, the items are collapsed.
   
@@ -92,15 +92,15 @@ The following table shows a product catalog from the Contoso company. The next s
 
 |**Category**|**Product**|**Variant**|**Title**|
 |:-----|:-----|:-----|:-----|
-|Laptops |WWI |19W X0196 Black |Computer 1 |
-|Laptops |Adventure Works |12 M1201 Red |Computer 2 |
-|Laptops |Adventure Works |15.4W M1548 White |Computer 3 |
-|Laptops |Proseware |19 X910 Black |Computer 4 |
-|Laptops |Proseware |Laptop19 X910 Black |Computer 5 |
-|Desktops |Adventure Works |2.33 XD233 Silver |Computer 6 |
-|Desktops |WWI |2.33 X2330 Black |Computer 7 |
-|Desktops |Adventure Works |1.60 ED160 White |Computer 8 |
-|Desktops |WWI |3.0 M0300 Silver |Computer 9 |
+|Laptops|WWI|19W X0196 Black|Computer 1|
+|Laptops|Adventure Works|12 M1201 Red|Computer 2|
+|Laptops|Adventure Works|15.4W M1548 White|Computer 3|
+|Laptops|Proseware|19 X910 Black|Computer 4|
+|Laptops|Proseware|Laptop19 X910 Black|Computer 5|
+|Desktops|Adventure Works|2.33 XD233 Silver|Computer 6|
+|Desktops|WWI|2.33 X2330 Black|Computer 7|
+|Desktops|Adventure Works|1.60 ED160 White|Computer 8|
+|Desktops|WWI|3.0 M0300 Silver|Computer 9|
    
 
   
@@ -109,7 +109,7 @@ The following table shows a product catalog from the Contoso company. The next s
 
 #### Example: group by Category
 
-First, group the items based on **Category** and show the top two (hence `"Category:2"`) for each group. Then, for each **Category**, show a corresponding number of unique (hence "Product:1") **Products**. 
+First, group the items based on **Category** and show the top two (hence `"Category:2"`) for each group. Then, for each **Category**, show a corresponding number of unique (hence "Product:1") **Products**.
   
     
     
@@ -121,7 +121,7 @@ First, group the items based on **Category** and show the top two (hence `"Categ
   
     
     
-This should return the following results. 
+This should return the following results.
   
     
     
@@ -129,10 +129,10 @@ This should return the following results.
 
 |**Category**|**Product**|**Variant**|**Title**|
 |:-----|:-----|:-----|:-----|
-|Laptops |WWI |19W X0196 Black |Computer 1 |
-|Laptops |Adventure |12 M1201 Red |Computer 2 |
-|Desktops |Adventure Works |2.33 XD233 Silver |Computer 6 |
-|Desktops |WWI |2.33 X2330 Black |Computer 7 |
+|Laptops|WWI|19W X0196 Black|Computer 1|
+|Laptops|Adventure|12 M1201 Red|Computer 2|
+|Desktops|Adventure Works|2.33 XD233 Silver|Computer 6|
+|Desktops|WWI|2.33 X2330 Black|Computer 7|
    
 Use the following code to collapse the search results by using the **CollapseSpecification** property.
   
@@ -167,7 +167,7 @@ using (var context = new ClientContext("http://localhost"))
 
 #### Example: group by Category and Product
 
-First, group the items based on both **Category** and **Product**. Then, show each unique combination. 
+First, group the items based on both **Category** and **Product**. Then, show each unique combination.
   
     
     
@@ -179,7 +179,7 @@ First, group the items based on both **Category** and **Product**. Then, show ea
   
     
     
-This should return the following results. 
+This should return the following results.
   
     
     
@@ -187,11 +187,11 @@ This should return the following results.
 
 |**Category**|**Product**|**Variant**|**Title**|
 |:-----|:-----|:-----|:-----|
-|Laptops |WWI |19W X0196 Black |Computer 1 |
-|Laptops |Adventure Works |12 M1201 Red |Computer 2 |
-|Laptops |Proseware |19 X910 Black |Computer 4 |
-|Desktops |Adventure Works |2.33 XD233 Silver |Computer 6 |
-|Desktops |WWI |2.33 X2330 Black |Computer 7 |
+|Laptops|WWI|19W X0196 Black|Computer 1|
+|Laptops|Adventure Works|12 M1201 Red|Computer 2|
+|Laptops|Proseware|19 X910 Black|Computer 4|
+|Desktops|Adventure Works|2.33 XD233 Silver|Computer 6|
+|Desktops|WWI|2.33 X2330 Black|Computer 7|
    
 
 ## Trim duplicate search results using the TrimDuplicates property
@@ -201,7 +201,7 @@ Use **TrimDuplicates** to specify whether to trim away the duplicate search resu
   
     
     
-If you use **TrimDuplicates** with either **TrimDuplicatesOnProperty** or preferably **CollapseSpecification**, **TrimDuplicates** is set to **false**. 
+If you use **TrimDuplicates** with either **TrimDuplicatesOnProperty** or preferably **CollapseSpecification**, **TrimDuplicates** is set to **false**.
   
     
     
@@ -217,7 +217,7 @@ If you use **TrimDuplicates** with either **TrimDuplicatesOnProperty** or prefer
 ### Trim duplicate search results using the TrimDuplicatesOnProperty property
 <a name="bk_trim_duplicates_on_property"> </a>
 
-Use **TrimDuplicatesOnProperty** to specify whether to use a non-default managed property as the basis for duplicate trimming. The default value is the **DocumentSignature** managed property. The managed property must be of type **Integer** or **String**. By using a managed property that represents a grouping of items, you can use this feature for field collapsing. 
+Use **TrimDuplicatesOnProperty** to specify whether to use a non-default managed property as the basis for duplicate trimming. The default value is the **DocumentSignature** managed property. The managed property must be of type **Integer** or **String**. By using a managed property that represents a grouping of items, you can use this feature for field collapsing.
   
     
     
@@ -256,11 +256,11 @@ Use **TrimDuplicatesKeepCount** to specify the number of documents to retain whe
 ### Retrieve duplicate search results using the TrimDuplicatesIncludeId property
 <a name="bk_trim_duplicates_include_id"> </a>
 
-Use **TrimDuplicatesIncludeId** to retrieve the duplicates of a document when **TrimDuplicates** is **true** and **TrimDuplicatesOnProperty** or **CollapseSpecification** is set to **false**. 
+Use **TrimDuplicatesIncludeId** to retrieve the duplicates of a document when **TrimDuplicates** is **true** and **TrimDuplicatesOnProperty** or **CollapseSpecification** is set to **false**.
   
     
     
-The document ID,  _docid_, is used to retrieve the duplicates of a particular document. 
+The document ID,  _docid_, is used to retrieve the duplicates of a particular document.
   
     
     

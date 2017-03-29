@@ -7,8 +7,8 @@ ms.assetid: 18e32537-d7ed-4fe7-90cf-b6cfab3f85a3
 
 
 # How to: Customize a field type using client-side rendering
-Learn how to customize a field type by using the client-side rendering technology in SharePoint 2013. 
-Client-side rendering provides a mechanism that you can use to produce your own output for a set of controls that are hosted in a SharePoint page. This mechanism enables you to use well-known technologies, such as HTML and JavaScript, to define the rendering logic of custom field types. In client-side rendering you can specify your own JavaScript resources and host them in the data storage options available to your farm solution, such as the _layouts folder. 
+Learn how to customize a field type by using the client-side rendering technology in SharePoint 2013.
+Client-side rendering provides a mechanism that you can use to produce your own output for a set of controls that are hosted in a SharePoint page. This mechanism enables you to use well-known technologies, such as HTML and JavaScript, to define the rendering logic of custom field types. In client-side rendering you can specify your own JavaScript resources and host them in the data storage options available to your farm solution, such as the _layouts folder.
   
     
     
@@ -17,28 +17,28 @@ Client-side rendering provides a mechanism that you can use to produce your own 
 ## Prerequisites for using the examples in this article
 <a name="SP15CustomizeafieldtypeusingCSR_Prereq"> </a>
 
-To follow the steps in this example, you need the following: 
+To follow the steps in this example, you need the following:
   
     
     
 
-- Microsoft Visual Studio 2012 
+- Microsoft Visual Studio 2012
     
   
-- Office Developer Tools for Visual Studio 2012 
+- Office Developer Tools for Visual Studio 2012
     
   
-- A SharePoint 2013 development environment 
+- A SharePoint 2013 development environment
     
   
-For information about setting up your SharePoint development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md). 
+For information about setting up your SharePoint development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
   
     
     
 
 ### Core concepts to help you understand client-side rendering for field types
 
-The following table lists useful articles that can help you understand the concepts and steps that are involved in a custom action scenario. 
+The following table lists useful articles that can help you understand the concepts and steps that are involved in a custom action scenario.
   
     
     
@@ -48,31 +48,31 @@ The following table lists useful articles that can help you understand the conce
 
 |**Article title**|**Description**|
 |:-----|:-----|
-| [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint-2013.md)|Learn about developing, packaging, and deploying administrative extensions to SharePoint 2013 using farm solutions. |
+| [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint-2013.md)|Learn about developing, packaging, and deploying administrative extensions to SharePoint 2013 using farm solutions.|
 | [Custom Field Types](http://msdn.microsoft.com/en-us/library/ms446361.aspx)|Learn about creating custom field types. As you store your business information in SharePoint 2013, there may be times when your data does not conform to the field types that are available in SharePoint FoundationOr, you might just want to customize those field types. Custom fields can include custom data validation and custom field rendering. |
    
 
 ## Code example: Customize the rendering process for a custom field type in a view form
 <a name="SP15CustomizeafieldtypeusingCSR_Codeexample"> </a>
 
-Follow these steps to customize the rendering process for a custom field type: 
+Follow these steps to customize the rendering process for a custom field type:
   
     
     
 
-1. Create the farm solution project. 
+1. Create the farm solution project.
     
   
-2. Add a class for the custom field type. 
+2. Add a class for the custom field type.
     
   
-3. Add an XML definition for the custom field type. 
+3. Add an XML definition for the custom field type.
     
   
-4. Add a JavaScript file for the rendering logic of the custom field type. 
+4. Add a JavaScript file for the rendering logic of the custom field type.
     
   
-Figure 1 shows a view form with a custom-rendered field type. 
+Figure 1 shows a view form with a custom-rendered field type.
   
     
     
@@ -99,7 +99,7 @@ Figure 1 shows a view form with a custom-rendered field type.
   
 2. Create a new project using the ** SharePoint 2013 Project** template
     
-    Figure 2 shows the location of the ** SharePoint 2013 Project** template in Visual Studio 2012, under **Templates**, **Visual C#**, **Office SharePoint**, **SharePoint Solutions**. 
+    Figure 2 shows the location of the ** SharePoint 2013 Project** template in Visual Studio 2012, under **Templates**, **Visual C#**, **Office SharePoint**, **SharePoint Solutions**.
     
 
    **Figure 2. SharePoint 2013 project Visual Studio template**
@@ -112,7 +112,7 @@ Figure 1 shows a view form with a custom-rendered field type.
   
 
   
-3. Provide the URL of the SharePoint website that you want to use for debugging. 
+3. Provide the URL of the SharePoint website that you want to use for debugging.
     
   
 4. Select the **Deploy as a farm solution** option.
@@ -122,12 +122,12 @@ Figure 1 shows a view form with a custom-rendered field type.
 ### To add a class for the custom field type
 
 
-1. Right-click the farm solution project and add a new class. Name the class file FavoriteColorFieldType.cs. 
+1. Right-click the farm solution project and add a new class. Name the class file FavoriteColorFieldType.cs.
     
   
-2. Copy the following code and paste it in the FavoriteColorFieldType.cs file. The code performs the following tasks: 
+2. Copy the following code and paste it in the FavoriteColorFieldType.cs file. The code performs the following tasks:
     
-  - Declares a **FavoriteColorField** class that inherits from **SPFieldText**. 
+  - Declares a **FavoriteColorField** class that inherits from **SPFieldText**.
     
   
   - Provides two constructors for the **FavoriteColorField** class.
@@ -136,7 +136,7 @@ Figure 1 shows a view form with a custom-rendered field type.
   - Overrides the **JSLink** property.
     
    > [!NOTE]
-   > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list. 
+   > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list.
 
   ```cs
   
@@ -213,18 +213,18 @@ namespace Microsoft.SDK.SharePoint.Samples.WebControls
 1. Right-click the farm solution project, and add a SharePoint mapped folder. In the dialog box, select the **{SharePointRoot}\\Template\\XML** folder.
     
   
-2. Right-click the XML folder created in the last step, and add a new XML file. Name the XML file fldtypes_FavoriteColorFieldType.xml. 
+2. Right-click the XML folder created in the last step, and add a new XML file. Name the XML file fldtypes_FavoriteColorFieldType.xml.
     
   
-3. Copy the following markup, and paste it in the XML file. The markup performs the following tasks: 
+3. Copy the following markup, and paste it in the XML file. The markup performs the following tasks:
     
-  - Provides type name for the field type. 
-    
-  
-  - Specifies the full class name for the field type. This is the class you created in the previous procedure. 
+  - Provides type name for the field type.
     
   
-  - Provides additional attributes for the field type. 
+  - Specifies the full class name for the field type. This is the class you created in the previous procedure.
+    
+  
+  - Provides additional attributes for the field type.
     
   
 
@@ -253,21 +253,21 @@ namespace Microsoft.SDK.SharePoint.Samples.WebControls
 ### To add a JavaScript file for the rendering logic of the custom field type
 
 
-1. Right-click the farm solution project, and add the SharePoint Layouts mapped folder. Add a new CSRAssets folder to the recently added Layouts folder. 
+1. Right-click the farm solution project, and add the SharePoint Layouts mapped folder. Add a new CSRAssets folder to the recently added Layouts folder.
     
   
-2. Right-click the CSRAssets folder that you created in the last step, and add a new JavaScript file. Name the JavaScript file CSRFieldType.js. 
+2. Right-click the CSRAssets folder that you created in the last step, and add a new JavaScript file. Name the JavaScript file CSRFieldType.js.
     
   
-3. Copy the following code and paste it in the JavaScript file. The code performs the following tasks: 
+3. Copy the following code and paste it in the JavaScript file. The code performs the following tasks:
     
-  - Creates a template for the field when it is displayed in a view form. 
-    
-  
-  - Registers the template. 
+  - Creates a template for the field when it is displayed in a view form.
     
   
-  - Provides the rendering logic for the field type when used displayed in a view form. 
+  - Registers the template.
+    
+  
+  - Provides the rendering logic for the field type when used displayed in a view form.
     
   
 
@@ -303,17 +303,17 @@ function favoriteColorViewTemplate(ctx) {
 ### To build and run the solution
 
 
-1. Press the F5 key. 
+1. Press the F5 key.
     
    > [!NOTE]
-   > When you press F5, Visual Studio builds the solution, deploys the solution, and opens the SharePoint website where the solution is deployed. 
-2. Create a custom list and add a new Favorite color field column. 
+   > When you press F5, Visual Studio builds the solution, deploys the solution, and opens the SharePoint website where the solution is deployed.
+2. Create a custom list and add a new Favorite color field column.
     
   
-3. Add one item to the list, and provide a value for the favorite color column. 
+3. Add one item to the list, and provide a value for the favorite color column.
     
   
-4. Figure 3 shows the create column page with the new custom field type. 
+4. Figure 3 shows the create column page with the new custom field type.
     
    **Figure 3. Creating a new custom field type column**
 
@@ -337,7 +337,7 @@ function favoriteColorViewTemplate(ctx) {
 ## Next steps
 <a name="SP15CustomizeafieldtypeusingCSR_Nextsteps"> </a>
 
-This article demonstrated how to customize the rendering process for a custom field type. As a next step, you can learn more details about custom field types. To learn more, see the following: 
+This article demonstrated how to customize the rendering process for a custom field type. As a next step, you can learn more details about custom field types. To learn more, see the following:
   
     
     

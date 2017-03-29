@@ -1,12 +1,12 @@
 ---
 title: Understanding Eventing Actions in SharePoint Designer 2013
-ms.prod: SHAREPOINT
+ms.prod: SHAREPOINTDESIGNER
 ms.assetid: fe4ad8cf-2c6f-488d-8b33-6bf4357018ac
 ---
 
 
 # Understanding Eventing Actions in SharePoint Designer 2013
-Learn to use Eventing Actions in SharePoint Designer 2013. 
+Learn to use Eventing Actions in SharePoint Designer 2013.
 ## Overview of Eventing Actions in SharePoint Designer 2013
 <a name="section1"> </a>
 
@@ -89,11 +89,11 @@ The Eventing actions are accessed in the **Action** drop-down menu of the ShareP
 ## Using Eventing Actions in SharePoint 2013
 <a name="section2"> </a>
 
-A workflow orchestrates business processes. In a business process it is often important to wait for an item to be added or updated in a SharePoint list. Using the Eventing actions you can wait for an event to happen and then perform a workflow action. 
+A workflow orchestrates business processes. In a business process it is often important to wait for an item to be added or updated in a SharePoint list. Using the Eventing actions you can wait for an event to happen and then perform a workflow action.
   
     
     
-The Eventing actions are located on the Actions drop-down menu in the SharePoint Designer 2013 ribbon. You can add the action to your workflow and then customize it for your particular circumstance. 
+The Eventing actions are located on the Actions drop-down menu in the SharePoint Designer 2013 ribbon. You can add the action to your workflow and then customize it for your particular circumstance.
   
     
     
@@ -126,7 +126,7 @@ The **Wait for Event in List Item** action contains two editable regions, as sho
   
     
     
-The two editable regions are: 
+The two editable regions are:
   
     
     
@@ -196,7 +196,7 @@ The **Wait for Project Event** action contains one editable region, as shown in 
   
     
     
-The editable region is: 
+The editable region is:
   
     
     
@@ -208,7 +208,7 @@ The **This project event** drop-down includes three project events to choose fro
   
     
     
-Once an event has occurred the workflow will continue to process. 
+Once an event has occurred the workflow will continue to process.
   
     
     
@@ -241,7 +241,7 @@ The **Wait for Field Change in Current Item** action contains two editable regio
   
     
     
-The editable regions are: 
+The editable regions are:
   
     
     
@@ -252,7 +252,7 @@ The editable regions are:
 - **Value:** The value that the field should equal in order for the workflow to proceed.
     
   
-Once a field has changed the workflow continues. 
+Once a field has changed the workflow continues.
   
     
     

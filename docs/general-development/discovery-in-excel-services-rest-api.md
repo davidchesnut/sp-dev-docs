@@ -1,13 +1,13 @@
 ---
 title: Discovery in Excel Services REST API
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: e3a8e057-f803-446d-81c9-4eb8ef3691e1
 ---
 
 
 # Discovery in Excel Services REST API
 
-This topic discusses the discovery mechanisms built into the Excel Services REST API. 
+This topic discusses the discovery mechanisms built into the Excel Services REST API.
   
     
     
@@ -27,7 +27,7 @@ Discovery enables developers and users to discover information about and the con
   
     
     
-Following is the construct of the REST URL to a specific element in a workbook: 
+Following is the construct of the REST URL to a specific element in a workbook:
   
     
     
@@ -50,7 +50,7 @@ As described in the  [Basic URI Structure and Path](basic-uri-structure-and-path
 http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('SampleChart')
 ```
 
-To start and explore the resources in the workbook and view the resources by using discovery, go to the model page by using a URI that follows this example: 
+To start and explore the resources in the workbook and view the resources by using discovery, go to the model page by using a URI that follows this example:
   
     
     
@@ -61,7 +61,7 @@ To start and explore the resources in the workbook and view the resources by usi
 http://<ServerName>/_vti_bin/ExcelRest.aspx/<DocumentLibrary>/<FileName>/model
 ```
 
-Using the "sampleWorkbook.xlsx" example, following is the URI: 
+Using the "sampleWorkbook.xlsx" example, following is the URI:
   
     
     
@@ -72,7 +72,7 @@ Using the "sampleWorkbook.xlsx" example, following is the URI:
 http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model
 ```
 
-Following is a screen shot of the model page. 
+Following is a screen shot of the model page.
   
     
     
@@ -103,7 +103,7 @@ For example, to access the chart in the workbook by using discovery, do the foll
     
     
 
-1. On the model page, click **Charts**. Clicking the **Charts** link brings another Atom feed—this resulting feed lists all the charts that are available in the sampleWorkbook.xlsx workbook. The sampleWorkbook.xlsx workbook contains three charts named **Chart 1**, **Chart 3**, and **SampleChart**. Therefore, three chart names are listed, as seen in the following screen shot. 
+1. On the model page, click **Charts**. Clicking the **Charts** link brings another Atom feed—this resulting feed lists all the charts that are available in the sampleWorkbook.xlsx workbook. The sampleWorkbook.xlsx workbook contains three charts named **Chart 1**, **Chart 3**, and **SampleChart**. Therefore, three chart names are listed, as seen in the following screen shot.
     
    **Excel Services REST discovery chart list**
 
@@ -140,7 +140,7 @@ Using the  [Atom](http://tools.ietf.org/html/rfc4287) feed provided by the REST 
   
     
     
-As can be seen in the XML, the feed contains traversable elements that enable code to discover what elements exist in the workbook. Each Atom entry corresponds to a chart that can be accessed. This same mechanism applies to discovering ranges, tables, and PivotTables. 
+As can be seen in the XML, the feed contains traversable elements that enable code to discover what elements exist in the workbook. Each Atom entry corresponds to a chart that can be accessed. This same mechanism applies to discovering ranges, tables, and PivotTables.
   
     
     

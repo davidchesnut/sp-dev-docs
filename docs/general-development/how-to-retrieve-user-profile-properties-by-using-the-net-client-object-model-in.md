@@ -6,7 +6,7 @@ ms.assetid: 236ebaf8-f92e-4192-9b51-0a9de0210885
 
 
 # How to: Retrieve user profile properties by using the .NET client object model in SharePoint 2013
-Learn how to retrieve user profile properties programmatically by using the SharePoint 2013 .NET client object model. 
+Learn how to retrieve user profile properties programmatically by using the SharePoint 2013 .NET client object model.
 ## What are user profile properties in SharePoint 2013?
 <a name="bkmk_WhatIs"> </a>
 
@@ -36,7 +36,7 @@ User profile properties from client APIs are read-only (except the profile pictu
     
     
 
-For more information about working with profiles, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md). 
+For more information about working with profiles, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md).
   
     
     
@@ -44,15 +44,15 @@ For more information about working with profiles, see  [Work with user profiles 
 ## Prerequisites for setting up your development environment to retrieve user profile properties by using the SharePoint 2013 .NET client object model
 <a name="bk_Prereqs"> </a>
 
-To create a console application that uses the .NET client object model to retrieve user profile properties, you'll need the following: 
+To create a console application that uses the .NET client object model to retrieve user profile properties, you'll need the following:
   
     
     
 
-- SharePoint Server 2013 with profiles created for the current user and a target user 
+- SharePoint Server 2013 with profiles created for the current user and a target user
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
 - **Full Control** connection permissions to access the User Profile service application for the current user.
@@ -70,19 +70,19 @@ To create a console application that uses the .NET client object model to retrie
 <a name="bk_RetrieveProps"> </a>
 
 
-1. On your development computer, open Visual Studio and choose **File**, **New**, **Project**. 
+1. On your development computer, open Visual Studio and choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
     
   
-3. From the project templates, choose **Windows**, and then choose **Console Application**. 
+3. From the project templates, choose **Windows**, and then choose **Console Application**.
     
   
 4. Name the project UserProfilesCSOM, and then choose the **OK** button.
     
   
-5. Add references to the following assemblies: 
+5. Add references to the following assemblies:
     
   - **Microsoft.SharePoint.Client**
     
@@ -104,7 +104,7 @@ const string targetUser = "domainName\\\\userName";
 
    > [!NOTE]
    > Remember to replace the  `http://serverName/` and `domainName\\\\userName` placeholder values before you run the code.
-7. Initialize the SharePoint client context, as shown in the following code. 
+7. Initialize the SharePoint client context, as shown in the following code.
     
   ```cs
   
@@ -137,7 +137,7 @@ clientContext.ExecuteQuery();
     
    > [!TIP]
    > To reduce network traffic, request only the properties that you want to work with when you call the **Load** method. In addition, if you're working with multiple objects, group multiple calls to the **Load** method when possible before you call the **ExecuteQuery** method.
-10. Iterate through the user profile properties and read the name and value of each property, as shown in the following code. 
+10. Iterate through the user profile properties and read the name and value of each property, as shown in the following code.
     
   ```cs
   
@@ -153,7 +153,7 @@ foreach (var property in personProperties.UserProfileProperties)
 ## Code example: Retrieving all user profile properties by using the SharePoint 2013 .NET client object model
 <a name="SP15UserProf_codeexample1"> </a>
 
-The following code example shows how to retrieve and iterate through all the user profile properties of a target user, as described in the  [previous procedure](how-to-retrieve-user-profile-properties-by-using-the-net-client-object-model-in.md#bk_RetrieveProps). 
+The following code example shows how to retrieve and iterate through all the user profile properties of a target user, as described in the  [previous procedure](how-to-retrieve-user-profile-properties-by-using-the-net-client-object-model-in.md#bk_RetrieveProps).
   
     
     
@@ -216,7 +216,7 @@ namespace UserProfilesCSOM
 ## Code example: Retrieving user profile properties of people who are following me by using the SharePoint 2013 .NET client object model
 <a name="SP15UserProfilescodeInApp"> </a>
 
-The following code example shows how to get, in a SharePoint Add-in, the user profile properties of people who are following you. 
+The following code example shows how to get, in a SharePoint Add-in, the user profile properties of people who are following you.
   
     
     
@@ -251,7 +251,7 @@ if (contextTokenString != null)
 ## Code example: Retrieving a set of user profile properties by using the SharePoint 2013 .NET client object model
 <a name="SP15UserProfilescode2"> </a>
 
-The following code example shows how to retrieve a specific set of user profile properties for a target user. 
+The following code example shows how to retrieve a specific set of user profile properties for a target user.
   
     
     

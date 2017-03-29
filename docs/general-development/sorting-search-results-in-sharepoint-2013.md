@@ -24,26 +24,26 @@ ms.assetid: 66af835e-2c8f-405e-8bed-cb1e5436e190
     
     
 Sort search results programmatically—by rank, by managed property value, by a formula expression, or in random order—by using the Query object model in SharePoint Server 2013. 
-You can sort the search results for SharePoint Server 2013 in four ways: 
+You can sort the search results for SharePoint Server 2013 in four ways:
   
     
     
 
 
--  [Sort search results by rank](#SP15_Sort_search_resuilts_by_rank): Enables you to sort the search result by relevance rank. 
+-  [Sort search results by rank](#SP15_Sort_search_resuilts_by_rank): Enables you to sort the search result by relevance rank.
     
   
--  [Sort search results by managed property value](#SP15_Sort_search_results_by_managed_property_value): Enables you to sort the search result based on the value of one or more managed properties. 
+-  [Sort search results by managed property value](#SP15_Sort_search_results_by_managed_property_value): Enables you to sort the search result based on the value of one or more managed properties.
     
   
--  [Sort search results by a formula expression](#SP15_Sort_search_results_by_formula): Enables you to sort the search result by a formula specified in the query request. 
+-  [Sort search results by a formula expression](#SP15_Sort_search_results_by_formula): Enables you to sort the search result by a formula specified in the query request.
     
   
--  [Sort search results in random order](#SP15_Sort_search_results_in_random_order): Enables you to sort the query result in random order, or add a random component to the sort order. 
+-  [Sort search results in random order](#SP15_Sort_search_results_in_random_order): Enables you to sort the query result in random order, or add a random component to the sort order.
     
   
 
-This article focuses on sorting search results programmatically. To learn how to sort search results using SharePoint Server 2013 query rules, see the following articles: 
+This article focuses on sorting search results programmatically. To learn how to sort search results using SharePoint Server 2013 query rules, see the following articles:
   
     
     
@@ -71,7 +71,7 @@ If you have multiple values in  [SortList](https://msdn.microsoft.com/library/Mi
   
     
     
-Apart from the Query object model, SharePoint Server 2013 also provides a Search REST service that you can use to query the search index with your client or mobile applications. The Search REST service supports both HTTP POST and HTTP GET requests. For more information on how to construct URIs for these requests, see  [Querying with the Search REST service](sharepoint-search-rest-api-overview.md#bk_queryrest). 
+Apart from the Query object model, SharePoint Server 2013 also provides a Search REST service that you can use to query the search index with your client or mobile applications. The Search REST service supports both HTTP POST and HTTP GET requests. For more information on how to construct URIs for these requests, see  [Querying with the Search REST service](sharepoint-search-rest-api-overview.md#bk_queryrest).
   
     
     
@@ -83,7 +83,7 @@ By default, search results are sorted by relevance rank. This means that SharePo
   
     
     
-You can also influence the rank calculation in the query string, in one of two ways: 
+You can also influence the rank calculation in the query string, in one of two ways:
   
     
     
@@ -98,7 +98,7 @@ You can also influence the rank calculation in the query string, in one of two w
 ## Sort search results by managed property value
 <a name="SP15_Sort_search_results_by_managed_property_value"> </a>
 
-You can specify search result sorting based on the value of one or more managed properties. This means that SharePoint Server 2013 performs the sorting based on all results that match the query. 
+You can specify search result sorting based on the value of one or more managed properties. This means that SharePoint Server 2013 performs the sorting based on all results that match the query.
   
     
     
@@ -152,7 +152,7 @@ http://localhost/_api/search/query?querytext='home'&amp;sortlist='size:descendin
 ## Sort search results by a formula expression
 <a name="SP15_Sort_search_results_by_formula"> </a>
 
-You can specify search result sorting based on a sort specification that uses a mathematical formula to create the sorting value. 
+You can specify search result sorting based on a sort specification that uses a mathematical formula to create the sorting value.
   
     
     
@@ -160,35 +160,35 @@ The sort by formula feature is an extension of the single-level and multilevel s
   
     
     
-By using the sort by formula feature, you can apply mathematical operations on the value of one or more managed properties for each item in the query result. 
+By using the sort by formula feature, you can apply mathematical operations on the value of one or more managed properties for each item in the query result.
   
     
     
-The following are examples that can be implemented by using a formula to specify search result sorting: 
+The following are examples that can be implemented by using a formula to specify search result sorting:
   
     
     
 
-- K-nearest neighbor algorithm to classify documents. 
+- K-nearest neighbor algorithm to classify documents.
     
   
-- Euclidean distance or Manhattan distance to calculate geographical distances. 
+- Euclidean distance or Manhattan distance to calculate geographical distances.
     
   
-- Preferred value, for example, to sort documents based on how far a given managed property value is from a preferred value. 
+- Preferred value, for example, to sort documents based on how far a given managed property value is from a preferred value.
     
   
-The sort by formula feature does not include control of statistical dynamic rank parameters, such as term frequency and proximity. 
+The sort by formula feature does not include control of statistical dynamic rank parameters, such as term frequency and proximity.
   
     
     
-The formula is evaluated left to right and uses standard mathematical-operator precedence. That is, functions and parenthetical groups are evaluated first, multiplication and division operations are performed next, and addition and subtraction operations are performed last. 
+The formula is evaluated left to right and uses standard mathematical-operator precedence. That is, functions and parenthetical groups are evaluated first, multiplication and division operations are performed next, and addition and subtraction operations are performed last.
   
     
     
 
 > [!IMPORTANT]
-> The final result of a formula must be in the value range of a 32-bit signed integer. Otherwise, the sorting may be incorrect. 
+> The final result of a formula must be in the value range of a 32-bit signed integer. Otherwise, the sorting may be incorrect.
   
     
     
@@ -196,7 +196,7 @@ The formula is evaluated left to right and uses standard mathematical-operator p
 
 ### Specifying the sort formula in a query
 
-You specify a sort formula instead of a managed property in the sort specification of the query request. 
+You specify a sort formula instead of a managed property in the sort specification of the query request.
   
     
     
@@ -210,16 +210,16 @@ In the format,  _<sort-formula>_ is the sort formula expression.
     
 
 > [!NOTE]
-> The square brackets are part of the sort specification syntax. 
+> The square brackets are part of the sort specification syntax.
   
     
     
 
-The default sort direction is descending. You may also use a formula that sorts by ascending value, for example, if the formula specifies a geographical distance. 
+The default sort direction is descending. You may also use a formula that sorts by ascending value, for example, if the formula specifies a geographical distance.
   
     
     
-The following code example shows how to specify sort by formula with ascending sort order by using the Query object model. 
+The following code example shows how to specify sort by formula with ascending sort order by using the Query object model.
   
     
     
@@ -278,7 +278,7 @@ For managed properties of type  [Datetime()](https://msdn.microsoft.com/library/
 
 ### Sort formula expressions
 
-Table 1 lists the functions you can use in the sort formula expression. The expression must not contain spaces. 
+Table 1 lists the functions you can use in the sort formula expression. The expression must not contain spaces.
   
     
     
@@ -288,62 +288,62 @@ Table 1 lists the functions you can use in the sort formula expression. The expr
 
 |**Function**|**Description**|
 |:-----|:-----|
-|**+**|Specifies addition. |
-|**-**|Specifies subtraction. |
-|*|Specifies multiplication. |
-|**/**|Specifies division. > [!NOTE]> By default, a division by zero results in an exception, and the query returns with an error. By using the **errtolast** operator, you can avoid the query error and instead place the failing items at the end of the result set.          |
-|**rank**|A special keyword that represents the dynamic rank of an item. Example:  `abs(rank-100)` will use the distance from rank value 100 as the sorting criteria.|
-|**[0-9.]+**|Specifies that numbers can be given as integer or double values. Examples: 503, 3.14, 5.4352262 |
-|**[a-z0-9]+]**|Specifies that any character sequence not recognized as a function name is treated as a managed property name. You must enable sorting for the specified managed property in the search schema. Example: You can define a managed property named **height** with sorting enabled. This enables you to use "height" as an expression in the formula. The formula will use the value of the **height** managed property.|
-|**( and )**|Used to group calculations ensuring correct precedence. Example: 4*(3+2) |
-|**sqrt(n)**|The square root of  _n_. |
+|**+**|Specifies addition.|
+|**-**|Specifies subtraction.|
+|*|Specifies multiplication.|
+|**/**|Specifies division.> [!NOTE]> By default, a division by zero results in an exception, and the query returns with an error. By using the **errtolast** operator, you can avoid the query error and instead place the failing items at the end of the result set.          |
+|**rank**|A special keyword that represents the dynamic rank of an item.Example:  `abs(rank-100)` will use the distance from rank value 100 as the sorting criteria.|
+|**[0-9.]+**|Specifies that numbers can be given as integer or double values.Examples: 503, 3.14, 5.4352262|
+|**[a-z0-9]+]**|Specifies that any character sequence not recognized as a function name is treated as a managed property name. You must enable sorting for the specified managed property in the search schema.Example: You can define a managed property named **height** with sorting enabled. This enables you to use "height" as an expression in the formula. The formula will use the value of the **height** managed property.|
+|**( and )**|Used to group calculations ensuring correct precedence.Example: 4*(3+2)|
+|**sqrt(n)**|The square root of  _n_.|
 |**exp(n)**|The exponential function that is equivalent to  *pow(2.71828182846,n)* |
-|**log(n)**|The natural logarithm of  _n_. |
-|**abs(n)**|The absolute value of  _n_. |
-|**ceil(n)**|The ceiling of  _n_. That is, if  _n_ is not a whole number, round up to the next whole number. If _n_ is a whole number, use _n_. |
-|**floor(n)**|The floor of  _n_. That is, if  _n_ is not a whole number, round down to the next whole number. If _n_ is a whole number, use _n_. |
+|**log(n)**|The natural logarithm of  _n_.|
+|**abs(n)**|The absolute value of  _n_.|
+|**ceil(n)**|The ceiling of  _n_. That is, if  _n_ is not a whole number, round up to the next whole number. If _n_ is a whole number, use _n_.|
+|**floor(n)**|The floor of  _n_. That is, if  _n_ is not a whole number, round down to the next whole number. If _n_ is a whole number, use _n_.|
 |**round(n)**|The rounding of  _n_ to the nearest even whole number. Also known as "Bankers rounding" or "Round half to even".|
 |**sin(n)**|The sine of  _n_ radians.|
 |**cos(n)**|The cosine of  _n_ radians.|
 |**tan(n)**|The tangent of  _n_ radians.|
-|**asin(n)**|The arcsine, in radians, of  _n_. |
-|**acos(n)**|The arccosine, in radians, of  _n_. |
-|**atan(n)**|The arctangent, in radians, of  _n_. |
-|**pow(x,y)**|The value of  _x_ raised to the power of _y_. > [!NOTE]> The value of  _y_ must be a real number.          |
-|**atan2(y,x)**|A two-argument arctangent of the angle in radians between the positive x axis and the specified Cartesian coordinate (x,y). |
-|**bucket(b,n1,n2,…)**|An operator that can be used to provide discrete values for given value distribution ranges for an expression. The expression  _b_ can be a managed property or any other formula expression. The arguments _n1, n2, …_ represent numeric thresholds. You can specify an arbitrary number of bucket thresholds.> [!NOTE]> You must arrange the arguments  _n1, n2, n3, …_ in the following order: `n1 < n2 < n3 < ...` with `n1 >= 0`.           A given value for the input expression  _b_ is rounded down to the closest numeric threshold given. If lower than the lowest threshold given, the resulting value is zero.|
+|**asin(n)**|The arcsine, in radians, of  _n_.|
+|**acos(n)**|The arccosine, in radians, of  _n_.|
+|**atan(n)**|The arctangent, in radians, of  _n_.|
+|**pow(x,y)**|The value of  _x_ raised to the power of _y_.> [!NOTE]> The value of  _y_ must be a real number.          |
+|**atan2(y,x)**|A two-argument arctangent of the angle in radians between the positive x axis and the specified Cartesian coordinate (x,y).|
+|**bucket(b,n1,n2,…)**|An operator that can be used to provide discrete values for given value distribution ranges for an expression.The expression  _b_ can be a managed property or any other formula expression. The arguments _n1, n2, …_ represent numeric thresholds. You can specify an arbitrary number of bucket thresholds.> [!NOTE]> You must arrange the arguments  _n1, n2, n3, …_ in the following order: `n1 < n2 < n3 < ...` with `n1 >= 0`.          A given value for the input expression  _b_ is rounded down to the closest numeric threshold given. If lower than the lowest threshold given, the resulting value is zero.|
 |**errtolast(x)**|An operator that can be used to control how to handle formula exceptions;  _x_ can be any formula expression. If the calculation of this formula expression leads to a mathematical exception for an item in the result set, such as division by zero, these items appear at the end of the sort list, regardless of specified sort direction.|
    
 
 ### Performance characteristics for sort by formula
 
-Using a sort formula implies that the formula calculations are applied to all matching items in the result set. This means that the query performance impact depends on the number of items that match the query. 
+Using a sort formula implies that the formula calculations are applied to all matching items in the result set. This means that the query performance impact depends on the number of items that match the query.
   
     
     
-Long formulas with many operators require more processing time than short formulas. 
+Long formulas with many operators require more processing time than short formulas.
   
     
     
 
 ### Using sort by formula for geographical distance
 
-You can use sort by formula to apply a ranking based on distance. This requires that you include managed properties that represent the latitude and longitude of each item. 
+You can use sort by formula to apply a ranking based on distance. This requires that you include managed properties that represent the latitude and longitude of each item.
   
     
     
-For example, you can use one of the following standard formulas: 
+For example, you can use one of the following standard formulas:
   
     
     
 
-- Manhattan distance 
+- Manhattan distance
     
   
-- Euclidian distance (see example 2) 
+- Euclidian distance (see example 2)
     
   
-- Haversine formula 
+- Haversine formula
     
   
 
@@ -356,7 +356,7 @@ For example, you can use one of the following standard formulas:
 
 ### Examples
 
-The following examples show how to specify the sort formula using the Query object model. 
+The following examples show how to specify the sort formula using the Query object model.
   
     
     
@@ -401,7 +401,7 @@ Alternatively, you could use the Search REST API to place the items that have th
 http://localhost/_api/search/query?querytext='home'&amp;sortlist='[formula:abs(20-height)]:ascending
 ```
 
- **Example 2.** Sort by true 3-D Euclidean distance from a given position (for example, user's position) based on position information that is provided in the managed properties **latitude**, **longitude** and **height**. The following formula provides the 3-D Euclidean distance, given that the base position is 50/100/200 (latitude/longitude/height). 
+ **Example 2.** Sort by true 3-D Euclidean distance from a given position (for example, user's position) based on position information that is provided in the managed properties **latitude**, **longitude** and **height**. The following formula provides the 3-D Euclidean distance, given that the base position is 50/100/200 (latitude/longitude/height).
   
     
     
@@ -470,7 +470,7 @@ using (var context = new ClientContext("http://localhost"))
 ## Sort search results in random order
 <a name="SP15_Sort_search_results_in_random_order"> </a>
 
-You may apply random sorting of the query result, or add a random component to the result sorting. 
+You may apply random sorting of the query result, or add a random component to the result sorting.
   
     
     
@@ -480,12 +480,12 @@ The random sort specification has the following format:  `[random:seed=<seed>:ha
     
 
 > [!NOTE]
-> The square brackets are part of the sort specification syntax. 
+> The square brackets are part of the sort specification syntax.
   
     
     
 
-Table 2 explains the parameters to the random sort specification. 
+Table 2 explains the parameters to the random sort specification.
   
     
     
@@ -495,8 +495,8 @@ Table 2 explains the parameters to the random sort specification.
 
 |**Parameter**|**Description**|**Required**|
 |:-----|:-----|:-----|
-| _Seed_|The seed for the random value generation. The seed value is input to a function that generates a random number. This random number is used in the final sorting.Using only the  _seed_ option will give you a randomly sorted query result set. The sorting order for the same query (when using the same seed) may change after an index update.|Yes |
-| _Hashfield_|A managed property that is used as the hash value for the random generation. You can use this parameter to ensure that the sorting order for the same query (when using the same seed) does not change after an index update. The managed property must be of type  [Integer](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Integer.aspx) and must be [Sortable()](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.Sortable.aspx) . You may fill this managed property with random or unique values (for example a sequence number populated by an item processing stage).|No |
+| _Seed_|The seed for the random value generation. The seed value is input to a function that generates a random number. This random number is used in the final sorting.Using only the  _seed_ option will give you a randomly sorted query result set. The sorting order for the same query (when using the same seed) may change after an index update.|Yes|
+| _Hashfield_|A managed property that is used as the hash value for the random generation. You can use this parameter to ensure that the sorting order for the same query (when using the same seed) does not change after an index update.The managed property must be of type  [Integer](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Integer.aspx) and must be [Sortable()](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.Sortable.aspx) . You may fill this managed property with random or unique values (for example a sequence number populated by an item processing stage).|No|
    
 By providing the same seed for equal queries, items will be presented in the same order. This enables you to preserve the same random order when paging through search results. Use the  _hashfield_ parameter if you want to preserve the same random order when an index update accidentally occurs between the queries.
   
@@ -505,7 +505,7 @@ By providing the same seed for equal queries, items will be presented in the sam
 
 ### Examples
 
-The following examples show how to specify random sorting by using the Query object model. 
+The following examples show how to specify random sorting by using the Query object model.
   
     
     
@@ -538,7 +538,7 @@ using (var context = new ClientContext("http://localhost"))
 }
 ```
 
-Alternatively, you could use the Search REST API to sort the entire result set in random order, with the following call. 
+Alternatively, you could use the Search REST API to sort the entire result set in random order, with the following call.
   
     
     

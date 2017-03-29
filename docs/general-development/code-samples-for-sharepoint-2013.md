@@ -1,12 +1,12 @@
 ---
 title: Code samples for SharePoint 2013
-ms.prod: SHAREPOINTDESIGNER
+ms.prod: SHAREPOINT
 ms.assetid: e6b52c6c-32f8-4689-8c1a-7b50039dcbe8
 ---
 
 
 # Code samples for SharePoint 2013
-Find and download code samples for SharePoint 2013, including samples that demonstrate SharePoint Add-ins, user experience design, metadata management, workflows, mobile application development, REST, and other areas of SharePoint development. 
+Find and download code samples for SharePoint 2013, including samples that demonstrate SharePoint Add-ins, user experience design, metadata management, workflows, mobile application development, REST, and other areas of SharePoint development.
 ## Code samples for SharePoint 2013 and SharePoint Add-ins
 
 

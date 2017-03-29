@@ -6,15 +6,15 @@ ms.assetid: 84366e01-4961-459d-8109-2f1d2d714353
 
 
 # How to: Follow documents and sites by using the .NET client object model in SharePoint 2013
-Learn how to work with Following Content features by using the SharePoint Server 2013 .NET client object model. 
+Learn how to work with Following Content features by using the SharePoint Server 2013 .NET client object model.
 ## How do I use the .NET client object model to follow content?
 <a name="bk_intro"> </a>
 
-SharePoint Server 2013 users can follow documents, sites, and tags can follow documents, sites, and tags to get updates about the items in their newsfeeds and to quickly open followed documents and sites. You can use the .NET client object model in your app or solution to start following content, stop following content, and get followed content on behalf of the current user. This article shows you how to create a console application that uses the .NET client object model to work with Following Content features for documents and sites. 
+SharePoint Server 2013 users can follow documents, sites, and tags can follow documents, sites, and tags to get updates about the items in their newsfeeds and to quickly open followed documents and sites. You can use the .NET client object model in your app or solution to start following content, stop following content, and get followed content on behalf of the current user. This article shows you how to create a console application that uses the .NET client object model to work with Following Content features for documents and sites.
   
     
     
-The following objects are the primary APIs for Following Content tasks: 
+The following objects are the primary APIs for Following Content tasks:
   
     
     
@@ -33,7 +33,7 @@ The following objects are the primary APIs for Following Content tasks:
   
 
 > [!NOTE]
-> You also use these APIs for Following People tasks, but the **GetSuggestions** and **GetFollowers** methods available from [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) only support following people, not content. For more information about how you can use [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) , see [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md). For code examples that show how to follow people, see  [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint-2013.md). 
+> You also use these APIs for Following People tasks, but the **GetSuggestions** and **GetFollowers** methods available from [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) only support following people, not content. For more information about how you can use [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) , see [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md). For code examples that show how to follow people, see  [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint-2013.md).
   
     
     
@@ -42,15 +42,15 @@ The following objects are the primary APIs for Following Content tasks:
 ## Prerequisites for setting up your development environment to work with Following Content features by using the SharePoint 2013 .NET client object model
 <a name="bkmk_SetUpDevEnv"> </a>
 
-To create a console application that uses the .NET client object model to work with Following Content features for documents and sites, you'll need the following: 
+To create a console application that uses the .NET client object model to work with Following Content features for documents and sites, you'll need the following:
   
     
     
 
-- SharePoint Server 2013 with My Site configured, with the My Site site created for the current user, and with a document uploaded to a SharePoint document library 
+- SharePoint Server 2013 with My Site configured, with the My Site site created for the current user, and with a document uploaded to a SharePoint document library
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
 - **Full Control** access permissions to the User Profile service application for the logged-on user
@@ -68,7 +68,7 @@ To create a console application that uses the .NET client object model to work w
 <a name="bkmk_CreateConsoleApp"> </a>
 
 
-1. In Visual Studio, choose **File**, **New**, **Project**. 
+1. In Visual Studio, choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
@@ -80,7 +80,7 @@ To create a console application that uses the .NET client object model to work w
 4. Name the project FollowContentCSOM, and then choose the **OK** button.
     
   
-5. Add references to the following assemblies: 
+5. Add references to the following assemblies:
     
   - **Microsoft.SharePoint.Client**
     
@@ -99,14 +99,14 @@ To create a console application that uses the .NET client object model to work w
   -  [Get followed content for the current user](how-to-follow-documents-and-sites-by-using-the-net-client-object-model-in-sharep.md#bkmk_GetFollowed)
     
   
-7. To test the console application, on the menu bar, choose **Debug**, **Start Debugging**. 
+7. To test the console application, on the menu bar, choose **Debug**, **Start Debugging**.
     
   
 
 ## Code example: Start and stop following content by using the SharePoint 2013 .NET client object model
 <a name="bkmk_FollowContent"> </a>
 
-The following code example makes the current user start following or stop following a target item. It shows how to: 
+The following code example makes the current user start following or stop following a target item. It shows how to:
   
     
     
@@ -238,7 +238,7 @@ namespace FollowContentCSOM
 ## Code example: Get followed content by using the SharePoint 2013 .NET client object model
 <a name="bkmk_GetFollowed"> </a>
 
-The following code example gets the documents and sites that the current user is following and gets information about the user's Following Content status. It shows how to: 
+The following code example gets the documents and sites that the current user is following and gets information about the user's Following Content status. It shows how to:
   
     
     
@@ -252,7 +252,7 @@ The following code example gets the documents and sites that the current user is
 - Get the documents and sites that the current user is following by using the  [GetFollowed](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.GetFollowed.aspx) method.
     
   
-- Iterate through the groups of content and get each item's name, content URI, and URI. 
+- Iterate through the groups of content and get each item's name, content URI, and URI.
     
   
 

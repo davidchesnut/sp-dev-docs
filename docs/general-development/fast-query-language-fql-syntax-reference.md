@@ -7,15 +7,15 @@ ms.assetid: bd98a41b-623c-41d4-a15d-26c0d4ba4311
 
 
 # FAST Query Language (FQL) syntax reference
-Learn about constructing complex search queries for Search in SharePoint 2013 using the FAST Query Language (FQL). This reference describes the elements of an FQL query and how to use property specifications, token expressions, and operators in your FQL queries. 
+Learn about constructing complex search queries for Search in SharePoint 2013 using the FAST Query Language (FQL). This reference describes the elements of an FQL query and how to use property specifications, token expressions, and operators in your FQL queries.
 ## Introduction to FQL and query language subexpressions and expressions in SharePoint Server 2013
 <a name="SP15FQL_about"> </a>
 
-The FAST Query Language (FQL) is a powerful query language that enables developers to perform exact searches and to narrow the scope of your search to values that belong to a specific managed property or a full-text index. 
+The FAST Query Language (FQL) is a powerful query language that enables developers to perform exact searches and to narrow the scope of your search to values that belong to a specific managed property or a full-text index.
   
     
     
-A query language expression can contain nested subexpressions that include query terms, property specifications, and operators, as described in Table 1. 
+A query language expression can contain nested subexpressions that include query terms, property specifications, and operators, as described in Table 1.
   
     
     
@@ -25,9 +25,9 @@ A query language expression can contain nested subexpressions that include query
 
 |**Item**|**Description**|
 |:-----|:-----|
-|Token expressions |One or more query terms, phrases, or numeric values to search for in a query. |
-|Property specification |A property or full-text index to match with the affected expression. |
-|Operators |Keywords that specify Boolean operations (such as **AND**, **OR**) or other constraints to operands (such as **FILTER**.) |
+|Token expressions|One or more query terms, phrases, or numeric values to search for in a query.|
+|Property specification|A property or full-text index to match with the affected expression.|
+|Operators|Keywords that specify Boolean operations (such as **AND**, **OR**) or other constraints to operands (such as **FILTER**.)|
    
 
 ### FQL query example
@@ -40,7 +40,7 @@ The following FQL query example searches for the terms "hello" and "world" in th
   
     
     
-In the example: 
+In the example:
   
     
     
@@ -51,10 +51,10 @@ In the example:
 -  `"hello world"` is the operand to the **STRING** operator, which indicates the terms to search for.
     
   
--  `mode="and"` indicates that the logical query operator **AND** will be applied to `"hello world"`. 
+-  `mode="and"` indicates that the logical query operator **AND** will be applied to `"hello world"`.
     
   
-The length of FAST Query Language queries is limited to 2,048 characters. 
+The length of FAST Query Language queries is limited to 2,048 characters.
   
     
     
@@ -70,7 +70,7 @@ Managed properties of type **Text** and **YesNo** are evaluated as text. All oth
   
     
     
-If you don't include a property specification for an expression, the search engine attempts to match the default full-text index defined in the index schema. 
+If you don't include a property specification for an expression, the search engine attempts to match the default full-text index defined in the index schema.
   
     
     
@@ -83,7 +83,7 @@ A property specification (the **In** Operator) may be applied to the following q
     
     
 
-- A single term or phrase, as follows: 
+- A single term or phrase, as follows:
     
      `author:shakespeare`
   
@@ -100,7 +100,7 @@ title:string("to be or not to be")
   ```
 
 
-    In this case the property specification applies to the complete operator expression. 
+    In this case the property specification applies to the complete operator expression.
     
   
 
@@ -126,29 +126,29 @@ Each of the following expressions matches items that have both "much" and "nothi
 ## Token expressions in FQL
 <a name="token_expressions"> </a>
 
-Token expressions are words, phrases, or numeric values that are matched against the index. 
+Token expressions are words, phrases, or numeric values that are matched against the index.
   
     
     
-A text token expression can be a single word or a phrase enclosed in double quotation marks. 
+A text token expression can be a single word or a phrase enclosed in double quotation marks.
   
     
     
-A numeric token expression can be a single value or a value range expression. 
+A numeric token expression can be a single value or a value range expression.
   
     
     
 
 ### Wildcard expressions
 
-A wildcard expression indicates a single term or phrase that includes the Asterisk (" *****") character; asterisk implies a match of zero or more characters, excluding whitespace. FQL supports prefix search for individual text managed properties and full-text indexes. 
+A wildcard expression indicates a single term or phrase that includes the Asterisk (" *****") character; asterisk implies a match of zero or more characters, excluding whitespace. FQL supports prefix search for individual text managed properties and full-text indexes.
   
     
     
 
 #### Wildcard expression examples
 
-The following is a list of valid uses of wildcard expressions in FQL: 
+The following is a list of valid uses of wildcard expressions in FQL:
   
     
     
@@ -173,10 +173,10 @@ Each numeric term expression must include a property specification of a compatib
 
 |**FQL type**|**Compatible index schema types**|**Description**|
 |:-----|:-----|:-----|
-|**Int**|**Integer**|64 bit integer. |
-|**Float**|**Double**|64-bit (double precision) floating point. |
-|**Decimal**|**Decimal**|128-bit decimal |
-|**Datetime**|**Datetime**|A date and time value. The date/time support in FQL enables the same numeric operations on date/time values as on other numeric values. |
+|**Int**|**Integer**|64 bit integer.|
+|**Float**|**Double**|64-bit (double precision) floating point.|
+|**Decimal**|**Decimal**|128-bit decimal|
+|**Datetime**|**Datetime**|A date and time value.The date/time support in FQL enables the same numeric operations on date/time values as on other numeric values. |
    
 
 #### Date and time query expressions
@@ -200,7 +200,7 @@ The following ISO 8601-compatible **datetime** formats are supported in queries:
 - YYYY-MM-DDThh:mm:ssZ 
     
   
-- YYYY-MM-DDThh:mm:ssfrZ 
+- YYYY-MM-DDThh:mm:ssfrZ
     
   
 In these **datetime** formats:
@@ -211,7 +211,7 @@ In these **datetime** formats:
 -  _YYYY_ specifies a four-digit year.
     
    > [!NOTE]
-   > Only four-digit years are supported. 
+   > Only four-digit years are supported.
 -  _MM_ specifies a two-digit month. For example, 01 = January.
     
   
@@ -233,7 +233,7 @@ In these **datetime** formats:
 -  _fr_ specifies an optional fraction of seconds, _ss_; between 1 to 7 digits that follows the **.** after the seconds. For example, 2012-09-27T11:57:34.1234567.
     
   
-All date/time values must be specified according to the UTC (Coordinated Universal Time), also known as GMT (Greenwich Mean Time) time zone. The UTC time zone identifier (a trailing "Z" character) is optional. 
+All date/time values must be specified according to the UTC (Coordinated Universal Time), also known as GMT (Greenwich Mean Time) time zone. The UTC time zone identifier (a trailing "Z" character) is optional.
   
     
     
@@ -241,7 +241,7 @@ All date/time values must be specified according to the UTC (Coordinated Univers
 ### Reserved words, special characters, and escaping
 <a name="fql_token_numeric"> </a>
 
-The following words are reserved within FQL. 
+The following words are reserved within FQL.
   
     
     
@@ -265,7 +265,7 @@ If you want to express any of these words as terms in a query expression, you mu
   
 
 > [!TIP]
-> Reserved words and characters are not case-sensitive, but using lowercase characters are recommended for future compatibility. 
+> Reserved words and characters are not case-sensitive, but using lowercase characters are recommended for future compatibility.
   
     
     
@@ -274,7 +274,7 @@ FQL does not always require a string to be enclosed in double quotation marks. F
   
     
     
-The query terms are tokenized according to your locale setting. The tokenization process removes certain special characters. Because special characters are removed, the following FQL expressions are equivalent. 
+The query terms are tokenized according to your locale setting. The tokenization process removes certain special characters. Because special characters are removed, the following FQL expressions are equivalent.
   
     
     
@@ -294,7 +294,7 @@ When a query includes terms from user input or another application, use the  `st
 ## FQL Operators
 <a name="fql_operators"> </a>
 
-FAST Query Language (FQL) operators are keywords that specify Boolean operations or other constraints to operands. The FQL operator syntax is as follows: 
+FAST Query Language (FQL) operators are keywords that specify Boolean operations or other constraints to operands. The FQL operator syntax is as follows:
   
     
     
@@ -302,7 +302,7 @@ FAST Query Language (FQL) operators are keywords that specify Boolean operations
   
     
     
-In the syntax: 
+In the syntax:
   
     
     
@@ -322,7 +322,7 @@ In the syntax:
 -  _value_ is the value to use for the parameter name.
     
   
-Operator names, parameter names, and parameter text values are case-insensitive. White space is allowed within the operator body, but is ignored unless it is enclosed in double quotation marks. The length of FAST Query Language queries is limited to 2,048 characters. 
+Operator names, parameter names, and parameter text values are case-insensitive. White space is allowed within the operator body, but is ignored unless it is enclosed in double quotation marks. The length of FAST Query Language queries is limited to 2,048 characters.
   
     
     
@@ -336,13 +336,13 @@ Table 3 lists the types of operators supported by FQL.
 
 |**Type**|**Description**|**Operators**|
 |:-----|:-----|:-----|
-|String |Enables you to specify query operations on a string of terms. This is the most common operator to use on text terms. | [STRING](fast-query-language-fql-syntax-reference.md#fql_string_operator)|
-|Boolean |Enables you to combine terms and sub-expressions in a query. | [AND](fast-query-language-fql-syntax-reference.md#fql_and_operator),  [OR](fast-query-language-fql-syntax-reference.md#fql_or_operator),  [ANY](fast-query-language-fql-syntax-reference.md#fql_any_operator),  [ANDNOT](fast-query-language-fql-syntax-reference.md#fql_andnot_operator),  [NOT](fast-query-language-fql-syntax-reference.md#fql_not_operator),  [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator),  [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator)|
-|Proximity |Enables you to specify the proximity of the query terms in a matching sequence of text. | [NEAR](fast-query-language-fql-syntax-reference.md#fql_near_operator),  [ONEAR](fast-query-language-fql-syntax-reference.md#fql_onear_operator),  [PHRASE](fast-query-language-fql-syntax-reference.md#fql_phrase_operator),  [STARTS-WITH](fast-query-language-fql-syntax-reference.md#fql_startswith_operator),  [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator),  [EQUALS](fast-query-language-fql-syntax-reference.md#fql_equals_operator)|
-|Numeric |Enables you to specify numeric conditions in the query. | [RANGE](fast-query-language-fql-syntax-reference.md#fql_range_operator) , [INT](fast-query-language-fql-syntax-reference.md#fql_int_operator),  [FLOAT](fast-query-language-fql-syntax-reference.md#fql_float_operator),  [DATETIME](fast-query-language-fql-syntax-reference.md#fql_datetime_operator),  [DECIMAL](#fql_decimal_operator)|
-|Relevance |Enables you to impact the relevance evaluation of a query. | [XRANK](fast-query-language-fql-syntax-reference.md#fql_xrank_operator)and  [FILTER](fast-query-language-fql-syntax-reference.md#fql_filter_operator)|
+|String|Enables you to specify query operations on a string of terms. This is the most common operator to use on text terms.| [STRING](fast-query-language-fql-syntax-reference.md#fql_string_operator)|
+|Boolean|Enables you to combine terms and sub-expressions in a query.| [AND](fast-query-language-fql-syntax-reference.md#fql_and_operator),  [OR](fast-query-language-fql-syntax-reference.md#fql_or_operator),  [ANY](fast-query-language-fql-syntax-reference.md#fql_any_operator),  [ANDNOT](fast-query-language-fql-syntax-reference.md#fql_andnot_operator),  [NOT](fast-query-language-fql-syntax-reference.md#fql_not_operator),  [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator),  [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator)|
+|Proximity|Enables you to specify the proximity of the query terms in a matching sequence of text.| [NEAR](fast-query-language-fql-syntax-reference.md#fql_near_operator),  [ONEAR](fast-query-language-fql-syntax-reference.md#fql_onear_operator),  [PHRASE](fast-query-language-fql-syntax-reference.md#fql_phrase_operator),  [STARTS-WITH](fast-query-language-fql-syntax-reference.md#fql_startswith_operator),  [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator),  [EQUALS](fast-query-language-fql-syntax-reference.md#fql_equals_operator)|
+|Numeric|Enables you to specify numeric conditions in the query.| [RANGE](fast-query-language-fql-syntax-reference.md#fql_range_operator) , [INT](fast-query-language-fql-syntax-reference.md#fql_int_operator),  [FLOAT](fast-query-language-fql-syntax-reference.md#fql_float_operator),  [DATETIME](fast-query-language-fql-syntax-reference.md#fql_datetime_operator),  [DECIMAL](#fql_decimal_operator)|
+|Relevance|Enables you to impact the relevance evaluation of a query.| [XRANK](fast-query-language-fql-syntax-reference.md#fql_xrank_operator)and  [FILTER](fast-query-language-fql-syntax-reference.md#fql_filter_operator)|
    
-Table 4 provides a list of the supported operators. 
+Table 4 provides a list of the supported operators.
   
     
     
@@ -352,26 +352,26 @@ Table 4 provides a list of the supported operators.
 
 |**Operator**|**Description**|**Type**|
 |:-----|:-----|:-----|
-| [AND](fast-query-language-fql-syntax-reference.md#fql_and_operator)|Returns only items that match all **AND** operands.|Boolean |
-| [ANDNOT](fast-query-language-fql-syntax-reference.md#fql_andnot_operator)|Returns only items that match the first operand and that don't match the subsequent operands. |Boolean |
-| [ANY](fast-query-language-fql-syntax-reference.md#fql_any_operator)|Similar to the **OR** operator except that the dynamic rank (the relevance score in the result set) is affected by neither the number of operands that match nor the distance between the terms in the item.|Boolean |
-| [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator)|Enables you to specify the number of query term occurrences an item must include to be returned as a result. The operand may be a single query term, a phrase, or wildcard query term. |Boolean |
-| [DATETIME](fast-query-language-fql-syntax-reference.md#fql_datetime_operator)|Provides explicit typing of numeric values. The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. |Numeric |
-| [DECIMAL](fast-query-language-fql-syntax-reference.md#fql_decimal_operator)|Provides explicit typing of numeric values. The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. |Numeric |
-| [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator)|Specifies that a word or phrase must appear in the end of a managed property. |Proximity |
-| [EQUALS](fast-query-language-fql-syntax-reference.md#fql_equals_operator)|Specifies that a word or phrase term or phrase must provide an exact token match with the managed property. |Proximity |
-| [FILTER](fast-query-language-fql-syntax-reference.md#fql_filter_operator)|Used to query metadata or other structured data. |Relevance |
-| [FLOAT](fast-query-language-fql-syntax-reference.md#fql_float_operator)|Provides explicit typing of numeric values. The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. |Numeric |
-| [INT](fast-query-language-fql-syntax-reference.md#fql_int_operator)|Provides explicit typing of numeric values. The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. |Numeric |
-| [NEAR](fast-query-language-fql-syntax-reference.md#fql_near_operator)|Restricts the result set to items that have  `N` terms within a certain distance of one another.|Proximity |
-| [NOT](fast-query-language-fql-syntax-reference.md#fql_not_operator)|Returns only items that exclude the operand. |Boolean |
-| [ONEAR](fast-query-language-fql-syntax-reference.md#fql_onear_operator)|The ordered variant of **NEAR**, and requires an ordered match of the terms. The **ONEAR** operator can be used to restrict the result set to items that have `N` terms within a certain distance of Returns only items that don't match the operand. The operand may be any valid FQL expression.one another.|Proximity |
-| [OR](fast-query-language-fql-syntax-reference.md#fql_or_operator)|Returns only items that match at least one of the **OR** operands. Items that match will get a higher dynamic rank (relevance score in the result set) if more of the **OR** operands match.|Boolean |
-| [PHRASE](fast-query-language-fql-syntax-reference.md#fql_phrase_operator)| Returns only items that match an exact string of tokens.|Proximity |
-| [RANGE](fast-query-language-fql-syntax-reference.md#fql_range_operator)| Enables range matching expressions. The **RANGE** operator is used for numeric and date/time managed properties.|Numeric |
-| [STARTS-WITH](fast-query-language-fql-syntax-reference.md#fql_startswith_operator)|Specifies that a word or phrase must appear in the start of a managed property. |Proximity |
-| [STRING](fast-query-language-fql-syntax-reference.md#fql_string_operator)|Define a Boolean matching condition to a text string. |String |
-| [XRANK](fast-query-language-fql-syntax-reference.md#fql_xrank_operator)|Enables you to boost the dynamic rank of items based on certain term occurrences without changing which items match the query. A **XRANK** expression contains one component that must be matched, and one or more components that contribute only to dynamic ranking.|Relevance |
+| [AND](fast-query-language-fql-syntax-reference.md#fql_and_operator)|Returns only items that match all **AND** operands.|Boolean|
+| [ANDNOT](fast-query-language-fql-syntax-reference.md#fql_andnot_operator)|Returns only items that match the first operand and that don't match the subsequent operands.|Boolean|
+| [ANY](fast-query-language-fql-syntax-reference.md#fql_any_operator)|Similar to the **OR** operator except that the dynamic rank (the relevance score in the result set) is affected by neither the number of operands that match nor the distance between the terms in the item.|Boolean|
+| [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator)|Enables you to specify the number of query term occurrences an item must include to be returned as a result. The operand may be a single query term, a phrase, or wildcard query term.|Boolean|
+| [DATETIME](fast-query-language-fql-syntax-reference.md#fql_datetime_operator)|Provides explicit typing of numeric values.The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.|Numeric|
+| [DECIMAL](fast-query-language-fql-syntax-reference.md#fql_decimal_operator)|Provides explicit typing of numeric values.The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.|Numeric|
+| [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator)|Specifies that a word or phrase must appear in the end of a managed property.|Proximity|
+| [EQUALS](fast-query-language-fql-syntax-reference.md#fql_equals_operator)|Specifies that a word or phrase term or phrase must provide an exact token match with the managed property.|Proximity|
+| [FILTER](fast-query-language-fql-syntax-reference.md#fql_filter_operator)|Used to query metadata or other structured data. |Relevance|
+| [FLOAT](fast-query-language-fql-syntax-reference.md#fql_float_operator)|Provides explicit typing of numeric values. The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.|Numeric|
+| [INT](fast-query-language-fql-syntax-reference.md#fql_int_operator)|Provides explicit typing of numeric values. The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.|Numeric|
+| [NEAR](fast-query-language-fql-syntax-reference.md#fql_near_operator)|Restricts the result set to items that have  `N` terms within a certain distance of one another.|Proximity|
+| [NOT](fast-query-language-fql-syntax-reference.md#fql_not_operator)|Returns only items that exclude the operand.|Boolean|
+| [ONEAR](fast-query-language-fql-syntax-reference.md#fql_onear_operator)|The ordered variant of **NEAR**, and requires an ordered match of the terms. The **ONEAR** operator can be used to restrict the result set to items that have `N` terms within a certain distance of Returns only items that don't match the operand. The operand may be any valid FQL expression.one another.|Proximity|
+| [OR](fast-query-language-fql-syntax-reference.md#fql_or_operator)|Returns only items that match at least one of the **OR** operands. Items that match will get a higher dynamic rank (relevance score in the result set) if more of the **OR** operands match.|Boolean|
+| [PHRASE](fast-query-language-fql-syntax-reference.md#fql_phrase_operator)| Returns only items that match an exact string of tokens.|Proximity|
+| [RANGE](fast-query-language-fql-syntax-reference.md#fql_range_operator)| Enables range matching expressions. The **RANGE** operator is used for numeric and date/time managed properties.|Numeric|
+| [STARTS-WITH](fast-query-language-fql-syntax-reference.md#fql_startswith_operator)|Specifies that a word or phrase must appear in the start of a managed property.|Proximity|
+| [STRING](fast-query-language-fql-syntax-reference.md#fql_string_operator)|Define a Boolean matching condition to a text string.|String|
+| [XRANK](fast-query-language-fql-syntax-reference.md#fql_xrank_operator)|Enables you to boost the dynamic rank of items based on certain term occurrences without changing which items match the query. A **XRANK** expression contains one component that must be matched, and one or more components that contribute only to dynamic ranking.|Relevance|
    
 
 > [!NOTE]
@@ -398,14 +398,14 @@ Returns only items that match all **AND** operands. The operands may be a single
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
 
 #### Examples
 
-The following expression matches items for which the default full-text index contains "cat", "dog", and "fox". 
+The following expression matches items for which the default full-text index contains "cat", "dog", and "fox".
   
     
     
@@ -417,7 +417,7 @@ The following expression matches items for which the default full-text index con
 ### ANDNOT
 <a name="fql_andnot_operator"> </a>
 
-Returns only items that match the first operand and that don't match the subsequent operands. The operands may be a single term or any valid FQL sub-expression. 
+Returns only items that match the first operand and that don't match the subsequent operands. The operands may be a single term or any valid FQL sub-expression.
   
     
     
@@ -431,7 +431,7 @@ Returns only items that match the first operand and that don't match the subsequ
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -490,7 +490,7 @@ The dynamic ranking component for this part of the query is based on the best ma
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -501,7 +501,7 @@ Not applicable.
   
     
     
-If the index contains both "cat" and "dog", but "cat" is considered a better match, the 'item's dynamic rank will be based on "cat" with no consideration given to "dog". 
+If the index contains both "cat" and "dog", but "cat" is considered a better match, the 'item's dynamic rank will be based on "cat" with no consideration given to "dog".
   
     
     
@@ -513,7 +513,7 @@ If the index contains both "cat" and "dog", but "cat" is considered a better mat
 ### COUNT
 <a name="fql_count_operator"> </a>
 
-Specifies the of number query term occurrences an item must include for the item to be returned as a result. The operand may be a single query term, a phrase, or a wildcard query term. 
+Specifies the of number query term occurrences an item must include for the item to be returned as a result. The operand may be a single query term, a phrase, or a wildcard query term.
   
     
     
@@ -561,7 +561,7 @@ Specifies the of number query term occurrences an item must include for the item
   
     
     
-The following table contains examples of managed property string values and states whether they match the two expressions in Example 3. 
+The following table contains examples of managed property string values and states whether they match the two expressions in Example 3.
   
     
     
@@ -569,18 +569,18 @@ The following table contains examples of managed property string values and stat
 
 |**Match?**|**Text**|
 |:-----|:-----|
-|Yes |My cat likes my dog, but my dog hates my cat. |
-|No |My bird likes my newt, but my dog hates my cat. |
+|Yes|My cat likes my dog, but my dog hates my cat.|
+|No|My bird likes my newt, but my dog hates my cat.|
    
 
 ### DATETIME
 <a name="fql_datetime_operator"> </a>
 
-Provides explicit typing of date/time numeric values. The operand is a date/time string formatted according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions). 
+Provides explicit typing of date/time numeric values. The operand is a date/time string formatted according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions).
   
     
     
-The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. 
+The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.
   
     
     
@@ -594,7 +594,7 @@ The explicit type conversion is optional and usually is not needed. The type of 
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -602,11 +602,11 @@ Not applicable.
 ### DECIMAL
 <a name="fql_decimal_operator"> </a>
 
-Provides explicit typing of decimal values. The operand is a decimal value according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions). 
+Provides explicit typing of decimal values. The operand is a decimal value according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions).
   
     
     
-The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. 
+The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.
   
     
     
@@ -620,7 +620,7 @@ The explicit type conversion is optional and usually is not needed. The type of 
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -628,7 +628,7 @@ Not applicable.
 ### ENDS-WITH
 <a name="fql_endswith_operator"> </a>
 
-Specifies that a word or phrase must appear in the end of a managed property (boundary matching). 
+Specifies that a word or phrase must appear in the end of a managed property (boundary matching).
   
     
     
@@ -650,14 +650,14 @@ Some applications may require that you are able to perform an exact match of a m
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
 
 #### Examples
 
-The following expression matches items with the values "Mr Adam Jones" and "Adam Jones" in the "author" managed property. It will not match items with the value "Adam Jones sr". 
+The following expression matches items with the values "Mr Adam Jones" and "Adam Jones" in the "author" managed property. It will not match items with the value "Adam Jones sr".
   
     
     
@@ -684,14 +684,14 @@ By enabling the Boundary Match feature for the managed property, you can do the 
 - Use explicit boundary match queries. 
     
   
-- Prevent phrases from matching across string boundaries. For managed properties that contain multiple strings, this feature will ensure that a string does not match words before or after a boundary indication. 
+- Prevent phrases from matching across string boundaries. For managed properties that contain multiple strings, this feature will ensure that a string does not match words before or after a boundary indication.
     
   
 
 ### EQUALS
 <a name="fql_equals_operator"> </a>
 
-Specifies that a word or phrase must provide an exact token match with the managed property. 
+Specifies that a word or phrase must provide an exact token match with the managed property.
   
     
     
@@ -705,14 +705,14 @@ Specifies that a word or phrase must provide an exact token match with the manag
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
 
 #### Examples
 
-The following example will match items with the values "Adam Jones" in the "author" managed property. It will not match items with the values "Adam Jones sr" or "Mr Adam Jones". 
+The following example will match items with the values "Adam Jones" in the "author" managed property. It will not match items with the values "Adam Jones sr" or "Mr Adam Jones".
   
     
     
@@ -723,7 +723,7 @@ The following example will match items with the values "Adam Jones" in the "auth
 
 #### Remarks
 
-See also  [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator). 
+See also  [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator).
   
     
     
@@ -740,18 +740,18 @@ Using the **FILTER** operator automatically implies the following for the specif
     
     
 
-- Linguistics will be set to linguistics="OFF". 
+- Linguistics will be set to linguistics="OFF".
     
   
-- Ranking will be disabled. 
+- Ranking will be disabled.
     
   
-- No query highlighting will be used in the hit highlighted summary for the query result hit. 
+- No query highlighting will be used in the hit highlighted summary for the query result hit.
     
   
 
 > [!TIP]
-> If you use the **STRING** operator inside a **FILTER** expression, by default, linguistics is disabled. You can enable linguistics processing within each **STRING** expression inside **FILTER** by using the operand `linguistics="ON"`. 
+> If you use the **STRING** operator inside a **FILTER** expression, by default, linguistics is disabled. You can enable linguistics processing within each **STRING** expression inside **FILTER** by using the operand `linguistics="ON"`.
   
     
     
@@ -766,7 +766,7 @@ Using the **FILTER** operator automatically implies the following for the specif
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -799,7 +799,7 @@ The second example uses the **INT** operator by using a string with the set of n
   
     
     
-If you must filter a large set of values, you should consider using numeric values instead of string values, and express your queries by using the optimized syntax. 
+If you must filter a large set of values, you should consider using numeric values instead of string values, and express your queries by using the optimized syntax.
   
     
     
@@ -807,11 +807,11 @@ If you must filter a large set of values, you should consider using numeric valu
 ### FLOAT
 <a name="fql_float_operator"> </a>
 
-Provides explicit typing of floating point numeric values. The operand is a floating point value according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions). 
+Provides explicit typing of floating point numeric values. The operand is a floating point value according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions).
   
     
     
-The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. 
+The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.
   
     
     
@@ -825,7 +825,7 @@ The explicit type conversion is optional and usually is not needed. The type of 
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -833,11 +833,11 @@ Not applicable.
 ### INT
 <a name="fql_int_operator"> </a>
 
-Provides explicit typing of integer values. The operand is an integer value according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions). 
+Provides explicit typing of integer values. The operand is an integer value according to the syntax specified in  [Token expressions in FQL](fast-query-language-fql-syntax-reference.md#token_expressions).
   
     
     
-The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property. 
+The explicit type conversion is optional and usually is not needed. The type of the query term is detected according to the type of the target numeric managed property.
   
     
     
@@ -856,14 +856,14 @@ The **INT** operator can also be used to express a set of integer values as argu
   
     
     
-The first syntax specifies a single integer. The second syntax specifies a comma-separated list of integer values enclosed in double quotation marks. 
+The first syntax specifies a single integer. The second syntax specifies a comma-separated list of integer values enclosed in double quotation marks.
   
     
     
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -916,7 +916,7 @@ If multiple operands of the **NEAR** operator match the same indexed token, they
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _N_| _<numeric_value>_|Specifies the maximum number of words that is allowed to appear between the terms (explicit proximity). If **NEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression. Default: **4**|
+| _N_| _<numeric_value>_|Specifies the maximum number of words that is allowed to appear between the terms (explicit proximity). If **NEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.Default: **4**|
    
 
 #### Examples
@@ -937,7 +937,7 @@ If multiple operands of the **NEAR** operator match the same indexed token, they
   
     
     
-The following table contains examples of managed property string values and states whether they match the previous expression in Example 2. 
+The following table contains examples of managed property string values and states whether they match the previous expression in Example 2.
   
     
     
@@ -945,11 +945,11 @@ The following table contains examples of managed property string values and stat
 
 |**Match?**|**Text**|
 |:-----|:-----|
-|Yes |The picture shows a cat, a dog, a fox, and a wolf. |
-|Yes (with stemming) |Dogs, foxes, and wolves are canines, but cats are felines. |
-|No |The picture shows a cat with a dog, a fox, and a wolf. |
+|Yes|The picture shows a cat, a dog, a fox, and a wolf.|
+|Yes (with stemming)|Dogs, foxes, and wolves are canines, but cats are felines.|
+|No|The picture shows a cat with a dog, a fox, and a wolf.|
    
-The following expression matches all the strings in the previous table. 
+The following expression matches all the strings in the previous table.
   
     
     
@@ -1008,7 +1008,7 @@ The **NOT** operator cannot be used inside the **NEAR** or **ONEAR** operator. T
 ### NOT
 <a name="fql_not_operator"> </a>
 
-Returns only items that don't match the operand. The operand may be any valid FQL expression. 
+Returns only items that don't match the operand. The operand may be any valid FQL expression.
   
     
     
@@ -1022,7 +1022,7 @@ Returns only items that don't match the operand. The operand may be any valid FQ
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -1048,7 +1048,7 @@ The ordered variant of **NEAR**, and requires an ordered match of the terms. The
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _N_| _<numeric_value>_|Specifies the maximum number of words that are allowed to appear between the terms (explicit proximity). If **ONEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression. Default: **4**|
+| _N_| _<numeric_value>_|Specifies the maximum number of words that are allowed to appear between the terms (explicit proximity). If **ONEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.Default: **4**|
    
 
 #### Examples
@@ -1061,7 +1061,7 @@ The ordered variant of **NEAR**, and requires an ordered match of the terms. The
   
     
     
-The following table contains examples of managed property string values, and states whether they match the previous expression. 
+The following table contains examples of managed property string values, and states whether they match the previous expression.
   
     
     
@@ -1069,9 +1069,9 @@ The following table contains examples of managed property string values, and sta
 
 |**Match?**|**Text**|
 |:-----|:-----|
-|Yes |The picture shows a cat, a dog, a fox, and a wolf. |
-|No |Dogs, foxes, and wolves are canines, but cats are felines. |
-|No |The picture shows a cat with a dog, a fox, and a wolf. |
+|Yes|The picture shows a cat, a dog, a fox, and a wolf.|
+|No|Dogs, foxes, and wolves are canines, but cats are felines.|
+|No|The picture shows a cat with a dog, a fox, and a wolf.|
    
  **Example 2.** The following expression matches (with stemming) the text in the second row of the previous table.
   
@@ -1092,7 +1092,7 @@ The following table contains examples of managed property string values, and sta
 
 #### Remarks
 
-See also  [NEAR](fast-query-language-fql-syntax-reference.md#fql_near_operator). 
+See also  [NEAR](fast-query-language-fql-syntax-reference.md#fql_near_operator).
   
     
     
@@ -1114,14 +1114,14 @@ Returns only items that match at least one of the **OR** operands. Items that ma
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
 
 #### Examples
 
-The following expression matches all the items for which the default full-text index contains either "cat" or "dog". If an item's default full-text index contains both "cat" and "dog", it will match and have a higher dynamic rank than it would if it contained only one of the tokens. 
+The following expression matches all the items for which the default full-text index contains either "cat" or "dog". If an item's default full-text index contains both "cat" and "dog", it will match and have a higher dynamic rank than it would if it contained only one of the tokens.
   
     
     
@@ -1151,14 +1151,14 @@ The **PHRASE** operands can be single terms. Wildcards are accepted.
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
 
 #### Remarks
 
-See also  [STRING](fast-query-language-fql-syntax-reference.md#fql_string_operator). 
+See also  [STRING](fast-query-language-fql-syntax-reference.md#fql_string_operator).
   
     
     
@@ -1192,7 +1192,7 @@ Use the **RANGE** operator for numeric and date/time managed properties. The ope
 
 #### Examples
 
-The following expression matches a description property starting with the phrase "olympic games" appearing in items with a size of at least 10 000 bytes. 
+The following expression matches a description property starting with the phrase "olympic games" appearing in items with a size of at least 10 000 bytes.
   
     
     
@@ -1204,7 +1204,7 @@ The following expression matches a description property starting with the phrase
 ### STARTS-WITH
 <a name="fql_startswith_operator"> </a>
 
-Specifies a word or phrase that must appear at the start of a managed property. 
+Specifies a word or phrase that must appear at the start of a managed property.
   
     
     
@@ -1218,7 +1218,7 @@ Specifies a word or phrase that must appear at the start of a managed property.
 
 #### Parameters
 
-Not applicable. 
+Not applicable.
   
     
     
@@ -1236,7 +1236,7 @@ The following expression will match items with the values "Adam Jones sr" and "A
 
 #### Remarks
 
-For additional remarks on boundary matching, see  [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator). 
+For additional remarks on boundary matching, see  [ENDS-WITH](fast-query-language-fql-syntax-reference.md#fql_endswith_operator).
   
     
     
@@ -1244,7 +1244,7 @@ For additional remarks on boundary matching, see  [ENDS-WITH](fast-query-languag
 ### STRING
 <a name="fql_string_operator"> </a>
 
-Defines a Boolean matching condition to a text string. 
+Defines a Boolean matching condition to a text string.
   
     
     
@@ -1252,7 +1252,7 @@ The operand is a text string (one or more terms) that is to be matched. The stri
   
     
     
-The **STRING** operator can also be used as a type conversion. The query `string("24.5")`, for example, will treat the numeric value "24.5" as a text string. 
+The **STRING** operator can also be used as a type conversion. The query `string("24.5")`, for example, will treat the numeric value "24.5" as a text string.
   
     
     
@@ -1300,9 +1300,9 @@ The **STRING** operator can also be used as a type conversion. The query `string
 |**"ONEAR"**| `onear(term, term [,term]*, N)`|
    
  Default: **"PHRASE"**|
-| _n_| _<numeric_value>_|This parameter indicates the maximum term distance for  _mode_= **"NEAR"** or _mode_= **"ONEAR"**.The following expressions are equivalent:  `string("hello world", mode="NEAR", n=5)` `near(hello, world, n=5)`Default: **4**|
-| _weight_| _<numeric_value>_|This parameter is a positive numeric value indicating term weight for dynamic ranking. A lower value indicates that a term should contribute less to the ranking. A higher value indicates that a term should contribute more to the ranking. A value of zero for the weight parameter specifies that a term should not affect dynamic rank. The  _weight_ parameter applies to all the terms in the **STRING** expression.> [!TIP]> The weight parameter will affect only full-text index queries.           Default: **100**.|
-| _linguistics_|**on|off**|Disables/enables all linguistics features for the string (lemmatization, synonyms, spelling checking) if they are enabled for the query. You can use this parameter to switch off linguistic processing for a given term or string while you still want the term or string to contribute to ranking. Default: **"ON"**|
+| _n_| _<numeric_value>_|This parameter indicates the maximum term distance for  _mode_= **"NEAR"** or _mode_= **"ONEAR"**.The following expressions are equivalent: `string("hello world", mode="NEAR", n=5)` `near(hello, world, n=5)`Default: **4**|
+| _weight_| _<numeric_value>_|This parameter is a positive numeric value indicating term weight for dynamic ranking. A lower value indicates that a term should contribute less to the ranking. A higher value indicates that a term should contribute more to the ranking. A value of zero for the weight parameter specifies that a term should not affect dynamic rank.The  _weight_ parameter applies to all the terms in the **STRING** expression.> [!TIP]> The weight parameter will affect only full-text index queries.          Default: **100**.|
+| _linguistics_|**on|off**|Disables/enables all linguistics features for the string (lemmatization, synonyms, spelling checking) if they are enabled for the query. You can use this parameter to switch off linguistic processing for a given term or string while you still want the term or string to contribute to ranking.Default: **"ON"**|
 | _wildcard_|**on|off**| This parameter controls wildcard expansion of terms inside the _<text string>_. This setting overrides any wildcard settings in query parameters, and allows extended wildcard characters to be enabled or disabled on specific parts of the query.  The following are valid values: **"ON"** Specifies that the character " *****" is evaluated as wildcard. A " *****" character matches zero or more characters. **"OFF"** Specifies that the characters " *****" is not evaluated as wildcard.  Default: **"ON"**|
    
 
@@ -1398,7 +1398,7 @@ The main effect of the **weight** parameter is for **OR** queries. It can also h
   
     
     
-The difference in rank contribution can also be based on term frequency and inverse item frequency. The following is an example: 
+The difference in rank contribution can also be based on term frequency and inverse item frequency. The following is an example:
   
     
     
@@ -1415,13 +1415,13 @@ The difference in rank contribution can also be based on term frequency and inve
 - Index item 2 includes term 'a' in the body and term 'b' in the title. 
     
   
-In this example, item 2 will get the highest total rank, as the items with higher dynamic rank contribution will get even more boost. 
+In this example, item 2 will get the highest total rank, as the items with higher dynamic rank contribution will get even more boost.
   
     
     
 
 > [!TIP]
-> The relative term boost (positive or negative) is applied to the dynamic rank component of the total rank. However, proximity boost (distance between words) rank calculations are not affected by the term weighting. The relative weighting does not always imply that the total rank for the item is modified according to the percentage given. > The following query will search for the terms "peter", "paul", or "mary", where "peter" will have twice as much rank contribution as the two other terms. >  `or(peter, string("paul mary", mode="OR", weight=50))`
+> The relative term boost (positive or negative) is applied to the dynamic rank component of the total rank. However, proximity boost (distance between words) rank calculations are not affected by the term weighting. The relative weighting does not always imply that the total rank for the item is modified according to the percentage given.> The following query will search for the terms "peter", "paul", or "mary", where "peter" will have twice as much rank contribution as the two other terms. >  `or(peter, string("paul mary", mode="OR", weight=50))`
   
     
     
@@ -1434,7 +1434,7 @@ Special characters such as comma (","), semicolon (";"), colon (":"), period (".
   
     
     
-The following query expressions are equivalent. 
+The following query expressions are equivalent.
   
     
     
@@ -1442,7 +1442,7 @@ The following query expressions are equivalent.
   
     
     
-The following query expressions are equivalent. 
+The following query expressions are equivalent.
   
     
     
@@ -1450,7 +1450,7 @@ The following query expressions are equivalent.
   
     
     
-The following query expressions are equivalent. 
+The following query expressions are equivalent.
   
     
     
@@ -1474,7 +1474,7 @@ All such phrase operations imply a tokenized phrase match. This means that speci
 ### XRANK
 <a name="fql_xrank_operator"> </a>
 
-Boosts the dynamic rank of items based on certain term occurrences within the  _match expression_, without changing which items match the query. An **XRANK** expression consists of one component that must be matched, the _match expression_, and one or more components that contribute only to dynamic ranking, the  _rank expression_. At least **one** of the parameters, excluding _n_, must be specified for an XRANK expression to be valid. 
+Boosts the dynamic rank of items based on certain term occurrences within the  _match expression_, without changing which items match the query. An **XRANK** expression consists of one component that must be matched, the _match expression_, and one or more components that contribute only to dynamic ranking, the  _rank expression_. At least **one** of the parameters, excluding _n_, must be specified for an XRANK expression to be valid.
   
     
     
@@ -1484,7 +1484,7 @@ Boosts the dynamic rank of items based on certain term occurrences within the  _
     
 
 > [!NOTE]
-> In SharePoint Server 2010, the **XRANK** operator had two parameters: _boost_ and _boostall_, as well as the following syntax:  `xrank(operand, rank-operand [, rank-operand]* [,boost=n] [,boostall=yes])`. This syntax along with its parameters is deprecated in SharePoint Server 2013. We recommend the use of the new syntax and parameters instead. 
+> In SharePoint Server 2010, the **XRANK** operator had two parameters: _boost_ and _boostall_, as well as the following syntax:  `xrank(operand, rank-operand [, rank-operand]* [,boost=n] [,boostall=yes])`. This syntax along with its parameters is deprecated in SharePoint Server 2013. We recommend the use of the new syntax and parameters instead.
   
     
     
@@ -1522,7 +1522,7 @@ Boosts the dynamic rank of items based on certain term occurrences within the  _
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _N_| _<integer_value>_|Specifies the number of results to compute statistics from. This parameter does not affect the number of results that the dynamic rank contributes to; it is just a means to exclude irrelevant items from the statistics calculations. Default: **0**. A zero value carries the sematic of *all documents*  .|
+| _N_| _<integer_value>_|Specifies the number of results to compute statistics from.This parameter does not affect the number of results that the dynamic rank contributes to; it is just a means to exclude irrelevant items from the statistics calculations. Default: **0**. A zero value carries the sematic of *all documents*  .|
 | _Nb_| _<float_value>_|The  _nb_ parameter refers to normalized boost. This parameter specifies the factor that is multiplied with the product of the variance and average score of the rank values of the results set. _f_ in the XRANK formula.|
    
 Typically normalized boost,  _nb_, is the only parameter that is modified. This parameter provides the necessary control to promote or demote a particular item, without taking standard deviation into account. 
@@ -1532,7 +1532,7 @@ Typically normalized boost,  _nb_, is the only parameter that is modified. This 
 
 #### Advanced parameters
 
-The following advanced parameters are also available. However, typically they aren't used. 
+The following advanced parameters are also available. However, typically they aren't used.
   
     
     
@@ -1578,13 +1578,13 @@ The following advanced parameters are also available. However, typically they ar
     
     
 
-- Dynamic rank of items that contain the term "dogs" is boosted by 100 points. 
+- Dynamic rank of items that contain the term "dogs" is boosted by 100 points.
     
   
-- Dynamic rank of items that contain the term "cats" is boosted by 200 points. 
+- Dynamic rank of items that contain the term "cats" is boosted by 200 points.
     
   
-- Dynamic rank of items that contain both the terms "dogs" and "cats" is boosted by 300 points. 
+- Dynamic rank of items that contain both the terms "dogs" and "cats" is boosted by 300 points.
     
   
  `xrank(xrank(animals, dogs, cb=100), cats, cb=200)`

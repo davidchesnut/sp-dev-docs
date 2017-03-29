@@ -23,8 +23,8 @@ ms.assetid: fe7d12a3-6ea9-47f9-b69e-f66da9e661dc
   
     
     
-Learn about the objects that are available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by Business Connectivity Services (BCS). 
-The following objects are available for creating client-side scripts using the SharePoint 2013 client object model to access external data that is exposed by Business Connectivity Services (BCS). The BCS object model components that are exposed to the client object model are located in Microsoft.SharePoint.Client.dll. 
+Learn about the objects that are available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by Business Connectivity Services (BCS).
+The following objects are available for creating client-side scripts using the SharePoint 2013 client object model to access external data that is exposed by Business Connectivity Services (BCS). The BCS object model components that are exposed to the client object model are located in Microsoft.SharePoint.Client.dll.
   
     
     
@@ -60,9 +60,9 @@ The **Entity** object essentially represents a table in a database. The methods 
 
 |**Property**|**Description**|
 |:-----|:-----|
-| `long EstimatedInstanceCount { get; }`|Gets the number of expected external items of this external content type. |
-| `string Name { get; }`|Gets the name of the metadata object. |
-| `string Namespace { get; }`|Gets the namespace of the given data class. |
+| `long EstimatedInstanceCount { get; }`|Gets the number of expected external items of this external content type.|
+| `string Name { get; }`|Gets the name of the metadata object.|
+| `string Namespace { get; }`|Gets the namespace of the given data class.|
 | `int GetIdentifierCount()`||
    
 
@@ -83,12 +83,12 @@ The **Entity** object essentially represents a table in a database. The methods 
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|**Delete**|void |Deletes the External Item. |
-|**FromXml**|void |Sets the values in this dictionary from specified XML. **Method signature**          `FromXml(string xml)`|
-|**GetIdentity**|Identity |Gets the identity of this External Item. |
-|**Delete**|void |Deletes the External Item. |
-|**ToXml**|string |Retrieves the values in XML format. |
-|**Update**|void |Submits the changes made to the External Item. |
+|**Delete**|void|Deletes the External Item.|
+|**FromXml**|void|Sets the values in this dictionary from specified XML. **Method signature**          `FromXml(string xml)`|
+|**GetIdentity**|Identity|Gets the identity of this External Item.|
+|**Delete**|void|Deletes the External Item.|
+|**ToXml**|string|Retrieves the values in XML format.|
+|**Update**|void|Submits the changes made to the External Item.|
    
 
   
@@ -100,8 +100,8 @@ The **Entity** object essentially represents a table in a database. The methods 
 
 |**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-| `this[string fieldDotNotation] { get; set; }`|Object |Gets or sets the value of the field referred to by the dot notation. |
-| `RelatedSpecificFinderName { get; }`|string ||
+| `this[string fieldDotNotation] { get; set; }`|Object|Gets or sets the value of the field referred to by the dot notation.|
+| `RelatedSpecificFinderName { get; }`|string||
    
 
 ## EntityView method
@@ -125,9 +125,9 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|**GetDefaultValues_Client()**|**FieldValueDictionary**|Gets a field value dictionary that contains the default values for this view. |
-|**GetXmlSchema()**|**string**|Gets the XML Schema of the view. |
-|**GetType(string fieldDotNotation)**|**string**|Gets the type of the specified field. |
+|**GetDefaultValues_Client()**|**FieldValueDictionary**|Gets a field value dictionary that contains the default values for this view.|
+|**GetXmlSchema()**|**string**|Gets the XML Schema of the view.|
+|**GetType(string fieldDotNotation)**|**string**|Gets the type of the specified field.|
 |**GetType(string fieldDotNotation)**|**TypeDescriptor**|Gets the **TypeDescriptor** object that corresponds to the given dot notation.|
    
 
@@ -136,7 +136,7 @@ Specifies a customized view of the **Entity** data
 
 |**Property**||**Description**|
 |:-----|:-----|:-----|
-| `Fields { get; }`|**FieldCollection**|Gets the collection of fields in the view. |
+| `Fields { get; }`|**FieldCollection**|Gets the collection of fields in the view.|
 | `Name { get; }`|**string**|Gets the name of this **View** object|
 | `RelatedSpecificFinderName { get; }`|**string**|Retrieves the name of the specific finder **MethodInstance** that this view is tied to.|
    
@@ -162,8 +162,8 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|**GetLobSystemInstances()**|**void**|Gives the list of LOB system instances. |
-|**Name**|**void**|Gets the name of the **LobSystem**. |
+|**GetLobSystemInstances()**|**void**|Gives the list of LOB system instances.|
+|**Name**|**void**|Gets the name of the **LobSystem**.|
    
 
 **Properties**
@@ -171,7 +171,7 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Description**|
 |:-----|:-----|
-|None. ||
+|None.||
    
 
 ## LobSystemInstance method
@@ -195,7 +195,7 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|None. |**void**||
+|None.|**void**||
    
 
 **Properties**
@@ -203,7 +203,7 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Description**|
 |:-----|:-----|
-|None. ||
+|None.||
    
 
 ## Identifier method
@@ -227,9 +227,9 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|**ContainsLocalizedDisplayName**|**bool**|Determines whether the metadata object contains localized display name. |
-|**GetDefaultDisplayName**|**string**|Returns the default display name. |
-|**GetLocalizedDisplayName**|**string**|Returns the localized display name. |
+|**ContainsLocalizedDisplayName**|**bool**|Determines whether the metadata object contains localized display name.|
+|**GetDefaultDisplayName**|**string**|Returns the default display name.|
+|**GetLocalizedDisplayName**|**string**|Returns the localized display name.|
    
 
 **Properties**
@@ -237,8 +237,8 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-| `IdentifierType {get;}`|**string**|Returns the type of identifier. |
-| `Name {get;}`|**string**|Gets the name of the identifier. |
+| `IdentifierType {get;}`|**string**|Returns the type of identifier.|
+| `Name {get;}`|**string**|Gets the name of the identifier.|
    
 
 ## IdentifierCollection method
@@ -262,7 +262,7 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|None. |**void**||
+|None.|**void**||
    
 
 **Properties**
@@ -270,7 +270,7 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Description**|
 |:-----|:-----|
-|None. ||
+|None.||
    
 
 ## Identity method
@@ -294,7 +294,7 @@ Specifies a customized view of the **Entity** data
 
 |**Constructor**|**Description**|
 |:-----|:-----|
-| `public Identity (Object[] identifierValues)`|Constructs a new instance of the class by using an array of identifier values. |
+| `public Identity (Object[] identifierValues)`|Constructs a new instance of the class by using an array of identifier values.|
    
 
 **Methods**
@@ -302,7 +302,7 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|**Serialize**|**string**|Gets a string representation of the identity. |
+|**Serialize**|**string**|Gets a string representation of the identity.|
    
 
 **Properties**
@@ -310,10 +310,10 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-| `IdentifierCount { get; }`|**int**|Returns the number of identifiers. |
-| `IsTemporary { get; }`|**bool**|Checks whether the identity is temporary. |
-| `this[int identifierIndex] { get; }`|**Object**|Retrieves the element at the given index. CSOM does not support int-based indexing. String-based accessor implemented for the same. |
-| `TemporaryId { get; }`|**Guid**|Returns the temporary part of the identity. |
+| `IdentifierCount { get; }`|**int**|Returns the number of identifiers.|
+| `IsTemporary { get; }`|**bool**|Checks whether the identity is temporary.|
+| `this[int identifierIndex] { get; }`|**Object**|Retrieves the element at the given index. CSOM does not support int-based indexing. String-based accessor implemented for the same.|
+| `TemporaryId { get; }`|**Guid**|Returns the temporary part of the identity.|
    
 
 ## FieldValueDictionary method
@@ -337,9 +337,9 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|**FromXml**|**void**|Sets the values in this dictionary from specified XML. |
-|**GetCollectionSize**|int |Returns the size of the collection that the dot notation refers to. |
-|**ToXml**|string |Retrieves the values in XML format. |
+|**FromXml**|**void**|Sets the values in this dictionary from specified XML.|
+|**GetCollectionSize**|int|Returns the size of the collection that the dot notation refers to.|
+|**ToXml**|string|Retrieves the values in XML format.|
    
 
 **Properties**
@@ -347,7 +347,7 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Description**|
 |:-----|:-----|
-| `Object this[string fieldDotNotation] { get; set; }`|Gets or sets the value of the field referred to by the dot notation. |
+| `Object this[string fieldDotNotation] { get; set; }`|Gets or sets the value of the field referred to by the dot notation.|
    
 
 ## EntityFieldCollection method
@@ -371,7 +371,7 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|None. |**void**||
+|None.|**void**||
    
 
 **Properties**
@@ -379,7 +379,7 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Description**|
 |:-----|:-----|
-|None. ||
+|None.||
    
 
 ## EntityField method
@@ -403,7 +403,7 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|None. |void ||
+|None.|void||
    
 
 **Properties**
@@ -411,10 +411,10 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Return type**|**Read Only**|**Description**|
 |:-----|:-----|:-----|:-----|
-|**ContainsLocalizedDisplayName**|**Boolean**|Yes |Determines whether the field contains a localized display name. |
-|**DefaultDisplayName**|**string**|Yes |Retrieves the default display name of the Field. |
-|**GetLocalizedDisplayName**|**string**||Retrieves the localized display name of the Field. |
-|**Name**|**string**|Yes |Retrieves the name of the Field. |
+|**ContainsLocalizedDisplayName**|**Boolean**|Yes|Determines whether the field contains a localized display name.|
+|**DefaultDisplayName**|**string**|Yes|Retrieves the default display name of the Field.|
+|**GetLocalizedDisplayName**|**string**||Retrieves the localized display name of the Field.|
+|**Name**|**string**|Yes|Retrieves the name of the Field.|
    
 
 ## TypeDescriptor class
@@ -438,9 +438,9 @@ Specifies a customized view of the **Entity** data
 
 |**Method**|**Return type**|**Read Only**|**Description**|
 |:-----|:-----|:-----|:-----|
-|**ContainsLocalizedDisplayName()**|**Boolean**|Yes |Determines whether the type descriptor contains a localized display name. |
-|**GetLocalizedDisplayName()**|**string**|Yes |Returns the localized display name. |
-|**GetDefaultDisplayName()**|**string**||Returns the default display name. |
+|**ContainsLocalizedDisplayName()**|**Boolean**|Yes|Determines whether the type descriptor contains a localized display name.|
+|**GetLocalizedDisplayName()**|**string**|Yes|Returns the localized display name. |
+|**GetDefaultDisplayName()**|**string**||Returns the default display name.|
    
 
 **Properties**
@@ -448,17 +448,17 @@ Specifies a customized view of the **Entity** data
 
 |**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
-|**Name**|string |Retrieves the name of the Field. |
-|**TypeName**|string |Retrieves the name of the data type represented by this type descriptor. |
-|**IsReadOnly**|Boolean |Determines whether this type descriptor represents a read-only data structure. |
-|**ContainsReadOnly**|Boolean |Determines whether this type descriptor or one of its children represent a read-only data structure. |
-|**IsCollection**|Boolean |Determines whether the described type represents a collection data structure. |
+|**Name**|string|Retrieves the name of the Field.|
+|**TypeName**|string|Retrieves the name of the data type represented by this type descriptor.|
+|**IsReadOnly**|Boolean|Determines whether this type descriptor represents a read-only data structure.|
+|**ContainsReadOnly**|Boolean|Determines whether this type descriptor or one of its children represent a read-only data structure.|
+|**IsCollection**|Boolean|Determines whether the described type represents a collection data structure.|
    
 
 ## Interfaces
 <a name="bkmk_Interfaces"> </a>
 
-The namespace is **Microsoft.BusinessData.MetadataModel**. 
+The namespace is **Microsoft.BusinessData.MetadataModel**.
   
     
     
@@ -485,7 +485,7 @@ The namespace is **Microsoft.BusinessData.MetadataModel**.
   
 - **Do all fields in the external list need to be specified in the CAML query?**
     
-    Using the ViewXML tag in the BDC model, the developer can specify only those fields that are required and the CSOM APIs for Lists will return only those fields. 
+    Using the ViewXML tag in the BDC model, the developer can specify only those fields that are required and the CSOM APIs for Lists will return only those fields.
     
   
 

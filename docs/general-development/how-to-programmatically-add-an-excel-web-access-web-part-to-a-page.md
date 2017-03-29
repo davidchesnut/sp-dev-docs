@@ -15,7 +15,7 @@ This example shows how to programmatically add an Excel Web Access Web Part to a
     
     
 
-The following project uses Microsoft Visual Studio. 
+The following project uses Microsoft Visual Studio.
 > [!NOTE]
 > Depending on the Visual Studio version and the Visual Studio integrated development environment (IDE) settings that you are using, the process and steps to create a Visual Studio project could be slightly different from the procedures shown in this topic. 
   
@@ -24,7 +24,7 @@ The following project uses Microsoft Visual Studio.
 
 
 > [!NOTE]
-> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information, see  [How to: Trust a Location](how-to-trust-a-location.md). 
+> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information, see  [How to: Trust a Location](how-to-trust-a-location.md).
   
     
     
@@ -32,7 +32,7 @@ The following project uses Microsoft Visual Studio.
 
 ## Adding a Reference
 
-The following steps show how to locate Microsoft.Office.Excel.WebUI.dll and how to add a reference to it. Repeat for Microsoft.Office.Excel.WebUI.Internal.dll and Microsoft.SharePoint.dll. 
+The following steps show how to locate Microsoft.Office.Excel.WebUI.dll and how to add a reference to it. Repeat for Microsoft.Office.Excel.WebUI.Internal.dll and Microsoft.SharePoint.dll.
   
     
     
@@ -47,20 +47,20 @@ The following steps show how to locate Microsoft.Office.Excel.WebUI.dll and how 
 ### To add a reference to Microsoft.Office.Excel.WebUI.dll
 
 
-1. On the **Project** menu, click **Add Reference**. 
+1. On the **Project** menu, click **Add Reference**.
     
   
-2. In the **Add Reference** dialog box, click **Browse**. 
+2. In the **Add Reference** dialog box, click **Browse**.
     
    > [!NOTE]
    > You can also open the **Add Reference** dialog box in the **Solution Explorer** pane by right-clicking **References** and selecting **Add Reference**. 
-3. Browse to the location of Microsoft.Office.Excel.WebUI.dll. 
+3. Browse to the location of Microsoft.Office.Excel.WebUI.dll.
     
   
-4. Select Microsoft.Office.Excel.WebUI.dll, and then click **OK**. 
+4. Select Microsoft.Office.Excel.WebUI.dll, and then click **OK**.
     
   
-5. Click **Add Reference**. A reference to Microsoft.Office.Excel.WebUI.dll is added to your project. 
+5. Click **Add Reference**. A reference to Microsoft.Office.Excel.WebUI.dll is added to your project.
     
   
 
@@ -70,7 +70,7 @@ The following steps show how to locate Microsoft.Office.Excel.WebUI.dll and how 
 ### To instantiate the Excel Web Access Web Part
 
 
-1. Add the Microsoft.Office.Excel.WebUI namespace as a directive to your code, so that when you use the types in this namespace, you do not need to fully qualify them: 
+1. Add the Microsoft.Office.Excel.WebUI namespace as a directive to your code, so that when you use the types in this namespace, you do not need to fully qualify them:
     
   ```cs
   
@@ -82,7 +82,7 @@ using Microsoft.Office.Excel.WebUI;
   Imports Microsoft.Office.Excel.WebUI
   ```
 
-2. Instantiate and initialize the Excel Web Access Web Part, as follows: 
+2. Instantiate and initialize the Excel Web Access Web Part, as follows:
     
   ```cs
   
@@ -150,8 +150,8 @@ End Sub
 
 
    > [!IMPORTANT]
-   > Ensure that the location where the workbook is saved is a trusted location. 
-2. You can display an Excel workbook programmatically by using the following code. 
+   > Ensure that the location where the workbook is saved is a trusted location.
+2. You can display an Excel workbook programmatically by using the following code.
     
     **Sample code provided by:** Daniel Mullowney, Microsoft Corporation
     
@@ -206,7 +206,7 @@ End Try
 
 ## Example
 
-The following example is a Windows Forms application that enables a user to enter information on a SharePoint site and display an Excel workbook saved in a trusted location programmatically. It programmatically creates an Excel Web Access Web Part on the default.aspx page of the specified site and displays the specified Excel workbook. 
+The following example is a Windows Forms application that enables a user to enter information on a SharePoint site and display an Excel workbook saved in a trusted location programmatically. It programmatically creates an Excel Web Access Web Part on the default.aspx page of the specified site and displays the specified Excel workbook.
   
     
     
@@ -508,7 +508,7 @@ End Namespace
 
 ## Robust programming
 
-The Excel workbook that you are using must be in a trusted location. 
+The Excel workbook that you are using must be in a trusted location.
   
     
     

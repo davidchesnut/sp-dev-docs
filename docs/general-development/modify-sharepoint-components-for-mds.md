@@ -6,8 +6,8 @@ ms.assetid: c967be7c-f29f-481a-9ce2-915ead315dcd
 
 
 # Modify SharePoint components for MDS
-Learn how to modify the components in your SharePoint project to take advantage of Minimal Download Strategy (MDS) in SharePoint 2013. 
-Minimal Download Strategy (MDS) improves the user experience by returning from the server only the portions of a page required to render it properly in the browser. Because the fully-rendered page is not returned to the client, the server must be able to accurately identify the portions that are required to render the page. You might need to modify the components in your SharePoint project so that they are identified as MDS-compliant and can work with the MDS engine. Learn more about MDS in  [Minimal Download Strategy overview](minimal-download-strategy-overview.md). 
+Learn how to modify the components in your SharePoint project to take advantage of Minimal Download Strategy (MDS) in SharePoint 2013.
+Minimal Download Strategy (MDS) improves the user experience by returning from the server only the portions of a page required to render it properly in the browser. Because the fully-rendered page is not returned to the client, the server must be able to accurately identify the portions that are required to render the page. You might need to modify the components in your SharePoint project so that they are identified as MDS-compliant and can work with the MDS engine. Learn more about MDS in  [Minimal Download Strategy overview](minimal-download-strategy-overview.md).
   
     
     
@@ -28,7 +28,7 @@ As explained in  [Minimal Download Strategy overview](minimal-download-strategy-
 ## Master pages
 <a name="SP15MDSDev_MasterPages"> </a>
 
-The master page provides a template that lets MDS identify the content regions that may need to be updated when someone navigates to a new page. Optimizing your master pages is one of the most important steps to take when optimizing performance because master pages identify sections that require updated content.. The Seattle.master master page included with SharePoint is a good example of an optimized master page. Figure 1 shows examples of components in the Seattle.master master page that change from page to page, such as the (1) main content area, (2) left navigation bar, and (3) page title. 
+The master page provides a template that lets MDS identify the content regions that may need to be updated when someone navigates to a new page. Optimizing your master pages is one of the most important steps to take when optimizing performance because master pages identify sections that require updated content.. The Seattle.master master page included with SharePoint is a good example of an optimized master page. Figure 1 shows examples of components in the Seattle.master master page that change from page to page, such as the (1) main content area, (2) left navigation bar, and (3) page title.
   
     
     
@@ -49,26 +49,26 @@ The master page provides a template that lets MDS identify the content regions t
 
     
 > [!NOTE]
-> There are many more components in the Seattle.master master page that change from page to page, such as style sheets and JavaScript files. Figure 1 shows only a few examples. 
+> There are many more components in the Seattle.master master page that change from page to page, such as style sheets and JavaScript files. Figure 1 shows only a few examples.
   
     
     
 
-There are different patterns to optimize the components in a master page. You can use a pattern for the following components: 
+There are different patterns to optimize the components in a master page. You can use a pattern for the following components:
   
     
     
 
-- HTML regions and controls 
+- HTML regions and controls
     
   
-- Style sheets 
+- Style sheets
     
   
-- JavaScript files 
+- JavaScript files
     
   
-- Page title 
+- Page title
     
   
 HTML regions and controls are MDS compatible if they are wrapped in **SharePoint:AjaxDelta** tags. By wrapping the content in **SharePoint:AjaxDelta** tags, you are signaling that the MDS engine should update the enclosed controls and HTML. If a control or HTML section doesn't change from page to page, it should not be sent to the client. Therefore, you should keep these controls outside of **AjaxDelta** tags. In the Seattle.master master page shown in Figure 1, the (1) main content area is wrapped in **AjaxDelta** tags, as shown here.
@@ -135,7 +135,7 @@ The last example in Figure 1 is the (3) page title, which requires a special pat
 </SharePoint:PageTitle>
 ```
 
-Your master page can also include style sheets and JavaScript files. The server engine needs to identify both CSS and JavaScript files as required. To identify the CSS files resources as required, use the following pattern. 
+Your master page can also include style sheets and JavaScript files. The server engine needs to identify both CSS and JavaScript files as required. To identify the CSS files resources as required, use the following pattern.
   
     
     
@@ -198,7 +198,7 @@ Your ASP.NET pages may also use the **Response.Output** method to write content 
 -  [WriteUrlPathEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteUrlPathEncode.aspx)
     
   
-Besides referencing JavaScript files, your ASP.NET pages can have inline JavaScript code. Use the following pattern to make your script blocks MDS compatible. 
+Besides referencing JavaScript files, your ASP.NET pages can have inline JavaScript code. Use the following pattern to make your script blocks MDS compatible.
   
     
     
@@ -215,7 +215,7 @@ Besides referencing JavaScript files, your ASP.NET pages can have inline JavaScr
 ## Controls and Web Parts
 <a name="SP15MDSDev_WebParts"> </a>
 
-You also need to mark your controls and Web Parts as MDS compliant. The following code shows the pattern to use. 
+You also need to mark your controls and Web Parts as MDS compliant. The following code shows the pattern to use.
   
     
     
@@ -228,7 +228,7 @@ namespace VisualWebPartProject2.VisualWebPart1
     // Rest of your control logic
 ```
 
-Also, your controls and Web Parts need to register their resources using the methods in the  [SPPageContentManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.WebControls.SPPageContentManager.aspx) class. The most common resources are JavaScript snippets and hidden files, which can be registered using the **RegisterClientScriptBlock** and **RegisterHiddenField**, respectively. 
+Also, your controls and Web Parts need to register their resources using the methods in the  [SPPageContentManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.WebControls.SPPageContentManager.aspx) class. The most common resources are JavaScript snippets and hidden files, which can be registered using the **RegisterClientScriptBlock** and **RegisterHiddenField**, respectively.
   
     
     

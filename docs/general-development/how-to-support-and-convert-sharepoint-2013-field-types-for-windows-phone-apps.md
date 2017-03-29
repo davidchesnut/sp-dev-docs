@@ -6,15 +6,15 @@ ms.assetid: 301e6e58-5153-4ca9-a419-8ae0535ebbed
 
 
 # How to: Support and convert SharePoint 2013 field types for Windows Phone apps
-Implement data-conversion logic to support SharePoint field types in Windows Phone apps. 
-In projects based on the Windows Phone SharePoint List Application template, the data of many SharePoint field types is processed and coordinated by default conversion logic to be suitable for display and manipulation in the Silverlight user interface of a Windows Phone, but developers can also implement their own custom data handling routines. 
+Implement data-conversion logic to support SharePoint field types in Windows Phone apps.
+In projects based on the Windows Phone SharePoint List Application template, the data of many SharePoint field types is processed and coordinated by default conversion logic to be suitable for display and manipulation in the Silverlight user interface of a Windows Phone, but developers can also implement their own custom data handling routines.
   
     
     
 
 
 > [!IMPORTANT]
-> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7. > For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md). 
+> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7.> For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md).
   
     
     
@@ -42,7 +42,7 @@ Notice in particular the value of the **Type** attribute of the **Field** elemen
   
     
     
-SharePoint field types cannot be bound directly to Silverlight controls in a Windows Phone app. The data as it is in the SharePoint list must be prepared or processed in a certain way (or, in the standard terminology of Silverlight data binding, converted) in order to be bound to the controls in the app and this preparation and coordination is handled by the ViewModels in projects created from the Windows Phone SharePoint List Application template. Projects based on this template are designed to include default conversion logic to support the binding and display of SharePoint data in a Windows Phone app for a number of standard SharePoint field types (or for custom fields created based on one of these standard types). The field types supported with default conversion logic are listed in Table 1. 
+SharePoint field types cannot be bound directly to Silverlight controls in a Windows Phone app. The data as it is in the SharePoint list must be prepared or processed in a certain way (or, in the standard terminology of Silverlight data binding, converted) in order to be bound to the controls in the app and this preparation and coordination is handled by the ViewModels in projects created from the Windows Phone SharePoint List Application template. Projects based on this template are designed to include default conversion logic to support the binding and display of SharePoint data in a Windows Phone app for a number of standard SharePoint field types (or for custom fields created based on one of these standard types). The field types supported with default conversion logic are listed in Table 1.
   
     
     
@@ -52,23 +52,23 @@ SharePoint field types cannot be bound directly to Silverlight controls in a Win
 
 |**SharePoint field type**|**Silverlight data type**|
 |:-----|:-----|
-|Attachments |File |
-|Boolean |Boolean |
-|Calculated (for display only) |String |
-|Choice |String |
-|Currency |Numeric |
-|DateTime |Date (represented according to locale on the phone) |
-|URL |Link |
-|Integer |Numeric |
-|Location |GeoCoordinate |
-|Lookup |String |
-|MultiChoice |String |
-|Note |String |
-|Number |Numeric |
-|OutcomeChoice |String |
-|Picture |Link |
-|Text |String |
-|User |String |
+|Attachments|File|
+|Boolean|Boolean|
+|Calculated (for display only)|String|
+|Choice|String|
+|Currency|Numeric|
+|DateTime|Date (represented according to locale on the phone)|
+|URL|Link|
+|Integer|Numeric|
+|Location|GeoCoordinate|
+|Lookup|String|
+|MultiChoice|String|
+|Note|String|
+|Number|Numeric|
+|OutcomeChoice|String|
+|Picture|Link|
+|Text|String|
+|User|String|
    
 Other SharePoint field types, such as **Guid** fields, can be used in Windows Phone apps, but developers need to provide custom conversion logic to support binding and displaying values for those field types for which no default conversion logic has been provided. (See [Custom conversion logic to provision unsupported field types](#BKMK_ConversionForUnsupportedFields) in this article.)
   
@@ -106,11 +106,11 @@ This **Choice** field has to be processed in order to be suitable for display in
 ## Custom conversion for SharePoint field types
 <a name="BKMK_CustomConversion"> </a>
 
-In Visual Studio projects that are based on the Windows Phone SharePoint List Application template, the mechanism for handling the coordination and conversion of data between SharePoint and the Windows Phone Silverlight user interface has been designed to be flexible and extensible. 
+In Visual Studio projects that are based on the Windows Phone SharePoint List Application template, the mechanism for handling the coordination and conversion of data between SharePoint and the Windows Phone Silverlight user interface has been designed to be flexible and extensible.
   
     
     
-Depending on the design intentions for your particular application, you may want to provide conversion logic to support binding and displaying SharePoint field types that are not provided with conversion logic by default, or you may want to display data for a supported field in a way that differs from the default implementation. 
+Depending on the design intentions for your particular application, you may want to provide conversion logic to support binding and displaying SharePoint field types that are not provided with conversion logic by default, or you may want to display data for a supported field in a way that differs from the default implementation.
   
     
     
@@ -167,7 +167,7 @@ In  [How to: Implement business logic and data validation in a Windows Phone app
   
     
     
-Assume for the purposes of the following code example that you have created a Windows Phone SharePoint list app based on a Product Orders list created using the Custom List template on the server. Assume that the list has a field named "Contact Number" and that this field is designated as a **Text** field in the list. In the default configuration of a list field designated as a **Text** type on a SharePoint Server, a user can enter any text characters (up to 255 characters). The template provides default conversion logic for displaying and editing data from **Text** fields in SharePoint, but a **Text** field (by default) is not structured to impose or display any specific formatting, such as might be conventionally applied to phone numbers. In your Windows Phone app, you may want phone numbers to be displayed to users in a consistent way and, when saved to the list on the server, formatted in a particular way, even though the underlying field type ( **Text**) is not associated with specific formatting rules. To apply your particular formatting rules, you can implement your own custom data conversion logic in place of the default logic for a supported field type. 
+Assume for the purposes of the following code example that you have created a Windows Phone SharePoint list app based on a Product Orders list created using the Custom List template on the server. Assume that the list has a field named "Contact Number" and that this field is designated as a **Text** field in the list. In the default configuration of a list field designated as a **Text** type on a SharePoint Server, a user can enter any text characters (up to 255 characters). The template provides default conversion logic for displaying and editing data from **Text** fields in SharePoint, but a **Text** field (by default) is not structured to impose or display any specific formatting, such as might be conventionally applied to phone numbers. In your Windows Phone app, you may want phone numbers to be displayed to users in a consistent way and, when saved to the list on the server, formatted in a particular way, even though the underlying field type ( **Text**) is not associated with specific formatting rules. To apply your particular formatting rules, you can implement your own custom data conversion logic in place of the default logic for a supported field type.
   
     
     
@@ -175,19 +175,19 @@ Assume for the purposes of the following code example that you have created a Wi
 ### To implement custom data conversion
 
 
-1. Assuming you have created a list on a SharePoint Server that includes a **Text** field named "Contact Number" (like the Product Orders sample list used in [How to: Implement business logic and data validation in a Windows Phone app for SharePoint 2013](how-to-implement-business-logic-and-data-validation-in-a-windows-phone-app-for-s.md)), create a Windows Phone app using the Windows Phone SharePoint List Application template in Visual Studio by following the steps detailed in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md). 
+1. Assuming you have created a list on a SharePoint Server that includes a **Text** field named "Contact Number" (like the Product Orders sample list used in [How to: Implement business logic and data validation in a Windows Phone app for SharePoint 2013](how-to-implement-business-logic-and-data-validation-in-a-windows-phone-app-for-s.md)), create a Windows Phone app using the Windows Phone SharePoint List Application template in Visual Studio by following the steps detailed in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md).
     
   
-2. In **Solution Explorer**, choose the node representing the project (named, for example, ContosoSPListApp). 
+2. In **Solution Explorer**, choose the node representing the project (named, for example, ContosoSPListApp).
     
   
 3. On the **Project** menu in Visual Studio (or Visual Studio Express for Windows Phone), choose **Add Class**. The **Add New Item** dialog box opens with the C# **Class** template already chosen.
     
   
-4. Specify a name for the class file (such as ContosoConverter.cs) and choose **Add**. The class file is added to the project and opened for editing. 
+4. Specify a name for the class file (such as ContosoConverter.cs) and choose **Add**. The class file is added to the project and opened for editing.
     
   
-5. Replace the contents of the file with the following code. 
+5. Replace the contents of the file with the following code.
     
   ```cs
   
@@ -295,7 +295,7 @@ namespace ContosoSPListApp
 }
   ```
 
-6. Save the file. 
+6. Save the file.
     
   
 The **GetConvertedTextFieldValue** function here determines whether string data from a field intended to contain a phone number (named "Contact Number" in this example) is formatted according to standard conventions for phone numbers (in North America) and, if so, converts the number into a specific format for display, "(XXX) XXX-XXXX". If the data is not formatted as a standard phone number, it is prefixed with a designator. This function doesn't actually change the data in the list. The **SetConvertedTextFieldValue** function, on the other hand, proceeds in the opposite direction. It checks the value of data supplied for a field by a user to determine whether the supplied data matches the pattern for standard phone numbers or not. If so, the supplied value is converted into a specific format to be saved to the list on the server. If the supplied value is not in a standard format, the value is prefixed with a designator and that prefixed value is then saved to the server.
@@ -313,7 +313,7 @@ It remains now to register these data-conversion functions with the **Converter*
 1. In **Solution Explorer** for the same project in which you created the class in the previous procedure, choose the List.xaml file under the **Views** node.
     
   
-2. Press F7 to open the associated code-behind file, List.xaml.cs, for editing. 
+2. Press F7 to open the associated code-behind file, List.xaml.cs, for editing.
     
   
 3. Add the following private variable declaration to the top of the code block that implements the **ListForm** partial class, after the opening brace in the code block and before the `ListForm()` constructor.
@@ -366,7 +366,7 @@ protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventA
 }
   ```
 
-6. Save the file. 
+6. Save the file.
     
   
 Note that the data conversion functions are registered for all fields associated with a **Text** data type in the Edit and New forms. It is for this reason that the **get** and **set** functions implemented for the **ContosoConverter** class created in the preceding procedure include conditional checks to process the data for a particular field only (named, in this case, "Contact_x0020_Number"), allowing the data to "pass through" for other **Text** fields.
@@ -381,7 +381,7 @@ Even if you don't provide conversion logic in your app for **Text** fields, such
   
     
     
-Assume you are creating a Windows Phone app based on a SharePoint list named Product Identifiers, which includes a field with a **Guid** data type. For the purpose of the following code sample, assume the list has a Product (or Title) field (of type **Text**) and an Identifier field (of type **Guid**). 
+Assume you are creating a Windows Phone app based on a SharePoint list named Product Identifiers, which includes a field with a **Guid** data type. For the purpose of the following code sample, assume the list has a Product (or Title) field (of type **Text**) and an Identifier field (of type **Guid**).
   
     
     
@@ -400,16 +400,16 @@ In a Windows Phone app created using the template and based on this simple list,
 ### To provide conversion logic for an unsupported field type
 
 
-1. In a project (named, for instance, SPListAppGuidConversion) created from the Windows Phone SharePoint List Application and based on the Product Identifiers list mentioned above, choose the node representing the project in **Solution Explorer**. 
+1. In a project (named, for instance, SPListAppGuidConversion) created from the Windows Phone SharePoint List Application and based on the Product Identifiers list mentioned above, choose the node representing the project in **Solution Explorer**.
     
   
 2. On the **Project** menu, choose **Add Class**. The **Add New Item** dialog box appears with the C# **Class** template already selected.
     
   
-3. Specify GuidConversion.cs as the name of the file and choose **Add**. The class file is added to the solution and opened for editing 
+3. Specify GuidConversion.cs as the name of the file and choose **Add**. The class file is added to the solution and opened for editing
     
   
-4. Replace the contents of the file with the following code. 
+4. Replace the contents of the file with the following code.
     
   ```cs
   
@@ -494,16 +494,16 @@ namespace SPListAppGuidConversion
 
     In this custom class, the **RegisterDisplayFieldValueConverter** and the **RegisterNewFieldValueConverter** methods of the **Converter** class are called using anonymous functions (defined by a statement lambda) to implement the **get** and **set** routines for the delegates required by the registration methods. The optional argument labels here (for example, "getConvertedFieldValue:") are included in this code only to clarify which delegates are defined.)
     
-    This approach, involving lambda expressions, is an alternative to passing named functions as parameters to the converter registration functions, which was demonstrated in an earlier procedure described in this topic (in the section  [To register the data conversion functions](#BKMK_RegisterFunctions)). 
+    This approach, involving lambda expressions, is an alternative to passing named functions as parameters to the converter registration functions, which was demonstrated in an earlier procedure described in this topic (in the section  [To register the data conversion functions](#BKMK_RegisterFunctions)).
     
   
-5. Save the file. 
+5. Save the file.
     
   
-6. In **Solution Explorer**, choose the App.xaml file. 
+6. In **Solution Explorer**, choose the App.xaml file.
     
   
-7. Press F7 to open the associated code-behind file, App.xaml.cs, for editing. 
+7. Press F7 to open the associated code-behind file, App.xaml.cs, for editing.
     
   
 8. Locate the implementation of the **Application_Launching** event handler (which is empty in a new project created from the Windows Phone SharePoint List Application template) and replace it with the following code.
@@ -556,10 +556,10 @@ private void Application_Launching(object sender, LaunchingEventArgs e)
   ```
 
 
-    Save the file. 
+    Save the file.
     
   
-If you start the project and deploy the app to the Windows Phone Emulator to run it, data in the Identifier field is displayed in the List form (List.xaml) if the corresponding field in the SharePoint list contains a GUID value. (See Figure 1.) 
+If you start the project and deploy the app to the Windows Phone Emulator to run it, data in the Identifier field is displayed in the List form (List.xaml) if the corresponding field in the SharePoint list contains a GUID value. (See Figure 1.)
   
     
     
@@ -596,7 +596,7 @@ In projects based on the Windows Phone SharePoint List Application template, Sil
 </StackPanel>
 ```
 
-Now the Identifier field is shown on the Display form as well as on the List form. 
+Now the Identifier field is shown on the Display form as well as on the List form.
   
     
     

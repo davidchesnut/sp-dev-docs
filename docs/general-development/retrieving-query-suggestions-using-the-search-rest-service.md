@@ -6,8 +6,8 @@ ms.assetid: a64c5bec-64a8-4752-9c72-433d1c864aed
 
 
 # Retrieving query suggestions using the Search REST service
-Learn how you can use the Search REST service from your client and mobile applications to retrieve query suggestions from Search in SharePoint 2013. 
-Query suggestions, also known as search suggestions, are phrases that users have already searched for and that are displayed or "suggested" to them as they type their queries. You can use Search in SharePoint 2013 to turn on pre-query and post-query suggestions. These suggestions appear in a list below the Search box as a user types a query. For more information about query suggestions and how to enable them, see  [Manage query suggestions in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj721441.aspx). 
+Learn how you can use the Search REST service from your client and mobile applications to retrieve query suggestions from Search in SharePoint 2013.
+Query suggestions, also known as search suggestions, are phrases that users have already searched for and that are displayed or "suggested" to them as they type their queries. You can use Search in SharePoint 2013 to turn on pre-query and post-query suggestions. These suggestions appear in a list below the Search box as a user types a query. For more information about query suggestions and how to enable them, see  [Manage query suggestions in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj721441.aspx).
   
     
     
@@ -28,7 +28,7 @@ The URI for **GET** requests to the Search REST service's **Suggest** endpoint i
   
     
     
-The query suggestion parameters are specified in the URL. You can construct the request URL in two ways: 
+The query suggestion parameters are specified in the URL. You can construct the request URL in two ways:
   
     
     
@@ -65,7 +65,7 @@ The following sections describe the parameters you can use for the **Suggest** e
 
 ### Querytext
 
-A string that contains the text for the search query. 
+A string that contains the text for the search query.
   
     
     
@@ -73,14 +73,14 @@ A string that contains the text for the search query.
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint' 
+http:// _server_/_api/search/suggest?querytext='sharepoint'
   
     
     
 
 ### iNumberOfQuerySuggestions
 
-The number of query suggestions to retrieve. Must be greater than zero (0). The default value is 5. 
+The number of query suggestions to retrieve. Must be greater than zero (0). The default value is 5.
   
     
     
@@ -88,14 +88,14 @@ The number of query suggestions to retrieve. Must be greater than zero (0). The 
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;inumberofquerysuggestions=3 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;inumberofquerysuggestions=3
   
     
     
 
 ### iNumberOfResultSuggestions
 
-The number of personal results to retrieve. Must be greater than zero (0). The default value is 5. 
+The number of personal results to retrieve. Must be greater than zero (0). The default value is 5.
   
     
     
@@ -103,14 +103,14 @@ The number of personal results to retrieve. Must be greater than zero (0). The d
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;inumberofresultsuggestions=4 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;inumberofresultsuggestions=4
   
     
     
 
 ### fPreQuerySuggestions
 
-A Boolean value that specifies whether to retrieve pre-query or post-query suggestions. **true** to return pre-query suggestions; otherwise, **false**. The default value is **false**. 
+A Boolean value that specifies whether to retrieve pre-query or post-query suggestions. **true** to return pre-query suggestions; otherwise, **false**. The default value is **false**.
   
     
     
@@ -118,14 +118,14 @@ A Boolean value that specifies whether to retrieve pre-query or post-query sugge
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fprequerysuggestions=true 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fprequerysuggestions=true
   
     
     
 
 ### fHitHighlighting
 
-A Boolean value that specifies whether to hit-highlight or format in bold the query suggestions. **true** to format in bold the terms in the returned query suggestions that match terms in the specified query; otherwise, **false**. The default value is **true**. 
+A Boolean value that specifies whether to hit-highlight or format in bold the query suggestions. **true** to format in bold the terms in the returned query suggestions that match terms in the specified query; otherwise, **false**. The default value is **true**.
   
     
     
@@ -133,14 +133,14 @@ A Boolean value that specifies whether to hit-highlight or format in bold the qu
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fhithighlighting=false 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fhithighlighting=false
   
     
     
 
 ### fCapitalizeFirstLetters
 
-A Boolean value that specifies whether to capitalize the first letter in each term in the returned query suggestions. **true** to capitalize the first letter in each term; otherwise, **false**. The default value is **false**. 
+A Boolean value that specifies whether to capitalize the first letter in each term in the returned query suggestions. **true** to capitalize the first letter in each term; otherwise, **false**. The default value is **false**.
   
     
     
@@ -148,14 +148,14 @@ A Boolean value that specifies whether to capitalize the first letter in each te
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fcapitalizefirstletters=false 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fcapitalizefirstletters=false
   
     
     
 
 ### Culture
 
-The locale ID (LCID) for the query (see  [Locale IDs Assigned by Microsoft](http://msdn.microsoft.com/en-us/goglobal/bb964664.aspx)). 
+The locale ID (LCID) for the query (see  [Locale IDs Assigned by Microsoft](http://msdn.microsoft.com/en-us/goglobal/bb964664.aspx)).
   
     
     
@@ -163,14 +163,14 @@ The locale ID (LCID) for the query (see  [Locale IDs Assigned by Microsoft](http
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;culture=1044 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;culture=1044
   
     
     
 
 ### EnableStemming
 
-A Boolean value that specifies whether stemming is enabled. **true** to enable stemming; otherwise, **false**. The default value is **true**. 
+A Boolean value that specifies whether stemming is enabled. **true** to enable stemming; otherwise, **false**. The default value is **true**.
   
     
     
@@ -178,14 +178,14 @@ A Boolean value that specifies whether stemming is enabled. **true** to enable s
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;enablestemming=false 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;enablestemming=false
   
     
     
 
 ### ShowPeopleNameSuggestions
 
-A Boolean value that specifies whether to include people names in the returned query suggestions. **true** to include people names in the returned query suggestions; otherwise, **false**. The default value is **true**. 
+A Boolean value that specifies whether to include people names in the returned query suggestions. **true** to include people names in the returned query suggestions; otherwise, **false**. The default value is **true**.
   
     
     
@@ -193,14 +193,14 @@ A Boolean value that specifies whether to include people names in the returned q
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;showpeoplenamesuggestions=false 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;showpeoplenamesuggestions=false
   
     
     
 
 ### EnableQueryRules
 
-A Boolean value that specifies whether to turn on query rules for this query. **true** to turn on query rules; otherwise, **false**. The default value is **true**. 
+A Boolean value that specifies whether to turn on query rules for this query. **true** to turn on query rules; otherwise, **false**. The default value is **true**.
   
     
     
@@ -208,7 +208,7 @@ A Boolean value that specifies whether to turn on query rules for this query. **
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;enablequeryrules=false 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;enablequeryrules=false
   
     
     
@@ -223,7 +223,7 @@ A Boolean value that specifies whether to return query suggestions for prefix ma
   
     
     
-http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fprefixmatchallterms=false 
+http:// _server_/_api/search/suggest?querytext='sharepoint'&amp;fprefixmatchallterms=false
   
     
     

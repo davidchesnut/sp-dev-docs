@@ -6,19 +6,19 @@ ms.assetid: b8c82c77-c836-47f9-a11e-6c9c656d436b
 
 
 # How to: Make custom CSS files themable in SharePoint 2013
-Learn how to add comment-style markup to a CSS file so that it can be used in the SharePoint 2013 theming engine. 
+Learn how to add comment-style markup to a CSS file so that it can be used in the SharePoint 2013 theming engine.
 ## Introduction to annotations
 <a name="Intro"> </a>
 
-Annotations are special comment-style markup that tell the SharePoint theming engine how to theme properties in a CSS file. When a theme is applied to a site, the theming engine replaces the CSS property values with the appropriate theme values. In SharePoint 2013, you can use annotations to change the color, font, or background image. You can also recolor an image. If you are using custom CSS files, you must add these annotations to the CSS files if you want to use them with the SharePoint theming engine. If you apply a theme to a site that uses custom CSS files, and you haven't added annotations, the CSS properties remain unchanged. This can result in a site that has a mismatched design. 
+Annotations are special comment-style markup that tell the SharePoint theming engine how to theme properties in a CSS file. When a theme is applied to a site, the theming engine replaces the CSS property values with the appropriate theme values. In SharePoint 2013, you can use annotations to change the color, font, or background image. You can also recolor an image. If you are using custom CSS files, you must add these annotations to the CSS files if you want to use them with the SharePoint theming engine. If you apply a theme to a site that uses custom CSS files, and you haven't added annotations, the CSS properties remain unchanged. This can result in a site that has a mismatched design.
   
     
     
-This article describes the available annotations and how to register CSS files. 
+This article describes the available annotations and how to register CSS files.
   
     
     
-For more information about custom themes, see  [How to: Deploy a custom theme in SharePoint 2013](how-to-deploy-a-custom-theme-in-sharepoint-2013.md) and [How to: Create a master page preview file in SharePoint 2013](how-to-create-a-master-page-preview-file-in-sharepoint-2013.md). 
+For more information about custom themes, see  [How to: Deploy a custom theme in SharePoint 2013](how-to-deploy-a-custom-theme-in-sharepoint-2013.md) and [How to: Create a master page preview file in SharePoint 2013](how-to-create-a-master-page-preview-file-in-sharepoint-2013.md).
   
     
     
@@ -26,7 +26,7 @@ For more information about custom themes, see  [How to: Deploy a custom theme in
 ## Add annotations to custom CSS files
 <a name="annotations"> </a>
 
-Annotations tell the SharePoint theming engine how to theme properties in a CSS file. This section describes the available annotations and how they can be used. 
+Annotations tell the SharePoint theming engine how to theme properties in a CSS file. This section describes the available annotations and how they can be used.
   
     
     
@@ -51,7 +51,7 @@ The following shows the format for the **ReplaceColor** annotation.
 
 ```
 
-Replace  _ColorSlot_ with the annotation name of the color slot to use. To see a list of available color slots, see the [Color slot mapping](color-palettes-and-fonts-in-sharepoint-2013.md#colorSlots) section in [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md). 
+Replace  _ColorSlot_ with the annotation name of the color slot to use. To see a list of available color slots, see the [Color slot mapping](color-palettes-and-fonts-in-sharepoint-2013.md#colorSlots) section in [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md).
   
     
     
@@ -101,7 +101,7 @@ The following shows the format for the **ReplaceFont** annotation.
 /* [ReplaceFont(themeFont:"FontSlot")] */
 ```
 
-Replace  _FontSlot_ with the name of the font slot to use. To see a list of available font slots, see the [Font slots](color-palettes-and-fonts-in-sharepoint-2013.md#fontSlot) section in [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md). 
+Replace  _FontSlot_ with the name of the font slot to use. To see a list of available font slots, see the [Font slots](color-palettes-and-fonts-in-sharepoint-2013.md#fontSlot) section in [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md).
   
     
     
@@ -152,7 +152,7 @@ The following describes the format of the **RecolorImage** annotation.
 
 ```
 
-Replace  _ColorSlot_ with the annotation name of the color slot. To see a list of available color slots, see the [Color slot mapping](color-palettes-and-fonts-in-sharepoint-2013.md#colorSlots) section in [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md). 
+Replace  _ColorSlot_ with the annotation name of the color slot. To see a list of available color slots, see the [Color slot mapping](color-palettes-and-fonts-in-sharepoint-2013.md#colorSlots) section in [Color palettes and fonts in SharePoint 2013](color-palettes-and-fonts-in-sharepoint-2013.md).
   
     
     
@@ -179,18 +179,18 @@ The following shows examples of the **RecolorImage** annotation being used in a 
 ## Upload the CSS file to the Themable folder in the Style library
 <a name="uploadCSS"> </a>
 
-Place the custom CSS files in the Themable folder in the Style library (not the Themable folder in the Master Page Gallery). Only CSS files that are stored in the Themable folder in the Style library are recognized by the theming engine. The Themable folder is created automatically for publishing sites. Otherwise, you can create the Themable folder in the correct location (http://  _SiteCollectionName_/Style Library/ _language_/Themable/). 
+Place the custom CSS files in the Themable folder in the Style library (not the Themable folder in the Master Page Gallery). Only CSS files that are stored in the Themable folder in the Style library are recognized by the theming engine. The Themable folder is created automatically for publishing sites. Otherwise, you can create the Themable folder in the correct location (http://  _SiteCollectionName_/Style Library/ _language_/Themable/).
   
     
     
 
 > [!NOTE]
-> The name of the  _language_ folder must be in the 4-digit format _ll-cc_ to identify the language and culture, respectively. For example, en-us or ar-sa. For more information, see [Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219.aspx). 
+> The name of the  _language_ folder must be in the 4-digit format _ll-cc_ to identify the language and culture, respectively. For example, en-us or ar-sa. For more information, see [Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219.aspx).
   
     
     
 
-CSS files must be checked in and published. If CSS files are changed, you must reapply the theme for the changes to be recognized. 
+CSS files must be checked in and published. If CSS files are changed, you must reapply the theme for the changes to be recognized.
   
     
     

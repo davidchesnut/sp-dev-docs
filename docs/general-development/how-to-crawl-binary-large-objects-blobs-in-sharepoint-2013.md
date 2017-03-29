@@ -6,7 +6,7 @@ ms.assetid: 99b3dd51-1651-4300-a2de-33681f4cc258
 
 
 # How to: Crawl binary large objects (BLOBs) in SharePoint 2013
-Learn how to modify the BDC model file for a database BCS indexing connector to enable the Search in SharePoint 2013 crawler to crawl binary large object (BLOB) data stored in a SQL Server database. 
+Learn how to modify the BDC model file for a database BCS indexing connector to enable the Search in SharePoint 2013 crawler to crawl binary large object (BLOB) data stored in a SQL Server database.
 ## Crawling BLOB data
 <a name="HowToCrawlBlobs_CrawlingBlobData"> </a>
 
@@ -18,7 +18,7 @@ The Business Data Connectivity (BDC) service supports reading BLOB data types, w
 ## Configuring the SQL Server database table for BLOB data
 <a name="HowToCrawlBlobs_ConfiguringSQL"> </a>
 
-The Microsoft SQL Server database table must have a column that specifies either the extension or the MIME type of the BLOB data. If the database table schema does not include a column with this information, you must add it to the schema. The following tables contain an example of a database table schema with this column and sample values for it that are stored in the database table. 
+The Microsoft SQL Server database table must have a column that specifies either the extension or the MIME type of the BLOB data. If the database table schema does not include a column with this information, you must add it to the schema. The following tables contain an example of a database table schema with this column and sample values for it that are stored in the database table.
   
     
     
@@ -28,11 +28,11 @@ The Microsoft SQL Server database table must have a column that specifies either
 
 |**Column Name**|**Data Type**|
 |:-----|:-----|
-|Id |Int |
-|DisplayName |nvarchar(50) |
-|Extension |nvarchar(50) |
-|Data |varbinary(MAX) |
-|ContentType |nvarchar(MAX) |
+|Id|Int|
+|DisplayName|nvarchar(50)|
+|Extension|nvarchar(50)|
+|Data|varbinary(MAX)|
+|ContentType|nvarchar(MAX)|
    
 
 **Table 2. Sample database table values**
@@ -40,9 +40,9 @@ The Microsoft SQL Server database table must have a column that specifies either
 
 |**Id**|**Display Name**|**Extension**|**Data**|**Content Type**|
 |:-----|:-----|:-----|:-----|:-----|
-|1 |File1 |.docx |0x504B… |application/vnd.openxmlformats-officedocument.wordprocessingml.document |
-|2 |File2 |.doc |0xD… |application/msword |
-|3 |File3 |.txt |OxE… |text/plain |
+|1|File1|.docx|0x504B…|application/vnd.openxmlformats-officedocument.wordprocessingml.document|
+|2|File2|.doc|0xD…|application/msword|
+|3|File3|.txt|OxE…|text/plain|
    
 
 ## Modifying the BDC model file to enable crawling of BLOB data
@@ -52,7 +52,7 @@ After you confirm that the database table contains the extension or MIME type in
   
     
     
-After you create the BLOB external content type, you are ready to modify the BDC model file to enable crawling. You cannot make these modifications in SharePoint Designer. So you must export the BDC model file, and use an XML editor to make these changes manually. 
+After you create the BLOB external content type, you are ready to modify the BDC model file to enable crawling. You cannot make these modifications in SharePoint Designer. So you must export the BDC model file, and use an XML editor to make these changes manually.
   
     
     
@@ -66,23 +66,23 @@ After you create the BLOB external content type, you are ready to modify the BDC
 2. In the **External Content Types** list, select the BLOB external content type. Then, click **Export BDC Model** on the Server ribbon.
     
   
-3. Type a name in the **BDC Model Name** text box, and then click **OK**. 
+3. Type a name in the **BDC Model Name** text box, and then click **OK**.
     
   
-4. Select the location where you want to save the BDC model (.bdcm) file, and then click **Save**. 
+4. Select the location where you want to save the BDC model (.bdcm) file, and then click **Save**.
     
   
 
 ### To enable crawling of the BLOB external content type
 
 
-1. In an XML editor, open the BDC model file you created in the previous section. 
+1. In an XML editor, open the BDC model file you created in the previous section.
     
   
 2. Create a new method that returns the BLOB field. You should define a **StreamAccessor** type method instance for this method, as shown in the following example.
     
    > [!NOTE]
-   > The table name in this example is Attachment. 
+   > The table name in this example is Attachment.
 
   ```XML
   
@@ -155,7 +155,7 @@ with the following line of code:
 3. Re-import the model file by using the Business Connectivity Services service application administration UI. 
     
   
-4. Create the content source for the external content type. 
+4. Create the content source for the external content type.
     
   
 5. Launch a full crawl of the content source. 

@@ -6,14 +6,14 @@ ms.assetid: 68fa2138-86d9-4e35-9c7c-5cd292087b80
 
 
 # How to: Configure and use push notifications in SharePoint 2013 apps for Windows Phone
-Create a solution in SharePoint Server for sending push notifications and develop a Windows Phone app for receiving the notifications. 
-Using the Microsoft Push Notification Service (MPNS), Windows Phone apps can receive notifications through the Internet of events triggered on Microsoft SharePoint Server. The phone app doesn't have to poll the server for changes to, for example, the items in a list on which the phone app is based. The app can be registered to receive notifications from the server, and an event receiver can initiate a notification and send it to the receiving app for handling. The push notification is relayed to Windows Phone devices by MPNS. 
+Create a solution in SharePoint Server for sending push notifications and develop a Windows Phone app for receiving the notifications.
+Using the Microsoft Push Notification Service (MPNS), Windows Phone apps can receive notifications through the Internet of events triggered on Microsoft SharePoint Server. The phone app doesn't have to poll the server for changes to, for example, the items in a list on which the phone app is based. The app can be registered to receive notifications from the server, and an event receiver can initiate a notification and send it to the receiving app for handling. The push notification is relayed to Windows Phone devices by MPNS.
   
     
     
 
 Windows Phone 7 doesn't support running multiple apps simultaneously. Other than the components of the Windows Phone operating system (OS) itself, only one app can be running on the phone at a time. An event relevant to a given phone app might occur (such as, for example, a list item being added to a list) when the app isn't running in the foreground on the phone (that is, when the app is tombstoned or closed). You could develop a background service on the phone with a periodic task that might check for changes to the list on the server, but this approach would consume resources (such as network bandwidth and battery power) on the phone. With MPNS and the components that support notifications built into the Windows Phone 7 OS, the phone itself can receive a notification relevant to the context of a given app—even when that app isn't running—and the user can be given the opportunity to start the relevant app in response to the notification. (For more information about push notifications, see  [Push Notifications Overview for Windows Phone](http://msdn.microsoft.com/en-us/library/ff402558%28VS.92%29.aspx) in the MSDN Library.)
-In this topic, you create a server-side solution for sending push notifications to a phone app based on a change in the list on which the app is based. You will then create the phone app for receiving these notifications. 
+In this topic, you create a server-side solution for sending push notifications to a phone app based on a change in the list on which the app is based. You will then create the phone app for receiving these notifications.
   
     
     
@@ -33,7 +33,7 @@ The server-side solution can be either a SharePoint app deployed in an isolated 
 1. Start Visual Studio 2012 by using the **Run as Administrator** option.
     
   
-2. Choose **File**, **New**, **Project**. 
+2. Choose **File**, **New**, **Project**.
     
     The **New Project** dialog box appears.
     
@@ -41,19 +41,19 @@ The server-side solution can be either a SharePoint app deployed in an isolated 
 3. In the **New Project** dialog box, expand the **SharePoint** node under **Visual C#**, and then choose the **15** node.
     
   
-4. In the **Templates** pane, select **SharePoint 2013 Project** and specify a name for the project, such asPushNotificationsList. 
+4. In the **Templates** pane, select **SharePoint 2013 Project** and specify a name for the project, such asPushNotificationsList.
     
   
 5. Choose the **OK** button. The SharePoint Customization Wizard appears. This wizard enables you to select the target site for developing and debugging the project and the trust level of the solution.
     
   
-6. Specify the URL of a SharePoint Server site. Select a site that you will be able to use later in the development of the SharePoint list app for Windows Phone. 
+6. Specify the URL of a SharePoint Server site. Select a site that you will be able to use later in the development of the SharePoint list app for Windows Phone.
     
   
 7. Select **Deploy as a farm solution**, and then click **Finish** to create the project.
     
   
-Next, add a class file to the project and create a couple of classes to encapsulate and manage push notifications. 
+Next, add a class file to the project and create a couple of classes to encapsulate and manage push notifications.
   
     
     
@@ -67,10 +67,10 @@ Next, add a class file to the project and create a couple of classes to encapsul
 2. On the **Project** menu, choose **Add Class**. The **Add New Item** dialog box appears with the C# **Class** template already selected.
     
   
-3. Specify PushNotification.cs as the name of the file and click **Add**. The class file is added to the solution and opened for editing. 
+3. Specify PushNotification.cs as the name of the file and click **Add**. The class file is added to the solution and opened for editing.
     
   
-4. Replace the contents of the file with the following code. 
+4. Replace the contents of the file with the following code.
     
   ```cs
   
@@ -257,14 +257,14 @@ namespace PushNotificationsList
 }
   ```
 
-5. Save the file. 
+5. Save the file.
     
   
 In this code, the **PushToast** and **PushRaw** methods take parameter arguments appropriate for the given type of notification to send, process those arguments, and then call the **SendPushNotification** method, which does the work of sending the notification using the Microsoft Push Notification Service. (In this sample code, a method for sending tile notifications has not been implemented.) The **PushNotificationResponse** class is simply a mechanism for encapsulating the result received from the notification request. Here, the class adds some information to the object (cast as an **HttpWebResponse** object) returned by the **GetResponse** method of the **HttpWebRequest** object. The event receiver you create in the following procedure uses this **PushNotificationResponse** class to update a notifications results list on the server.
   
     
     
-Now create an event receiver class that will send push notifications to devices that have been registered to receive them. (You will bind this event receiver to the Jobs list that is created in a later procedure.) 
+Now create an event receiver class that will send push notifications to devices that have been registered to receive them. (You will bind this event receiver to the Jobs list that is created in a later procedure.)
   
     
     
@@ -272,16 +272,16 @@ Now create an event receiver class that will send push notifications to devices 
 ### To create the event receiver class for a list
 
 
-1. In **Solution Explorer**, choose the node representing the project. 
+1. In **Solution Explorer**, choose the node representing the project.
     
   
 2. On the **Project** menu, click **Add Class**. The **Add New Item** dialog box appears with the C# **Class** template already selected.
     
   
-3. Specify ListItemEventReceiver.cs as the name of the file and click **Add**. The class file is added to the solution and opened for editing. 
+3. Specify ListItemEventReceiver.cs as the name of the file and click **Add**. The class file is added to the solution and opened for editing.
     
   
-4. Replace the contents of the file with the following code. 
+4. Replace the contents of the file with the following code.
     
   ```cs
   
@@ -371,7 +371,7 @@ namespace PushNotificationsList
 }
   ```
 
-5. Save the file. 
+5. Save the file.
     
   
 In this code, after an item is added to the list to which the event receiver is bound, push notifications are sent to subscribers that have registered to receive notifications. The value of the AssignedTo field from the added list item is included in the notification message sent to subscribers. For the toast notification, the values of the **toastTitle** parameter (for the **PushToast** method defined in the preceding procedure) and the **toastMessage** parameter are set. These values correspond to the **Text1** and **Text2** properties in the XML schema that defines toast notifications.
@@ -389,11 +389,11 @@ An empty string is simply being passed as the value of the **toastParam** parame
     
     
 
-For the raw notification in this sample, a string is passed that contains the value of the AssignedTo field from the added list item. 
+For the raw notification in this sample, a string is passed that contains the value of the AssignedTo field from the added list item.
   
     
     
-Note that the toast notification will be displayed on subscribed phones (if the phone app for which the notification is intended is not running), and the message displayed will be truncated if it is longer than approximately 41 characters. Raw notifications in MPNS are limited to 1024 bytes (1 kilobyte). (The exact number of characters that can be sent depends on the kind of encoding used, such as UTF-8). Tile notifications are also subject to size limitations. Large amounts of data can't be sent using any of the notifications types. The best use of these notifications is not as a mechanism for transferring data, but as a way to send short messages to subscribed phones so that certain actions can be taken on the phone. Those actions, such as refreshing a list on the phone with data from the server, may involve larger amounts of data, depending on the design of the Windows Phone app. 
+Note that the toast notification will be displayed on subscribed phones (if the phone app for which the notification is intended is not running), and the message displayed will be truncated if it is longer than approximately 41 characters. Raw notifications in MPNS are limited to 1024 bytes (1 kilobyte). (The exact number of characters that can be sent depends on the kind of encoding used, such as UTF-8). Tile notifications are also subject to size limitations. Large amounts of data can't be sent using any of the notifications types. The best use of these notifications is not as a mechanism for transferring data, but as a way to send short messages to subscribed phones so that certain actions can be taken on the phone. Those actions, such as refreshing a list on the phone with data from the server, may involve larger amounts of data, depending on the design of the Windows Phone app.
   
     
     
@@ -401,7 +401,7 @@ The **PushNotificationResponse** object that is returned from a notification req
   
     
     
-Next, you create a simple SharePoint list, named Jobs, that contains a job category, a description of a job, and the person to whom the job is assigned. Also, you create an auxiliary list, named Push Notification Results, for storing information related to notification requests sent to subscribing phones. 
+Next, you create a simple SharePoint list, named Jobs, that contains a job category, a description of a job, and the person to whom the job is assigned. Also, you create an auxiliary list, named Push Notification Results, for storing information related to notification requests sent to subscribing phones.
   
     
     
@@ -419,10 +419,10 @@ In the following procedure, you create a class, **ListCreator**, that includes a
 2. On the **Project** menu, click **Add Class**. The **Add New Item** dialog box appears with the C# **Class** template already selected.
     
   
-3. Specify ListCreator.cs as the name of the file and click **Add**. The class file is added to the solution and opened for editing. 
+3. Specify ListCreator.cs as the name of the file and click **Add**. The class file is added to the solution and opened for editing.
     
   
-4. Replace the contents of the file with the following code. 
+4. Replace the contents of the file with the following code.
     
   ```cs
   
@@ -564,7 +564,7 @@ namespace PushNotificationsList
     Be sure to specify the appropriate Public Key Token value for particular your assembly. To add a tool to Visual Studio for getting the Public Key Token value for your assembly, see  [How to: Create a Tool to Get the Public Key of an Assembly](http://msdn.microsoft.com/en-us/library/ee539398.aspx) in the MSDN Library. Note that you will have to compile your project at least once to be able to get the Public Key Token value for your output assembly.
     
   
-5. Save the file. 
+5. Save the file.
     
   
 In this code, the **CreateJobsList** method of the **ListCreator** class creates the list (or gets the list if it exists on the server) and binds the event receiver created in an earlier procedure to the list by adding it to the **EventReceivers** class associated with the list. The **CreateNotificationResultsList** method creates the Push Notification Results list.
@@ -579,13 +579,13 @@ Next you add a Feature to your project in order to perform initialization operat
 ### To add a Feature to your project
 
 
-1. In Visual Studio 2012, on the **View** menu, point to **Other Windows** and then click **Packaging Explorer**. 
+1. In Visual Studio 2012, on the **View** menu, point to **Other Windows** and then click **Packaging Explorer**.
     
   
-2. In the **Packaging Explorer**, right-click the node representing your project and click **Add Feature**. A new Feature (named "Feature1" by default) is added to your project, under a **Features** node (in **Solution Explorer**). 
+2. In the **Packaging Explorer**, right-click the node representing your project and click **Add Feature**. A new Feature (named "Feature1" by default) is added to your project, under a **Features** node (in **Solution Explorer**).
     
   
-3. Now, in **Solution Explorer**, under the **Features** node, right-click the newly added Feature (that is, **Feature1**), and click **Add Event Receiver**. An event receiver class file (Feature1.EventReceiver.cs) is added to the Feature and opened for editing. 
+3. Now, in **Solution Explorer**, under the **Features** node, right-click the newly added Feature (that is, **Feature1**), and click **Add Event Receiver**. An event receiver class file (Feature1.EventReceiver.cs) is added to the Feature and opened for editing.
     
   
 4. Within the implementation (demarcated by opening and closing braces) of the **Feature1EventReceiver** class, add the following code.
@@ -596,10 +596,10 @@ internal const string PushNotificationFeatureId = "41E1D4BF-B1A2-47F7-AB80-D5D6C
   ```
 
 
-    This string variable stores the identifier for the Push Notification Feature on the server. 
+    This string variable stores the identifier for the Push Notification Feature on the server.
     
    > [!TIP]
-   > You can obtain a list of unique identifiers for the Features on a SharePoint Server by executing the following Windows PowerShell cmdlet: >  `Get-SPFeature | Sort -Property DisplayName`> The Push Notification Feature appears as "PhonePNSubscriber" in the results returned by this cmdlet. 
+   > You can obtain a list of unique identifiers for the Features on a SharePoint Server by executing the following Windows PowerShell cmdlet:>  `Get-SPFeature | Sort -Property DisplayName`> The Push Notification Feature appears as "PhonePNSubscriber" in the results returned by this cmdlet.
 5. The event receiver class file is created with some default method declarations for handling Feature events. The method declarations in the file are initially commented out. Replace the **FeatureActivated** method in the file with the following code.
     
   ```cs
@@ -633,7 +633,7 @@ public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
 }
   ```
 
-7. Save the file. 
+7. Save the file.
     
   
 In the implementation of the **FeatureActivated** event handler here, an instance of the **ListCreator** class is instantiated and its **CreateJobsList** and **CreateNotificationResultsList** methods are called, using the **SPWeb** where the Feature is deployed and activated as the location in which the lists will be created. In addition, because push notification functionality is not enabled by default in a standard installation of SharePoint Server, the event handler activates the Push Notification Feature on the server. In the **FeatureDeactivating** event handler, push notification functionality is deactivated when the application has been deactivated. It isn't necessary to handle this event. You may or may not want to deactivate push notifications on the server when the application is deactivated, depending on the circumstances of your installation and whether other applications on the target site make use of push notifications.
@@ -648,7 +648,7 @@ In this section, you create a Windows Phone app from the Windows Phone SharePoin
   
     
     
-To follow the procedures in this section, first perform the steps in the procedure described in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md) to create a Visual Studio project from the Windows Phone SharePoint List Application template, using the Jobs list created in the preceding section as the target SharePoint list for the project. For the purposes of the procedures in this section, it is assumed that the name specified for the project isSPListAppForNotifications. 
+To follow the procedures in this section, first perform the steps in the procedure described in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md) to create a Visual Studio project from the Windows Phone SharePoint List Application template, using the Jobs list created in the preceding section as the target SharePoint list for the project. For the purposes of the procedures in this section, it is assumed that the name specified for the project isSPListAppForNotifications.
   
     
     
@@ -656,16 +656,16 @@ To follow the procedures in this section, first perform the steps in the procedu
 ### To create the class for managing subscriptions and received notifications
 
 
-1. In **Solution Explorer**, choose the node representing the project (named SPListAppForNotifications). 
+1. In **Solution Explorer**, choose the node representing the project (named SPListAppForNotifications).
     
   
 2. On the **Project** menu, click **Add Class**. The **Add New Item** dialog box appears with the C# **Class** template already selected.
     
   
-3. Specify "Notifications.cs" as the name of the file and click **Add**. The class file is added to the solution and opened for editing. 
+3. Specify "Notifications.cs" as the name of the file and click **Add**. The class file is added to the solution and opened for editing.
     
   
-4. Replace the contents of the file with the following code. 
+4. Replace the contents of the file with the following code.
     
   ```cs
   
@@ -991,7 +991,7 @@ namespace SPListAppForNotifications
 }
   ```
 
-5. Save the file. 
+5. Save the file.
     
   
 In this code, the **OpenNotificationChannel** creates a notification channel for receiving notifications from MPNS. Event handlers are attached to the channel object for dealing with notification events, and then the channel is opened. In this sample, the **HttpNotificationReceived** event (for receiving raw notifications) is implemented. Raw notifications can be received only when the phone app is running. The handler for the **ShellToastNotificationReceived** event (for receiving toast notifications) is also implemented here to demonstrate its use. Tile notifications can be received only when the subscribing phone app is not running, so there's no need to implement an event handler in the app for receiving tile notifications.
@@ -1014,7 +1014,7 @@ Note that the operations that involve accessing the SharePoint Server to configu
   
     
     
-Next, add a page to the app with controls that allow a user to register for or unregister from push notifications from the server. 
+Next, add a page to the app with controls that allow a user to register for or unregister from push notifications from the server.
   
     
     
@@ -1028,10 +1028,10 @@ Next, add a page to the app with controls that allow a user to register for or u
 2. On the **Project** menu, click **Add New Item**. The **Add New Item** dialog box appears.
     
   
-3. In the **Templates** pane, choose **Windows Phone Portrait Page** template. SpecifySettings.xaml as the name of the file for the page and click **Add**. The page is added to the project and opened for editing. 
+3. In the **Templates** pane, choose **Windows Phone Portrait Page** template. SpecifySettings.xaml as the name of the file for the page and click **Add**. The page is added to the project and opened for editing.
     
   
-4. In the XAML view for the page, replace the content between the closing bracket of the XML tag that defines the **PhoneApplicationPage** element and the closing tag of the element ( `</phone:PhoneApplicationPage>`), with the following markup. 
+4. In the XAML view for the page, replace the content between the closing bracket of the XML tag that defines the **PhoneApplicationPage** element and the closing tag of the element ( `</phone:PhoneApplicationPage>`), with the following markup.
     
   ```
   
@@ -1074,10 +1074,10 @@ Next, add a page to the app with controls that allow a user to register for or u
 </phone:PhoneApplicationPage.ApplicationBar>
   ```
 
-5. With the Settings.xaml file selected in **Solution Explorer**, press F7 to open its associated code-behind file, Settings.xaml.cs, for editing. 
+5. With the Settings.xaml file selected in **Solution Explorer**, press F7 to open its associated code-behind file, Settings.xaml.cs, for editing.
     
   
-6. Replace the contents of the code-behind file with the following code. 
+6. Replace the contents of the code-behind file with the following code.
     
   ```cs
   
@@ -1135,20 +1135,20 @@ namespace SPListAppForNotifications
 }
   ```
 
-7. Save the file. 
+7. Save the file.
     
   
-8. To add to your project the image file (appbar.check.rest.png) for the **ApplicationBar** button (btnOK) declared in the Settings.xaml file, choose the Images folder node in **Solution Explorer**. 
+8. To add to your project the image file (appbar.check.rest.png) for the **ApplicationBar** button (btnOK) declared in the Settings.xaml file, choose the Images folder node in **Solution Explorer**.
     
   
 9. On the **Project** menu, click **Add Existing Item**. A **File Browser** window opens.
     
   
-10. Navigate to the folder in which the standard Windows Phone icon images were installed by the Windows Phone SDK 7.1. 
+10. Navigate to the folder in which the standard Windows Phone icon images were installed by the Windows Phone SDK 7.1.
     
    > [!NOTE]
-   > The images with a light foreground and a dark background are in %PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark in a standard installation of the SDK. 
-11. Choose the image file named appbar.check.rest.png and click **Add**. The image is added is added to the project under the Images node. 
+   > The images with a light foreground and a dark background are in %PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark in a standard installation of the SDK.
+11. Choose the image file named appbar.check.rest.png and click **Add**. The image is added is added to the project under the Images node.
     
   
 12. In **Solution Explorer**, choose the image file just added and in the **Properties Window** for the file, set the **Build Action** property for the image file to "Content" and set the **Copy to Output Directory** property to "Copy if newer".
@@ -1184,7 +1184,7 @@ Next, add a button to the List form (List.xaml) in the project and implement the
 ...
   ```
 
-3. With the List.xaml file selected in **Solution Explorer**, press F7 to open its associated code-behind file, List.xaml.cs, for editing. 
+3. With the List.xaml file selected in **Solution Explorer**, press F7 to open its associated code-behind file, List.xaml.cs, for editing.
     
   
 4. Within the code block (demarcated by opening and closing braces) that implements the **ListForm** partial class, add the following event handler to the file.
@@ -1222,19 +1222,19 @@ private void OnViewModelInitialization(object sender, InitializationCompletedEve
 }
   ```
 
-6. Save the file. 
+6. Save the file.
     
   
-7. To add to your project the image file (appbar.feature.settings.rest.png) for the **ApplicationBar** button (btnSettings) declared in the List.xaml file, choose the Images folder node in **Solution Explorer**. 
+7. To add to your project the image file (appbar.feature.settings.rest.png) for the **ApplicationBar** button (btnSettings) declared in the List.xaml file, choose the Images folder node in **Solution Explorer**.
     
   
 8. On the **Project** menu, click **Add Existing Item**. A **File Browser** window opens.
     
   
-9. Navigate to the folder in which the standard Windows Phone icon images were installed by the Windows Phone SDK 7.1. (See the note in the previous procedure for the location of the image files in a standard installation of the SDK.) 
+9. Navigate to the folder in which the standard Windows Phone icon images were installed by the Windows Phone SDK 7.1. (See the note in the previous procedure for the location of the image files in a standard installation of the SDK.)
     
   
-10. Choose the image file named appbar.feature.settings.rest.png and click **Add**. The image is added is added to the project under the Images node. 
+10. Choose the image file named appbar.feature.settings.rest.png and click **Add**. The image is added is added to the project under the Images node.
     
   
 11. In **Solution Explorer**, choose the image file just added and in the **Properties Window** for the file, set the **Build Action** property for the image file to "Content" and set the **Copy to Output Directory** property to "Copy if newer".
@@ -1248,10 +1248,10 @@ Finally, add code to the **Application_Launching** event hander in the App.xaml.
 ### To add code to the App.xaml.cs file
 
 
-1. In **Solution Explorer**, under the node representing the project, choose the App.xaml file. 
+1. In **Solution Explorer**, under the node representing the project, choose the App.xaml file.
     
   
-2. Press F7 to open its associated code-behind file, App.xaml.cs, for editing. 
+2. Press F7 to open its associated code-behind file, App.xaml.cs, for editing.
     
   
 3. Locate the **Application_Launching** event handler in the file. (For new projects created from the Windows Phone SharePoint List Application template, the signature for the method that handles the **Application_Launching** event is included but no logic is implemented in the method.)
@@ -1269,7 +1269,7 @@ private void Application_Launching(object sender, LaunchingEventArgs e)
 }
   ```
 
-5. Save the file. 
+5. Save the file.
     
   
 If you compile the project and deploy the app to the Windows Phone Emulator to run it, you can click the **Settings** button on the **Application Bar** to display a page from which you can register for push notifications (Figure 1).
@@ -1326,7 +1326,7 @@ The message displayed when your app received a toast notification while it's run
   
     
     
-If the app is not running when the item is added to the list, the phone should still display a toast notification (Figure 4). 
+If the app is not running when the item is added to the list, the phone should still display a toast notification (Figure 4).
   
     
     
@@ -1344,7 +1344,7 @@ If the app is not running when the item is added to the list, the phone should s
   
     
     
-When you add an item to the Jobs SharePoint list, the code in the event receiver associated with the list attempts to send notifications using MPNS to subscribed phones, but, depending on network conditions and other factors, a given notification may not be received by a phone. You can look at the Push Notification Results list on the server, especially the values in the Status Code and Headers columns, to determine the status and results related to individual notifications. 
+When you add an item to the Jobs SharePoint list, the code in the event receiver associated with the list attempts to send notifications using MPNS to subscribed phones, but, depending on network conditions and other factors, a given notification may not be received by a phone. You can look at the Push Notification Results list on the server, especially the values in the Status Code and Headers columns, to determine the status and results related to individual notifications.
   
     
     

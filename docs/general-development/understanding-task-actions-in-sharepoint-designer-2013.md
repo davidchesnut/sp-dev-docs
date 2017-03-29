@@ -1,12 +1,12 @@
 ---
 title: Understanding Task Actions in SharePoint Designer 2013
-ms.prod: SHAREPOINT
+ms.prod: SHAREPOINTDESIGNER
 ms.assetid: 6fd69e94-ebe1-4d5d-98db-b2f3ce16f098
 ---
 
 
 # Understanding Task Actions in SharePoint Designer 2013
-Learn to use Task Actions in SharePoint Designer 2013. 
+Learn to use Task Actions in SharePoint Designer 2013.
 ||
 |:-----|
 ||
@@ -19,7 +19,7 @@ A task in SharePoint Server 2013 is used to assign work to a person or group and
   
     
     
-These actions are: 
+These actions are:
   
     
     
@@ -105,10 +105,10 @@ The **Assign a task** action takes three inputs: the user to assign a task, the 
 - **this user**: Opens the **Assign a Task** dialog as shown in the figure. Use the dialog to set the participant, task title, description, due date, task options, email options, and outcome options.
     
   
-- **Variable: Outcome**: Assigns the variable that will hold the outcome of the task. 
+- **Variable: Outcome**: Assigns the variable that will hold the outcome of the task.
     
   
-- **Variable: TaskID**: Assigns the variable that will hold the id of the task. 
+- **Variable: TaskID**: Assigns the variable that will hold the id of the task.
     
   
 
@@ -170,7 +170,7 @@ The **Start a task process** action takes two inputs: the users that will partic
 - **these users**: Opens the **Start a Task Process** dialog box as shown in the figure. Use the dialog box to set the participants, task title, description, due date, task options, email options, and outcome options.
     
   
-- **Variable: Outcome**: Assigns the variable that holds the outcome of the task process. 
+- **Variable: Outcome**: Assigns the variable that holds the outcome of the task process.
     
   
 

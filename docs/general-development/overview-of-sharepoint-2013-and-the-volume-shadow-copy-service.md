@@ -7,7 +7,7 @@ ms.assetid: d1cb6653-bfc0-4af2-b221-d7d30cb40d84
 
 # Overview of SharePoint 2013 and the Volume Shadow Copy Service
  **Summary:** Learn about the Microsoft SharePoint 2013 interface to the Volume Shadow Copy Service (VSS).
-For backup vendors, the Volume Shadow Copy Service (VSS) simplifies backing up Microsoft server solutions by using a centralized API. Microsoft SharePoint Foundation includes a referential VSS writer (hereafter, called "the SPF-VSS Writer") that integrates with the Windows VSS backup framework, enabling backup applications to back up and restore SharePoint Foundation data. It supports a catastrophic overwrite scenario for the entire farm (search index included). On recovery, it hooks up databases and synchronizes site mappings. 
+For backup vendors, the Volume Shadow Copy Service (VSS) simplifies backing up Microsoft server solutions by using a centralized API. Microsoft SharePoint Foundation includes a referential VSS writer (hereafter, called "the SPF-VSS Writer") that integrates with the Windows VSS backup framework, enabling backup applications to back up and restore SharePoint Foundation data. It supports a catastrophic overwrite scenario for the entire farm (search index included). On recovery, it hooks up databases and synchronizes site mappings.
   
     
     
@@ -15,7 +15,7 @@ For backup vendors, the Volume Shadow Copy Service (VSS) simplifies backing up M
 
 ## Design of the System
 
-The following figure shows the main components in the system: Microsoft Windows Server (and the Volume Shadow Copy Service), SharePoint Foundation (and the SPF-VSS Writer for the Windows Server Volume Shadow Copy Service), and the third-party (or custom) backup/restore application (including the requestor and the provider). 
+The following figure shows the main components in the system: Microsoft Windows Server (and the Volume Shadow Copy Service), SharePoint Foundation (and the SPF-VSS Writer for the Windows Server Volume Shadow Copy Service), and the third-party (or custom) backup/restore application (including the requestor and the provider).
   
     
     
@@ -35,11 +35,11 @@ The SharePoint Foundation store is a component of SharePoint Foundation and acce
   
     
     
-To support the VSS, SharePoint Foundation includes the SPF-VSS Writer. The SPF-VSS Writer coordinates with the SharePoint Foundation store (operating on behalf of the requestor) to freeze and dismount the storage group before backing it up, and then to unfreeze and mount the storage group after the backup is complete. 
+To support the VSS, SharePoint Foundation includes the SPF-VSS Writer. The SPF-VSS Writer coordinates with the SharePoint Foundation store (operating on behalf of the requestor) to freeze and dismount the storage group before backing it up, and then to unfreeze and mount the storage group after the backup is complete.
   
     
     
-During a recovery, the backup/restore application instructs the SPF-VSS Writer to coordinate with the SharePoint Foundation store (operating on behalf of the requestor) to dismount the storage group, replace the database files, and mount the storage group. 
+During a recovery, the backup/restore application instructs the SPF-VSS Writer to coordinate with the SharePoint Foundation store (operating on behalf of the requestor) to dismount the storage group, replace the database files, and mount the storage group.
   
     
     
@@ -59,11 +59,11 @@ When restoring, the requestor also communicates with the VSS to prepare the syst
   
     
     
-Information needed to successfully complete backup and restore operations among SharePoint Foundation, the VSS, and the backup/restore application is transferred as part of the SPF-VSS Writer metadata. 
+Information needed to successfully complete backup and restore operations among SharePoint Foundation, the VSS, and the backup/restore application is transferred as part of the SPF-VSS Writer metadata.
   
     
     
-The following is the high-level sequence of events during backup or restore operations: 
+The following is the high-level sequence of events during backup or restore operations:
   
     
     
@@ -84,10 +84,10 @@ The following is the high-level sequence of events during backup or restore oper
 4. The VSS communicates with the appropriate storage provider to create a shadow copy of the storage volume that contains the SharePoint Foundation storage group. 
     
   
-5. The VSS releases SharePoint Foundation to resume ordinary operations. 
+5. The VSS releases SharePoint Foundation to resume ordinary operations.
     
   
-6. The VSS requestor verifies the integrity of the backup set prior to signaling that the backup succeeded. SharePoint Foundation records the time of the last backup for the database. 
+6. The VSS requestor verifies the integrity of the backup set prior to signaling that the backup succeeded. SharePoint Foundation records the time of the last backup for the database.
     
   
 

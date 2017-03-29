@@ -6,16 +6,16 @@ ms.assetid: 13f16dc3-f652-4fb3-996b-5f2166236d2b
 
 
 # How to: Work with user profiles and organization profiles by using the server object model in SharePoint 2013
-Learn how to create, retrieve, and change SharePoint 2013 user profiles and user profile properties programmatically by using the SharePoint 2013 server object model. 
+Learn how to create, retrieve, and change SharePoint 2013 user profiles and user profile properties programmatically by using the SharePoint 2013 server object model.
 ## What are user profiles in SharePoint 2013?
 
-In SharePoint 2013, user profiles represent SharePoint users. User profile properties represent information about the users and also about the properties themselves. For example, properties include the account name or email address of a user and the data type of a property. You can use the server object model to programmatically create, retrieve, and change user profiles, profile subtypes, and profile properties. 
+In SharePoint 2013, user profiles represent SharePoint users. User profile properties represent information about the users and also about the properties themselves. For example, properties include the account name or email address of a user and the data type of a property. You can use the server object model to programmatically create, retrieve, and change user profiles, profile subtypes, and profile properties.
   
     
     
 
 > [!NOTE]
-> For more information about common programming tasks for working with user profiles and the API that you use to perform the tasks, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md). 
+> For more information about common programming tasks for working with user profiles and the API that you use to perform the tasks, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md).
   
     
     
@@ -24,15 +24,15 @@ In SharePoint 2013, user profiles represent SharePoint users. User profile prope
 ## Prerequisites for setting up your development environment to work with user profiles by using the SharePoint 2013 server object model
 <a name="bkmk_Prereqs"> </a>
 
-To create a console application that uses the server object model to work with user profiles and user profile properties, you'll need: 
+To create a console application that uses the server object model to work with user profiles and user profile properties, you'll need:
   
     
     
 
-- SharePoint Server 2013 with the profile created for the current user. 
+- SharePoint Server 2013 with the profile created for the current user.
     
   
-- Visual Studio 2012. 
+- Visual Studio 2012.
     
   
 - Permissions to create, retrieve, and change user profile objects. (Creating and modifying profiles requires the **Modify User Profiles** permission.)
@@ -43,31 +43,31 @@ To create a console application that uses the server object model to work with u
 <a name="bkmk_CreateConsoleApp"> </a>
 
 
-1. Open Visual Studio and choose **File**, **New**, **Project**. 
+1. Open Visual Studio and choose **File**, **New**, **Project**.
     
   
 2. In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.
     
   
-3. In the **Templates** list, choose **Windows**, and then choose **Console Application**. 
+3. In the **Templates** list, choose **Windows**, and then choose **Console Application**.
     
   
 4. Name the project UserProfilesSSOM, and then choose the **OK** button.
     
    > [!NOTE]
    > Make sure the **Prefer 32-bit** setting is not selected in the project's **Build** properties.
-5. Add references to the following assemblies: 
+5. Add references to the following assemblies:
     
-  - Microsoft.Office.Server 
-    
-  
-  - Microsoft.Office.Server.UserProfiles 
+  - Microsoft.Office.Server
     
   
-  - Microsoft.SharePoint 
+  - Microsoft.Office.Server.UserProfiles
     
   
-  - System.Web 
+  - Microsoft.SharePoint
+    
+  
+  - System.Web
     
   
 6. Replace the contents of the **Program** class with the code example from one of the following scenarios:
@@ -94,7 +94,7 @@ To create a console application that uses the server object model to work with u
 ## Code example: Create user profiles by using the SharePoint 2013 server object model
 <a name="bkmk_CreateUP"> </a>
 
-In SharePoint 2013, user profiles represent SharePoint users. Profile types and subtypes help categorize profiles into groups, such as employees or customers. Profile types and subtypes are used to set common profile properties and attributes at the subtype level. SharePoint Server includes a default user profile subtype. 
+In SharePoint 2013, user profiles represent SharePoint users. Profile types and subtypes help categorize profiles into groups, such as employees or customers. Profile types and subtypes are used to set common profile properties and attributes at the subtype level. SharePoint Server includes a default user profile subtype.
   
     
     
@@ -161,7 +161,7 @@ namespace UserProfilesSSOM
 ## Code example: Create user profile properties by using the SharePoint 2013 server object model
 <a name="bkmk_CreateUPProp"> </a>
 
-User profile properties describe personal and organizational information about users. You can create and add a custom profile property to the default set of SharePoint profile properties. 
+User profile properties describe personal and organizational information about users. You can create and add a custom profile property to the default set of SharePoint profile properties.
   
     
     

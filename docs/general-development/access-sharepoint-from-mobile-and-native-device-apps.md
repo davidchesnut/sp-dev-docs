@@ -6,8 +6,8 @@ ms.assetid: 42014171-5ee5-421d-9cde-413efc3aecef
 
 
 # Access SharePoint from mobile and native device apps
-Learn how to access SharePoint from mobile apps and other native device apps, and from external web applications. 
-SharePoint Add-ins, farm solutions, and "no code" sandboxed solutions are all run from within SharePoint, but apps on other platforms can also access SharePoint client APIs. 
+Learn how to access SharePoint from mobile apps and other native device apps, and from external web applications.
+SharePoint Add-ins, farm solutions, and "no code" sandboxed solutions are all run from within SharePoint, but apps on other platforms can also access SharePoint client APIs.
   
     
     
@@ -33,7 +33,7 @@ Non-Microsoft device apps, including mobile apps, **use SharePoint REST/OData AP
 - See  [REST API reference for SharePoint 2013](http://msdn.microsoft.com/library/3514e753-19f9-4b41-a1ae-f35c5ffc17d2%28Office.15%29.aspx) for a complete reference.
     
   
-For more information about how to create mobile apps for any platform, see  [Build mobile apps for other platforms using SharePoint 2013](build-mobile-apps-for-other-platforms-using-sharepoint-2013.md). 
+For more information about how to create mobile apps for any platform, see  [Build mobile apps for other platforms using SharePoint 2013](build-mobile-apps-for-other-platforms-using-sharepoint-2013.md).
   
     
     
@@ -41,22 +41,22 @@ For more information about how to create mobile apps for any platform, see  [Bui
 ## Windows Phone apps that access SharePoint
 <a name="WinPhone"> </a>
 
-Windows Phone apps can use one of the following: 
+Windows Phone apps can use one of the following:
   
     
     
 
-- The .NET SharePoint client-side object model (CSOM) version specifically for Windows Phone devices. 
+- The .NET SharePoint client-side object model (CSOM) version specifically for Windows Phone devices.
     
   
-- The SharePoint REST/OData APIs. 
+- The SharePoint REST/OData APIs.
     
   
  These mobile apps can take advantage of the support in SharePoint for the Microsoft Push Notification service and a new geolocation field type.
   
     
     
-For more about creating Windows Phone apps that access SharePoint, see  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md). 
+For more about creating Windows Phone apps that access SharePoint, see  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md).
   
     
     
@@ -64,7 +64,7 @@ For more about creating Windows Phone apps that access SharePoint, see  [Build W
 ## Web applications that don't start from SharePoint
 <a name="WinPhone"> </a>
 
-Web applications that don't start from SharePoint are not strictly "SharePoint Add-ins," although they're sometimes counted as SharePoint Add-ins in MSDN and other docs. These apps include, among others, ones that run from the Office 365 app launcher and Office Add-ins, as well as any web applications that are run directly from a browser. 
+Web applications that don't start from SharePoint are not strictly "SharePoint Add-ins," although they're sometimes counted as SharePoint Add-ins in MSDN and other docs. These apps include, among others, ones that run from the Office 365 app launcher and Office Add-ins, as well as any web applications that are run directly from a browser.
   
     
     
@@ -72,7 +72,7 @@ You can build these apps on the ASP.NET platform or a non-Microsoft stack. If yo
   
     
     
-These apps **gain authorized access to SharePoint data by using access tokens** that are issued by the Azure Control Service (ACS) in compliance with the OAuth Authentication Code flow. For more, see [Authorization Code OAuth flow for SharePoint Add-ins](http://msdn.microsoft.com/library/e89e91c7-ea39-49b9-af5a-7f047a7e2ab7%28Office.15%29.aspx). 
+These apps **gain authorized access to SharePoint data by using access tokens** that are issued by the Azure Control Service (ACS) in compliance with the OAuth Authentication Code flow. For more, see [Authorization Code OAuth flow for SharePoint Add-ins](http://msdn.microsoft.com/library/e89e91c7-ea39-49b9-af5a-7f047a7e2ab7%28Office.15%29.aspx).
   
     
     

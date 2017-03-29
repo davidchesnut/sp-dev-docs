@@ -7,7 +7,7 @@ ms.assetid: 06219071-a7c1-4f54-b07f-7b7001592330
 
 # Working with the Excel Services JavaScript object model
 
-When you write code that uses the JavaScript object model (JSOM), there are two scenarios where the code can run: on a SharePoint 2013 page; or on a host webpage that contains an embedded workbook that is stored on Microsoft OneDrive. This article discusses the main difference between the two scenarios that significantly affect how you write your code. 
+When you write code that uses the JavaScript object model (JSOM), there are two scenarios where the code can run: on a SharePoint 2013 page; or on a host webpage that contains an embedded workbook that is stored on Microsoft OneDrive. This article discusses the main difference between the two scenarios that significantly affect how you write your code.
   
     
     
@@ -15,7 +15,7 @@ When you write code that uses the JavaScript object model (JSOM), there are two 
 
 ## Using the Excel Services JSOM
 
-Table 1 lists the difference between the two scenarios available when you write code that uses the JSOM. 
+Table 1 lists the difference between the two scenarios available when you write code that uses the JSOM.
   
     
     
@@ -25,8 +25,8 @@ Table 1 lists the difference between the two scenarios available when you write 
 
 |**Location**|**Description**|
 |:-----|:-----|
-|**OneDrive**|In this scenario, you embed a workbook that is stored on OneDrive into the host webpage using an HTML <div> element. Then you include code in the page that interacts with the embedded workbook. |
-|**SharePoint**|In this scenario, you have a SharePoint page served by SharePoint 2013. You insert an Web Part into the SharePoint page that contains a workbook that is stored in an trusted location. Then you include code in the SharePoint page that interacts with the Web Part. |
+|**OneDrive**|In this scenario, you embed a workbook that is stored on OneDrive into the host webpage using an HTML <div> element. Then you include code in the page that interacts with the embedded workbook.|
+|**SharePoint**|In this scenario, you have a SharePoint page served by SharePoint 2013. You insert an Web Part into the SharePoint page that contains a workbook that is stored in an trusted location. Then you include code in the SharePoint page that interacts with the Web Part.|
    
 The main difference between writing code for the two scenarios is how you get a reference to the  [Ewa.EwaControl](http://msdn.microsoft.com/library/6e441406-d67a-0da9-f996-71f4e4b4c144%28Office.15%29.aspx) object. Because the **[Ewa.EwaControl]** is the entry point to the JavaScript object model, you must get a reference to it to work with the JSOM.
   
@@ -35,7 +35,7 @@ The main difference between writing code for the two scenarios is how you get a 
 
 ### Getting a reference to the EwaControl object (SharePoint)
 
-When writing code that interacts with an Web Part on a SharePoint page, you get a reference to the **[Ewa.EwaControl]** object by using the method, [Ewa.EwaControlCollection.getItem(index)](http://msdn.microsoft.com/library/11dd3a65-f914-4b34-bbaf-0206c8153d2b%28Office.15%29.aspx), as shown in the following code example. 
+When writing code that interacts with an Web Part on a SharePoint page, you get a reference to the **[Ewa.EwaControl]** object by using the method, [Ewa.EwaControlCollection.getItem(index)](http://msdn.microsoft.com/library/11dd3a65-f914-4b34-bbaf-0206c8153d2b%28Office.15%29.aspx), as shown in the following code example.
   
     
     

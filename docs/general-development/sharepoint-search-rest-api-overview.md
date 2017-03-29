@@ -6,11 +6,11 @@ ms.assetid: 8a4f7863-e4c1-4099-9189-a1894db36930
 
 
 # SharePoint Search REST API overview
-Add search functionality to client and mobile applications using the Search REST service in SharePoint Server 2013 and any technology that supports REST web requests. 
+Add search functionality to client and mobile applications using the Search REST service in SharePoint Server 2013 and any technology that supports REST web requests.
 ## Querying with the Search REST service
 <a name="bk_queryrest"> </a>
 
-Search in SharePoint 2013 includes a Search REST service you can use to add search functionality to your client and mobile applications by using any technology that supports REST web requests. You can use the Search REST service to submit Keyword Query Language (KQL) or FAST Query Language (FQL) queries in your SharePoint Add-ins, remote client applications, mobile applications, and other applications. 
+Search in SharePoint 2013 includes a Search REST service you can use to add search functionality to your client and mobile applications by using any technology that supports REST web requests. You can use the Search REST service to submit Keyword Query Language (KQL) or FAST Query Language (FQL) queries in your SharePoint Add-ins, remote client applications, mobile applications, and other applications.
   
     
     
@@ -73,10 +73,10 @@ The HTTP **POST** version of the Search REST service supports all parameters sup
 
 |**Parameter**|**Data type**|
 |:-----|:-----|
-| [SelectProperties](#bk_SelectProperties)|string[] |
-| [RefinementFilters](#bk_RefinementFilters)|string[] |
+| [SelectProperties](#bk_SelectProperties)|string[]|
+| [RefinementFilters](#bk_RefinementFilters)|string[]|
 | [SortList](#bk_SortList)| [Sort](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Search.Query.Sort.aspx)|
-| [HithighlightedProperties](#bk_HithighlightedProperties)|​string[] |
+| [HithighlightedProperties](#bk_HithighlightedProperties)|​string[]|
 | [Properties](#bk_Properties)| [Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties.aspx)|
    
 Use **POST** requests in the following scenarios:
@@ -101,14 +101,14 @@ When you make a call to the Search REST service, you specify query parameters wi
   
     
     
-The following sections describe the query parameters you can use to submit search queries with the Search REST service. 
+The following sections describe the query parameters you can use to submit search queries with the Search REST service.
   
     
     
 
 ### QueryText parameter
 
-A string that contains the text for the search query. 
+A string that contains the text for the search query.
   
     
     
@@ -116,7 +116,7 @@ A string that contains the text for the search query.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint' 
+http:// _server_/_api/search/query?querytext='sharepoint'
   
     
     
@@ -139,7 +139,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'
 ### QueryTemplate
 <a name="bk_QueryTemplate"> </a>
 
-A string that contains the text that replaces the query text, as part of a query transform. 
+A string that contains the text that replaces the query text, as part of a query transform.
   
     
     
@@ -147,7 +147,7 @@ A string that contains the text that replaces the query text, as part of a query
   
     
     
-http://server/_api/search/query?querytext='sharepoint'&amp;querytemplate='{searchterms} author:johndoe' 
+http://server/_api/search/query?querytext='sharepoint'&amp;querytemplate='{searchterms} author:johndoe'
   
     
     
@@ -179,7 +179,7 @@ A Boolean value that specifies whether the result tables that are returned for t
   
     
     
-Change this value only if you want to provide your own interleaving implementation. 
+Change this value only if you want to provide your own interleaving implementation.
   
     
     
@@ -187,7 +187,7 @@ Change this value only if you want to provide your own interleaving implementati
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enableinterleaving=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enableinterleaving=true
   
     
     
@@ -211,7 +211,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;enableinterleaving
 ### SourceId
 <a name="bk_SourceId"> </a>
 
-The result source ID to use for executing the search query. 
+The result source ID to use for executing the search query.
   
     
     
@@ -219,7 +219,7 @@ The result source ID to use for executing the search query.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;sourceid='8413cd39-2156-4e00-b54d-11efd9abdb89' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;sourceid='8413cd39-2156-4e00-b54d-11efd9abdb89'
   
     
     
@@ -243,7 +243,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;sourceid='8413cd39
 ### RankingModelId
 <a name="bk_RankingModelId"> </a>
 
-The ID of the ranking model to use for the query. 
+The ID of the ranking model to use for the query.
   
     
     
@@ -275,7 +275,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;rankingmodelid​=
 ### StartRow
 <a name="bk_StartRow"> </a>
 
-The first row that is included in the search results that are returned. You use this parameter when you want to implement paging for search results. 
+The first row that is included in the search results that are returned. You use this parameter when you want to implement paging for search results.
   
     
     
@@ -283,7 +283,7 @@ The first row that is included in the search results that are returned. You use 
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;startrow=10 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;startrow=10
   
     
     
@@ -315,7 +315,7 @@ The maximum number of rows overall that are returned in the search results. Comp
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;rowlimit=30 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;rowlimit=30
   
     
     
@@ -347,7 +347,7 @@ The maximum number of rows to return per page. Compared to  _RowLimit_,  _RowsPe
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;rowsperpage=10 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;rowsperpage=10
   
     
     
@@ -383,7 +383,7 @@ For **GET** requests, you specify the _SelectProperties_ parameter in a string c
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;selectproperties='Title,Author' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;selectproperties='Title,Author'
   
     
     
@@ -412,7 +412,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;selectproperties='
 ### Culture
 <a name="bk_Culture"> </a>
 
-The locale ID (LCID) for the query (see  [Locale IDs Assigned by Microsoft](http://msdn.microsoft.com/en-us/goglobal/bb964664.aspx)). 
+The locale ID (LCID) for the query (see  [Locale IDs Assigned by Microsoft](http://msdn.microsoft.com/en-us/goglobal/bb964664.aspx)).
   
     
     
@@ -420,7 +420,7 @@ The locale ID (LCID) for the query (see  [Locale IDs Assigned by Microsoft](http
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;culture=1044 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;culture=1044
   
     
     
@@ -452,7 +452,7 @@ The set of refinement filters used when issuing a refinement query. For **GET** 
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;refinementfilters='fileExtension:equals("docx")' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;refinementfilters='fileExtension:equals("docx")'
   
     
     
@@ -478,7 +478,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;refinementfilters=
 ### Refiners
 <a name="bk_Refiners"> </a>
 
-The set of refiners to return in a search result. 
+The set of refiners to return in a search result.
   
     
     
@@ -486,7 +486,7 @@ The set of refiners to return in a search result.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;refiners='author,size' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;refiners='author,size'
   
     
     
@@ -512,7 +512,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;refiners='author,s
 ### HiddenConstraints
 <a name="bk_HiddenConstraints"> </a>
 
-The additional query terms to append to the query. 
+The additional query terms to append to the query.
   
     
     
@@ -520,7 +520,7 @@ The additional query terms to append to the query.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;hiddenconstraints='developer' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;hiddenconstraints='developer'
   
     
     
@@ -544,7 +544,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;hiddenconstraints=
 ### SortList
 <a name="bk_SortList"> </a>
 
-The list of properties by which the search results are ordered. 
+The list of properties by which the search results are ordered.
   
     
     
@@ -552,7 +552,7 @@ The list of properties by which the search results are ordered.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;sortlist='rank:descending,modifiedby:ascending' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;sortlist='rank:descending,modifiedby:ascending'
   
     
     
@@ -592,7 +592,7 @@ A Boolean value that specifies whether stemming is enabled.
   
     
     
- **true** if the stemming is enabled; otherwise, **false**. The default value is **true**. 
+ **true** if the stemming is enabled; otherwise, **false**. The default value is **true**.
   
     
     
@@ -600,7 +600,7 @@ A Boolean value that specifies whether stemming is enabled.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablestemming=false 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablestemming=false
   
     
     
@@ -628,7 +628,7 @@ A Boolean value that specifies whether duplicate items are removed from the resu
   
     
     
- **true** to remove the duplicate items; otherwise, **false**. The default value is **true**. 
+ **true** to remove the duplicate items; otherwise, **false**. The default value is **true**.
   
     
     
@@ -636,7 +636,7 @@ A Boolean value that specifies whether duplicate items are removed from the resu
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;trimduplicates=false 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;trimduplicates=false
   
     
     
@@ -660,7 +660,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;trimduplicates=fal
 ### Timeout
 <a name="bk_Timeout"> </a>
 
-The amount of time in milliseconds before the query request times out. The default value is 30000. 
+The amount of time in milliseconds before the query request times out. The default value is 30000.
   
     
     
@@ -668,7 +668,7 @@ The amount of time in milliseconds before the query request times out. The defau
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;timeout=60000 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;timeout=60000
   
     
     
@@ -696,7 +696,7 @@ A Boolean value that specifies whether the exact terms in the search query are u
   
     
     
- **true** if nicknames are used; otherwise, **false**. The default value is **false**. 
+ **true** if nicknames are used; otherwise, **false**. The default value is **false**.
   
     
     
@@ -704,7 +704,7 @@ A Boolean value that specifies whether the exact terms in the search query are u
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablenicknames=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablenicknames=true
   
     
     
@@ -732,7 +732,7 @@ A Boolean value that specifies whether the phonetic forms of the query terms are
   
     
     
- **true** if phonetic forms are used; otherwise, **false**. The default value is **false**. 
+ **true** if phonetic forms are used; otherwise, **false**. The default value is **false**.
   
     
     
@@ -740,7 +740,7 @@ A Boolean value that specifies whether the phonetic forms of the query terms are
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablephonetic=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablephonetic=true
   
     
     
@@ -768,7 +768,7 @@ A Boolean value that specifies whether the query uses the FAST Query Language (F
   
     
     
- **true** if the query is an FQL query; otherwise, **false**. The default value is **false**. 
+ **true** if the query is an FQL query; otherwise, **false**. The default value is **false**.
   
     
     
@@ -776,7 +776,7 @@ A Boolean value that specifies whether the query uses the FAST Query Language (F
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablefql=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablefql=true
   
     
     
@@ -808,7 +808,7 @@ The properties to highlight in the search result summary when the property value
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;hithighlightedproperties='Title' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;hithighlightedproperties='Title'
   
     
     
@@ -840,7 +840,7 @@ A Boolean value that specifies whether to perform result type processing for the
   
     
     
- **true** to perform result type processing; otherwise, **false**. The default value is **false**. 
+ **true** to perform result type processing; otherwise, **false**. The default value is **false**.
   
     
     
@@ -848,7 +848,7 @@ A Boolean value that specifies whether to perform result type processing for the
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;bypassresulttypes=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;bypassresulttypes=true
   
     
     
@@ -876,7 +876,7 @@ A Boolean value that specifies whether to return best bet results for the query.
   
     
     
- **true** to return best bets; otherwise, **false**. This parameter is used only when **EnableQueryRules** is set to **true**, otherwise it is ignored. The default value is **false**. 
+ **true** to return best bets; otherwise, **false**. This parameter is used only when **EnableQueryRules** is set to **true**, otherwise it is ignored. The default value is **false**.
   
     
     
@@ -884,7 +884,7 @@ A Boolean value that specifies whether to return best bet results for the query.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;processbestbets=true&amp;enablequeryrules=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;processbestbets=true&amp;enablequeryrules=true
   
     
     
@@ -909,7 +909,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;processbestbets=tr
 ### ClientType
 <a name="bk_ClientType"> </a>
 
-The type of the client that issued the query. 
+The type of the client that issued the query.
   
     
     
@@ -917,7 +917,7 @@ The type of the client that issued the query.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;clienttype='custom' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;clienttype='custom'
   
     
     
@@ -941,7 +941,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;clienttype='custom
 ### PersonalizationData
 <a name="bk_PersonalizationData"> </a>
 
-The GUID for the user who submitted the search query. 
+The GUID for the user who submitted the search query.
   
     
     
@@ -949,7 +949,7 @@ The GUID for the user who submitted the search query.
   
     
     
-http:// _<server>_/_api/search/query?querytext='sharepoint'&amp;personalizationdata=' _<GUID>_' 
+http:// _<server>_/_api/search/query?querytext='sharepoint'&amp;personalizationdata=' _<GUID>_'
   
     
     
@@ -973,7 +973,7 @@ http:// _<server>_/_api/search/query?querytext='sharepoint'&amp;personalizationd
 ### ResultsURL
 <a name="bk_ResultsURL"> </a>
 
-The URL for the search results page. 
+The URL for the search results page.
   
     
     
@@ -981,7 +981,7 @@ The URL for the search results page.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;resultsurl='http://server/site/resultspage.aspx' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;resultsurl='http://server/site/resultspage.aspx'
   
     
     
@@ -1005,7 +1005,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;resultsurl='http:/
 ### QueryTag
 <a name="bk_QueryTag"> </a>
 
-Custom tags that identify the query. You can specify multiple query tags, separated by semicolons. 
+Custom tags that identify the query. You can specify multiple query tags, separated by semicolons.
   
     
     
@@ -1013,7 +1013,7 @@ Custom tags that identify the query. You can specify multiple query tags, separa
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint' 
+http:// _server_/_api/search/query?querytext='sharepoint'
   
     
     
@@ -1044,7 +1044,7 @@ Additional properties for the query. **GET** requests support only string values
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;properties='termid:guid' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;properties='termid:guid'
   
     
     
@@ -1098,7 +1098,7 @@ A Boolean value that specifies whether to enable query rules for the query.
   
     
     
- **true** to enable query rules; otherwise, **false**. The default value is **true**. 
+ **true** to enable query rules; otherwise, **false**. The default value is **true**.
   
     
     
@@ -1106,7 +1106,7 @@ A Boolean value that specifies whether to enable query rules for the query.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablequeryrules=false 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablequeryrules=false
   
     
     
@@ -1178,7 +1178,7 @@ A Boolean value that specifies whether to return personal favorites with the sea
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;processpersonalfavorites=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;processpersonalfavorites=true
   
     
     
@@ -1202,7 +1202,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;processpersonalfav
 ### QueryTemplatePropertiesUrl
 <a name="bk_ProcessPersonalFavorites"> </a>
 
-The location of the queryparametertemplate.xml file. This file is used to enable anonymous users to make Search REST queries. 
+The location of the queryparametertemplate.xml file. This file is used to enable anonymous users to make Search REST queries.
   
     
     
@@ -1210,7 +1210,7 @@ The location of the queryparametertemplate.xml file. This file is used to enable
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;querytemplatepropertiesurl='spfile://webroot/queryparametertemplate.xml' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;querytemplatepropertiesurl='spfile://webroot/queryparametertemplate.xml'
   
     
     
@@ -1234,7 +1234,7 @@ QueryTemplatePropertiesUrl : 'spfile://webroot/queryparametertemplate.xml'
 ### HitHighlightedMultivaluePropertyLimit
 <a name="bk_ProcessPersonalFavorites"> </a>
 
-The number of properties to show hit highlighting for in the search results. 
+The number of properties to show hit highlighting for in the search results.
   
     
     
@@ -1242,7 +1242,7 @@ The number of properties to show hit highlighting for in the search results.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;hithighlightedmultivaluepropertylimit=2 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;hithighlightedmultivaluepropertylimit=2
   
     
     
@@ -1270,7 +1270,7 @@ A Boolean value that specifies whether the hit highlighted properties can be ord
   
     
     
- **true** to enable ordering rules; otherwise **false**. 
+ **true** to enable ordering rules; otherwise **false**.
   
     
     
@@ -1278,7 +1278,7 @@ A Boolean value that specifies whether the hit highlighted properties can be ord
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enableorderinghithighlightedproperty=false 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enableorderinghithighlightedproperty=false
   
     
     
@@ -1302,7 +1302,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;enableorderinghith
 ### CollapseSpecification
 <a name="bk_ProcessPersonalFavorites"> </a>
 
-The managed properties that are used to determine how to collapse individual search results. Results are collapsed into one or a specified number of results if they match any of the individual collapse specifications. Within a single collapse specification, results are collapsed if their properties match all individual properties in the collapse specification. 
+The managed properties that are used to determine how to collapse individual search results. Results are collapsed into one or a specified number of results if they match any of the individual collapse specifications. Within a single collapse specification, results are collapsed if their properties match all individual properties in the collapse specification.
   
     
     
@@ -1310,7 +1310,7 @@ The managed properties that are used to determine how to collapse individual sea
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;collapsespecification='Author:1 ContentType:2' 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;collapsespecification='Author:1 ContentType:2'
   
     
     
@@ -1346,7 +1346,7 @@ I **true** to sort search results using _SortList_, or by rank if  _SortList_ is
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablesorting=false 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;enablesorting=false
   
     
     
@@ -1374,7 +1374,7 @@ A Boolean value that specifies whether to return block rank log information in t
   
     
     
- **true** to return block rank log information; otherwise, **false**. 
+ **true** to return block rank log information; otherwise, **false**.
   
     
     
@@ -1382,7 +1382,7 @@ A Boolean value that specifies whether to return block rank log information in t
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;generateblockranklog=true 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;generateblockranklog=true
   
     
     
@@ -1406,7 +1406,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;generateblockrankl
 ### UIlanguage
 <a name="bk_ProcessPersonalFavorites"> </a>
 
-The locale identifier (LCID) of the user interface (see  [Locale IDs Assigned by Microsoft](http://msdn.microsoft.com/en-us/goglobal/bb964664)). 
+The locale identifier (LCID) of the user interface (see  [Locale IDs Assigned by Microsoft](http://msdn.microsoft.com/en-us/goglobal/bb964664)).
   
     
     
@@ -1414,7 +1414,7 @@ The locale identifier (LCID) of the user interface (see  [Locale IDs Assigned by
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;uilanguage=1044 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;uilanguage=1044
   
     
     
@@ -1438,7 +1438,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;uilanguage=1044
 ### DesiredSnippetLength
 <a name="bk_ProcessPersonalFavorites"> </a>
 
-The preferred number of characters to display in the hit-highlighted summary generated for a search result. 
+The preferred number of characters to display in the hit-highlighted summary generated for a search result.
   
     
     
@@ -1446,7 +1446,7 @@ The preferred number of characters to display in the hit-highlighted summary gen
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;desiredsnippetlength=80 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;desiredsnippetlength=80
   
     
     
@@ -1470,7 +1470,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;desiredsnippetleng
 ### MaxSnippetLength
 <a name="bk_ProcessPersonalFavorites"> </a>
 
-The maximum number of characters to display in the hit-highlighted summary generated for a search result. 
+The maximum number of characters to display in the hit-highlighted summary generated for a search result.
   
     
     
@@ -1478,7 +1478,7 @@ The maximum number of characters to display in the hit-highlighted summary gener
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;maxsnippetlength=100 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;maxsnippetlength=100
   
     
     
@@ -1502,7 +1502,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;maxsnippetlength=1
 ### SummaryLength
 <a name="bk_ProcessPersonalFavorites"> </a>
 
-The number of characters to display in the result summary for a search result. 
+The number of characters to display in the result summary for a search result.
   
     
     
@@ -1510,7 +1510,7 @@ The number of characters to display in the result summary for a search result.
   
     
     
-http:// _server_/_api/search/query?querytext='sharepoint'&amp;summarylength=150 
+http:// _server_/_api/search/query?querytext='sharepoint'&amp;summarylength=150
   
     
     
@@ -1534,7 +1534,7 @@ http:// _server_/_api/search/query?querytext='sharepoint'&amp;summarylength=150
 ## Enabling anonymous Search REST queries
 <a name="bk_AnonymousREST"> </a>
 
-You can configure search to support Search REST queries from anonymous users. Site administrators can decide what query parameters to expose to anonymous users by using the queryparametertemplate.xml file. This section describes how to configure your site to enable anonymous access, and create the queryparametertemplate.xml file. 
+You can configure search to support Search REST queries from anonymous users. Site administrators can decide what query parameters to expose to anonymous users by using the queryparametertemplate.xml file. This section describes how to configure your site to enable anonymous access, and create the queryparametertemplate.xml file.
   
     
     
@@ -1542,13 +1542,13 @@ You can configure search to support Search REST queries from anonymous users. Si
 ### To enable anonymous Search REST queries
 
 
-1. Enable anonymous access on the web application and publishing site. For more information about how to do this, see  [Manage permission policies for a web application in SharePoint 2013](http://technet.microsoft.com/en-us/library/ff608071.aspx) and [Plan for user authentication methods in SharePoint 2013](http://technet.microsoft.com/en-us/library/cc262350.aspx) on [TechNet](http://technet.microsoft.com/en-US/). 
+1. Enable anonymous access on the web application and publishing site. For more information about how to do this, see  [Manage permission policies for a web application in SharePoint 2013](http://technet.microsoft.com/en-us/library/ff608071.aspx) and [Plan for user authentication methods in SharePoint 2013](http://technet.microsoft.com/en-us/library/cc262350.aspx) on [TechNet](http://technet.microsoft.com/en-US/).
     
   
 2. Add a new document library named QueryPropertiesTemplate to the publishing site.
     
   
-3. Create an XML file named queryparametertemplate.xml, and copy the following XML to the file. 
+3. Create an XML file named queryparametertemplate.xml, and copy the following XML to the file.
     
   ```XML
   
@@ -1614,7 +1614,7 @@ You can configure search to support Search REST queries from anonymous users. Si
 4. Update the  _SiteId_,  _FarmId_, and  _WebId_ elements with the values for your farm, website and publishing site collection.
     
   
-5. Save queryparametertemplate.xml to the QueryPropertiesTemplate document library. 
+5. Save queryparametertemplate.xml to the QueryPropertiesTemplate document library.
     
   
 6. Add the  _QueryTemplatePropertiesUrl_ parameter to your Search REST call, specifyingspfile://webroot/queryparametertemplate.xml as the value.
@@ -1623,7 +1623,7 @@ You can configure search to support Search REST queries from anonymous users. Si
 
 ### queryparametertemplate.xml file
 
-The primary elements in the queryparametertemplate.xml file are: 
+The primary elements in the queryparametertemplate.xml file are:
   
     
     
@@ -1639,7 +1639,7 @@ Contains a serialized  [QueryProperties](https://msdn.microsoft.com/library/Micr
   
     
     
-Contains the list of query properties that the anonymous user is allowed to set. 
+Contains the list of query properties that the anonymous user is allowed to set.
     
   
 When an anonymous Search REST query is submitted, the query object is constructed using what's specified in the **QueryProperties** element. Then, all the properties that are listed in the whitelist are copied from the incoming query to the newly constructed query object.

@@ -3,14 +3,14 @@ title: Excel Services Blogs, Forums, and Resources
 keywords: blogger
 f1_keywords:
 - blogger
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: c0b137cd-126d-4c74-a3f7-eb9debe3c35f
 ---
 
 
 # Excel Services Blogs, Forums, and Resources
 
-The following are links to blogs, forums, and additional resources related to Excel Services and SharePoint: 
+The following are links to blogs, forums, and additional resources related to Excel Services and SharePoint:
   
     
     
@@ -19,16 +19,16 @@ The following are links to blogs, forums, and additional resources related to Ex
 
 |** **Blog Name****|** **Links****|
 |:-----|:-----|
-|Cum Grano Salis | [Home page](http://blogs.msdn.com/cumgranosalis/) [Excel Services page](http://blogs.msdn.com/cumgranosalis/archive/category/12700.aspx)|
-|Microsoft Excel 2010: The official blog of the Microsoft Excel product team | [Home page](http://blogs.msdn.com/excel) [Excel Online page](http://blogs.msdn.com/excel/archive/2010/01/21/collaborative-editing-using-excel-web-app.aspx)|
-|Microsoft Office Web Apps: The official blog of the Microsoft Office Online team | [Home page](http://blogs.msdn.com/officewebapps/default.aspx)|
+|Cum Grano Salis| [Home page](http://blogs.msdn.com/cumgranosalis/) [Excel Services page](http://blogs.msdn.com/cumgranosalis/archive/category/12700.aspx)|
+|Microsoft Excel 2010: The official blog of the Microsoft Excel product team| [Home page](http://blogs.msdn.com/excel) [Excel Online page](http://blogs.msdn.com/excel/archive/2010/01/21/collaborative-editing-using-excel-web-app.aspx)|
+|Microsoft Office Web Apps: The official blog of the Microsoft Office Online team| [Home page](http://blogs.msdn.com/officewebapps/default.aspx)|
    
 
 
 |** **Forum Name****|** **Links****|
 |:-----|:-----|
-|SharePoint - Excel Services | [Excel Services forum home page](http://social.msdn.microsoft.com/Forums/en-US/sharepointexcel/threads)|
-|SharePoint Products and Technologies | [List of SharePoint Products and Technologies forums](http://social.msdn.microsoft.com/forums/en-US/category/sharepoint)|
+|SharePoint - Excel Services| [Excel Services forum home page](http://social.msdn.microsoft.com/Forums/en-US/sharepointexcel/threads)|
+|SharePoint Products and Technologies| [List of SharePoint Products and Technologies forums](http://social.msdn.microsoft.com/forums/en-US/category/sharepoint)|
    
 
 

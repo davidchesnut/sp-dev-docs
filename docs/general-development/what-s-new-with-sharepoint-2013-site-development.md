@@ -6,18 +6,18 @@ ms.assetid: ac1e9891-5ce9-4707-84e5-6e2fc02fda6b
 
 
 # What's new with SharePoint 2013 site development
-Learn about the new site authoring and publishing model in SharePoint 2013 that enables you to create publishing sites. 
+Learn about the new site authoring and publishing model in SharePoint 2013 that enables you to create publishing sites.
 ## Introduction to site publishing for designers and developers in SharePoint 2013
 <a name="SP15_WhatsNewSiteDevelopment_IntroductionToSitePublishing"> </a>
 
-The following features are new in SharePoint 2013 and support the enterprise content management (ECM) site creation workflow for publishing sites. 
+The following features are new in SharePoint 2013 and support the enterprise content management (ECM) site creation workflow for publishing sites.
   
     
     
 
 ### Client programming models for publishing site development
 
-In SharePoint 2013, you can use the .NET client object model (CSOM), Silverlight, and JavaScript programming models to develop custom sites, site components, branding elements, and behavior. Most APIs available for .NET server programming are available in corresponding .NET client (CSOM), Silverlight, and JavaScript assemblies. In some cases, corresponding APIs are also available in Windows Phone libraries. 
+In SharePoint 2013, you can use the .NET client object model (CSOM), Silverlight, and JavaScript programming models to develop custom sites, site components, branding elements, and behavior. Most APIs available for .NET server programming are available in corresponding .NET client (CSOM), Silverlight, and JavaScript assemblies. In some cases, corresponding APIs are also available in Windows Phone libraries.
   
     
     
@@ -32,7 +32,7 @@ You can write custom client and server code in SharePoint Add-ins that extend th
   
     
     
-Some ideas for developing apps that enhance site publishing include surveys, account management apps, eCommerce support, apps that integrate social features and external data into publishing sites, outsourced content additions to your sites, and mobile companion apps. 
+Some ideas for developing apps that enhance site publishing include surveys, account management apps, eCommerce support, apps that integrate social features and external data into publishing sites, outsourced content additions to your sites, and mobile companion apps.
   
     
     
@@ -47,7 +47,7 @@ SharePoint 2013 includes features and APIs that you can use to author, design, b
 
 ### Design Manager
 
-In previous versions of SharePoint, branding a site required specific technical expertise about things like what content placeholders are required on a master page, or how a master page implements certain classes of styles. SharePoint 2013 introduces  [Design Manager](overview-of-design-manager-in-sharepoint-2013.md)—a new interface and central hub for managing all aspects of branding your SharePoint site. You can find the Design Manager in the top-level site for your site collection. It is a part of the Publishing Portal site collection template in SharePoint 2013. 
+In previous versions of SharePoint, branding a site required specific technical expertise about things like what content placeholders are required on a master page, or how a master page implements certain classes of styles. SharePoint 2013 introduces  [Design Manager](overview-of-design-manager-in-sharepoint-2013.md)—a new interface and central hub for managing all aspects of branding your SharePoint site. You can find the Design Manager in the top-level site for your site collection. It is a part of the Publishing Portal site collection template in SharePoint 2013.
   
     
     
@@ -63,7 +63,7 @@ After you convert your HTML files, you can use your HTML editor to continue to r
   
     
     
-With Design Manager, you only have to edit the HTML files—while you can continue to write custom master pages and page layouts using your ASP.NET and SharePoint development skills, Design Manager enables you to design great sites without SharePoint developer expertise. 
+With Design Manager, you only have to edit the HTML files—while you can continue to write custom master pages and page layouts using your ASP.NET and SharePoint development skills, Design Manager enables you to design great sites without SharePoint developer expertise.
   
     
     
@@ -74,7 +74,7 @@ If you prefer, SharePoint 2013 also includes HTML versions of several master pag
 
 ### Snippet Gallery
 
-SharePoint 2013 contains many ready-to-use components—like Web Parts and controls—that you can add to your site's pages. For example, by inserting a SharePoint component such as a search box or navigation control into your HTML master page, you can quickly and easily build a lot of functionality into your pages. 
+SharePoint 2013 contains many ready-to-use components—like Web Parts and controls—that you can add to your site's pages. For example, by inserting a SharePoint component such as a search box or navigation control into your HTML master page, you can quickly and easily build a lot of functionality into your pages.
   
     
     
@@ -86,14 +86,14 @@ On the ribbon, in the **Snippet Gallery** group,, you can select a component, co
   
     
     
-Design Manager generates HTML snippets that can be used by any web design tool—it just renders HTML and ignores ASP.NET and SharePoint markup. SharePoint renders only ASP.NET and SharePoint markup and ignores HTML. 
+Design Manager generates HTML snippets that can be used by any web design tool—it just renders HTML and ignores ASP.NET and SharePoint markup. SharePoint renders only ASP.NET and SharePoint markup and ignores HTML.
   
     
     
 
 ### Device channels
 
-In Design Manager, you create  [device channels](sharepoint-2013-design-manager-device-channels.md), and then you map them to mobile devices or browsers by using substrings of each incoming device's user agent string. A device can belong to multiple channels, so channels can be ranked. For example, if you create device channels for "smart phones" and "Windows Phone 8", you can rank the channels so that devices running Windows Phone 8 get the channel specifically assigned to them, while all other smart phones get content associated with the "smart phones" channel. 
+In Design Manager, you create  [device channels](sharepoint-2013-design-manager-device-channels.md), and then you map them to mobile devices or browsers by using substrings of each incoming device's user agent string. A device can belong to multiple channels, so channels can be ranked. For example, if you create device channels for "smart phones" and "Windows Phone 8", you can rank the channels so that devices running Windows Phone 8 get the channel specifically assigned to them, while all other smart phones get content associated with the "smart phones" channel.
   
     
     
@@ -101,7 +101,7 @@ After you define channels, map a master page to each one. This master page can r
   
     
     
-Publishing sites in SharePoint 2013 are optimized for mobile development. You can use the device channels feature to define channels for one or more devices—giving you finely-tuned control over how mobile users experience your site. You can assign an alternate master page to each channel, giving it a unique chrome. You can choose to include or exclude portions of any page layout in a channel and preview how mobile channel design is progressing while it is being developed. Device channels are designed with search engine optimization (SEO) in mind. You can use them to transform the look and feel of existing pages to support mobile scenarios. 
+Publishing sites in SharePoint 2013 are optimized for mobile development. You can use the device channels feature to define channels for one or more devices—giving you finely-tuned control over how mobile users experience your site. You can assign an alternate master page to each channel, giving it a unique chrome. You can choose to include or exclude portions of any page layout in a channel and preview how mobile channel design is progressing while it is being developed. Device channels are designed with search engine optimization (SEO) in mind. You can use them to transform the look and feel of existing pages to support mobile scenarios.
   
     
     
@@ -112,7 +112,7 @@ You can use channels to force specific renderings to appear on specific devices�
 
 ### Device Channel Panel control
 
-The Device Channel Panel is a new control that you can include in a page layout to control what content is rendered in which channel. The Device Channel Panel is a container that is mapped to one or more channels: If one or more of those channels are active when the page is rendered, all of the contents of the Device Channel Panel are rendered. The Device Channel Panel helps you determine when to include specific content for specific channels. 
+The Device Channel Panel is a new control that you can include in a page layout to control what content is rendered in which channel. The Device Channel Panel is a container that is mapped to one or more channels: If one or more of those channels are active when the page is rendered, all of the contents of the Device Channel Panel are rendered. The Device Channel Panel helps you determine when to include specific content for specific channels.
   
     
     
@@ -120,15 +120,15 @@ The Device Channel Panel is a new control that you can include in a page layout 
 ### Display templates
 <a name="SP15_BuildSitesForSP2013_DisplayTemplates"> </a>
 
-You may want to control the format and presentation of search results on your website. You can do that using display templates, which extend the options available for customizing search results through the user interface beyond mapping the predefined fields that you want to display. 
+You may want to control the format and presentation of search results on your website. You can do that using display templates, which extend the options available for customizing search results through the user interface beyond mapping the predefined fields that you want to display.
   
     
     
-There are three contexts when you may want to use display templates with search results—when you want to map how the overall structure of search results are presented, when you want to show groups of results, and when you want to show how each result, or item, in the result set is displayed. These are called Control, Group, and Item templates, respectively. 
+There are three contexts when you may want to use display templates with search results—when you want to map how the overall structure of search results are presented, when you want to show groups of results, and when you want to show how each result, or item, in the result set is displayed. These are called Control, Group, and Item templates, respectively.
   
     
     
-To learn more about display templates, see  [SharePoint 2013 Design Manager display templates](sharepoint-2013-design-manager-display-templates.md). 
+To learn more about display templates, see  [SharePoint 2013 Design Manager display templates](sharepoint-2013-design-manager-display-templates.md).
   
     
     
@@ -148,7 +148,7 @@ Before you can use image renditions, ensure that the BLOB cache is enabled on th
 ## Managed metadata and navigation in SharePoint 2013
 <a name="SP15_WhatsNewSiteDevelopment_MetadataAndNavigation"> </a>
 
-Enterprise managed metadata (EMM) capabilities introduced in are improved and extended in SharePoint 2013 for better performance, easier access through the UI, and taxonomy-driven navigation—called managed navigation. 
+Enterprise managed metadata (EMM) capabilities introduced in are improved and extended in SharePoint 2013 for better performance, easier access through the UI, and taxonomy-driven navigation—called managed navigation.
   
     
     
@@ -171,7 +171,7 @@ You can use the  [Content Search Web Part (CSWP)](content-search-web-part-in-sha
 ### Other managed metadata improvements for sites
 <a name="SP15_BuildSitesForSP2013_ContentSearchWebPart"> </a>
 
-SharePoint 2013 introduces several improvements to the managed metadata UI and functionality. To learn more, see  [Managed metadata and navigation in SharePoint 2013](managed-metadata-and-navigation-in-sharepoint-2013.md). 
+SharePoint 2013 introduces several improvements to the managed metadata UI and functionality. To learn more, see  [Managed metadata and navigation in SharePoint 2013](managed-metadata-and-navigation-in-sharepoint-2013.md).
   
     
     
@@ -186,7 +186,7 @@ SharePoint 2013 offers new content publishing features that enable you to develo
 
 ### Design packages
 
-If you're a professional web designer, you may want to create and test a design in your own environment or site collection before handing it off to install in other site collections. If you're using cross-site publishing to share content across site collections, you may want to package and install the same design on each site. 
+If you're a professional web designer, you may want to create and test a design in your own environment or site collection before handing it off to install in other site collections. If you're using cross-site publishing to share content across site collections, you may want to package and install the same design on each site.
   
     
     
@@ -205,14 +205,14 @@ For Office 365 public websites, design packages do not overwrite existing files.
   
     
     
-When you import a design package, the design assets in the package overwrite any existing files and are applied as the current design of the site. The site's default and system master page, theme, and alternate CSS are all set from the files in the design package. With design packages, a design built in one environment can easily be applied to another, separate environment. 
+When you import a design package, the design assets in the package overwrite any existing files and are applied as the current design of the site. The site's default and system master page, theme, and alternate CSS are all set from the files in the design package. With design packages, a design built in one environment can easily be applied to another, separate environment.
   
     
     
 
 ### Catalogs
 
-SharePoint 2013 site publishing introduces catalogs, which enable you to incorporate lists into your publishing sites. Catalogs enable content to be published across site collections—the cross-site publishing features depend on catalogs. You can use catalogs to truly reuse content across your sites and across the boundary between your intranet sites, Internet sites, and extranet sites. For predefined search queries, catalogs are flagged in search. You can surface content stored in catalogs across site collections by using the  [Content Search Web Part (CSWP)](content-search-web-part-in-sharepoint-2013.md). You can write custom code to populate catalogs, connect a product catalog to a site, and curate individual pages with custom page layouts, Web Parts, and HTML content that appears only in the defined context. 
+SharePoint 2013 site publishing introduces catalogs, which enable you to incorporate lists into your publishing sites. Catalogs enable content to be published across site collections—the cross-site publishing features depend on catalogs. You can use catalogs to truly reuse content across your sites and across the boundary between your intranet sites, Internet sites, and extranet sites. For predefined search queries, catalogs are flagged in search. You can surface content stored in catalogs across site collections by using the  [Content Search Web Part (CSWP)](content-search-web-part-in-sharepoint-2013.md). You can write custom code to populate catalogs, connect a product catalog to a site, and curate individual pages with custom page layouts, Web Parts, and HTML content that appears only in the defined context.
   
     
     
@@ -230,11 +230,11 @@ Microsoft SharePoint 2013 introduces a cross-site publishing feature that enable
   
     
     
-Use the topic pages feature to customize the landing page experience for content that is published across sites. Use SEO-friendly URLs to manage and more easily persist and maintain site structure across a broad range of scenarios—including complex multilingual site topologies. 
+Use the topic pages feature to customize the landing page experience for content that is published across sites. Use SEO-friendly URLs to manage and more easily persist and maintain site structure across a broad range of scenarios—including complex multilingual site topologies.
   
     
     
-To learn more about cross-site publishing, see  [Scenario: Create SharePoint sites by using cross-site publishing in SharePoint Server 2013](http://technet.microsoft.com/en-us/sharepoint/jj872721). To learn more about development options for cross-site publishing, see  [Cross-site publishing in SharePoint 2013](cross-site-publishing-in-sharepoint-2013.md). 
+To learn more about cross-site publishing, see  [Scenario: Create SharePoint sites by using cross-site publishing in SharePoint Server 2013](http://technet.microsoft.com/en-us/sharepoint/jj872721). To learn more about development options for cross-site publishing, see  [Cross-site publishing in SharePoint 2013](cross-site-publishing-in-sharepoint-2013.md).
   
     
     
@@ -245,18 +245,18 @@ Many business site users are referred to Internet business sites from large sear
   
     
     
-In Office 365, the site infrastructure generates an updated XML sitemap for you within 24 hours of a site change. With an on-premises installation, you can tune the freshness of your sitemaps and specify which search engines you want Microsoft to ping when we update the sitemap. 
+In Office 365, the site infrastructure generates an updated XML sitemap for you within 24 hours of a site change. With an on-premises installation, you can tune the freshness of your sitemaps and specify which search engines you want Microsoft to ping when we update the sitemap.
   
     
     
-What your friends like on Facebook affects what you see in the search results returned by Bing and other large search engines. You can use APIs in SharePoint 2013 programming models to customize how search is optimized for your site. 
+What your friends like on Facebook affects what you see in the search results returned by Bing and other large search engines. You can use APIs in SharePoint 2013 programming models to customize how search is optimized for your site.
   
     
     
 
 ### Analytics and recommendations
 
-You can track how people use publishing sites and their components using the SharePoint 2013 analytics feature, which is deeply integrated with the search engine. Analytics drives recommendations capabilities on content, and injects calculations into the search index as managed properties. The recommendations provided by search analytics, which include page views and unique items per day, can influence the relevance of search results. 
+You can track how people use publishing sites and their components using the SharePoint 2013 analytics feature, which is deeply integrated with the search engine. Analytics drives recommendations capabilities on content, and injects calculations into the search index as managed properties. The recommendations provided by search analytics, which include page views and unique items per day, can influence the relevance of search results.
   
     
     

@@ -6,11 +6,11 @@ ms.assetid: 1da8d484-3666-42c3-8a8f-8b3ef93e96e9
 
 
 # How to: Learn to read and write to the social feed by using the REST service in SharePoint 2013
-Create a SharePoint-hosted app that uses the REST service to publish a post and get the personal feed for the current user. 
+Create a SharePoint-hosted app that uses the REST service to publish a post and get the personal feed for the current user.
 ## Prerequisites for creating a SharePoint-hosted SharePoint Add-in that publishes a post and gets the social feed by using the SharePoint 2013 REST service
 <a name="bkmk_Prereqs"> </a>
 
-This article assumes that you create the SharePoint Add-in by using Napa on an Office 365 Developer Site. If you're using this development environment, you've already met the prerequisites. 
+This article assumes that you create the SharePoint Add-in by using Napa on an Office 365 Developer Site. If you're using this development environment, you've already met the prerequisites.
   
     
     
@@ -21,15 +21,15 @@ This article assumes that you create the SharePoint Add-in by using Napa on an O
     
     
 
-If you're not using Napa on a Developer Site, you'll need the following: 
+If you're not using Napa on a Developer Site, you'll need the following:
   
     
     
 
-- SharePoint Server 2013 with My Site configured, and with a personal site created for the current user 
+- SharePoint Server 2013 with My Site configured, and with a personal site created for the current user
     
   
-- Visual Studio 2012 and Office Developer Tools for Visual Studio 2013 
+- Visual Studio 2012 and Office Developer Tools for Visual Studio 2013
     
   
 - **Full Control** access permissions to the User Profile service application for the logged-on user
@@ -37,7 +37,7 @@ If you're not using Napa on a Developer Site, you'll need the following:
   
 
 > [!NOTE]
-> For guidance about how to set up a development environment that fits your needs, see  [Start building apps for Office and SharePoint](http://msdn.microsoft.com/library/187f8c8c-1b15-471c-80b5-69a40e67deea.aspx). 
+> For guidance about how to set up a development environment that fits your needs, see  [Start building apps for Office and SharePoint](http://msdn.microsoft.com/library/187f8c8c-1b15-471c-80b5-69a40e67deea.aspx).
   
     
     
@@ -46,7 +46,7 @@ If you're not using Napa on a Developer Site, you'll need the following:
 ## Core concepts to know about working with SharePoint 2013 social feeds
 <a name="bkmk_CoreConcepts"> </a>
 
-The SharePoint-hosted app that you create in this article uses JavaScript to build and send HTTP requests to Representational State Transfer (REST) endpoints. These requests publish a post and get the personal feed for the current user. Table 1 contains links to articles that describe general concepts you should understand before you get started. 
+The SharePoint-hosted app that you create in this article uses JavaScript to build and send HTTP requests to Representational State Transfer (REST) endpoints. These requests publish a post and get the personal feed for the current user. Table 1 contains links to articles that describe general concepts you should understand before you get started.
   
     
     
@@ -56,27 +56,27 @@ The SharePoint-hosted app that you create in this article uses JavaScript to bui
 
 |**Article title**|**Description**|
 |:-----|:-----|
-| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx)|Learn about SharePoint Add-ins and fundamental concepts for building them. |
-| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)|Find out how to start programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles. |
-| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)|Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks. |
+| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx)|Learn about SharePoint Add-ins and fundamental concepts for building them.|
+| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)|Find out how to start programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.|
+| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)|Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.|
    
 
 ## Create the SharePoint Add-in project
 <a name="bkmk_CreateApp"> </a>
 
 
-1. On your Developer Site, open Napa, and then choose **Add New Project**. 
+1. On your Developer Site, open Napa, and then choose **Add New Project**.
     
   
 2. Choose the **App for SharePoint** template, name the projectSocialFeedREST, and then choose the **Create** button.
     
   
-3. Specify the permissions that your app needs: 
+3. Specify the permissions that your app needs:
     
 1. Choose the **Properties** button at the bottom of the page.
     
   
-2. In the **Properties** window, choose **Permissions**. 
+2. In the **Properties** window, choose **Permissions**.
     
   
 3. In the **Content** category, set **Write** permissions for the **Tenant** scope.
@@ -233,7 +233,7 @@ function feedRetrieved(data) {
 ## Code example: Publish a post and get the feed for the current user by using the SharePoint 2013 REST service
 <a name="bkmk_PubPosts1"> </a>
 
-The following is the complete code example for the App.js file. It publishes a post and gets the personal feed for the current user, which is returned as a JSON object. Then it iterates through the feed. 
+The following is the complete code example for the App.js file. It publishes a post and gets the personal feed for the current user, which is returned as a JSON object. Then it iterates through the feed.
   
     
     

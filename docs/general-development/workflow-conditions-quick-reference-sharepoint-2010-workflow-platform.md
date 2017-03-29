@@ -6,15 +6,15 @@ ms.assetid: 71fab25b-d4f3-4871-b9ad-08d3537098fc
 
 
 # Workflow conditions quick reference (SharePoint 2010 Workflow platform)
-Learn about the workflow conditions that are available in the SharePoint 2010 Workflow Platform in Microsoft SharePoint Designer 2013. Use this article  *only*  if you are working in SharePoint Designer 2013, but want to continue to use the SharePoint 2010 Workflow Platform.If instead you want to use the SharePoint 2013 Workflow Platform, see  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint-2013.md), and other articles listed in the "Additional resources" section, which describe new features that are available in the newer platform. To begin creating a workflow by using the 2010 Workflow Platform, select **SharePoint 2010 Workflow** in the **Platform Type** box in the **Create Workflow** dialog box.
+Learn about the workflow conditions that are available in the SharePoint 2010 Workflow Platform in Microsoft SharePoint Designer 2013.Use this article  *only*  if you are working in SharePoint Designer 2013, but want to continue to use the SharePoint 2010 Workflow Platform.If instead you want to use the SharePoint 2013 Workflow Platform, see  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint-2013.md), and other articles listed in the "Additional resources" section, which describe new features that are available in the newer platform.To begin creating a workflow by using the 2010 Workflow Platform, select **SharePoint 2010 Workflow** in the **Platform Type** box in the **Create Workflow** dialog box.
 ## Where to find the workflow conditions
 <a name="section1"> </a>
 
-There are two ways to access the menu of available workflow conditions. 
+There are two ways to access the menu of available workflow conditions.
   
     
     
-While you are editing inside a workflow step, do one of the following: 
+While you are editing inside a workflow step, do one of the following:
   
     
     
@@ -22,7 +22,7 @@ While you are editing inside a workflow step, do one of the following:
 - On the **Workflow** tab, in the **Insert** group, click **Conditions** to open the list of workflow actions.
     
   
-- Double-click inside a workflow step. In the search box that appears, type text that appears in the name of the condition that you want, such as "created", and then press Enter. Actions and conditions that contain the text you typed appear after the text box. 
+- Double-click inside a workflow step. In the search box that appears, type text that appears in the name of the condition that you want, such as "created", and then press Enter. Actions and conditions that contain the text you typed appear after the text box.
     
   
 
@@ -33,7 +33,7 @@ While you are editing inside a workflow step, do one of the following:
   
     
     
-Which conditions are available to you while you are creating or modifying a workflow depends on the precise context that you are working in. See the following illustration for more information. 
+Which conditions are available to you while you are creating or modifying a workflow depends on the precise context that you are working in. See the following illustration for more information.
   
     
     
@@ -65,14 +65,14 @@ Which conditions are available to you while you are creating or modifying a work
 ## General conditions
 <a name="section2"> </a>
 
-This section describes the conditions that are available in SharePoint Designer 2013 for list and reusable list workflows, no matter what list type or content type the workflow is associated to. 
+This section describes the conditions that are available in SharePoint Designer 2013 for list and reusable list workflows, no matter what list type or content type the workflow is associated to.
   
     
     
 
 ### If any value equals value
 
-This condition is initially displayed in a workflow step as **If any value equals value**. Use this condition when you want to compare one value with another value. Each value can be static text, a dynamic string, or a lookup to a variable, to context information, or to a SharePoint field. 
+This condition is initially displayed in a workflow step as **If any value equals value**. Use this condition when you want to compare one value with another value. Each value can be static text, a dynamic string, or a lookup to a variable, to context information, or to a SharePoint field.
   
     
     
@@ -102,7 +102,7 @@ The option that you choose for the second **value** in the condition also depend
     
     
 
-Following are examples of what the condition might look like in a workflow step: 
+Following are examples of what the condition might look like in a workflow step:
   
     
     
@@ -120,11 +120,11 @@ The **If any value equals value** condition is one of only two conditions availa
 
 ### If current item field equals value
 
-This condition is initially displayed in a workflow step as **If field equals value**. Use this condition to compare the value in a field in the current item (that is, the item that the list or reusable list workflow is currently running on) to another value. Values can be static text, dynamic strings, or lookups to variables, to context information, or to other SharePoint fields. 
+This condition is initially displayed in a workflow step as **If field equals value**. Use this condition to compare the value in a field in the current item (that is, the item that the list or reusable list workflow is currently running on) to another value. Values can be static text, dynamic strings, or lookups to variables, to context information, or to other SharePoint fields.
   
     
     
-You can click **field** to see the list of options. The available options for **field** depend on the content type, list, library, or site that the workflow is associated to. For example, a workflow that is associated to a default library will have field options such as **Title**, **Created**, and **Created By**. 
+You can click **field** to see the list of options. The available options for **field** depend on the content type, list, library, or site that the workflow is associated to. For example, a workflow that is associated to a default library will have field options such as **Title**, **Created**, and **Created By**.
   
     
     
@@ -161,7 +161,7 @@ Following are examples of what the condition might look like in a workflow step.
 
 ### Created by a specific person
 
-This condition is initially displayed in a workflow step as **If created by specific person**. Use this condition to discover whether an item was created by a specified user. You can specify the user either by entering their user name or email address manually (for example, Olivier@contoso.com) or by selecting the user from among users already listed in SharePoint, Exchange, or Active Directory. 
+This condition is initially displayed in a workflow step as **If created by specific person**. Use this condition to discover whether an item was created by a specified user. You can specify the user either by entering their user name or email address manually (for example, Olivier@contoso.com) or by selecting the user from among users already listed in SharePoint, Exchange, or Active Directory.
   
     
     
@@ -172,7 +172,7 @@ This condition is initially displayed in a workflow step as **If created by spec
     
     
 
-Following is an example of what the condition might look like in a workflow step: 
+Following is an example of what the condition might look like in a workflow step:
   
     
     
@@ -183,11 +183,11 @@ Following is an example of what the condition might look like in a workflow step
 
 ### Created in a specific date span
 
-This condition is initially displayed in a workflow step as **If created between date and date**. Use this condition to discover whether an item was created between two specified dates. You can use the current date, a specified date, or the result of a lookup. 
+This condition is initially displayed in a workflow step as **If created between date and date**. Use this condition to discover whether an item was created between two specified dates. You can use the current date, a specified date, or the result of a lookup.
   
     
     
-Following is an example of what the condition might look like in a workflow step: 
+Following is an example of what the condition might look like in a workflow step:
   
     
     
@@ -198,7 +198,7 @@ Following is an example of what the condition might look like in a workflow step
 
 ### Modified by a specific person
 
-This condition is initially displayed in a workflow step as **If modified by specific person**. Use this condition to discover whether an item was modified by a specified user. The user can be specified as an e-mail address, such as olivier@contoso.com, or selected from SharePoint, Exchange, or Active Directory users. 
+This condition is initially displayed in a workflow step as **If modified by specific person**. Use this condition to discover whether an item was modified by a specified user. The user can be specified as an e-mail address, such as olivier@contoso.com, or selected from SharePoint, Exchange, or Active Directory users.
   
     
     
@@ -209,7 +209,7 @@ This condition is initially displayed in a workflow step as **If modified by spe
     
     
 
-Following is an example of what the condition might look like in a workflow step: 
+Following is an example of what the condition might look like in a workflow step:
   
     
     
@@ -220,11 +220,11 @@ Following is an example of what the condition might look like in a workflow step
 
 ### Modified in a specific date span
 
-This condition is initially displayed in a workflow step as **If modified between date and date**. Use this condition to discover whether an item was modified between two specified dates. For each of the date values, you can use the current date, a specified date, or the result of a lookup. 
+This condition is initially displayed in a workflow step as **If modified between date and date**. Use this condition to discover whether an item was modified between two specified dates. For each of the date values, you can use the current date, a specified date, or the result of a lookup.
   
     
     
-Following is an example of what the condition might look like in a workflow step, 
+Following is an example of what the condition might look like in a workflow step,
   
     
     
@@ -235,15 +235,15 @@ Following is an example of what the condition might look like in a workflow step
 
 ### Person is a valid SharePoint user
 
-This condition is initially displayed in a workflow step as **If person is a valid SharePoint user**. Use this condition to discover whether the specified user is a member of the SharePoint site. 
+This condition is initially displayed in a workflow step as **If person is a valid SharePoint user**. Use this condition to discover whether the specified user is a member of the SharePoint site.
   
     
     
-In SharePoint Designer 2013, you can include people outside your corporate domain (called external participants) in your workflows. For example, suppose that you have assigned tasks in your workflow to external participants. You can then use this action to make a site user follow up with the external participants until the tasks are complete. 
+In SharePoint Designer 2013, you can include people outside your corporate domain (called external participants) in your workflows. For example, suppose that you have assigned tasks in your workflow to external participants. You can then use this action to make a site user follow up with the external participants until the tasks are complete.
   
     
     
-Following is an example of what the condition might look like in a workflow step, 
+Following is an example of what the condition might look like in a workflow step,
   
     
     
@@ -326,7 +326,7 @@ Use this condition to discover whether, for the specified list or library, the  
 - Another user or group has the Full Control permission level for the same list. The Full Control level  *does*  include all of the permissions that are included in the Approve level (as well as other permissions), and so this time the condition evaluates as True.
     
   
-Following is an example of what the condition might look like in a workflow step: 
+Following is an example of what the condition might look like in a workflow step:
   
     
     
@@ -353,13 +353,13 @@ Use this condition to discover whether, for the specified list or library, each 
 - A user has been explicitly assigned only the Full Control permission level for a list, but the condition specifies only the Read level. Even though the user  *holds*  all of the individual permissions that are included in the Read level, the user not been *explicitly*  assigned the Read level, so the condition evaluates as False.
     
   
-- A different user has been explicitly assigned only the Design permission level for a different list, but the condition specifies both the Design level and the Manage Hierarchy level. Because the user has been assigned only one of the two required levels, the condition evaluates as False. 
+- A different user has been explicitly assigned only the Design permission level for a different list, but the condition specifies both the Design level and the Manage Hierarchy level. Because the user has been assigned only one of the two required levels, the condition evaluates as False.
     
   
 - For a third list, a user is a member of the Members group and inherits permissions from that group. However, no permissions level has been  *explicitly*  assigned to the user. The condition requires *explicit assignment*  of the Contribute level, so because the user holds the permissions of that level only implicitly, the condition again evaluates to False.
     
   
-Following is an example of what the condition might look like in a workflow step: 
+Following is an example of what the condition might look like in a workflow step:
   
     
     
@@ -378,11 +378,11 @@ The conditions **The file size is a specific range kilobytes** and **The file ty
 
 ### The file size in a specific range of kilobytes
 
-This condition is initially displayed in a workflow step as **If the file size is between size and size kilobytes**. Use this condition to discover whether the file size of a document falls between two specified sizes measured in kilobytes. The condition does not include the specified sizes in the evaluation. For each instance of **size**, you can either enter a number or use a lookup. 
+This condition is initially displayed in a workflow step as **If the file size is between size and size kilobytes**. Use this condition to discover whether the file size of a document falls between two specified sizes measured in kilobytes. The condition does not include the specified sizes in the evaluation. For each instance of **size**, you can either enter a number or use a lookup.
   
     
     
-Following is an example of what the condition might look like in a workflow step, 
+Following is an example of what the condition might look like in a workflow step,
   
     
     
@@ -400,11 +400,11 @@ Following is an example of what the condition might look like in a workflow step
 
 ### The file type is a specific type
 
-This condition initially displays in a workflow step as **If the file type is specific type**. Use this condition to discover whether the file type of the current item is the specified type, (such as docx. You can either enter the file type as a string or use a lookup. 
+This condition initially displays in a workflow step as **If the file type is specific type**. Use this condition to discover whether the file type of the current item is the specified type, (such as docx. You can either enter the file type as a string or use a lookup.
   
     
     
-Following is an example of what the condition might look like in a workflow step: 
+Following is an example of what the condition might look like in a workflow step:
   
     
     
@@ -416,7 +416,7 @@ Following is an example of what the condition might look like in a workflow step
 ## Conditions available within a site workflow
 <a name="section5"> </a>
 
-Site workflows operate at the site level and are not associated with a list item. When you are working in a site workflow, only the following conditions are available. (All other conditions in SharePoint Designer 2013 operate on list items, and therefore none of them function in site workflows.) 
+Site workflows operate at the site level and are not associated with a list item. When you are working in a site workflow, only the following conditions are available. (All other conditions in SharePoint Designer 2013 operate on list items, and therefore none of them function in site workflows.)
   
     
     
@@ -427,7 +427,7 @@ Site workflows operate at the site level and are not associated with a list item
 - **Person is a valid SharePoint user**
     
   
-From within an impersonation step in a site workflow: 
+From within an impersonation step in a site workflow:
   
     
     

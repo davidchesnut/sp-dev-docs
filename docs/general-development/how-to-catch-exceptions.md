@@ -3,14 +3,14 @@ title: How to Catch Exceptions
 keywords: errors,how to,howdoi,howto
 f1_keywords:
 - errors,how to,howdoi,howto
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: de5fdb67-201b-4d7a-90a8-99ab7e51ea4e
 ---
 
 
 # How to: Catch Exceptions
 
-You place the sections of code that might throw exceptions in a try block and place code that handles exceptions in a catch block. The order of catch statements is important. When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it. The catch block that should handle the exception is determined by matching the type of the exception to the name of the exception specified in the catch block. For example, the following catch block catches Simple Object Access Protocol (SOAP) exceptions: 
+You place the sections of code that might throw exceptions in a try block and place code that handles exceptions in a catch block. The order of catch statements is important. When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it. The catch block that should handle the exception is determined by matching the type of the exception to the name of the exception specified in the catch block. For example, the following catch block catches Simple Object Access Protocol (SOAP) exceptions:
   
     
     
@@ -36,7 +36,7 @@ Catch e As SoapException
 End Try
 ```
 
-If no type-specific catch block exists, the exception is caught by a general catch block, if one exists. For example, you can catch general exceptions by adding the following code: 
+If no type-specific catch block exists, the exception is caught by a general catch block, if one exists. For example, you can catch general exceptions by adding the following code:
 
 
 ```cs

@@ -6,7 +6,7 @@ ms.assetid: 33ed8106-d850-42b1-8d7f-5ba83901149c
 
 
 # How to: Avoid getting throttled or blocked in SharePoint Online
-Find out about throttling in SharePoint Online, and learn how to avoid being throttled or blocked. Includes sample CSOM and REST code you can use to make your task easier. 
+Find out about throttling in SharePoint Online, and learn how to avoid being throttled or blocked. Includes sample CSOM and REST code you can use to make your task easier.
  *In this article:* 
   
     
@@ -35,7 +35,7 @@ Find out about throttling in SharePoint Online, and learn how to avoid being thr
     
   
 
-Does this sound familiar? You're running a CSOM process - for example, to migrate files in SharePoint Online - but you keep getting throttled. Or even worse, you get completely blocked. What's going on and what can you do to make it stop? 
+Does this sound familiar? You're running a CSOM process - for example, to migrate files in SharePoint Online - but you keep getting throttled. Or even worse, you get completely blocked. What's going on and what can you do to make it stop?
   
     
     
@@ -44,11 +44,11 @@ Does this sound familiar? You're running a CSOM process - for example, to migrat
 ## What is throttling?
 <a name="BKMK_Whatisthrottling"> </a>
 
-SharePoint Online uses throttling to maintain optimal performance and reliability of the SharePoint Online service. Throttling limits the number of user actions or concurrent calls (by script or code) to prevent overuse of resources. 
+SharePoint Online uses throttling to maintain optimal performance and reliability of the SharePoint Online service. Throttling limits the number of user actions or concurrent calls (by script or code) to prevent overuse of resources.
   
     
     
-That said, it is extremely rare for a user to get throttled in SharePoint Online. The service is robust, and it is designed to handle very high volume. If you do get throttled, 99% of the time it is because of custom code. That doesn't mean that there aren't other ways to get throttled, just that they are less common. For example you spin up 10 machines and have a sync client going on all 10. On each sync 1TB of content. This would likely get you throttled. 
+That said, it is extremely rare for a user to get throttled in SharePoint Online. The service is robust, and it is designed to handle very high volume. If you do get throttled, 99% of the time it is because of custom code. That doesn't mean that there aren't other ways to get throttled, just that they are less common. For example you spin up 10 machines and have a sync client going on all 10. On each sync 1TB of content. This would likely get you throttled.
   
     
     
@@ -63,18 +63,18 @@ That said, it is extremely rare for a user to get throttled in SharePoint Online
 
 ### What happens when you get throttled in SharePoint Online?
 
-When a user exceeds usage limits, SharePoint Online throttles any further requests from that user account for a short period. All user actions are throttled while the throttle is in effect. 
+When a user exceeds usage limits, SharePoint Online throttles any further requests from that user account for a short period. All user actions are throttled while the throttle is in effect.
   
     
     
 
-- For requests that a user performs directly in the browser, SharePoint Online redirects you to the throttling information page, and the requests fail. 
+- For requests that a user performs directly in the browser, SharePoint Online redirects you to the throttling information page, and the requests fail.
     
   
-- For all other requests, including CSOM or REST calls, SharePoint Online returns HTTP status code 429 ("Too many requests"), and the requests fail. 
+- For all other requests, including CSOM or REST calls, SharePoint Online returns HTTP status code 429 ("Too many requests"), and the requests fail.
     
   
-If the offending process continues to exceed usage limits, SharePoint Online might completely block the process; in this case, you may see HTTP status code 503 ("Service unavailable"), and we'll notify you of the block in the Office 365 Message Center. The error message is shown below: 
+If the offending process continues to exceed usage limits, SharePoint Online might completely block the process; in this case, you may see HTTP status code 503 ("Service unavailable"), and we'll notify you of the block in the Office 365 Message Center. The error message is shown below:
   
     
     
@@ -86,7 +86,7 @@ If the offending process continues to exceed usage limits, SharePoint Online mig
   
     
     
-503 Server unavailable message. 
+503 Server unavailable message.
   
     
     
@@ -94,16 +94,16 @@ If the offending process continues to exceed usage limits, SharePoint Online mig
 ## Common throttling scenarios in SharePoint Online
 <a name="BKMK_Commonthrottlingscenarios"> </a>
 
-The most common causes of per-user throttling in SharePoint Online are client-side object model (CSOM) or Representational State Transfer (REST) code that performs too many actions too frequently. 
+The most common causes of per-user throttling in SharePoint Online are client-side object model (CSOM) or Representational State Transfer (REST) code that performs too many actions too frequently.
   
     
     
 
 - **Sporadic traffic**
     
-    Not a lot of traffic at any one time, but enough over time that you run in and out of throttling in an episodic way. 
+    Not a lot of traffic at any one time, but enough over time that you run in and out of throttling in an episodic way.
     
-  - For example, after migrating files to SharePoint Online, you run a custom CSOM or REST script to update metadata on the files. The CSOM/REST script is updating a large number of files at a very high frequency, which triggers throttling. Similarly, an autocomplete UI widget using REST services, making too many calls to lists during each end user operation, may also cause throttling, depending on what other operations are consuming resources at the same time. 
+  - For example, after migrating files to SharePoint Online, you run a custom CSOM or REST script to update metadata on the files. The CSOM/REST script is updating a large number of files at a very high frequency, which triggers throttling. Similarly, an autocomplete UI widget using REST services, making too many calls to lists during each end user operation, may also cause throttling, depending on what other operations are consuming resources at the same time.
     
      ![Sporadic throttling](images/a61afe25-9597-403f-b3fa-d3f630155021.png)
   
@@ -113,15 +113,15 @@ The most common causes of per-user throttling in SharePoint Online are client-si
   
 - **Overwhelming traffic**
     
-    A single process dramatically exceeds throttling limits, continually, over a long time period. 
+    A single process dramatically exceeds throttling limits, continually, over a long time period.
     
-  - You used web services to build a tool to synchronize user profile properties. The tool updates user profile properties based on information from your line-of-business (LOB) human resources (HR) system. The tool makes calls at too high a frequency. 
-    
-  
-  - You're running a load-testing script on SharePoint Online and you get throttled. Load testing is not allowed on SharePoint Online. 
+  - You used web services to build a tool to synchronize user profile properties. The tool updates user profile properties based on information from your line-of-business (LOB) human resources (HR) system. The tool makes calls at too high a frequency.
     
   
-  - You customized your team site on SharePoint Online, for example, by adding a status indicator on the Home page. This status indicator updates frequently, which causes the page to make too many calls to the SharePoint Online service - this triggered throttling. 
+  - You're running a load-testing script on SharePoint Online and you get throttled. Load testing is not allowed on SharePoint Online.
+    
+  
+  - You customized your team site on SharePoint Online, for example, by adding a status indicator on the Home page. This status indicator updates frequently, which causes the page to make too many calls to the SharePoint Online service - this triggered throttling.
     
      ![Steady throttling](images/7849d413-381f-4558-9e50-b3cc9990d3e3.png)
   
@@ -133,7 +133,7 @@ The most common causes of per-user throttling in SharePoint Online are client-si
 ## Why can't you just tell me the exact throttling limits?
 <a name="BKMK_Whycantyoujusttellmetheexactthrottlinglimits"> </a>
 
-Setting and publishing exact throttling limits sounds very straightforward, but in fact, it's not the best way to go. We continually monitor resource usage on SharePoint Online. Depending on usage, we fine-tune thresholds so users can consume the maximum number of resources without degrading the reliability and performance of SharePoint Online. That's why it's so important for your CSOM or REST code to include incremental back off to handle throttling; this lets your code run as fast as possible on any given day, and it lets your code back off "just enough" if it hits throttling limits. The code samples later in this article show you how to use incremental back off. 
+Setting and publishing exact throttling limits sounds very straightforward, but in fact, it's not the best way to go. We continually monitor resource usage on SharePoint Online. Depending on usage, we fine-tune thresholds so users can consume the maximum number of resources without degrading the reliability and performance of SharePoint Online. That's why it's so important for your CSOM or REST code to include incremental back off to handle throttling; this lets your code run as fast as possible on any given day, and it lets your code back off "just enough" if it hits throttling limits. The code samples later in this article show you how to use incremental back off.
   
     
     
@@ -142,16 +142,16 @@ Setting and publishing exact throttling limits sounds very straightforward, but 
 <a name="BKMK_Bestpracticestohandlethrottling"> </a>
 
 
-- Reduce the number of operations per request 
+- Reduce the number of operations per request
     
   
-- Reduce the frequency of calls 
+- Reduce the frequency of calls
     
   
-- Use incremental back off to reduce the number and frequency of calls until no more throttling occurs 
+- Use incremental back off to reduce the number and frequency of calls until no more throttling occurs
     
   
-Incremental back off uses progressively longer waits between retries before trying again to run the code that was throttled. You can use the GitHub code samples, later in this article, written as extension methods, to add incremental back off to your code. 
+Incremental back off uses progressively longer waits between retries before trying again to run the code that was throttled. You can use the GitHub code samples, later in this article, written as extension methods, to add incremental back off to your code.
   
     
     
@@ -159,11 +159,11 @@ Backing off is the fastest way to handle being throttled because SharePoint Onli
   
     
     
-For information about ways to monitor your SharePoint Online activity, see  [Diagnosing performance issues with SharePoint Online](http://msdn.microsoft.com/library/93502df4-552f-409b-971b-2e9b0f38588f.aspx). 
+For information about ways to monitor your SharePoint Online activity, see  [Diagnosing performance issues with SharePoint Online](http://msdn.microsoft.com/library/93502df4-552f-409b-971b-2e9b0f38588f.aspx).
   
     
     
-For a broader discussion of throttling on the Microsoft Cloud, see  [Throttling Pattern](http://msdn.microsoft.com/library/4baf5af2-32fc-47ab-8569-3e5c59a5ebd5.aspx). 
+For a broader discussion of throttling on the Microsoft Cloud, see  [Throttling Pattern](http://msdn.microsoft.com/library/4baf5af2-32fc-47ab-8569-3e5c59a5ebd5.aspx).
   
     
     
@@ -175,20 +175,20 @@ For a broader discussion of throttling on the Microsoft Cloud, see  [Throttling 
   
     
     
-Before you run this code sample: 
+Before you run this code sample:
   
     
     
 
 - Open **Program.cs** and enter the following information in the **Main** method:
     
-  - Your Office 365 Developer account credentials. 
+  - Your Office 365 Developer account credentials.
     
   
-  - The URL of your Office 365 Developer Site. 
+  - The URL of your Office 365 Developer Site.
     
   
-  - The name of a test document library on your Office 365 Developer Site. 
+  - The name of a test document library on your Office 365 Developer Site.
     
   
 - If you receive an error stating that the **App.Config** file is invalid, go to **Solution Explorer**, right click **App.config**, and choose **Exclude From Project**.
@@ -302,11 +302,11 @@ public static void ExecuteQueryWithIncrementalRetry(this ClientContext context, 
 ## What should you do if you get blocked in SharePoint Online?
 <a name="BKMK_Whatshouldyoudoifyougetblocked"> </a>
 
-Blocking is the most extreme form of throttling. We rarely ever block a tenant, unless we detect long-term, extremely excessive traffic that may threaten the overall health of the SharePoint Online service. We apply blocks to prevent excessive traffic from degrading the performance and reliability of SharePoint Online. A block - which is usually placed at the tenancy level - prevents the offending process from running until you fix the problem. If we block your subscription, you must take action to modify the offending processes before the block can be removed. 
+Blocking is the most extreme form of throttling. We rarely ever block a tenant, unless we detect long-term, extremely excessive traffic that may threaten the overall health of the SharePoint Online service. We apply blocks to prevent excessive traffic from degrading the performance and reliability of SharePoint Online. A block - which is usually placed at the tenancy level - prevents the offending process from running until you fix the problem. If we block your subscription, you must take action to modify the offending processes before the block can be removed.
   
     
     
-If we block your subscription, you'll see HTTP status code 503, and we'll notify you of the block in the Office 365 Message Center. The message describes what caused the block, provides guidance on how to resolve the offending issue, and tells you who to contact to get the block removed. 
+If we block your subscription, you'll see HTTP status code 503, and we'll notify you of the block in the Office 365 Message Center. The message describes what caused the block, provides guidance on how to resolve the offending issue, and tells you who to contact to get the block removed.
   
     
     

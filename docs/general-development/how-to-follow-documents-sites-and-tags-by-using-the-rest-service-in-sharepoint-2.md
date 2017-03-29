@@ -6,15 +6,15 @@ ms.assetid: 989a5873-49f9-49e4-8d0f-439dde891cc2
 
 
 # How to: Follow documents, sites, and tags by using the REST service in SharePoint 2013
-Create SharePoint-hosted apps that use the REST service to follow content (documents, sites, and tags) and to get followed content. 
+Create SharePoint-hosted apps that use the REST service to follow content (documents, sites, and tags) and to get followed content.
 ## How do I use the SharePoint Server 2013 REST service to follow content?
 <a name="bk_intro"> </a>
 
-SharePoint Server 2013 users can follow documents, sites, and tags to get updates about the items in their newsfeeds and to quickly open followed documents and sites. You can use the SharePoint Server 2013 REST API in your app or solution to start following content, stop following content, and get followed content on behalf of the current user. 
+SharePoint Server 2013 users can follow documents, sites, and tags to get updates about the items in their newsfeeds and to quickly open followed documents and sites. You can use the SharePoint Server 2013 REST API in your app or solution to start following content, stop following content, and get followed content on behalf of the current user.
   
     
     
-The following REST resources are the primary API for Following Content tasks: 
+The following REST resources are the primary API for Following Content tasks:
   
     
     
@@ -31,7 +31,7 @@ The following REST resources are the primary API for Following Content tasks:
 - **SocialActorType** and **SocialActorTypes** specify content types in client-side requests to the server.
     
   
-To perform Following Content tasks by using the REST API, you send HTTP **GET** and HTTP **POST** requests to the REST service. REST endpoint URIs for Following Content tasks begin with the **SocialRestFollowingManager** resource ( `<siteUri>/_api/social.following`) and end with one of the following resources: 
+To perform Following Content tasks by using the REST API, you send HTTP **GET** and HTTP **POST** requests to the REST service. REST endpoint URIs for Following Content tasks begin with the **SocialRestFollowingManager** resource ( `<siteUri>/_api/social.following`) and end with one of the following resources:
   
     
     
@@ -53,7 +53,7 @@ To perform Following Content tasks by using the REST API, you send HTTP **GET** 
   
 
 > [!NOTE]
-> You also use these endpoints for Following People tasks, but the **followers** and **suggestions** resources available from **SocialRestFollowingManager** only support following people, not content. For more information about how you can use **SocialRestFollowingManager**, see  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md). 
+> You also use these endpoints for Following People tasks, but the **followers** and **suggestions** resources available from **SocialRestFollowingManager** only support following people, not content. For more information about how you can use **SocialRestFollowingManager**, see  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md).
   
     
     
@@ -62,7 +62,7 @@ To perform Following Content tasks by using the REST API, you send HTTP **GET** 
 ## Prerequisites for creating a SharePoint-hosted app that manages followed content by using the SharePoint 2013 REST service
 <a name="bkmk_Prereqs"> </a>
 
-This article assumes that you create the SharePoint Add-in by using Napa on an Office 365 Developer Site. If you're using this development environment, you've already met the prerequisites. 
+This article assumes that you create the SharePoint Add-in by using Napa on an Office 365 Developer Site. If you're using this development environment, you've already met the prerequisites.
   
     
     
@@ -73,29 +73,29 @@ This article assumes that you create the SharePoint Add-in by using Napa on an O
     
     
 
-If you're not using Napa on an Office 365 Developer Site, you'll need to meet the following prerequisites before you can deploy the SharePoint Add-in: 
+If you're not using Napa on an Office 365 Developer Site, you'll need to meet the following prerequisites before you can deploy the SharePoint Add-in:
   
     
     
 
-- A SharePoint 2013 development environment that is configured for app isolation. If you're developing remotely, the server must support sideloading of apps or you must install the app on a Developer Site. 
+- A SharePoint 2013 development environment that is configured for app isolation. If you're developing remotely, the server must support sideloading of apps or you must install the app on a Developer Site.
     
   
-- The My Site host configured, with a personal site created for the current user. 
+- The My Site host configured, with a personal site created for the current user.
     
   
-- Visual Studio 2012 or Visual Studio 2013 with Office Developer Tools for Visual Studio 2013. 
+- Visual Studio 2012 or Visual Studio 2013 with Office Developer Tools for Visual Studio 2013.
     
   
-- Sufficient permissions for the logged-on user: 
+- Sufficient permissions for the logged-on user:
     
-  - Local administrator permissions on the development computer. 
-    
-  
-  - Manage Web Site and Create Subsites user permissions to the SharePoint site where you're installing the app. By default, these permissions are available only to users who have the Full Control permission level or who are in the site Owners group. 
+  - Local administrator permissions on the development computer.
     
   
-  - You must be logged on as someone other than the system account. The system account does not have permission to install the app. 
+  - Manage Web Site and Create Subsites user permissions to the SharePoint site where you're installing the app. By default, these permissions are available only to users who have the Full Control permission level or who are in the site Owners group.
+    
+  
+  - You must be logged on as someone other than the system account. The system account does not have permission to install the app.
     
   
 
@@ -114,18 +114,18 @@ If you're not using Napa on an Office 365 Developer Site, you'll need to meet th
 <a name="bkmk_CreateApp"> </a>
 
 
-1. On your Developer Site, open Napa, and then choose **Add New Project**. 
+1. On your Developer Site, open Napa, and then choose **Add New Project**.
     
   
 2. Choose the **App for SharePoint** template, name the project, and then choose the **Create** button.
     
   
-3. Set the permissions for your app: 
+3. Set the permissions for your app:
     
 1. Choose the **Properties** button at the bottom of the page.
     
   
-2. In the **Properties** window, choose **Permissions**. 
+2. In the **Properties** window, choose **Permissions**.
     
   
 3. In the **Content** category, set **Write** permissions for the **Tenant** scope.
@@ -161,7 +161,7 @@ If you're not using Napa on an Office 365 Developer Site, you'll need to meet th
 ## Code example: Start following and stop following a document by using the SharePoint 2013 REST service
 <a name="bkmk_FollowDocs"> </a>
 
-The following code example represents the contents of the App.js file and shows how to: 
+The following code example represents the contents of the App.js file and shows how to:
   
     
     
@@ -178,7 +178,7 @@ The following code example represents the contents of the App.js file and shows 
 - Build and send a **POST** request to the `stopfollowing` endpoint to stop following the document.
     
   
-- Read the JSON response returned by the  `isfollowed` request and the `follow` request. (The `stopfollowing` request doesn't return anything in the response.) See [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses). 
+- Read the JSON response returned by the  `isfollowed` request and the `follow` request. (The `stopfollowing` request doesn't return anything in the response.) See [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses).
     
   
 Before you run the code, you'll need to upload a document and change the placeholder value for the **documentUrl** variable to the document's URL.
@@ -323,7 +323,7 @@ function requestFailed(xhr, ajaxOptions, thrownError) {
 ## Code example: Start following and stop following a site by using the SharePoint 2013 REST service
 <a name="bkmk_FollowSites"> </a>
 
-The following code example represents the contents of the App.js file and shows how to: 
+The following code example represents the contents of the App.js file and shows how to:
   
     
     
@@ -340,7 +340,7 @@ The following code example represents the contents of the App.js file and shows 
 - Build and send a **POST** request to the `stopfollowing` endpoint to stop following the site.
     
   
-- Read the JSON response returned by the  `isfollowed` request and the `follow` request. (The `stopfollowing` request doesn't return anything in the response.) See [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses). 
+- Read the JSON response returned by the  `isfollowed` request and the `follow` request. (The `stopfollowing` request doesn't return anything in the response.) See [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses).
     
   
 Before you run the code, change the placeholder value for the **siteUrl** variable to match the site that you want to follow. Use the format **http://server/siteCollection/site** for a site in a site collection. You can follow a site from any page or library in that site. If the site uses a template that doesn't support following (like the My Site host or a personal site), you'll get an **UnsupportedSite** error (error code 10).
@@ -485,7 +485,7 @@ function requestFailed(xhr, ajaxOptions, thrownError) {
 ## Code example: Start following and stop following a tag by using the SharePoint 2013 REST service
 <a name="bkmk_FollowTags"> </a>
 
-The following code example represents the contents of the App.js file and shows how to: 
+The following code example represents the contents of the App.js file and shows how to:
   
     
     
@@ -502,7 +502,7 @@ The following code example represents the contents of the App.js file and shows 
 - Build and send a **POST** request to the `stopfollowing` endpoint to stop following the tag.
     
   
-- Read the JSON response returned by the  `isfollowed` request and the `follow` request. (The `stopfollowing` request doesn't return anything in the response.) For more information, see [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses). 
+- Read the JSON response returned by the  `isfollowed` request and the `follow` request. (The `stopfollowing` request doesn't return anything in the response.) For more information, see [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses).
     
   
 Before you run the code, change the placeholder value for the **tagGuid** variable to the GUID of an existing tag. The taxonomy API that you use to retrieve a tag from the **HashTagsTermSet** doesn't have a REST interface, so you have to use the .NET client object model or the JavaScript object model. See [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid) for an example.
@@ -647,7 +647,7 @@ function requestFailed(xhr, ajaxOptions, thrownError) {
 ## Code example Get followed content by using the SharePoint 2013 REST service
 <a name="bkmk_GetFollowed"> </a>
 
-The following code example represents the contents of the App.js file and shows how to: 
+The following code example represents the contents of the App.js file and shows how to:
   
     
     
@@ -661,7 +661,7 @@ The following code example represents the contents of the App.js file and shows 
 - Build and send a **GET** request to the `my/followed` endpoint to get the content that the current user is following.
     
   
-- Read the JSON response returned by the requests. See  [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses). 
+- Read the JSON response returned by the requests. See  [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses).
     
   
 
@@ -779,14 +779,14 @@ Table 1 shows **SocialFollowResult** status codes and their values.
 
 |||
 |:-----|:-----|
-|0 |**OK**. The current user is now following the actor. |
-|1 |**AlreadyFollowing**. The current user is already following the actor. |
-|2 |**LimitReached**. The request failed because an internal limit was reached. |
-|3 |**InternalError**. The request failed due to an internal error. |
+|0|**OK**. The current user is now following the actor.|
+|1|**AlreadyFollowing**. The current user is already following the actor.|
+|2|**LimitReached**. The request failed because an internal limit was reached.|
+|3|**InternalError**. The request failed due to an internal error.|
    
 
 > [!NOTE]
-> The REST service doesn't return a response for the **StopFollowing** request. It returns `{"d":{"StopFollowing":null}}`. 
+> The REST service doesn't return a response for the **StopFollowing** request. It returns `{"d":{"StopFollowing":null}}`.
   
     
     
@@ -798,7 +798,7 @@ In response to client-side requests to the  `isfollowed` endpoint, the REST serv
   
     
     
-The following response indicates that the current user is not following the specified document, site, or tag. 
+The following response indicates that the current user is not following the specified document, site, or tag.
   
     
     
@@ -816,7 +816,7 @@ In response to client-side requests to the  `my/followed` endpoint, the REST ser
   
     
     
-The following response represents a followed document, site, and tag. The request specifies the types of content to include. 
+The following response represents a followed document, site, and tag. The request specifies the types of content to include.
   
     
     
@@ -896,7 +896,7 @@ In response to client-side requests to the  `my/followedcount` endpoint, the RES
   
     
     
-The following response represents a count of three followed documents, sites, and/or tags. The request specifies the types of content to include. 
+The following response represents a count of three followed documents, sites, and/or tags. The request specifies the types of content to include.
   
     
     

@@ -7,7 +7,7 @@ ms.assetid: ba93e5c0-e591-48d0-a716-a08ec7ef6cea
 
 # SharePoint Online Suite Navigation control
 Learn about master page markup for the Suite Navigation control in SharePoint Online. 
-{insert introductory content} 
+{insert introductory content}
   
     
     
@@ -15,7 +15,7 @@ Learn about master page markup for the Suite Navigation control in SharePoint On
 
 ## SharePoint Online Suite Navigation control
 
-The Suite Navigation control renders a consistent top navigation bar in SharePoint Online. This control is now a part of all uncustomized out-of-the-box master pages. 
+The Suite Navigation control renders a consistent top navigation bar in SharePoint Online. This control is now a part of all uncustomized out-of-the-box master pages.
   
     
     
@@ -23,20 +23,20 @@ If a master page was customized, it will not pick up the new Suite Navigation co
   
     
     
-The new Suite Navigation control supports any theme applied to the site. If you want to change the color of the top navigation bar, apply a theme. 
+The new Suite Navigation control supports any theme applied to the site. If you want to change the color of the top navigation bar, apply a theme.
   
     
     
 
 > [!IMPORTANT]
-> When customizing a site, the best practice is to apply a theme. While you can apply custom CSS to the site, custom CSS may break in the future if the Suite Navigation control is updated again in the service. 
+> When customizing a site, the best practice is to apply a theme. While you can apply custom CSS to the site, custom CSS may break in the future if the Suite Navigation control is updated again in the service.
   
     
     
 
 
 > [!CAUTION]
-> If you do not want to use the new control, remove the Suite Navigation markup from your master page and add custom markup. However, be aware that customized master pages run the risk of not picking up updates to default master page controls or new functionality that is added to uncustomized master pages. Using a customized master page introduces the risk that service updates will break the functionality or style of your site. 
+> If you do not want to use the new control, remove the Suite Navigation markup from your master page and add custom markup. However, be aware that customized master pages run the risk of not picking up updates to default master page controls or new functionality that is added to uncustomized master pages. Using a customized master page introduces the risk that service updates will break the functionality or style of your site.
   
     
     
@@ -44,7 +44,7 @@ The new Suite Navigation control supports any theme applied to the site. If you 
 
 ### Suite Navigation control for intranet sites
 
-For intranet sites, use the following master page markup for the Suite Navigation control. Table 1 lists web controls used in the Suite Navigation code. 
+For intranet sites, use the following master page markup for the Suite Navigation control. Table 1 lists web controls used in the Suite Navigation code.
   
     
     
@@ -54,8 +54,8 @@ For intranet sites, use the following master page markup for the Suite Navigatio
 
 |**Web Control**|**Description**|
 |:-----|:-----|
-|SharePoint:Menu |Displays a menu in an ASP.NET web page. |
-|SharePoint:MenuItemTemplate |Represents a control that creates an item in a drop-down menu. |
+|SharePoint:Menu|Displays a menu in an ASP.NET web page.|
+|SharePoint:MenuItemTemplate|Represents a control that creates an item in a drop-down menu.|
    
 
 ```
@@ -168,7 +168,7 @@ var g_navBarHelpDefaultKey = "HelpHome";
 
 #### Learning about Suite Navigation web controls for public-facing sites
 
-For public-facing sites, use the following master page markup for the Suite Navigation control. Table 2 lists web controls used in the Suite Navigation code. 
+For public-facing sites, use the following master page markup for the Suite Navigation control. Table 2 lists web controls used in the Suite Navigation code.
   
     
     
@@ -178,13 +178,13 @@ For public-facing sites, use the following master page markup for the Suite Navi
 
 |**Web Control**|**Description**|
 |:-----|:-----|
-|SharePoint:DelegateControl |Renders an ASP.NET web control. Delegate controls make their candidate controls pluggable and traceable. |
-|SharePoint:FeatureMenuTemplate |Represents a control that creates a template for a drop-down menu. |
-|SharePoint:Menu |Displays a menu in an ASP.NET web page. |
-|SharePoint:MenuItemTemplate |Represents a control that creates an item in a drop-down menu. |
-|SharePoint:ScriptBlock |Represents a script block control on a page. |
-|SharePoint:SiteActions |Represents a template control for the Site Action menu. |
-|SharePoint:SPSecurityTrimmedControl |Renders conditionally the contents of the control to the current user only if the current user has permissions defined in the **PermissionString**. |
+|SharePoint:DelegateControl|Renders an ASP.NET web control. Delegate controls make their candidate controls pluggable and traceable.|
+|SharePoint:FeatureMenuTemplate|Represents a control that creates a template for a drop-down menu.|
+|SharePoint:Menu|Displays a menu in an ASP.NET web page.|
+|SharePoint:MenuItemTemplate|Represents a control that creates an item in a drop-down menu.|
+|SharePoint:ScriptBlock|Represents a script block control on a page.|
+|SharePoint:SiteActions|Represents a template control for the Site Action menu.|
+|SharePoint:SPSecurityTrimmedControl|Renders conditionally the contents of the control to the current user only if the current user has permissions defined in the **PermissionString**.|
    
 
 ### Suite Navigation control for public-facing sites

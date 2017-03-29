@@ -7,7 +7,7 @@ ms.assetid: 0f3decb5-dcd8-432f-9bb8-533f2d01bef7
 
 # Claims-based identity term definitions
 
-Table 1 contains definitions of key terms related to claims-based identity. 
+Table 1 contains definitions of key terms related to claims-based identity.
   
     
     

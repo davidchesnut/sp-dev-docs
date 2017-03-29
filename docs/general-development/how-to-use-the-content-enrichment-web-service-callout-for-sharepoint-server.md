@@ -6,8 +6,8 @@ ms.assetid: d4e44498-9a3d-4f2f-b5ba-6ebef9971dcb
 
 
 # How to: Use the Content Enrichment web service callout for SharePoint Server
-Learn how to implement the Content Enrichment web service in SharePoint Server 2013 to modify the managed properties of crawled items before they are indexed. 
-Search in SharePoint 2013 enables developers to add a custom step to content processing to modify the managed properties of crawled items before they are indexed. This custom step requires the implementation of an external web service--the Content Enrichment web service--that can enrich managed properties of items being processed; and then configuring the system to call this external web service. 
+Learn how to implement the Content Enrichment web service in SharePoint Server 2013 to modify the managed properties of crawled items before they are indexed.
+Search in SharePoint 2013 enables developers to add a custom step to content processing to modify the managed properties of crawled items before they are indexed. This custom step requires the implementation of an external web service--the Content Enrichment web service--that can enrich managed properties of items being processed; and then configuring the system to call this external web service.
   
     
     
@@ -16,7 +16,7 @@ Implementation of the external content enrichment web service relies on interfac
 ## Windows PowerShell Cmdlets to use with the Content Enrichment web service
 <a name="SP15_PowerShell_Cmdlets_Content_Enrichment"> </a>
 
-The Content Enrichment functionality is configured and enabled with the following Windows PowerShell cmdlets: 
+The Content Enrichment functionality is configured and enabled with the following Windows PowerShell cmdlets:
   
     
     
@@ -33,24 +33,24 @@ The Content Enrichment functionality is configured and enabled with the followin
 -  [New-SPEnterpriseSearchContentEnrichmentConfiguration](http://technet.microsoft.com/en-us/library/jj219502%28office.15%29.aspx)
     
   
-These Windows PowerShell cmdlets enable an administrator to configure the following: 
+These Windows PowerShell cmdlets enable an administrator to configure the following:
   
     
     
 
-- A custom set of managed properties to be sent to the external web service. 
+- A custom set of managed properties to be sent to the external web service.
     
   
-- A custom set of managed properties to be returned by the external web service. 
+- A custom set of managed properties to be returned by the external web service.
     
   
-- A trigger condition, that represents a predicate to execute for every item being processed. If a trigger condition is used, the external web service is called only when the trigger evaluates to **true**. If no trigger condition is used, all items are sent to the external web service. 
+- A trigger condition, that represents a predicate to execute for every item being processed. If a trigger condition is used, the external web service is called only when the trigger evaluates to **true**. If no trigger condition is used, all items are sent to the external web service.
     
   
 - A **FailureMode** that enables the web service to either fail items that cannot be processed during the content enrichment step or pass these items through without any modification. If the items are failed, they are not indexed and a warning is written to the ULS log.
     
   
-- A **DebugMode**, that enables rapid prototyping of the external web service. When enabled, the external web service receives all available managed properties. In **DebugMode**, the trigger condition is ignored and any managed properties output by the web service are also ignored. 
+- A **DebugMode**, that enables rapid prototyping of the external web service. When enabled, the external web service receives all available managed properties. In **DebugMode**, the trigger condition is ignored and any managed properties output by the web service are also ignored.
     
   
 - A **SendRawData** switch that sends the raw data of an item in binary form. This is useful when more metadata is required than what can be retrieved from the parsed version of the item.
@@ -64,24 +64,24 @@ In addition, there are options for specifying size limits and timeouts. See  [Cu
 ## Prerequisites for using the Content Enrichment web service callout for SharePoint Server 2013
 <a name="SP15ContentEnrich_prereq"> </a>
 
-To complete this how-to, you must have the following installed in your development environment: 
+To complete this how-to, you must have the following installed in your development environment:
   
     
     
 
-- Search in SharePoint 2013 
+- Search in SharePoint 2013
     
   
-- Visual Studio 2010 or similar .NET Framework-compatible development tool 
+- Visual Studio 2010 or similar .NET Framework-compatible development tool
     
   
-- Administrator privileges on your SharePoint Server 2013 installation 
+- Administrator privileges on your SharePoint Server 2013 installation
     
   
-- A server on which you can host the service with IIS 
+- A server on which you can host the service with IIS
     
   
-You must also know how to create a site in IIS and deploy a service to it 
+You must also know how to create a site in IIS and deploy a service to it
   
     
     
@@ -89,7 +89,7 @@ You must also know how to create a site in IIS and deploy a service to it
 ## Set up a content enrichment service project
 <a name="SP15ContentEnrich_setup"> </a>
 
-In this step, you will create the service implementation project and then add the required references to the project. 
+In this step, you will create the service implementation project and then add the required references to the project.
   
     
     
@@ -97,10 +97,10 @@ In this step, you will create the service implementation project and then add th
 ### To create the project for a content enrichment service
 
 
-1. In Visual Studio, on the menu bar choose **File**, **New**, **Project**. 
+1. In Visual Studio, on the menu bar choose **File**, **New**, **Project**.
     
   
-2. In **Project types**, under Visual C#, choose **WCF**. 
+2. In **Project types**, under Visual C#, choose **WCF**.
     
   
 3. Under **Templates**, choose **WCF Service Application**. In the **Name** field, type **ContentProcessingEnrichmentService**, and then choose the **OK** button.
@@ -113,13 +113,13 @@ In this step, you will create the service implementation project and then add th
 ### To add references to the content enrichment service project
 
 
-1. On the **Project** menu, choose **Add Reference**. 
+1. On the **Project** menu, choose **Add Reference**.
     
   
 2. Choose **Browse** and locate the **Microsoft.Office.Server.Search.ContentProcessingEnrichment** assembly in your SharePoint installation folder under _Installation Path_\\Microsoft Office Servers\\15.0\\Search\\Applications\\External. 
     
    > [!NOTE]
-   > If SharePoint is installed on a machine other than your development machine, copy the assembly over to your development machine and reference it from there. 
+   > If SharePoint is installed on a machine other than your development machine, copy the assembly over to your development machine and reference it from there.
 
 ## Create a content enrichment service
 <a name="SP15ContentEnrich_createservice"> </a>
@@ -140,13 +140,13 @@ The **IContentProcessingEnrichmentService** implementation writes the raw binary
 ### To create the class file for the content enrichment service
 
 
-1. On the **Project** menu, choose **Add New Item**. 
+1. On the **Project** menu, choose **Add New Item**.
     
   
-2. Under **Visual C#** in **Installed Templates**, choose **Web**, and then choose **WCF Service**. 
+2. Under **Visual C#** in **Installed Templates**, choose **Web**, and then choose **WCF Service**.
     
   
-3. Type **ContentProcessingEnrichmentService.svc**, and then choose **Add**. 
+3. Type **ContentProcessingEnrichmentService.svc**, and then choose **Add**.
     
   
 4. Delete the **IContentProcessingEnrichmentService.cs** interface that is created.
@@ -175,7 +175,7 @@ using Microsoft.Office.Server.Search.ContentProcessingEnrichment.PropertyTypes;
 ### To implement the IContentProcessingEnrichmentService interface method
 
 
-1. Add the following code inside the class to define the required constants and members. 
+1. Add the following code inside the class to define the required constants and members.
     
   ```cs
   
@@ -264,7 +264,7 @@ public ProcessedItem ProcessItem(Item item)
 3. Modify **web.config** to accept messages up to 8 MB, and configure **readerQuotas** to be a sufficiently large value.
     
   
-4. Add the following inside **<system.serviceModel>**. 
+4. Add the following inside **<system.serviceModel>**.
     
   ```XML
   
@@ -283,7 +283,7 @@ public ProcessedItem ProcessItem(Item item)
 </bindings>
   ```
 
-Build the project and deploy it to your IIS site. 
+Build the project and deploy it to your IIS site.
   
     
     
@@ -291,7 +291,7 @@ Build the project and deploy it to your IIS site.
 ## Configure SharePoint Server 2013
 <a name="SP15ContentEnrich_configure"> </a>
 
-Open the SharePoint Management Shell, and enter the following sequence of Windows PowerShell cmdlets. 
+Open the SharePoint Management Shell, and enter the following sequence of Windows PowerShell cmdlets.
   
     
     
@@ -309,19 +309,19 @@ Set-SPEnterpriseSearchContentEnrichmentConfiguration -SearchApplication
 $ssa -ContentEnrichmentConfiguration $config
 ```
 
-The sequence of Windows PowerShell cmdlets help you to first create a configuration object by using the  [New-SPEnterpriseSearchContentEnrichmentConfiguration](http://technet.microsoft.com/en-us/library/jj219502%28office.15%29.aspx) cmdlet. The configuration object is then pointed toward your service implementation; as a best practice, use `http://localhost:808` for _Site_URL_. 
+The sequence of Windows PowerShell cmdlets help you to first create a configuration object by using the  [New-SPEnterpriseSearchContentEnrichmentConfiguration](http://technet.microsoft.com/en-us/library/jj219502%28office.15%29.aspx) cmdlet. The configuration object is then pointed toward your service implementation; as a best practice, use `http://localhost:808` for _Site_URL_.
   
     
     
-The managed properties **Author** and **Filename** are sent to your service for every item that is being processed. In addition, you have informed the web service client that the service will output a single managed property, **Author**. In additional to managed properties, the web service client is configured to send the raw data of the item with a limitation on the size of the data. Finally, the  [Set-SPEnterpriseSearchContentEnrichmentConfiguration](http://technet.microsoft.com/en-us/library/jj219659%28office.15%29.aspx)cmdlet is used to store the entire configuration. After this cmdlet returns, the configuration is active and the crawl component uses this configuration for its next crawl process. 
+The managed properties **Author** and **Filename** are sent to your service for every item that is being processed. In addition, you have informed the web service client that the service will output a single managed property, **Author**. In additional to managed properties, the web service client is configured to send the raw data of the item with a limitation on the size of the data. Finally, the  [Set-SPEnterpriseSearchContentEnrichmentConfiguration](http://technet.microsoft.com/en-us/library/jj219659%28office.15%29.aspx)cmdlet is used to store the entire configuration. After this cmdlet returns, the configuration is active and the crawl component uses this configuration for its next crawl process.
   
     
     
-After this is finished, you can start a full crawl of your site. If the service is working correctly, you should be able to monitor the temporary folder on the server hosting your site for the documents written to disk. 
+After this is finished, you can start a full crawl of your site. If the service is working correctly, you should be able to monitor the temporary folder on the server hosting your site for the documents written to disk.
   
     
     
-You can remove the configuration later by using the following Windows PowerShell cmdlet. 
+You can remove the configuration later by using the following Windows PowerShell cmdlet.
   
     
     

@@ -7,35 +7,35 @@ ms.assetid: a1567278-fac4-4b3b-a814-56f2376c1217
 
 # Understanding Excel Services UDFs
 
-User-defined functions (UDFs) are custom functions that extend the calculation and data-import capabilities of Excel. Developers create custom calculation packages to provide: 
+User-defined functions (UDFs) are custom functions that extend the calculation and data-import capabilities of Excel. Developers create custom calculation packages to provide:
   
     
     
 
 
-- Functions that are not built into Excel. 
+- Functions that are not built into Excel.
     
   
-- Custom implementations to built-in functions. 
+- Custom implementations to built-in functions.
     
   
-- Custom data feeds for legacy or unsupported data sources, and application-specific data flows. 
+- Custom data feeds for legacy or unsupported data sources, and application-specific data flows.
     
   
 
-Users who create workbooks can call UDFs from a cell through formulas—for example, "=MyUdf(A1*3.42)"—just like they call built-in functions. 
+Users who create workbooks can call UDFs from a cell through formulas—for example, "=MyUdf(A1*3.42)"—just like they call built-in functions.
   
     
     
 
-Excel Services UDFs give you the ability to use formulas in cells to call custom functions written in managed code and deployed to Microsoft SharePoint Server 2010. You can create UDFs to: 
-- Call custom mathematical functions. 
+Excel Services UDFs give you the ability to use formulas in cells to call custom functions written in managed code and deployed to Microsoft SharePoint Server 2010. You can create UDFs to:
+- Call custom mathematical functions.
     
   
-- Get data from custom data sources into worksheets. 
+- Get data from custom data sources into worksheets.
     
   
-- Call Web services from the UDFs. 
+- Call Web services from the UDFs.
     
   
 
@@ -45,7 +45,7 @@ An easy way to create an Excel Services managed-code UDF is to use the Microsoft
   
     
     
-Microsoft.Office.Excel.Server.Udf.dll has been compiled using Microsoft .NET Framework 2.0. If you use Visual Studio 2003 to create your managed-code UDF, you will not be able to reference Microsoft.Office.Excel.Server.Udf.dll. It is not possible for an assembly created with an older version of the .NET Framework to reference an assembly created with .NET Framework 2.0. 
+Microsoft.Office.Excel.Server.Udf.dll has been compiled using Microsoft .NET Framework 2.0. If you use Visual Studio 2003 to create your managed-code UDF, you will not be able to reference Microsoft.Office.Excel.Server.Udf.dll. It is not possible for an assembly created with an older version of the .NET Framework to reference an assembly created with .NET Framework 2.0.
   
     
     
@@ -60,14 +60,14 @@ To use custom functions in a class as Excel Services UDF methods, you must mark 
   
     
     
-The **Microsoft.Office.Excel.Server.Udf.UdfMethod**attribute has an **IsVolatile** property. You use the **IsVolatile** property to specify a UDF method as volatile or nonvolatile. The **IsVolatile** property takes a Boolean value. The default value is **false**, which means that particular UDF method is nonvolatile. 
+The **Microsoft.Office.Excel.Server.Udf.UdfMethod**attribute has an **IsVolatile** property. You use the **IsVolatile** property to specify a UDF method as volatile or nonvolatile. The **IsVolatile** property takes a Boolean value. The default value is **false**, which means that particular UDF method is nonvolatile.
   
     
     
 
 ### Location of Microsoft.Office.Excel.Server.Udf.dll
 
-On the computer where you have installed SharePoint Server 2010, you can find a copy of Microsoft.Office.Excel.Server.Udf.dll at: 
+On the computer where you have installed SharePoint Server 2010, you can find a copy of Microsoft.Office.Excel.Server.Udf.dll at:
   
     
     
@@ -81,7 +81,7 @@ On the computer where you have installed SharePoint Server 2010, you can find a 
 
 ### Deployment Location Type
 
-UDF assemblies can reside in a local directory, global assembly cache, or network share. In a farm scenario, the local directory path must be identical across the farm. 
+UDF assemblies can reside in a local directory, global assembly cache, or network share. In a farm scenario, the local directory path must be identical across the farm.
   
     
     
@@ -92,7 +92,7 @@ You can expose the identity of a UDF assembly by using the full path or strong n
   
     
     
-For example, you can use: 
+For example, you can use:
   
     
     
@@ -100,10 +100,10 @@ For example, you can use:
 - C:\\UDFs\\MySampleUdf.dll 
     
   
-- \\\\MyNetworkServer\\UDFs\\MySampleUdf.dll 
+- \\\\MyNetworkServer\\UDFs\\MySampleUdf.dll
     
   
-- CompanyName.Hierarchichal.MyUdfNamespace.MyUdfClassName.dll, Version=1.1.0.0, Culture=en, PublicKeyToken=e8123117d7ba9ae38 
+- CompanyName.Hierarchichal.MyUdfNamespace.MyUdfClassName.dll, Version=1.1.0.0, Culture=en, PublicKeyToken=e8123117d7ba9ae38
     
   
 
@@ -119,7 +119,7 @@ Each Excel Services trusted location has an **AllowUdfs** flag.
     
 
 > [!NOTE]
-> The **AllowUdfs** flag is denoted by the **User-defined functions allowed** option on the Excel Services Trusted File Locations page. To learn how to navigate to the Trusted File Locations page, see [Step 3: Deploying and Enabling UDFs](step-3-deploying-and-enabling-udfs.md). 
+> The **AllowUdfs** flag is denoted by the **User-defined functions allowed** option on the Excel Services Trusted File Locations page. To learn how to navigate to the Trusted File Locations page, see [Step 3: Deploying and Enabling UDFs](step-3-deploying-and-enabling-udfs.md).
   
     
     
@@ -128,7 +128,7 @@ The default **AllowUdfs** value is **false**. If the **AllowUdfs** value is set 
   
     
     
-In order to allow UDFs to be called from a specific trusted location, you set the **AllowUdfs** value to **true**. 
+In order to allow UDFs to be called from a specific trusted location, you set the **AllowUdfs** value to **true**.
   
     
     

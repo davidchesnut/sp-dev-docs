@@ -6,7 +6,7 @@ ms.assetid: 58e68fb2-ba40-4861-912f-355e119a1c41
 
 
 # Reference threads and digest threads in SharePoint Server 2013 social feeds
-Learn about reference threads and digest threads, which are thread types that may be included in the collection of threads that make up a social feed in SharePoint Server 2013. 
+Learn about reference threads and digest threads, which are thread types that may be included in the collection of threads that make up a social feed in SharePoint Server 2013.
 When you retrieve a social feed, SharePoint Server 2013 returns a  [SocialFeed](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeed.aspx) object that contains the collection of [SocialThread](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThread.aspx) objects that make up the feed. These threads can represent conversations, single microblog posts, and notifications, which include events and reference threads. Threads that represent conversations may be returned by the server as digest threads.
   
     
@@ -37,11 +37,11 @@ You can identify a reference thread by its  [ThreadType](https://msdn.microsoft.
 
 |**Reference type**|**Description**|
 |:-----|:-----|
-| [LikeReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.LikeReference.aspx) ****|A reference to a post that a user likes. |
-| [MentionReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.MentionReference.aspx)|A reference to a post that mentions a user. |
-| [ReplyReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.ReplyReference.aspx)|A reference to a reply. |
-| [TagReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.TagReference.aspx)|A reference to a post that contains a tag. |
-| [Normal](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.Normal.aspx)|Not a reference thread. |
+| [LikeReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.LikeReference.aspx) ****|A reference to a post that a user likes.|
+| [MentionReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.MentionReference.aspx)|A reference to a post that mentions a user.|
+| [ReplyReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.ReplyReference.aspx)|A reference to a reply.|
+| [TagReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.TagReference.aspx)|A reference to a post that contains a tag.|
+| [Normal](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadType.Normal.aspx)|Not a reference thread.|
    
 The  [PostReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThread.PostReference.aspx) property returns a [SocialPostReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostReference.aspx) object that contains information about the thread that triggered the event. At a minimum, it contains the ID of the source thread, which you can then use with the [SocialFeedManager.GetFullThread](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.GetFullThread.aspx) method to retrieve the thread if it still exists.
   
@@ -51,7 +51,7 @@ The  [PostReference](https://msdn.microsoft.com/library/Microsoft.SharePoint.Cli
   
     
     
-Not all feed-related activities are posted to the feed as reference threads. For example, Following notifications (such as when someone starts following a site) are not reference threads. 
+Not all feed-related activities are posted to the feed as reference threads. For example, Following notifications (such as when someone starts following a site) are not reference threads.
   
     
     
@@ -62,7 +62,7 @@ Not all feed-related activities are posted to the feed as reference threads. For
     
     
 
-Reply, like, and mention references are stored indefinitely in the user's personal feed. Tag references are stored in the Distributed Cache, so they are stored temporarily. For more information about caching, see  [Overview of microblog features, feeds, and the Distributed Cache service in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj219700%28v=office.15%29.aspx#cache). 
+Reply, like, and mention references are stored indefinitely in the user's personal feed. Tag references are stored in the Distributed Cache, so they are stored temporarily. For more information about caching, see  [Overview of microblog features, feeds, and the Distributed Cache service in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj219700%28v=office.15%29.aspx#cache).
   
     
     

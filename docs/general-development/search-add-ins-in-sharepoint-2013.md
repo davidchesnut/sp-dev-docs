@@ -6,13 +6,13 @@ ms.assetid: 21682e45-dd78-4f3c-8f1e-cdd48de3bde2
 
 
 # Search add-ins in SharePoint 2013
-Learn about search SharePoint Add-ins and how you can create your own search add-ins. The add-ins you create can be added to the SharePoint add-ins catalog so that they can be used in both on-premises deployment and Office 365. Search add-ins only work with data that is stored in the search index and not with the original source documents. 
-SharePoint Add-ins are self-contained pieces of functionality that extend the capabilities of a SharePoint website. These add-ins solve specific business and end-user needs by integrating the best of the web and SharePoint. An add-in can contain various SharePoint elements like Lists, Remote Event Receivers, Content Types, Workflows, Workflow Custom Activities, Site Columns, Modules, Menu Item Custom Actions, Client Web Parts, and Search Configurations. For more information, see  [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx). 
+Learn about search SharePoint Add-ins and how you can create your own search add-ins. The add-ins you create can be added to the SharePoint add-ins catalog so that they can be used in both on-premises deployment and Office 365. Search add-ins only work with data that is stored in the search index and not with the original source documents.
+SharePoint Add-ins are self-contained pieces of functionality that extend the capabilities of a SharePoint website. These add-ins solve specific business and end-user needs by integrating the best of the web and SharePoint. An add-in can contain various SharePoint elements like Lists, Remote Event Receivers, Content Types, Workflows, Workflow Custom Activities, Site Columns, Modules, Menu Item Custom Actions, Client Web Parts, and Search Configurations. For more information, see  [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx).
   
     
     
 
-A search add-in is an SharePoint Add-in that uses search functionality. In a search add-in, you can use the SharePoint 2013 Search API to locate content. Depending on the type of permissions set up in your [add-in manifest](http://msdn.microsoft.com/library/7cd5850f-cbf3-48d2-bcb7-59b8f4ed0e63%28Office.15%29.aspx), you can search either inside or outside the contents of the add-in. In addition, you can also use a search add-in to distribute search configurations from one SharePoint installation to another. 
+A search add-in is an SharePoint Add-in that uses search functionality. In a search add-in, you can use the SharePoint 2013 Search API to locate content. Depending on the type of permissions set up in your [add-in manifest](http://msdn.microsoft.com/library/7cd5850f-cbf3-48d2-bcb7-59b8f4ed0e63%28Office.15%29.aspx), you can search either inside or outside the contents of the add-in. In addition, you can also use a search add-in to distribute search configurations from one SharePoint installation to another.
 The core design of a search add-in depends on the deployment method that you choose. The following section summarizes the available options and their benefits. For more information, see  [Choose patterns for developing and hosting your SharePoint Add-in](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457%28Office.15%29.aspx)
   
     
@@ -22,12 +22,12 @@ The core design of a search add-in depends on the deployment method that you cho
 ## Deploy your search add-ins
 <a name="SP15_Deploy_search_apps"> </a>
 
-There are two ways to deploy your search add-in: 
+There are two ways to deploy your search add-in:
   
     
     
 
-1. SharePoint hosted - On-premises deployment. The search add-in is hosted inside the corporate network on the company's servers. The company's administrators manage the add-in. This scenario offers flexibility in deployment and support because the hardware and software is maintained locally by the administrators. 
+1. SharePoint hosted - On-premises deployment. The search add-in is hosted inside the corporate network on the company's servers. The company's administrators manage the add-in. This scenario offers flexibility in deployment and support because the hardware and software is maintained locally by the administrators.
     
   
 2. Provider hosted - Any web server hosting. The search add-in is hosted by any provider, outside of the customer's SharePoint server. 
@@ -37,18 +37,18 @@ There are two ways to deploy your search add-in:
 ## Search add-in development environment
 <a name="SP15_Search_app_dev_environment"> </a>
 
-To create a search add-in, use one of these two environments: 
+To create a search add-in, use one of these two environments:
   
     
     
 
-- Microsoft Visual Studio 2012 or Microsoft Visual Studio 2013 or Visual Studio 2015 
+- Microsoft Visual Studio 2012 or Microsoft Visual Studio 2013 or Visual Studio 2015
     
   
-- Napa Office 365 Development Tools 
+- Napa Office 365 Development Tools
     
   
-With Visual Studio 2013 and later, you can publish your search add-ins to both on-premises or in Office 365. With Napa, alternatively, you can build and publish search add-ins within your browser. These add-ins can later be exported to and re-packaged for on-premises customers. For more information about the two development environments and how to use them to create search add-ins, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md) and [Create Office Add-ins with Napa with an Office 365 Developer Site](http://msdn.microsoft.com/library/82a3645c-0911-4926-9176-236ac8d28bdd%28Office.15%29.aspx). 
+With Visual Studio 2013 and later, you can publish your search add-ins to both on-premises or in Office 365. With Napa, alternatively, you can build and publish search add-ins within your browser. These add-ins can later be exported to and re-packaged for on-premises customers. For more information about the two development environments and how to use them to create search add-ins, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md) and [Create Office Add-ins with Napa with an Office 365 Developer Site](http://msdn.microsoft.com/library/82a3645c-0911-4926-9176-236ac8d28bdd%28Office.15%29.aspx).
   
     
     
@@ -56,7 +56,7 @@ With Visual Studio 2013 and later, you can publish your search add-ins to both o
 ## APIs for search add-ins
 <a name="SP15_APIs_search_apps"> </a>
 
-You can use the wide range of search-related APIs that SharePoint offers for search add-ins. The following table lists these APIs and the location of their class libraries. 
+You can use the wide range of search-related APIs that SharePoint offers for search add-ins. The following table lists these APIs and the location of their class libraries.
   
     
     
@@ -66,15 +66,15 @@ You can use the wide range of search-related APIs that SharePoint offers for sea
 
 |**API name**|**Class library**|
 |:-----|:-----|
-|.NET client object model (CSOM) |Microsoft.SharePoint.Client.Search.dll |
-|Silverlight CSOM |Microsoft.SharePoint.Client.Search.Silverlight.dll |
-|ECMAScript (JavaScript, JScript) object model (JSOM) |SP.search.js |
-|Search REST API |http://server/_api/search/query |
+|.NET client object model (CSOM)|Microsoft.SharePoint.Client.Search.dll|
+|Silverlight CSOM|Microsoft.SharePoint.Client.Search.Silverlight.dll|
+|ECMAScript (JavaScript, JScript) object model (JSOM)|SP.search.js|
+|Search REST API|http://server/_api/search/query|
    
 
 ### Code examples
 
-Here are some code examples using the different APIs. Each code example sends a simple Search query that contains the keyword "SharePoint" to the Search service application (SSA). 
+Here are some code examples using the different APIs. Each code example sends a simple Search query that contains the keyword "SharePoint" to the Search service application (SSA).
   
     
     
@@ -131,7 +131,7 @@ context.executeQueryAsync(onQuerySuccess, onQueryFail);
   
     
     
-HTTP GET request 
+HTTP GET request
   
     
     
@@ -143,7 +143,7 @@ HTTP GET request
 http://mylocalhost/_api/search/query?querytext='SharePoint'
 ```
 
-HTTP POST request 
+HTTP POST request
   
     
     
@@ -208,7 +208,7 @@ An SharePoint Add-in has its own identity and is associated with a security prin
 
 ### Request permissions in the add-in manifest file
 
-The add-in manifest file is in XML format and can be edited directly. To get permissions, you write a request, as shown in the following example: 
+The add-in manifest file is in XML format and can be edited directly. To get permissions, you write a request, as shown in the following example:
   
     
     

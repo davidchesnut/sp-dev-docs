@@ -6,17 +6,17 @@ ms.assetid: 4656f6a0-36fd-4b7d-898e-8cd4bdbbda57
 
 
 # Create a workflow with elevated permissions by using the SharePoint 2013 Workflow platform
-Learn how to create a workflow with elevated permissions by using the SharePoint 2013 Workflow platform. 
+Learn how to create a workflow with elevated permissions by using the SharePoint 2013 Workflow platform.
 ## SharePoint Server 2013 App Catalog and workflow
 <a name="section1"> </a>
 
-This article describes how to create SharePoint 2013 workflows that access objects in SharePoint that require elevated permissions. These solutions use two features: granting permissions to the workflow app and wrapping actions with the App Step. 
+This article describes how to create SharePoint 2013 workflows that access objects in SharePoint that require elevated permissions. These solutions use two features: granting permissions to the workflow app and wrapping actions with the App Step.
   
     
     
 
 > [!IMPORTANT]
-> This article assumes that the SharePoint 2013 Workflow platform has been installed and configured and that SharePoint 2013 has been configured for apps. For more information on SharePoint 2013 Workflow and apps for SharePoint 2013, including installation and configuration, see  [Workflow in SharePoint 2013](http://technet.microsoft.com/sharepoint/jj556245.aspx) and [Install and manage apps for SharePoint 2013](http://msdn.microsoft.com/library/733647a3-a5d3-475b-967d-3bb627c2a0c2.aspx). 
+> This article assumes that the SharePoint 2013 Workflow platform has been installed and configured and that SharePoint 2013 has been configured for apps. For more information on SharePoint 2013 Workflow and apps for SharePoint 2013, including installation and configuration, see  [Workflow in SharePoint 2013](http://technet.microsoft.com/sharepoint/jj556245.aspx) and [Install and manage apps for SharePoint 2013](http://msdn.microsoft.com/library/733647a3-a5d3-475b-967d-3bb627c2a0c2.aspx).
   
     
     
@@ -24,7 +24,7 @@ This article describes how to create SharePoint 2013 workflows that access objec
 
 ### Overview of creating a workflow with elevated permissions
 
-Imagine that as a SharePoint administrator, you would like to define some processes for managing user requests for purchases of apps from the Office Store. In the simplest case you want to send an acknowledgment email when a user requests an app. In addition, you could also want to add structure to the request approval process. 
+Imagine that as a SharePoint administrator, you would like to define some processes for managing user requests for purchases of apps from the Office Store. In the simplest case you want to send an acknowledgment email when a user requests an app. In addition, you could also want to add structure to the request approval process.
   
     
     
@@ -32,18 +32,18 @@ By default, workflow does not have permissions to access the app request catalog
   
     
     
-To solve this, you have to create a workflow with elevated permissions by doing the following in the Site Collection site: 
+To solve this, you have to create a workflow with elevated permissions by doing the following in the Site Collection site:
   
     
     
 
-1. Allow workflow to use app permissions. 
+1. Allow workflow to use app permissions.
     
   
-2. Grant full control permission to workflow. 
+2. Grant full control permission to workflow.
     
   
-3. Develop the workflow to wrap actions inside an App Step. 
+3. Develop the workflow to wrap actions inside an App Step.
     
   
 
@@ -76,16 +76,16 @@ The first step is to allow workflow to use app permissions. You configure workfl
   
 
   
-2. Go to **Site Settings**. 
+2. Go to **Site Settings**.
     
   
-3. In the **Site Actions** section, select **Manage site features**. 
+3. In the **Site Actions** section, select **Manage site features**.
     
   
-4. Locate the feature called **Workflows can use app permissions**, as shown in the figure, and then click **Activate**. 
+4. Locate the feature called **Workflows can use app permissions**, as shown in the figure, and then click **Activate**.
     
    > [!CAUTION]
-   > This feature will not activate unless you have properly configured the SharePoint 2013 Workflow platform and also apps for SharePoint. 
+   > This feature will not activate unless you have properly configured the SharePoint 2013 Workflow platform and also apps for SharePoint.
 
    **Figure: The site feature, 'Workflows can use app permissions'**
 
@@ -100,7 +100,7 @@ The first step is to allow workflow to use app permissions. You configure workfl
 
 ### Granting full control permission to a workflow
 
-In order for the workflow to function properly it must be granted full control in the site. The following procedure grants the full control permission to the workflow. 
+In order for the workflow to function properly it must be granted full control in the site. The following procedure grants the full control permission to the workflow.
   
     
     
@@ -127,13 +127,13 @@ In order for the workflow to function properly it must be granted full control i
   
 
   
-2. Go to **Site Settings**. 
+2. Go to **Site Settings**.
     
   
-3. In the **Users and Permissions** section, select **Site app permissions**. 
+3. In the **Users and Permissions** section, select **Site app permissions**.
     
   
-4. Copy the **client** section of the **App Identifier**. This is the identifier between the last "|" and the "@" sign, as shown in the figure. 
+4. Copy the **client** section of the **App Identifier**. This is the identifier between the last "|" and the "@" sign, as shown in the figure.
     
    **Figure: Selecting the App Identifier**
 
@@ -150,11 +150,11 @@ In order for the workflow to function properly it must be granted full control i
     Example: http://{hostname}/{the Site Collection}/_layouts/15/appinv.aspx. 
     
    > [!NOTE]
-   > The 'app' in this step refers to the Workflow app in general and not just a specific workflow. Individual workflows cannot be access controlled. When you enable app permissions you are enabling for all workflows within the Site Collection. 
+   > The 'app' in this step refers to the Workflow app in general and not just a specific workflow. Individual workflows cannot be access controlled. When you enable app permissions you are enabling for all workflows within the Site Collection.
 
     For more information about setting up a workflow, see  [Blog article from Sympraxis Consulting: Looping Through Content in a SharePoint 2013 Site Workflow](http://sympmarc.com/2016/01/14/looping-through-content-in-a-sharepoint-2013-site-workflow-part-1-introduction)
     
-    The following figure shows an example. 
+    The following figure shows an example.
     
 
    **Figure: The appinv.aspx page and URL example**
@@ -167,7 +167,7 @@ In order for the workflow to function properly it must be granted full control i
   
 
   
-6. Paste the client id in the **App Id** field and then click **Lookup**, as shown in the figure. 
+6. Paste the client id in the **App Id** field and then click **Lookup**, as shown in the figure.
     
   
 7. Paste the following **Permissions Request** XML to grant full control permission.
@@ -184,7 +184,7 @@ In order for the workflow to function properly it must be granted full control i
    > [!CAUTION]
    > There are no placeholders in the **Scope** value above. It is a literal value. Enter it exactly as it appears here.
 
-    The following figure shows an example of the completed page. 
+    The following figure shows an example of the completed page.
     
 
    **Figure: Looking up an App Id**
@@ -197,10 +197,10 @@ In order for the workflow to function properly it must be granted full control i
   
 
   
-8. Click **Create**. 
+8. Click **Create**.
     
   
-9. You will then be asked to trust the Workflow app, as shown in the figure. Click **Trust It**. 
+9. You will then be asked to trust the Workflow app, as shown in the figure. Click **Trust It**.
     
    **Figure: Trust the Workflow app**
 
@@ -223,16 +223,16 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
 ### To wrap actions inside an App Step
 
 
-1. Open the App Catalog site in SharePoint Designer 2013. 
+1. Open the App Catalog site in SharePoint Designer 2013.
     
   
-2. Create a new Custom List on which to run the workflow. In this example the list name is **App Demo**. 
+2. Create a new Custom List on which to run the workflow. In this example the list name is **App Demo**.
     
   
 3. Click **Workflows** in the navigation window.
     
   
-4. Create a new List Workflow for the App Demo list, as shown in the figure. 
+4. Create a new List Workflow for the App Demo list, as shown in the figure.
     
    **Figure: Create a new List workflow**
 
@@ -244,7 +244,7 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
   
 
   
-5. Insert an **App Step**, as shown in the figure. 
+5. Insert an **App Step**, as shown in the figure.
     
    **Figure: Add an App Step**
 
@@ -256,7 +256,7 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
   
 
   
-6. Insert a **Send an Email** action in the **App Step**. 
+6. Insert a **Send an Email** action in the **App Step**.
     
   
 7. Click the **address book** button. In the **To** field select **Workflow lookup for a user** and click **add** as shown in the figure.
@@ -310,7 +310,7 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
   
 
   
-12. Clear the check box next to **Automatic updates to workflow status to the current stage name**, and then click **Publish**, as shown in the figure. 
+12. Clear the check box next to **Automatic updates to workflow status to the current stage name**, and then click **Publish**, as shown in the figure.
     
    **Figure: Clear the automatic updates check mark and then publish**
 
@@ -326,7 +326,7 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
 ## Understanding how it works
 <a name="section2"> </a>
 
-To understand why elevating permissions for a workflow is required, consider that workflows are fundamentally apps for SharePoint and they follow the same authorization rules of the app model. The default configuration for workflow is that the effective permissions of the workflow are an intersection of user permissions and the app permissions, as shown in the figure. 
+To understand why elevating permissions for a workflow is required, consider that workflows are fundamentally apps for SharePoint and they follow the same authorization rules of the app model. The default configuration for workflow is that the effective permissions of the workflow are an intersection of user permissions and the app permissions, as shown in the figure.
   
     
     
@@ -344,22 +344,22 @@ To understand why elevating permissions for a workflow is required, consider tha
   
     
     
-There are two reasons why it is necessary to elevate permissions to create a workflow in the App Request list. These are: 
+There are two reasons why it is necessary to elevate permissions to create a workflow in the App Request list. These are:
   
     
     
 
-- By default, workflow only has write permission. 
+- By default, workflow only has write permission.
     
   
-- The user has no permissions. 
+- The user has no permissions.
     
   
 The first step to solve this problem is to allow the application to authorize by using only its identity and ignoring that of the user. This is done by enabling the App Step feature. The second step grants full control permission to the workflow. 
   
     
     
-The following diagram illustrates the change in permissions 
+The following diagram illustrates the change in permissions
   
     
     

@@ -9,7 +9,7 @@ ms.assetid: 08c687aa-e485-4269-aea8-4333da3588a5
 
 ## Signing in to SharePoint
 
-When a user signs in to SharePoint Server, the user's token is validated and then used to sign in to SharePoint. The user's token is a security token issued by a claims provider. 
+When a user signs in to SharePoint Server, the user's token is validated and then used to sign in to SharePoint. The user's token is a security token issued by a claims provider.
   
     
     
@@ -31,18 +31,18 @@ SharePoint Server then does claims augmentation and handles the resulting token 
   
     
     
-All claims sign-in types rely on passive sign-in. The passive sign-in happens by using Windows challenge, but from a separate login page that arrives through a 302 redirect. This mode is useful when more than one sign-in method is turned on and the user must choose between the supported claims providers. Win32 clients must support the forms-based authentication that is implemented in Office clients. Some Office clients follow a different protocol. 
+All claims sign-in types rely on passive sign-in. The passive sign-in happens by using Windows challenge, but from a separate login page that arrives through a 302 redirect. This mode is useful when more than one sign-in method is turned on and the user must choose between the supported claims providers. Win32 clients must support the forms-based authentication that is implemented in Office clients. Some Office clients follow a different protocol.
   
     
     
 
 ### SAML passive sign-in mode
 
-In Security Assertion Markup Language (SAML) passive sign-in, when a user signs in, the client (which might be a webpage) is redirected to the designated claims provider (for example, the Windows Live ID claims provider). After the claims provider authenticates the user, SharePoint Server takes the SAML token presented by the claims provider, processes the SAML token, and then augments the claims. 
+In Security Assertion Markup Language (SAML) passive sign-in, when a user signs in, the client (which might be a webpage) is redirected to the designated claims provider (for example, the Windows Live ID claims provider). After the claims provider authenticates the user, SharePoint Server takes the SAML token presented by the claims provider, processes the SAML token, and then augments the claims.
   
     
     
-For SAML-based claims providers, like the Active Directory Federation Services (ADFS) claims provider and the Windows Live ID claims provider, signing in by using the SAML passive sign-in mode is the only supported way. The SAML passive sign-in is the SharePoint online identity model. 
+For SAML-based claims providers, like the Active Directory Federation Services (ADFS) claims provider and the Windows Live ID claims provider, signing in by using the SAML passive sign-in mode is the only supported way. The SAML passive sign-in is the SharePoint online identity model.
   
     
     
@@ -53,7 +53,7 @@ For SAML-based claims providers, like the Active Directory Federation Services (
     
     
 
-Win32 clients must support the forms-based authentication that is implemented in Office clients. 
+Win32 clients must support the forms-based authentication that is implemented in Office clients.
   
     
     
@@ -64,14 +64,14 @@ In ASP.NET membership and role passive sign-in, the sign-in happens by redirecti
   
     
     
-SharePoint Serverthen does claims augmentation. Win32 clients must support the forms-based authentication that is implemented in Office clients. 
+SharePoint Serverthen does claims augmentation. Win32 clients must support the forms-based authentication that is implemented in Office clients.
   
     
     
 
 ### Windows classic mode sign-in
 
-The Windows classic mode sign-in is deprecated in this release. In Windows classic mode sign-in, the sign-in happens with the Integrated Windows authentication challenge by using Negotiate (NTLM/Kerberos). No claims augmentation is done, so some features (for example, multitenant support for service applications and custom claims providers) do not work when a user signs in by using this mode. 
+The Windows classic mode sign-in is deprecated in this release. In Windows classic mode sign-in, the sign-in happens with the Integrated Windows authentication challenge by using Negotiate (NTLM/Kerberos). No claims augmentation is done, so some features (for example, multitenant support for service applications and custom claims providers) do not work when a user signs in by using this mode.
   
     
     
@@ -86,7 +86,7 @@ You can enable anonymous access for a web application. Administrators of sites w
   
     
     
-SharePoint Server then does claims augmentation. Win32 clients must support the forms-based authentication that is implemented in Office clients. 
+SharePoint Server then does claims augmentation. Win32 clients must support the forms-based authentication that is implemented in Office clients.
   
     
     

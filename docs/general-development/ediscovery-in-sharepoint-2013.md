@@ -6,30 +6,30 @@ ms.assetid: 45cb324a-75f5-444d-a0fa-5c223df19016
 
 
 # eDiscovery in SharePoint 2013
-Learn about eDiscovery features in SharePoint 2013. You can use eDiscovery to provide litigators the ability to discover content in electronic format. 
+Learn about eDiscovery features in SharePoint 2013. You can use eDiscovery to provide litigators the ability to discover content in electronic format.
 ## Introduction to eDiscovery in SharePoint 2013
 <a name="SP15_eDiscoveryInSP_IntroductionToeDiscovery"> </a>
 
-eDiscovery is how records managers and litigators discover content in electronic format. Typically, eDiscovery requires searching for documents, websites, and email messages spread across laptops, email servers, file servers, and other sources, and collecting and acting on content that meets the criteria for a legal case. 
+eDiscovery is how records managers and litigators discover content in electronic format. Typically, eDiscovery requires searching for documents, websites, and email messages spread across laptops, email servers, file servers, and other sources, and collecting and acting on content that meets the criteria for a legal case.
   
     
     
-In SharePoint Server 2010, Microsoft added the Hold and eDiscovery feature, which made it possible to place a hold on any site in SharePoint. A records manager could put documents, pages, and list items on hold, which prevented users from deleting or editing them. Exchange 2010 introduced a way to place legal holds on mailboxes, conduct searches across multiple mailboxes, and use a Windows PowerShell cmdlet to export mailboxes. 
+In SharePoint Server 2010, Microsoft added the Hold and eDiscovery feature, which made it possible to place a hold on any site in SharePoint. A records manager could put documents, pages, and list items on hold, which prevented users from deleting or editing them. Exchange 2010 introduced a way to place legal holds on mailboxes, conduct searches across multiple mailboxes, and use a Windows PowerShell cmdlet to export mailboxes.
   
     
     
-eDiscovery in SharePoint 2013 and includes new ways to reduce the cost and complexity of discovery. These include: 
+eDiscovery in SharePoint 2013 and includes new ways to reduce the cost and complexity of discovery. These include:
   
     
     
 
-- **The eDiscovery Center**, a central SharePoint site used to manage preservation, search, and export of content stored in Exchange and SharePoint across SharePoint farms and Exchange servers. 
+- **The eDiscovery Center**, a central SharePoint site used to manage preservation, search, and export of content stored in Exchange and SharePoint across SharePoint farms and Exchange servers.
     
   
 - **SharePoint In-Place Hold**, which preserves entire SharePoint sites. In-Place Hold protects all documents, pages, and list items within the site but allows users to continue to edit and delete preserved content. 
     
   
-- **Exchange In-Place Hold**, which preserves Exchange mailboxes. In-Place Hold protects all mailbox content through the same UI and APIs used to preserve SharePoint sites. 
+- **Exchange In-Place Hold**, which preserves Exchange mailboxes. In-Place Hold protects all mailbox content through the same UI and APIs used to preserve SharePoint sites.
     
   
 - **Query-based preservation** allows users to apply query filters to one or more Exchange mailboxes and SharePoint sites and restrict the content that is held.
@@ -39,11 +39,11 @@ eDiscovery in SharePoint 2013 and includes new ways to reduce the cost and compl
 ## How eDiscovery works in SharePoint 2013
 <a name="SP15_eDiscoveryInSP_HoweDiscoveryWorks"> </a>
 
-eDiscovery uses search service applications (SSAs) to crawl SharePoint farms. You can configure SSAs in many ways, but the most common way is to have a central search services farm that crawls multiple SharePoint farms. You can use this one search service to crawl all SharePoint content, or you can use it to crawl specific regions—for example, all SharePoint content in Europe. 
+eDiscovery uses search service applications (SSAs) to crawl SharePoint farms. You can configure SSAs in many ways, but the most common way is to have a central search services farm that crawls multiple SharePoint farms. You can use this one search service to crawl all SharePoint content, or you can use it to crawl specific regions—for example, all SharePoint content in Europe.
   
     
     
-To crawl a SharePoint farm, search first uses a service application proxy to connect to it. The eDiscovery Center uses the proxy connection to send preservations to SharePoint sites in other SharePoint farms. 
+To crawl a SharePoint farm, search first uses a service application proxy to connect to it. The eDiscovery Center uses the proxy connection to send preservations to SharePoint sites in other SharePoint farms.
   
     
     
@@ -51,7 +51,7 @@ To crawl a SharePoint farm, search first uses a service application proxy to con
 ## Prerequisites
 <a name="SP15_eDiscoveryInSP_Prerequisites"> </a>
 
-Before deploying SharePoint Server eDiscovery features, you should plan the search service application infrastructure for your organization. For example, if you have two separate SSAs that crawl specific sets of SharePoint sites, you'll need one eDiscovery Center for each SSA. 
+Before deploying SharePoint Server eDiscovery features, you should plan the search service application infrastructure for your organization. For example, if you have two separate SSAs that crawl specific sets of SharePoint sites, you'll need one eDiscovery Center for each SSA.
   
     
     
@@ -59,15 +59,15 @@ Before deploying SharePoint Server eDiscovery features, you should plan the sear
 ## Site holds
 <a name="SP15_eDiscoveryInSP_SiteHolds"> </a>
 
-SharePoint preserves content on the site level. When you preserve a site, its lists, libraries, and subsites are preserved. If you preserve a root site collection, all documents, pages, lists, and subsites in that site collection are preserved. 
+SharePoint preserves content on the site level. When you preserve a site, its lists, libraries, and subsites are preserved. If you preserve a root site collection, all documents, pages, lists, and subsites in that site collection are preserved.
   
     
     
-To hold a site, create a Discovery Case in the eDiscovery Center. A case is a container for all of the queries, content, and preservations associated with specific litigation. After you create the case, create a Discovery Set to specify the site. To validate the site, just enter its URL address. 
+To hold a site, create a Discovery Case in the eDiscovery Center. A case is a container for all of the queries, content, and preservations associated with specific litigation. After you create the case, create a Discovery Set to specify the site. To validate the site, just enter its URL address.
   
     
     
-In-Place Hold works by retaining content where it lives at the time the discovery search is completed. When content items are edited or deleted, eDiscovery places a copy of the item in a specific document library, called the Preservation Hold Library, on the SharePoint site where the content was modified. Only the search indexer and users with site collection administrator permission or web application permission can access the Preservation Hold Library. Most users without these permissions do not see the library and do not know it exists or that the content is copied there. 
+In-Place Hold works by retaining content where it lives at the time the discovery search is completed. When content items are edited or deleted, eDiscovery places a copy of the item in a specific document library, called the Preservation Hold Library, on the SharePoint site where the content was modified. Only the search indexer and users with site collection administrator permission or web application permission can access the Preservation Hold Library. Most users without these permissions do not see the library and do not know it exists or that the content is copied there.
   
     
     
@@ -75,7 +75,7 @@ To preserve content in a way that minimizes storage space and maximizes efficien
   
     
     
-If multiple holds are placed on a site, the next edit of a document is copied again, even though it may have already been copied for the first hold. 
+If multiple holds are placed on a site, the next edit of a document is copied again, even though it may have already been copied for the first hold.
   
     
     

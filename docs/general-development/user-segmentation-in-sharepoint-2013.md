@@ -6,13 +6,13 @@ ms.assetid: 85eabab0-4b8a-4849-9cba-80fd06732183
 
 
 # User segmentation in SharePoint 2013
-Display content you tailor for user segments you define—for example, based on locale, interests, gender, or referral links—by using a combination of term sets, the Content Search Web Part, and query rules in SharePoint Server 2013. 
+Display content you tailor for user segments you define—for example, based on locale, interests, gender, or referral links—by using a combination of term sets, the Content Search Web Part, and query rules in SharePoint Server 2013.
 SharePoint Server 2013 provides the building blocks to tailor content you show on a SharePoint 2013 site, depending on certain attributes of end-users, for example their gender, where they live, their interests, or referral links. These groupings of user attributes are known as user segments. 
   
     
     
 
-In SharePoint 2013, this user segmentation functionality can be beneficial in many scenarios, such as: 
+In SharePoint 2013, this user segmentation functionality can be beneficial in many scenarios, such as:
 - Displaying different banners on a page depending on the end-user's gender 
     
   
@@ -22,19 +22,19 @@ In SharePoint 2013, this user segmentation functionality can be beneficial in ma
 - Displaying different articles on a page depending on the end-user's referrer link (the web site that brought the end-user to your page). 
     
   
-To implement user segmentation in SharePoint, you'll do three things: create a term set for each user segment, extend the Content Search Web Part to make it aware of your user segments, and then use query rules to perform specific actions for each user segment. 
+To implement user segmentation in SharePoint, you'll do three things: create a term set for each user segment, extend the Content Search Web Part to make it aware of your user segments, and then use query rules to perform specific actions for each user segment.
 ## Prerequisites
 <a name="SP15_Prerequisites"> </a>
 
-Before you get started implementing user segmentation in SharePoint, be sure to have the following installed in your development environment: 
+Before you get started implementing user segmentation in SharePoint, be sure to have the following installed in your development environment:
   
     
     
 
-- SharePoint Server 2013 
+- SharePoint Server 2013
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
 This article assumes that you have experience with developing Web Parts in SharePoint. For more information on developing Web Parts, refer to  [Building Block: Web Parts](http://msdn.microsoft.com/en-us/library/ee535520%28v=office.14%29.aspx)
@@ -45,7 +45,7 @@ This article assumes that you have experience with developing Web Parts in Share
 ## Overview on adding user segmentation functionality to your SharePoint site
 <a name="SP15_Overview_User_Segmentation"> </a>
 
-Figure 1 shows the basic steps to add user segmentation functionality to your SharePoint site. 
+Figure 1 shows the basic steps to add user segmentation functionality to your SharePoint site.
   
     
     
@@ -280,11 +280,11 @@ private void AddMycustomProperties(object sender, BeforeSerializeToClientEventAr
 ## Upload the custom Web Part to the SharePoint Web Part Gallery
 <a name="SP15_Upload_custom_web_part"> </a>
 
-In order to use your custom Web Part in your page, you need to upload the Web Part to the **SharePoint Web Part Gallery**. 
+In order to use your custom Web Part in your page, you need to upload the Web Part to the **SharePoint Web Part Gallery**.
   
     
     
-In the **SharePoint Web Part Gallery**, choose **Site Settings**, and then choose **Web parts** under **Web Designer Galleries**. On the **Files** tab, choose **Upload Document**. 
+In the **SharePoint Web Part Gallery**, choose **Site Settings**, and then choose **Web parts** under **Web Designer Galleries**. On the **Files** tab, choose **Upload Document**.
   
     
     
@@ -292,7 +292,7 @@ In the **SharePoint Web Part Gallery**, choose **Site Settings**, and then choos
 ## Add query rules to carry out specific actions that depend on the user segment
 <a name="SP15_Add_query_rules_to_carry_out_actions"> </a>
 
-A query rule transforms queries to improve the relevance of search results by reacting intelligently to what the user might be trying to find. In a query rule, you specify conditions and correlated actions. When a query meets the conditions in a query rule, the search system performs the actions specified in the rule to improve the relevance of the search results, such as narrowing down the results or changing the order in which results are displayed. 
+A query rule transforms queries to improve the relevance of search results by reacting intelligently to what the user might be trying to find. In a query rule, you specify conditions and correlated actions. When a query meets the conditions in a query rule, the search system performs the actions specified in the rule to improve the relevance of the search results, such as narrowing down the results or changing the order in which results are displayed.
   
     
     
@@ -307,24 +307,24 @@ When implementing user segmentation, you use query rules to define conditions an
 1. In your publishing site collection in **Site Settings**, choose **Site Collection Administration**, and then choose **Search Query Rules**. 
     
   
-2. Choose a result source, and then choose **New Query Rule**. 
+2. Choose a result source, and then choose **New Query Rule**.
     
   
-3. Type a rule name in the **Rule Name** field. Then, click to expand **Context**. 
+3. Type a rule name in the **Rule Name** field. Then, click to expand **Context**.
     
   
-4. Under the **Query is performed by these user segments** section, choose **One of these user segments**, and then click **Add User Segment**. 
+4. Under the **Query is performed by these user segments** section, choose **One of these user segments**, and then click **Add User Segment**.
     
   
-5. In the **Title** field, type a name for this user segment query rule. Choose **Add user segment term**. 
+5. In the **Title** field, type a name for this user segment query rule. Choose **Add user segment term**.
     
   
-6. In the **Import from term store** dialog box, expand the **Managed Metadata Service**. Under **Site Collection**, locate the term set that holds the user segmentation terms that you previously defined in  [Create a term set](#SP15_Create_a_term_set). Select the user segment for which you want to apply this query rule. Then, click **Save**. 
+6. In the **Import from term store** dialog box, expand the **Managed Metadata Service**. Under **Site Collection**, locate the term set that holds the user segmentation terms that you previously defined in  [Create a term set](#SP15_Create_a_term_set). Select the user segment for which you want to apply this query rule. Then, click **Save**.
     
   
 7. Name your user segment n the **Add User Segment** dialog box.
     
-    You have now mapped a query rule to a user segment, which in turn is mapped to a user segment term. 
+    You have now mapped a query rule to a user segment, which in turn is mapped to a user segment term.
     
   
 8. Under **Query Conditions**, choose **Remove Condition**. 
@@ -332,20 +332,20 @@ When implementing user segmentation, you use query rules to define conditions an
     This specifies that the query configured in the  [ContentBySearchWebPart](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.WebConrols.ContentBySearchWebPart.aspx) will act as the query condition.
     
   
-9. Set the corresponding actions that your query rule will perform. Under the **Actions** section, select a corresponding action that you want to take as a result of -your query rule. You can select to either **Add Promoted Result** or **Add a Result Block**. 
+9. Set the corresponding actions that your query rule will perform. Under the **Actions** section, select a corresponding action that you want to take as a result of -your query rule. You can select to either **Add Promoted Result** or **Add a Result Block**.
     
   
-10. Save your query rule. 
+10. Save your query rule.
     
   
-11. Repeat steps 1 through 10 for your other user segments, depending on the actions you want to perform. 
+11. Repeat steps 1 through 10 for your other user segments, depending on the actions you want to perform.
     
   
 
 ## Add a custom Web Part to the SharePoint page and configure it to show the query rule
 <a name="SP15_Add_custom_web_part_to_SharePoint"> </a>
 
-You need to add your custom Web Part to your SharePoint page. 
+You need to add your custom Web Part to your SharePoint page.
   
     
     
@@ -353,19 +353,19 @@ You need to add your custom Web Part to your SharePoint page.
 ### To add your custom Web Part
 
 
-1. Navigate to a category page, choose **Edit page**, and then choose **Edit page template**. 
+1. Navigate to a category page, choose **Edit page**, and then choose **Edit page template**.
     
   
 2. Select **Add a Web Part** in the top section of the page. Then, select your custom Web Part from the drop-down menu in the upper right corner of the Web Part.
     
   
-3. Click **Edit Web Part**. 
+3. Click **Edit Web Part**.
     
   
 4. Expand the **Settings** section, and in the **Result Table** field, choose **SpecialTermResults**. 
     
   
-5. Save your configuration. 
+5. Save your configuration.
     
   
 

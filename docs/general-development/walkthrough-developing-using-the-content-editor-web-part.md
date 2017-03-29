@@ -1,22 +1,22 @@
 ---
 title: Walkthrough Developing Using the Content Editor Web Part
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 0b5e74b7-405c-43c5-b2dd-1dff77280856
 ---
 
 
 # Walkthrough: Developing Using the Content Editor Web Part
 
-The walkthrough in this section describes the process for interacting with the ECMAScript (JavaScript, JScript) object model in Excel Services by using the Content Editor Web Part. 
+The walkthrough in this section describes the process for interacting with the ECMAScript (JavaScript, JScript) object model in Excel Services by using the Content Editor Web Part.
   
     
     
 
-During this walkthrough, you will learn how to: 
+During this walkthrough, you will learn how to:
 - Create a text file that contains JavaScript and save it as a text file to a trusted document library. 
     
   
-- Add a Content Editor Web Part, and then feed the URL for the JavaScript text file to the Content Editor Web Part. 
+- Add a Content Editor Web Part, and then feed the URL for the JavaScript text file to the Content Editor Web Part.
     
   
 - Display and interact with a workbook by using the Excel Services Web Part that will call the JavaScript in Excel Services that you scripted. 

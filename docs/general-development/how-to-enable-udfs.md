@@ -3,7 +3,7 @@ title: How to Enable UDFs
 keywords: how to,howdoi,howto,UDF list
 f1_keywords:
 - how to,howdoi,howto,UDF list
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 8c1af2eb-bb22-45e1-82de-a2b4b53d7a26
 ---
 
@@ -28,9 +28,9 @@ The default **AllowUdfs** value is **false**. If the **AllowUdfs** value is set 
     
     
 
-In order to allow UDFs to be called from a specific trusted location, you set the **AllowUdfs** value to **true**. If the **AllowUdfs** value is **false** when a session is started on a workbook that has UDF calls in this trusted location, the UDF calls will fail. If you change the **AllowUdfs** value to **true** after a session has started, the UDF calls will also fail. This is because changes in the **AllowUdfs** flag take effect on the next session, after the configuration database has been updated.You can get around this by restarting the session—for example, by selecting **Reload Workbook** in Excel Web Access.
+In order to allow UDFs to be called from a specific trusted location, you set the **AllowUdfs** value to **true**.If the **AllowUdfs** value is **false** when a session is started on a workbook that has UDF calls in this trusted location, the UDF calls will fail. If you change the **AllowUdfs** value to **true** after a session has started, the UDF calls will also fail. This is because changes in the **AllowUdfs** flag take effect on the next session, after the configuration database has been updated.You can get around this by restarting the session—for example, by selecting **Reload Workbook** in Excel Web Access.
 > [!CAUTION]
-> If you choose to reset Microsoft Internet Information Services (IIS) instead, it will end all current sessions. 
+> If you choose to reset Microsoft Internet Information Services (IIS) instead, it will end all current sessions.
   
     
     
@@ -38,7 +38,7 @@ In order to allow UDFs to be called from a specific trusted location, you set th
 
 ## Enabling UDFs
 
-To do the following steps, you need a computer that has Microsoft SharePoint Server 2010 installed. 
+To do the following steps, you need a computer that has Microsoft SharePoint Server 2010 installed.
   
     
     
@@ -52,7 +52,7 @@ To do the following steps, you need a computer that has Microsoft SharePoint Ser
 2. Point to **Microsoft Office Server** and click **SharePoint Central Administration**. 
     
   
-3. On the Quick Launch, click your Shared Services Provider (SSP) link—for example, "SharedServices1"—to view the Shared Services home page for that particular SSP. 
+3. On the Quick Launch, click your Shared Services Provider (SSP) link—for example, "SharedServices1"—to view the Shared Services home page for that particular SSP.
     
   
 4. Under **Excel Services Settings**, click **User-defined functions**. 
@@ -61,17 +61,17 @@ To do the following steps, you need a computer that has Microsoft SharePoint Ser
 5. On the Excel Services User-Defined Functions page, click **Add User-Defined Function** to open the Excel Services Add User-Defined Function Assembly page.
     
   
-6. In the **Assembly** box, type the path to the UDF assembly. For example,C:\\MyUdfFolder\\MyUdf.dll. 
+6. In the **Assembly** box, type the path to the UDF assembly. For example,C:\\MyUdfFolder\\MyUdf.dll.
     
   
-7. Under **Assembly Location**, click **Local file**. 
+7. Under **Assembly Location**, click **Local file**.
     
    > [!NOTE]
-   >  The **Local file** option will be replaced with **File path** in future releases of Excel Services. If you see **File path**, select that instead. 
+   >  The **Local file** option will be replaced with **File path** in future releases of Excel Services. If you see **File path**, select that instead.
 8. Under **Enable Assembly**, the **Assembly enabled** check box should be selected by default.
     
   
-9. Click **OK**. 
+9. Click **OK**.
     
   
 
@@ -88,7 +88,7 @@ To do the following steps, you need a computer that has Microsoft SharePoint Ser
 2. Under **Allow User-Defined Functions**, select **User-defined functions allowed** to allow UDFs to be called from workbooks stored in this trusted location.
     
   
-3. Click **OK**. 
+3. Click **OK**.
     
   
 

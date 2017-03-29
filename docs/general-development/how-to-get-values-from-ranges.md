@@ -16,12 +16,12 @@ Excel Web Services exposes four methods for getting values from an Excel workboo
     
 
 The **GetCell** and **GetCellA1** methods return the value of a single cell. If you try to request more than a single cell—for example, by passing in a range reference such as "B1:E2" or a named range that is larger than a single cell, and so on—your method call will fail. If you want to retrieve values from a range of cells, use the **GetRange** and **GetRangeA1** methods instead.
-Methods that have the A1 suffix ( **GetCellA1** and **GetRangeA1**) use a different coordinate system than those that do not ( **GetCell** and **GetRange**). If you want to use Excel-style references to cells, such as range references (for example, H8, A3:D5, Sheet2!A12:G18) or named ranges, you should use the methods with the A1 suffix. Those methods allow you to pass in the name of a sheet and the range address you want. In most cases, it is a good idea to use named ranges rather than Excel-style references, for abstraction reasons. 
+Methods that have the A1 suffix ( **GetCellA1** and **GetRangeA1**) use a different coordinate system than those that do not ( **GetCell** and **GetRange**). If you want to use Excel-style references to cells, such as range references (for example, H8, A3:D5, Sheet2!A12:G18) or named ranges, you should use the methods with the A1 suffix. Those methods allow you to pass in the name of a sheet and the range address you want. In most cases, it is a good idea to use named ranges rather than Excel-style references, for abstraction reasons.
   
     
     
 
-If you want to access an Excel range by using a numeric coordinate system, you should use the methods that do not have the A1 suffix. It is easier to use range coordinates when you have code that iterates through a set of cells in a loop, or when the range coordinates are calculated dynamically as part of the algorithm. The row and column coordinates of a cell are 0-based. Therefore, "0,0" will return cell A1, as in this example: 
+If you want to access an Excel range by using a numeric coordinate system, you should use the methods that do not have the A1 suffix. It is easier to use range coordinates when you have code that iterates through a set of cells in a loop, or when the range coordinates are calculated dynamically as part of the algorithm.The row and column coordinates of a cell are 0-based. Therefore, "0,0" will return cell A1, as in this example:
 
 
 ```cs
@@ -178,24 +178,24 @@ Dim rangeResult() As Object = xlservice.GetCellA1(sessionId, sheetName, "Monthly
 
 2. Use the **GetRangeA1** method to get a value from a range in the open workbook, using the Excel "A1" range specification. The following code example asks for a 2x3 range, that is, two rows by three columns. The code then loops through each row that is returned and retrieves the three cells each row contains. That is, in the first iteration:
     
-  - rangeResult [0] returns the value in cell B2 
+  - rangeResult [0] returns the value in cell B2
     
   
-  - rangeResult [1] returns the value in cell C2 
+  - rangeResult [1] returns the value in cell C2
     
   
-  - rangeResult [2] returns the value in cell D2 
+  - rangeResult [2] returns the value in cell D2
     
-    In the second iteration: 
-    
-  
-  - rangeResult [0] returns the value in cell B3 
+    In the second iteration:
     
   
-  - rangeResult [1] returns the value in cell C3 
+  - rangeResult [0] returns the value in cell B3
     
   
-  - rangeResult [2] returns the value in cell D3 
+  - rangeResult [1] returns the value in cell C3
+    
+  
+  - rangeResult [2] returns the value in cell D3
     
   
 

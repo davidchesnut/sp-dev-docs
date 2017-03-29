@@ -6,11 +6,11 @@ ms.assetid: c17d375b-151f-48ae-ac32-f2ce9e68d63f
 
 
 # Color palettes and fonts in SharePoint 2013
-Use this reference to define the color palette or font scheme that is used in a SharePoint 2013 site. 
+Use this reference to define the color palette or font scheme that is used in a SharePoint 2013 site.
 ## Color palettes
 <a name="color"> </a>
 
-A color palette is the combination of colors that are used in a SharePoint site. The color palette for a SharePoint site is defined in a color palette file. Color slots are also used by the master page preview file to generate thumbnail and preview images of a site. The following describes the structure of the color palette file and the master page preview file: 
+A color palette is the combination of colors that are used in a SharePoint site. The color palette for a SharePoint site is defined in a color palette file. Color slots are also used by the master page preview file to generate thumbnail and preview images of a site. The following describes the structure of the color palette file and the master page preview file:
   
     
     
@@ -30,7 +30,7 @@ A color palette is the combination of colors that are used in a SharePoint site.
   ```
 
 
-    In a color palette file, the following placeholders are replaced: 
+    In a color palette file, the following placeholders are replaced:
     
   -  _InvertedSetting_ is a Boolean value. **true** if the color palette is generally light text on a dark background. **false** if the color palette is generally dark text on a light background.
     
@@ -51,7 +51,7 @@ A color palette is the combination of colors that are used in a SharePoint site.
     
   
 
-    The color palette files are located in the Theme Gallery of the root site, in the site collection in the **15** folder (http:// _SiteCollectionName_/_catalogs/theme/15/). To access the Theme Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, select **Themes**, and then select **15**. 
+    The color palette files are located in the Theme Gallery of the root site, in the site collection in the **15** folder (http:// _SiteCollectionName_/_catalogs/theme/15/). To access the Theme Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, select **Themes**, and then select **15**.
     
   
 - **Master page preview file (.preview)**
@@ -89,7 +89,7 @@ A color palette is the combination of colors that are used in a SharePoint site.
 ### Color slot mapping
 <a name="colorSlots"> </a>
 
-Table 1 describes the color slots that are available and where color slots are used in a SharePoint site. 
+Table 1 describes the color slots that are available and where color slots are used in a SharePoint site.
   
     
     
@@ -106,105 +106,105 @@ Table 1 describes the color slots that are available and where color slots are u
 
 |**Annotation Name**|**Where the Color Is Used in the UI**|**Token Name**|
 |:-----|:-----|:-----|
-|BodyText |Normal body text. |[T_THEME_COLOR_BODYTEXT] |
-|SubtleBodyText |Body text that must be lighter than normal. An example is metadata text. |[T_THEME_COLOR_SUBTLEBODYTEXT] |
-|StrongBodyText |Body text color for text that must stand out from normal body text. |[T_THEME_COLOR_STRONGBODYTEXT] |
-|DisabledText |Disabled text. For example, unavailable items in menus. |[T_THEME_COLOR_DISABLEDTEXT] |
-|SiteTitle |The text color of the page title. |[T_THEME_COLOR_SITETITLE] |
-|WebPartHeading |Text color for Web Part headings. |[T_THEME_COLOR_WEBPARTHEADING] |
-|ErrorText |The main error color that is used for error text, borders, and backgrounds, as needed. |[T_THEME_COLOR_ERRORTEXT] |
-|AccentText |Text color for accented body text. |[T_THEME_COLOR_ACCENTTEXT] |
-|SearchURL |Text color for the URL found in search results. Also used to highlight new items or successful status notifications. |[T_THEME_COLOR_SEARCHURL] |
-|Hyperlink |Text color for hyperlinks. |[T_THEME_COLOR_HYPERLINK] |
-|HyperlinkFollowed |Text color for followed hyperlinks. |[T_THEME_COLOR_HYPERLINKFOLLOWED] |
-|HyperlinkActive |Hyperlink color when pressed. |[T_THEME_COLOR_HYPERLINKACTIVE] |
-|CommandLinks |Large command links that must be a bit lighter than body text because of their size. |[T_THEME_COLOR_COMMANDLINKS] |
-|CommandLinksSecondary |Command link color for links that are smaller, and therefore have a stronger color to stand out. |[T_THEME_COLOR_COMMANDLINKSSECONDARY] |
-|CommandLinksHover |Command link color on hover. |[T_THEME_COLOR_COMMANDLINKSHOVER] |
-|CommandLinksPressed |Command link color when pressed. |[T_THEME_COLOR_COMMANDLINKSPRESSED] |
-|CommandLinksDisabled |Command link color when command link is disabled. |[T_THEME_COLOR_COMMANDLINKSDISABLED] |
-|BackgroundOverlay |The main background color that is visible between the optional background image and the page content. |[T_THEME_COLOR_BACKGROUNDOVERLAY] |
-|DisabledBackground |Background for disabled elements such as browser controls, for example, input box or select box (except buttons). |[T_THEME_COLOR_DISABLEDBACKGROUND] |
-|PageBackground |The background color of the page. Appears behind the optional background image. |[T_THEME_COLOR_PAGEBACKGROUND] |
-|HeaderBackground |The background color for the header area of the page. |[T_THEME_COLOR_HEADERBACKGROUND] |
-|FooterBackground |The background color for the footer area of the page. |[T_THEME_COLOR_FOOTERBACKGROUND] |
-|SelectionBackground |The background color for selected list items and drop-down menu items. |[T_THEME_COLOR_SELECTIONBACKGROUND] |
-|HoverBackground |The background color for list items and drop-down menu items on hover. |[T_THEME_COLOR_HOVERBACKGROUND] |
-|RowAccent |The accented left border on selected list items. |[T_THEME_COLOR_ROWACCENT] |
-|StrongLines |Borders for browser controls on hover. |[T_THEME_COLOR_STRONGLINES] |
-|Lines |Borders for browser controls. |[T_THEME_COLOR_LINES] |
-|SubtleLines |Subtle border color. For example, gridlines for inline editing. |[T_THEME_COLOR_SUBTLELINES] |
-|DisabledLines |Border color for disabled browser controls such as input boxes and select boxes. |[T_THEME_COLOR_DISABLEDLINES] |
-|AccentLines |Focused border color for selected browser controls. |[T_THEME_COLOR_ACCENTLINES] |
-|DialogBorder |Dialog box border color. |[T_THEME_COLOR_DIALOGBORDER] |
-|Navigation |Text color for horizontal and vertical navigation items. |[T_THEME_COLOR_NAVIGATION] |
-|NavigationAccent |Text color for a selected horizontal navigation item. |[T_THEME_COLOR_NAVIGATIONACCENT] |
-|NavigationHover |Navigation text color on hover. Applies to top navigation, and to Quick Launch in horizontal mode. |[T_THEME_COLOR_NAVIGATIONHOVER] |
-|NavigationPressed |Text color of navigation item when pressed. Applies to top navigation, and to Quick Launch in horizontal mode. |[T_THEME_COLOR_NAVIGATIONPRESSED] |
-|NavigationHoverBackground |Background color of Quick Launch items in vertical mode on hover over the navigation item. |[T_THEME_COLOR_NAVIGATIONHOVERBACKGROUND] |
-|NavigationSelectedBackground |Background color of Quick Launch items in vertical mode after the navigation item is selected. |[T_THEME_COLOR_NAVIGATIONSELECTEDBACKGROUND] |
-|EmphasisText |The text color that appears on top of emphasis background. |[T_THEME_COLOR_EMPHASISTEXT] |
-|EmphasisBackground |The accented background color that appears directly behind emphasis text. |[T_THEME_COLOR_EMPHASISBACKGROUND] |
-|EmphasisHoverBackground |Background color on hover, for elements that are using emphasis background. |[T_THEME_COLOR_EMPHASISHOVERBACKGROUND] |
-|EmphasisBorder |Border color for elements that are using emphasis background. |[T_THEME_COLOR_EMPHASISBORDER] |
-|EmphasisHoverBorder |Border color on hover for elements that are using emphasis background. |[T_THEME_COLOR_EMPHASISHOVERBORDER] |
-|SubtleEmphasisText |Text that appears on top of subtle emphasis background. |[T_THEME_COLOR_SUBTLEEMPHASISTEXT] |
-|SubtleEmphasisCommandLinks |Command link color for links that appear on top of subtle emphasis background. |[T_THEME_COLOR_SUBTLEEMPHASISCOMMANDLINKS] |
-|SubtleEmphasisBackground |Background that appears directly behind subtle emphasis text. |[T_THEME_COLOR_SUBTLEEMPHASISBACKGROUND] |
-|TopBarText |Text and glyph color for the welcome menu, quick access toolbar icons, and closed ribbon tabs. |[T_THEME_COLOR_TOPBARTEXT] |
-|TopBarBackground |The background color for the top bar, which is seen below and to the right of the suite navigation. |[T_THEME_COLOR_TOPBARBACKGROUND] |
-|TopBarHoverText |Text and glyph color on hover for the welcome menu, quick access toolbar icons, and closed ribbon tabs. |[T_THEME_COLOR_TOPBARHOVERTEXT] |
-|TopBarPressedText |Text and glyph color for when the welcome menu, quick access toolbar icons, or closed ribbon tabs are pressed. |[T_THEME_COLOR_TOPBARPRESSEDTEXT] |
-|HeaderText |The base text color for anything in the header area. |[T_THEME_COLOR_HEADERTEXT] |
-|HeaderSubtleText |Helper text for the search box when in the header area. |[T_THEME_COLOR_HEADERSUBTLETEXT] |
-|HeaderDisableText |Text for the search box, if the search box is disabled when in the header area. |[T_THEME_COLOR_HEADERDISABLETEXT] |
-|HeaderNavigationText |Base text color for navigation links in the header area. |[T_THEME_COLOR_HEADERNAVIGATIONTEXT] |
-|HeaderNavigationHoverText |Text color for navigation links in the header area when you hover over the link. |[T_THEME_COLOR_HEADERNAVIGATIONHOVERTEXT] |
-|HeaderNavigationPressedText |Text color for navigation links in the header area when you press the link. |[T_THEME_COLOR_HEADERNAVIGATIONPRESSEDTEXT] |
-|HeaderNavigationSelectedText |Text color for navigation links in the header area after the link is selected. |[T_THEME_COLOR_HEADERNAVIGATIONSELECTEDTEXT] |
-|HeaderLines |Search box lines when the search box is in the header area. |[T_THEME_COLOR_HEADERLINES] |
-|HeaderStrongLines |Search box lines on hover when the search box is in the header area. |[T_THEME_COLOR_HEADERSTRONGLINES] |
-|HeaderAccentLines |Search box lines on focus when the search box is in the header area. |[T_THEME_COLOR_HEADERACCENTLINES] |
-|HeaderSublteLines |Subtle lines found inside the header area. Not used in default CSS. |[T_THEME_COLOR_HEADERSUBTLELINES] |
-|HeaderDisabledLines |Search box lines if the search box is disabled when it's in the header area. |[T_THEME_COLOR_HEADERDISABLEDLINES] |
-|HeaderDisabledBackground |Search box background if the search box is disabled when it's in the header area. |[T_THEME_COLOR_HEADERDISABLEDBACKGROUND] |
-|HeaderFlyoutBorder |Border for drop-down menus when originating from the header area. |[T_THEME_COLOR_HEADERFLYOUTBORDER] |
-|HeaderSiteTitle |Text color for the site title when in the header area. |[T_THEME_COLOR_HEADERSITETITLE] |
-|SuiteBarBackground |Background color for the suite navigation. |[T_THEME_COLOR_SUITEBARBACKGROUND] |
-|SuiteBarHoverBackground |Background color on hover for the suite navigation. |[T_THEME_COLOR_SUITEBARHOVERBACKGROUND] |
-|SuiteBarText |Text and glyph color for the suite navigation items. |[T_THEME_COLOR_SUITEBARTEXT] |
-|SuiteBarDisabledText |Text and glyph color for disabled suite items. Not used in default CSS. |[T_THEME_COLOR_SUITEBARDISABLEDTEXT] |
-|ButtonText |Text color for buttons. |[T_THEME_COLOR_BUTTONTEXT] |
-|ButtonDisabledText |Text color for disabled buttons. |[T_THEME_COLOR_BUTTONDISABLEDTEXT] |
-|ButtonBackground |Background color for buttons. |[T_THEME_COLOR_BUTTONBACKGROUND] |
-|ButtonHoverBackground |Background color for buttons on hover. |[T_THEME_COLOR_BUTTONHOVERBACKGROUND] |
-|ButtonPressedBackground |Background color for buttons while pressed. |[T_THEME_COLOR_BUTTONPRESSEDBACKGROUND] |
-|ButtonDisabledBackground |Background color for disabled buttons. |[T_THEME_COLOR_BUTTONDISABLEDBACKGROUND] |
-|ButtonBorder |Border color for buttons. |[T_THEME_COLOR_BUTTONBORDER] |
-|ButtonHoverBorder |Border color for buttons on hover. |[T_THEME_COLOR_BUTTONHOVERBORDER] |
-|ButtonPressedBorder |Border color for buttons while pressed. |[T_THEME_COLOR_BUTTONPRESSEDBORDER] |
-|ButtonDisabledBorder |Border color for buttons that are disabled. |[T_THEME_COLOR_BUTTONDISABLEDBORDER] |
-|ButtonGlyph |Glyph color for a glyph that appears in a button. |[T_THEME_COLOR_BUTTONGLYPH] |
-|ButtonGlyphActive |Glyph color on hover, for a glyph that appears in a button. |[T_THEME_COLOR_BUTTONGLYPHACTIVE] |
-|ButtonGlyphDisabled |Glyph color for a disabled button. |[T_THEME_COLOR_BUTTONGLYPHDISABLED] |
-|TileText |The text that appears on top of the tile background overlay. |[T_THEME_COLOR_TILETEXT] |
-|TileBackgroundOverlay |The background overlay color for tiles. |[T_THEME_COLOR_TILEBACKGROUNDOVERLAY] |
-|ContentAccent1 |The first accent color that a user can select from the Rich Text Editor color picker. |[T_THEME_COLOR_CONTENTACCENT1] |
-|ContentAccent2 |The second accent color that a user can select from the Rich Text Editor color picker. |[T_THEME_COLOR_CONTENTACCENT2] |
-|ContentAccent3 |The third accent color that a user can select from the Rich Text Editor color picker. |[T_THEME_COLOR_CONTENTACCENT3] |
-|ContentAccent4 |The fourth accent color that a user can select from the Rich Text Editor color picker. |[T_THEME_COLOR_CONTENTACCENT4] |
-|ContentAccent5 |The fifth accent color that a user can select from the Rich Text Editor color picker. |[T_THEME_COLOR_CONTENTACCENT5] |
-|ContentAccent6 |The sixth accent color that a user can select from the Rich Text Editor color picker. |[T_THEME_COLOR_CONTENTACCENT6] |
+|BodyText|Normal body text.|[T_THEME_COLOR_BODYTEXT]|
+|SubtleBodyText|Body text that must be lighter than normal. An example is metadata text.|[T_THEME_COLOR_SUBTLEBODYTEXT]|
+|StrongBodyText|Body text color for text that must stand out from normal body text.|[T_THEME_COLOR_STRONGBODYTEXT]|
+|DisabledText|Disabled text. For example, unavailable items in menus.|[T_THEME_COLOR_DISABLEDTEXT]|
+|SiteTitle|The text color of the page title.|[T_THEME_COLOR_SITETITLE]|
+|WebPartHeading|Text color for Web Part headings.|[T_THEME_COLOR_WEBPARTHEADING]|
+|ErrorText|The main error color that is used for error text, borders, and backgrounds, as needed.|[T_THEME_COLOR_ERRORTEXT]|
+|AccentText|Text color for accented body text.|[T_THEME_COLOR_ACCENTTEXT]|
+|SearchURL|Text color for the URL found in search results. Also used to highlight new items or successful status notifications.|[T_THEME_COLOR_SEARCHURL]|
+|Hyperlink|Text color for hyperlinks.|[T_THEME_COLOR_HYPERLINK]|
+|HyperlinkFollowed|Text color for followed hyperlinks.|[T_THEME_COLOR_HYPERLINKFOLLOWED]|
+|HyperlinkActive|Hyperlink color when pressed.|[T_THEME_COLOR_HYPERLINKACTIVE]|
+|CommandLinks|Large command links that must be a bit lighter than body text because of their size.|[T_THEME_COLOR_COMMANDLINKS]|
+|CommandLinksSecondary|Command link color for links that are smaller, and therefore have a stronger color to stand out.|[T_THEME_COLOR_COMMANDLINKSSECONDARY]|
+|CommandLinksHover|Command link color on hover.|[T_THEME_COLOR_COMMANDLINKSHOVER]|
+|CommandLinksPressed|Command link color when pressed.|[T_THEME_COLOR_COMMANDLINKSPRESSED]|
+|CommandLinksDisabled|Command link color when command link is disabled.|[T_THEME_COLOR_COMMANDLINKSDISABLED]|
+|BackgroundOverlay|The main background color that is visible between the optional background image and the page content.|[T_THEME_COLOR_BACKGROUNDOVERLAY]|
+|DisabledBackground|Background for disabled elements such as browser controls, for example, input box or select box (except buttons).|[T_THEME_COLOR_DISABLEDBACKGROUND]|
+|PageBackground|The background color of the page. Appears behind the optional background image.|[T_THEME_COLOR_PAGEBACKGROUND]|
+|HeaderBackground|The background color for the header area of the page.|[T_THEME_COLOR_HEADERBACKGROUND]|
+|FooterBackground|The background color for the footer area of the page.|[T_THEME_COLOR_FOOTERBACKGROUND]|
+|SelectionBackground|The background color for selected list items and drop-down menu items.|[T_THEME_COLOR_SELECTIONBACKGROUND]|
+|HoverBackground|The background color for list items and drop-down menu items on hover.|[T_THEME_COLOR_HOVERBACKGROUND]|
+|RowAccent|The accented left border on selected list items.|[T_THEME_COLOR_ROWACCENT]|
+|StrongLines|Borders for browser controls on hover.|[T_THEME_COLOR_STRONGLINES]|
+|Lines|Borders for browser controls.|[T_THEME_COLOR_LINES]|
+|SubtleLines|Subtle border color. For example, gridlines for inline editing.|[T_THEME_COLOR_SUBTLELINES]|
+|DisabledLines|Border color for disabled browser controls such as input boxes and select boxes.|[T_THEME_COLOR_DISABLEDLINES]|
+|AccentLines|Focused border color for selected browser controls.|[T_THEME_COLOR_ACCENTLINES]|
+|DialogBorder|Dialog box border color.|[T_THEME_COLOR_DIALOGBORDER]|
+|Navigation|Text color for horizontal and vertical navigation items.|[T_THEME_COLOR_NAVIGATION]|
+|NavigationAccent|Text color for a selected horizontal navigation item.|[T_THEME_COLOR_NAVIGATIONACCENT]|
+|NavigationHover|Navigation text color on hover. Applies to top navigation, and to Quick Launch in horizontal mode.|[T_THEME_COLOR_NAVIGATIONHOVER]|
+|NavigationPressed|Text color of navigation item when pressed. Applies to top navigation, and to Quick Launch in horizontal mode.|[T_THEME_COLOR_NAVIGATIONPRESSED]|
+|NavigationHoverBackground|Background color of Quick Launch items in vertical mode on hover over the navigation item.|[T_THEME_COLOR_NAVIGATIONHOVERBACKGROUND]|
+|NavigationSelectedBackground|Background color of Quick Launch items in vertical mode after the navigation item is selected.|[T_THEME_COLOR_NAVIGATIONSELECTEDBACKGROUND]|
+|EmphasisText|The text color that appears on top of emphasis background.|[T_THEME_COLOR_EMPHASISTEXT]|
+|EmphasisBackground|The accented background color that appears directly behind emphasis text.|[T_THEME_COLOR_EMPHASISBACKGROUND]|
+|EmphasisHoverBackground|Background color on hover, for elements that are using emphasis background.|[T_THEME_COLOR_EMPHASISHOVERBACKGROUND]|
+|EmphasisBorder|Border color for elements that are using emphasis background.|[T_THEME_COLOR_EMPHASISBORDER]|
+|EmphasisHoverBorder|Border color on hover for elements that are using emphasis background.|[T_THEME_COLOR_EMPHASISHOVERBORDER]|
+|SubtleEmphasisText|Text that appears on top of subtle emphasis background.|[T_THEME_COLOR_SUBTLEEMPHASISTEXT]|
+|SubtleEmphasisCommandLinks|Command link color for links that appear on top of subtle emphasis background.|[T_THEME_COLOR_SUBTLEEMPHASISCOMMANDLINKS]|
+|SubtleEmphasisBackground|Background that appears directly behind subtle emphasis text.|[T_THEME_COLOR_SUBTLEEMPHASISBACKGROUND]|
+|TopBarText|Text and glyph color for the welcome menu, quick access toolbar icons, and closed ribbon tabs.|[T_THEME_COLOR_TOPBARTEXT]|
+|TopBarBackground|The background color for the top bar, which is seen below and to the right of the suite navigation.|[T_THEME_COLOR_TOPBARBACKGROUND]|
+|TopBarHoverText|Text and glyph color on hover for the welcome menu, quick access toolbar icons, and closed ribbon tabs.|[T_THEME_COLOR_TOPBARHOVERTEXT]|
+|TopBarPressedText|Text and glyph color for when the welcome menu, quick access toolbar icons, or closed ribbon tabs are pressed.|[T_THEME_COLOR_TOPBARPRESSEDTEXT]|
+|HeaderText|The base text color for anything in the header area.|[T_THEME_COLOR_HEADERTEXT]|
+|HeaderSubtleText|Helper text for the search box when in the header area.|[T_THEME_COLOR_HEADERSUBTLETEXT]|
+|HeaderDisableText|Text for the search box, if the search box is disabled when in the header area.|[T_THEME_COLOR_HEADERDISABLETEXT]|
+|HeaderNavigationText|Base text color for navigation links in the header area.|[T_THEME_COLOR_HEADERNAVIGATIONTEXT]|
+|HeaderNavigationHoverText|Text color for navigation links in the header area when you hover over the link.|[T_THEME_COLOR_HEADERNAVIGATIONHOVERTEXT]|
+|HeaderNavigationPressedText|Text color for navigation links in the header area when you press the link.|[T_THEME_COLOR_HEADERNAVIGATIONPRESSEDTEXT]|
+|HeaderNavigationSelectedText|Text color for navigation links in the header area after the link is selected.|[T_THEME_COLOR_HEADERNAVIGATIONSELECTEDTEXT]|
+|HeaderLines|Search box lines when the search box is in the header area.|[T_THEME_COLOR_HEADERLINES]|
+|HeaderStrongLines|Search box lines on hover when the search box is in the header area.|[T_THEME_COLOR_HEADERSTRONGLINES]|
+|HeaderAccentLines|Search box lines on focus when the search box is in the header area.|[T_THEME_COLOR_HEADERACCENTLINES]|
+|HeaderSublteLines|Subtle lines found inside the header area. Not used in default CSS.|[T_THEME_COLOR_HEADERSUBTLELINES]|
+|HeaderDisabledLines|Search box lines if the search box is disabled when it's in the header area.|[T_THEME_COLOR_HEADERDISABLEDLINES]|
+|HeaderDisabledBackground|Search box background if the search box is disabled when it's in the header area.|[T_THEME_COLOR_HEADERDISABLEDBACKGROUND]|
+|HeaderFlyoutBorder|Border for drop-down menus when originating from the header area.|[T_THEME_COLOR_HEADERFLYOUTBORDER]|
+|HeaderSiteTitle|Text color for the site title when in the header area.|[T_THEME_COLOR_HEADERSITETITLE]|
+|SuiteBarBackground|Background color for the suite navigation.|[T_THEME_COLOR_SUITEBARBACKGROUND]|
+|SuiteBarHoverBackground|Background color on hover for the suite navigation.|[T_THEME_COLOR_SUITEBARHOVERBACKGROUND]|
+|SuiteBarText|Text and glyph color for the suite navigation items.|[T_THEME_COLOR_SUITEBARTEXT]|
+|SuiteBarDisabledText|Text and glyph color for disabled suite items. Not used in default CSS.|[T_THEME_COLOR_SUITEBARDISABLEDTEXT]|
+|ButtonText|Text color for buttons.|[T_THEME_COLOR_BUTTONTEXT]|
+|ButtonDisabledText|Text color for disabled buttons.|[T_THEME_COLOR_BUTTONDISABLEDTEXT]|
+|ButtonBackground|Background color for buttons.|[T_THEME_COLOR_BUTTONBACKGROUND]|
+|ButtonHoverBackground|Background color for buttons on hover.|[T_THEME_COLOR_BUTTONHOVERBACKGROUND]|
+|ButtonPressedBackground|Background color for buttons while pressed.|[T_THEME_COLOR_BUTTONPRESSEDBACKGROUND]|
+|ButtonDisabledBackground|Background color for disabled buttons.|[T_THEME_COLOR_BUTTONDISABLEDBACKGROUND]|
+|ButtonBorder|Border color for buttons.|[T_THEME_COLOR_BUTTONBORDER]|
+|ButtonHoverBorder|Border color for buttons on hover.|[T_THEME_COLOR_BUTTONHOVERBORDER]|
+|ButtonPressedBorder|Border color for buttons while pressed.|[T_THEME_COLOR_BUTTONPRESSEDBORDER]|
+|ButtonDisabledBorder|Border color for buttons that are disabled.|[T_THEME_COLOR_BUTTONDISABLEDBORDER]|
+|ButtonGlyph|Glyph color for a glyph that appears in a button.|[T_THEME_COLOR_BUTTONGLYPH]|
+|ButtonGlyphActive|Glyph color on hover, for a glyph that appears in a button.|[T_THEME_COLOR_BUTTONGLYPHACTIVE]|
+|ButtonGlyphDisabled|Glyph color for a disabled button.|[T_THEME_COLOR_BUTTONGLYPHDISABLED]|
+|TileText|The text that appears on top of the tile background overlay.|[T_THEME_COLOR_TILETEXT]|
+|TileBackgroundOverlay|The background overlay color for tiles.|[T_THEME_COLOR_TILEBACKGROUNDOVERLAY]|
+|ContentAccent1|The first accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT1]|
+|ContentAccent2|The second accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT2]|
+|ContentAccent3|The third accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT3]|
+|ContentAccent4|The fourth accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT4]|
+|ContentAccent5|The fifth accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT5]|
+|ContentAccent6|The sixth accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT6]|
    
 
 ## Font schemes
 <a name="font"> </a>
 
-Fonts are defined in the font scheme (.spfont file) and the master page preview (.preview file) for a given SharePoint site. The font scheme defines the fonts that are used in four areas: title, navigation, heading, and body. Seven font schemes are included in SharePoint 2013. You can create additional font schemes. The font scheme files are located in the **15** subfolder of the Theme Gallery of the root site of the site collection (http:// _SiteCollectionName_/_catalogs/theme/15/). To access the Theme Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, select **Themes**, and then select **15**. 
+Fonts are defined in the font scheme (.spfont file) and the master page preview (.preview file) for a given SharePoint site. The font scheme defines the fonts that are used in four areas: title, navigation, heading, and body. Seven font schemes are included in SharePoint 2013. You can create additional font schemes. The font scheme files are located in the **15** subfolder of the Theme Gallery of the root site of the site collection (http:// _SiteCollectionName_/_catalogs/theme/15/). To access the Theme Gallery from the SharePoint user interface, on the **Site Settings** page, under **Web Designer Galleries**, select **Themes**, and then select **15**.
   
     
     
-The following example describes the format for an .spfont file. 
+The following example describes the format for an .spfont file.
   
     
     
@@ -227,7 +227,7 @@ The following example describes the format for an .spfont file.
 </s:fontScheme>
 ```
 
-In an .spfont file, the following placeholders are replaced: 
+In an .spfont file, the following placeholders are replaced:
   
     
     
@@ -260,7 +260,7 @@ In an .spfont file, the following placeholders are replaced:
 -  _ScriptFont_ is the font to use for the specified language script.
     
   
-The following example shows a portion of an .spfont file. 
+The following example shows a portion of an .spfont file.
   
     
     
@@ -333,7 +333,7 @@ Web-safe fonts are a set of fonts that are widely used and available on most dev
 ### Web fonts
 <a name="webFont"> </a>
 
-Web fonts are fonts that are available on the Internet. When a user views a site that uses web fonts, the web browser downloads the necessary font files along with the rest of the page. To specify a web font, you must provide the URL to your web font files in four font formats (for support across browsers), and a small and large thumbnail image to use to render the font names in the font scheme picker. 
+Web fonts are fonts that are available on the Internet. When a user views a site that uses web fonts, the web browser downloads the necessary font files along with the rest of the page. To specify a web font, you must provide the URL to your web font files in four font formats (for support across browsers), and a small and large thumbnail image to use to render the font names in the font scheme picker.
   
     
     
@@ -356,7 +356,7 @@ The following example describes the information that is required to use a web fo
 
 ```
 
-In this example of using a web font, the following placeholders would be replaced: 
+In this example of using a web font, the following placeholders would be replaced:
   
     
     
@@ -386,7 +386,7 @@ In this example of using a web font, the following placeholders would be replace
 ### Font slots
 <a name="fontSlot"> </a>
 
-Table 1 describes the available font slots and where they are used in a page. 
+Table 1 describes the available font slots and where they are used in a page.
   
     
     

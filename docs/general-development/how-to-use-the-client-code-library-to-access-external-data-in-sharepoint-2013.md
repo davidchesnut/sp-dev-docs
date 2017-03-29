@@ -6,8 +6,8 @@ ms.assetid: c280ae92-c52b-4658-b0f3-805fb215ef8e
 
 
 # How to: Use the client code library to access external data in SharePoint 2013
-Learn how to use the SharePoint 2013 client object model to work with Business Connectivity Services (BCS) objects in SharePoint 2013 using browser-based scripting. 
-This article demonstrates how to set up an external list that retrieves data from an Open Data protocol (OData) source using the client object model in SharePoint 2013. 
+Learn how to use the SharePoint 2013 client object model to work with Business Connectivity Services (BCS) objects in SharePoint 2013 using browser-based scripting.
+This article demonstrates how to set up an external list that retrieves data from an Open Data protocol (OData) source using the client object model in SharePoint 2013.
   
     
     
@@ -16,30 +16,30 @@ This article demonstrates how to set up an external list that retrieves data fro
 ## Prerequisites for accessing external data using the SharePoint 2013 client object model
 <a name="bkmk_Prerequisites"> </a>
 
-The following are requirements for being able to develop apps using the SharePoint client object model: 
+The following are requirements for being able to develop apps using the SharePoint client object model:
   
     
     
 
-- SharePoint 2013 
+- SharePoint 2013
     
   
-- Visual Studio 2012 
+- Visual Studio 2012
     
   
-- Office Developer Tools for Visual Studio 2012 
+- Office Developer Tools for Visual Studio 2012
     
   
-- A functioning SharePoint Add-ins development environment: Follow the instructions in  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md). 
+- A functioning SharePoint Add-ins development environment: Follow the instructions in  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
     
   
-- Access to the public OData.org producers 
+- Access to the public OData.org producers
     
   
 
 ### Core concepts to know when accessing external data with the SharePoint 2013 client object model
 
-The SharePoint 2013 client object model provides a way to access external data using client-side calls that mimic the server-side APIs. To understand how it works and how to use it, see the articles in Table 1. 
+The SharePoint 2013 client object model provides a way to access external data using client-side calls that mimic the server-side APIs. To understand how it works and how to use it, see the articles in Table 1.
   
     
     
@@ -49,13 +49,13 @@ The SharePoint 2013 client object model provides a way to access external data u
 
 |**Article**|**Description**|
 |:-----|:-----|
-| [Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)|Learn how to write code to peform basic operations with the SharePoint 2013 .NET Framework client object model (CSOM). |
+| [Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)|Learn how to write code to peform basic operations with the SharePoint 2013 .NET Framework client object model (CSOM).|
    
 
 ## Create an SharePoint Add-in to access external data using the client object model
 <a name="bkmk_CreateApp"> </a>
 
-The following procedures show how to set up an SharePoint Add-in and configure a webpage to make requests using client object model methods and objects to retrieve data from an external data source. 
+The following procedures show how to set up an SharePoint Add-in and configure a webpage to make requests using client object model methods and objects to retrieve data from an external data source.
   
     
     
@@ -63,13 +63,13 @@ The following procedures show how to set up an SharePoint Add-in and configure a
 ### To create an SharePoint Add-in
 
 
-1. Open Visual Studio 2012. 
+1. Open Visual Studio 2012.
     
   
 2. Create an **App for SharePoint 2013** project.
     
   
-3. Specify the app settings, including app name, the site URL for debugging the app, and how you want to host the app (Autohosted, Provider-hosted, SharePoint-hosted). For more information about hosting options, see  [Choose patterns for developing and hosting your SharePoint Add-in](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457%28Office.15%29.aspx). 
+3. Specify the app settings, including app name, the site URL for debugging the app, and how you want to host the app (Autohosted, Provider-hosted, SharePoint-hosted). For more information about hosting options, see  [Choose patterns for developing and hosting your SharePoint Add-in](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457%28Office.15%29.aspx).
     
   
 4. Click **Finish** to create the app.
@@ -79,18 +79,18 @@ The following procedures show how to set up an SharePoint Add-in and configure a
 ### To generate the external content type
 
 
-1. In **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**. 
+1. In **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**.
     
   
 2. In the **Specify OData Source** wizard, enter the URL of the OData service that you want to connect to. In this case, you will use the Northwind OData source published at [http://www.odata.org/ecosystem](http://www.odata.org/ecosystem). Set the URL for the OData service to  `http://services.odata.org/Northwind/Northwind.svc/`
     
-    Specify a name for the data source, and choose **Next**. 
+    Specify a name for the data source, and choose **Next**.
     
   
 3. A list of entities that are exposed by the OData Service will appear. Choose the **Customers** entity. Ensure that the **Create list instances for the selected data entities (except Service Operations)** check box is selected.
     
   
-4. Choose **Finish**. 
+4. Choose **Finish**.
     
   
 
@@ -119,10 +119,10 @@ The next objective is to modify the default.aspx page that you created when you 
 <div id="displayDiv"></div>
   ```
 
-3. Save the page. 
+3. Save the page.
     
   
-Finally, you add code to the App.js file that executes when the page loads. 
+Finally, you add code to the App.js file that executes when the page loads.
   
     
     
@@ -130,10 +130,10 @@ Finally, you add code to the App.js file that executes when the page loads.
 ### To modify the App.js file to make client object model calls
 
 
-1. Open the App.js file in the Scripts module of your SharePoint project. 
+1. Open the App.js file in the Scripts module of your SharePoint project.
     
   
-2. Paste the following code at the end of the file. 
+2. Paste the following code at the end of the file.
     
   ```
   $(document).ready(function () {
@@ -191,7 +191,7 @@ function getCustomers() {
 }
   ```
 
-Press F5 to deploy the app to SharePoint. Browse to the Default.aspx page in the app, and a list of customers appears on the page. 
+Press F5 to deploy the app to SharePoint. Browse to the Default.aspx page in the app, and a list of customers appears on the page.
   
     
     

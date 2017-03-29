@@ -10,7 +10,7 @@ ms.assetid: c3ef38aa-559e-4832-95c7-75e222c77624
 ## Overview
 <a name="Overview"> </a>
 
-Duet Enterprise 2.0 is the latest version of a collaborative effort between Microsoft and SAP to give SharePoint users the ability to work with data from SAP systems.It combines components from SAP as well as SharePoint 2013 and SharePoint Online. It gives a developer the ability to create components that will allow users to bring data from SAP systems into the familiar SharePoint environment. 
+Duet Enterprise 2.0 is the latest version of a collaborative effort between Microsoft and SAP to give SharePoint users the ability to work with data from SAP systems.It combines components from SAP as well as SharePoint 2013 and SharePoint Online. It gives a developer the ability to create components that will allow users to bring data from SAP systems into the familiar SharePoint environment.
   
     
     
@@ -18,37 +18,37 @@ Duet Enterprise 2.0 is the latest version of a collaborative effort between Micr
 ## Features of Duet Enterprise 2.0
 <a name="Overview"> </a>
 
-When properly installed and configured, Duet Enterprise 2.0 will provide the following features: 
+When properly installed and configured, Duet Enterprise 2.0 will provide the following features:
   
     
     
 
-- You can work with data in SAP systems within SharePoint using Business Data Web parts, External lists and custom components. 
+- You can work with data in SAP systems within SharePoint using Business Data Web parts, External lists and custom components.
     
   
-- Use SAP data in SharePoint 2013 without code by using built-in components. 
+- Use SAP data in SharePoint 2013 without code by using built-in components.
     
   
-- Use SAP reporting systems inside of an app. 
+- Use SAP reporting systems inside of an app.
     
   
-- Use special web parts installed with Duet Enterprise 2.0 to add SAP information to SharePoint pages 
+- Use special web parts installed with Duet Enterprise 2.0 to add SAP information to SharePoint pages
     
   
-- Use SAP workflow in an app. 
+- Use SAP workflow in an app.
     
   
-- Developers can use client-side JavaScript to interact with SAP external data. 
+- Developers can use client-side JavaScript to interact with SAP external data.
     
   
-- Secure data using OAuth for authentication. 
+- Secure data using OAuth for authentication.
     
   
 
 ## Setting up the development environment
 <a name="SettingUp"> </a>
 
-Developing SharePoint Add-ins using Duet Enterprise 2.0, for the most part, is exactly the same as creating standard SharePoint Add-ins. You can use either the browser-based Napa Office 365 Development Tools tools to create and deploy, or you can use Visual Studio to extend your apps and work within the robust framework of the Visual Studio integrated development environment. 
+Developing SharePoint Add-ins using Duet Enterprise 2.0, for the most part, is exactly the same as creating standard SharePoint Add-ins. You can use either the browser-based Napa Office 365 Development Tools tools to create and deploy, or you can use Visual Studio to extend your apps and work within the robust framework of the Visual Studio integrated development environment.
   
     
     
@@ -60,7 +60,7 @@ In order to access the external data housed on the SAP system, you will have to 
   
     
     
-Follow these steps to create an external content type: 
+Follow these steps to create an external content type:
   
     
     
@@ -68,22 +68,22 @@ Follow these steps to create an external content type:
 ### Creating an external content type from an SAP OData endpoint
 
 
-1. In **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**. 
+1. In **Solution Explorer**, open the shortcut menu for the project, and choose **Add**, **Content types for External Data source**.
     
   
 2. On the **Specify OData Source** page, enter the URL of the Duet Enterprise Workflow Service.
     
   
-3. Choose a name for your OData source. 
+3. Choose a name for your OData source.
     
   
-4. Select the entities that are needed. 
+4. Select the entities that are needed.
     
   
-5. Choose **Finish**. 
+5. Choose **Finish**.
     
   
-Visual Studio will create a new folder named External Content Types where you will find the newly created BDC model. 
+Visual Studio will create a new folder named External Content Types where you will find the newly created BDC model.
   
     
     
@@ -95,7 +95,7 @@ The most important thing to make the project work, is to add the **ODataExtensio
   
     
     
-This sample shows the properties added to the BDC model: 
+This sample shows the properties added to the BDC model:
   
     
     
@@ -130,23 +130,23 @@ Duet Enterprise 2.0 installs several starter services to the file system on the 
     
     
 
-- OBACustomerWorkspace 
+- OBACustomerWorkspace
     
   
-- OBAOrderToCash 
+- OBAOrderToCash
     
   
-- OBAPortal 
+- OBAPortal
     
   
-- OBAProductCenter 
+- OBAProductCenter
     
   
-Each of these solutions contains WSP files, solution and other supporting files needed to implement them. 
+Each of these solutions contains WSP files, solution and other supporting files needed to implement them.
   
     
     
-These solutions can be used to see what can be done with Duet Enterprise 2.0 and what the development patterns are, but they are not supported for use in SharePoint Add-ins. 
+These solutions can be used to see what can be done with Duet Enterprise 2.0 and what the development patterns are, but they are not supported for use in SharePoint Add-ins.
   
     
     

@@ -6,11 +6,11 @@ ms.assetid: 38560a3b-69c6-4a56-97ca-3625bbd5755e
 
 
 # Search connector framework in SharePoint 2013
-Learn about the SharePoint 2013 indexing connectors, the connector framework, and how you can create custom BCS indexing connectors to search external systems. 
+Learn about the SharePoint 2013 indexing connectors, the connector framework, and how you can create custom BCS indexing connectors to search external systems.
 ## Making content available for search in SharePoint 2013
 <a name="SP15searchconnect_make"> </a>
 
-Search in SharePoint 2013 provides two approaches for processing queries to return search results—federated search and content crawling. 
+Search in SharePoint 2013 provides two approaches for processing queries to return search results—federated search and content crawling.
   
     
     
@@ -19,16 +19,16 @@ Search in SharePoint 2013 provides two approaches for processing queries to retu
     
     
 
-- You require no additional capacity requirements for the content index, because content is not crawled by Search in SharePoint 2013. 
+- You require no additional capacity requirements for the content index, because content is not crawled by Search in SharePoint 2013.
     
   
-- You can take advantage of a repository's existing search engine. For example, you can federate to an Internet search engine to search the web. 
+- You can take advantage of a repository's existing search engine. For example, you can federate to an Internet search engine to search the web.
     
   
-- You can optimize the content repository's search engine for the repository's specific set of content, which might provide better search performance on the content set. 
+- You can optimize the content repository's search engine for the repository's specific set of content, which might provide better search performance on the content set.
     
   
-- You can access repositories that are secured against crawls, but that can be accessed by search queries. 
+- You can access repositories that are secured against crawls, but that can be accessed by search queries.
     
   
  **Content crawling** In this approach, results are returned from the Search service application's content index based on the user's query. The content index contains content that is crawled by the Search service application, and includes text content and metadata for each content item. This approach enables you to:
@@ -36,16 +36,16 @@ Search in SharePoint 2013 provides two approaches for processing queries to retu
     
     
 
-- Sort results by relevance. 
+- Sort results by relevance.
     
   
-- Control how frequently the content index is updated. 
+- Control how frequently the content index is updated.
     
   
-- Specify what metadata is crawled. 
+- Specify what metadata is crawled.
     
   
-- Perform a single backup operation for crawled content. 
+- Perform a single backup operation for crawled content.
     
   
 
@@ -56,11 +56,11 @@ The crawler uses indexing connectors to access the content to crawl. The indexin
   
     
     
-Search in SharePoint 2013 includes a connector framework, introduced in SharePoint Server 2010 and built on Microsoft Business Connectivity Services (BCS), which provides a simpler approach to developing indexing connectors. With the connector framework, the crawler uses indexing connectors based on BCS to crawl external content. SharePoint 2013 uses both protocol handler-based indexing connectors and BCS indexing connectors to crawl content. 
+Search in SharePoint 2013 includes a connector framework, introduced in SharePoint Server 2010 and built on Microsoft Business Connectivity Services (BCS), which provides a simpler approach to developing indexing connectors. With the connector framework, the crawler uses indexing connectors based on BCS to crawl external content. SharePoint 2013 uses both protocol handler-based indexing connectors and BCS indexing connectors to crawl content.
   
     
     
-Figure 1 provides a high-level overview of the SharePoint 2013 indexing connector story. 
+Figure 1 provides a high-level overview of the SharePoint 2013 indexing connector story.
   
     
     
@@ -84,7 +84,7 @@ Figure 1 provides a high-level overview of the SharePoint 2013 indexing connecto
 ## BCS overview for Search in SharePoint 2013
 <a name="ConnectorFramework_BCSOverview"> </a>
 
-BCS is the umbrella of tools and infrastructure that enables you to connect to external systems from SharePoint. Figure 2 shows a high-level view of the BCS architecture, with the relevant areas for Search highlighted. 
+BCS is the umbrella of tools and infrastructure that enables you to connect to external systems from SharePoint. Figure 2 shows a high-level view of the BCS architecture, with the relevant areas for Search highlighted.
   
     
     
@@ -110,7 +110,7 @@ BCS is the umbrella of tools and infrastructure that enables you to connect to e
   
     
     
-BCS makes the connection to the external data based on the external content type definition in the metadata store. The metadata store contains the following information for an external content type: 
+BCS makes the connection to the external data based on the external content type definition in the metadata store. The metadata store contains the following information for an external content type:
   
     
     
@@ -124,18 +124,18 @@ BCS makes the connection to the external data based on the external content type
 - **Operations** Describes methods used to access the external data. In the case of databases and web services, these are methods supported by the external system: SQL statements for database connectors and web methods for web services. For .NET and custom BCS indexing connectors, these are methods that are implemented in the connector assembly, which is the component DLL you create for the indexing connector.
     
   
-This information is specified in the external content type's BDC model file. For more information about BDC models and what they contain, see  [BDC Model Infrastructure](http://msdn.microsoft.com/library/2818ebdd-6cda-4d8f-82b2-7fde9fbf2633%28Office.15%29.aspx). 
+This information is specified in the external content type's BDC model file. For more information about BDC models and what they contain, see  [BDC Model Infrastructure](http://msdn.microsoft.com/library/2818ebdd-6cda-4d8f-82b2-7fde9fbf2633%28Office.15%29.aspx).
   
     
     
-For details about BCS architecture and functionality, see  [Business Connectivity Services Overview](http://msdn.microsoft.com/library/91dd7b01-ead2-4f87-804b-b59ef2245c87%28Office.15%29.aspx) and [Mechanics of Using Business Connectivity Services](http://msdn.microsoft.com/library/ff3e312b-0fbc-48ed-a752-76c50d286533%28Office.15%29.aspx). 
+For details about BCS architecture and functionality, see  [Business Connectivity Services Overview](http://msdn.microsoft.com/library/91dd7b01-ead2-4f87-804b-b59ef2245c87%28Office.15%29.aspx) and [Mechanics of Using Business Connectivity Services](http://msdn.microsoft.com/library/ff3e312b-0fbc-48ed-a752-76c50d286533%28Office.15%29.aspx).
   
     
     
 
 ### Using the connector framework
 
-To crawl external data, you have to add one of the content source types that support connecting to external data. Table 1 lists these content source types. 
+To crawl external data, you have to add one of the content source types that support connecting to external data. Table 1 lists these content source types.
   
     
     
@@ -145,14 +145,14 @@ To crawl external data, you have to add one of the content source types that sup
 
 |**Content source type**|**Description**|
 |:-----|:-----|
-|Line of Business Data |Use this content source for database and web service BCS indexing connectors. |
-|Custom Repository |Use this content source for .NET and custom BCS indexing connectors. |
+|Line of Business Data|Use this content source for database and web service BCS indexing connectors.|
+|Custom Repository|Use this content source for .NET and custom BCS indexing connectors.|
    
-The connector framework enables you to create BCS indexing connectors to connect to external content that you want to crawl and include in the content index. The BCS indexing connector is used by the crawler to communicate with the external data source. At crawl time, the crawler calls the BCS indexing connector to fetch the data from the external system and pass it back to the crawler. The BCS indexing connector also parses the access URLs understood by Search and the identifiers understood by BCS as they are passed between BCS and Search during the crawl process. 
+The connector framework enables you to create BCS indexing connectors to connect to external content that you want to crawl and include in the content index. The BCS indexing connector is used by the crawler to communicate with the external data source. At crawl time, the crawler calls the BCS indexing connector to fetch the data from the external system and pass it back to the crawler. The BCS indexing connector also parses the access URLs understood by Search and the identifiers understood by BCS as they are passed between BCS and Search during the crawl process.
   
     
     
-BCS indexing connectors are composed of the following: 
+BCS indexing connectors are composed of the following:
   
     
     
@@ -175,11 +175,11 @@ For BCS indexing connectors based on the Line of Business Data content source ty
   
     
     
-For BCS indexing connectors based on the Custom Repository content source types, you must develop a custom component in addition to a BDC model file to connect to the external data. 
+For BCS indexing connectors based on the Custom Repository content source types, you must develop a custom component in addition to a BDC model file to connect to the external data.
   
     
     
-Figure 3 shows a high-level view of the search connector framework architecture. 
+Figure 3 shows a high-level view of the search connector framework architecture.
   
     
     
@@ -209,7 +209,7 @@ Figure 3 shows a high-level view of the search connector framework architecture.
 ### BCS indexing connectors
 <a name="ConnectorFramework_BCSIndexingConnectors"> </a>
 
-SharePoint 2013 supports the following types of BCS indexing connectors: 
+SharePoint 2013 supports the following types of BCS indexing connectors:
   
     
     
@@ -231,7 +231,7 @@ SharePoint 2013 supports the following types of BCS indexing connectors:
 ## Building BCS indexing connectors
 <a name="ConnectorFramework_BCSOverview"> </a>
 
-When you develop a BCS indexing connector—whether you're just creating the BDC model file for database and web service indexing connectors, or creating the BDC model file and coding the BCS connector component for .NET and custom indexing connectors—you need to think about the following: 
+When you develop a BCS indexing connector—whether you're just creating the BDC model file for database and web service indexing connectors, or creating the BDC model file and coding the BCS connector component for .NET and custom indexing connectors—you need to think about the following:
   
     
     
@@ -248,7 +248,7 @@ When you develop a BCS indexing connector—whether you're just creating the BDC
 - **Securing data** In most scenarios, not all data is accessible to all users. It's important that this also works with search, so when a user searches by using the search UI, the user can see only the results he or she has access to. This means the connector must know how to read the security of the external system, and bring that security-related information back during the crawl into the index. For example, you could implement crawl-time storage of Windows NT access control lists (ACLs).
     
   
-Table 2 describes the stereotyped operations that apply when you create a BCS indexing connector for SharePoint 2013. 
+Table 2 describes the stereotyped operations that apply when you create a BCS indexing connector for SharePoint 2013.
   
     
     
@@ -272,21 +272,21 @@ Table 2 describes the stereotyped operations that apply when you create a BCS in
 
 ### Tooling support for developing BCS indexing connectors
 
-BCS provides tooling support for BCS connectors in SharePoint Designer and Visual Studio. 
+BCS provides tooling support for BCS connectors in SharePoint Designer and Visual Studio.
   
     
     
 
 #### SharePoint Designer tooling support for BCS connectors
 
-SharePoint Designer provides a limited set of capabilities; you can use it to create BDC model files for existing BCS connector types, such as database, web service, and .NET BCS connectors. You can also use it to export BDC model files from one BCS service application to another BCS service application. 
+SharePoint Designer provides a limited set of capabilities; you can use it to create BDC model files for existing BCS connector types, such as database, web service, and .NET BCS connectors. You can also use it to export BDC model files from one BCS service application to another BCS service application.
   
     
     
 
 #### Visual Studio tooling support for BCS connectors
 
-You can use Visual Studio to create the component for .NET BCS connectors and custom BCS connectors. For .NET BCS connectors, Visual Studio provides the Business Data Connectivity Model project template, which includes a set of visual designers and code management capabilities to enable you to more easily create, debug, and deploy the .NET component and the associated BDC model file for the .NET BCS connector. There is no corresponding project template for custom BCS connectors. 
+You can use Visual Studio to create the component for .NET BCS connectors and custom BCS connectors. For .NET BCS connectors, Visual Studio provides the Business Data Connectivity Model project template, which includes a set of visual designers and code management capabilities to enable you to more easily create, debug, and deploy the .NET component and the associated BDC model file for the .NET BCS connector. There is no corresponding project template for custom BCS connectors.
   
     
     
@@ -294,11 +294,11 @@ You can use Visual Studio to create the component for .NET BCS connectors and cu
 ## Connector framework enhancements in SharePoint 2013
 <a name="SP15searchconnect_enhancements"> </a>
 
-In SharePoint 2013 the connector framework supports BCS connectors retrieving claims information for content that is stored in custom external data repositories. 
+In SharePoint 2013 the connector framework supports BCS connectors retrieving claims information for content that is stored in custom external data repositories.
   
     
     
-The connector framework also provides improved exception capturing and logging to help you troubleshoot errors encountered when crawling content sources by using BCS connectors. 
+The connector framework also provides improved exception capturing and logging to help you troubleshoot errors encountered when crawling content sources by using BCS connectors.
   
     
     

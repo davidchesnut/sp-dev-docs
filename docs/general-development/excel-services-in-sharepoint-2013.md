@@ -6,11 +6,11 @@ ms.assetid: f7e13fcb-a86a-4a1e-af59-3bace98ce9d7
 
 
 # Excel Services in SharePoint 2013
-Learn about the new capabilities in Excel Services in SharePoint Server 2013 and how you can use them in your own development efforts. 
+Learn about the new capabilities in Excel Services in SharePoint Server 2013 and how you can use them in your own development efforts.
 ## What's new in Excel Services for developers
 <a name="xlsWhatsNew"> </a>
 
-SharePoint 2013 brings new technologies to Excel Services─such as ECMAScript (JavaScript, JScript) UDFs and Excel Interactive View─and new enhancements to existing technologies, such as ODATA for REST, and updates to the ECMAScript (JavaScript, JScript) Object Model (JSOM) API. 
+SharePoint 2013 brings new technologies to Excel Services─such as ECMAScript (JavaScript, JScript) UDFs and Excel Interactive View─and new enhancements to existing technologies, such as ODATA for REST, and updates to the ECMAScript (JavaScript, JScript) Object Model (JSOM) API.
   
     
     
@@ -26,7 +26,7 @@ Excel Services already lets you create user-defined functions (UDFs) using manag
 ### OData in Excel Services
 <a name="xlsOdata"> </a>
 
-SharePoint Server 2010 introduced the REST API for use in getting and setting information in Excel Workbooks stored in SharePoint document libraries. SharePoint Server 2013 adds a new way to request data from Excel Services that uses the Open Data Protocol (OData) which you can use to get information about Excel Services resources. This new service relies heavily on the existing Excel Services REST API. 
+SharePoint Server 2010 introduced the REST API for use in getting and setting information in Excel Workbooks stored in SharePoint document libraries. SharePoint Server 2013 adds a new way to request data from Excel Services that uses the Open Data Protocol (OData) which you can use to get information about Excel Services resources. This new service relies heavily on the existing Excel Services REST API.
   
     
     

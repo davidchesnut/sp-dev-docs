@@ -15,7 +15,7 @@ The Dictionary variable type is a new variable type in the SharePoint 2013 Workf
 ## Understanding the Dictionary variable type
 <a name="section1"> </a>
 
-A workflow is a series of actions that perform a desired outcome. As you build a workflow you often need to save values in a variable (storage container) to use in other parts of the workflow. 
+A workflow is a series of actions that perform a desired outcome. As you build a workflow you often need to save values in a variable (storage container) to use in other parts of the workflow.
   
     
     
@@ -41,7 +41,7 @@ SharePoint Designer 2013 has a new variable type called **Dictionary**. The **Di
   
     
     
-The figure illustrates the concept. 
+The figure illustrates the concept.
   
     
     
@@ -71,7 +71,7 @@ The figure illustrates the concept.
 ## Workflow actions that use the Dictionary variable type
 <a name="section2"> </a>
 
-A workflow consists of multiple actions that are executed as the workflow is processed. SharePoint Designer 2013 contains many different actions. For example, there is an action to send an email message, create a list item, and log messages to workflow history. 
+A workflow consists of multiple actions that are executed as the workflow is processed. SharePoint Designer 2013 contains many different actions. For example, there is an action to send an email message, create a list item, and log messages to workflow history.
   
     
     
@@ -110,7 +110,7 @@ The workflow actions for the Dictionary variable type can be found on the **Acti
 
 ### Create variables with the "Build Dictionary" action
 
-You use the **Build Dictionary** action to create a variable of type **Dictionary**. You enter the contents of the dictionary and then specify the name of the dictionary in the variable list. 
+You use the **Build Dictionary** action to create a variable of type **Dictionary**. You enter the contents of the dictionary and then specify the name of the dictionary in the variable list.
   
     
     
@@ -137,25 +137,25 @@ A **Dictionary** can contain any type of variable available in the SharePoint 20
     
     
 
-- **Boolean**: A Yes or No value 
+- **Boolean**: A Yes or No value
     
   
-- **Date/Time**: A date and time 
+- **Date/Time**: A date and time
     
   
-- **Dictionary**: A collection of variables 
+- **Dictionary**: A collection of variables
     
   
-- **Guid**: A Globally Unique Identifier (GUID) 
+- **Guid**: A Globally Unique Identifier (GUID)
     
   
-- **Integer**: A whole number without decimals 
+- **Integer**: A whole number without decimals
     
   
-- **Number**: A number that can contain decimals 
+- **Number**: A number that can contain decimals
     
   
-- **String**: A string of characters 
+- **String**: A string of characters
     
   
 
@@ -185,7 +185,7 @@ A **Dictionary** can contain any type of variable available in the SharePoint 20
 
 ### Count and store variables with the "Count Items in a Dictionary" action
 
-You use the **Count Items in a Dictionary** action to count the variables that a **Dictionary** contains and then store that number in an Integer variable. You can then use the item count to loop through the **Dictionary**. 
+You use the **Count Items in a Dictionary** action to count the variables that a **Dictionary** contains and then store that number in an Integer variable. You can then use the item count to loop through the **Dictionary**.
   
     
     
