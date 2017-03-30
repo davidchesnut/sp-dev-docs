@@ -8,11 +8,6 @@ You can also follow these steps by watching the video on the [SharePoint PnP You
 
 > [!VIDEO https://www.youtube.com/embed/_fxYexlUhe0?list=PLR9nK3mnD-OXvSWvS2zglCzz4iplhVrKq]
 
-<a href="https://www.youtube.com/watch?v=_fxYexlUhe0&t=5s&list=PLR9nK3mnD-OXvSWvS2zglCzz4iplhVrKq">
-    <img src="../../images/spfx-youtube-tutorial0.png" alt="Screenshot of the YouTube video player for this tutorial" />
-</a>
-
-
 ## Install developer tools
 
 ### NodeJS
