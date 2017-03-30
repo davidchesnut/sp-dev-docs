@@ -1,6 +1,6 @@
 ---
 title: Step 2 Adding a Web Reference
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: e9175863-ddb4-4750-847d-d53cb59b33cb
 ---
 

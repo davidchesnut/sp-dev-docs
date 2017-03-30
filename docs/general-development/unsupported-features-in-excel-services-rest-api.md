@@ -1,6 +1,6 @@
 ---
 title: Unsupported Features in Excel Services REST API
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 4139901f-255b-4556-b8c8-3d986a07c587
 ---
 

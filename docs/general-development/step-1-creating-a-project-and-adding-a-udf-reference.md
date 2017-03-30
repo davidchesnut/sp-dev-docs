@@ -101,7 +101,7 @@ The following steps show how to locate Microsoft.Office.Excel.Server.Udf.dll and
 3. Click **OK**.
     
    > [!NOTE]
-   > The previous steps assume that you are building the project on a computer that has Microsoft SharePoint Server 2010 installed. On the computer where you have installed SharePoint Server 2010, you can find a copy of Microsoft.Office.Excel.Server.Udf.dll at: > [drive:]\\Program Files\\Common Files\\Microsoft Shared\\web server extensions\\14\\ISAPI 
+   > The previous steps assume that you are building the project on a computer that has Microsoft SharePoint Server 2010 installed. On the computer where you have installed SharePoint Server 2010, you can find a copy of Microsoft.Office.Excel.Server.Udf.dll at:> [drive:]\\Program Files\\Common Files\\Microsoft Shared\\web server extensions\\14\\ISAPI
 
 ## See also
 

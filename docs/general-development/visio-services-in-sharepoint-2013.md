@@ -85,7 +85,7 @@ Visio Services in Microsoft SharePoint Server 2013 and in Microsoft SharePoint O
 
 |||
 |:-----|:-----|
-|![On-premises behavior note](images/mod_icon_onpremises.gif)|You can use the Visio Services class library, in the  [Microsoft.Office.Visio.Server](https://msdn.microsoft.com/library/Microsoft.Office.Visio.Server.aspx) namespace, to build custom Visio Services data providers. These data providers permit you to programmatically refresh data derived from custom data sources in Visio 2013 diagrams hosted on a SharePoint Server 2013 site.For more information about creating a custom data provider and to work through a complete end-to-end solution, see  [Creating a Custom Data Provider with Visio Services](http://msdn.microsoft.com/en-us/library/ff394595.aspx). |
+|![On-premises behavior note](images/mod_icon_onpremises.gif)|You can use the Visio Services class library, in the  [Microsoft.Office.Visio.Server](https://msdn.microsoft.com/library/Microsoft.Office.Visio.Server.aspx) namespace, to build custom Visio Services data providers. These data providers permit you to programmatically refresh data derived from custom data sources in Visio 2013 diagrams hosted on a SharePoint Server 2013 site. <br/> For more information about creating a custom data provider and to work through a complete end-to-end solution, see  [Creating a Custom Data Provider with Visio Services](http://msdn.microsoft.com/en-us/library/ff394595.aspx). <br/> |
    
 
 ## Additional Resources

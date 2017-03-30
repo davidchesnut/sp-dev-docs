@@ -205,7 +205,7 @@ For more information about using the client object model in SharePoint 2013, see
 
 |**Article**|**Description**|
 |:-----|:-----|
-| [BCS client object model reference for SharePoint 2013](bcs-client-object-model-reference-for-sharepoint-2013.md)|Summarizes the objects available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by BCS. |
+| [BCS client object model reference for SharePoint 2013](bcs-client-object-model-reference-for-sharepoint-2013.md) <br/> |Summarizes the objects available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by BCS. <br/> |
    
 
 ## Additional resources

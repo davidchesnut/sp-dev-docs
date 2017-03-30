@@ -1,6 +1,6 @@
 ---
 title: Excel Web Services
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: e30ef4e3-72ff-43de-beba-b377141d4d19
 ---
 

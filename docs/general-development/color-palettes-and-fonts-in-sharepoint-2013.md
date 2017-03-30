@@ -396,13 +396,13 @@ Table 1 describes the available font slots and where they are used in a page.
 
 |**Font Slot Name**|**Description**|
 |:-----|:-----|
-|title |Used for the page title. |
-|navigation |Used for the horizontal and vertical navigation elements on the page. |
-|large-heading |Used for the H1 heading. |
-|heading |Used for H2 and H3 headings, Web Part titles, dialog box titles, and callout titles. |
-|small-heading |Used for H4 headings. |
-|large-body |Used for large body text (15 pixels and 19 pixels). |
-|body |The base font that is used everywhere else on the page. |
+|title <br/> |Used for the page title. <br/> |
+|navigation <br/> |Used for the horizontal and vertical navigation elements on the page. <br/> |
+|large-heading <br/> |Used for the H1 heading. <br/> |
+|heading <br/> |Used for H2 and H3 headings, Web Part titles, dialog box titles, and callout titles. <br/> |
+|small-heading <br/> |Used for H4 headings. <br/> |
+|large-body <br/> |Used for large body text (15 pixels and 19 pixels). <br/> |
+|body <br/> |The base font that is used everywhere else on the page. <br/> |
    
 
 ## Additional resources

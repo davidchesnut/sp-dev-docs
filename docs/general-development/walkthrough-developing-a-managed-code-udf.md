@@ -1,6 +1,6 @@
 ---
 title: Walkthrough Developing a Managed-Code UDF
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: e6a00833-0606-4a7d-91c3-b89a6e340348
 ---
 

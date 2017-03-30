@@ -134,10 +134,10 @@ When you master the basic concepts of BCS, you can use the more advanced feature
 
 |**Topic**|**Description**|
 |:-----|:-----|
-| [How to: Create an OData data service for use as a BCS external system](how-to-create-an-odata-data-service-for-use-as-a-bcs-external-system.md)|Learn how to create an Internet-addressable WCF service that uses OData to send notifications to SharePoint 2013 when the underlying data changes. These notifications are used to trigger events that are attached to external lists. |
-| [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint-2013.md)|Find reference documentation for the schema of the BDC model. |
-| [BCS client object model reference for SharePoint 2013](bcs-client-object-model-reference-for-sharepoint-2013.md)|Get a summary of the objects that are available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by Business Connectivity Services (BCS). |
-| [BCS REST API reference for SharePoint 2013](bcs-rest-api-reference-for-sharepoint-2013.md)|Find reference information for constructing Representational State Transfer (REST) URIs used for accessing and manipulating OData sources. |
+| [How to: Create an OData data service for use as a BCS external system](how-to-create-an-odata-data-service-for-use-as-a-bcs-external-system.md) <br/> |Learn how to create an Internet-addressable WCF service that uses OData to send notifications to SharePoint 2013 when the underlying data changes. These notifications are used to trigger events that are attached to external lists. <br/> |
+| [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint-2013.md) <br/> |Find reference documentation for the schema of the BDC model. <br/> |
+| [BCS client object model reference for SharePoint 2013](bcs-client-object-model-reference-for-sharepoint-2013.md) <br/> |Get a summary of the objects that are available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by Business Connectivity Services (BCS). <br/> |
+| [BCS REST API reference for SharePoint 2013](bcs-rest-api-reference-for-sharepoint-2013.md) <br/> |Find reference information for constructing Representational State Transfer (REST) URIs used for accessing and manipulating OData sources. <br/> |
    
 
 ## Additional resources

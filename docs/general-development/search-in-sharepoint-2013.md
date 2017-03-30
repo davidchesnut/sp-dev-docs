@@ -221,11 +221,11 @@ Table 1 shows the APIs that you can use to program Search in SharePoint 2013 and
 
 |**API name**|**Class library or schema and path**|
 |:-----|:-----|
-|.NET client object model (CSOM) |Microsoft.SharePoint.Client.Search.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI |
-|Silverlight CSOM |Microsoft.SharePoint.Client.Search.Silverlight.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS\\ClientBin |
-|JavaScript CSOM |SP.search.js          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS |
-|Representational State Transfer (REST) service endpoints |http://server/_api/search/query          http://server/_api/search/suggest |
-|Server object model |Microsoft.Office.Server.Search.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI |
+|.NET client object model (CSOM) <br/> |Microsoft.SharePoint.Client.Search.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI <br/> |
+|Silverlight CSOM <br/> |Microsoft.SharePoint.Client.Search.Silverlight.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS\\ClientBin <br/> |
+|JavaScript CSOM <br/> |SP.search.js          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS <br/> |
+|Representational State Transfer (REST) service endpoints <br/> |http://server/_api/search/query          http://server/_api/search/suggest <br/> |
+|Server object model <br/> |Microsoft.Office.Server.Search.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI <br/> |
    
 For more information, see  [Using the SharePoint 2013 search Query APIs](using-the-sharepoint-2013-search-query-apis.md).
   

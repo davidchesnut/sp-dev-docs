@@ -3,7 +3,7 @@ title: How to Programmatically Add an Excel Web Access Web Part to a Page
 keywords: how to,howdoi,howto,webpart
 f1_keywords:
 - how to,howdoi,howto,webpart
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 858bb0f6-654a-4f12-ba0b-4776bda5ff6d
 ---
 

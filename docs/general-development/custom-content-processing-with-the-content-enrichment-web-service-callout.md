@@ -137,10 +137,10 @@ Table 2 lists examples of trigger conditions.
 
 |**Expression**|**Description**|**Requirements**|
 |:-----|:-----|:-----|
-|MP1 > 2 |Returns **true** if the value of the managed property named MP1 is greater than 2.|MP1 must have a numeric type. |
-|IsNull(MP2) |Returns **true** if the managed property named MP2 is not present for the crawled item or is empty/null.|MP2 can be of any type. |
-|StartsWith(MP1, "sample") AND MP2 != 18 |Returns **true** if the value in the managed property MP1 starts with "sample" and the value of managed property MP2 is not 18.|MP1 must be of type **string** and MP2 must be a numeric type.|
-|IsDay(MP1, 2009, 12, 24) |Checks whether the managed property MP1 contains a **DateTime** that falls on December 24, 2009.|MP1 must be of type **DateTime**. |
+|MP1 > 2 <br/> |Returns **true** if the value of the managed property named MP1 is greater than 2. <br/> |MP1 must have a numeric type. <br/> |
+|IsNull(MP2) <br/> |Returns **true** if the managed property named MP2 is not present for the crawled item or is empty/null. <br/> |MP2 can be of any type. <br/> |
+|StartsWith(MP1, "sample") AND MP2 != 18 <br/> |Returns **true** if the value in the managed property MP1 starts with "sample" and the value of managed property MP2 is not 18. <br/> |MP1 must be of type **string** and MP2 must be a numeric type. <br/> |
+|IsDay(MP1, 2009, 12, 24) <br/> |Checks whether the managed property MP1 contains a **DateTime** that falls on December 24, 2009. <br/> |MP1 must be of type **DateTime**. <br/> |
    
 See  [Trigger expressions syntax in SharePoint 2013](trigger-expressions-syntax-in-sharepoint-2013.md) for the elements that can be used in a trigger expression and a list of supported functions.
   

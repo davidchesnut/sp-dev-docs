@@ -1,6 +1,6 @@
 ---
 title: Basic URI Structure and Path
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: d73cf6c2-0677-4726-8a3e-2ad130e1a12c
 ---
 

@@ -91,26 +91,26 @@ Although you have programmatic access to nine languages, you can run your ShareP
 
 |**Culture name**|**Culture code**|
 |:-----|:-----|
-|Chinese Simplified (PRC) |zh-CN |
-|Chinese Traditional (Taiwan) |zh-TW |
-|Czech (Czech Republic) |cs |
-|Danish (Denmark) |da |
-|Dutch (Netherlands) |nl |
-|Finnish (Finland) |fi |
-|French (France) |fr |
-|German (Germany) |de |
-|Greek (Greece) |el |
-|Hungarian (Hungary) |hu |
-|Italian (Italy) |it |
-|Japanese (Japan) |ja |
-|Korean (Korea) |ko |
-|Norwegian (Norway) |nb |
-|Polish (Poland) |pl |
-|Portuguese (Brazil) |pt-BR |
-|Portuguese (Portugal) |pt-PT |
-|Russian (Russia) |ru |
-|Spanish (Spain) |es |
-|Swedish (Sweden) |sv |
+|Chinese Simplified (PRC) <br/> |zh-CN <br/> |
+|Chinese Traditional (Taiwan) <br/> |zh-TW <br/> |
+|Czech (Czech Republic) <br/> |cs <br/> |
+|Danish (Denmark) <br/> |da <br/> |
+|Dutch (Netherlands) <br/> |nl <br/> |
+|Finnish (Finland) <br/> |fi <br/> |
+|French (France) <br/> |fr <br/> |
+|German (Germany) <br/> |de <br/> |
+|Greek (Greece) <br/> |el <br/> |
+|Hungarian (Hungary) <br/> |hu <br/> |
+|Italian (Italy) <br/> |it <br/> |
+|Japanese (Japan) <br/> |ja <br/> |
+|Korean (Korea) <br/> |ko <br/> |
+|Norwegian (Norway) <br/> |nb <br/> |
+|Polish (Poland) <br/> |pl <br/> |
+|Portuguese (Brazil) <br/> |pt-BR <br/> |
+|Portuguese (Portugal) <br/> |pt-PT <br/> |
+|Russian (Russia) <br/> |ru <br/> |
+|Spanish (Spain) <br/> |es <br/> |
+|Swedish (Sweden) <br/> |sv <br/> |
    
 
 ## Additional resources

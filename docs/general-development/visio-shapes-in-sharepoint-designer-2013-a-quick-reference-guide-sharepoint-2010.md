@@ -216,8 +216,8 @@ Some workflow conditions are only available when the workflow is associated to a
 
 |**VISIO CONDITION SHAPE**|**CORRESPONDING CONDITION IN SHAREPOINT DESIGNER**|**CONDITION DESCRIPTION**|
 |:-----|:-----|:-----|
-|![Check exact user permissions](images/spd15-ChkExactUserPerms-visio.JPG)|This Visio condition is the same as the **Check list item permission levels** condition in SharePoint Designer 2013 and appears as:![Check list item permission levels](images/spd15-ChkExactUserPerms-txt.JPG)|**Check exact user permissions**This condition checks that the specified user has the minimum necessary permission level. |
-|![Check user permissions](images/spd15-ChkUserPerms-visio.JPG)|This Visio condition is the same as the **Check list item permissions** condition in SharePoint Designer 2013 and appears as:![Check list item permissions](images/spd15-ChkUserPerms-txt.JPG)|**Check user permission**This condition checks if the specified user has the minimum necessary permissions. |
+|![Check exact user permissions](images/spd15-ChkExactUserPerms-visio.JPG)|This Visio condition is the same as the **Check list item permission levels** condition in SharePoint Designer 2013 and appears as: <br/> ![Check list item permission levels](images/spd15-ChkExactUserPerms-txt.JPG)|**Check exact user permissions** <br/> This condition checks that the specified user has the minimum necessary permission level. <br/> |
+|![Check user permissions](images/spd15-ChkUserPerms-visio.JPG)|This Visio condition is the same as the **Check list item permissions** condition in SharePoint Designer 2013 and appears as: <br/> ![Check list item permissions](images/spd15-ChkUserPerms-txt.JPG)|**Check user permission** <br/> This condition checks if the specified user has the minimum necessary permissions. <br/> |
    
 
 ## Workflow terminators

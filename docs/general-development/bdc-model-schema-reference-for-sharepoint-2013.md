@@ -2832,8 +2832,8 @@ None
 
 |**Element**|**Description**|
 |:-----|:-----|
-| [TypeDescriptor Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/ae423de8-c13b-aea5-d47b-17ef786fb5a7%28Office.15%29.aspx)||
-| [TypeDescriptor](http://msdn.microsoft.com/library/30e38d7f-af18-20ec-45ab-0bece071ce67.aspx)||
+| [TypeDescriptor Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/ae423de8-c13b-aea5-d47b-17ef786fb5a7%28Office.15%29.aspx) <br/> ||
+| [TypeDescriptor](http://msdn.microsoft.com/library/30e38d7f-af18-20ec-45ab-0bece071ce67.aspx) <br/> ||
    
 
 ## Additional resources

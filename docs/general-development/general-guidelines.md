@@ -1,6 +1,6 @@
 ---
 title: General Guidelines
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 437541f8-5cd9-46f4-92b6-3bf9d7e62f69
 ---
 

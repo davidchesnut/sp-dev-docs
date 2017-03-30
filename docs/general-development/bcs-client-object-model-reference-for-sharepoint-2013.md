@@ -466,12 +466,12 @@ The namespace is **Microsoft.BusinessData.MetadataModel**.
 
 |**Interface**|**Description**|
 |:-----|:-----|
-|**IMetadataCatalog**|The entry point into the BDC object model. Use the **DatabaseBasedMetadataCatalog** on the server.|
-|**ILobSystem**|Contains the details about an external system. |
-|**IEntity**|An external content type in the BDC Metadata Store. |
-|**IMethod**|An operation that can be performed on the external content type. |
-|**IEntityInstance**|An entity instance (also known as external item) is a single item returned from an external system in BDC. The **IEntityInstance** interface abstracts the underlying data sources and insulates the clients from having to learn application-specific coding paradigms; it enables them to access all business data in a single, simplified way. By using the **IEntityInstance** interface, you can work with a row of data from a database in just the same way as working with a complex .NET Framework structure returned by a web service.An entity instance in BDC has special semantics attached to it. For example, it has the ability to know which field or fields in the row represent the identifier for the entity instance, and it enables you to call methods, such as **GetAssociated**, **GetIdentifierValues**, and **Execute**, on that entity instance. |
-|**IEntityInstanceEnumerator**|Enumerators can be used to read the data in the external items collection, but they cannot be used to modify the underlying collection. **IEntityInstanceEnumerator** supports streaming and is therefore very useful when the back-end application returns large amounts of data.|
+|**IMetadataCatalog** <br/> |The entry point into the BDC object model. Use the **DatabaseBasedMetadataCatalog** on the server. <br/> |
+|**ILobSystem** <br/> |Contains the details about an external system. <br/> |
+|**IEntity** <br/> |An external content type in the BDC Metadata Store. <br/> |
+|**IMethod** <br/> |An operation that can be performed on the external content type. <br/> |
+|**IEntityInstance** <br/> |An entity instance (also known as external item) is a single item returned from an external system in BDC. <br/> The **IEntityInstance** interface abstracts the underlying data sources and insulates the clients from having to learn application-specific coding paradigms; it enables them to access all business data in a single, simplified way. By using the **IEntityInstance** interface, you can work with a row of data from a database in just the same way as working with a complex .NET Framework structure returned by a web service. <br/> An entity instance in BDC has special semantics attached to it. For example, it has the ability to know which field or fields in the row represent the identifier for the entity instance, and it enables you to call methods, such as **GetAssociated**, **GetIdentifierValues**, and **Execute**, on that entity instance. <br/> |
+|**IEntityInstanceEnumerator** <br/> |Enumerators can be used to read the data in the external items collection, but they cannot be used to modify the underlying collection. **IEntityInstanceEnumerator** supports streaming and is therefore very useful when the back-end application returns large amounts of data. <br/> |
    
 
 ## Client Object model FAQ

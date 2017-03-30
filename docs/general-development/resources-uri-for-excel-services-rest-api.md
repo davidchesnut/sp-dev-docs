@@ -1,6 +1,6 @@
 ---
 title: Resources URI for Excel Services REST API
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 79f95305-ec9e-4842-b937-85f66ced98e4
 ---
 

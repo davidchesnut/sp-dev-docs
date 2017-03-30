@@ -59,7 +59,7 @@ The following table lists the changes to the attributes of each element.
 
 |**Attribute**|**Parent**|**Description**|
 |:-----|:-----|:-----|
-|No changes |||
+|No changes <br/> |||
    
 
 ## Additional resources

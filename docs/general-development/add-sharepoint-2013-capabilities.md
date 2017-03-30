@@ -32,14 +32,14 @@ The following table shows SharePoint capabilities that you can add to your app, 
 
 |**Capability**|**Article title**|
 |:-----|:-----|
-|Model and automate business processes | [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)|
-|Communicate and collaborate with people and track content | [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint-2013.md)|
-|Add location and mapping features | [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md)|
-|Make search results more relevant | [Search in SharePoint 2013](search-in-sharepoint-2013.md)|
-|Access data from external data systems | [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)|
-|Work with data, convert file formats, and translate sites | [Office 2013 and SharePoint 2013 application services](office-2013-and-sharepoint-2013-application-services.md)|
-|Work with user access, roles, rights, and claims. | [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md)|
-|Discover content in electronic format for legal purposes | [eDiscovery in SharePoint 2013](ediscovery-in-sharepoint-2013.md)|
+|Model and automate business processes <br/> | [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md) <br/> |
+|Communicate and collaborate with people and track content <br/> | [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint-2013.md) <br/> |
+|Add location and mapping features <br/> | [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md) <br/> |
+|Make search results more relevant <br/> | [Search in SharePoint 2013](search-in-sharepoint-2013.md) <br/> |
+|Access data from external data systems <br/> | [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md) <br/> |
+|Work with data, convert file formats, and translate sites <br/> | [Office 2013 and SharePoint 2013 application services](office-2013-and-sharepoint-2013-application-services.md) <br/> |
+|Work with user access, roles, rights, and claims. <br/> | [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md) <br/> |
+|Discover content in electronic format for legal purposes <br/> | [eDiscovery in SharePoint 2013](ediscovery-in-sharepoint-2013.md) <br/> |
    
 
 ## Additional resources

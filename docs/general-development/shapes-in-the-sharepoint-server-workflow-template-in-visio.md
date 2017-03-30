@@ -109,16 +109,16 @@ The following table shows a list of all the shapes that are contained in the Sha
     
 
 
-|**Shape in Visio 2013 and SharePoint Designer 2013 Visual Designer**|**Action in the SharePoint Designer 2013 Declarative Designer**|**Properties in SharePoint Designer 2013 Visual Designer**|**Description**|
+|**Shape in Visio 2013 and SharePoint Designer 2013 Visual Designer**|**Action in the SharePoint Designer 2013 Declarative Designer **|**Properties in SharePoint Designer 2013 Visual Designer**|**Description **|
 |:-----|:-----|:-----|:-----|
-|Start |NA |NA |Begins the workflow. Every SharePoint 2013 workflow diagram must have only one Start shape. |
-|Stage |**Stage**|NA |Contains any number of shapes and may include branching. All actions in the workflow must be contained by a stage. Stage shapes are visualized by using container shapes. A Stage shape requires that an Enter and an Exit shape be added to the edges of the container to define the paths in and out of the stage. For more information, see the section titled "Stages, loops, and steps" in the article  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md). |
-|Step |**Step**|NA |Represents a grouped series of sequential actions. Steps must be contained by a stage. A step shape must also have an Enter and Exit shape, which are added when the shape is dropped onto the canvas. For more information, see the section titled "Stages, loops, and steps" in the article  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md). |
-|Simple Stage |**Stage**|NA |Adds new stages to the top level of the workflow when in Stage View in Visio 2013. |
-|Loop n Times |**Loop n Times**|**Loop Count**|Defines a series of connected shapes that will execute as a loop, returning from the last shape in the series to the first, until the loop has executed a specified amount of times. Like stages, loops are represented by a container shape that includes an Enter and Exit shape. For more information, see the section titled "Stages, loops, and steps" in the article  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md). |
-|Loop with condition |**Loop with Condition**|**Loop Count**|Loops until a specific condition is met. |
-|Start Parallel Action |**Parallel Block**|NA ||
-|End Parallel Action |**Parallel Block**|NA ||
+|Start <br/> |NA <br/> |NA <br/> |Begins the workflow. Every SharePoint 2013 workflow diagram must have only one Start shape. <br/> |
+|Stage <br/> |**Stage** <br/> |NA <br/> |Contains any number of shapes and may include branching. All actions in the workflow must be contained by a stage. Stage shapes are visualized by using container shapes. A Stage shape requires that an Enter and an Exit shape be added to the edges of the container to define the paths in and out of the stage. <br/> For more information, see the section titled "Stages, loops, and steps" in the article  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md). <br/> |
+|Step <br/> |**Step** <br/> |NA <br/> |Represents a grouped series of sequential actions. Steps must be contained by a stage. A step shape must also have an Enter and Exit shape, which are added when the shape is dropped onto the canvas. <br/> For more information, see the section titled "Stages, loops, and steps" in the article  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md). <br/> |
+|Simple Stage <br/> |**Stage** <br/> |NA <br/> |Adds new stages to the top level of the workflow when in Stage View in Visio 2013. <br/> |
+|Loop n Times <br/> |**Loop n Times** <br/> |**Loop Count** <br/> |Defines a series of connected shapes that will execute as a loop, returning from the last shape in the series to the first, until the loop has executed a specified amount of times. Like stages, loops are represented by a container shape that includes an Enter and Exit shape. <br/> For more information, see the section titled "Stages, loops, and steps" in the article  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md). <br/> |
+|Loop with condition <br/> |**Loop with Condition** <br/> |**Loop Count** <br/> |Loops until a specific condition is met. <br/> |
+|Start Parallel Action <br/> |**Parallel Block** <br/> |NA <br/> ||
+|End Parallel Action <br/> |**Parallel Block** <br/> |NA <br/> ||
    
 
 ## Additional resources

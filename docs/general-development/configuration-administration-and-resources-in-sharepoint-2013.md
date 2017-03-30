@@ -95,16 +95,16 @@ The following tables list blogs, forums, and additional resources about claims-b
 
 |** **Additional Resources****|** **Links****|
 |:-----|:-----|
-|Claims and Security: Technical Articles Node | [Claims and security: Technical articles and code samples on MSDN](http://msdn.microsoft.com/en-us/library/gg430136.aspx)|
+|Claims and Security: Technical Articles Node <br/> | [Claims and security: Technical articles and code samples on MSDN](http://msdn.microsoft.com/en-us/library/gg430136.aspx) <br/> |
 |||
-|Security and Authentication for SharePoint Foundation 2010 | [Security and Authentication for SharePoint Foundation 2010 Resource Center on TechNet](http://technet.microsoft.com/en-us/sharepoint/ff601873.aspx)|
-|Microsoft SharePoint Foundation 2010 on TechNet | [Microsoft SharePoint Foundation 2010 on TechNet](http://technet.microsoft.com/en-us/sharepoint/ee263910.aspx)|
-|Security Resource Center | [Security Resource Center on MSDN](http://msdn.microsoft.com/en-us/sharepoint/ff660758.aspx)|
-|Windows PowerShell for SharePoint Foundation 2010 Reference | [Security cmdlets (SharePoint Foundation 2010)](http://technet.microsoft.com/en-us/library/ee890118.aspx)|
-|Security Resource Center | [Security Resource Center on TechNet](http://technet.microsoft.com/en-us/office/sharepointserver/cc979168.aspx)|
-|Windows Identity Foundation (WIF) SDK | [Windows Identity Foundation documentation on MSDN](http://msdn.microsoft.com/en-us/library/ee748484.aspx)|
-|Microsoft patterns &amp; practices | [A guide to claims-based identity and access control](http://msdn.microsoft.com/en-us/library/ff423674.aspx)|
-|.NET Framework Class Library | [.NET Framework Class Library](http://msdn.microsoft.com/en-us/library/ms229335.aspx)|
+|Security and Authentication for SharePoint Foundation 2010  <br/> | [Security and Authentication for SharePoint Foundation 2010 Resource Center on TechNet](http://technet.microsoft.com/en-us/sharepoint/ff601873.aspx) <br/> |
+|Microsoft SharePoint Foundation 2010 on TechNet <br/> | [Microsoft SharePoint Foundation 2010 on TechNet](http://technet.microsoft.com/en-us/sharepoint/ee263910.aspx) <br/> |
+|Security Resource Center <br/> | [Security Resource Center on MSDN](http://msdn.microsoft.com/en-us/sharepoint/ff660758.aspx) <br/> |
+|Windows PowerShell for SharePoint Foundation 2010 Reference <br/> | [Security cmdlets (SharePoint Foundation 2010)](http://technet.microsoft.com/en-us/library/ee890118.aspx) <br/> |
+|Security Resource Center <br/> | [Security Resource Center on TechNet](http://technet.microsoft.com/en-us/office/sharepointserver/cc979168.aspx) <br/> |
+|Windows Identity Foundation (WIF) SDK <br/> | [Windows Identity Foundation documentation on MSDN](http://msdn.microsoft.com/en-us/library/ee748484.aspx) <br/> |
+|Microsoft patterns &amp; practices <br/> | [A guide to claims-based identity and access control](http://msdn.microsoft.com/en-us/library/ff423674.aspx) <br/> |
+|.NET Framework Class Library <br/> | [.NET Framework Class Library](http://msdn.microsoft.com/en-us/library/ms229335.aspx) <br/> |
    
 
 ## Additional resources

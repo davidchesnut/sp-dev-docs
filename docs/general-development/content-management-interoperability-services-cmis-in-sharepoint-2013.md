@@ -128,9 +128,9 @@ Query is an optional part of the CMIS specification that SharePoint Server suppo
 
 |**CMIS query statement**|**Description**|
 |:-----|:-----|
-| `SELECT * FROM cmis:document`|Selects all documents in the repository. |
-| `SELECT cmis:name, cmis:author FROM cmis:document WHERE cmis:author='Tina Makovec'`|Selects the name and author of any document in the repository where the author is equal to Tina Makovec. |
-| `SELECT * FROM cmis:document WHERE CONTAINS('4Q13')`|This is an example of a full-text search using CONTAINS. This query returns any documents in the repository that contain the word 4Q13. |
+| `SELECT * FROM cmis:document` <br/> |Selects all documents in the repository. <br/> |
+| `SELECT cmis:name, cmis:author FROM cmis:document WHERE cmis:author='Tina Makovec'` <br/> |Selects the name and author of any document in the repository where the author is equal to Tina Makovec. <br/> |
+| `SELECT * FROM cmis:document WHERE CONTAINS('4Q13')` <br/> |This is an example of a full-text search using CONTAINS. This query returns any documents in the repository that contain the word 4Q13. <br/> |
    
 
   

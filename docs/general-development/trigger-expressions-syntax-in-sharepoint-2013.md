@@ -238,8 +238,8 @@ There are two sets of constants that can be used with specific functions: **Date
 
 |**Group of constants**|**Examples**|**Usage**|
 |:-----|:-----|:-----|
-|**DatePartConstant**|**Day**, **Month**, **Year**, **Hour**, **Minute**, **Second**. |With the **GetDatePart** function|
-|**RegexOptionConstant**|**IgnoreCase**|With the **IsMatch**, **Match**, **ReplaceRegex**, and **IndexOfRegex** functions.|
+|**DatePartConstant** <br/> |**Day**, **Month**, **Year**, **Hour**, **Minute**, **Second**. <br/> |With the **GetDatePart** function <br/> |
+|**RegexOptionConstant** <br/> |**IgnoreCase** <br/> |With the **IsMatch**, **Match**, **ReplaceRegex**, and **IndexOfRegex** functions. <br/> |
    
 
 ## Additional resources

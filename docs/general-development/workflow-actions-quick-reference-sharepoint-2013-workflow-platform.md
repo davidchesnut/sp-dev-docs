@@ -1,6 +1,6 @@
 ---
 title: Workflow actions quick reference (SharePoint 2013 Workflow platform)
-ms.prod: SHAREPOINTDESIGNER
+ms.prod: SHAREPOINT
 ms.assetid: eb3434e5-bc75-4474-8873-4980062fd29c
 ---
 

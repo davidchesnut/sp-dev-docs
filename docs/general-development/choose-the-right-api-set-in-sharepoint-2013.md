@@ -282,15 +282,15 @@ In some situations, it might be preferable to use the REST endpoints even in app
 
 |**Feature**|**.NET Framework or Silverlight object models**|**JavaScript object model**|**REST/OData endpoints called from a Windows platform or JavaScript**|
 |:-----|:-----|:-----|:-----|
-|Object-oriented programming |Yes |Yes |No |
-|Batch processing |Yes |Yes |Yes |
-|APIs for conditional processing and exception handling |Yes |No |No |
-|Availability of LINQ syntax |Yes |No |No |
-|Combining list data from different SharePoint web applications |Yes |No |Yes |
-|Familiarity to experienced REST/OData developers |No |No |Yes |
-|Similarity to non-Windows programming or JavaScript programming |No |Yes |Yes |
-|Strong typing for list item fields |No (except with LINQ) |No |Yes, from Windows platform          No, from JavaScript |
-|Leveraging jQuery, Knockout, and other JavaScript libraries |No |Yes |No, from Windows platform          Yes, from JavaScript |
+|Object-oriented programming <br/> |Yes <br/> |Yes <br/> |No <br/> |
+|Batch processing <br/> |Yes <br/> |Yes <br/> |Yes <br/> |
+|APIs for conditional processing and exception handling <br/> |Yes <br/> |No <br/> |No <br/> |
+|Availability of LINQ syntax <br/> |Yes <br/> |No <br/> |No <br/> |
+|Combining list data from different SharePoint web applications <br/> |Yes <br/> |No <br/> |Yes <br/> |
+|Familiarity to experienced REST/OData developers <br/> |No <br/> |No <br/> |Yes <br/> |
+|Similarity to non-Windows programming or JavaScript programming  <br/> |No <br/> |Yes <br/> |Yes <br/> |
+|Strong typing for list item fields <br/> |No (except with LINQ) <br/> |No <br/> |Yes, from Windows platform          No, from JavaScript <br/> |
+|Leveraging jQuery, Knockout, and other JavaScript libraries <br/> |No <br/> |Yes <br/> |No, from Windows platform          Yes, from JavaScript <br/> |
    
 
 ## WCF Data Services Framework

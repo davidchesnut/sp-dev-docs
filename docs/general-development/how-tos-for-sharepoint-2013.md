@@ -264,8 +264,8 @@ Find how-to articles and related code examples that show how to perform basic de
 
 |**Title**|**Summary**|
 |:-----|:-----|
-| [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint-2013.md)|Learn how to create and implement a SharePoint 2013 claims provider that fulfills the requirements for claims augmentation and claims picking. |
-| [How to: Deploy a claims provider in SharePoint 2013](how-to-deploy-a-claims-provider-in-sharepoint-2013.md)|Learn how to deploy a SharePoint 2013 claims provider by using the features infrastructure and creating a class that inherits from  [SPClaimProviderFeatureReceiver](https://msdn.microsoft.com/library/Microsoft.SharePoint.Administration.Claims.SPClaimProviderFeatureReceiver.aspx) .|
+| [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint-2013.md) <br/> |Learn how to create and implement a SharePoint 2013 claims provider that fulfills the requirements for claims augmentation and claims picking. <br/> |
+| [How to: Deploy a claims provider in SharePoint 2013](how-to-deploy-a-claims-provider-in-sharepoint-2013.md) <br/> |Learn how to deploy a SharePoint 2013 claims provider by using the features infrastructure and creating a class that inherits from  [SPClaimProviderFeatureReceiver](https://msdn.microsoft.com/library/Microsoft.SharePoint.Administration.Claims.SPClaimProviderFeatureReceiver.aspx) . <br/> |
    
 
 ## Additional resources

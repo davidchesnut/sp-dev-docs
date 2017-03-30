@@ -625,11 +625,11 @@ The following advanced parameters are also available. However, typically they're
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _cb_| _<float_value>_|The  _cb_ parameter refers to constant boost.Default: **0**. _a_ in the XRANK formula.|
-| _stdb_| _<float_value>_|The  _stdb_ parameter refers to standard deviation boost.Default: **0**. _e_ in the XRANK formula.|
-| _avgb_| _<float_value>_|The  _avgb_ parameter refers to average boost.Default: **0**. _d_ in the XRANK formula.|
-| _rb_| _<float_value>_|The  _rb_ parameter refers to range boost. This factor is multiplied with the range of rank values in the results set.Default: **0**. _b_ in the XRANK formula.|
-| _pb_| _<float_value>_|The  _pb_ parameter refers to percentage boost. This factor is multiplied with the item's own rank compared to the minimum value in the corpus.Default: **0**. _c_ in the XRANK formula.|
+| _cb_ <br/> | _<float_value>_ <br/> |The  _cb_ parameter refers to constant boost. <br/> Default: **0**. <br/>  _a_ in the XRANK formula. <br/> |
+| _stdb_ <br/> | _<float_value>_ <br/> |The  _stdb_ parameter refers to standard deviation boost. <br/> Default: **0**. <br/>  _e_ in the XRANK formula. <br/> |
+| _avgb_ <br/> | _<float_value>_ <br/> |The  _avgb_ parameter refers to average boost. <br/> Default: **0**. <br/>  _d_ in the XRANK formula. <br/> |
+| _rb_ <br/> | _<float_value>_ <br/> |The  _rb_ parameter refers to range boost. This factor is multiplied with the range of rank values in the results set. <br/> Default: **0**. <br/>  _b_ in the XRANK formula. <br/> |
+| _pb_ <br/> | _<float_value>_ <br/> |The  _pb_ parameter refers to percentage boost. This factor is multiplied with the item's own rank compared to the minimum value in the corpus. <br/> Default: **0**. <br/>  _c_ in the XRANK formula. <br/> |
    
 
 #### Examples

@@ -85,16 +85,16 @@ Except where indicated otherwise, none of these tokens in the next table can be 
 
 |**Token**|**Resolves to**|**StartPage**|**Custom Action**|**App Part**|**Remarks**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|{ControlTemplates} |The URL of the ControlTemplates virtual folder for the current website. |No |No |No ||
-|{ItemId} |The ID of an item in a list or library (an integer). |No |Yes |No ||
-|{ItemUrl} |The URL of the item being acted upon. |No |Yes |No ||
-|{Layouts} |The URL of the Layouts virtual folder for the current website. |No |No |No ||
-|{ListId} |The ID of the current list (a GUID). |No |Yes |No ||
-|{RecurrenceId} |The recurrence index of a recurring event. |No |Yes |No |This token is not supported for use in the context menus of list items. |
-|{Site} |The URL of the current website. |No |Yes |Yes ||
-|{SiteCollection} |The URL of the parent site of the current website. |No |Yes |Yes ||
-|{SiteUrl} |The URL of the current website. |No |Yes |No ||
-|{Source} |The HTTP Request URL. |No |Yes |No ||
+|{ControlTemplates} <br/> |The URL of the ControlTemplates virtual folder for the current website. <br/> |No <br/> |No <br/> |No <br/> ||
+|{ItemId} <br/> |The ID of an item in a list or library (an integer). <br/> |No <br/> |Yes <br/> |No <br/> ||
+|{ItemUrl} <br/> |The URL of the item being acted upon.  <br/> |No <br/> |Yes <br/> |No <br/> ||
+|{Layouts} <br/> |The URL of the Layouts virtual folder for the current website. <br/> |No <br/> |No <br/> |No <br/> ||
+|{ListId} <br/> |The ID of the current list (a GUID). <br/> |No <br/> |Yes <br/> |No <br/> ||
+|{RecurrenceId} <br/> |The recurrence index of a recurring event. <br/> |No <br/> |Yes <br/> |No <br/> |This token is not supported for use in the context menus of list items. <br/> |
+|{Site} <br/> |The URL of the current website. <br/> |No <br/> |Yes <br/> |Yes <br/> ||
+|{SiteCollection} <br/> |The URL of the parent site of the current website. <br/> |No <br/> |Yes <br/> |Yes <br/> ||
+|{SiteUrl} <br/> |The URL of the current website. <br/> |No <br/> |Yes <br/> |No <br/> ||
+|{Source} <br/> |The HTTP Request URL. <br/> |No <br/> |Yes <br/> |No <br/> ||
    
 
 ## Additional resources

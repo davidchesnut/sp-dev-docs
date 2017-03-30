@@ -39,11 +39,11 @@ First off, get acquainted with the new app model and the concepts underlying Sha
 
 |||
 |:-----|:-----|
-| [SharePoint for developers](http://msdn.microsoft.com/en-us/sharepoint)|Portal to the SharePoint developer site, where the emphasis is on apps for SharePoint. |
-| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx)|Learn what apps for SharePoint are, why you should build them, and the concepts that are fundamental to building them in SharePoint 2013. |
-| [New name for apps for SharePoint](http://msdn.microsoft.com/library/05b07b04-6c8b-4b7e-bd86-e32c589dfead%28Office.15%29.aspx)|Portal to a developer site devoted to building apps for Office and apps for SharePoint. |
-| [SharePoint 2013 development overview](sharepoint-2013-development-overview.md)|SharePoint 2013 is a development platform for apps for SharePoint and farm solutions. Get acquainted with the capabilities and features of SharePoint 2013 to start your development. |
-| [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md)|Provides a high-level overview of the workflow infrastructure in SharePoint 2013, including a view of the platform architecture and the workflow interop bridge. |
+| [SharePoint for developers](http://msdn.microsoft.com/en-us/sharepoint) <br/> |Portal to the SharePoint developer site, where the emphasis is on apps for SharePoint. <br/> |
+| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx) <br/> |Learn what apps for SharePoint are, why you should build them, and the concepts that are fundamental to building them in SharePoint 2013. <br/> |
+| [New name for apps for SharePoint](http://msdn.microsoft.com/library/05b07b04-6c8b-4b7e-bd86-e32c589dfead%28Office.15%29.aspx) <br/> |Portal to a developer site devoted to building apps for Office and apps for SharePoint. <br/> |
+| [SharePoint 2013 development overview](sharepoint-2013-development-overview.md) <br/> |SharePoint 2013 is a development platform for apps for SharePoint and farm solutions. Get acquainted with the capabilities and features of SharePoint 2013 to start your development. <br/> |
+| [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md) <br/> |Provides a high-level overview of the workflow infrastructure in SharePoint 2013, including a view of the platform architecture and the workflow interop bridge. <br/> |
    
 Your next step is to ensure that you have an up-to-date workflow development environment installed. You don't need to develop on the SharePoint server machine, but of course you do need a SharePoint Server installation to develop against.
   

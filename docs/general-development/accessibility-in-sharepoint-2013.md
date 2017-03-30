@@ -90,10 +90,10 @@ SharePoint administrators and users depend on the accessibility features that we
 
 |**Browser**|**For more information**|
 |:-----|:-----|
-|Internet Explorer | [Accessibility in Internet Explorer 9](http://www.microsoft.com/enable/products/ie9/default.aspx)|
-|Firefox | [Accessibility features in Firefox](http://go.microsoft.com/fwlink/p/?LinkId=275209)|
-|Safari | [Safari Accessibility](http://go.microsoft.com/fwlink/p/?LinkId=275210)|
-|Chrome | [Chrome Accessibility Technical Documentation](http://go.microsoft.com/fwlink/p/?LinkId=275211)|
+|Internet Explorer <br/> | [Accessibility in Internet Explorer 9](http://www.microsoft.com/enable/products/ie9/default.aspx) <br/> |
+|Firefox <br/> | [Accessibility features in Firefox](http://go.microsoft.com/fwlink/p/?LinkId=275209) <br/> |
+|Safari <br/> | [Safari Accessibility](http://go.microsoft.com/fwlink/p/?LinkId=275210) <br/> |
+|Chrome <br/> | [Chrome Accessibility Technical Documentation](http://go.microsoft.com/fwlink/p/?LinkId=275211) <br/> |
    
 
 ## Additional resources

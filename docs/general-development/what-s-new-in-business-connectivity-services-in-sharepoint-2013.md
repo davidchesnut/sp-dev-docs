@@ -26,10 +26,10 @@ BCS is improved and enhanced for SharePoint 2013, including the new functionalit
 
 |**New feature**|**For more information**|
 |:-----|:-----|
-|SharePoint can now connect to OData sources. | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md)|
-|SharePoint can receive events from external systems. | [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint-2013.md)|
-|External content types can now be scoped at the application level. | [Add-in-scoped external content types in SharePoint 2013](add-in-scoped-external-content-types-in-sharepoint-2013.md)|
-|Support for Representational State Transfer (REST) and the client object model is enhanced. | [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md)|
+|SharePoint can now connect to OData sources. <br/> | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |
+|SharePoint can receive events from external systems. <br/> | [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint-2013.md) <br/> |
+|External content types can now be scoped at the application level. <br/> | [Add-in-scoped external content types in SharePoint 2013](add-in-scoped-external-content-types-in-sharepoint-2013.md) <br/> |
+|Support for Representational State Transfer (REST) and the client object model is enhanced. <br/> | [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md) <br/> |
    
 
 ## Additional resources

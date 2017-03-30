@@ -3554,17 +3554,17 @@ The following properties belong to the **SocialThread** object.
 
 ||||
 |:-----|:-----|:-----|
-|Actors | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)[] |The merged array of participating actors. |
-|Attributes |**Int32**|The bitwise value that represents the set of attributes for the thread. See  [SP.Social.SocialThreadAttributes](http://msdn.microsoft.com/library/21ff9f92-3223-bcc7-ceec-7b899ee29b6e%28Office.15%29.aspx). |
-|Id |**String**|The unique identifier of the thread. |
-|OwnerIndex |**Int32**|The index of the thread's owner within the thread's actors. |
-|Permalink |**String**|The string representation of the stable URI for navigating directly to the thread, if one is available. |
-|PostReference | [SP.Social.SocialPostReference](http://msdn.microsoft.com/library/529e1db7-2e9a-5141-6b1e-94a5c63e7c16%28Office.15%29.aspx)|The referenced post. |
-|Replies | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx)[] |The replies to the thread. |
-|RootPost | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx)|The root post of the thread. |
-|Status |**Int32**|The code that identifies recoverable errors that occurred during thread retrieval. See  [SP.Social.SocialStatusCode](http://msdn.microsoft.com/library/79292329-19de-43e1-5928-60b0edc36c94%28Office.15%29.aspx). |
-|ThreadType | [SP.Social.SocialThreadType](http://msdn.microsoft.com/library/7444217e-ddda-d3a0-b19f-146cf8c6fcaa%28Office.15%29.aspx)|The thread type. |
-|TotalReplyCount |**Int32**|The count of the total number of replies for the thread. |
+|Actors <br/> | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)[] <br/> |The merged array of participating actors. <br/> |
+|Attributes <br/> |**Int32** <br/> |The bitwise value that represents the set of attributes for the thread. See  [SP.Social.SocialThreadAttributes](http://msdn.microsoft.com/library/21ff9f92-3223-bcc7-ceec-7b899ee29b6e%28Office.15%29.aspx). <br/> |
+|Id <br/> |**String** <br/> |The unique identifier of the thread. <br/> |
+|OwnerIndex <br/> |**Int32** <br/> |The index of the thread's owner within the thread's actors. <br/> |
+|Permalink <br/> |**String** <br/> |The string representation of the stable URI for navigating directly to the thread, if one is available. <br/> |
+|PostReference <br/> | [SP.Social.SocialPostReference](http://msdn.microsoft.com/library/529e1db7-2e9a-5141-6b1e-94a5c63e7c16%28Office.15%29.aspx) <br/> |The referenced post. <br/> |
+|Replies <br/> | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx)[] <br/> |The replies to the thread. <br/> |
+|RootPost <br/> | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx) <br/> |The root post of the thread. <br/> |
+|Status <br/> |**Int32** <br/> |The code that identifies recoverable errors that occurred during thread retrieval. See  [SP.Social.SocialStatusCode](http://msdn.microsoft.com/library/79292329-19de-43e1-5928-60b0edc36c94%28Office.15%29.aspx). <br/> |
+|ThreadType <br/> | [SP.Social.SocialThreadType](http://msdn.microsoft.com/library/7444217e-ddda-d3a0-b19f-146cf8c6fcaa%28Office.15%29.aspx) <br/> |The thread type. <br/> |
+|TotalReplyCount <br/> |**Int32** <br/> |The count of the total number of replies for the thread. <br/> |
    
 
 ## Additional resources

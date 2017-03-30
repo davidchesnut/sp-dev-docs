@@ -152,7 +152,7 @@ To reload a UDF assembly, you can run **iisreset** or restart the Excel Calculat
     
 
 > [!CAUTION]
-> Resetting IIS will end all current sessions. > For more information, see  [How to: Enable UDFs](how-to-enable-udfs.md). 
+> Resetting IIS will end all current sessions.> For more information, see  [How to: Enable UDFs](how-to-enable-udfs.md).
   
     
     
