@@ -20,7 +20,7 @@ This article describes the issues that may occur when you try to use custom Shar
     
 
 > [!NOTE]
-> SharePoint 2010 themes can be used on site collections that are running in 2010 mode. For more information about site collection modes, see  [Plan for site collection upgrades in SharePoint 2013](http://technet.microsoft.com/en-us/library/ff191199.aspx) or [Plan for upgrade to SharePoint 2013](https://technet.microsoft.com/en-us/library/cc303429.aspx).
+> SharePoint 2010 themes can be used on site collections that are running in 2010 mode. For more information about site collection modes, see  [Plan for site collection upgrades in SharePoint 2013](http://technet.microsoft.com/en-us/library/ff191199.aspx) or [Plan for upgrade to SharePoint 2013](https://technet.microsoft.com/en-us/library/cc303429.aspx). 
   
     
     

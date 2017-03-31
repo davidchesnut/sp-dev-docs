@@ -3,7 +3,7 @@ title: How to Specify a Range Address and Sheet Name
 keywords: how to,howdoi,howto,set range
 f1_keywords:
 - how to,howdoi,howto,set range
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 8bfefc48-1fbc-4b65-8156-1b7d0a8453ee
 ---
 
@@ -75,7 +75,7 @@ If you specify a sheet name, the ranges you reference must exist on the sheet yo
 
 
 > [!NOTE]
-> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information about this, see  [How to: Trust a Location](how-to-trust-a-location.md) and [How to: Trust Workbook Locations Using Script](http://msdn.microsoft.com/library/79ab6ced-7a0c-4275-b852-bb246fc6be57%28Office.15%29.aspx).
+> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information about this, see  [How to: Trust a Location](how-to-trust-a-location.md) and [How to: Trust Workbook Locations Using Script](http://msdn.microsoft.com/library/79ab6ced-7a0c-4275-b852-bb246fc6be57%28Office.15%29.aspx). 
   
     
     

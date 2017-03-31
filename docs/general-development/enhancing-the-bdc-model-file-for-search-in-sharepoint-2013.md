@@ -45,32 +45,32 @@ The following table describes the BDC model properties that are applicable to Se
 **Table 1. Search properties for BDC model files**
 
 
-|**Name**|**Metadata Object**|**Description**|
+|**Name **|**Metadata Object **|**Description **|
 |:-----|:-----|:-----|
-|ShowInSearchUI|Model|Specifies that an **LobSystemInstance** element in the model file should be displayed in the search user interface. This value is ignored for custom connectors.|
-|InputUriProcessor|LobSystem|Specifies the name of the class that processes the input URL before passing it to the connector. Applies to .NET and custom BCS indexing connectors. For more information, see  [Creating a Custom Indexing Connector](http://msdn.microsoft.com/library/ec2df34d-178c-4ae1-a2b0-a6af04ee57bd%28Office.15%29.aspx).|
-|OutputUriProcessor|LobSystem|Specifies the name of the class that processes the output URL before passing it to the search system from the connector. Applies to .NET and custom BCS indexing connectors. For more information, see  [Creating a Custom Indexing Connector](http://msdn.microsoft.com/library/ec2df34d-178c-4ae1-a2b0-a6af04ee57bd%28Office.15%29.aspx).|
-|SystemUtilityTypeName|LobSystem|Specifies the name of the class that implements the **StructuredRepositorySystemUtility** class. Applies to custom BCS indexing connectors. For more information, see [Creating a Custom Indexing Connector](http://msdn.microsoft.com/library/ec2df34d-178c-4ae1-a2b0-a6af04ee57bd%28Office.15%29.aspx).|
-|Title|Entity|Specifies the title of the external content type to display in search results.|
-|DefaultLocale|Entity|Specifies the locale string. You can override this value by using the **LCIDField** property or the **CultureField** property.|
-|RootFinder|Method|Specifies the **Finder** method to use to enumerate the items to crawl. For example, when connecting to a database, this could be the **SELECT** statement or the list of tables to crawl.|
-|DirectoryLink|Method|Specifies that BCS should navigate associations. Required for hierarchical crawling.|
-|DeletedCountField|Method|Specifies the deleted count value. This property is ignored unless it contains an integer greater than zero. |
-|WindowsSecurityDescriptorField|Method|Specifies the Windows Security descriptor for the item. If not specified, the **GetSecurityDescriptor** method is called. If the **GetSecurityDescriptor** is not defined, all external items are assigned the Everyone access control list (ACL).|
-|AuthorField|Method|Specifies the author name to display in search results.|
-|DisplayUriField|Method|Specifies the URL to display in search results. If specified, this property overrides the profile page URL provided by BCS. If not specified, the URL displayed in search results starts with **bdc3://**, and is not understood by the browser.|
-|LastModifiedTimeStampField|Method|Specifies the external item's timestamp to display in search results. This value is also used for incremental crawling.|
-|DescriptionField|Method|Specifies the description to display in search results.|
-|LCIDField|Method|Specifies the locale ID (LCID) for the **DescriptionField**. If this is not specified, the default word breaker is used.|
-|CultureField|Method|Specifies the culture for the **DescriptionField**. |
-|Extension|Method|Specifies the file name extension for the crawlable stream. If not specified, the default extension is **.txt**.|
-|MimeType|Method|Specifies the MIME type for the crawlable stream. If not specified, the default extension is **.txt**. If the **Extension** field and **MimeType** field are both specified, the value specified in the **MimeType** field is used.|
-|UseClientCachingForSearch |Method|Specifies whether the crawler caches the content during enumeration. If the content is cached, the crawler does not make another trip to the content source when it crawls individual items.|
-|EnumerateIdsOnly|FilterDescriptor|Specifies whether to return IDs only in the **IDEnumerator**.|
-|CrawlStartTime|FilterDescriptor|Contains the start time of the last crawl. |
-|SynchronizationCookie|FilterDescriptor|Specifies that the external content source returns a cookie after a crawl, which is then resent by the indexing connector during the next enumeration call. The external content source uses the cookie to determine what has changed since the last crawl. This property is used with **ChangedIDEnumerator** and **DeletedIDEnumerator** method instances.|
-|Property |TypeDescriptor| Specifies the **struct** array used by search for properties. Consists of the following: **PropertyName** **PropertyValue** **PropertyCulture**|
-|Text |TypeDescriptor| Specifies the **struct** array used by search for attachments. Consists of the following: **TextExtension** **TextContentType** **TextValue**|
+|ShowInSearchUI  <br/> |Model  <br/> |Specifies that an **LobSystemInstance** element in the model file should be displayed in the search user interface. This value is ignored for custom connectors. <br/> |
+|InputUriProcessor  <br/> |LobSystem  <br/> |Specifies the name of the class that processes the input URL before passing it to the connector. Applies to .NET and custom BCS indexing connectors. For more information, see  [Creating a Custom Indexing Connector](http://msdn.microsoft.com/library/ec2df34d-178c-4ae1-a2b0-a6af04ee57bd%28Office.15%29.aspx).  <br/> |
+|OutputUriProcessor  <br/> |LobSystem  <br/> |Specifies the name of the class that processes the output URL before passing it to the search system from the connector. Applies to .NET and custom BCS indexing connectors. For more information, see  [Creating a Custom Indexing Connector](http://msdn.microsoft.com/library/ec2df34d-178c-4ae1-a2b0-a6af04ee57bd%28Office.15%29.aspx).  <br/> |
+|SystemUtilityTypeName  <br/> |LobSystem  <br/> |Specifies the name of the class that implements the **StructuredRepositorySystemUtility** class. Applies to custom BCS indexing connectors. For more information, see [Creating a Custom Indexing Connector](http://msdn.microsoft.com/library/ec2df34d-178c-4ae1-a2b0-a6af04ee57bd%28Office.15%29.aspx).  <br/> |
+|Title  <br/> |Entity  <br/> |Specifies the title of the external content type to display in search results.  <br/> |
+|DefaultLocale  <br/> |Entity  <br/> |Specifies the locale string. You can override this value by using the **LCIDField** property or the **CultureField** property. <br/> |
+|RootFinder  <br/> |Method  <br/> |Specifies the **Finder** method to use to enumerate the items to crawl. For example, when connecting to a database, this could be the **SELECT** statement or the list of tables to crawl. <br/> |
+|DirectoryLink  <br/> |Method  <br/> |Specifies that BCS should navigate associations. Required for hierarchical crawling.  <br/> |
+|DeletedCountField  <br/> |Method  <br/> |Specifies the deleted count value. This property is ignored unless it contains an integer greater than zero.  <br/> |
+|WindowsSecurityDescriptorField  <br/> |Method  <br/> |Specifies the Windows Security descriptor for the item. If not specified, the **GetSecurityDescriptor** method is called. If the **GetSecurityDescriptor** is not defined, all external items are assigned the Everyone access control list (ACL). <br/> |
+|AuthorField  <br/> |Method  <br/> |Specifies the author name to display in search results.  <br/> |
+|DisplayUriField  <br/> |Method  <br/> |Specifies the URL to display in search results. If specified, this property overrides the profile page URL provided by BCS. If not specified, the URL displayed in search results starts with **bdc3://**, and is not understood by the browser. <br/> |
+|LastModifiedTimeStampField  <br/> |Method  <br/> |Specifies the external item's timestamp to display in search results. This value is also used for incremental crawling.  <br/> |
+|DescriptionField  <br/> |Method  <br/> |Specifies the description to display in search results.  <br/> |
+|LCIDField  <br/> |Method  <br/> |Specifies the locale ID (LCID) for the **DescriptionField**. If this is not specified, the default word breaker is used.  <br/> |
+|CultureField  <br/> |Method  <br/> |Specifies the culture for the **DescriptionField**.  <br/> |
+|Extension  <br/> |Method  <br/> |Specifies the file name extension for the crawlable stream. If not specified, the default extension is **.txt**. <br/> |
+|MimeType  <br/> |Method  <br/> |Specifies the MIME type for the crawlable stream. If not specified, the default extension is **.txt**. If the **Extension** field and **MimeType** field are both specified, the value specified in the **MimeType** field is used. <br/> |
+|UseClientCachingForSearch  <br/> |Method  <br/> |Specifies whether the crawler caches the content during enumeration. If the content is cached, the crawler does not make another trip to the content source when it crawls individual items.  <br/> |
+|EnumerateIdsOnly  <br/> |FilterDescriptor  <br/> |Specifies whether to return IDs only in the **IDEnumerator**.  <br/> |
+|CrawlStartTime  <br/> |FilterDescriptor  <br/> |Contains the start time of the last crawl.  <br/> |
+|SynchronizationCookie  <br/> |FilterDescriptor  <br/> |Specifies that the external content source returns a cookie after a crawl, which is then resent by the indexing connector during the next enumeration call. The external content source uses the cookie to determine what has changed since the last crawl. This property is used with **ChangedIDEnumerator** and **DeletedIDEnumerator** method instances. <br/> |
+|Property  <br/> |TypeDescriptor  <br/> | Specifies the **struct** array used by search for properties. Consists of the following: <br/> **PropertyName** <br/> **PropertyValue** <br/> **PropertyCulture** <br/> |
+|Text  <br/> |TypeDescriptor  <br/> | Specifies the **struct** array used by search for attachments. Consists of the following: <br/> **TextExtension** <br/> **TextContentType** <br/> **TextValue** <br/> |
    
 
 ## BDC model file changes to improve performance when crawling external data
@@ -152,7 +152,7 @@ The **UseClientCachingForSearch** property improves the speed of full crawls by 
     
 
 > [!IMPORTANT]
-> If items are larger than 30 kilobytes on average, do not set this property, as it will lead to a significant number of cache misses and negate performance gains.
+> If items are larger than 30 kilobytes on average, do not set this property, as it will lead to a significant number of cache misses and negate performance gains. 
   
     
     

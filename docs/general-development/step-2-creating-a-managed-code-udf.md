@@ -3,7 +3,7 @@ title: Step 2 Creating a Managed-Code UDF
 keywords: soap
 f1_keywords:
 - soap
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 3c9edf82-ee2d-41f0-9d66-e88e8dc0cc69
 ---
 
@@ -81,8 +81,8 @@ End Function
   ```
 
 
-   > [!NOTE]
-   > The default value for the **IsVolatile** property is **false**, which means that particular UDF method is nonvolatile. Therefore, it is sufficient to mark a nonvolatile UDF method as  `[UdfMethod]`. It is not necessary to mark it as  `[UdfMethod(IsVolatile = false)]`.
+    > [!NOTE]
+      > The default value for the **IsVolatile** property is **false**, which means that particular UDF method is nonvolatile. Therefore, it is sufficient to mark a nonvolatile UDF method as  `[UdfMethod]`. It is not necessary to mark it as  `[UdfMethod(IsVolatile = false)]`. 
 3. Create another function that returns the current date using the **System.DateTime.Today** property. The function is a UDF method that is volatile. Add the following code to `Class1`:
     
   ```cs

@@ -29,11 +29,11 @@ The following table shows some benefits of using MDS.
 **Table 1. Benefits of using MDS**
 
 
-|**Performance**|**Visuals**|
+|**Performance **|**Visuals **|
 |:-----|:-----|
-|Fewer amounts of data downloaded per page request.|No browser flashing caused by full page reload.|
-|Browser needs to update only the regions of the page that changed since the last request.|Easy to identify animations.|
-|Small amount of processing required on the client. > [!NOTE]> Half of client Page-Load-Time 1 (PLT1) is due to chrome cascading style sheet (CSS) rendering and JavaScript parsing and execution.          |Changes in the page attract user's attention.|
+|Fewer amounts of data downloaded per page request.  <br/> |No browser flashing caused by full page reload.  <br/> |
+|Browser needs to update only the regions of the page that changed since the last request.  <br/> |Easy to identify animations.  <br/> |
+|Small amount of processing required on the client.  <br/> > [!NOTE]> Half of client Page-Load-Time 1 (PLT1) is due to chrome cascading style sheet (CSS) rendering and JavaScript parsing and execution.           |Changes in the page attract user's attention.  <br/> |
    
 Both AJAX and MDS are technologies that request only sections of the page to minimize data download and improve page responsiveness. The following figure shows the MDS architecture.
   
@@ -83,11 +83,11 @@ The following table shows some examples of URLs formatted in MDS mode.
 **Table 2. URLs formatted in MDS mode**
 
 
-|**Non-MDS URL**|**MDS URL**|
+|**Non-MDS URL **|**MDS URL **|
 |:-----|:-----|
-|http://server/SitePages/|http://server/_layouts/15/start.aspx#/SitePages/|
-|http://server/subsite/SitePages/home.aspx|http://server/subsite/_layouts/15/start.aspx#/SitePages/home.aspx|
-|http://server/_layouts/15/viewlsts.aspx?BaseType=0|http://server/_layouts/15/start.aspx#/_layouts/viewlsts.aspx?BaseType=0|
+|http://server/SitePages/  <br/> |http://server/_layouts/15/start.aspx#/SitePages/  <br/> |
+|http://server/subsite/SitePages/home.aspx  <br/> |http://server/subsite/_layouts/15/start.aspx#/SitePages/home.aspx  <br/> |
+|http://server/_layouts/15/viewlsts.aspx?BaseType=0  <br/> |http://server/_layouts/15/start.aspx#/_layouts/viewlsts.aspx?BaseType=0  <br/> |
    
 The object used for the AJAX navigation is **AjaxNavigate**. By default, there is an instance of **AjaxNavigate** available for you to use named **ajaxNavigate**. To use the **ajaxNavigate** instance:
   
@@ -226,7 +226,7 @@ To include a JavaScript file, use the **SharePoint:ScriptLink** control. The fol
 
 
 > [!CAUTION]
-> Including a JavaScript file using the HTML script tag is not supported in MDS mode, because the server logic cannot identify the file as a required resource when the response is rendered.
+> Including a JavaScript file using the HTML script tag is not supported in MDS mode, because the server logic cannot identify the file as a required resource when the response is rendered. 
   
     
     
@@ -267,15 +267,15 @@ In previous versions of SharePoint, some pages write content by using the **Resp
 **Table 3. Commonly used APIs and their MDS-compliant alternatives**
 
 
-|**Commonly used API**|**MDS-compliant alternative**|
+|**Commonly used API **|**MDS-compliant alternative **|
 |:-----|:-----|
-| [NoEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.NoEncode.aspx)| [WriteNoEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteNoEncode.aspx)|
-| [HtmlEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.HtmlEncode.aspx)| [WriteHtmlEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteHtmlEncode.aspx)|
-| [EcmaScriptStringLiteralEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.EcmaScriptStringLiteralEncode.aspx)| [WriteEcmaScriptStringLiteralEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteEcmaScriptStringLiteralEncode.aspx)|
-| [HtmlEncodeAllowSimpleTextFormatting()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.HtmlEncodeAllowSimpleTextFormatting.aspx)| [WriteHtmlEncodeAllowSimpleTextFormatting()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteHtmlEncodeAllowSimpleTextFormatting.aspx)|
-| [HtmlUrlAttributeEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.HtmlUrlAttributeEncode.aspx)| [WriteHtmlUrlAttributeEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteHtmlUrlAttributeEncode.aspx)|
-| [UrlKeyValueEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.UrlKeyValueEncode.aspx)| [WriteUrlKeyValueEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteUrlKeyValueEncode.aspx)|
-| [UrlPathEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.UrlPathEncode.aspx)| [WriteUrlPathEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteUrlPathEncode.aspx)|
+| [NoEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.NoEncode.aspx) <br/> | [WriteNoEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteNoEncode.aspx) <br/> |
+| [HtmlEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.HtmlEncode.aspx) <br/> | [WriteHtmlEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteHtmlEncode.aspx) <br/> |
+| [EcmaScriptStringLiteralEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.EcmaScriptStringLiteralEncode.aspx) <br/> | [WriteEcmaScriptStringLiteralEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteEcmaScriptStringLiteralEncode.aspx) <br/> |
+| [HtmlEncodeAllowSimpleTextFormatting()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.HtmlEncodeAllowSimpleTextFormatting.aspx) <br/> | [WriteHtmlEncodeAllowSimpleTextFormatting()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteHtmlEncodeAllowSimpleTextFormatting.aspx) <br/> |
+| [HtmlUrlAttributeEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.HtmlUrlAttributeEncode.aspx) <br/> | [WriteHtmlUrlAttributeEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteHtmlUrlAttributeEncode.aspx) <br/> |
+| [UrlKeyValueEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.UrlKeyValueEncode.aspx) <br/> | [WriteUrlKeyValueEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteUrlKeyValueEncode.aspx) <br/> |
+| [UrlPathEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.UrlPathEncode.aspx) <br/> | [WriteUrlPathEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteUrlPathEncode.aspx) <br/> |
    
 If a page, control, or Web Part directs its output to the **Response.Output** property, it causes MDS to fail back. When MDS fails back, it performs a full navigation to the requested page. You can find the offending control by using the **DeltaPage ._shipRender** property while debugging the server component.
   
@@ -315,7 +315,7 @@ The introduction of the **SharePoint:ScriptBlock** in the page can change the sc
     
 
 > [!NOTE]
-> The MDS infrastructure does not support VBScript, because it cannot be registered as a script in ASP.NET. Scripts have to be converted to JavaScript.
+> The MDS infrastructure does not support VBScript, because it cannot be registered as a script in ASP.NET. Scripts have to be converted to JavaScript. 
   
     
     
@@ -488,13 +488,13 @@ Table 7 shows example loading times that illustrate the difference between the f
 
 |||
 |:-----|:-----|
-|First page load|3-4 seconds|
-|Second page load|1.5 seconds|
-|Subsequent page loads|1 second|
+|First page load  <br/> |3-4 seconds  <br/> |
+|Second page load  <br/> |1.5 seconds  <br/> |
+|Subsequent page loads  <br/> |1 second  <br/> |
    
 
 > [!NOTE]
-> Loading times might be different in your particular scenario. Loading times are affected by many variables, including, but not limited to, page size, latency, and server load.
+> Loading times might be different in your particular scenario. Loading times are affected by many variables, including, but not limited to, page size, latency, and server load. 
   
     
     
@@ -767,12 +767,12 @@ The following table describes customizations that reduce the time that is requir
 **Table 8. Customizations that reduce the time required for the view to render**
 
 
-|**Item**|**Description**|
+|**Item **|**Description **|
 |:-----|:-----|
-|View type|Create a view as a datasheet view instead of a standard view.|
-|View: Item limit|Anything over 1,000 will likely render slowly. Over a slow connection, it is important to experiment to find the right balance between the quantity of data shown at a time and the number of round trips necessary to view all the data. The more rows that display at a time, the fewer round trips, but larger pages.|
-|View: Filter|Use **[Today]** and **[Me]** keywords to filter items by freshness or assignment. Use Status fields to show only active items in default views.|
-|View: Columns|Include the smallest number of columns. Create a default view with few columns that allows high-level browsing after which people can drill down.|
+|View type  <br/> |Create a view as a datasheet view instead of a standard view.  <br/> |
+|View: Item limit  <br/> |Anything over 1,000 will likely render slowly. Over a slow connection, it is important to experiment to find the right balance between the quantity of data shown at a time and the number of round trips necessary to view all the data. The more rows that display at a time, the fewer round trips, but larger pages.  <br/> |
+|View: Filter  <br/> |Use **[Today]** and **[Me]** keywords to filter items by freshness or assignment. Use Status fields to show only active items in default views. <br/> |
+|View: Columns  <br/> |Include the smallest number of columns. Create a default view with few columns that allows high-level browsing after which people can drill down.  <br/> |
    
 The following table describes customizations that will increase the time that is required for a view to render. Each additional column increases rendering time by a slight amount: up to a half-second per column over a fast network connection for a list of 1,000 items. Some columns increase rendering time more than others, as noted in the table.
   
@@ -782,10 +782,10 @@ The following table describes customizations that will increase the time that is
 **Table 9. Customizations that increase the time required for the view to render**
 
 
-|**Item**|**Description**|
+|**Item **|**Description **|
 |:-----|:-----|
-|Group By|Grouping adds HTML and JScript, which slows down rendering for large lists. Making all groups collapsed by default actually increases rendering time further because of additional operations on the browser object model.|
-|Column - title linked to item with edit menu|The option "linked to item with edit menu" takes the longest; the similar option "linked to item" does not increase rendering time noticeably.|
+|Group By  <br/> |Grouping adds HTML and JScript, which slows down rendering for large lists. Making all groups collapsed by default actually increases rendering time further because of additional operations on the browser object model.  <br/> |
+|Column - title linked to item with edit menu  <br/> |The option "linked to item with edit menu" takes the longest; the similar option "linked to item" does not increase rendering time noticeably.  <br/> |
    
 
 ## Developer Dashboard

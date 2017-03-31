@@ -84,8 +84,8 @@ The Snippet Gallery displays different options depending on the file that you're
     
     
     
-   > [!NOTE]
-   > If the property grid has a header that ends with AjaxDelta, you should ignore those properties because they apply to the controls related to the Minimal Download Strategy, which is disabled for master pages and page layouts created through Design Manager.
+    > [!NOTE]
+      > If the property grid has a header that ends with AjaxDelta, you should ignore those properties because they apply to the controls related to the Minimal Download Strategy, which is disabled for master pages and page layouts created through Design Manager. 
 8. After you configure any properties, choose **Update**. This updates both the preview and the HTML snippet on the left side of the page, so that the markup reflects your custom settings. You can always choose **Reset** to return all properties to their default settings.
     
   
@@ -185,7 +185,7 @@ The following is the default markup for a Top Navigation snippet, which is more 
     
 
 > [!NOTE]
-> Some of the controls, such as the content placeholder, contain empty tags for an HTML preview because that element does not require a visual representation on the page.
+> Some of the controls, such as the content placeholder, contain empty tags for an HTML preview because that element does not require a visual representation on the page. 
   
     
     

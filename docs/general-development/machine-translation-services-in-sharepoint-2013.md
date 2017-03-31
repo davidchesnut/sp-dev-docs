@@ -250,13 +250,13 @@ Table 1 shows the equivalent objects that the CSOM APIs provide for the Machine 
 **Table 1. Server object model APIs and their CSOM equivalents**
 
 
-|**Server**|**.NET Managed and Silverlight**|**JavaScript**|
+|**Server **|**.NET Managed and Silverlight **|**JavaScript **|
 |:-----|:-----|:-----|
-|Microsoft.Office.TranslationServices.TranslationJob|Microsoft.Office.TranslationServices.Client.TranslationJob|SP.Translation.TranslationJob|
-|Microsoft.Office.TranslationServices.TranslationJobInfo|Microsoft.Office.TranslationServices.Client.TranslationJobInfo|SP.Translation.TranslationJobInfo|
-|Microsoft.Office.TranslationServices.TranslationItemInfo|Microsoft.Office.TranslationServices.Client.TranslationItemInfo|SP.Translation.TranslationItemInfo|
-|Microsoft.Office.TranslationServices.TranslationJobStatus|Microsoft.Office.TranslationServices.Client.TranslationJobStatus|SP.Translation.TranslationJobStatus|
-|Microsoft.Office.TranslationServices.SyncTranslator|Microsoft.Office.TranslationServices.Client.SyncTranslator|SP.Translation.SyncTranslator|
+|Microsoft.Office.TranslationServices.TranslationJob  <br/> |Microsoft.Office.TranslationServices.Client.TranslationJob  <br/> |SP.Translation.TranslationJob  <br/> |
+|Microsoft.Office.TranslationServices.TranslationJobInfo  <br/> |Microsoft.Office.TranslationServices.Client.TranslationJobInfo  <br/> |SP.Translation.TranslationJobInfo  <br/> |
+|Microsoft.Office.TranslationServices.TranslationItemInfo  <br/> |Microsoft.Office.TranslationServices.Client.TranslationItemInfo  <br/> |SP.Translation.TranslationItemInfo  <br/> |
+|Microsoft.Office.TranslationServices.TranslationJobStatus  <br/> |Microsoft.Office.TranslationServices.Client.TranslationJobStatus  <br/> |SP.Translation.TranslationJobStatus  <br/> |
+|Microsoft.Office.TranslationServices.SyncTranslator  <br/> |Microsoft.Office.TranslationServices.Client.SyncTranslator  <br/> |SP.Translation.SyncTranslator  <br/> |
    
 
 ### Machine Translation Service .NET managed CSOM and Silverlight CSOM

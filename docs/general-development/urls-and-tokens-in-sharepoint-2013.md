@@ -35,7 +35,7 @@ SharePoint 2013 parses URL strings to determine the form of URL based on a speci
   
 
 > [!NOTE]
-> There is no concept of a "site collection-relative URL"; passing such a URL may cause the code to fail.
+> There is no concept of a "site collection-relative URL"; passing such a URL may cause the code to fail. 
   
     
     
@@ -68,12 +68,12 @@ The **StartPage** column specifies whether the token can be used in the **StartP
 **Tokens that can be used at the beginning of a URL**
 
 
-|**Token**|**Resolves to**|**StartPage**|**Custom Action**|**App Part**|**Remarks**|
+|**Token **|**Resolves to **|**StartPage **|**Custom Action **|**App Part **|**Remarks **|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|~controlTemplates|The URL of the ControlTemplates virtual folder for the current website.|No|No|No||
-|~layouts|The URL of the Layouts virtual folder for the current website.|No|No|No||
-|~site|The URL of the current website.|No|No|Yes||
-|~sitecollection|The URL of the parent site collection of the current website.|No|No|Yes||
+|~controlTemplates  <br/> |The URL of the ControlTemplates virtual folder for the current website.  <br/> |No  <br/> |No  <br/> |No  <br/> ||
+|~layouts  <br/> |The URL of the Layouts virtual folder for the current website.  <br/> |No  <br/> |No  <br/> |No  <br/> ||
+|~site  <br/> |The URL of the current website.  <br/> |No  <br/> |No  <br/> |Yes  <br/> ||
+|~sitecollection  <br/> |The URL of the parent site collection of the current website.  <br/> |No  <br/> |No  <br/> |Yes  <br/> ||
    
 Except where indicated otherwise, none of these tokens in the next table can be used in the  *path*  portion of the [Src](https://msdn.microsoft.com/library/Microsoft.SharePoint.WebControls.SPAppIFrame.Src.aspx) property value of the app part. The **App Part** column refers to their use in the *query string*  portion of the value.
   
@@ -83,18 +83,18 @@ Except where indicated otherwise, none of these tokens in the next table can be 
 **Tokens that can be used inside a URL**
 
 
-|**Token**|**Resolves to**|**StartPage**|**Custom Action**|**App Part**|**Remarks**|
+|**Token **|**Resolves to **|**StartPage **|**Custom Action **|**App Part **|**Remarks **|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|{ControlTemplates} <br/> |The URL of the ControlTemplates virtual folder for the current website. <br/> |No <br/> |No <br/> |No <br/> ||
-|{ItemId} <br/> |The ID of an item in a list or library (an integer). <br/> |No <br/> |Yes <br/> |No <br/> ||
-|{ItemUrl} <br/> |The URL of the item being acted upon.  <br/> |No <br/> |Yes <br/> |No <br/> ||
-|{Layouts} <br/> |The URL of the Layouts virtual folder for the current website. <br/> |No <br/> |No <br/> |No <br/> ||
-|{ListId} <br/> |The ID of the current list (a GUID). <br/> |No <br/> |Yes <br/> |No <br/> ||
-|{RecurrenceId} <br/> |The recurrence index of a recurring event. <br/> |No <br/> |Yes <br/> |No <br/> |This token is not supported for use in the context menus of list items. <br/> |
-|{Site} <br/> |The URL of the current website. <br/> |No <br/> |Yes <br/> |Yes <br/> ||
-|{SiteCollection} <br/> |The URL of the parent site of the current website. <br/> |No <br/> |Yes <br/> |Yes <br/> ||
-|{SiteUrl} <br/> |The URL of the current website. <br/> |No <br/> |Yes <br/> |No <br/> ||
-|{Source} <br/> |The HTTP Request URL. <br/> |No <br/> |Yes <br/> |No <br/> ||
+|{ControlTemplates}  <br/> |The URL of the ControlTemplates virtual folder for the current website.  <br/> |No  <br/> |No  <br/> |No  <br/> ||
+|{ItemId}  <br/> |The ID of an item in a list or library (an integer).  <br/> |No  <br/> |Yes  <br/> |No  <br/> ||
+|{ItemUrl}  <br/> |The URL of the item being acted upon.  <br/> |No  <br/> |Yes  <br/> |No  <br/> ||
+|{Layouts}  <br/> |The URL of the Layouts virtual folder for the current website.  <br/> |No  <br/> |No  <br/> |No  <br/> ||
+|{ListId}  <br/> |The ID of the current list (a GUID).  <br/> |No  <br/> |Yes  <br/> |No  <br/> ||
+|{RecurrenceId}  <br/> |The recurrence index of a recurring event.  <br/> |No  <br/> |Yes  <br/> |No  <br/> |This token is not supported for use in the context menus of list items.  <br/> |
+|{Site}  <br/> |The URL of the current website.  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> ||
+|{SiteCollection}  <br/> |The URL of the parent site of the current website.  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> ||
+|{SiteUrl}  <br/> |The URL of the current website.  <br/> |No  <br/> |Yes  <br/> |No  <br/> ||
+|{Source}  <br/> |The HTTP Request URL.  <br/> |No  <br/> |Yes  <br/> |No  <br/> ||
    
 
 ## Additional resources

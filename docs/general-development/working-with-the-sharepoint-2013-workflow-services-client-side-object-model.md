@@ -71,7 +71,7 @@ This article focuses on the Workflow Services CSOM API and thus, by extension, t
     
 
 > [!NOTE]
-> There is one additional service that is not present in the CSOM, but is present instead with the server-side API. This is the Messaging Service, which is used to manage message queuing and message transport.
+> There is one additional service that is not present in the CSOM, but is present instead with the server-side API. This is the Messaging Service, which is used to manage message queuing and message transport. 
   
     
     

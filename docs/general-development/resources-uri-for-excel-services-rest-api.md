@@ -79,19 +79,19 @@ Table 1 shows all the accessible resources in the Excel Services REST API. To ac
 
 |** **Resource Location****|** **Format****|** **Example****|** **Notes****|
 |:-----|:-----|:-----|:-----|
-|/model|Atom (default)|/model|Returns an Atom feed with the resources supported by the Excel Services REST API. The supported resources are ranges, charts, tables, and PivotTables.|
-|/model|workbook|/model?$format=workbook|This is the workbook. Supported workbook formats are xlsx, xlsb, and xlsm.|
-|/model/Ranges|Atom (default)|/model/Ranges?$format=atom|An Atom feed that listis all the named ranges in the workbook.|
-|/model/Ranges('[Name]')|HTML (default)|/model/Ranges('MyRange')?$format=html|An HTML fragment for the requested range.|
-|/model/Ranges('[Name]')|Atom|/model/Ranges('MyRange')?$format=atom|An Atom entry that contains an XML representation of the data within the range.|
-|/model/Charts|Atom (default)|/model/Charts?$format=atom|An Atom feed that lists all the charts in the workbook.|
-|/model/Charts('[Name]')|Image (default)|/model/Charts('MyChart')?$format=image|An image of the chart. The image is in Portable Network Graphics (PNG) format.|
-|/model/Tables|Atom (default)|/model/Tables?$format=atom|An Atom feed that lists all the available tables in the workbook.|
-|/model/Tables('[Name]')|HTML (default)|/model/Tables('MyTable')?$format=html|An HTML fragment for the requested table.|
-|/model/Tables('[Name]')|Atom|/model/Tables('MyTable')?$format=atom|An Atom entry that contains an XML representation of the data within the table.|
-|/model/PivotTables|Atom (default)|/model/PivotTables?$format=atom|An Atom feed that lists all the available PivotTables in the workbook|
-|/model/PivotTables('[Name]')|HTML (default)|/model/PivotTables('MyPivotTable)?$format=html|An HTML fragment for the requested PivotTable.|
-|/model/PivotTables('[Name]')|Atom|/model/PivotTables('MyPivotTable')?$format=atom|An Atom entry that contains an XML representation of the data within the PivotTables.|
+|/model  <br/> |Atom (default)  <br/> |/model  <br/> |Returns an Atom feed with the resources supported by the Excel Services REST API. The supported resources are ranges, charts, tables, and PivotTables.  <br/> |
+|/model  <br/> |workbook  <br/> |/model?$format=workbook  <br/> |This is the workbook. Supported workbook formats are xlsx, xlsb, and xlsm.  <br/> |
+|/model/Ranges  <br/> |Atom (default)  <br/> |/model/Ranges?$format=atom  <br/> |An Atom feed that listis all the named ranges in the workbook.  <br/> |
+|/model/Ranges('[Name]')  <br/> |HTML (default)  <br/> |/model/Ranges('MyRange')?$format=html  <br/> |An HTML fragment for the requested range.  <br/> |
+|/model/Ranges('[Name]')  <br/> |Atom  <br/> |/model/Ranges('MyRange')?$format=atom  <br/> |An Atom entry that contains an XML representation of the data within the range.  <br/> |
+|/model/Charts  <br/> |Atom (default)  <br/> |/model/Charts?$format=atom  <br/> |An Atom feed that lists all the charts in the workbook.  <br/> |
+|/model/Charts('[Name]')  <br/> |Image (default)  <br/> |/model/Charts('MyChart')?$format=image  <br/> |An image of the chart. The image is in Portable Network Graphics (PNG) format.  <br/> |
+|/model/Tables  <br/> |Atom (default)  <br/> |/model/Tables?$format=atom  <br/> |An Atom feed that lists all the available tables in the workbook.  <br/> |
+|/model/Tables('[Name]')  <br/> |HTML (default)  <br/> |/model/Tables('MyTable')?$format=html  <br/> |An HTML fragment for the requested table.  <br/> |
+|/model/Tables('[Name]')  <br/> |Atom  <br/> |/model/Tables('MyTable')?$format=atom  <br/> |An Atom entry that contains an XML representation of the data within the table.  <br/> |
+|/model/PivotTables  <br/> |Atom (default)  <br/> |/model/PivotTables?$format=atom  <br/> |An Atom feed that lists all the available PivotTables in the workbook  <br/> |
+|/model/PivotTables('[Name]')  <br/> |HTML (default)  <br/> |/model/PivotTables('MyPivotTable)?$format=html  <br/> |An HTML fragment for the requested PivotTable.  <br/> |
+|/model/PivotTables('[Name]')  <br/> |Atom  <br/> |/model/PivotTables('MyPivotTable')?$format=atom  <br/> |An Atom entry that contains an XML representation of the data within the PivotTables.  <br/> |
    
 
 > [!NOTE]

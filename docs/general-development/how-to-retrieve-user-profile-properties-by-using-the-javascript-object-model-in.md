@@ -82,8 +82,8 @@ To create an application page that uses the JavaScript object model to retrieve 
   
 7. In the **Layouts** folder, open the shortcut menu for theUserProfilesJSOM folder, and then add a new SharePoint application page namedUserProfiles.aspx.
     
-   > [!NOTE]
-   > The code examples in this article define custom code in the page markup but do not use the code-behind class file that Visual Studio creates for the page.
+    > [!NOTE]
+      > The code examples in this article define custom code in the page markup but do not use the code-behind class file that Visual Studio creates for the page. 
 8. Open the shortcut menu for the UserProfiles.aspx page, and then choose **Set as Startup Item**.
     
   

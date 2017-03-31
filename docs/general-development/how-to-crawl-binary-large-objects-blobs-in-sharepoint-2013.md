@@ -26,23 +26,23 @@ The Microsoft SQL Server database table must have a column that specifies either
 **Table 1. Sample database table schema**
 
 
-|**Column Name**|**Data Type**|
+|**Column Name **|**Data Type **|
 |:-----|:-----|
-|Id|Int|
-|DisplayName|nvarchar(50)|
-|Extension|nvarchar(50)|
-|Data|varbinary(MAX)|
-|ContentType|nvarchar(MAX)|
+|Id  <br/> |Int  <br/> |
+|DisplayName  <br/> |nvarchar(50)  <br/> |
+|Extension  <br/> |nvarchar(50)  <br/> |
+|Data  <br/> |varbinary(MAX)  <br/> |
+|ContentType  <br/> |nvarchar(MAX)  <br/> |
    
 
 **Table 2. Sample database table values**
 
 
-|**Id**|**Display Name**|**Extension**|**Data**|**Content Type**|
+|**Id **|**Display Name **|**Extension **|**Data **|**Content Type **|
 |:-----|:-----|:-----|:-----|:-----|
-|1|File1|.docx|0x504B…|application/vnd.openxmlformats-officedocument.wordprocessingml.document|
-|2|File2|.doc|0xD…|application/msword|
-|3|File3|.txt|OxE…|text/plain|
+|1  <br/> |File1  <br/> |.docx  <br/> |0x504B…  <br/> |application/vnd.openxmlformats-officedocument.wordprocessingml.document  <br/> |
+|2  <br/> |File2  <br/> |.doc  <br/> |0xD…  <br/> |application/msword  <br/> |
+|3  <br/> |File3  <br/> |.txt  <br/> |OxE…  <br/> |text/plain  <br/> |
    
 
 ## Modifying the BDC model file to enable crawling of BLOB data
@@ -81,8 +81,8 @@ After you create the BLOB external content type, you are ready to modify the BDC
   
 2. Create a new method that returns the BLOB field. You should define a **StreamAccessor** type method instance for this method, as shown in the following example.
     
-   > [!NOTE]
-   > The table name in this example is Attachment.
+    > [!NOTE]
+      > The table name in this example is Attachment. 
 
   ```XML
   

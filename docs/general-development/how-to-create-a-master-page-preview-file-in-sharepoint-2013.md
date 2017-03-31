@@ -24,10 +24,10 @@ Table 1 lists articles that can help you understand the core concepts for workin
 **Table 1. Core concepts for working with master page preview files**
 
 
-|**Article Title**|**Description**|
+|**Article Title **|**Description **|
 |:-----|:-----|
-| [Themes overview for SharePoint 2013](themes-overview-for-sharepoint-2013.md)|Learn about the theming experience in SharePoint 2013.|
-| [Choose a theme for your publishing site](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/choose-a-theme-for-your-publishing-site-HA102891580.aspx)|Learn how to change the look and feel of a SharePoint site by using the **Change the look** wizard.|
+| [Themes overview for SharePoint 2013](themes-overview-for-sharepoint-2013.md) <br/> |Learn about the theming experience in SharePoint 2013.  <br/> |
+| [Choose a theme for your publishing site](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/choose-a-theme-for-your-publishing-site-HA102891580.aspx) <br/> |Learn how to change the look and feel of a SharePoint site by using the **Change the look** wizard. <br/> |
    
 
 ## What is a master page preview file?
@@ -106,13 +106,13 @@ The miscellaneous tokens are replaced with specified height and width values in 
 **Table 2. Miscellaneous tokens**
 
 
-|**Token Name**|**Description**|
+|**Token Name **|**Description **|
 |:-----|:-----|
-|[T_HEIGHT]|The height of the preview.|
-|[T_WIDTH]|The width of the preview.|
-|[T_IMAGE]|The URL of an optional background image.|
-|[T_IMGHEIGHT]|The height of the image, if needed.|
-|[T_IMGWIDTH]|The width of the image, if needed.|
+|[T_HEIGHT]  <br/> |The height of the preview.  <br/> |
+|[T_WIDTH]  <br/> |The width of the preview.  <br/> |
+|[T_IMAGE]  <br/> |The URL of an optional background image.  <br/> |
+|[T_IMGHEIGHT]  <br/> |The height of the image, if needed.  <br/> |
+|[T_IMGWIDTH]  <br/> |The width of the image, if needed.  <br/> |
    
 
 ### Color tokens
@@ -125,10 +125,10 @@ Color tokens are replaced with color values in the preview image. Table 3 descri
 **Table 3. Color tokens**
 
 
-|**Token Name**|**Description**|
+|**Token Name **|**Description **|
 |:-----|:-----|
-|[T_THEME_COLOR_ _ColorSlot_]|Use this format if you want the color value of the color slot.|
-|[T_THEME_COLOR_ _ColorSlot__AA]|Use this format if you want the 8-digit hexadecimal value of the color slot. This format is useful for filter values to enable opacity and gradients in Internet Explorer.|
+|[T_THEME_COLOR_ _ColorSlot_]  <br/> |Use this format if you want the color value of the color slot.  <br/> |
+|[T_THEME_COLOR_ _ColorSlot__AA]  <br/> |Use this format if you want the 8-digit hexadecimal value of the color slot. This format is useful for filter values to enable opacity and gradients in Internet Explorer.  <br/> |
    
 
 ### Font tokens
@@ -156,23 +156,23 @@ The tokens listed in Table 4 are used in the HTML section of the master page pre
 **Table 4. Text content tokens**
 
 
-|**Token Name**|**Description**|
+|**Token Name **|**Description **|
 |:-----|:-----|
-|[BRANDSTRING]|The brand text that appears on the page. In the preinstalled themes, it appears on the top-left corner "Brand".|
-|[SUITELINK1] [SUITELINK2] [SUITELINK3]|The suite links that appear in the suite bar. See "First Item", "Second Item", "Third Item" in Figure 1.|
-|[WELCOME]|The user name text. See "User Name" in Figure 1.|
-|[RIBBONTAB1] [RIBBONTAB2] [RIBBONTAB3]|The names of ribbon tabs. See "TAB 1", "TAB 2", "TAB 3" in Figure 1.|
-|[SEARCHBOX]|The text inside the search box. See "Search text" in Figure 1.|
-|[TN1][TN2][TN3]|The horizontal navigation items. "NAVIGATION 1", "NAVIGATION 2", "NAVIGATION 3".|
-|[TITLE]|The page title. "Page Title".|
-|[QL1] [QL2] [QL3] [QL4]|The vertical navigation items. "First menu item", "Second menu item", "Third menu item".|
-|[QLADD]|The link below the vertical navigation items. See "COMMAND LINK" in Figure 1.|
-|[CA TABLE HEADER]|The heading above the page text. In Figure 1, "Welcome to the preview of your theme!".|
-|[CA TABLE DESCRIPTION]|The description text. In Figure 1, "You are looking at an example of how the colors will be used in this theme for your content. This is an example of a…".|
-|[CA ACCENT COLORS]|The list of accent colors and blocks.|
-|[CA LIST TITLE]|The heading of the list. In Figure 1, "Example of a list".|
-|[CA TABLE]|The sample list.|
-|[SITETITLE]|The title of the site. See "Site Title" in Figure 1.|
+|[BRANDSTRING]  <br/> |The brand text that appears on the page. In the preinstalled themes, it appears on the top-left corner "Brand".  <br/> |
+|[SUITELINK1]  <br/> [SUITELINK2]  <br/> [SUITELINK3]  <br/> |The suite links that appear in the suite bar. See "First Item", "Second Item", "Third Item" in Figure 1.  <br/> |
+|[WELCOME]  <br/> |The user name text. See "User Name" in Figure 1.  <br/> |
+|[RIBBONTAB1]  <br/> [RIBBONTAB2]  <br/> [RIBBONTAB3]  <br/> |The names of ribbon tabs. See "TAB 1", "TAB 2", "TAB 3" in Figure 1.  <br/> |
+|[SEARCHBOX]  <br/> |The text inside the search box. See "Search text" in Figure 1.  <br/> |
+|[TN1]  <br/> [TN2]  <br/> [TN3]  <br/> |The horizontal navigation items. "NAVIGATION 1", "NAVIGATION 2", "NAVIGATION 3".  <br/> |
+|[TITLE]  <br/> |The page title. "Page Title".  <br/> |
+|[QL1]  <br/> [QL2]  <br/> [QL3]  <br/> [QL4]  <br/> |The vertical navigation items. "First menu item", "Second menu item", "Third menu item".  <br/> |
+|[QLADD]  <br/> |The link below the vertical navigation items. See "COMMAND LINK" in Figure 1.  <br/> |
+|[CA TABLE HEADER]  <br/> |The heading above the page text. In Figure 1, "Welcome to the preview of your theme!".  <br/> |
+|[CA TABLE DESCRIPTION]  <br/> |The description text. In Figure 1, "You are looking at an example of how the colors will be used in this theme for your content. This is an example of a…".  <br/> |
+|[CA ACCENT COLORS]  <br/> |The list of accent colors and blocks.  <br/> |
+|[CA LIST TITLE]  <br/> |The heading of the list. In Figure 1, "Example of a list".  <br/> |
+|[CA TABLE]  <br/> |The sample list.  <br/> |
+|[SITETITLE]  <br/> |The title of the site. See "Site Title" in Figure 1.  <br/> |
    
 
 **Figure 1. Preinstalled theme with sample text**
@@ -216,15 +216,15 @@ To create a master page preview file, use an existing master page preview as a s
   
 3. Use an HTML editor to edit the master page preview file. Update the file to reflect the layout and appearance of your master page.
     
-   > [!TIP]
-   > Dimension values are specified as percentages in the master page preview file. The following example shows one method for converting an absolute measurement (pixels) into a relative measurement (percentage). Assume you have a browser size of 1024x768. If the master page has an element height of 32 pixels and the parent element is the body of the page, you calculate the percentage by dividing the element height by the browser height. The relative measurement is 4%(32/768).
+    > [!TIP]
+      > Dimension values are specified as percentages in the master page preview file. The following example shows one method for converting an absolute measurement (pixels) into a relative measurement (percentage). Assume you have a browser size of 1024x768. If the master page has an element height of 32 pixels and the parent element is the body of the page, you calculate the percentage by dividing the element height by the browser height. The relative measurement is 4%(32/768). 
 4. Upload the master page preview file to the Master Page Gallery.
     
   
 5. Use the **Change the look** wizard to test the master page preview with your site content.
     
-   > [!NOTE]
-   > You can also create a design that uses the new master page by adding an item to the Composed Looks list. The design will be available in the design gallery (the first page of the **Change the look** wizard). For more information, see the [Deploy a theme by using the user interface](how-to-deploy-a-custom-theme-in-sharepoint-2013.md#section2) procedure in [How to: Deploy a custom theme in SharePoint 2013](how-to-deploy-a-custom-theme-in-sharepoint-2013.md). 
+    > [!NOTE]
+      > You can also create a design that uses the new master page by adding an item to the Composed Looks list. The design will be available in the design gallery (the first page of the **Change the look** wizard). For more information, see the [Deploy a theme by using the user interface](how-to-deploy-a-custom-theme-in-sharepoint-2013.md#section2) procedure in [How to: Deploy a custom theme in SharePoint 2013](how-to-deploy-a-custom-theme-in-sharepoint-2013.md). 
 6. Repeat steps 3 to 5, as necessary.
     
   

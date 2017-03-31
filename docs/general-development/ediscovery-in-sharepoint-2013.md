@@ -91,25 +91,25 @@ SharePoint 2013 provides a Microsoft .NET server programming model that you can 
 **Table 1. eDiscovery types**
 
 
-|**Type**|**Description**|
+|**Type **|**Description **|
 |:-----|:-----|
 | [Case](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.Case.aspx) <br/> |Represents an eDiscovery case. Associated with a specified  [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) object, a case can be closed by a specified date or as a specific action. Cases can contain source groups, locations, mailboxes, custodians, saved searches, exports, export configurations for specified IDs, queries, and lists of all of the source groups, custodians, and locations in this **Case** object. <br/> |
-| [Custodian](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.Custodian.aspx) <br/> |Represents the person who is responsible for keeping records for an eDiscovery case. <br/> |
+| [Custodian](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.Custodian.aspx) <br/> |Represents the person who is responsible for keeping records for an eDiscovery case.  <br/> |
 | [CustodianCollection](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.CustodianCollection.aspx) <br/> |Represents a collection of **Custodian** objects. <br/> |
 | [DiscoveryDuplicateSourceCollection](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.DiscoveryDuplicateSourceCollection.aspx) <br/> |An exception that is thrown when the value of a **Source** object is not unique. <br/> |
-| [DiscoveryException](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.DiscoveryException.aspx) <br/> |An exception specific to the eDiscovery API that takes a message and also can take an inner exception. <br/> |
+| [DiscoveryException](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.DiscoveryException.aspx) <br/> |An exception specific to the eDiscovery API that takes a message and also can take an inner exception.  <br/> |
 | [Export](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.Export.aspx) <br/> |Represents an export that is associated with a specific **Case** object. The **Export** object can be constructed from a **T:Microsoft.SharePoint.SPListItem** object. You can add a **SavedSearch** object to an **Export** object and optionally rights-manage and download the **Export** object. <br/> |
 | [ExportCollection](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.ExportCollection.aspx) <br/> |Represents a collection of **Export** objects. <br/> |
-| [ExportStatus](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.ExportStatus.aspx) <br/> |Represents the status of an export, which indicates whether the export has started, not started, finished, or finished with failures. <br/> |
+| [ExportStatus](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.ExportStatus.aspx) <br/> |Represents the status of an export, which indicates whether the export has started, not started, finished, or finished with failures.  <br/> |
 | [SavedSearch](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SavedSearch.aspx) <br/> |Represents a saved eDiscovery search. **SavedSearch** objects can be copied, deleted, or updated. Statistics that are associated with a saved search can be updated. Search refinements, Exchange 2013 refinements, source IDs, source group IDs, queries, and filters can be associated with a **SavedSearch** object. <br/> |
 | [SavedSearchCollection](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SavedSearchCollection.aspx) <br/> |Represents a collection of **SavedSearch** objects. <br/> |
 | [Source](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.Source.aspx) <br/> |Represents the type of data source that is used in eDiscovery operations. A **Source** object takes a specific **Case** object, a type of data source, and a filter (that is, a partial or complete specification of the container that identifies the source) as parameters. Information about the source can be returned, such as its preservation status, the location of the source as indexed by SharePoint, and whether the source is a mailbox. <br/> |
 | [SourceCollection](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceCollection.aspx) <br/> |Represents a collection of **Source** objects. <br/> |
 | [SourceGroup](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceGroup.aspx) <br/> |Represents a group of **Source** objects. <br/> |
 | [SourceGroupCollection](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceGroupCollection.aspx) <br/> |Represents a collection of **SourceGroup** objects. <br/> |
-| [SourceManagementType](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceManagementType.aspx) <br/> |Represents the scale at which sources are managed. Options include the source, the source group, and all content. <br/> |
-| [SourceType](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceType.aspx) <br/> |Represents the type of source. Source types include Exchange 2013, both current and older versions of SharePoint Server, and file shares. <br/> |
-| [SourceValidation](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceValidation.aspx) <br/> |Indicates whether the source is valid. <br/> |
+| [SourceManagementType](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceManagementType.aspx) <br/> |Represents the scale at which sources are managed. Options include the source, the source group, and all content.  <br/> |
+| [SourceType](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceType.aspx) <br/> |Represents the type of source. Source types include Exchange 2013, both current and older versions of SharePoint Server, and file shares.  <br/> |
+| [SourceValidation](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.SourceValidation.aspx) <br/> |Indicates whether the source is valid.  <br/> |
    
 
 ## Additional resources

@@ -16,7 +16,7 @@ Visio 2013 and SharePoint Designer 2013 make it easy for business analysts, proc
     
 
 > [!NOTE]
-> For guidance on setting up and configuring SharePoint Server 2013 and the Workflow Manager server, see  [Configure workflow in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj658586.aspx).
+> For guidance on setting up and configuring SharePoint Server 2013 and the Workflow Manager server, see  [Configure workflow in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj658586.aspx). 
   
     
     
@@ -50,7 +50,7 @@ The SharePoint 2013 Workflow template that is included in Visio 2013 also uses s
     
 
 > [!IMPORTANT]
-> Because of the underlying differences between the Microsoft SharePoint 2010 Workflow template and the SharePoint 2013 Workflow template, you cannot use shapes from one template within a diagram created by the other. Only shapes from the SharePoint 2013 Workflow Actions, SharePoint 2013 Workflow Conditions, and SharePoint 2013 Workflow Terminators stencils can be used to build a SharePoint 2013 workflow.
+> Because of the underlying differences between the Microsoft SharePoint 2010 Workflow template and the SharePoint 2013 Workflow template, you cannot use shapes from one template within a diagram created by the other. Only shapes from the SharePoint 2013 Workflow Actions, SharePoint 2013 Workflow Conditions, and SharePoint 2013 Workflow Terminators stencils can be used to build a SharePoint 2013 workflow. 
   
     
     
@@ -298,7 +298,7 @@ When you open a .vsdx file in SharePoint Designer 2013, the file is displayed in
     
 
 > [!NOTE]
-> To switch between the Visual Designer and the Declarative Designer in SharePoint Designer 2013, on the **Workflow** tab, in the **Manage** group, choose **Views**. This process may take a few moments, as SharePoint Designer 2013 validates the workflow and then converts the workflow information from one format to another. During this process, another shape level validation will occur. If any errors are detected with the diagram, the errors will be displayed in an error pane at the bottom of the canvas (just like in Visio).
+> To switch between the Visual Designer and the Declarative Designer in SharePoint Designer 2013, on the **Workflow** tab, in the **Manage** group, choose **Views**. This process may take a few moments, as SharePoint Designer 2013 validates the workflow and then converts the workflow information from one format to another. During this process, another shape level validation will occur. If any errors are detected with the diagram, the errors will be displayed in an error pane at the bottom of the canvas (just like in Visio). 
   
     
     

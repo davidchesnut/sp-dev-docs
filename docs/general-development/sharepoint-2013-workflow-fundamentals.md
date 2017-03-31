@@ -111,7 +111,7 @@ This decoupling of message creation from message consumption allows for scalabil
     
 
 > [!NOTE]
-> The PubSub feature is a part of the Microsoft Azure Service Bus, which provides connectivity options for WCF and other service endpoints. These include REST endpoints, which can be located behind network address translation (NAT) boundaries, or bound to frequently changing, dynamically assigned IP addresses, or both. For more information about the Azure Service Bus, see  [Service Bus](http://msdn.microsoft.com/en-us/library/ee732537.aspx).
+> The PubSub feature is a part of the Microsoft Azure Service Bus, which provides connectivity options for WCF and other service endpoints. These include REST endpoints, which can be located behind network address translation (NAT) boundaries, or bound to frequently changing, dynamically assigned IP addresses, or both. For more information about the Azure Service Bus, see  [Service Bus](http://msdn.microsoft.com/en-us/library/ee732537.aspx). 
   
     
     

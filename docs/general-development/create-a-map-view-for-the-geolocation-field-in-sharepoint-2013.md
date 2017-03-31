@@ -31,8 +31,8 @@ An MSI package named SQLSysClrTypes.msi must be installed on every SharePoint fr
   
 - A valid Bing Maps key set at the farm or web level, which can be obtained from the  [Bing Maps Account Center](http://www.bingmapsportal.com/)
     
-   > [!IMPORTANT]
-   > You are responsible for compliance with terms and conditions applicable to your use of the Bing Maps key, and any necessary disclosures to users of your application regarding data passed to the Bing Maps service.
+    > [!IMPORTANT]
+      > You are responsible for compliance with terms and conditions applicable to your use of the Bing Maps key, and any necessary disclosures to users of your application regarding data passed to the Bing Maps service. 
 - Visual Studio 2012 or Visual Studio 2010
     
   
@@ -97,8 +97,8 @@ The following steps demonstrate how to create a map view from the SharePoint 201
   
 
     
-   > [!NOTE]
-   > At least one **Geolocation** field is required to create a map view. You cannot select multiple **Geolocation** fields for a map view, although you can create two different map views that use two different **Geolocation** fields.
+    > [!NOTE]
+      > At least one **Geolocation** field is required to create a map view. You cannot select multiple **Geolocation** fields for a map view, although you can create two different map views that use two different **Geolocation** fields.
 5. After you add the required **Geolocation** field and any other field you need, choose **OK**. A map view is created, as shown in Figure 4.
     
    **Figure 4. Completed map view**
@@ -147,8 +147,8 @@ Follow these steps to create a map view for a SharePoint list programmatically.
   
 7. Add the following code to the **Main** method in the .cs file.
     
-   > [!NOTE]
-   > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list.
+    > [!NOTE]
+      > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list. 
 
   ```cs
   

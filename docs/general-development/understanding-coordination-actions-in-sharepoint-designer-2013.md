@@ -1,6 +1,6 @@
 ---
 title: Understanding Coordination actions in SharePoint Designer 2013
-ms.prod: SHAREPOINTDESIGNER
+ms.prod: SHAREPOINT
 ms.assetid: 33fbcf91-0a5d-47ab-85a9-9d2d556a204d
 ---
 

@@ -53,10 +53,10 @@ Each option has advantages and disadvantages. It helps to have an understanding 
     
 
 
-||**SharePoint 2013 On-Premises**|**Office 365 SharePoint Online**|
+||**SharePoint 2013 On-Premises **|**Office 365 SharePoint Online **|
 |:-----|:-----|:-----|
-|SharePoint Designer 2013, SharePoint Online| Log to history list Fiddler| Log to history list|
-|Visual Studio 2012| Log to history list Breakpoints Console debug messages Fiddler| Log to history list Breakpoints|
+|SharePoint Designer 2013, SharePoint Online  <br/> | Log to history list <br/>  Fiddler <br/> | Log to history list <br/> |
+|Visual Studio 2012  <br/> | Log to history list <br/>  Breakpoints <br/>  Console debug messages <br/>  Fiddler <br/> | Log to history list <br/>  Breakpoints <br/> |
    
 
 ## Debugging with the workflow history list
@@ -446,8 +446,8 @@ This walkthrough has the following prerequisites:
   
 - SharePoint Server 2013 and Workflow Manager 1.0 are configured to allow OAuth over HTTP.
     
-   > [!CAUTION]
-   > This should never be done on the production server, but only for testing and debugging.
+    > [!CAUTION]
+      > This should never be done on the production server, but only for testing and debugging. 
 
 1. Log on to the server where Workflow Manager and SharePoint 2013 are installed with the Windows identity configured as the Workflow Manager 1.0 farm account and SharePoint 2013 application pool identity.
     

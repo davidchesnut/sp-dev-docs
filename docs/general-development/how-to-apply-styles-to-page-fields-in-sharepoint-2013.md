@@ -99,7 +99,7 @@ After you configure these properties in the Snippet Gallery and then update the 
 
 
 > [!NOTE]
-> If you set **AllowFonts** to **False**, content authors can still use keyboard shortcuts such as CTRL+B (strong) to format text. To prevent authors from adding any styles to text, you can set **AllowTextMarkup** to **False**. With this setting, when content authors attempt to save content that contains styles applied to text, the HTML editor in the browser returns an error and prompts the author to remove the markup that is not valid.
+> If you set **AllowFonts** to **False**, content authors can still use keyboard shortcuts such as CTRL+B (strong) to format text. To prevent authors from adding any styles to text, you can set **AllowTextMarkup** to **False**. With this setting, when content authors attempt to save content that contains styles applied to text, the HTML editor in the browser returns an error and prompts the author to remove the markup that is not valid. 
   
     
     
@@ -178,8 +178,8 @@ When you change the value of the **PrefixStyleSheet** property, none of the exis
   
 7. In the property grid, expand the **Misc** section, and then change the **PrefixStyleSheet** property to a value other than **ms-rte**—for example, change the value to be **customstyle**.
     
-   > [!IMPORTANT]
-   > This property value must be all lowercase.
+    > [!IMPORTANT]
+      > This property value must be all lowercase. 
 8. Choose **Update**.
     
   
@@ -188,8 +188,8 @@ When you change the value of the **PrefixStyleSheet** property, none of the exis
   
 10. In the mapped network drive on your computer, open the HTML page layout in your HTML editor.
     
-   > [!NOTE]
-   > For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md).
+    > [!NOTE]
+      > For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md). 
 11. In the HTML page layout, paste the HTML snippet inside **PlaceHolderMain**.
     
   
@@ -204,8 +204,8 @@ When you change the value of the **PrefixStyleSheet** property, none of the exis
     
     It's useful to view the default styles, understand how they're written, and possibly reuse some of them by copying them to your style sheet and then modifying them. If you do this, replace the default **ms-rte** prefix with your own prefix.
     
-   > [!IMPORTANT]
-   > Do not modify the default style sheet, HtmlEditorStyles.css. This style sheet provides styles for every RichHtmlField in the farm. Also, service updates or an upgrade may overwrite this file, causing you to lose any changes.
+    > [!IMPORTANT]
+      > Do not modify the default style sheet, HtmlEditorStyles.css. This style sheet provides styles for every RichHtmlField in the farm. Also, service updates or an upgrade may overwrite this file, causing you to lose any changes. 
 14. In your style sheet, create a list of new styles that start with the new prefix.
     
     For example, if **customstyle** is the new prefix, your style sheet might contain the following style.

@@ -47,13 +47,13 @@ You can create and configure a device channel from the **Site Settings** menu un
 **Table 1. Required and optional fields for creating a device channel**
 
 
-|**Field**|**Required Value**|**Value**|
+|**Field **|**Required Value **|**Value **|
 |:-----|:-----|:-----|
-|Name|Yes|This is the name of your design channel. It can be a friendly name to identify the channel.|
-|Alias|Yes|The alias name enables you to identify your device channel in code, device channel panels (discussed later in this article), previews, and other contexts.> [!IMPORTANT]> If you later change the channel alias, you'll have to manually update master page mappings, device channel panels, and any custom code or markup.          |
-|Description|No|A field for supplying a general description for the device channel.|
-|Device Inclusion Rules|Yes|A field for supplying the user agent substring such as Windows Phone OS. Device redirection to a specific master page depends on what is entered for this value. For more information about what values to supply in this field, see the section  [User agent substrings and device channel rankings](#PlanDeviceChannels_UserAgentSubstrings) in this article.|
-|Active|No|Selecting this check box activates your device channel. If you are working on a live site, you should not activate the channel before you have finished designing it. For testing, you can use the query string  `?DeviceChannel=alias` within a browser to preview your site for a specific channel.|
+|Name  <br/> |Yes  <br/> |This is the name of your design channel. It can be a friendly name to identify the channel.  <br/> |
+|Alias  <br/> |Yes  <br/> |The alias name enables you to identify your device channel in code, device channel panels (discussed later in this article), previews, and other contexts.  <br/> > [!IMPORTANT]> If you later change the channel alias, you'll have to manually update master page mappings, device channel panels, and any custom code or markup.           |
+|Description  <br/> |No  <br/> |A field for supplying a general description for the device channel.  <br/> |
+|Device Inclusion Rules  <br/> |Yes  <br/> |A field for supplying the user agent substring such as Windows Phone OS. Device redirection to a specific master page depends on what is entered for this value. For more information about what values to supply in this field, see the section  [User agent substrings and device channel rankings](#PlanDeviceChannels_UserAgentSubstrings) in this article. <br/> |
+|Active  <br/> |No  <br/> |Selecting this check box activates your device channel. If you are working on a live site, you should not activate the channel before you have finished designing it. For testing, you can use the query string  `?DeviceChannel=alias` within a browser to preview your site for a specific channel. <br/> |
    
 
   
@@ -101,12 +101,12 @@ When creating a device channel, you are asked to supply a user agent substring t
 **Table 2. Sample user agent substring values**
 
 
-|**Device**|**User agent substring(s)**|
+|**Device **|**User agent substring(s) **|
 |:-----|:-----|
-|Windows Phone| Windows Phone OS 7.5 (Specific to Windows Phone 7.5 phone.) Windows Phone OS (Generic substring for all Windows Phone versions.)|
-|iPhone|iPhone|
-|iPad|iPad|
-|Android|Android|
+|Windows Phone  <br/> | Windows Phone OS 7.5 (Specific to Windows Phone 7.5 phone.) <br/>  Windows Phone OS (Generic substring for all Windows Phone versions.) <br/> |
+|iPhone  <br/> |iPhone  <br/> |
+|iPad  <br/> |iPad  <br/> |
+|Android  <br/> |Android  <br/> |
    
 In the **Device Inclusion Rules** field, you add just the substring value or values for the devices that you want to include.
   
@@ -134,11 +134,11 @@ After they are created, device channels are ordered and stored in a list. It is 
 **Table 3. Sample ordering of device channels**
 
 
-|**Order 1 (Device Channels)**|**Order 2 (Device Channels)**|
+|**Order 1 (Device Channels) **|**Order 2 (Device Channels) **|
 |:-----|:-----|
-|device channel 1—Windows Phone OS 7.5|device channel 1—Windows Phone OS|
-|device channel 2—Windows Phone OS|device channel 2—Windows Phone OS 7.5|
-|device channel 3—Default|device channel 3—Default|
+|device channel 1—Windows Phone OS 7.5  <br/> |device channel 1—Windows Phone OS  <br/> |
+|device channel 2—Windows Phone OS  <br/> |device channel 2—Windows Phone OS 7.5  <br/> |
+|device channel 3—Default  <br/> |device channel 3—Default  <br/> |
    
 If you choose Order 1, where the device inclusion rule substring is set to **Windows Phone OS 7.5**, a user browsing to your site with a Windows Phone 7.5 device is directed to device channel 1. A user with any other Windows Phone version is directed to device channel 2, and any non-Windows Phone user receives channel 3. But, if you choose Order 2, which prioritizes the generic Windows Phone OS substring, all Windows Phone traffic is directed to device channel 1. Device channel 2 isn't invoked for Windows Phone 7.5 devices because of the prioritization and generic nature of device channel 1. If you create multiple device channels, it is important to understand how order and ranking affect traffic redirection for your device pools.
   
@@ -240,10 +240,10 @@ There are some generic manufacturer user agent substrings that you can use for d
 **Table 4. Differentiating between user agent strings**
 
 
-|**Device**|**User Agent String**|
+|**Device **|**User Agent String **|
 |:-----|:-----|
-|Windows 8 desktop|(compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)|
-|Windows 8 tablet (example)|(compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; touch)|
+|Windows 8 desktop  <br/> |(compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)  <br/> |
+|Windows 8 tablet (example)  <br/> |(compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; touch)  <br/> |
    
 These strings are very similar in format; the only difference is the inclusion of  `touch` for the Windows 8 tablet example. For this particular scenario, if you wanted a specific master page rendering for the tablet device, you would supply `touch` as your substring when you are creating a device inclusion rule. The key, when you deal with situations such as this, is to find a point of differentiation between similar strings. If you were to create a device channel with a device inclusion rule using a common value such as **MSIE 10.0**, there would be no way to differentiate between the desktop and the tablet.
   
@@ -322,7 +322,7 @@ Use this procedure to change an existing device channel.
     
 
 > [!NOTE]
-> You cannot modify the Default channel.
+> You cannot modify the Default channel. 
   
     
     
@@ -348,8 +348,8 @@ Use this procedure to change an existing device channel.
   
 6. To change the alias of the device channel, enter a new alias in the **Alias** text box.
     
-   > [!NOTE]
-   > If you change a device channel's alias, you must manually change the alias in other places where you use it. For example, you must manually change the alias in custom code or markup, and you must manually change the mappings between the device channel and master pages.
+    > [!NOTE]
+      > If you change a device channel's alias, you must manually change the alias in other places where you use it. For example, you must manually change the alias in custom code or markup, and you must manually change the mappings between the device channel and master pages. 
 7. To change the description of the device channel, enter a new description in the **Description** text box.
     
   

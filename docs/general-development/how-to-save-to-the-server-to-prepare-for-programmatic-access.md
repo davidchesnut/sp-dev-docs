@@ -21,8 +21,8 @@ This example shows how to save an Excel workbook to the server to to prepare it 
   
 2. Save the workbook to a trusted SharePoint library location. 
     
-   > [!NOTE]
-   > It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information, see  [How to: Trust a Location](how-to-trust-a-location.md).
+    > [!NOTE]
+      > It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information, see  [How to: Trust a Location](how-to-trust-a-location.md). 
 3. Programmatically specify values for the worksheet, named range, and cell value by using the Excel Web Services **SetCellA1** method. The values are passed in as arguments—that is, _args [1]_ and _args [2]_:
     
   ```cs

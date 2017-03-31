@@ -3,7 +3,7 @@ title: How to Restrict UDF Code Access Security Permissions
 keywords: cas,how to,howdoi,howto,UDF list
 f1_keywords:
 - cas,how to,howdoi,howto,UDF list
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: 4f022e0d-1fe3-4fab-b41f-82a0d628f77c
 ---
 
@@ -119,11 +119,11 @@ For more information about configuring code groups, see the following articles o
   
 3. Click **Apply**, and then click **OK**.
     
-   > [!NOTE]
-   > If the UDF method throws an exception because it cannot make the Web service call, you should receive a **#VALUE!** error in the Excel formula that called the UDF.
+    > [!NOTE]
+      > If the UDF method throws an exception because it cannot make the Web service call, you should receive a **#VALUE!** error in the Excel formula that called the UDF.
 
-   > [!NOTE]
-   >  If you want to enable Web access for your UDF assembly for testing, you must add the appropriate permission to your custom permission set. To do this, in Step 11 of the "To create a new code group" procedure, select **Web Access**. 
+    > [!NOTE]
+      >  If you want to enable Web access for your UDF assembly for testing, you must add the appropriate permission to your custom permission set. To do this, in Step 11 of the "To create a new code group" procedure, select **Web Access**. 
 
 ## See also
 

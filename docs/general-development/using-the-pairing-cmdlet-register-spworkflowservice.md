@@ -30,27 +30,27 @@ Also note that **Register-SPWorkflowService** uses the credentials of the curren
 ****
 
 
-|**Detail**|**Description**|
+|**Detail **|**Description **|
 |:-----|:-----|
-|Verb|Register|
-|Noun|SPWorkflowService|
-|Description|Pairs a sps15short farm with a Workflow Manager farm. You must run this cmdlet once per farm. Before running the cmdlet, you must install root CA certificate in machine certificate store and SharePoint certificate store. To do this, use the cmdlet **New-SPTrustedRootAuthority**. (See instructions below.)|
-|Output type|None.|
-|Syntax| `Register-SPWorkflowService -SPSite <URI or GUID representing an SPSite object> -WorkflowHostUri <workflow service endpoint URL> -ScopeName <string> [-PartitionMode] [-AllowOAuthHttp] [-Force]`|
+|Verb  <br/> |Register  <br/> |
+|Noun  <br/> |SPWorkflowService  <br/> |
+|Description  <br/> |Pairs a sps15short farm with a Workflow Manager farm. You must run this cmdlet once per farm. Before running the cmdlet, you must install root CA certificate in machine certificate store and SharePoint certificate store. To do this, use the cmdlet **New-SPTrustedRootAuthority**. (See instructions below.)  <br/> |
+|Output type  <br/> |None.  <br/> |
+|Syntax  <br/> | `Register-SPWorkflowService -SPSite <URI or GUID representing an SPSite object> -WorkflowHostUri <workflow service endpoint URL> -ScopeName <string> [-PartitionMode] [-AllowOAuthHttp] [-Force]` <br/> |
    
 
 ## Cmdlet parameters
 
 
 
-|**Parameter**|**Type**|**Description**|
+|**Parameter **|**Type **|**Description **|
 |:-----|:-----|:-----|
-|SPSite          (Required)|**SPSitePipeBind**|The URL of a long-lasting site collection on the SharePoint Server farm that serves as the pairing endpoint. Information for pairing is deduced from this URL. |
-|WorkflowHostUri          (Required)|String|The URL of the Workflow Manager endpoint for the pairing. Provides the workflow host URI along with port number.|
-|ScopeName|String|The name to be used by the workflow service to identify the paired SharePoint Server farm. The default value is "SharePoint". You only need to specify this parameter if trying to pair multiple SharePoint farms to a Workflow Manager farm.|
-|PartitionMode|SwitchParameter|Use this parameter only for multi-tenant SharePoint farm. The partition mode is specified per SharePoint service. Note that you can create multi-tenancy in a SharePoint farm after this cmdlet runs; therefore, the cmdlet cannot deduce this parameter value implicitly from the existing state of the SharePoint farm.|
-|AllowOAuthHttp|SwitchParameter|Enables OAuth and metadata exchange over HTTP. This is useful in testing, but not in production mode. Use this only when SharePoint is configured to support HTTP. It is not necessary that the Workflow Manager be configured to use HTTP.|
-|Force|SwitchParameter|Enforces the creating of scope using  _ScopeName_ parameter, or updates an existing scope corresponding to the same _ScopeName_. If not specified and scope with the same name exists, the cmdlet will throw an error.|
+|SPSite          (Required)  <br/> |**SPSitePipeBind** <br/> |The URL of a long-lasting site collection on the SharePoint Server farm that serves as the pairing endpoint. Information for pairing is deduced from this URL.  <br/> |
+|WorkflowHostUri          (Required)  <br/> |String  <br/> |The URL of the Workflow Manager endpoint for the pairing. Provides the workflow host URI along with port number.  <br/> |
+|ScopeName  <br/> |String  <br/> |The name to be used by the workflow service to identify the paired SharePoint Server farm. The default value is "SharePoint". You only need to specify this parameter if trying to pair multiple SharePoint farms to a Workflow Manager farm.  <br/> |
+|PartitionMode  <br/> |SwitchParameter  <br/> |Use this parameter only for multi-tenant SharePoint farm. The partition mode is specified per SharePoint service. Note that you can create multi-tenancy in a SharePoint farm after this cmdlet runs; therefore, the cmdlet cannot deduce this parameter value implicitly from the existing state of the SharePoint farm.  <br/> |
+|AllowOAuthHttp  <br/> |SwitchParameter  <br/> |Enables OAuth and metadata exchange over HTTP. This is useful in testing, but not in production mode. Use this only when SharePoint is configured to support HTTP. It is not necessary that the Workflow Manager be configured to use HTTP.  <br/> |
+|Force  <br/> |SwitchParameter  <br/> |Enforces the creating of scope using  _ScopeName_ parameter, or updates an existing scope corresponding to the same _ScopeName_. If not specified and scope with the same name exists, the cmdlet will throw an error.  <br/> |
    
 
 ## Example

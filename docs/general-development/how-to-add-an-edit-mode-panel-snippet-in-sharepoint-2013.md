@@ -105,7 +105,7 @@ The two most important parts of an Edit Mode Panel snippet are the **PageDisplay
     
 
 > [!NOTE]
-> This property doesn't appear in the markup unless you change the value to **Display**. When the property does not appear in the markup, the default mode for the snippet is Edit mode.
+> This property doesn't appear in the markup unless you change the value to **Display**. When the property does not appear in the markup, the default mode for the snippet is Edit mode. 
   
     
     

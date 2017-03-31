@@ -84,13 +84,13 @@ Table 1 shows the resources for setting up a development environment and beginni
 **Table 1. Resources to help you get started with SharePoint farm solutions development**
 
 
-|**Topic**|**Description**|
+|**Topic **|**Description **|
 |:-----|:-----|
-| [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md)|Contains step-by-step instructions on how to install the components of a SharePoint 2013 development environment.|
-| [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)|Describes the several sets of APIs that are provided in SharePoint 2013, including the server object model and the various client-side object models, and the REST/OData web service.|
-| [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md)|Provides a gateway to detailed information about new features and functionality in SharePoint 2013.|
-| [Programming models in SharePoint 2013](programming-models-in-sharepoint-2013.md)|Provides a quick overview of the different kinds of SharePoint development projects that you can create with SharePoint 2013.|
-| [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)|Provides a gateway to detailed information about using the capabilities of SharePoint 2013 in your solutions.|
+| [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md) <br/> |Contains step-by-step instructions on how to install the components of a SharePoint 2013 development environment.  <br/> |
+| [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md) <br/> |Describes the several sets of APIs that are provided in SharePoint 2013, including the server object model and the various client-side object models, and the REST/OData web service.  <br/> |
+| [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md) <br/> |Provides a gateway to detailed information about new features and functionality in SharePoint 2013.  <br/> |
+| [Programming models in SharePoint 2013](programming-models-in-sharepoint-2013.md) <br/> |Provides a quick overview of the different kinds of SharePoint development projects that you can create with SharePoint 2013.  <br/> |
+| [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md) <br/> |Provides a gateway to detailed information about using the capabilities of SharePoint 2013 in your solutions.  <br/> |
    
  **For SharePoint Add-ins development**
   
@@ -108,13 +108,13 @@ When you know the kinds of SharePoint Add-in that you want to create, we provide
 **Table 2. Resources to help you get started with SharePoint Add-ins development**
 
 
-|**Topic**|**Description**|
+|**Topic **|**Description **|
 |:-----|:-----|
 |||
-| [Set up a development environment for SharePoint Add-ins on Office 365](http://msdn.microsoft.com/library/b22ce52a-ae9e-4831-9b68-c9210af6dc54%28Office.15%29.aspx) <br/> |Explains how to sign up for and use an Office 365 Developer Site for developing SharePoint Add-ins. <br/> |
-| [Set up an on-premises development environment for SharePoint Add-ins](http://msdn.microsoft.com/library/b0878c12-27c9-4eea-ae3b-7e79e5a8838d%28Office.15%29.aspx) <br/> |Explains how to set up a local, on-premises installation of SharePoint 2013 and configure it for developing SharePoint Add-ins. <br/> |
-| [Get started creating provider-hosted SharePoint Add-ins](http://msdn.microsoft.com/library/3038dd73-41ee-436f-8c78-ef8e6869bf7b%28Office.15%29.aspx) <br/> |Contains step-by-step instructions on how to create a basic SharePoint Add-in that is hosted separately from a SharePoint 2013 site. <br/> |
-| [Get started creating SharePoint-hosted SharePoint Add-ins](http://msdn.microsoft.com/library/1b992485-6efe-4ea4-a18c-221689b0b66f%28Office.15%29.aspx) <br/> |Contains step-by-step instructions on how to create a basic SharePoint Add-in that is hosted on a SharePoint 2013 site. <br/> |
+| [Set up a development environment for SharePoint Add-ins on Office 365](http://msdn.microsoft.com/library/b22ce52a-ae9e-4831-9b68-c9210af6dc54%28Office.15%29.aspx) <br/> |Explains how to sign up for and use an Office 365 Developer Site for developing SharePoint Add-ins.  <br/> |
+| [Set up an on-premises development environment for SharePoint Add-ins](http://msdn.microsoft.com/library/b0878c12-27c9-4eea-ae3b-7e79e5a8838d%28Office.15%29.aspx) <br/> |Explains how to set up a local, on-premises installation of SharePoint 2013 and configure it for developing SharePoint Add-ins.  <br/> |
+| [Get started creating provider-hosted SharePoint Add-ins](http://msdn.microsoft.com/library/3038dd73-41ee-436f-8c78-ef8e6869bf7b%28Office.15%29.aspx) <br/> |Contains step-by-step instructions on how to create a basic SharePoint Add-in that is hosted separately from a SharePoint 2013 site.  <br/> |
+| [Get started creating SharePoint-hosted SharePoint Add-ins](http://msdn.microsoft.com/library/1b992485-6efe-4ea4-a18c-221689b0b66f%28Office.15%29.aspx) <br/> |Contains step-by-step instructions on how to create a basic SharePoint Add-in that is hosted on a SharePoint 2013 site.  <br/> |
    
 
 ## Additional resources

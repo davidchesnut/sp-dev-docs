@@ -19,7 +19,7 @@ A claims provider in SharePoint has two roles: augmentation and picking.
     
 
 > [!NOTE]
-> For information about how to create a claims provider, see  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint-2013.md).
+> For information about how to create a claims provider, see  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint-2013.md). 
   
     
     

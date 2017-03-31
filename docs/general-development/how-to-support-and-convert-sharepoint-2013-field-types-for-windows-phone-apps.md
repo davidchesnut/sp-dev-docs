@@ -14,7 +14,7 @@ In projects based on the Windows Phone SharePoint List Application template, the
 
 
 > [!IMPORTANT]
-> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7.> For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md).
+> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7. > For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md). 
   
     
     
@@ -50,25 +50,25 @@ SharePoint field types cannot be bound directly to Silverlight controls in a Win
 **Table 1. Field types with provisions for default conversion**
 
 
-|**SharePoint field type**|**Silverlight data type**|
+|**SharePoint field type **|**Silverlight data type **|
 |:-----|:-----|
-|Attachments|File|
-|Boolean|Boolean|
-|Calculated (for display only)|String|
-|Choice|String|
-|Currency|Numeric|
-|DateTime|Date (represented according to locale on the phone)|
-|URL|Link|
-|Integer|Numeric|
-|Location|GeoCoordinate|
-|Lookup|String|
-|MultiChoice|String|
-|Note|String|
-|Number|Numeric|
-|OutcomeChoice|String|
-|Picture|Link|
-|Text|String|
-|User|String|
+|Attachments  <br/> |File  <br/> |
+|Boolean  <br/> |Boolean  <br/> |
+|Calculated (for display only)  <br/> |String  <br/> |
+|Choice  <br/> |String  <br/> |
+|Currency  <br/> |Numeric  <br/> |
+|DateTime  <br/> |Date (represented according to locale on the phone)  <br/> |
+|URL  <br/> |Link  <br/> |
+|Integer  <br/> |Numeric  <br/> |
+|Location  <br/> |GeoCoordinate  <br/> |
+|Lookup  <br/> |String  <br/> |
+|MultiChoice  <br/> |String  <br/> |
+|Note  <br/> |String  <br/> |
+|Number  <br/> |Numeric  <br/> |
+|OutcomeChoice  <br/> |String  <br/> |
+|Picture  <br/> |Link  <br/> |
+|Text  <br/> |String  <br/> |
+|User  <br/> |String  <br/> |
    
 Other SharePoint field types, such as **Guid** fields, can be used in Windows Phone apps, but developers need to provide custom conversion logic to support binding and displaying values for those field types for which no default conversion logic has been provided. (See [Custom conversion logic to provision unsupported field types](#BKMK_ConversionForUnsupportedFields) in this article.)
   

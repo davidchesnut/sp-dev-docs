@@ -47,9 +47,9 @@ The SharePoint 2013 client object model provides a way to access external data u
 **Table 1. Core concepts for using the client object model**
 
 
-|**Article**|**Description**|
+|**Article **|**Description **|
 |:-----|:-----|
-| [Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)|Learn how to write code to peform basic operations with the SharePoint 2013 .NET Framework client object model (CSOM).|
+| [Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx) <br/> |Learn how to write code to peform basic operations with the SharePoint 2013 .NET Framework client object model (CSOM).  <br/> |
    
 
 ## Create an SharePoint Add-in to access external data using the client object model

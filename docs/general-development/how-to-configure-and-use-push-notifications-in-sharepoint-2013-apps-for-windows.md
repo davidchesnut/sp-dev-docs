@@ -598,8 +598,8 @@ internal const string PushNotificationFeatureId = "41E1D4BF-B1A2-47F7-AB80-D5D6C
 
     This string variable stores the identifier for the Push Notification Feature on the server.
     
-   > [!TIP]
-   > You can obtain a list of unique identifiers for the Features on a SharePoint Server by executing the following Windows PowerShell cmdlet:>  `Get-SPFeature | Sort -Property DisplayName`> The Push Notification Feature appears as "PhonePNSubscriber" in the results returned by this cmdlet.
+    > [!TIP]
+      > You can obtain a list of unique identifiers for the Features on a SharePoint Server by executing the following Windows PowerShell cmdlet: >  `Get-SPFeature | Sort -Property DisplayName`> The Push Notification Feature appears as "PhonePNSubscriber" in the results returned by this cmdlet. 
 5. The event receiver class file is created with some default method declarations for handling Feature events. The method declarations in the file are initially commented out. Replace the **FeatureActivated** method in the file with the following code.
     
   ```cs
@@ -1146,8 +1146,8 @@ namespace SPListAppForNotifications
   
 10. Navigate to the folder in which the standard Windows Phone icon images were installed by the Windows Phone SDK 7.1.
     
-   > [!NOTE]
-   > The images with a light foreground and a dark background are in %PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark in a standard installation of the SDK.
+    > [!NOTE]
+      > The images with a light foreground and a dark background are in %PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark in a standard installation of the SDK. 
 11. Choose the image file named appbar.check.rest.png and click **Add**. The image is added is added to the project under the Images node.
     
   

@@ -35,10 +35,10 @@ To replace each format, the DLL must be located in the same directory as the cor
 **Table 1. File names for fixed-format export DLLs**
 
 
-|**Format**|**File Name**|
+|**Format **|**File Name **|
 |:-----|:-----|
-|PDF|Renderpdf.dll|
-|XPS|Renderxps.dll|
+|PDF  <br/> |Renderpdf.dll  <br/> |
+|XPS  <br/> |Renderxps.dll  <br/> |
    
 
 ## Initialization
@@ -104,9 +104,9 @@ This interface exposes the following methods.
 
 |||
 |:-----|:-----|
-|Method|Description|
-|**FGetHandle**|Gets a file handle.|
-|**FCloseHandle**|Releases a file handle.|
+|Method  <br/> |Description  <br/> |
+|**FGetHandle** <br/> |Gets a file handle.  <br/> |
+|**FCloseHandle** <br/> |Releases a file handle.  <br/> |
    
 This interface does not inherit from **IUnknown**. Accordingly, the fixed-format export DLL is allowed to keep a reference to it for its lifetime.
   
@@ -135,11 +135,11 @@ BOOL fWrite
 
 |||
 |:-----|:-----|
-|Parameter|Description|
-|**pwzFile**|Specifies the name of the file the fixed-format export DLL wants to open. This must not be a full file path—it must specify only a file name (for example, Output.pdf).|
-|**phFile**|Specifies the handle to the specified file, if the file is opened successfully. The fixed-format export DLL can then use this HANDLE in normal file operations until it closes it by calling the **FCloseHandle** method.|
-|**fRead**|Specifies whether the file is to be opened with read access.|
-|**fWrite**|Specifies whether the file is to be opened with write access. This function returns TRUE to indicate success and FALSE to indicate failure.|
+|Parameter  <br/> |Description  <br/> |
+|**pwzFile** <br/> |Specifies the name of the file the fixed-format export DLL wants to open. This must not be a full file path—it must specify only a file name (for example, Output.pdf).  <br/> |
+|**phFile** <br/> |Specifies the handle to the specified file, if the file is opened successfully. The fixed-format export DLL can then use this HANDLE in normal file operations until it closes it by calling the **FCloseHandle** method. <br/> |
+|**fRead** <br/> |Specifies whether the file is to be opened with read access.  <br/> |
+|**fWrite** <br/> |Specifies whether the file is to be opened with write access. This function returns TRUE to indicate success and FALSE to indicate failure.  <br/> |
    
 
 ### FCloseHandle

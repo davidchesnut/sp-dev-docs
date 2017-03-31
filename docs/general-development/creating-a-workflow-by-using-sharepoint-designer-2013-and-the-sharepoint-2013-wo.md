@@ -113,8 +113,8 @@ SharePoint Designer 2013 can be used for many important tasks. The navigational 
   
 4. On the **Create List Workflow** dialog box, enter a name and description for the workflow and then make sure that the **Platform Type** is set to **SharePoint 2013 Workflow**, as shown in the figure.
     
-   > [!NOTE]
-   > If you do not see SharePoint 2013 Workflow as an available platform type then Workflow Manager is not configured to work with the SharePoint Server 2013 farm.
+    > [!NOTE]
+      > If you do not see SharePoint 2013 Workflow as an available platform type then Workflow Manager is not configured to work with the SharePoint Server 2013 farm. 
 5. Click **OK** to create the workflow.
     
   

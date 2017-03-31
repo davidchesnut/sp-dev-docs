@@ -80,7 +80,7 @@ For more information about creating editors, see the following topics:
   
 
 > [!NOTE]
-> PerformancePoint Dashboard Designer can create and delete custom objects, so your editor does not need to provide logic for creating or deleting objects.
+> PerformancePoint Dashboard Designer can create and delete custom objects, so your editor does not need to provide logic for creating or deleting objects. 
   
     
     

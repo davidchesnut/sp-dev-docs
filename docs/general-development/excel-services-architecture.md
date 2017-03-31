@@ -3,7 +3,7 @@ title: Excel Services Architecture
 keywords: excel services design
 f1_keywords:
 - excel services design
-ms.prod: SHAREPOINT
+ms.prod: OFFICE365
 ms.assetid: e0349b4a-2d52-46c4-a167-801e9c24eaca
 ---
 
@@ -36,7 +36,7 @@ Excel Services is part of Microsoft SharePoint Server 2010. Excel Services is bu
   
 
 > [!NOTE]
-> Microsoft Excel Online, part of Office Online, also supports Excel workbooks in the browser. For more information about Excel Online, see  [documentation about Office Web Apps](https://technet.microsoft.com/en-us/library/ee855124.aspx).
+> Microsoft Excel Online, part of Office Online, also supports Excel workbooks in the browser. For more information about Excel Online, see  [documentation about Office Web Apps](https://technet.microsoft.com/en-us/library/ee855124.aspx). 
   
     
     

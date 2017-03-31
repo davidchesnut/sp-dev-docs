@@ -64,12 +64,12 @@ You can use the wide range of search-related APIs that SharePoint offers for sea
 **SharePoint APIs for Search add-ins**
 
 
-|**API name**|**Class library**|
+|**API name **|**Class library **|
 |:-----|:-----|
-|.NET client object model (CSOM)|Microsoft.SharePoint.Client.Search.dll|
-|Silverlight CSOM|Microsoft.SharePoint.Client.Search.Silverlight.dll|
-|ECMAScript (JavaScript, JScript) object model (JSOM)|SP.search.js|
-|Search REST API|http://server/_api/search/query|
+|.NET client object model (CSOM)  <br/> |Microsoft.SharePoint.Client.Search.dll  <br/> |
+|Silverlight CSOM  <br/> |Microsoft.SharePoint.Client.Search.Silverlight.dll  <br/> |
+|ECMAScript (JavaScript, JScript) object model (JSOM)  <br/> |SP.search.js  <br/> |
+|Search REST API  <br/> |http://server/_api/search/query  <br/> |
    
 
 ### Code examples

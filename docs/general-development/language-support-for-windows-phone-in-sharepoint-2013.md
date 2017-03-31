@@ -89,28 +89,28 @@ Although you have programmatic access to nine languages, you can run your ShareP
 **Table 1. Supported display/run-time languages in the SharePoint SDK for Windows Phone**
 
 
-|**Culture name**|**Culture code**|
+|**Culture name **|**Culture code **|
 |:-----|:-----|
-|Chinese Simplified (PRC) <br/> |zh-CN <br/> |
-|Chinese Traditional (Taiwan) <br/> |zh-TW <br/> |
-|Czech (Czech Republic) <br/> |cs <br/> |
-|Danish (Denmark) <br/> |da <br/> |
-|Dutch (Netherlands) <br/> |nl <br/> |
-|Finnish (Finland) <br/> |fi <br/> |
-|French (France) <br/> |fr <br/> |
-|German (Germany) <br/> |de <br/> |
-|Greek (Greece) <br/> |el <br/> |
-|Hungarian (Hungary) <br/> |hu <br/> |
-|Italian (Italy) <br/> |it <br/> |
-|Japanese (Japan) <br/> |ja <br/> |
-|Korean (Korea) <br/> |ko <br/> |
-|Norwegian (Norway) <br/> |nb <br/> |
-|Polish (Poland) <br/> |pl <br/> |
-|Portuguese (Brazil) <br/> |pt-BR <br/> |
-|Portuguese (Portugal) <br/> |pt-PT <br/> |
-|Russian (Russia) <br/> |ru <br/> |
-|Spanish (Spain) <br/> |es <br/> |
-|Swedish (Sweden) <br/> |sv <br/> |
+|Chinese Simplified (PRC)  <br/> |zh-CN  <br/> |
+|Chinese Traditional (Taiwan)  <br/> |zh-TW  <br/> |
+|Czech (Czech Republic)  <br/> |cs  <br/> |
+|Danish (Denmark)  <br/> |da  <br/> |
+|Dutch (Netherlands)  <br/> |nl  <br/> |
+|Finnish (Finland)  <br/> |fi  <br/> |
+|French (France)  <br/> |fr  <br/> |
+|German (Germany)  <br/> |de  <br/> |
+|Greek (Greece)  <br/> |el  <br/> |
+|Hungarian (Hungary)  <br/> |hu  <br/> |
+|Italian (Italy)  <br/> |it  <br/> |
+|Japanese (Japan)  <br/> |ja  <br/> |
+|Korean (Korea)  <br/> |ko  <br/> |
+|Norwegian (Norway)  <br/> |nb  <br/> |
+|Polish (Poland)  <br/> |pl  <br/> |
+|Portuguese (Brazil)  <br/> |pt-BR  <br/> |
+|Portuguese (Portugal)  <br/> |pt-PT  <br/> |
+|Russian (Russia)  <br/> |ru  <br/> |
+|Spanish (Spain)  <br/> |es  <br/> |
+|Swedish (Sweden)  <br/> |sv  <br/> |
    
 
 ## Additional resources

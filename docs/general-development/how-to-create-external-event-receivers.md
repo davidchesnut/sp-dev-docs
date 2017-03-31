@@ -253,7 +253,7 @@ GO
 
 
 > [!NOTE]
-> If you are using your own custom stored procedures as defined in your BDC model, you might also want to create the delete and update triggers. The additional triggers are not be covered as part of this scenario.
+> If you are using your own custom stored procedures as defined in your BDC model, you might also want to create the delete and update triggers. The additional triggers are not be covered as part of this scenario. 
   
     
     
@@ -487,7 +487,7 @@ public string Subscribe(string deliveryUrl, string eventType)
 
 
 > [!NOTE]
-> If SQL Server is set up for Windows authentication, it will try to authenticate the request with the App Pool identity. Make sure that the account configured in the App Pool has rights to read and write in the database.
+> If SQL Server is set up for Windows authentication, it will try to authenticate the request with the App Pool identity. Make sure that the account configured in the App Pool has rights to read and write in the database. 
   
     
     

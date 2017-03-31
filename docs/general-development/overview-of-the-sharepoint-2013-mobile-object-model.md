@@ -596,11 +596,11 @@ Specifies an authentication mode for an **Authenticator** object. This is an exi
     
 
 
-|**Default**||
+|**Default **||
 |:-----|:-----|
-|**FormsAuthentication**|Represents forms-based authentication mode|
-|**Anonymous**|Represents anonymous access mode|
-|**BrowserBasedAuthentication**|Represents Microsoft Office Forms Based Authentication (MSOFBA) mode|
+|**FormsAuthentication** <br/> |Represents forms-based authentication mode  <br/> |
+|**Anonymous** <br/> |Represents anonymous access mode  <br/> |
+|**BrowserBasedAuthentication** <br/> |Represents Microsoft Office Forms Based Authentication (MSOFBA) mode  <br/> |
    
 
 ### ODataAuthenticator class
@@ -776,12 +776,12 @@ No non-derived public properties are introduced with this class. There are stand
     
 
 
-|**Method**|**This override…**|
+|**Method **|**This override… **|
 |:-----|:-----|
-|CreateChildControls|Creates the child controls including a JavaScript map control for Display mode.|
-|Focus|Gives focus to the longitude textbox child control.|
-|OnPreRender|Calls the base method.|
-|Validate|Validates the latitude and longitude values that appear in the user interface (UI). This does not validate the **Longitude** and **Latitude** properties of the underlying **SPFieldGeolocatonValue** object, which will differ if the user has changed one or more of these values in the UI and not yet saved the changes.|
+|CreateChildControls  <br/> |Creates the child controls including a JavaScript map control for Display mode.  <br/> |
+|Focus  <br/> |Gives focus to the longitude textbox child control.  <br/> |
+|OnPreRender  <br/> |Calls the base method.  <br/> |
+|Validate  <br/> |Validates the latitude and longitude values that appear in the user interface (UI). This does not validate the **Longitude** and **Latitude** properties of the underlying **SPFieldGeolocatonValue** object, which will differ if the user has changed one or more of these values in the UI and not yet saved the changes. <br/> |
    
 
 #### Properties
@@ -792,12 +792,12 @@ No non-derived public properties are introduced with this class. There are stand
     
 
 
-|**Property**|**This override...**|
+|**Property **|**This override... **|
 |:-----|:-----|
-|CssClass|Behaves just like the parent implementation.|
-|DefaultTemplateName|Returns "GeolocationField"|
-|DisplayTemplateName|Returns "GeolocationDisplayField"|
-|Value|Gets or sets the value that is rendered by using a **SPFieldGeolocationValue** object.|
+|CssClass  <br/> |Behaves just like the parent implementation.  <br/> |
+|DefaultTemplateName  <br/> |Returns "GeolocationField"  <br/> |
+|DisplayTemplateName  <br/> |Returns "GeolocationDisplayField"  <br/> |
+|Value  <br/> |Gets or sets the value that is rendered by using a **SPFieldGeolocationValue** object. <br/> |
    
 
 ### SPFieldGeolocation class
@@ -928,11 +928,11 @@ The following methods are standard overrides of inherited methods that were in S
     
 
 
-|**Method**|**This override...**|
+|**Method **|**This override... **|
 |:-----|:-----|
-|GetFieldValue(String s)|Returns the specified value as an Object that is castable to SPFieldGeolocationValue.|
-|GetFieldValueAsText(Object o)|Wraps GetValidatedString.|
-|GetValidatedString(Object o)|Verifies that the specified value is structured in compliance with Open Geospatial Consortium (OGC) standards and returns it as a string.|
+|GetFieldValue(String s)  <br/> |Returns the specified value as an Object that is castable to SPFieldGeolocationValue.  <br/> |
+|GetFieldValueAsText(Object o)  <br/> |Wraps GetValidatedString.  <br/> |
+|GetValidatedString(Object o)  <br/> |Verifies that the specified value is structured in compliance with Open Geospatial Consortium (OGC) standards and returns it as a string.  <br/> |
    
 
 #### Properties
@@ -947,7 +947,7 @@ Gets or sets the name of the JavaScript file that renders the fields of the **SP
     
 
 > [!NOTE]
-> The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list.
+> The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list. 
   
     
     
@@ -988,13 +988,13 @@ The other properties are standard overrides of inherited properties that were in
     
 
 
-|**Property**|**The override...**|
+|**Property **|**The override... **|
 |:-----|:-----|
-|FieldValueType|Returns **typeof(SPFieldGeolocationValue)**.|
-|FieldRenderingControl|Returns a **GeolocationFieldControl** object.|
-|Filterable|Returns **false**.|
-|Sortable|Returns **false**.|
-|[Obsolete]FieldRenderingMobileControl|Returns a **SPMobileGeolocationField** object.|
+|FieldValueType  <br/> |Returns **typeof(SPFieldGeolocationValue)**.  <br/> |
+|FieldRenderingControl  <br/> |Returns a **GeolocationFieldControl** object. <br/> |
+|Filterable  <br/> |Returns **false**.  <br/> |
+|Sortable  <br/> |Returns **false**.  <br/> |
+|[Obsolete]  <br/> FieldRenderingMobileControl  <br/> |Returns a **SPMobileGeolocationField** object. <br/> |
    
 
 ### SPFieldGeolocationValue class
@@ -1660,11 +1660,11 @@ Specifies a type of device that can receive notifications.
     
 
 
-|**Notification**|**Device**|
+|**Notification **|**Device **|
 |:-----|:-----|
 |||
-|**WP7**|Windows Phone 7.5|
-|**Custom**|Any device other than Windows Phone 7.5|
+|**WP7** <br/> |Windows Phone 7.5  <br/> |
+|**Custom** <br/> |Any device other than Windows Phone 7.5  <br/> |
    
 
 ### SPPhoneNotificationType enum
@@ -1677,10 +1677,10 @@ Specifies the type of notification.
 
 |||
 |:-----|:-----|
-|**None**||
-|**Tile**||
-|**Toast**||
-|**Raw**||
+|**None** <br/> ||
+|**Tile** <br/> ||
+|**Toast** <br/> ||
+|**Raw** <br/> ||
    
 
 ### SPWeb class
@@ -1751,7 +1751,7 @@ public SPPhoneNotificationSubscriberCollection GetPhoneNotificationSubscribers(s
 
 
 > [!NOTE]
-> Client object model name is **GetPhoneNotificationSubscribersByArgs**.
+> Client object model name is **GetPhoneNotificationSubscribersByArgs**. 
   
     
     
@@ -1766,7 +1766,7 @@ public SPPhoneNotificationSubscriberCollection GetPhoneNotificationSubscribers(s
 
 
 > [!NOTE]
-> Client object model name is **GetPhoneNotificationSubscribersByUser**.
+> Client object model name is **GetPhoneNotificationSubscribersByUser**. 
   
     
     

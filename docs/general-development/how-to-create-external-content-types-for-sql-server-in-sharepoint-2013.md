@@ -53,8 +53,8 @@ Working with external data requires several prerequisite tasks to enable secure 
   
 3. In the **Navigation** pane, under **Site Objects**, select **External Content Types**.
     
-   > [!NOTE]
-   > SharePoint Designer 2013 groups external content types by the namespace in the initial window of the External Content Type Designer. 
+    > [!NOTE]
+      > SharePoint Designer 2013 groups external content types by the namespace in the initial window of the External Content Type Designer. 
 4. To open the External Content Type Designer, on the ribbon, click **External Content Type**.
     
   
@@ -81,11 +81,11 @@ Working with external data requires several prerequisite tasks to enable secure 
   
 2. In the **Offline Sync for External List** check box, make sure **Enabled** is selected, which is the default.
     
-   > [!NOTE]
-   > If you disable this option, then the **SharePoint Connect to Outlook** command is not available for an external list.
+    > [!NOTE]
+      > If you disable this option, then the **SharePoint Connect to Outlook** command is not available for an external list.
 
 > [!NOTE]
-> The Farm and Site feature, **Offline Synchronization for External Lists**, must also be active. This feature is active by default at the Farm level, but not active by default at the site level.
+> The Farm and Site feature, **Offline Synchronization for External Lists**, must also be active. This feature is active by default at the Farm level, but not active by default at the site level. 
   
     
     
@@ -145,8 +145,8 @@ SharePoint Designer 2013 validates and tests the connection information. If you 
     
   - **Create All Operations** Defines a create item, delete item, read item, read list, and update item operation.
     
-   > [!NOTE]
-   > **Create All Operations** is available only for tables and views. Routines require specific operations.
+    > [!NOTE]
+      > **Create All Operations** is available only for tables and views. Routines require specific operations.
   - **New Read Item Operation** Defines a read item operation.
     
   
@@ -189,8 +189,8 @@ SharePoint Designer 2013 validates and tests the connection information. If you 
   
 2. In the **Parameters Configuration** dialog box, by default all columns (known as **Data Source Elements**) are selected. To remove unnecessary columns, clear the corresponding check boxes.
     
-   > [!NOTE]
-   > Unlike a native SharePoint list, you cannot change the column name of an external list. Consider using an SQL column alias to provide a more meaningful name or a shorter name.
+    > [!NOTE]
+      > Unlike a native SharePoint list, you cannot change the column name of an external list. Consider using an SQL column alias to provide a more meaningful name or a shorter name. 
 3. To select an identifier field, click and highlight a field (typically a unique-valued field), and then under **Properties**, click **Map to Identifier**.
     
   
@@ -231,7 +231,7 @@ If your external content type maps to an Outlook item type, you must map one or 
   
 
 > [!NOTE]
-> You do not need to map all the corresponding fields. However, the fields shown in the following table must be mapped.
+> You do not need to map all the corresponding fields. However, the fields shown in the following table must be mapped. 
   
     
     
@@ -240,12 +240,12 @@ If your external content type maps to an Outlook item type, you must map one or 
 **Table: Outlook item type mapped to Outlook item field**
 
 
-|**Outlook item type**|**Outlook item field**|
+|**Outlook item type **|**Outlook item field **|
 |:-----|:-----|
-|Contact|LastName|
-|Task|Subject|
-|Appointment|Start, End, and Subject|
-|Post|Subject|
+|Contact  <br/> |LastName  <br/> |
+|Task  <br/> |Subject  <br/> |
+|Appointment  <br/> |Start, End, and Subject  <br/> |
+|Post  <br/> |Subject  <br/> |
    
 Unmapped fields, depending on the number, are displayed as extended properties as follows:
   
@@ -419,8 +419,8 @@ You can create several different types of filters. For each filter that you crea
     
   
 
-   > [!NOTE]
-   > The SQL Server database administrator might want to create specific tables, views, indexes, and optimized queries to limit the results to just what is needed and to help improve performance.
+    > [!NOTE]
+      > The SQL Server database administrator might want to create specific tables, views, indexes, and optimized queries to limit the results to just what is needed and to help improve performance. 
 
     
   
@@ -484,8 +484,8 @@ You can create several different types of filters. For each filter that you crea
   
 2. In the **Fields** section, under **Field Name**, select a field.
     
-   > [!IMPORTANT]
-   > In general, it's a good idea to make the Title a field that has a unique value. The Title field is used to display list or InfoPath forms. Once you set the Title field, you cannot change it.
+    > [!IMPORTANT]
+      > In general, it's a good idea to make the Title a field that has a unique value. The Title field is used to display list or InfoPath forms. Once you set the Title field, you cannot change it. 
 3. On the ribbon, click **Set as Title**.
     
   

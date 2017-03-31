@@ -104,7 +104,7 @@ PowerPoint Automation Services uses the asynchronous pattern method for sending 
     
 
 > [!NOTE]
-> For more information about how to work with the asynchronous design pattern, see the  [Asynchronous Programming Overview](http://msdn.microsoft.com/en-us/library/ms228963.aspx).
+> For more information about how to work with the asynchronous design pattern, see the  [Asynchronous Programming Overview](http://msdn.microsoft.com/en-us/library/ms228963.aspx). 
   
     
     
@@ -124,10 +124,10 @@ The **Request** class is the most fundamental class within the **Microsoft.Offic
 **Table 1. Request base class members**
 
 
-|**Member name**|**Description**|
+|**Member name **|**Description **|
 |:-----|:-----|
-|**BeginConvert(Microsoft.SharePoint.SPServiceContext, System.AsyncCallback, System.Object)** method|Begins the conversion operation. The first parameter,  _serviceContext_, specifies the context of the SharePoint site where the file to be converted is located. Use the  _callback_ parameter to specify a delegate that references a method to execute once the operation has completed. Use the _state_ parameter if you need to pass any additional information from the calling code to the callback method.Returns an  [IAsyncResult](https://msdn.microsoft.com/library/System.IAsyncResult.aspx) object.|
-|**EndConvert(IAsyncResult)** method|Ends the conversion operation. The  _result_ parameter expects the resulting [IAsyncResult](https://msdn.microsoft.com/library/System.IAsyncResult.aspx) object that the corresponding **BeginConvert** conversion request returns. If that request has not been completed when **EndConvert** is called, the calling thread is blocked until the conversion operation is complete.Does not return a value.|
+|**BeginConvert(Microsoft.SharePoint.SPServiceContext, System.AsyncCallback, System.Object)** method <br/> |Begins the conversion operation. The first parameter,  _serviceContext_, specifies the context of the SharePoint site where the file to be converted is located. Use the  _callback_ parameter to specify a delegate that references a method to execute once the operation has completed. Use the _state_ parameter if you need to pass any additional information from the calling code to the callback method. <br/> Returns an  [IAsyncResult](https://msdn.microsoft.com/library/System.IAsyncResult.aspx) object. <br/> |
+|**EndConvert(IAsyncResult)** method <br/> |Ends the conversion operation. The  _result_ parameter expects the resulting [IAsyncResult](https://msdn.microsoft.com/library/System.IAsyncResult.aspx) object that the corresponding **BeginConvert** conversion request returns. If that request has not been completed when **EndConvert** is called, the calling thread is blocked until the conversion operation is complete. <br/> Does not return a value.  <br/> |
    
 
 ### PresentationRequest class
@@ -215,7 +215,7 @@ The easiest way to show how to write code that uses PowerPoint Automation Servic
     
 
 > [!NOTE]
-> Because PowerPoint Automation Services is a service of SharePoint Server 2013, you can use it only in an application that runs directly on a SharePoint Server. You must build the application as a farm solution. You cannot use PowerPoint Automation Services from a sandboxed solution.
+> Because PowerPoint Automation Services is a service of SharePoint Server 2013, you can use it only in an application that runs directly on a SharePoint Server. You must build the application as a farm solution. You cannot use PowerPoint Automation Services from a sandboxed solution. 
   
     
     
@@ -238,8 +238,8 @@ The easiest way to show how to write code that uses PowerPoint Automation Servic
   
 5. Be sure that the project in Visual Studio targets .NET Framework 4.
     
-   > [!NOTE]
-   > Previous versions of SharePoint Server required that you target .NET Framework 3.5. The Microsoft.SharePoint libraries now reference assemblies in .NET Framework 4. Also make sure that your project targets the full .NET Framework 4 and not the .NET Framework 4 Client Profile.
+    > [!NOTE]
+      > Previous versions of SharePoint Server required that you target .NET Framework 3.5. The Microsoft.SharePoint libraries now reference assemblies in .NET Framework 4. Also make sure that your project targets the full .NET Framework 4 and not the .NET Framework 4 Client Profile. 
 6. In the **Name** box, type the name that you want to use for your project, such as PAS_Sample.
     
   

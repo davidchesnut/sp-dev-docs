@@ -88,12 +88,12 @@ SharePoint administrators and users depend on the accessibility features that we
 **Table 1. Accessibility features in typical web browsers**
 
 
-|**Browser**|**For more information**|
+|**Browser **|**For more information **|
 |:-----|:-----|
-|Internet Explorer <br/> | [Accessibility in Internet Explorer 9](http://www.microsoft.com/enable/products/ie9/default.aspx) <br/> |
-|Firefox <br/> | [Accessibility features in Firefox](http://go.microsoft.com/fwlink/p/?LinkId=275209) <br/> |
-|Safari <br/> | [Safari Accessibility](http://go.microsoft.com/fwlink/p/?LinkId=275210) <br/> |
-|Chrome <br/> | [Chrome Accessibility Technical Documentation](http://go.microsoft.com/fwlink/p/?LinkId=275211) <br/> |
+|Internet Explorer  <br/> | [Accessibility in Internet Explorer 9](http://www.microsoft.com/enable/products/ie9/default.aspx) <br/> |
+|Firefox  <br/> | [Accessibility features in Firefox](http://go.microsoft.com/fwlink/p/?LinkId=275209) <br/> |
+|Safari  <br/> | [Safari Accessibility](http://go.microsoft.com/fwlink/p/?LinkId=275210) <br/> |
+|Chrome  <br/> | [Chrome Accessibility Technical Documentation](http://go.microsoft.com/fwlink/p/?LinkId=275211) <br/> |
    
 
 ## Additional resources

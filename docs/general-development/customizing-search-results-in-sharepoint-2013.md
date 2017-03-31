@@ -62,16 +62,16 @@ The following table lists the fields of the  _Spec_ parameter.
 **Table 1. Spec parameter fields**
 
 
-|**Element in parameter**|**Description**|
+|**Element in parameter **|**Description **|
 |:-----|:-----|
-| _Spec_| `Subspec(<space>Subspec)*`|
-| _Subspec_| `Prop(','Prop)*[':'Dups]`|
-| _Prop_|A valid managed property or an alias of a managed property.  _Prop_ is case-insensitive. The managed property must be queryable and either sortable or refineable.|
-| _Dups_|An integer specifying the number of items to retain. The default value is 1.|
-| _<space>_|Properties are combined by using the **OR** operator.|
-| _,_|Properties are combined by using the **AND** operator.|
-| _*_|Indicates more items.|
-| _() or []_|Indicates optional items.|
+| _Spec_ <br/> | `Subspec(<space>Subspec)*` <br/> |
+| _Subspec_ <br/> | `Prop(','Prop)*[':'Dups]` <br/> |
+| _Prop_ <br/> |A valid managed property or an alias of a managed property.  _Prop_ is case-insensitive. The managed property must be queryable and either sortable or refineable. <br/> |
+| _Dups_ <br/> |An integer specifying the number of items to retain. The default value is 1.  <br/> |
+| _<space>_ <br/> |Properties are combined by using the **OR** operator. <br/> |
+| _,_ <br/> |Properties are combined by using the **AND** operator. <br/> |
+| _*_ <br/> |Indicates more items.  <br/> |
+| _() or []_ <br/> |Indicates optional items.  <br/> |
    
 If the fields in  _Spec_ are separated by commas, the fields are combined by using the **AND** operator. If all of the specified fields are matched, the items are collapsed.
   
@@ -90,17 +90,17 @@ The following table shows a product catalog from the Contoso company. The next s
     
 
 
-|**Category**|**Product**|**Variant**|**Title**|
+|**Category **|**Product **|**Variant **|**Title **|
 |:-----|:-----|:-----|:-----|
-|Laptops|WWI|19W X0196 Black|Computer 1|
-|Laptops|Adventure Works|12 M1201 Red|Computer 2|
-|Laptops|Adventure Works|15.4W M1548 White|Computer 3|
-|Laptops|Proseware|19 X910 Black|Computer 4|
-|Laptops|Proseware|Laptop19 X910 Black|Computer 5|
-|Desktops|Adventure Works|2.33 XD233 Silver|Computer 6|
-|Desktops|WWI|2.33 X2330 Black|Computer 7|
-|Desktops|Adventure Works|1.60 ED160 White|Computer 8|
-|Desktops|WWI|3.0 M0300 Silver|Computer 9|
+|Laptops  <br/> |WWI  <br/> |19W X0196 Black  <br/> |Computer 1  <br/> |
+|Laptops  <br/> |Adventure Works  <br/> |12 M1201 Red  <br/> |Computer 2  <br/> |
+|Laptops  <br/> |Adventure Works  <br/> |15.4W M1548 White  <br/> |Computer 3  <br/> |
+|Laptops  <br/> |Proseware  <br/> |19 X910 Black  <br/> |Computer 4  <br/> |
+|Laptops  <br/> |Proseware  <br/> |Laptop19 X910 Black  <br/> |Computer 5  <br/> |
+|Desktops  <br/> |Adventure Works  <br/> |2.33 XD233 Silver  <br/> |Computer 6  <br/> |
+|Desktops  <br/> |WWI  <br/> |2.33 X2330 Black  <br/> |Computer 7  <br/> |
+|Desktops  <br/> |Adventure Works  <br/> |1.60 ED160 White  <br/> |Computer 8  <br/> |
+|Desktops  <br/> |WWI  <br/> |3.0 M0300 Silver  <br/> |Computer 9  <br/> |
    
 
   
@@ -127,12 +127,12 @@ This should return the following results.
     
 
 
-|**Category**|**Product**|**Variant**|**Title**|
+|**Category **|**Product **|**Variant **|**Title **|
 |:-----|:-----|:-----|:-----|
-|Laptops|WWI|19W X0196 Black|Computer 1|
-|Laptops|Adventure|12 M1201 Red|Computer 2|
-|Desktops|Adventure Works|2.33 XD233 Silver|Computer 6|
-|Desktops|WWI|2.33 X2330 Black|Computer 7|
+|Laptops  <br/> |WWI  <br/> |19W X0196 Black  <br/> |Computer 1  <br/> |
+|Laptops  <br/> |Adventure  <br/> |12 M1201 Red  <br/> |Computer 2  <br/> |
+|Desktops  <br/> |Adventure Works  <br/> |2.33 XD233 Silver  <br/> |Computer 6  <br/> |
+|Desktops  <br/> |WWI  <br/> |2.33 X2330 Black  <br/> |Computer 7  <br/> |
    
 Use the following code to collapse the search results by using the **CollapseSpecification** property.
   
@@ -185,13 +185,13 @@ This should return the following results.
     
 
 
-|**Category**|**Product**|**Variant**|**Title**|
+|**Category **|**Product **|**Variant **|**Title **|
 |:-----|:-----|:-----|:-----|
-|Laptops|WWI|19W X0196 Black|Computer 1|
-|Laptops|Adventure Works|12 M1201 Red|Computer 2|
-|Laptops|Proseware|19 X910 Black|Computer 4|
-|Desktops|Adventure Works|2.33 XD233 Silver|Computer 6|
-|Desktops|WWI|2.33 X2330 Black|Computer 7|
+|Laptops  <br/> |WWI  <br/> |19W X0196 Black  <br/> |Computer 1  <br/> |
+|Laptops  <br/> |Adventure Works  <br/> |12 M1201 Red  <br/> |Computer 2  <br/> |
+|Laptops  <br/> |Proseware  <br/> |19 X910 Black  <br/> |Computer 4  <br/> |
+|Desktops  <br/> |Adventure Works  <br/> |2.33 XD233 Silver  <br/> |Computer 6  <br/> |
+|Desktops  <br/> |WWI  <br/> |2.33 X2330 Black  <br/> |Computer 7  <br/> |
    
 
 ## Trim duplicate search results using the TrimDuplicates property

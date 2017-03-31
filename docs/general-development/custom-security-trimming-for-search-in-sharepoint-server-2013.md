@@ -230,13 +230,13 @@ The following table describes the parameters that the cmdlet uses.
 **Table 1. Parameters used by the SPEnterpriseSearchSecurityTrimmer cmdlet**
 
 
-|**Parameter**|**Description**|
+|**Parameter **|**Description **|
 |:-----|:-----|
-| _SearchApplication_|Required. The name of the Search service application, for example "Search Service Application".|
-| _typeName_|Required. The strong name of the custom security trimmer assembly.|
-| _RulePath_|Required for post-trimmers; optional for pre-trimmers. The crawl rule for the security trimmer.> [!NOTE]> We recommend using one crawl rule per content source.           |
-| _id_|Required. The security trimmer identifier (ID). This value is unique; if a security trimmer is registered with an ID that is already registered for another security trimmer, the registration for the first trimmer is overwritten with the registration for the second trimmer.|
-| _properties_|Optional. The name-value pairs specifying the configuration properties. Must be in the following format:  `Name1~Value1~Name2~Value~…`|
+| _SearchApplication_ <br/> |Required. The name of the Search service application, for example "Search Service Application".  <br/> |
+| _typeName_ <br/> |Required. The strong name of the custom security trimmer assembly.  <br/> |
+| _RulePath_ <br/> |Required for post-trimmers; optional for pre-trimmers. The crawl rule for the security trimmer.  <br/> > [!NOTE]> We recommend using one crawl rule per content source.           |
+| _id_ <br/> |Required. The security trimmer identifier (ID). This value is unique; if a security trimmer is registered with an ID that is already registered for another security trimmer, the registration for the first trimmer is overwritten with the registration for the second trimmer.  <br/> |
+| _properties_ <br/> |Optional. The name-value pairs specifying the configuration properties. Must be in the following format:  `Name1~Value1~Name2~Value~…` <br/> |
    
 For an example of a basic command for registering a custom security trimmer and a sample that specifies the configuration properties, see  [How to: Use a custom security trimmer for SharePoint Server search results](how-to-use-a-custom-security-trimmer-for-sharepoint-server-search-results.md).
   

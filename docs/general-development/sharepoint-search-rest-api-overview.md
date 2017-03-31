@@ -71,13 +71,13 @@ The HTTP **POST** version of the Search REST service supports all parameters sup
 **Table 1. Query parameters with different data types for POST requests**
 
 
-|**Parameter**|**Data type**|
+|**Parameter **|**Data type **|
 |:-----|:-----|
-| [SelectProperties](#bk_SelectProperties)|string[]|
-| [RefinementFilters](#bk_RefinementFilters)|string[]|
-| [SortList](#bk_SortList)| [Sort](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Search.Query.Sort.aspx)|
-| [HithighlightedProperties](#bk_HithighlightedProperties)|​string[]|
-| [Properties](#bk_Properties)| [Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties.aspx)|
+| [SelectProperties](#bk_SelectProperties) <br/> |string[]  <br/> |
+| [RefinementFilters](#bk_RefinementFilters) <br/> |string[]  <br/> |
+| [SortList](#bk_SortList) <br/> | [Sort](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Search.Query.Sort.aspx) <br/> |
+| [HithighlightedProperties](#bk_HithighlightedProperties) <br/> |​string[]  <br/> |
+| [Properties](#bk_Properties) <br/> | [Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties.aspx) <br/> |
    
 Use **POST** requests in the following scenarios:
   

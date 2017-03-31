@@ -163,7 +163,7 @@ $newrm = New-SPEnterpriseSearchRankingModel -SearchApplication $ssa -Owner $owne
 
 
 > [!IMPORTANT]
-> We provide the rank detail and the accompanying ExplainRank page as a convenience and only to assist you in tuning and debugging your own custom ranking models. The contents of the rank detail and the accompanying ExplainRank page are not supported, and are subject to change without notice in future software patches and updates.
+> We provide the rank detail and the accompanying ExplainRank page as a convenience and only to assist you in tuning and debugging your own custom ranking models. The contents of the rank detail and the accompanying ExplainRank page are not supported, and are subject to change without notice in future software patches and updates. 
   
     
     
@@ -279,7 +279,7 @@ The BM25 rank feature ranks items based on the appearance of query terms in the 
     
 
 > [!NOTE]
-> The BM25 rank feature used in this context is the fielded version, BM25F.
+> The BM25 rank feature used in this context is the fielded version, BM25F. 
   
     
     
@@ -589,14 +589,14 @@ You can evaluate the proximity rank feature by using several different options, 
 **Table 2. Attributes that control evaluation of proximity rank features**
 
 
-|**Attributes**|**Description**|
+|**Attributes **|**Description **|
 |:-----|:-----|
-| `isExact=0`|In this mode, the proximity algorithm attempts to find the minimal span (distance) of the subset of query terms in a document.The proximity algorithm considers fragments that contain query terms in the same orders as they appear in the user query. If no fragment exists for all of the query terms, then the proximity algorithm considers fragments that contain all but one of the query terms. This process is iterated with the number of query terms reduced each time, until the length of the fragment exceeds  `maxMinSpan`. `maxMinSpan` is an attribute within the proximity rank feature that specifies a threshold defining the maximum length of a fragment.An ideal fragment is one that contains all query terms but is less than  `maxMinSpan`.|
-| `isExact=1`|In this mode, the proximity algorithm attempts to find a consecutive snippet of document that contains all of the query terms (or query phrase).|
-| `isDiscounted`|This attribute is applicable to both  `isExact=1` and `isExact=0`. When  `isDiscounted` is enabled, the proximity value is multiplied by this fraction: (number of occurrences of the best fragment or exact hits) divided by (number of occurrences of the rarest query term in this context).|
-| `proximity="complete"`|In this mode, the proximity rank feature only boosts documents where the whole user query text occurs within a specific managed property.|
-| `proximity="perfect"`|This mode is similar to  `complete` mode, but is applied to short fields, such as **title**. The proximity rank feature only boosts documents where the whole user query text matches an exact **title** within a specific managed property. If the **title** contains additional terms outside of the user query, the item isn't considered by the proximity algorithm.|
-| `default`|This attribute applies only to single-term queries. For items that contain the query term, the  `default` value is used as the rank score output by the proximity rank feature.The  `perfect` proximity is an exception to this rule. For `perfect` proximity, the default value is never used. Instead, single-term queries are processed in the same way as other queries.|
+| `isExact=0` <br/> |In this mode, the proximity algorithm attempts to find the minimal span (distance) of the subset of query terms in a document.  <br/> The proximity algorithm considers fragments that contain query terms in the same orders as they appear in the user query. If no fragment exists for all of the query terms, then the proximity algorithm considers fragments that contain all but one of the query terms. This process is iterated with the number of query terms reduced each time, until the length of the fragment exceeds  `maxMinSpan`.  <br/>  `maxMinSpan` is an attribute within the proximity rank feature that specifies a threshold defining the maximum length of a fragment. <br/> An ideal fragment is one that contains all query terms but is less than  `maxMinSpan`.  <br/> |
+| `isExact=1` <br/> |In this mode, the proximity algorithm attempts to find a consecutive snippet of document that contains all of the query terms (or query phrase).  <br/> |
+| `isDiscounted` <br/> |This attribute is applicable to both  `isExact=1` and `isExact=0`. When  `isDiscounted` is enabled, the proximity value is multiplied by this fraction: (number of occurrences of the best fragment or exact hits) divided by (number of occurrences of the rarest query term in this context). <br/> |
+| `proximity="complete"` <br/> |In this mode, the proximity rank feature only boosts documents where the whole user query text occurs within a specific managed property.  <br/> |
+| `proximity="perfect"` <br/> |This mode is similar to  `complete` mode, but is applied to short fields, such as **title**. The proximity rank feature only boosts documents where the whole user query text matches an exact **title** within a specific managed property. If the **title** contains additional terms outside of the user query, the item isn't considered by the proximity algorithm. <br/> |
+| `default` <br/> |This attribute applies only to single-term queries. For items that contain the query term, the  `default` value is used as the rank score output by the proximity rank feature. <br/> The  `perfect` proximity is an exception to this rule. For `perfect` proximity, the default value is never used. Instead, single-term queries are processed in the same way as other queries. <br/> |
    
  **Example proximity rank feature definition**
   
@@ -656,7 +656,7 @@ The dynamic rank feature ranks an item depending on whether the query property m
     
 
 > [!NOTE]
-> The dynamic rank feature is not customizable; it's for internal use only. However, if you install the SharePoint Server 2013 cumulative update of August 2013, the AnchortextComplete rank feature is a customizable dynamic rank feature that is part of the default ranking model.
+> The dynamic rank feature is not customizable; it's for internal use only. However, if you install the SharePoint Server 2013 cumulative update of August 2013, the AnchortextComplete rank feature is a customizable dynamic rank feature that is part of the default ranking model. 
   
     
     
@@ -945,13 +945,13 @@ Query properties is a ranking mechanism that populates additional information us
 **Table 3. Query properties for ranking**
 
 
-|**Query property**|**Description**|
+|**Query property **|**Description **|
 |:-----|:-----|
-|AnchortextCompleteQueryProperty|Boosts complete anchor text.|
-|DateTimeUtcNow|Current date and time. This query property can be used by the freshness rank feature.|
-|DetectedLanguageRanking|ID of the query language. This query property is used by the **DetectedLanguageRanking** rank feature.|
-|PersonalizationData|Ranks personalized data.|
-|RecommendedforQueryProperty|Ranks recommendations.|
+|AnchortextCompleteQueryProperty  <br/> |Boosts complete anchor text.  <br/> |
+|DateTimeUtcNow  <br/> |Current date and time. This query property can be used by the freshness rank feature.  <br/> |
+|DetectedLanguageRanking  <br/> |ID of the query language. This query property is used by the **DetectedLanguageRanking** rank feature. <br/> |
+|PersonalizationData  <br/> |Ranks personalized data.  <br/> |
+|RecommendedforQueryProperty  <br/> |Ranks recommendations.  <br/> |
    
 
 ## Example 1: Basic ranking model with one linear stage containing a single static rank feature
@@ -1010,8 +1010,8 @@ This ranking model with one linear stage contains these four rank features:
   
 -  `InternalFileType` This rank feature boosts documents of type HTML, DOC, XLS, or PPT. The names of the buckets in the definition of the rank model are provided for readability only.
     
-   > [!NOTE]
-   > The  `InternalFileType` managed property, available by default, uses the value zero ( `0`) to encode HTML documents, value  `1` for DOC, value `2` for XLS and so on. See the definition of the Default SharePoint rank model for a list of all file types used for the **FileType** managed property.
+    > [!NOTE]
+      > The  `InternalFileType` managed property, available by default, uses the value zero ( `0`) to encode HTML documents, value  `1` for DOC, value `2` for XLS and so on. See the definition of the Default SharePoint rank model for a list of all file types used for the **FileType** managed property.
 
 ```XML
 

@@ -97,11 +97,11 @@ You can approach an end-to-end packaging workflow several ways, with much of the
 **Table 1. Sample design package workflow**
 
 
-|**Step**|**Action**|**Description**|
+|**Step **|**Action **|**Description **|
 |:-----|:-----|:-----|
-|1|Customer contracts vendor agency to create visual design.| The vendor designer creates site, based on company requirements.> [!NOTE]>  The vendor designer must have the **Designers** permission level to use Design Manager and create and export packages. More specifically, the **Design** permission that allows viewing, adding, updating, deleting, approving, and customizing visual designs.          |
-|2|Vendor designer exports visual design into a design package.| The vendor designer exports the SharePoint solution package (.wsp file) after completing the other required branding and publishing steps. The design package is delivered to the customer via a secure channel.|
-|3|Customer imports visual design into their specified SharePoint 2013 site collection.| The customer receives the design package via a secure channel. Through the Welcome page in Design Manager or by choosing **Import design package** in **Site Settings**, the customer imports the .wsp file and applies the design package to the specified site collection. > [!NOTE]>  The customer must have the **Designers** permission level to use Design Manager and import design packages.          |
+|1  <br/> |Customer contracts vendor agency to create visual design.  <br/> | The vendor designer creates site, based on company requirements. <br/> > [!NOTE]>  The vendor designer must have the **Designers** permission level to use Design Manager and create and export packages. More specifically, the **Design** permission that allows viewing, adding, updating, deleting, approving, and customizing visual designs.          |
+|2  <br/> |Vendor designer exports visual design into a design package.  <br/> | The vendor designer exports the SharePoint solution package (.wsp file) after completing the other required branding and publishing steps. <br/>  The design package is delivered to the customer via a secure channel. <br/> |
+|3  <br/> |Customer imports visual design into their specified SharePoint 2013 site collection.  <br/> | The customer receives the design package via a secure channel. <br/>  Through the Welcome page in Design Manager or by choosing **Import design package** in **Site Settings**, the customer imports the .wsp file and applies the design package to the specified site collection.  <br/> > [!NOTE]>  The customer must have the **Designers** permission level to use Design Manager and import design packages.          |
    
 
 ## Understanding design package contents
@@ -115,11 +115,11 @@ Several files are included in the design package .wsp file when it is created th
 **Table 2. Summary of design package contents and file exportation locations**
 
 
-|**Export Location**|**Exported Assets**|
+|**Export Location **|**Exported Assets **|
 |:-----|:-----|
-|Document libraries| Master Pages Gallery Themes Gallery Style Library Site Assets Library|
-|Content types, fields| Content types that inherit from the Page content type|
-|Lists| Design Gallery Composed looks Device channels|
+|Document libraries  <br/> | Master Pages Gallery <br/>  Themes Gallery <br/>  Style Library <br/>  Site Assets Library <br/> |
+|Content types, fields  <br/> | Content types that inherit from the Page content type <br/> |
+|Lists  <br/> | Design Gallery <br/>  Composed looks <br/>  Device channels <br/> |
    
 
 > [!NOTE]

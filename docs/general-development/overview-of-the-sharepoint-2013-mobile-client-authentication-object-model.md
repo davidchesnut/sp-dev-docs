@@ -16,7 +16,7 @@ The process of authenticating a SharePoint user on a Windows Phone 7.5 is a litt
     
 
 > [!NOTE]
-> For more information about the APIs that are discussed in this section, see  [Overview of the SharePoint 2013 mobile object model](overview-of-the-sharepoint-2013-mobile-object-model.md). For more information about the SharePoint client object model for Silverlight, see  [Managed Client Object Model](http://msdn.microsoft.com/en-us/library/ee537247.aspx) and [Using the Silverlight Object Model](http://msdn.microsoft.com/en-us/library/ee538971.aspx).
+> For more information about the APIs that are discussed in this section, see  [Overview of the SharePoint 2013 mobile object model](overview-of-the-sharepoint-2013-mobile-object-model.md). For more information about the SharePoint client object model for Silverlight, see  [Managed Client Object Model](http://msdn.microsoft.com/en-us/library/ee537247.aspx) and [Using the Silverlight Object Model](http://msdn.microsoft.com/en-us/library/ee538971.aspx). 
   
     
     
@@ -35,8 +35,8 @@ The following are the required steps to get an authenticated client context obje
   
 2. Construct a new **Authenticator** object and initialize its properties.
     
-   > [!NOTE]
-   > One **Authenticator** object can be used with one **ClientContext** object only. You can't share an **Authenticator** object across multiple **ClientContext** objects with different URLs.
+    > [!NOTE]
+      > One **Authenticator** object can be used with one **ClientContext** object only. You can't share an **Authenticator** object across multiple **ClientContext** objects with different URLs.
 3. The **Authenticator** class implements the [ICredentials](http://msdn.microsoft.com/en-us/library/system.net.icredentials.aspx) interface, so you assign the object to the [Credentials](http://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientruntimecontext.credentials.aspx) property of the **ClientContext** object.
     
   

@@ -33,7 +33,7 @@ The following objects are the primary APIs for Following Content tasks:
   
 
 > [!NOTE]
-> You also use these APIs for Following People tasks, but the **GetSuggestions** and **GetFollowers** methods available from [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) only support following people, not content. For more information about how you can use [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) , see [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md). For code examples that show how to follow people, see  [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint-2013.md).
+> You also use these APIs for Following People tasks, but the **GetSuggestions** and **GetFollowers** methods available from [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) only support following people, not content. For more information about how you can use [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.aspx) , see [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md). For code examples that show how to follow people, see  [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint-2013.md). 
   
     
     

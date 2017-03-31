@@ -27,26 +27,26 @@ If the resource endpoint takes a parameter, the parameter metadata is specified 
 
 |||
 |:-----|:-----|
-| [My](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_my)|Gets information about the current user.|
-| [My/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeedPost)|Creates a root post in the current user's feed.|
-| [My/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeed)|Gets the feed of activity by the current user.|
-| [My/News](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myNews)|Gets the feed of activity by the current user and by people and content the user is following.|
-| [My/TimelineFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myTimelineFeed)|Gets the feed of activity by the current user and by people and content the user is following, sorted by created date.|
-| [My/Likes](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myLikes)|Gets the feed of posts that the current user likes.|
-| [My/MentionFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeed)|Gets the feed of posts that mention the current user.|
-| [My/MentionFeed/ClearUnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeedClearUnreadMentionCount)|Gets the feed of posts that mention the current user and clears the unread mention count.|
-| [My/UnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myUnreadMentionCount)|Gets the count of unread mentions for the current user.|
-| [Actor](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actor)|Gets information about the specified user and the current user.|
-| [Actor/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeed)|Gets the feed of activity by the specified user.|
-| [Actor/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeedPost)|Creates a root post in the specified site feed.|
-| [Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_post)|Gets a full thread that contains the specified post.|
-| [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply)|Posts a reply to the specified post.|
-| [Post/Delete](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postDelete)|Deletes the specified post.|
-| [Post/Like](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLike)|Makes the current user a liker of the specified post.|
-| [Post/Unlike](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlike)|Removes the current user from the list of likers for the specified post.|
-| [Post/Likers](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLikers)|Gets the users who like the specified post.|
-| [Post/Lock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLock)|Locks the specified thread.|
-| [Post/Unlock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlock)|Unlocks the specified thread.|
+| [My](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_my) <br/> |Gets information about the current user.  <br/> |
+| [My/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeedPost) <br/> |Creates a root post in the current user's feed.  <br/> |
+| [My/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myFeed) <br/> |Gets the feed of activity by the current user.  <br/> |
+| [My/News](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myNews) <br/> |Gets the feed of activity by the current user and by people and content the user is following.  <br/> |
+| [My/TimelineFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myTimelineFeed) <br/> |Gets the feed of activity by the current user and by people and content the user is following, sorted by created date.  <br/> |
+| [My/Likes](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myLikes) <br/> |Gets the feed of posts that the current user likes.  <br/> |
+| [My/MentionFeed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeed) <br/> |Gets the feed of posts that mention the current user.  <br/> |
+| [My/MentionFeed/ClearUnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myMentionFeedClearUnreadMentionCount) <br/> |Gets the feed of posts that mention the current user and clears the unread mention count.  <br/> |
+| [My/UnreadMentionCount](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_myUnreadMentionCount) <br/> |Gets the count of unread mentions for the current user.  <br/> |
+| [Actor](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actor) <br/> |Gets information about the specified user and the current user.  <br/> |
+| [Actor/Feed](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeed) <br/> |Gets the feed of activity by the specified user.  <br/> |
+| [Actor/Feed/Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_actorFeedPost) <br/> |Creates a root post in the specified site feed.  <br/> |
+| [Post](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_post) <br/> |Gets a full thread that contains the specified post.  <br/> |
+| [Post/Reply](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postReply) <br/> |Posts a reply to the specified post.  <br/> |
+| [Post/Delete](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postDelete) <br/> |Deletes the specified post.  <br/> |
+| [Post/Like](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLike) <br/> |Makes the current user a liker of the specified post.  <br/> |
+| [Post/Unlike](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlike) <br/> |Removes the current user from the list of likers for the specified post.  <br/> |
+| [Post/Likers](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLikers) <br/> |Gets the users who like the specified post.  <br/> |
+| [Post/Lock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postLock) <br/> |Locks the specified thread.  <br/> |
+| [Post/Unlock](social-feed-rest-api-reference-for-sharepoint-2013.md#bk_postUnlock) <br/> |Unlocks the specified thread.  <br/> |
    
 
 > [!NOTE]
@@ -3406,10 +3406,10 @@ Client-side **GET** requests for feeds can optionally specify **SocialFeedOption
 
 ||||
 |:-----|:-----|:-----|
-|MaxThreadCount|**Int32**|The maximum number of threads to retrieve. The default number is 20.|
-|NewerThan|**String**|The "newer than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary.|
-|OlderThan|**String**|The "older than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary.|
-|SortOrder|**Int32**|The sort order of the threads in the feed. The default sort order is by modified date, except for the timeline feed, which is sorted by created date.          **0** sorts threads by modified time, according to the most recent modification times of their posts.          **1** sorts threads by created time, according to the creation times of their root posts.|
+|MaxThreadCount  <br/> |**Int32** <br/> |The maximum number of threads to retrieve. The default number is 20.  <br/> |
+|NewerThan  <br/> |**String** <br/> |The "newer than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary. <br/> |
+|OlderThan  <br/> |**String** <br/> |The "older than" boundary of the time span to retrieve, as a string representation of a **DateTime** object. The default is no specified boundary. <br/> |
+|SortOrder  <br/> |**Int32** <br/> |The sort order of the threads in the feed. The default sort order is by modified date, except for the timeline feed, which is sorted by created date.          **0** sorts threads by modified time, according to the most recent modification times of their posts.          **1** sorts threads by created time, according to the creation times of their root posts. <br/> |
    
 
   
@@ -3438,9 +3438,9 @@ The server returns a **SocialRestActor** resource in the response to a client-si
 
 ||||
 |:-----|:-----|:-----|
-|FollowableItem|**String**|The unique identifier of the specified actor. Returns the account name for a user or the URI for a document, site, or tag.|
-|FollowableItemActor| [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)|The specified user. Returns **null** if the user is the current user or if the resource is not a user-type actor.|
-|Me| [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)|The current user.|
+|FollowableItem  <br/> |**String** <br/> |The unique identifier of the specified actor. Returns the account name for a user or the URI for a document, site, or tag.  <br/> |
+|FollowableItemActor  <br/> | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx) <br/> |The specified user. Returns **null** if the user is the current user or if the resource is not a user-type actor. <br/> |
+|Me  <br/> | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx) <br/> |The current user.  <br/> |
    
 
   
@@ -3469,11 +3469,11 @@ The server returns a **SocialRestFeed** resource in the response to a client-sid
 
 ||||
 |:-----|:-----|:-----|
-|Attributes| [SP.Social.SocialFeedAttributes](http://msdn.microsoft.com/library/9ea7d3c5-7f96-88a6-5bdf-d7749b044ad3%28Office.15%29.aspx)|A bitwise set of attributes that apply to the feed.|
-|NewestProcessed|**DateTime**|The date and time of the newest retrieved post.|
-|OldestProcessed|**DateTime**|The date and time of the oldest retrieved post.|
-|Threads| [SP.Social.SocialThread](http://msdn.microsoft.com/library/46aa4beb-d708-f20e-471e-626c8a7efab7%28Office.15%29.aspx)[]|The threads that make up the feed.|
-|UnreadMentionCount|**Int32**|The count of unread mentions for the current user.|
+|Attributes  <br/> | [SP.Social.SocialFeedAttributes](http://msdn.microsoft.com/library/9ea7d3c5-7f96-88a6-5bdf-d7749b044ad3%28Office.15%29.aspx) <br/> |A bitwise set of attributes that apply to the feed.  <br/> |
+|NewestProcessed  <br/> |**DateTime** <br/> |The date and time of the newest retrieved post.  <br/> |
+|OldestProcessed  <br/> |**DateTime** <br/> |The date and time of the oldest retrieved post.  <br/> |
+|Threads  <br/> | [SP.Social.SocialThread](http://msdn.microsoft.com/library/46aa4beb-d708-f20e-471e-626c8a7efab7%28Office.15%29.aspx)[]  <br/> |The threads that make up the feed.  <br/> |
+|UnreadMentionCount  <br/> |**Int32** <br/> |The count of unread mentions for the current user.  <br/> |
    
 
   
@@ -3502,7 +3502,7 @@ Clients specify **SocialRestPostCreationData** properties as parameters in a req
 
 ||||
 |:-----|:-----|:-----|
-|ID (required)|**null** or **String**|The target destination for the post. The value can be one of the following:           **null** to publish a root post to the current user's feed           The ID of a post to reply to           The URL of a site feed to post to (for example: `http://<teamSiteURL>/newsfeed.aspx`)|
+|ID (required)  <br/> |**null** or **String** <br/> |The target destination for the post. The value can be one of the following:           **null** to publish a root post to the current user's feed           The ID of a post to reply to           The URL of a site feed to post to (for example: `http://<teamSiteURL>/newsfeed.aspx`)  <br/> |
    
 The following properties belong to the **SocialPostCreationData** object.
   
@@ -3511,12 +3511,12 @@ The following properties belong to the **SocialPostCreationData** object.
 
 ||||
 |:-----|:-----|:-----|
-|Attachment| [SP.Social.SocialAttachment](http://msdn.microsoft.com/library/dfdee790-a1b0-19c8-0e92-5a6e058ba4db%28Office.15%29.aspx)|An image, video, or document attachment for the post.|
-|ContentItems| [SP.Social.SocialDataItem](http://msdn.microsoft.com/library/757e7b62-66a6-b03f-0ff0-769a42eb2b4a%28Office.15%29.aspx)[]|The items to replace the corresponding tokens in the post's content text|
-|ContentText|**String**|The plain text of the post, which can include positional insertion tokens (for example, "Today is {0}'s birthday!").|
-|SecurityUris|**String[]**|String representations of the URIs to SharePoint objects that define access permissions for the post.|
-|Source| [SP.Social.SocialLink](http://msdn.microsoft.com/library/c71efc66-c9ca-ea35-b1c0-cb9ec3bbfcd3%28Office.15%29.aspx)|The source of the post.|
-|UpdateStatusText|**Boolean**|A value that controls whether the post's plain-text content should replace the current user's status text.|
+|Attachment  <br/> | [SP.Social.SocialAttachment](http://msdn.microsoft.com/library/dfdee790-a1b0-19c8-0e92-5a6e058ba4db%28Office.15%29.aspx) <br/> |An image, video, or document attachment for the post.  <br/> |
+|ContentItems  <br/> | [SP.Social.SocialDataItem](http://msdn.microsoft.com/library/757e7b62-66a6-b03f-0ff0-769a42eb2b4a%28Office.15%29.aspx)[]  <br/> |The items to replace the corresponding tokens in the post's content text  <br/> |
+|ContentText  <br/> |**String** <br/> |The plain text of the post, which can include positional insertion tokens (for example, "Today is {0}'s birthday!").  <br/> |
+|SecurityUris  <br/> |**String[]** <br/> |String representations of the URIs to SharePoint objects that define access permissions for the post.  <br/> |
+|Source  <br/> | [SP.Social.SocialLink](http://msdn.microsoft.com/library/c71efc66-c9ca-ea35-b1c0-cb9ec3bbfcd3%28Office.15%29.aspx) <br/> |The source of the post.  <br/> |
+|UpdateStatusText  <br/> |**Boolean** <br/> |A value that controls whether the post's plain-text content should replace the current user's status text.  <br/> |
    
 
   
@@ -3545,7 +3545,7 @@ The server returns a **SocialRestThread** resource in the response to a client-s
 
 ||||
 |:-----|:-----|:-----|
-|ID|**String**|The unique identifier of the thread.|
+|ID  <br/> |**String** <br/> |The unique identifier of the thread.  <br/> |
    
 The following properties belong to the **SocialThread** object.
   
@@ -3554,17 +3554,17 @@ The following properties belong to the **SocialThread** object.
 
 ||||
 |:-----|:-----|:-----|
-|Actors <br/> | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)[] <br/> |The merged array of participating actors. <br/> |
-|Attributes <br/> |**Int32** <br/> |The bitwise value that represents the set of attributes for the thread. See  [SP.Social.SocialThreadAttributes](http://msdn.microsoft.com/library/21ff9f92-3223-bcc7-ceec-7b899ee29b6e%28Office.15%29.aspx). <br/> |
-|Id <br/> |**String** <br/> |The unique identifier of the thread. <br/> |
-|OwnerIndex <br/> |**Int32** <br/> |The index of the thread's owner within the thread's actors. <br/> |
-|Permalink <br/> |**String** <br/> |The string representation of the stable URI for navigating directly to the thread, if one is available. <br/> |
-|PostReference <br/> | [SP.Social.SocialPostReference](http://msdn.microsoft.com/library/529e1db7-2e9a-5141-6b1e-94a5c63e7c16%28Office.15%29.aspx) <br/> |The referenced post. <br/> |
-|Replies <br/> | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx)[] <br/> |The replies to the thread. <br/> |
-|RootPost <br/> | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx) <br/> |The root post of the thread. <br/> |
-|Status <br/> |**Int32** <br/> |The code that identifies recoverable errors that occurred during thread retrieval. See  [SP.Social.SocialStatusCode](http://msdn.microsoft.com/library/79292329-19de-43e1-5928-60b0edc36c94%28Office.15%29.aspx). <br/> |
-|ThreadType <br/> | [SP.Social.SocialThreadType](http://msdn.microsoft.com/library/7444217e-ddda-d3a0-b19f-146cf8c6fcaa%28Office.15%29.aspx) <br/> |The thread type. <br/> |
-|TotalReplyCount <br/> |**Int32** <br/> |The count of the total number of replies for the thread. <br/> |
+|Actors  <br/> | [SP.Social.SocialActor](http://msdn.microsoft.com/library/4e369fd5-b9b0-9804-957e-b3e39c559cd4%28Office.15%29.aspx)[]  <br/> |The merged array of participating actors.  <br/> |
+|Attributes  <br/> |**Int32** <br/> |The bitwise value that represents the set of attributes for the thread. See  [SP.Social.SocialThreadAttributes](http://msdn.microsoft.com/library/21ff9f92-3223-bcc7-ceec-7b899ee29b6e%28Office.15%29.aspx).  <br/> |
+|Id  <br/> |**String** <br/> |The unique identifier of the thread.  <br/> |
+|OwnerIndex  <br/> |**Int32** <br/> |The index of the thread's owner within the thread's actors.  <br/> |
+|Permalink  <br/> |**String** <br/> |The string representation of the stable URI for navigating directly to the thread, if one is available.  <br/> |
+|PostReference  <br/> | [SP.Social.SocialPostReference](http://msdn.microsoft.com/library/529e1db7-2e9a-5141-6b1e-94a5c63e7c16%28Office.15%29.aspx) <br/> |The referenced post.  <br/> |
+|Replies  <br/> | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx)[]  <br/> |The replies to the thread.  <br/> |
+|RootPost  <br/> | [SP.Social.SocialPost](http://msdn.microsoft.com/library/a761ce71-d3d7-420a-1e06-962674124dfa%28Office.15%29.aspx) <br/> |The root post of the thread.  <br/> |
+|Status  <br/> |**Int32** <br/> |The code that identifies recoverable errors that occurred during thread retrieval. See  [SP.Social.SocialStatusCode](http://msdn.microsoft.com/library/79292329-19de-43e1-5928-60b0edc36c94%28Office.15%29.aspx).  <br/> |
+|ThreadType  <br/> | [SP.Social.SocialThreadType](http://msdn.microsoft.com/library/7444217e-ddda-d3a0-b19f-146cf8c6fcaa%28Office.15%29.aspx) <br/> |The thread type.  <br/> |
+|TotalReplyCount  <br/> |**Int32** <br/> |The count of the total number of replies for the thread.  <br/> |
    
 
 ## Additional resources

@@ -24,7 +24,7 @@ The following project uses Microsoft Visual Studio.
 
 
 > [!NOTE]
-> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information, see  [How to: Trust a Location](how-to-trust-a-location.md).
+> It is assumed that you have already created a SharePoint document library and made it a trusted location. For more information, see  [How to: Trust a Location](how-to-trust-a-location.md). 
   
     
     
@@ -52,8 +52,8 @@ The following steps show how to locate Microsoft.Office.Excel.WebUI.dll and how 
   
 2. In the **Add Reference** dialog box, click **Browse**.
     
-   > [!NOTE]
-   > You can also open the **Add Reference** dialog box in the **Solution Explorer** pane by right-clicking **References** and selecting **Add Reference**. 
+    > [!NOTE]
+      > You can also open the **Add Reference** dialog box in the **Solution Explorer** pane by right-clicking **References** and selecting **Add Reference**. 
 3. Browse to the location of Microsoft.Office.Excel.WebUI.dll.
     
   
@@ -149,8 +149,8 @@ End Sub
   ```
 
 
-   > [!IMPORTANT]
-   > Ensure that the location where the workbook is saved is a trusted location.
+    > [!IMPORTANT]
+      > Ensure that the location where the workbook is saved is a trusted location. 
 2. You can display an Excel workbook programmatically by using the following code.
     
     **Sample code provided by:** Daniel Mullowney, Microsoft Corporation

@@ -47,10 +47,10 @@ Table 1 contains links to articles that describe core concepts you should know b
 **Table 1. Core concepts for working with SharePoint 2013 social feeds**
 
 
-|**Article title**|**Description**|
+|**Article title **|**Description **|
 |:-----|:-----|
-| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)|Find out how to get started programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.|
-| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)|Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.|
+| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md) <br/> |Find out how to get started programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.  <br/> |
+| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md) <br/> |Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.  <br/> |
    
 
 ## Create the console application in Visual Studio 2012 and add references to client assemblies
@@ -114,8 +114,8 @@ const string targetUser = "domainName\\\\userName";
   ```
 
 
-   > [!NOTE]
-   > Remember to replace the  `http://serverName/` and `domainName\\\\userName` placeholder values before you run the code.
+    > [!NOTE]
+      > Remember to replace the  `http://serverName/` and `domainName\\\\userName` placeholder values before you run the code.
 2. In the **Main** method, initialize the SharePoint client context.
     
   ```cs
@@ -211,8 +211,8 @@ clientContext.ExecuteQuery();
   ```
 
 
-   > [!NOTE]
-   > The  [CreatePost](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.CreatePost.aspx) method is also used to publish a root post to the current user's feed by passing **null** for the first parameter.
+    > [!NOTE]
+      > The  [CreatePost](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.CreatePost.aspx) method is also used to publish a root post to the current user's feed by passing **null** for the first parameter.
 4. (UI-related only) Exit the program.
     
   ```cs

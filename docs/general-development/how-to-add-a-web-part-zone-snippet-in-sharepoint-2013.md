@@ -57,7 +57,7 @@ If you want complete control over how a Web Part appears on your site, and if yo
     
 
 > [!NOTE]
-> Web Part zones are available on page layouts but not on master pages—the purpose of zones is to allow authors to modify Web Parts, and authors typically don't edit a master page.
+> Web Part zones are available on page layouts but not on master pages—the purpose of zones is to allow authors to modify Web Parts, and authors typically don't edit a master page. 
   
     
     
@@ -102,16 +102,16 @@ Table 1 shows important properties to consider when you want to restrict a Web P
 **Table 1. Web Part zone properties used to restrict content authors**
 
 
-|**Property Name**|**Description**|
+|**Property Name **|**Description **|
 |:-----|:-----|
-|**AllowLayoutChange**|Specifies whether Web Parts within the zone can be closed, minimized, deleted, or restored.If set to **False**, users cannot close, minimize, delete, or restore Web Parts in the zone, drag Web Parts to a different zone, or rearrange or move Web Parts within the zone. Users also cannot add Web Parts from the Web Part catalog, and several properties that affect the UI of Web Parts in the zone are disabled. This property does not affect the ability to change the layout programmatically.If set to **True**, users with appropriate permissions can perform these actions.|
-|**LockLayout**|Specifies whether Web Parts within the zone can be added, deleted, resized, or moved. This property works the same whether the Web Part Page is in personal view or shared view.If set to **True**, the specific Web Part properties for each Web Part in the zone that are affected are: **Zone (ZoneID)**, **Part Order (PartOrder)**, **Visible on Page (IsVisible)**, **Height (Height)**, **Width (Width)**, **Allow Close (AllowRemove)**, and **IsIncluded** (the **Close** command on the **Web Part** menu). Other Web Part properties are not affected.If set to **False**, the Web Part properties determine whether modifications can be made (together with the appropriate site permissions).|
-|**AllowCustomization**|Specifies whether shared property values of Web Parts within the zone can be modified.If set to **True**, users with appropriate permissions can make changes to the Web Parts in the zone for all users.If set to **False**, users cannot make changes to the Web Parts in the zone in the UI in shared view. But, changes can still be made programmatically and by using the Web Part Maintenance page.|
-|**AllowPersonalization**|Specifies whether personal property values of Web Parts within the zone can be modified.If set to **True**, users with appropriate permissions can make personal changes to the Web Parts in the zone.If set to **False**, users cannot make personal changes to the Web Parts through the UI, unless the Web Part is a private Web Part and they have appropriate permissions.|
+|**AllowLayoutChange** <br/> |Specifies whether Web Parts within the zone can be closed, minimized, deleted, or restored.  <br/> If set to **False**, users cannot close, minimize, delete, or restore Web Parts in the zone, drag Web Parts to a different zone, or rearrange or move Web Parts within the zone. Users also cannot add Web Parts from the Web Part catalog, and several properties that affect the UI of Web Parts in the zone are disabled. This property does not affect the ability to change the layout programmatically.  <br/> If set to **True**, users with appropriate permissions can perform these actions.  <br/> |
+|**LockLayout** <br/> |Specifies whether Web Parts within the zone can be added, deleted, resized, or moved. This property works the same whether the Web Part Page is in personal view or shared view.  <br/> If set to **True**, the specific Web Part properties for each Web Part in the zone that are affected are: **Zone (ZoneID)**, **Part Order (PartOrder)**, **Visible on Page (IsVisible)**, **Height (Height)**, **Width (Width)**, **Allow Close (AllowRemove)**, and **IsIncluded** (the **Close** command on the **Web Part** menu). Other Web Part properties are not affected. <br/> If set to **False**, the Web Part properties determine whether modifications can be made (together with the appropriate site permissions).  <br/> |
+|**AllowCustomization** <br/> |Specifies whether shared property values of Web Parts within the zone can be modified.  <br/> If set to **True**, users with appropriate permissions can make changes to the Web Parts in the zone for all users.  <br/> If set to **False**, users cannot make changes to the Web Parts in the zone in the UI in shared view. But, changes can still be made programmatically and by using the Web Part Maintenance page.  <br/> |
+|**AllowPersonalization** <br/> |Specifies whether personal property values of Web Parts within the zone can be modified.  <br/> If set to **True**, users with appropriate permissions can make personal changes to the Web Parts in the zone.  <br/> If set to **False**, users cannot make personal changes to the Web Parts through the UI, unless the Web Part is a private Web Part and they have appropriate permissions.  <br/> |
    
 
 > [!NOTE]
-> You cannot insert a Web Part zone inside a Device Channel Panel. If you want to allow authors to add Web Parts to a page, and if you are not concerned about the page weight for mobile devices, you can add a Rich Text Editor page field to a Device Channel Panel, and then instruct authors to add Web Parts there. You can add Web Parts directly to a Device Channel Panel (without a Web Part zone). For more information, see  [How to: Add a Device Channel Panel snippet in SharePoint 2013](how-to-add-a-device-channel-panel-snippet-in-sharepoint-2013.md).
+> You cannot insert a Web Part zone inside a Device Channel Panel. If you want to allow authors to add Web Parts to a page, and if you are not concerned about the page weight for mobile devices, you can add a Rich Text Editor page field to a Device Channel Panel, and then instruct authors to add Web Parts there. You can add Web Parts directly to a Device Channel Panel (without a Web Part zone). For more information, see  [How to: Add a Device Channel Panel snippet in SharePoint 2013](how-to-add-a-device-channel-panel-snippet-in-sharepoint-2013.md). 
   
     
     
@@ -152,8 +152,8 @@ Like all snippets, you add this snippet from the Snippet Gallery. To navigate to
     
     For descriptions of properties that are necessary for restricting a Web Part zone ( **LockLayout**, **AllowCustomization**, and **AllowPersonalization**), see Table 1.
     
-   > [!NOTE]
-   > You may notice that some property names are bold in the property grid of the Snippet Gallery. These properties have values that have been changed from the default setting for this component, but these properties are not necessarily relevant to a designer scenario. In other words, a property may be bold but not necessarily important for your scenario.
+    > [!NOTE]
+      > You may notice that some property names are bold in the property grid of the Snippet Gallery. These properties have values that have been changed from the default setting for this component, but these properties are not necessarily relevant to a designer scenario. In other words, a property may be bold but not necessarily important for your scenario. 
 8. After you configure any properties, choose **Update**. This updates the HTML snippet on the left side of the page, so that the markup reflects your custom settings. You can always choose **Reset** to return all properties to their default settings.
     
   

@@ -30,8 +30,8 @@ For example, you can use a Security Trim panel to display the following content 
   
 - A sign-in link separate from the ribbon, for non-authenticated users or users who have yet to be authenticated.
     
-   > [!NOTE]
-   > This sign-in link is inserted automatically into a master page that is created by using Design Manager, but you can delete it if it's not needed.
+    > [!NOTE]
+      > This sign-in link is inserted automatically into a master page that is created by using Design Manager, but you can delete it if it's not needed. 
 A Security Trim panel has two important property settings, one for authentication and one for permissions (or authorization). For example, you can use a Security Trim panel to display the following content to specific users:
   
     
@@ -42,8 +42,8 @@ A Security Trim panel has two important property settings, one for authenticatio
   
 - **Permissions** With this property, you can select a specific permission that users must have to view the content in the panel.
     
-   > [!NOTE]
-   > You are selecting an individual permission, not a permission level. (A permission level is a set of granted permissions.)
+    > [!NOTE]
+      > You are selecting an individual permission, not a permission level. (A permission level is a set of granted permissions.) 
 Of course, if you restrict the authentication to only anonymous users, it's typically not necessary to specify a specific permission because anonymous users have usually not been given any SharePoint 2013 permissions. It makes sense to use permissions only with all users or with all authenticated users.
   
     
@@ -54,7 +54,7 @@ The Security Trim panel has three options on the ribbon, listed in the left colu
     
 
 > [!NOTE]
-> These are the default settings, which can be changed for any given scope, such as a site collection, site, list, or item.
+> These are the default settings, which can be changed for any given scope, such as a site collection, site, list, or item. 
   
     
     
@@ -67,11 +67,11 @@ For example, if you set a Security Trim panel to **Show to authors**, by default
 **Table 1. Mapping of panel options to default permission levels and groups**
 
 
-|**Security Trim panel option**|**Permissions property**|**Permission**|**Permission level**|**Group**|
+|**Security Trim panel option **|**Permissions property **|**Permission **|**Permission level **|**Group **|
 |:-----|:-----|:-----|:-----|:-----|
-|Show to authors|**AddAndCustomizePages**|Add and Customize Pages|Contribute (or higher)|Members|
-|Show to Authenticated Users|**ViewPages**|View Pages|Read (or higher)|Visitors|
-|Show to Administrators|**FullMask**|Select All|Full Control|Owners|
+|Show to authors  <br/> |**AddAndCustomizePages** <br/> |Add and Customize Pages  <br/> |Contribute (or higher)  <br/> |Members  <br/> |
+|Show to Authenticated Users  <br/> |**ViewPages** <br/> |View Pages  <br/> |Read (or higher)  <br/> |Visitors  <br/> |
+|Show to Administrators  <br/> |**FullMask** <br/> |Select All  <br/> |Full Control  <br/> |Owners  <br/> |
    
 
 ### Inserting a Security Trim panel

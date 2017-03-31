@@ -14,7 +14,7 @@ In a social feed, the simplest form of post content contains only text, but you 
 
 
 > [!NOTE]
-> To add embedded pictures, videos, or documents to a post's content, you add a  [SocialAttachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialAttachment.aspx) object to the [SocialPostCreationData.Attachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.Attachment.aspx) property. For more information, see [How to: Embed images, videos, and documents in posts in SharePoint Server 2013](how-to-embed-images-videos-and-documents-in-posts-in-sharepoint-server-2013.md).
+> To add embedded pictures, videos, or documents to a post's content, you add a  [SocialAttachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialAttachment.aspx) object to the [SocialPostCreationData.Attachment](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialPostCreationData.Attachment.aspx) property. For more information, see [How to: Embed images, videos, and documents in posts in SharePoint Server 2013](how-to-embed-images-videos-and-documents-in-posts-in-sharepoint-server-2013.md). 
   
     
     
@@ -78,7 +78,7 @@ In the social feed, clicking a link to a website, SharePoint site, or document o
     
 
 > [!NOTE]
-> Change the placeholder values for the URL variables before you run the code.
+> Change the placeholder values for the URL variables before you run the code. 
   
     
     

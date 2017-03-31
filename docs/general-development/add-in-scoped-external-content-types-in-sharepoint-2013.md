@@ -65,11 +65,11 @@ Table 1 contains some core concepts that you should be familiar with when workin
 **Table 1. Core concepts for understanding add-in-scoped external content types**
 
 
-|**Article**|**Description**|
+|**Article **|**Description **|
 |:-----|:-----|
-| [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md)|Learn how to create BCS external content types.|
-| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx)|Learn about the new add-in model in SharePoint 2013 that enables you to create add-ins, which are small, easy-to-use solutions for end users.|
-| [Get started creating SharePoint-hosted SharePoint Add-ins](http://msdn.microsoft.com/library/1b992485-6efe-4ea4-a18c-221689b0b66f%28Office.15%29.aspx)|Learn how to create a basic SharePoint-hosted add-in by using the Office Developer Tools for Visual Studio 2012.|
+| [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md) <br/> |Learn how to create BCS external content types.  <br/> |
+| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx) <br/> |Learn about the new add-in model in SharePoint 2013 that enables you to create add-ins, which are small, easy-to-use solutions for end users.  <br/> |
+| [Get started creating SharePoint-hosted SharePoint Add-ins](http://msdn.microsoft.com/library/1b992485-6efe-4ea4-a18c-221689b0b66f%28Office.15%29.aspx) <br/> |Learn how to create a basic SharePoint-hosted add-in by using the Office Developer Tools for Visual Studio 2012.  <br/> |
    
 
 ## What can you do with add-in-scoped external content types?
@@ -130,7 +130,7 @@ The following example shows how to set the **MetadataCatalogFileName** property 
 
 
 > [!NOTE]
-> Site administrators can install add-ins that use App-Scoped-ECTs, but only SiteCollection administrators can grant permissions for Apps to Use BCS Connections.
+> Site administrators can install add-ins that use App-Scoped-ECTs, but only SiteCollection administrators can grant permissions for Apps to Use BCS Connections. 
   
     
     
@@ -162,7 +162,7 @@ You can include a BDC model in a WSP file for deployment. The following example 
 
 
 > [!NOTE]
-> Only Open Data protocol (OData) connections are allowed for add-in-scoped external content types.
+> Only Open Data protocol (OData) connections are allowed for add-in-scoped external content types. 
   
     
     

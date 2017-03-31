@@ -14,7 +14,7 @@ One of the most important considerations in the development of Windows Phone app
 
 
 > [!IMPORTANT]
-> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7.> For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md).
+> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7. > For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md). 
   
     
     
@@ -131,14 +131,14 @@ For the procedures in this section, we assume you're working in the context of a
 **Table 1. Sample Product Orders list**
 
 
-|**Column**|**Type**|**Required**|
+|**Column **|**Type **|**Required **|
 |:-----|:-----|:-----|
-|Product (for example, Title)|Single line of text (Text)|Yes|
-|Description|Single line of text (Text)|No|
-|Quantity|Number|Yes|
-|Order Date|Date and Time (DateTime)|No|
-|Fulfillment Date|Date and Time (DateTime)|No|
-|Contact Number|Single line of text (Text)|No|
+|Product (for example, Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
+|Description  <br/> |Single line of text (Text)  <br/> |No  <br/> |
+|Quantity  <br/> |Number  <br/> |Yes  <br/> |
+|Order Date  <br/> |Date and Time (DateTime)  <br/> |No  <br/> |
+|Fulfillment Date  <br/> |Date and Time (DateTime)  <br/> |No  <br/> |
+|Contact Number  <br/> |Single line of text (Text)  <br/> |No  <br/> |
    
 
 ### To implement a class to support editing items while offline
@@ -710,8 +710,8 @@ namespace SPListAppLocalStorage
   
 11. In the browser that opens, navigate to the folder in which the standard Windows Phone icon images were installed by the Windows Phone SDK 7.1.
     
-   > [!NOTE]
-   > The images with a light foreground and a dark background are in  `%PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark` in a standard installation of the SDK.
+    > [!NOTE]
+      > The images with a light foreground and a dark background are in  `%PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark` in a standard installation of the SDK.
 12. Choose the image file named appbar.back.rest.png, and choose **Add**. The image is added to the project under the **Images** node.
     
   
@@ -810,8 +810,8 @@ private void OnSaveDraftButtonClick(object sender, EventArgs e)
   
 5. In the browser that opens, navigate to the folder in which the standard Windows Phone icon images were installed by the Windows Phone SDK 7.1.
     
-   > [!NOTE]
-   > The images with a light foreground and a dark background are in  `%PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark` in a standard installation of the SDK.
+    > [!NOTE]
+      > The images with a light foreground and a dark background are in  `%PROGRAMFILES%(x86)\\Microsoft SDKs\\Windows Phone\\v7.1\\Icons\\dark` in a standard installation of the SDK.
 6. Choose the image file named appbar.folder.rest.png, and then choose **Add**. 
     
     The image is added is added to the project under the **Images** node.

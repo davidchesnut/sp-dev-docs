@@ -22,13 +22,13 @@ If you need to retrieve the URL for the Pages list for a different web applicati
 **Table 1. Core concepts for retrieving the URL of a Pages library**
 
 
-|**Article title**|**Description**|
+|**Article title **|**Description **|
 |:-----|:-----|
-|Pages Library|A document library that contains all the content pages for a publishing site.|
-| [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx)|Represents a SharePoint Foundation website.|
-| [Properties](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.Properties.aspx)|Gets a  [SPPropertyBag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPPropertyBag.aspx) object with metadata for the current website.|
-| [SPPropertyBag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPPropertyBag.aspx)|Stores arbitrary key and value pairs that contain custom property settings.|
-| [PublishingWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.Publishing.PublishingWeb.aspx)|Provides publishing behavior for an instance of **SPWeb** that supports publishing.|
+|Pages Library  <br/> |A document library that contains all the content pages for a publishing site.  <br/> |
+| [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) <br/> |Represents a SharePoint Foundation website.  <br/> |
+| [Properties](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.Properties.aspx) <br/> |Gets a  [SPPropertyBag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPPropertyBag.aspx) object with metadata for the current website. <br/> |
+| [SPPropertyBag](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPPropertyBag.aspx) <br/> |Stores arbitrary key and value pairs that contain custom property settings.  <br/> |
+| [PublishingWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.Publishing.PublishingWeb.aspx) <br/> |Provides publishing behavior for an instance of **SPWeb** that supports publishing. <br/> |
    
 
 ## Retrieve the URL of a Pages list for a publishing web in a site collection that differs from the current context

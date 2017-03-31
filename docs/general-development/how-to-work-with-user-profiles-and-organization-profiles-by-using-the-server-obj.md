@@ -15,7 +15,7 @@ In SharePoint 2013, user profiles represent SharePoint users. User profile prope
     
 
 > [!NOTE]
-> For more information about common programming tasks for working with user profiles and the API that you use to perform the tasks, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md).
+> For more information about common programming tasks for working with user profiles and the API that you use to perform the tasks, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md). 
   
     
     
@@ -54,8 +54,8 @@ To create a console application that uses the server object model to work with u
   
 4. Name the project UserProfilesSSOM, and then choose the **OK** button.
     
-   > [!NOTE]
-   > Make sure the **Prefer 32-bit** setting is not selected in the project's **Build** properties.
+    > [!NOTE]
+      > Make sure the **Prefer 32-bit** setting is not selected in the project's **Build** properties.
 5. Add references to the following assemblies:
     
   - Microsoft.Office.Server

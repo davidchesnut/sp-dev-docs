@@ -57,13 +57,13 @@ Table 1 lists articles that will help you understand the core concepts of buildi
 **Table 1. Core concepts for creating an OData service**
 
 
-|**Resource**|**Description**|
+|**Resource **|**Description **|
 |:-----|:-----|
-| [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md)|Provides information to help you start creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.|
-| [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md)|Learn how to use Visual Studio 2012 to discover a published OData source and create a reusable external content type to use in BCS in SharePoint 2013.|
-| [Open Data Protocol](http://www.odata.org)|Provides information about the Open Data protocol, including protocol definitions, architectural information and usage examples.|
-| [WCF Data Services Overview](http://msdn.microsoft.com/en-us/library/cc668794.aspx)|WCF Data Services enables creation and consumption of data services for the web or an intranet by using OData. OData enables you to expose your data as resources that are addressable by URIs. |
-| [Developing and Deploying WCF Data Services](http://msdn.microsoft.com/en-us/library/gg258442)|Provides information about developing and deploying WCF Data Services.|
+| [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |Provides information to help you start creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.  <br/> |
+| [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md) <br/> |Learn how to use Visual Studio 2012 to discover a published OData source and create a reusable external content type to use in BCS in SharePoint 2013.  <br/> |
+| [Open Data Protocol](http://www.odata.org) <br/> |Provides information about the Open Data protocol, including protocol definitions, architectural information and usage examples.  <br/> |
+| [WCF Data Services Overview](http://msdn.microsoft.com/en-us/library/cc668794.aspx) <br/> |WCF Data Services enables creation and consumption of data services for the web or an intranet by using OData. OData enables you to expose your data as resources that are addressable by URIs.  <br/> |
+| [Developing and Deploying WCF Data Services](http://msdn.microsoft.com/en-us/library/gg258442) <br/> |Provides information about developing and deploying WCF Data Services.  <br/> |
    
 
 ### Steps involved in creating the external system
@@ -202,8 +202,8 @@ By default, when a WCF service is created, it cannot be accessed due to its secu
 
     This enables authorized clients to have read and write access to resources for the specified entity sets.
     
-   > [!NOTE]
-   > Any client that can access the ASP.NET application can also access the resources that are exposed by the data service. In a production data service, to prevent unauthorized access to resources, you should also secure the application itself. For more information, see  [Securing WCF Data Services](http://msdn.microsoft.com/en-us/library/dd728284.aspx).
+    > [!NOTE]
+      > Any client that can access the ASP.NET application can also access the resources that are exposed by the data service. In a production data service, to prevent unauthorized access to resources, you should also secure the application itself. For more information, see  [Securing WCF Data Services](http://msdn.microsoft.com/en-us/library/dd728284.aspx). 
 For BCS to receive notifications, there must be a mechanism on the back-end data source that will accept a request to be added and removed from notification subscriptions. 
   
     
@@ -224,8 +224,8 @@ public string subscriptionStorePath = @"\\\\[SHARE_NAME]\\SubscriptionStore\\Sub
   ```
 
 
-   > [!NOTE]
-   > This file is an XML file that is updated with the new subscriptions. Access to this file will be made by the server process, so make sure you have granted sufficient rights for this file access. > You might also want to create a database solution for storing subscription information. 
+    > [!NOTE]
+      > This file is an XML file that is updated with the new subscriptions. Access to this file will be made by the server process, so make sure you have granted sufficient rights for this file access. > You might also want to create a database solution for storing subscription information. 
 
     Then add the following two **WebGet** methods to handle the subscriptions.
     

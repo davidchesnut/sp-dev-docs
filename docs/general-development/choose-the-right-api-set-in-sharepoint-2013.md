@@ -95,23 +95,23 @@ The following table provides guidance on which set of APIs to use for a selected
     
 
 
-|**If you want to do this ...**|**... use these APIs**|
+|**If you want to do this ... **|**... use these APIs **|
 |:-----|:-----|
-|Create an ASP.NET web application that performs create/read/update/deleted (CRUD) operations across a firewall on SharePoint data or external data that is surfaced in SharePoint by a Microsoft Business Connectivity Services (BCS) external content type|JavaScript client object model|
-|Create an ASP.NET web application that performs CRUD operations on SharePoint data or external data that is surfaced in SharePoint by a BCS external content type, but does not have to call SharePoint across a firewall|.NET Framework client object model, Silverlight client object model, or REST/OData endpoints|
-|Create a LAMP web application that performs CRUD operations on SharePoint data or external data that is surfaced in SharePoint by a BCS external content type|REST/OData endpoints|
-|Create a Windows Phone app that performs CRUD operations on SharePoint data|Mobile client object model|
-|Create a Windows Phone app that uses the Microsoft Push Notification Service to alert the mobile device of events in SharePoint|Mobile client object model and the server object model|
-|Create an iOS or Android app that performs CRUD operations on SharePoint data|REST/OData endpoints|
-|Create a .NET Framework application that performs CRUD operations on SharePoint data|.NET Framework client object model|
-|Create a Silverlight application that performs CRUD operations on SharePoint data|Silverlight client object model|
-|Create an HTML/JavaScript application that performs CRUD operations on SharePoint data|JavaScript client object model|
-|Create an Office Add-in that works with SharePoint|JavaScript client object model|
-|Create a custom Windows PowerShell command|Server object model|
-|Create a timer job|Server object model|
-|Create an extension of Central Administration|Server object model|
-|Create consistent branding across an entire SharePoint farm|Server object model|
-|Create a custom Web Part, application page, or ASP.NET user control|Server object model> [!IMPORTANT]> If the functionality you want to offer customers is not oriented to SharePoint administration at a scope broader than site collection, we recommend that, instead of using the server object model, you create an SharePoint Add-in that includes a remote ASP.NET web application with custom Web Parts and user controls as needed. See the top two rows of this table.          |
+|Create an ASP.NET web application that performs create/read/update/deleted (CRUD) operations across a firewall on SharePoint data or external data that is surfaced in SharePoint by a Microsoft Business Connectivity Services (BCS) external content type  <br/> |JavaScript client object model  <br/> |
+|Create an ASP.NET web application that performs CRUD operations on SharePoint data or external data that is surfaced in SharePoint by a BCS external content type, but does not have to call SharePoint across a firewall  <br/> |.NET Framework client object model, Silverlight client object model, or REST/OData endpoints  <br/> |
+|Create a LAMP web application that performs CRUD operations on SharePoint data or external data that is surfaced in SharePoint by a BCS external content type  <br/> |REST/OData endpoints  <br/> |
+|Create a Windows Phone app that performs CRUD operations on SharePoint data  <br/> |Mobile client object model  <br/> |
+|Create a Windows Phone app that uses the Microsoft Push Notification Service to alert the mobile device of events in SharePoint  <br/> |Mobile client object model and the server object model  <br/> |
+|Create an iOS or Android app that performs CRUD operations on SharePoint data  <br/> |REST/OData endpoints  <br/> |
+|Create a .NET Framework application that performs CRUD operations on SharePoint data  <br/> |.NET Framework client object model  <br/> |
+|Create a Silverlight application that performs CRUD operations on SharePoint data  <br/> |Silverlight client object model  <br/> |
+|Create an HTML/JavaScript application that performs CRUD operations on SharePoint data  <br/> |JavaScript client object model  <br/> |
+|Create an Office Add-in that works with SharePoint  <br/> |JavaScript client object model  <br/> |
+|Create a custom Windows PowerShell command  <br/> |Server object model  <br/> |
+|Create a timer job  <br/> |Server object model  <br/> |
+|Create an extension of Central Administration  <br/> |Server object model  <br/> |
+|Create consistent branding across an entire SharePoint farm  <br/> |Server object model  <br/> |
+|Create a custom Web Part, application page, or ASP.NET user control  <br/> |Server object model  <br/> > [!IMPORTANT]> If the functionality you want to offer customers is not oriented to SharePoint administration at a scope broader than site collection, we recommend that, instead of using the server object model, you create an SharePoint Add-in that includes a remote ASP.NET web application with custom Web Parts and user controls as needed. See the top two rows of this table.           |
    
 
 ## Server object model
@@ -135,7 +135,7 @@ The assemblies that define the built-in server-side classes are installed to the
     
 
 > [!NOTE]
-> Developing new sandboxed solutions against SharePoint 2013 is deprecated in favor of developing SharePoint Add-ins, but sandboxed solutions can still be installed to site collections on SharePoint 2013. The assemblies of these solutions remain in the package except when they are actually in use, at which time they are temporarily installed to a folder on the server. For more information, see  [Where are Assemblies in Sandboxed Solutions Deployed?](http://msdn.microsoft.com/library/dadbb20b-1bf7-442c-9eeb-bd9f01dbda45%28Office.15%29.aspx).
+> Developing new sandboxed solutions against SharePoint 2013 is deprecated in favor of developing SharePoint Add-ins, but sandboxed solutions can still be installed to site collections on SharePoint 2013. The assemblies of these solutions remain in the package except when they are actually in use, at which time they are temporarily installed to a folder on the server. For more information, see  [Where are Assemblies in Sandboxed Solutions Deployed?](http://msdn.microsoft.com/library/dadbb20b-1bf7-442c-9eeb-bd9f01dbda45%28Office.15%29.aspx). 
   
     
     
@@ -254,7 +254,7 @@ For examples of using the .NET Framework object model, see  [Complete basic oper
     
 
 > [!NOTE]
-> You can also use the SharePoint REST/OData endpoints in a JavaScript application. For a comparison of the JavaScript client object model with SharePoint's REST/OData endpoints, see the following section,  [REST/OData endpoints](#RESTOData).
+> You can also use the SharePoint REST/OData endpoints in a JavaScript application. For a comparison of the JavaScript client object model with SharePoint's REST/OData endpoints, see the following section,  [REST/OData endpoints](#RESTOData). 
   
     
     
@@ -280,17 +280,17 @@ In some situations, it might be preferable to use the REST endpoints even in app
     
 
 
-|**Feature**|**.NET Framework or Silverlight object models**|**JavaScript object model**|**REST/OData endpoints called from a Windows platform or JavaScript**|
+|**Feature **|**.NET Framework or Silverlight object models **|**JavaScript object model **|**REST/OData endpoints called from a Windows platform or JavaScript **|
 |:-----|:-----|:-----|:-----|
-|Object-oriented programming <br/> |Yes <br/> |Yes <br/> |No <br/> |
-|Batch processing <br/> |Yes <br/> |Yes <br/> |Yes <br/> |
-|APIs for conditional processing and exception handling <br/> |Yes <br/> |No <br/> |No <br/> |
-|Availability of LINQ syntax <br/> |Yes <br/> |No <br/> |No <br/> |
-|Combining list data from different SharePoint web applications <br/> |Yes <br/> |No <br/> |Yes <br/> |
-|Familiarity to experienced REST/OData developers <br/> |No <br/> |No <br/> |Yes <br/> |
-|Similarity to non-Windows programming or JavaScript programming  <br/> |No <br/> |Yes <br/> |Yes <br/> |
-|Strong typing for list item fields <br/> |No (except with LINQ) <br/> |No <br/> |Yes, from Windows platform          No, from JavaScript <br/> |
-|Leveraging jQuery, Knockout, and other JavaScript libraries <br/> |No <br/> |Yes <br/> |No, from Windows platform          Yes, from JavaScript <br/> |
+|Object-oriented programming  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |
+|Batch processing  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |
+|APIs for conditional processing and exception handling  <br/> |Yes  <br/> |No  <br/> |No  <br/> |
+|Availability of LINQ syntax  <br/> |Yes  <br/> |No  <br/> |No  <br/> |
+|Combining list data from different SharePoint web applications  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |
+|Familiarity to experienced REST/OData developers  <br/> |No  <br/> |No  <br/> |Yes  <br/> |
+|Similarity to non-Windows programming or JavaScript programming  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |
+|Strong typing for list item fields  <br/> |No (except with LINQ)  <br/> |No  <br/> |Yes, from Windows platform          No, from JavaScript  <br/> |
+|Leveraging jQuery, Knockout, and other JavaScript libraries  <br/> |No  <br/> |Yes  <br/> |No, from Windows platform          Yes, from JavaScript  <br/> |
    
 
 ## WCF Data Services Framework

@@ -64,8 +64,8 @@ To create an application page that uses the JavaScript object model to work with
   
 7. In the **Layouts** folder, open the shortcut menu for theSocialFeedJSOM folder, and then add a new SharePoint application page namedSocialFeed.aspx.
     
-   > [!NOTE]
-   > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page.
+    > [!NOTE]
+      > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page. 
 8. Open the shortcut menu for the SocialFeed.aspx page, and then choose **Set as Startup Item**.
     
   
@@ -79,8 +79,8 @@ To create an application page that uses the JavaScript object model to work with
   ```
 
 
-   > [!NOTE]
-   > These controls may not be used in every scenario. For example, the "Publish posts and replies" scenario only uses the **span** control.
+    > [!NOTE]
+      > These controls may not be used in every scenario. For example, the "Publish posts and replies" scenario only uses the **span** control.
 10. After the closing **span** tag, add **SharePoint:ScriptLink** controls, a **SharePoint:FormDigest** control, and **script** tags, as shown in the following code. The **SharePoint:ScriptLink** tags reference the class library files that define the JavaScript object model that you can use for My Site Social development. The **SharePoint:FormDigest** tag generates a message digest for security validation when required by operations that update server content.
     
   ```HTML

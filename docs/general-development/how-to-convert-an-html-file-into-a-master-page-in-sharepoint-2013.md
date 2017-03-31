@@ -135,8 +135,8 @@ Before you convert an HTML file, you first have to upload all of your design fil
   
 5. In the **Select an Asset** dialog box, browse to and select the HTML file that you want to convert.
     
-   > [!NOTE]
-   > When you upload your design files, you should keep all files that are related to a single design in their own folder in the Master Page Gallery. When you copy your design folder into the mapped network drive, the Master Page Gallery retains whatever folder structure you created.
+    > [!NOTE]
+      > When you upload your design files, you should keep all files that are related to a single design in their own folder in the Master Page Gallery. When you copy your design folder into the mapped network drive, the Master Page Gallery retains whatever folder structure you created. 
 6. Choose **Insert**.
     
     At this point, SharePoint 2013 converts your HTML file into a .master file with the same name.

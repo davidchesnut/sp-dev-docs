@@ -34,7 +34,7 @@ When you save your site as a template, you create a Web Solution Package, or WSP
     
 
 > [!NOTE]
-> The WSP you create is a partial trust user solution that has the same declarative format as a full trust SharePoint solution. However, it does not support the full extent of feature element types that are supported by full trust solutions.
+> The WSP you create is a partial trust user solution that has the same declarative format as a full trust SharePoint solution. However, it does not support the full extent of feature element types that are supported by full trust solutions. 
   
     
     
@@ -56,8 +56,8 @@ Most of the objects in a site are included and supported by the template. Howeve
   
 - **Unsupported** Customized permissions, running workflow instances, list item version history, workflow tasks associated with running workflows, people or group field values, taxonomy field values, publishing pages and publishing sites, My Sites, stapled features, SharePoint Add-ins, and remote event receivers.
     
-   > [!NOTE]
-   > For publishing sites, you can use site definition templates. For more information, see  [Additional resources](save-download-and-upload-a-sharepoint-2013-site-as-a-template.md#bkmk_additionalresources) at the end of this topic.
+    > [!NOTE]
+      > For publishing sites, you can use site definition templates. For more information, see  [Additional resources](save-download-and-upload-a-sharepoint-2013-site-as-a-template.md#bkmk_additionalresources) at the end of this topic.
 
 ### What can you do with SharePoint templates?
 
@@ -115,8 +115,8 @@ After you add a site template to the solutions gallery and the template is activ
   
 6. To include the content of the site in the site template, select the **Include Content** box.
     
-   > [!NOTE]
-   > Including the content of the site can increase the size of the template significantly. The default size limit for a site template is 50 MB but might be less in your organization. You can always exclude the content, and then copy what you need later into the new site. Or, you can increase the size limit. For example, to increase the limit to the maximum allowed, use the following Stsadm command syntax.>  `stsadm -o setproperty -pn max-template-document-size -pv 524288000`
+    > [!NOTE]
+      > Including the content of the site can increase the size of the template significantly. The default size limit for a site template is 50 MB but might be less in your organization. You can always exclude the content, and then copy what you need later into the new site. Or, you can increase the size limit. For example, to increase the limit to the maximum allowed, use the following Stsadm command syntax. >  `stsadm -o setproperty -pn max-template-document-size -pv 524288000`
 7. Click **OK** to save the template.
     
     If all of the components on the site are valid, the template is created, and you see a message that states "Operation Completed Successfully."

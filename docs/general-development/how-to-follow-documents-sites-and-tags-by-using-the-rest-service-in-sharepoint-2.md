@@ -53,7 +53,7 @@ To perform Following Content tasks by using the REST API, you send HTTP **GET** 
   
 
 > [!NOTE]
-> You also use these endpoints for Following People tasks, but the **followers** and **suggestions** resources available from **SocialRestFollowingManager** only support following people, not content. For more information about how you can use **SocialRestFollowingManager**, see  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md).
+> You also use these endpoints for Following People tasks, but the **followers** and **suggestions** resources available from **SocialRestFollowingManager** only support following people, not content. For more information about how you can use **SocialRestFollowingManager**, see  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md). 
   
     
     
@@ -779,14 +779,14 @@ Table 1 shows **SocialFollowResult** status codes and their values.
 
 |||
 |:-----|:-----|
-|0|**OK**. The current user is now following the actor.|
-|1|**AlreadyFollowing**. The current user is already following the actor.|
-|2|**LimitReached**. The request failed because an internal limit was reached.|
-|3|**InternalError**. The request failed due to an internal error.|
+|0  <br/> |**OK**. The current user is now following the actor.  <br/> |
+|1  <br/> |**AlreadyFollowing**. The current user is already following the actor.  <br/> |
+|2  <br/> |**LimitReached**. The request failed because an internal limit was reached.  <br/> |
+|3  <br/> |**InternalError**. The request failed due to an internal error.  <br/> |
    
 
 > [!NOTE]
-> The REST service doesn't return a response for the **StopFollowing** request. It returns `{"d":{"StopFollowing":null}}`.
+> The REST service doesn't return a response for the **StopFollowing** request. It returns `{"d":{"StopFollowing":null}}`. 
   
     
     

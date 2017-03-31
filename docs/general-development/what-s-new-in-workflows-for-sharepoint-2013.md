@@ -102,27 +102,27 @@ Following are new workflow actions that are provided in SharePoint 2013. For a f
 **Table 1. New workflow actions in SharePoint 2013**
 
 
-|**Action**|**Description**|
+|**Action **|**Description **|
 |:-----|:-----|
-|Assign a Task <br/> |Assigns a single workflow task to a user or group. <br/> |
-|Start a Task Process <br/> |Initiates execution of a task process. <br/> |
-|Go to This Stage <br/> |Specifies the next stage in a workflow to which flow control should be handed. <br/> |
-|Call HTTP Web Service <br/> |Functions as a method call to a Representational State Transfer (REST) endpoint. <br/> |
-|Start a List Workflow <br/> |Starts a list-scoped workflow. <br/> |
-|Start a Site Workflow <br/> |Starts a site-scoped workflow. <br/> |
-|Build DynamicValue <br/> |Creates a new variable of type **DynamicValue**. <br/> |
-|Get Property from DynamicValue <br/> |Retrieves a property value from a specified variable of type **DynamicValue**. <br/> |
-|Count Items in DynamicValue <br/> |Returns the number of rows in a variable of type **DynamicValue**. <br/> |
-|Trim String <br/> |Removes all leading and trailing white-space characters from the current string. <br/> |
-|Find Substring in String <br/> |Returns 1-based index of the first occurrence of one or more characters, or the first occurrence of a string, within a string. <br/> |
-|Replace Substring in String <br/> |Returns a new string in which all occurrences of a specified character or string are replaced with another specified character or string. <br/> |
-|Translate Document <br/> |Functions as a wrapper around the HTTP activity that calls the synchronous translation API. You must configure a Machine Translation Service Application for the SharePoint site on which you run the workflow. <br/> |
-|Set Workflow Status <br/> |Updates workflow status as specified in message string. <br/> |
-|Create a Project from Current Item [Microsoft Project] <br/> |Creates a Project Server project based on the current item. <br/> |
-|Set the current project stage status to this value [Microsoft Project] <br/> |Sets the two status fields within the current stage of the project. <br/> |
-|Set the status field in the idea list item to this value [Microsoft Project] <br/> |Updates the status field of the original SharePoint list item. <br/> |
-|Wait for Project Event [Microsoft Project] <br/> |Pauses the current instance of the workflow to await a specified Project event: Project checked in, Project committed, Project submitted. <br/> |
-|Set this field in the project to this value [Microsoft Project] <br/> |Sets the value for the enterprise custom field for a specified project. <br/> |
+|Assign a Task  <br/> |Assigns a single workflow task to a user or group.  <br/> |
+|Start a Task Process  <br/> |Initiates execution of a task process.  <br/> |
+|Go to This Stage  <br/> |Specifies the next stage in a workflow to which flow control should be handed.  <br/> |
+|Call HTTP Web Service  <br/> |Functions as a method call to a Representational State Transfer (REST) endpoint.  <br/> |
+|Start a List Workflow  <br/> |Starts a list-scoped workflow.  <br/> |
+|Start a Site Workflow  <br/> |Starts a site-scoped workflow.  <br/> |
+|Build DynamicValue  <br/> |Creates a new variable of type **DynamicValue**.  <br/> |
+|Get Property from DynamicValue  <br/> |Retrieves a property value from a specified variable of type **DynamicValue**.  <br/> |
+|Count Items in DynamicValue  <br/> |Returns the number of rows in a variable of type **DynamicValue**.  <br/> |
+|Trim String  <br/> |Removes all leading and trailing white-space characters from the current string.  <br/> |
+|Find Substring in String  <br/> |Returns 1-based index of the first occurrence of one or more characters, or the first occurrence of a string, within a string.  <br/> |
+|Replace Substring in String  <br/> |Returns a new string in which all occurrences of a specified character or string are replaced with another specified character or string.  <br/> |
+|Translate Document  <br/> |Functions as a wrapper around the HTTP activity that calls the synchronous translation API. You must configure a Machine Translation Service Application for the SharePoint site on which you run the workflow.  <br/> |
+|Set Workflow Status  <br/> |Updates workflow status as specified in message string.  <br/> |
+|Create a Project from Current Item [Microsoft Project]  <br/> |Creates a Project Server project based on the current item.  <br/> |
+|Set the current project stage status to this value [Microsoft Project]  <br/> |Sets the two status fields within the current stage of the project.  <br/> |
+|Set the status field in the idea list item to this value [Microsoft Project]  <br/> |Updates the status field of the original SharePoint list item.  <br/> |
+|Wait for Project Event [Microsoft Project]  <br/> |Pauses the current instance of the workflow to await a specified Project event: Project checked in, Project committed, Project submitted.  <br/> |
+|Set this field in the project to this value [Microsoft Project]  <br/> |Sets the value for the enterprise custom field for a specified project.  <br/> |
    
 
 ## Additional resources

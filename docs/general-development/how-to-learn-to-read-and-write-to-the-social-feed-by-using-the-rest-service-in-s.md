@@ -37,7 +37,7 @@ If you're not using Napa on a Developer Site, you'll need the following:
   
 
 > [!NOTE]
-> For guidance about how to set up a development environment that fits your needs, see  [Start building apps for Office and SharePoint](http://msdn.microsoft.com/library/187f8c8c-1b15-471c-80b5-69a40e67deea.aspx).
+> For guidance about how to set up a development environment that fits your needs, see  [Start building apps for Office and SharePoint](http://msdn.microsoft.com/library/187f8c8c-1b15-471c-80b5-69a40e67deea.aspx). 
   
     
     
@@ -54,11 +54,11 @@ The SharePoint-hosted app that you create in this article uses JavaScript to bui
 **Table 1. Core concepts for working with SharePoint 2013 social feeds**
 
 
-|**Article title**|**Description**|
+|**Article title **|**Description **|
 |:-----|:-----|
-| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx)|Learn about SharePoint Add-ins and fundamental concepts for building them.|
-| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)|Find out how to start programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.|
-| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)|Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.|
+| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx) <br/> |Learn about SharePoint Add-ins and fundamental concepts for building them.  <br/> |
+| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md) <br/> |Find out how to start programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.  <br/> |
+| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md) <br/> |Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.  <br/> |
    
 
 ## Create the SharePoint Add-in project

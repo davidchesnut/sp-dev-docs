@@ -40,7 +40,7 @@ The following steps show how to:
   
 
 > [!NOTE]
-> Repeat the steps to copy Microsoft.Office.Excel.WebUI.Internal.dll from the global assembly cache to a folder.
+> Repeat the steps to copy Microsoft.Office.Excel.WebUI.Internal.dll from the global assembly cache to a folder. 
   
     
     
@@ -59,8 +59,8 @@ The following steps show how to:
   
 3. Use the **cd** command to navigate to the "C:\\Windows\\assembly" directory:
     
-   > [!NOTE]
-   > The directory structure on your computer might be slightly different. This example uses a computer that has Windows Server 2008 installed.
+    > [!NOTE]
+      > The directory structure on your computer might be slightly different. This example uses a computer that has Windows Server 2008 installed. 
 
   ```
   

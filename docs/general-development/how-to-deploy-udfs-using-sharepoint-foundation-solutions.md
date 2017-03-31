@@ -26,8 +26,8 @@ The procedure for creating and deploying a UDF assembly by using SharePoint Foun
     
     The solution manifest (always called Manifest.xml) is stored at the root of a solution file. This file defines the list of features, site definitions, resource files, Web Part files, and assemblies to be processed. It does not define the file structure; if files are included in a solution but not listed in the manifest XML file, they are not processed in any way.
     
-   > [!NOTE]
-   > For more information about the structure of the manifest XML file, see the SharePoint Foundation documentation.
+    > [!NOTE]
+      > For more information about the structure of the manifest XML file, see the SharePoint Foundation documentation. 
 2. Package the UDF assembly and Manifest.xml into a CAB file.
     
   
@@ -90,8 +90,8 @@ For more information on how to enable UDFs and add UDFs to the trusted UDF list,
   ```
 
 
-   > [!NOTE]
-   > You should generate a unique GUID for each solution. For more information about **Solution** element, see the SharePoint Foundation [Solutions and Web Part Packages](http://msdn.microsoft.com/library/a145a5eb-fbb6-4328-b5b3-96bf5ce89a19%28Office.15%29.aspx) (http://msdn.microsoft.com/en-us/library/ms413687.aspx).
+    > [!NOTE]
+      > You should generate a unique GUID for each solution. For more information about **Solution** element, see the SharePoint Foundation [Solutions and Web Part Packages](http://msdn.microsoft.com/library/a145a5eb-fbb6-4328-b5b3-96bf5ce89a19%28Office.15%29.aspx) (http://msdn.microsoft.com/en-us/library/ms413687.aspx).
 
 ### To create a solution package
 
@@ -124,11 +124,11 @@ For more information on how to enable UDFs and add UDFs to the trusted UDF list,
     
     stsadm.exe -o addsolution -filename <pathtoCAB>
     
-   > [!NOTE]
-   > You can find the Stsadm.exe at: > C:\\Program Files\\Common Files\\Microsoft Shared\\web server extensions\\12\\BIN.
+    > [!NOTE]
+      > You can find the Stsadm.exe at: > C:\\Program Files\\Common Files\\Microsoft Shared\\web server extensions\\12\\BIN. 
 
-   > [!NOTE]
-   > For more information about Stsadm.exe command options, see the  [Stsadm to Windows PowerShell Mapping (SharePoint Foundation 2010)](http://technet.microsoft.com/en-us/library/ff621081.aspx) (http://technet.microsoft.com/en-us/library/ff621081.aspx).
+    > [!NOTE]
+      > For more information about Stsadm.exe command options, see the  [Stsadm to Windows PowerShell Mapping (SharePoint Foundation 2010)](http://technet.microsoft.com/en-us/library/ff621081.aspx) (http://technet.microsoft.com/en-us/library/ff621081.aspx).
 
   
     

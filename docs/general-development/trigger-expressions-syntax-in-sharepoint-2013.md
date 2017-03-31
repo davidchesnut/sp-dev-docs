@@ -32,7 +32,7 @@ Elements that can be used in a trigger expression are:
   
 
 > [!NOTE]
-> The string " **Null**" is reserved for the value **Null**.
+> The string " **Null**" is reserved for the value **Null**. 
   
     
     
@@ -49,14 +49,14 @@ Table 1 describes the operators supported by the trigger expression language, wi
 **Table 1. Supported operators for trigger expression syntax**
 
 
-|**Category**|**Expression**|**Description**|
+|**Category **|**Expression **|**Description **|
 |:-----|:-----|:-----|
-|Unary|-!, NOT|Arithmetic negationLogical negation|
-|Multiplicative|*/%, mod|MultiplicationDivisionRemainder|
-|Additive|+-&amp;|AdditionSubtractionString concatenation|
-|Relational|=, ==!=, <><><=>=|EqualityInequalityLess thanGreater thanLess than or equalGreater than or equal|
-|Logical AND|&amp;&amp;, AND|Logical AND|
-|Logical OR|||, OR|Logical OR|
+|Unary  <br/> |-  <br/> !, NOT  <br/> |Arithmetic negation  <br/> Logical negation  <br/> |
+|Multiplicative  <br/> |*  <br/> /  <br/> %, mod  <br/> |Multiplication  <br/> Division  <br/> Remainder  <br/> |
+|Additive  <br/> |+  <br/> -  <br/> &amp;  <br/> |Addition  <br/> Subtraction  <br/> String concatenation  <br/> |
+|Relational  <br/> |=, ==  <br/> !=, <>  <br/> <  <br/> >  <br/> <=  <br/> >=  <br/> |Equality  <br/> Inequality  <br/> Less than  <br/> Greater than  <br/> Less than or equal  <br/> Greater than or equal  <br/> |
+|Logical AND  <br/> |&amp;&amp;, AND  <br/> |Logical AND  <br/> |
+|Logical OR  <br/> |||, OR  <br/> |Logical OR  <br/> |
    
 
 ## Managed property access in trigger expressions
@@ -236,9 +236,9 @@ There are two sets of constants that can be used with specific functions: **Date
 **Table 2. Trigger expression constants and usage in SharePoint 2013**
 
 
-|**Group of constants**|**Examples**|**Usage**|
+|**Group of constants **|**Examples **|**Usage **|
 |:-----|:-----|:-----|
-|**DatePartConstant** <br/> |**Day**, **Month**, **Year**, **Hour**, **Minute**, **Second**. <br/> |With the **GetDatePart** function <br/> |
+|**DatePartConstant** <br/> |**Day**, **Month**, **Year**, **Hour**, **Minute**, **Second**.  <br/> |With the **GetDatePart** function <br/> |
 |**RegexOptionConstant** <br/> |**IgnoreCase** <br/> |With the **IsMatch**, **Match**, **ReplaceRegex**, and **IndexOfRegex** functions. <br/> |
    
 

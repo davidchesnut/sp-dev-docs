@@ -54,9 +54,9 @@ The following table describes each element in the URL.
 
 |** **URL element****|** **Description****|
 |:-----|:-----|
-| _server_ <br/> |The name of the server on which Microsoft SharePoint Server 2010 is deployed. <br/> |
-| _customsite_ <br/> |A custom SharePoint Server 2010 site that the server administrator creates. <br/> |
-| _<endpointname>.asmx_ <br/> |The name of the Web service endpoint. For Excel Web Services, it is  `ExcelService.asmx`. <br/> |
+| _server_ <br/> |The name of the server on which Microsoft SharePoint Server 2010 is deployed.  <br/> |
+| _customsite_ <br/> |A custom SharePoint Server 2010 site that the server administrator creates.  <br/> |
+| _<endpointname>.asmx_ <br/> |The name of the Web service endpoint. For Excel Web Services, it is  `ExcelService.asmx`.  <br/> |
    
 For more information about the WSDL format, see the World Wide Web Consortium (W3C) WSDL specification at http://www.w3.org/TR/wsdl.
   

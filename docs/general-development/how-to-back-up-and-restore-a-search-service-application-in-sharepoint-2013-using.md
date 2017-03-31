@@ -17,10 +17,10 @@ To program a backup and restore solution for SharePoint 2013, you need to unders
 **Table 1. Core concepts for backing up and restoring SharePoint with the Volume Shadow Copy Service**
 
 
-|**Article**|**Description**|
+|**Article **|**Description **|
 |:-----|:-----|
-| [Volume Shadow Copy Service](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx) and its child articles.|Learn about the VSS and how to program for it.|
-| [Windows SharePoint Services and the Volume Shadow Copy Service](http://msdn.microsoft.com/library/adae101a-078e-40b9-9cfa-db2cfb10270a%28Office.15%29.aspx) and its child articles.|Overview information and step-by-step, how-to procedures for backing up and restoring SharePoint 2013 data using the VSS and the SharePoint interface with VSS.|
+| [Volume Shadow Copy Service](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx) and its child articles. <br/> |Learn about the VSS and how to program for it.  <br/> |
+| [Windows SharePoint Services and the Volume Shadow Copy Service](http://msdn.microsoft.com/library/adae101a-078e-40b9-9cfa-db2cfb10270a%28Office.15%29.aspx) and its child articles. <br/> |Overview information and step-by-step, how-to procedures for backing up and restoring SharePoint 2013 data using the VSS and the SharePoint interface with VSS.  <br/> |
    
 
 ## Use the Volume Shadow Copy Service to back up and restore a search service application
@@ -36,7 +36,7 @@ The following procedures are intended to help developers with creating a backup/
     
 
 > [!TIP]
-> For details about the Windows PowerShell cmdlets mentioned in this article, see  [Windows PowerShell for SharePoint 2013 reference](http://technet.microsoft.com/en-us/library/ee890108.aspx).
+> For details about the Windows PowerShell cmdlets mentioned in this article, see  [Windows PowerShell for SharePoint 2013 reference](http://technet.microsoft.com/en-us/library/ee890108.aspx). 
   
     
     
@@ -85,24 +85,24 @@ The following procedures are intended to help developers with creating a backup/
 
 2. Replace the 10 placeholders in this file with appropriate values from the writer.txt file that you generated in the first step. Use the following table as a guide. 
     
-   > [!NOTE]
-   > In the right-hand column,  _SSA_ is itself a placeholder for the name of the Search Service Application.
+    > [!NOTE]
+      > In the right-hand column,  _SSA_ is itself a placeholder for the name of the Search Service Application.
 
    **Table 2. SSA manifest file placeholders and values from writers.txt**
 
 
-|**Placeholder**|**Where the information is located in writers.txt.**|
+|**Placeholder **|**Where the information is located in writers.txt. **|
 |:-----|:-----|
-| _SharePoint Services Writer ID_|The WriterId GUID listed under the "SharePoint Services Writer" entry|
-| _PathSSA_|The logical path entry listed with the name of the Search Service Application in the "SharePoint Services Writer" entry|
-| _PathC_|The logical path entry listed for the component named " _SSA__CrawlStore" in the "SharePoint Services Writer" entry|
-| _PathA_|The logical path entry listed for the component named " _SSA_ _AnalyticsReportingStore" in the "SharePoint Services Writer" entry|
-| _PathL_|The logical path entry listed for the component named " _SSA__LinksStore" in the "SharePoint Services Writer" entry|
-| _SQL Server Writer ID_|The WriterId GUID listed under the "SqlServerWriter" entry|
-| _PathDbSSA_|The logical path entry listed for the component with the name of the Search Service Application in the "SqlServerWriter" entry|
-| _PathDbC_|The logical path entry listed for the component named " _SSA__CrawlStore" in the "SqlServerWriter" entry |
-| _PathDbA_|The logical path entry listed for the component named " _SSA__AnalyticsReportingStore" in the "SqlServerWriter" entry|
-| _PathDbL_|The logical path entry listed for the component named " _SSA__LinksStore" in the "SqlServerWriter" entry|
+| _SharePoint Services Writer ID_ <br/> |The WriterId GUID listed under the "SharePoint Services Writer" entry  <br/> |
+| _PathSSA_ <br/> |The logical path entry listed with the name of the Search Service Application in the "SharePoint Services Writer" entry  <br/> |
+| _PathC_ <br/> |The logical path entry listed for the component named " _SSA__CrawlStore" in the "SharePoint Services Writer" entry  <br/> |
+| _PathA_ <br/> |The logical path entry listed for the component named " _SSA_ _AnalyticsReportingStore" in the "SharePoint Services Writer" entry <br/> |
+| _PathL_ <br/> |The logical path entry listed for the component named " _SSA__LinksStore" in the "SharePoint Services Writer" entry  <br/> |
+| _SQL Server Writer ID_ <br/> |The WriterId GUID listed under the "SqlServerWriter" entry  <br/> |
+| _PathDbSSA_ <br/> |The logical path entry listed for the component with the name of the Search Service Application in the "SqlServerWriter" entry  <br/> |
+| _PathDbC_ <br/> |The logical path entry listed for the component named " _SSA__CrawlStore" in the "SqlServerWriter" entry  <br/> |
+| _PathDbA_ <br/> |The logical path entry listed for the component named " _SSA__AnalyticsReportingStore" in the "SqlServerWriter" entry  <br/> |
+| _PathDbL_ <br/> |The logical path entry listed for the component named " _SSA__LinksStore" in the "SqlServerWriter" entry  <br/> |
    
 
     This is the SSA manifest file. For an example of a completed SSA manifest file, see  [Example manifest files](#Examples).
@@ -129,14 +129,14 @@ The following procedures are intended to help developers with creating a backup/
    **Table 3. Search index manifest file placeholders and values from writer.txt**
 
 
-|**Placeholder**|**Where the information is located in writers.txt**|
+|**Placeholder **|**Where the information is located in writers.txt **|
 |:-----|:-----|
-| _SharePoint Services Writer ID_|The WriterId GUID listed under the "SharePoint Services Writer" entry|
-| _PathIndex_|The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry|
-| _NameIndex_|The name entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry|
-| _OSearch15 Writer ID_|The WriterId GUID listed under the "OSearch15 VSS Writer" entry|
-| _PathOSearch15_|The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry. It is normally empty.|
-| _IndexComponentGroup_|The name entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry|
+| _SharePoint Services Writer ID_ <br/> |The WriterId GUID listed under the "SharePoint Services Writer" entry  <br/> |
+| _PathIndex_ <br/> |The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry  <br/> |
+| _NameIndex_ <br/> |The name entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry  <br/> |
+| _OSearch15 Writer ID_ <br/> |The WriterId GUID listed under the "OSearch15 VSS Writer" entry  <br/> |
+| _PathOSearch15_ <br/> |The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry. It is normally empty.  <br/> |
+| _IndexComponentGroup_ <br/> |The name entry listed for the component whose name starts with "IndexComponentGroup" in the "OSearch15 VSS Writer" entry  <br/> |
    
 
     This is the search index manifest file. For an example of a completed search index manifest file, see  [Example manifest files](#Examples).
@@ -201,8 +201,8 @@ betest.exe /v /r /d "destination backup folder" /s "backup log file" /x SSA_mani
 
 3. On the same server, open a SharePoint Management Shell and execute the following lines to restore the SSA, where  _application pool name_ is the name of the new pool, _domain\\user_ is the domain name of the user that the application pool logs in as, _name of the search service application_ is the name of the SSA, and _topology_file_name_ is the path and name of the typology file you created when the SSA was backed up.
     
-   > [!TIP]
-   > This code creates a new application pool identity to run the restored SSA, but you can also use an existing account with the **Get-SPServiceApplicationPool** cmdlet.
+    > [!TIP]
+      > This code creates a new application pool identity to run the restored SSA, but you can also use an existing account with the **Get-SPServiceApplicationPool** cmdlet.
 
   ```
   $applicationPool = New-SPServiceApplicationPool -name "application pool name" -account "domain\\user"

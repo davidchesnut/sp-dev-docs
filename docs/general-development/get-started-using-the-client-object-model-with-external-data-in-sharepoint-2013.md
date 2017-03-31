@@ -13,7 +13,7 @@ Learn how to use the SharePoint 2013 client object model to work with Business C
 
 |||
 |:-----|:-----|
-|The client object model for SharePoint 2013 is a set of client-based libraries that represent the server object model. They are packaged in three different DLLs to accommodate a variety of development types. The client object model includes most of the major functions of the server API. This allows access to the same types of functionality from browser scripting and also .NET web applications and Silverlight applications.To enhance and expand the capabilities for working with external data, Business Connectivity Services (BCS) has expanded the client object model to include additional functionality. [![Get set up](images/mod_icon_getstartbox.gif)          ](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md#BCScsom_getstarted) [![Get to work](images/mod_icon_dobox.gif)          ](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md#BCScsom_Tasks) [![Learn more](images/mod_icon_startbox.gif)          ](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md#BCScsom_Learnmore)||
+|The client object model for SharePoint 2013 is a set of client-based libraries that represent the server object model. They are packaged in three different DLLs to accommodate a variety of development types. The client object model includes most of the major functions of the server API. This allows access to the same types of functionality from browser scripting and also .NET web applications and Silverlight applications.  <br/> To enhance and expand the capabilities for working with external data, Business Connectivity Services (BCS) has expanded the client object model to include additional functionality.  <br/>  [![Get set up](images/mod_icon_getstartbox.gif)          ](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md#BCScsom_getstarted) [![Get to work](images/mod_icon_dobox.gif)          ](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md#BCScsom_Tasks) [![Learn more](images/mod_icon_startbox.gif)          ](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md#BCScsom_Learnmore) <br/> ||
    
 
 ## Get started using the SharePoint 2013 client object model with external data
@@ -59,13 +59,13 @@ The following articles will help you understand more about the client object mod
 **Table 1. Core concepts for understanding the client object model**
 
 
-|**Article**|**Description**|
+|**Article **|**Description **|
 |:-----|:-----|
-| [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md)|Learn what you can do with external content types and what you need to start creating them in SharePoint 2013.|
-| [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md)|Provides information to help get started creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.|
-| [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)|Learn about the several sets of APIs that are provided in SharePoint 2013, including the server object model, the various client object models, and the REST/OData web service.|
-| [.NET client API reference for SharePoint Online](http://msdn.microsoft.com/library/88e5e1b9-eab2-4f3b-a3f2-75c96b86f1f4%28Office.15%29.aspx)|Find information about the .NET client class libraries in SharePoint 2013.|
-| [JavaScript API reference for SharePoint 2013](http://msdn.microsoft.com/library/1ead2f8d-a541-4a50-89fa-f195f2ba14e5%28Office.15%29.aspx)|Find information about the JavaScript object libraries in SharePoint 2013.|
+| [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md) <br/> |Learn what you can do with external content types and what you need to start creating them in SharePoint 2013.  <br/> |
+| [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |Provides information to help get started creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.  <br/> |
+| [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md) <br/> |Learn about the several sets of APIs that are provided in SharePoint 2013, including the server object model, the various client object models, and the REST/OData web service.  <br/> |
+| [.NET client API reference for SharePoint Online](http://msdn.microsoft.com/library/88e5e1b9-eab2-4f3b-a3f2-75c96b86f1f4%28Office.15%29.aspx) <br/> |Find information about the .NET client class libraries in SharePoint 2013.  <br/> |
+| [JavaScript API reference for SharePoint 2013](http://msdn.microsoft.com/library/1ead2f8d-a541-4a50-89fa-f195f2ba14e5%28Office.15%29.aspx) <br/> |Find information about the JavaScript object libraries in SharePoint 2013.  <br/> |
    
 
 ## What can you do with the client object model?
@@ -83,10 +83,10 @@ See the articles in Table 2 for more information about what you can do with the 
 **Table 2. Basic tasks for using the client object model with external data**
 
 
-|**Task**|**Description**|
+|**Task **|**Description **|
 |:-----|:-----|
-| [Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)|Learn how to write code to perform basic operations with the SharePoint 2013 client object model.|
-| [How to: Use the client code library to access external data in SharePoint 2013](how-to-use-the-client-code-library-to-access-external-data-in-sharepoint-2013.md)|Learn how to use the SharePoint 2013 client object model to work with SharePoint BCS objects using browser-based scripting.|
+| [Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx) <br/> |Learn how to write code to perform basic operations with the SharePoint 2013 client object model.  <br/> |
+| [How to: Use the client code library to access external data in SharePoint 2013](how-to-use-the-client-code-library-to-access-external-data-in-sharepoint-2013.md) <br/> |Learn how to use the SharePoint 2013 client object model to work with SharePoint BCS objects using browser-based scripting.  <br/> |
    
 The following are some basic examples of tasks you can accomplish using CSOM.
   
@@ -203,9 +203,9 @@ For more information about using the client object model in SharePoint 2013, see
 **Table 3. Advanced concepts for the client object model**
 
 
-|**Article**|**Description**|
+|**Article **|**Description **|
 |:-----|:-----|
-| [BCS client object model reference for SharePoint 2013](bcs-client-object-model-reference-for-sharepoint-2013.md) <br/> |Summarizes the objects available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by BCS. <br/> |
+| [BCS client object model reference for SharePoint 2013](bcs-client-object-model-reference-for-sharepoint-2013.md) <br/> |Summarizes the objects available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by BCS.  <br/> |
    
 
 ## Additional resources

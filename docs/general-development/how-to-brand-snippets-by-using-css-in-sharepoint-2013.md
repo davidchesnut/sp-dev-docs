@@ -20,7 +20,7 @@ After you copy a snippet into the HTML file in your mapped drive and then save t
     
 
 > [!NOTE]
-> For more information about mapping a network drive, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md).
+> For more information about mapping a network drive, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md). 
   
     
     

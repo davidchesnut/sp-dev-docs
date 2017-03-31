@@ -1,6 +1,6 @@
 ---
 title: Step 4 Building and Testing the Application
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: f2feeecb-1b4c-4049-be4e-11d414f13d9f
 ---
 
@@ -31,8 +31,8 @@ In this step, you will build and test your application. Visual Studio offers sev
   
 2. The application prints the following output to the console.
     
-   > [!NOTE]
-   > These values vary depending on the values you have in your workbook, session ID, and so on.
+    > [!NOTE]
+      > These values vary depending on the values you have in your workbook, session ID, and so on. 
 
   ```
   

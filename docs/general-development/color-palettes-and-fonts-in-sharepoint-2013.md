@@ -104,97 +104,97 @@ Table 1 describes the color slots that are available and where color slots are u
 **Table 1. Color slots**
 
 
-|**Annotation Name**|**Where the Color Is Used in the UI**|**Token Name**|
+|**Annotation Name **|**Where the Color Is Used in the UI **|**Token Name **|
 |:-----|:-----|:-----|
-|BodyText|Normal body text.|[T_THEME_COLOR_BODYTEXT]|
-|SubtleBodyText|Body text that must be lighter than normal. An example is metadata text.|[T_THEME_COLOR_SUBTLEBODYTEXT]|
-|StrongBodyText|Body text color for text that must stand out from normal body text.|[T_THEME_COLOR_STRONGBODYTEXT]|
-|DisabledText|Disabled text. For example, unavailable items in menus.|[T_THEME_COLOR_DISABLEDTEXT]|
-|SiteTitle|The text color of the page title.|[T_THEME_COLOR_SITETITLE]|
-|WebPartHeading|Text color for Web Part headings.|[T_THEME_COLOR_WEBPARTHEADING]|
-|ErrorText|The main error color that is used for error text, borders, and backgrounds, as needed.|[T_THEME_COLOR_ERRORTEXT]|
-|AccentText|Text color for accented body text.|[T_THEME_COLOR_ACCENTTEXT]|
-|SearchURL|Text color for the URL found in search results. Also used to highlight new items or successful status notifications.|[T_THEME_COLOR_SEARCHURL]|
-|Hyperlink|Text color for hyperlinks.|[T_THEME_COLOR_HYPERLINK]|
-|HyperlinkFollowed|Text color for followed hyperlinks.|[T_THEME_COLOR_HYPERLINKFOLLOWED]|
-|HyperlinkActive|Hyperlink color when pressed.|[T_THEME_COLOR_HYPERLINKACTIVE]|
-|CommandLinks|Large command links that must be a bit lighter than body text because of their size.|[T_THEME_COLOR_COMMANDLINKS]|
-|CommandLinksSecondary|Command link color for links that are smaller, and therefore have a stronger color to stand out.|[T_THEME_COLOR_COMMANDLINKSSECONDARY]|
-|CommandLinksHover|Command link color on hover.|[T_THEME_COLOR_COMMANDLINKSHOVER]|
-|CommandLinksPressed|Command link color when pressed.|[T_THEME_COLOR_COMMANDLINKSPRESSED]|
-|CommandLinksDisabled|Command link color when command link is disabled.|[T_THEME_COLOR_COMMANDLINKSDISABLED]|
-|BackgroundOverlay|The main background color that is visible between the optional background image and the page content.|[T_THEME_COLOR_BACKGROUNDOVERLAY]|
-|DisabledBackground|Background for disabled elements such as browser controls, for example, input box or select box (except buttons).|[T_THEME_COLOR_DISABLEDBACKGROUND]|
-|PageBackground|The background color of the page. Appears behind the optional background image.|[T_THEME_COLOR_PAGEBACKGROUND]|
-|HeaderBackground|The background color for the header area of the page.|[T_THEME_COLOR_HEADERBACKGROUND]|
-|FooterBackground|The background color for the footer area of the page.|[T_THEME_COLOR_FOOTERBACKGROUND]|
-|SelectionBackground|The background color for selected list items and drop-down menu items.|[T_THEME_COLOR_SELECTIONBACKGROUND]|
-|HoverBackground|The background color for list items and drop-down menu items on hover.|[T_THEME_COLOR_HOVERBACKGROUND]|
-|RowAccent|The accented left border on selected list items.|[T_THEME_COLOR_ROWACCENT]|
-|StrongLines|Borders for browser controls on hover.|[T_THEME_COLOR_STRONGLINES]|
-|Lines|Borders for browser controls.|[T_THEME_COLOR_LINES]|
-|SubtleLines|Subtle border color. For example, gridlines for inline editing.|[T_THEME_COLOR_SUBTLELINES]|
-|DisabledLines|Border color for disabled browser controls such as input boxes and select boxes.|[T_THEME_COLOR_DISABLEDLINES]|
-|AccentLines|Focused border color for selected browser controls.|[T_THEME_COLOR_ACCENTLINES]|
-|DialogBorder|Dialog box border color.|[T_THEME_COLOR_DIALOGBORDER]|
-|Navigation|Text color for horizontal and vertical navigation items.|[T_THEME_COLOR_NAVIGATION]|
-|NavigationAccent|Text color for a selected horizontal navigation item.|[T_THEME_COLOR_NAVIGATIONACCENT]|
-|NavigationHover|Navigation text color on hover. Applies to top navigation, and to Quick Launch in horizontal mode.|[T_THEME_COLOR_NAVIGATIONHOVER]|
-|NavigationPressed|Text color of navigation item when pressed. Applies to top navigation, and to Quick Launch in horizontal mode.|[T_THEME_COLOR_NAVIGATIONPRESSED]|
-|NavigationHoverBackground|Background color of Quick Launch items in vertical mode on hover over the navigation item.|[T_THEME_COLOR_NAVIGATIONHOVERBACKGROUND]|
-|NavigationSelectedBackground|Background color of Quick Launch items in vertical mode after the navigation item is selected.|[T_THEME_COLOR_NAVIGATIONSELECTEDBACKGROUND]|
-|EmphasisText|The text color that appears on top of emphasis background.|[T_THEME_COLOR_EMPHASISTEXT]|
-|EmphasisBackground|The accented background color that appears directly behind emphasis text.|[T_THEME_COLOR_EMPHASISBACKGROUND]|
-|EmphasisHoverBackground|Background color on hover, for elements that are using emphasis background.|[T_THEME_COLOR_EMPHASISHOVERBACKGROUND]|
-|EmphasisBorder|Border color for elements that are using emphasis background.|[T_THEME_COLOR_EMPHASISBORDER]|
-|EmphasisHoverBorder|Border color on hover for elements that are using emphasis background.|[T_THEME_COLOR_EMPHASISHOVERBORDER]|
-|SubtleEmphasisText|Text that appears on top of subtle emphasis background.|[T_THEME_COLOR_SUBTLEEMPHASISTEXT]|
-|SubtleEmphasisCommandLinks|Command link color for links that appear on top of subtle emphasis background.|[T_THEME_COLOR_SUBTLEEMPHASISCOMMANDLINKS]|
-|SubtleEmphasisBackground|Background that appears directly behind subtle emphasis text.|[T_THEME_COLOR_SUBTLEEMPHASISBACKGROUND]|
-|TopBarText|Text and glyph color for the welcome menu, quick access toolbar icons, and closed ribbon tabs.|[T_THEME_COLOR_TOPBARTEXT]|
-|TopBarBackground|The background color for the top bar, which is seen below and to the right of the suite navigation.|[T_THEME_COLOR_TOPBARBACKGROUND]|
-|TopBarHoverText|Text and glyph color on hover for the welcome menu, quick access toolbar icons, and closed ribbon tabs.|[T_THEME_COLOR_TOPBARHOVERTEXT]|
-|TopBarPressedText|Text and glyph color for when the welcome menu, quick access toolbar icons, or closed ribbon tabs are pressed.|[T_THEME_COLOR_TOPBARPRESSEDTEXT]|
-|HeaderText|The base text color for anything in the header area.|[T_THEME_COLOR_HEADERTEXT]|
-|HeaderSubtleText|Helper text for the search box when in the header area.|[T_THEME_COLOR_HEADERSUBTLETEXT]|
-|HeaderDisableText|Text for the search box, if the search box is disabled when in the header area.|[T_THEME_COLOR_HEADERDISABLETEXT]|
-|HeaderNavigationText|Base text color for navigation links in the header area.|[T_THEME_COLOR_HEADERNAVIGATIONTEXT]|
-|HeaderNavigationHoverText|Text color for navigation links in the header area when you hover over the link.|[T_THEME_COLOR_HEADERNAVIGATIONHOVERTEXT]|
-|HeaderNavigationPressedText|Text color for navigation links in the header area when you press the link.|[T_THEME_COLOR_HEADERNAVIGATIONPRESSEDTEXT]|
-|HeaderNavigationSelectedText|Text color for navigation links in the header area after the link is selected.|[T_THEME_COLOR_HEADERNAVIGATIONSELECTEDTEXT]|
-|HeaderLines|Search box lines when the search box is in the header area.|[T_THEME_COLOR_HEADERLINES]|
-|HeaderStrongLines|Search box lines on hover when the search box is in the header area.|[T_THEME_COLOR_HEADERSTRONGLINES]|
-|HeaderAccentLines|Search box lines on focus when the search box is in the header area.|[T_THEME_COLOR_HEADERACCENTLINES]|
-|HeaderSublteLines|Subtle lines found inside the header area. Not used in default CSS.|[T_THEME_COLOR_HEADERSUBTLELINES]|
-|HeaderDisabledLines|Search box lines if the search box is disabled when it's in the header area.|[T_THEME_COLOR_HEADERDISABLEDLINES]|
-|HeaderDisabledBackground|Search box background if the search box is disabled when it's in the header area.|[T_THEME_COLOR_HEADERDISABLEDBACKGROUND]|
-|HeaderFlyoutBorder|Border for drop-down menus when originating from the header area.|[T_THEME_COLOR_HEADERFLYOUTBORDER]|
-|HeaderSiteTitle|Text color for the site title when in the header area.|[T_THEME_COLOR_HEADERSITETITLE]|
-|SuiteBarBackground|Background color for the suite navigation.|[T_THEME_COLOR_SUITEBARBACKGROUND]|
-|SuiteBarHoverBackground|Background color on hover for the suite navigation.|[T_THEME_COLOR_SUITEBARHOVERBACKGROUND]|
-|SuiteBarText|Text and glyph color for the suite navigation items.|[T_THEME_COLOR_SUITEBARTEXT]|
-|SuiteBarDisabledText|Text and glyph color for disabled suite items. Not used in default CSS.|[T_THEME_COLOR_SUITEBARDISABLEDTEXT]|
-|ButtonText|Text color for buttons.|[T_THEME_COLOR_BUTTONTEXT]|
-|ButtonDisabledText|Text color for disabled buttons.|[T_THEME_COLOR_BUTTONDISABLEDTEXT]|
-|ButtonBackground|Background color for buttons.|[T_THEME_COLOR_BUTTONBACKGROUND]|
-|ButtonHoverBackground|Background color for buttons on hover.|[T_THEME_COLOR_BUTTONHOVERBACKGROUND]|
-|ButtonPressedBackground|Background color for buttons while pressed.|[T_THEME_COLOR_BUTTONPRESSEDBACKGROUND]|
-|ButtonDisabledBackground|Background color for disabled buttons.|[T_THEME_COLOR_BUTTONDISABLEDBACKGROUND]|
-|ButtonBorder|Border color for buttons.|[T_THEME_COLOR_BUTTONBORDER]|
-|ButtonHoverBorder|Border color for buttons on hover.|[T_THEME_COLOR_BUTTONHOVERBORDER]|
-|ButtonPressedBorder|Border color for buttons while pressed.|[T_THEME_COLOR_BUTTONPRESSEDBORDER]|
-|ButtonDisabledBorder|Border color for buttons that are disabled.|[T_THEME_COLOR_BUTTONDISABLEDBORDER]|
-|ButtonGlyph|Glyph color for a glyph that appears in a button.|[T_THEME_COLOR_BUTTONGLYPH]|
-|ButtonGlyphActive|Glyph color on hover, for a glyph that appears in a button.|[T_THEME_COLOR_BUTTONGLYPHACTIVE]|
-|ButtonGlyphDisabled|Glyph color for a disabled button.|[T_THEME_COLOR_BUTTONGLYPHDISABLED]|
-|TileText|The text that appears on top of the tile background overlay.|[T_THEME_COLOR_TILETEXT]|
-|TileBackgroundOverlay|The background overlay color for tiles.|[T_THEME_COLOR_TILEBACKGROUNDOVERLAY]|
-|ContentAccent1|The first accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT1]|
-|ContentAccent2|The second accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT2]|
-|ContentAccent3|The third accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT3]|
-|ContentAccent4|The fourth accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT4]|
-|ContentAccent5|The fifth accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT5]|
-|ContentAccent6|The sixth accent color that a user can select from the Rich Text Editor color picker.|[T_THEME_COLOR_CONTENTACCENT6]|
+|BodyText  <br/> |Normal body text.  <br/> |[T_THEME_COLOR_BODYTEXT]  <br/> |
+|SubtleBodyText  <br/> |Body text that must be lighter than normal. An example is metadata text.  <br/> |[T_THEME_COLOR_SUBTLEBODYTEXT]  <br/> |
+|StrongBodyText  <br/> |Body text color for text that must stand out from normal body text.  <br/> |[T_THEME_COLOR_STRONGBODYTEXT]  <br/> |
+|DisabledText  <br/> |Disabled text. For example, unavailable items in menus.  <br/> |[T_THEME_COLOR_DISABLEDTEXT]  <br/> |
+|SiteTitle  <br/> |The text color of the page title.  <br/> |[T_THEME_COLOR_SITETITLE]  <br/> |
+|WebPartHeading  <br/> |Text color for Web Part headings.  <br/> |[T_THEME_COLOR_WEBPARTHEADING]  <br/> |
+|ErrorText  <br/> |The main error color that is used for error text, borders, and backgrounds, as needed.  <br/> |[T_THEME_COLOR_ERRORTEXT]  <br/> |
+|AccentText  <br/> |Text color for accented body text.  <br/> |[T_THEME_COLOR_ACCENTTEXT]  <br/> |
+|SearchURL  <br/> |Text color for the URL found in search results. Also used to highlight new items or successful status notifications.  <br/> |[T_THEME_COLOR_SEARCHURL]  <br/> |
+|Hyperlink  <br/> |Text color for hyperlinks.  <br/> |[T_THEME_COLOR_HYPERLINK]  <br/> |
+|HyperlinkFollowed  <br/> |Text color for followed hyperlinks.  <br/> |[T_THEME_COLOR_HYPERLINKFOLLOWED]  <br/> |
+|HyperlinkActive  <br/> |Hyperlink color when pressed.  <br/> |[T_THEME_COLOR_HYPERLINKACTIVE]  <br/> |
+|CommandLinks  <br/> |Large command links that must be a bit lighter than body text because of their size.  <br/> |[T_THEME_COLOR_COMMANDLINKS]  <br/> |
+|CommandLinksSecondary  <br/> |Command link color for links that are smaller, and therefore have a stronger color to stand out.  <br/> |[T_THEME_COLOR_COMMANDLINKSSECONDARY]  <br/> |
+|CommandLinksHover  <br/> |Command link color on hover.  <br/> |[T_THEME_COLOR_COMMANDLINKSHOVER]  <br/> |
+|CommandLinksPressed  <br/> |Command link color when pressed.  <br/> |[T_THEME_COLOR_COMMANDLINKSPRESSED]  <br/> |
+|CommandLinksDisabled  <br/> |Command link color when command link is disabled.  <br/> |[T_THEME_COLOR_COMMANDLINKSDISABLED]  <br/> |
+|BackgroundOverlay  <br/> |The main background color that is visible between the optional background image and the page content.  <br/> |[T_THEME_COLOR_BACKGROUNDOVERLAY]  <br/> |
+|DisabledBackground  <br/> |Background for disabled elements such as browser controls, for example, input box or select box (except buttons).  <br/> |[T_THEME_COLOR_DISABLEDBACKGROUND]  <br/> |
+|PageBackground  <br/> |The background color of the page. Appears behind the optional background image.  <br/> |[T_THEME_COLOR_PAGEBACKGROUND]  <br/> |
+|HeaderBackground  <br/> |The background color for the header area of the page.  <br/> |[T_THEME_COLOR_HEADERBACKGROUND]  <br/> |
+|FooterBackground  <br/> |The background color for the footer area of the page.  <br/> |[T_THEME_COLOR_FOOTERBACKGROUND]  <br/> |
+|SelectionBackground  <br/> |The background color for selected list items and drop-down menu items.  <br/> |[T_THEME_COLOR_SELECTIONBACKGROUND]  <br/> |
+|HoverBackground  <br/> |The background color for list items and drop-down menu items on hover.  <br/> |[T_THEME_COLOR_HOVERBACKGROUND]  <br/> |
+|RowAccent  <br/> |The accented left border on selected list items.  <br/> |[T_THEME_COLOR_ROWACCENT]  <br/> |
+|StrongLines  <br/> |Borders for browser controls on hover.  <br/> |[T_THEME_COLOR_STRONGLINES]  <br/> |
+|Lines  <br/> |Borders for browser controls.  <br/> |[T_THEME_COLOR_LINES]  <br/> |
+|SubtleLines  <br/> |Subtle border color. For example, gridlines for inline editing.  <br/> |[T_THEME_COLOR_SUBTLELINES]  <br/> |
+|DisabledLines  <br/> |Border color for disabled browser controls such as input boxes and select boxes.  <br/> |[T_THEME_COLOR_DISABLEDLINES]  <br/> |
+|AccentLines  <br/> |Focused border color for selected browser controls.  <br/> |[T_THEME_COLOR_ACCENTLINES]  <br/> |
+|DialogBorder  <br/> |Dialog box border color.  <br/> |[T_THEME_COLOR_DIALOGBORDER]  <br/> |
+|Navigation  <br/> |Text color for horizontal and vertical navigation items.  <br/> |[T_THEME_COLOR_NAVIGATION]  <br/> |
+|NavigationAccent  <br/> |Text color for a selected horizontal navigation item.  <br/> |[T_THEME_COLOR_NAVIGATIONACCENT]  <br/> |
+|NavigationHover  <br/> |Navigation text color on hover. Applies to top navigation, and to Quick Launch in horizontal mode.  <br/> |[T_THEME_COLOR_NAVIGATIONHOVER]  <br/> |
+|NavigationPressed  <br/> |Text color of navigation item when pressed. Applies to top navigation, and to Quick Launch in horizontal mode.  <br/> |[T_THEME_COLOR_NAVIGATIONPRESSED]  <br/> |
+|NavigationHoverBackground  <br/> |Background color of Quick Launch items in vertical mode on hover over the navigation item.  <br/> |[T_THEME_COLOR_NAVIGATIONHOVERBACKGROUND]  <br/> |
+|NavigationSelectedBackground  <br/> |Background color of Quick Launch items in vertical mode after the navigation item is selected.  <br/> |[T_THEME_COLOR_NAVIGATIONSELECTEDBACKGROUND]  <br/> |
+|EmphasisText  <br/> |The text color that appears on top of emphasis background.  <br/> |[T_THEME_COLOR_EMPHASISTEXT]  <br/> |
+|EmphasisBackground  <br/> |The accented background color that appears directly behind emphasis text.  <br/> |[T_THEME_COLOR_EMPHASISBACKGROUND]  <br/> |
+|EmphasisHoverBackground  <br/> |Background color on hover, for elements that are using emphasis background.  <br/> |[T_THEME_COLOR_EMPHASISHOVERBACKGROUND]  <br/> |
+|EmphasisBorder  <br/> |Border color for elements that are using emphasis background.  <br/> |[T_THEME_COLOR_EMPHASISBORDER]  <br/> |
+|EmphasisHoverBorder  <br/> |Border color on hover for elements that are using emphasis background.  <br/> |[T_THEME_COLOR_EMPHASISHOVERBORDER]  <br/> |
+|SubtleEmphasisText  <br/> |Text that appears on top of subtle emphasis background.  <br/> |[T_THEME_COLOR_SUBTLEEMPHASISTEXT]  <br/> |
+|SubtleEmphasisCommandLinks  <br/> |Command link color for links that appear on top of subtle emphasis background.  <br/> |[T_THEME_COLOR_SUBTLEEMPHASISCOMMANDLINKS]  <br/> |
+|SubtleEmphasisBackground  <br/> |Background that appears directly behind subtle emphasis text.  <br/> |[T_THEME_COLOR_SUBTLEEMPHASISBACKGROUND]  <br/> |
+|TopBarText  <br/> |Text and glyph color for the welcome menu, quick access toolbar icons, and closed ribbon tabs.  <br/> |[T_THEME_COLOR_TOPBARTEXT]  <br/> |
+|TopBarBackground  <br/> |The background color for the top bar, which is seen below and to the right of the suite navigation.  <br/> |[T_THEME_COLOR_TOPBARBACKGROUND]  <br/> |
+|TopBarHoverText  <br/> |Text and glyph color on hover for the welcome menu, quick access toolbar icons, and closed ribbon tabs.  <br/> |[T_THEME_COLOR_TOPBARHOVERTEXT]  <br/> |
+|TopBarPressedText  <br/> |Text and glyph color for when the welcome menu, quick access toolbar icons, or closed ribbon tabs are pressed.  <br/> |[T_THEME_COLOR_TOPBARPRESSEDTEXT]  <br/> |
+|HeaderText  <br/> |The base text color for anything in the header area.  <br/> |[T_THEME_COLOR_HEADERTEXT]  <br/> |
+|HeaderSubtleText  <br/> |Helper text for the search box when in the header area.  <br/> |[T_THEME_COLOR_HEADERSUBTLETEXT]  <br/> |
+|HeaderDisableText  <br/> |Text for the search box, if the search box is disabled when in the header area.  <br/> |[T_THEME_COLOR_HEADERDISABLETEXT]  <br/> |
+|HeaderNavigationText  <br/> |Base text color for navigation links in the header area.  <br/> |[T_THEME_COLOR_HEADERNAVIGATIONTEXT]  <br/> |
+|HeaderNavigationHoverText  <br/> |Text color for navigation links in the header area when you hover over the link.  <br/> |[T_THEME_COLOR_HEADERNAVIGATIONHOVERTEXT]  <br/> |
+|HeaderNavigationPressedText  <br/> |Text color for navigation links in the header area when you press the link.  <br/> |[T_THEME_COLOR_HEADERNAVIGATIONPRESSEDTEXT]  <br/> |
+|HeaderNavigationSelectedText  <br/> |Text color for navigation links in the header area after the link is selected.  <br/> |[T_THEME_COLOR_HEADERNAVIGATIONSELECTEDTEXT]  <br/> |
+|HeaderLines  <br/> |Search box lines when the search box is in the header area.  <br/> |[T_THEME_COLOR_HEADERLINES]  <br/> |
+|HeaderStrongLines  <br/> |Search box lines on hover when the search box is in the header area.  <br/> |[T_THEME_COLOR_HEADERSTRONGLINES]  <br/> |
+|HeaderAccentLines  <br/> |Search box lines on focus when the search box is in the header area.  <br/> |[T_THEME_COLOR_HEADERACCENTLINES]  <br/> |
+|HeaderSublteLines  <br/> |Subtle lines found inside the header area. Not used in default CSS.  <br/> |[T_THEME_COLOR_HEADERSUBTLELINES]  <br/> |
+|HeaderDisabledLines  <br/> |Search box lines if the search box is disabled when it's in the header area.  <br/> |[T_THEME_COLOR_HEADERDISABLEDLINES]  <br/> |
+|HeaderDisabledBackground  <br/> |Search box background if the search box is disabled when it's in the header area.  <br/> |[T_THEME_COLOR_HEADERDISABLEDBACKGROUND]  <br/> |
+|HeaderFlyoutBorder  <br/> |Border for drop-down menus when originating from the header area.  <br/> |[T_THEME_COLOR_HEADERFLYOUTBORDER]  <br/> |
+|HeaderSiteTitle  <br/> |Text color for the site title when in the header area.  <br/> |[T_THEME_COLOR_HEADERSITETITLE]  <br/> |
+|SuiteBarBackground  <br/> |Background color for the suite navigation.  <br/> |[T_THEME_COLOR_SUITEBARBACKGROUND]  <br/> |
+|SuiteBarHoverBackground  <br/> |Background color on hover for the suite navigation.  <br/> |[T_THEME_COLOR_SUITEBARHOVERBACKGROUND]  <br/> |
+|SuiteBarText  <br/> |Text and glyph color for the suite navigation items.  <br/> |[T_THEME_COLOR_SUITEBARTEXT]  <br/> |
+|SuiteBarDisabledText  <br/> |Text and glyph color for disabled suite items. Not used in default CSS.  <br/> |[T_THEME_COLOR_SUITEBARDISABLEDTEXT]  <br/> |
+|ButtonText  <br/> |Text color for buttons.  <br/> |[T_THEME_COLOR_BUTTONTEXT]  <br/> |
+|ButtonDisabledText  <br/> |Text color for disabled buttons.  <br/> |[T_THEME_COLOR_BUTTONDISABLEDTEXT]  <br/> |
+|ButtonBackground  <br/> |Background color for buttons.  <br/> |[T_THEME_COLOR_BUTTONBACKGROUND]  <br/> |
+|ButtonHoverBackground  <br/> |Background color for buttons on hover.  <br/> |[T_THEME_COLOR_BUTTONHOVERBACKGROUND]  <br/> |
+|ButtonPressedBackground  <br/> |Background color for buttons while pressed.  <br/> |[T_THEME_COLOR_BUTTONPRESSEDBACKGROUND]  <br/> |
+|ButtonDisabledBackground  <br/> |Background color for disabled buttons.  <br/> |[T_THEME_COLOR_BUTTONDISABLEDBACKGROUND]  <br/> |
+|ButtonBorder  <br/> |Border color for buttons.  <br/> |[T_THEME_COLOR_BUTTONBORDER]  <br/> |
+|ButtonHoverBorder  <br/> |Border color for buttons on hover.  <br/> |[T_THEME_COLOR_BUTTONHOVERBORDER]  <br/> |
+|ButtonPressedBorder  <br/> |Border color for buttons while pressed.  <br/> |[T_THEME_COLOR_BUTTONPRESSEDBORDER]  <br/> |
+|ButtonDisabledBorder  <br/> |Border color for buttons that are disabled.  <br/> |[T_THEME_COLOR_BUTTONDISABLEDBORDER]  <br/> |
+|ButtonGlyph  <br/> |Glyph color for a glyph that appears in a button.  <br/> |[T_THEME_COLOR_BUTTONGLYPH]  <br/> |
+|ButtonGlyphActive  <br/> |Glyph color on hover, for a glyph that appears in a button.  <br/> |[T_THEME_COLOR_BUTTONGLYPHACTIVE]  <br/> |
+|ButtonGlyphDisabled  <br/> |Glyph color for a disabled button.  <br/> |[T_THEME_COLOR_BUTTONGLYPHDISABLED]  <br/> |
+|TileText  <br/> |The text that appears on top of the tile background overlay.  <br/> |[T_THEME_COLOR_TILETEXT]  <br/> |
+|TileBackgroundOverlay  <br/> |The background overlay color for tiles.  <br/> |[T_THEME_COLOR_TILEBACKGROUNDOVERLAY]  <br/> |
+|ContentAccent1  <br/> |The first accent color that a user can select from the Rich Text Editor color picker.  <br/> |[T_THEME_COLOR_CONTENTACCENT1]  <br/> |
+|ContentAccent2  <br/> |The second accent color that a user can select from the Rich Text Editor color picker.  <br/> |[T_THEME_COLOR_CONTENTACCENT2]  <br/> |
+|ContentAccent3  <br/> |The third accent color that a user can select from the Rich Text Editor color picker.  <br/> |[T_THEME_COLOR_CONTENTACCENT3]  <br/> |
+|ContentAccent4  <br/> |The fourth accent color that a user can select from the Rich Text Editor color picker.  <br/> |[T_THEME_COLOR_CONTENTACCENT4]  <br/> |
+|ContentAccent5  <br/> |The fifth accent color that a user can select from the Rich Text Editor color picker.  <br/> |[T_THEME_COLOR_CONTENTACCENT5]  <br/> |
+|ContentAccent6  <br/> |The sixth accent color that a user can select from the Rich Text Editor color picker.  <br/> |[T_THEME_COLOR_CONTENTACCENT6]  <br/> |
    
 
 ## Font schemes
@@ -246,8 +246,8 @@ In an .spfont file, the following placeholders are replaced:
   
 -  _LatinScriptFont_ is the font to use for Latin scripts. This font is also the fallback font. That is, this is the font that is used for a language that does not have a script that is explicitly set in the font scheme.
     
-   > [!NOTE]
-   > You must provide additional information to use web fonts in your font scheme. For more information, see the  [Web fonts](#webFont) section in this article.
+    > [!NOTE]
+      > You must provide additional information to use web fonts in your font scheme. For more information, see the  [Web fonts](#webFont) section in this article.
 -  _EAScriptFont_ is the font to use for East Asia scripts. The **<s:ea>** element is not currently used by SharePoint. But, the **<s:ea>** element is still required in the font scheme.
     
   
@@ -394,15 +394,15 @@ Table 1 describes the available font slots and where they are used in a page.
 **Table 1. Font slots**
 
 
-|**Font Slot Name**|**Description**|
+|**Font Slot Name **|**Description **|
 |:-----|:-----|
-|title <br/> |Used for the page title. <br/> |
-|navigation <br/> |Used for the horizontal and vertical navigation elements on the page. <br/> |
-|large-heading <br/> |Used for the H1 heading. <br/> |
-|heading <br/> |Used for H2 and H3 headings, Web Part titles, dialog box titles, and callout titles. <br/> |
-|small-heading <br/> |Used for H4 headings. <br/> |
-|large-body <br/> |Used for large body text (15 pixels and 19 pixels). <br/> |
-|body <br/> |The base font that is used everywhere else on the page. <br/> |
+|title  <br/> |Used for the page title.  <br/> |
+|navigation  <br/> |Used for the horizontal and vertical navigation elements on the page.  <br/> |
+|large-heading  <br/> |Used for the H1 heading.  <br/> |
+|heading  <br/> |Used for H2 and H3 headings, Web Part titles, dialog box titles, and callout titles.  <br/> |
+|small-heading  <br/> |Used for H4 headings.  <br/> |
+|large-body  <br/> |Used for large body text (15 pixels and 19 pixels).  <br/> |
+|body  <br/> |The base font that is used everywhere else on the page.  <br/> |
    
 
 ## Additional resources

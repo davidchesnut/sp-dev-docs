@@ -60,7 +60,7 @@ To accommodate this, two stereotypes have been added to the schema of the BDC mo
     
 
 > [!NOTE]
-> Event receivers are not supported in sandboxed solutions.
+> Event receivers are not supported in sandboxed solutions. 
   
     
     
@@ -376,11 +376,11 @@ Table 1 lists the important attributes of the BDC model that are needed to make 
 **Table 1. BDC model attributes**
 
 
-|**Attribute**|**Description**|
+|**Attribute **|**Description **|
 |:-----|:-----|
-|**IsDeliveryAddress**|A **Boolean** flag used on a **TypeDescriptor** to indicate whether the delivery address provided is to be used to deliver notifications.|
-|**IsEventType**|A **Boolean** flag used on a **TypeDescriptor** to indicate whether the event type provided is to be used as the event type. Valid event types are **ItemAdded**, **ItemUpdated**, **ItemDeleted**, and so on.|
-|**SubscriptionIdName**|A string used on a **TypeDescriptor** that represents the name of a **subscriptionId** part.|
+|**IsDeliveryAddress** <br/> |A **Boolean** flag used on a **TypeDescriptor** to indicate whether the delivery address provided is to be used to deliver notifications. <br/> |
+|**IsEventType** <br/> |A **Boolean** flag used on a **TypeDescriptor** to indicate whether the event type provided is to be used as the event type. Valid event types are **ItemAdded**, **ItemUpdated**, **ItemDeleted**, and so on.  <br/> |
+|**SubscriptionIdName** <br/> |A string used on a **TypeDescriptor** that represents the name of a **subscriptionId** part. <br/> |
    
 
 ## Notifications
@@ -442,7 +442,7 @@ In constructing the notification, the LOB system has to create an HTTP payload t
   
 
 > [!NOTE]
-> The full item is only supported when you use the OData connector.
+> The full item is only supported when you use the OData connector. 
   
     
     
@@ -643,9 +643,9 @@ For more information about external events and alerts, see the following.
 **Table 2. Advanced concepts for working with external event receivers**
 
 
-|**Article**|**Description**|
+|**Article **|**Description **|
 |:-----|:-----|
-| [How to: Create an OData data service for use as a BCS external system](how-to-create-an-odata-data-service-for-use-as-a-bcs-external-system.md) <br/> |Learn how to create an Internet-addressable Windows Communication Foundation (WCF) service that uses OData to send notifications to SharePoint 2013 when the underlying data changes. These notifications are used to trigger events that are attached to external lists. <br/> |
+| [How to: Create an OData data service for use as a BCS external system](how-to-create-an-odata-data-service-for-use-as-a-bcs-external-system.md) <br/> |Learn how to create an Internet-addressable Windows Communication Foundation (WCF) service that uses OData to send notifications to SharePoint 2013 when the underlying data changes. These notifications are used to trigger events that are attached to external lists.  <br/> |
    
 
 ## Additional resources

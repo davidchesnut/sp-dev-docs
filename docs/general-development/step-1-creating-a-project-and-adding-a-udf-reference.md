@@ -1,6 +1,6 @@
 ---
 title: Step 1 Creating a Project and Adding a UDF Reference
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 4c6f1279-28df-45af-8488-42a6573d526d
 ---
 
@@ -21,7 +21,7 @@ The following project uses Microsoft Visual Studio 2005.
     
 
 > [!NOTE]
-> Depending on which settings you use in the Visual Studio integrated development environment (IDE), the process to create a project could be slightly different.
+> Depending on which settings you use in the Visual Studio integrated development environment (IDE), the process to create a project could be slightly different. 
   
     
     
@@ -96,12 +96,12 @@ The following steps show how to locate Microsoft.Office.Excel.Server.Udf.dll and
   
 2. In the **Add Reference** dialog box, on the **.NET** tab, select **Excel Services UDF Framework**.
     
-   > [!NOTE]
-   > You can also open the **Add Reference** dialog box in **Solution Explorer** by right-clicking **References** and selecting **Add Reference**. 
+    > [!NOTE]
+      > You can also open the **Add Reference** dialog box in **Solution Explorer** by right-clicking **References** and selecting **Add Reference**. 
 3. Click **OK**.
     
-   > [!NOTE]
-   > The previous steps assume that you are building the project on a computer that has Microsoft SharePoint Server 2010 installed. On the computer where you have installed SharePoint Server 2010, you can find a copy of Microsoft.Office.Excel.Server.Udf.dll at:> [drive:]\\Program Files\\Common Files\\Microsoft Shared\\web server extensions\\14\\ISAPI
+    > [!NOTE]
+      > The previous steps assume that you are building the project on a computer that has Microsoft SharePoint Server 2010 installed. On the computer where you have installed SharePoint Server 2010, you can find a copy of Microsoft.Office.Excel.Server.Udf.dll at: > [drive:]\\Program Files\\Common Files\\Microsoft Shared\\web server extensions\\14\\ISAPI 
 
 ## See also
 

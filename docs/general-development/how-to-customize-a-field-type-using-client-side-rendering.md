@@ -46,10 +46,10 @@ The following table lists useful articles that can help you understand the conce
 **Table 1. Core concepts for client-side rendering for field types**
 
 
-|**Article title**|**Description**|
+|**Article title **|**Description **|
 |:-----|:-----|
-| [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint-2013.md)|Learn about developing, packaging, and deploying administrative extensions to SharePoint 2013 using farm solutions.|
-| [Custom Field Types](http://msdn.microsoft.com/en-us/library/ms446361.aspx)|Learn about creating custom field types. As you store your business information in SharePoint 2013, there may be times when your data does not conform to the field types that are available in SharePoint FoundationOr, you might just want to customize those field types. Custom fields can include custom data validation and custom field rendering. |
+| [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint-2013.md) <br/> |Learn about developing, packaging, and deploying administrative extensions to SharePoint 2013 using farm solutions.  <br/> |
+| [Custom Field Types](http://msdn.microsoft.com/en-us/library/ms446361.aspx) <br/> |Learn about creating custom field types. As you store your business information in SharePoint 2013, there may be times when your data does not conform to the field types that are available in SharePoint FoundationOr, you might just want to customize those field types. Custom fields can include custom data validation and custom field rendering.  <br/> |
    
 
 ## Code example: Customize the rendering process for a custom field type in a view form
@@ -135,8 +135,8 @@ Figure 1 shows a view form with a custom-rendered field type.
   
   - Overrides the **JSLink** property.
     
-   > [!NOTE]
-   > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list.
+    > [!NOTE]
+      > The JSLink property is not supported on Survey or Events lists. A SharePoint calendar is an Events list. 
 
   ```cs
   
@@ -305,8 +305,8 @@ function favoriteColorViewTemplate(ctx) {
 
 1. Press the F5 key.
     
-   > [!NOTE]
-   > When you press F5, Visual Studio builds the solution, deploys the solution, and opens the SharePoint website where the solution is deployed.
+    > [!NOTE]
+      > When you press F5, Visual Studio builds the solution, deploys the solution, and opens the SharePoint website where the solution is deployed. 
 2. Create a custom list and add a new Favorite color field column.
     
   
@@ -329,9 +329,9 @@ function favoriteColorViewTemplate(ctx) {
 ****
 
 
-|**Problem**|**Solution**|
+|**Problem **|**Solution **|
 |:-----|:-----|
-|Field type **FavoriteColorField** is not installed properly. Go to the list settings page to delete this field.|Execute the following command from an elevated command prompt: **iisreset /noforce**.> [!CAUTION]> If you are deploying the solution to a production environment, wait for an appropriate time to reset the web server using **iisreset /noforce**.          |
+|Field type **FavoriteColorField** is not installed properly. Go to the list settings page to delete this field. <br/> |Execute the following command from an elevated command prompt: **iisreset /noforce**. <br/> > [!CAUTION]> If you are deploying the solution to a production environment, wait for an appropriate time to reset the web server using **iisreset /noforce**.          |
    
 
 ## Next steps

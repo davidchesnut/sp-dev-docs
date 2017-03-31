@@ -1,6 +1,6 @@
 ---
 title: How to Set Various Credentials
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: eb819681-5a4f-49ae-b7f4-334366c51112
 ---
 

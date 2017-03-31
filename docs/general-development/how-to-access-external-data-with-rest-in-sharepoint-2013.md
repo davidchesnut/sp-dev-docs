@@ -47,11 +47,11 @@ The SharePoint 2013 REST service provides a way to access external data using a 
 **Table 1. Core concepts for REST in SharePoint 2013**
 
 
-|**Article title**|**Description**|
+|**Article title **|**Description **|
 |:-----|:-----|
-| [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx)|Learn how to use the SharePoint 2013 REST service, which provides a REST programming interface comparable to the existing client object model.|
-| [Get to know the SharePoint 2013 REST service](http://msdn.microsoft.com/library/2de035a0-ac75-43bd-9665-5c5a59c4c590%28Office.15%29.aspx)|Get the basics of using the SharePoint 2013 REST service to access and update SharePoint data, using the REST and OData web protocol standards.|
-| [Using the SharePoint 2013 REST service](http://msdn.microsoft.com/library/e1ff2979-1c16-4cb0-a57e-9168dfe20a7c.aspx)|Learn how to navigate the SharePoint 2013 data structure as it is represented in the REST service, perform common CRUD (create, read, update, and delete) operations on SharePoint items via the REST service, synchronize SharePoint items across applications, and control item concurrency.|
+| [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx) <br/> |Learn how to use the SharePoint 2013 REST service, which provides a REST programming interface comparable to the existing client object model.  <br/> |
+| [Get to know the SharePoint 2013 REST service](http://msdn.microsoft.com/library/2de035a0-ac75-43bd-9665-5c5a59c4c590%28Office.15%29.aspx) <br/> |Get the basics of using the SharePoint 2013 REST service to access and update SharePoint data, using the REST and OData web protocol standards.  <br/> |
+| [Using the SharePoint 2013 REST service](http://msdn.microsoft.com/library/e1ff2979-1c16-4cb0-a57e-9168dfe20a7c.aspx) <br/> |Learn how to navigate the SharePoint 2013 data structure as it is represented in the REST service, perform common CRUD (create, read, update, and delete) operations on SharePoint items via the REST service, synchronize SharePoint items across applications, and control item concurrency.  <br/> |
    
 
 ## Create an SharePoint Add-in to access external data using REST

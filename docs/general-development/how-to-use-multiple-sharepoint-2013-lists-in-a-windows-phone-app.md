@@ -14,7 +14,7 @@ You can use multiple SharePoint lists in your app in several ways. When you crea
 
 
 > [!IMPORTANT]
-> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7.> For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md).
+> If you are developing an app for Windows Phone 8, you must use Visual Studio Express 2012 instead of Visual Studio 2010 Express. Except for the development environment, all information in this article applies to creating apps for both Windows Phone 8 and Windows Phone 7. > For more information, see  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md). 
   
     
     
@@ -205,15 +205,15 @@ Suppose, as in the preceding section, that you have a SharePoint list, Marketing
 **Table 1. Columns and fields for Orders list**
 
 
-|**Column**|**Field Type**|**Required**|
+|**Column **|**Field Type **|**Required **|
 |:-----|:-----|:-----|
-|Product (i.e., Title)|Single line of text (Text)|Yes|
-|Unit Price|Currency|Yes|
-|Quantity|Number|No (defaults to zero)|
-|Order Value|Calculated (Unit Price * Quantity)|No|
-|Order Date|Date and Time (Datetime)|No|
-|Order Status|Choice|No|
-|Customer|Single line of text (Text)|No|
+|Product (i.e., Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
+|Unit Price  <br/> |Currency  <br/> |Yes  <br/> |
+|Quantity  <br/> |Number  <br/> |No (defaults to zero)  <br/> |
+|Order Value  <br/> |Calculated (Unit Price * Quantity)  <br/> |No  <br/> |
+|Order Date  <br/> |Date and Time (Datetime)  <br/> |No  <br/> |
+|Order Status  <br/> |Choice  <br/> |No  <br/> |
+|Customer  <br/> |Single line of text (Text)  <br/> |No  <br/> |
    
 As in the example in the preceding section, you can instantiate a separate **ListDataProvider** object and another **ListViewModel** object to manage the Orders list. Assume that the instantiated **ListDataProvider** object is named **OrdersListDataProvider**, as in the following code.
   
@@ -381,12 +381,12 @@ Assume for the following procedures that you have a SharePoint list named Orders
 **Table 2. Columns and fields for Customers list**
 
 
-|**Column**|**Field Type**|**Required**|
+|**Column **|**Field Type **|**Required **|
 |:-----|:-----|:-----|
-|Customer Name (i.e., Title)|Single line of text (Text)|Yes|
-|Contact Number|Single line of text (Text)|No|
-|E-mail Address|Single line of text (Text)|No|
-|Company|Single line of text (Text)|No|
+|Customer Name (i.e., Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
+|Contact Number  <br/> |Single line of text (Text)  <br/> |No  <br/> |
+|E-mail Address  <br/> |Single line of text (Text)  <br/> |No  <br/> |
+|Company  <br/> |Single line of text (Text)  <br/> |No  <br/> |
    
 In the following procedures, you create a Windows Phone app that uses both of these lists. The primary list in the app is the Customers list. When you display the details for a given customer in the Display form, a button is included on the form that allows users to display all the orders (from the Orders list) associated with that customer.
   

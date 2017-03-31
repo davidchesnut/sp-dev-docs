@@ -37,7 +37,7 @@ You can access external data by constructing URLs just as you would to access st
     
 
 > [!NOTE]
-> Access to entities through the BDC directly is not provided. To work with external data, you must create an external list and use the REST URLs to access the list items contained in the external list.
+> Access to entities through the BDC directly is not provided. To work with external data, you must create an external list and use the REST URLs to access the list items contained in the external list. 
   
     
     
@@ -58,14 +58,14 @@ The information in Table 1 shows how to construct RESTful URLs and the correspon
 **Table 1. RESTful URL formats for accessing external data**
 
 
-|**URL**|**Description**|**HTTP method**|
+|**URL **|**Description **|**HTTP method **|
 |:-----|:-----|:-----|
-| `http://[sharepointsite]/_api`|The base of any REST request. The _api virtual directory is mapped to call into client.svc, where the client object model can be used.|GET|
-| `http://[sharepointsite]/_api/web/title`|Retrieves the title of the current web.|GET|
-| `http://[sharepointsite]/_api/lists`|Retrieves all lists on a site.|GET|
-| `http://[sharepointsite]/_api/lists/getbytitle('listname')`|Retrieves the metadata for a specified list.|GET|
-| `http://[sharepointsite]/_api/lists/getbytitle('listname')/items`|Retrieves the list items in a specified list.|GET|
-| `http://[sharepointsite]/_api/lists/getbytitle('listname')?select=Title`|Retrieves the title of a specific list.|GET|
+| `http://[sharepointsite]/_api` <br/> |The base of any REST request. The _api virtual directory is mapped to call into client.svc, where the client object model can be used.  <br/> |GET  <br/> |
+| `http://[sharepointsite]/_api/web/title` <br/> |Retrieves the title of the current web.  <br/> |GET  <br/> |
+| `http://[sharepointsite]/_api/lists` <br/> |Retrieves all lists on a site.  <br/> |GET  <br/> |
+| `http://[sharepointsite]/_api/lists/getbytitle('listname')` <br/> |Retrieves the metadata for a specified list.  <br/> |GET  <br/> |
+| `http://[sharepointsite]/_api/lists/getbytitle('listname')/items` <br/> |Retrieves the list items in a specified list.  <br/> |GET  <br/> |
+| `http://[sharepointsite]/_api/lists/getbytitle('listname')?select=Title` <br/> |Retrieves the title of a specific list.  <br/> |GET  <br/> |
    
 
 ## Constructing query strings for filtering data
@@ -79,10 +79,10 @@ In order to limit the amount of data returned, or make it more relevant to the u
 **Table 2. Operators for filtering data**
 
 
-|**Operator**||
+|**Operator **||
 |:-----|:-----|
-|EQ|Equals> [!NOTE]> When you use **EQ** to filter, the filter criteria are passed to the external system where the filtering happens on the server.          |
-|GT|Greater Than> [!NOTE]> When you use the **GT** operator, only client-side filtering is executed.> For example:  `web/lists/getByTitle('ListName')/Items?$select=Title&amp;$filter=AverageRating gt 3` returns all titles with an average rating over 3.          |
+|EQ  <br/> |Equals  <br/> > [!NOTE]> When you use **EQ** to filter, the filter criteria are passed to the external system where the filtering happens on the server.          |
+|GT  <br/> |Greater Than  <br/> > [!NOTE]> When you use the **GT** operator, only client-side filtering is executed.> For example:  `web/lists/getByTitle('ListName')/Items?$select=Title&amp;$filter=AverageRating gt 3` returns all titles with an average rating over 3.          |
    
 
 > [!NOTE]

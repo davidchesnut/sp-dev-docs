@@ -48,11 +48,11 @@ The following articles provide information about SharePoint Add-ins and other ba
 **Table 1. Core concepts for external lists**
 
 
-|**Article title**|**Description**|
+|**Article title **|**Description **|
 |:-----|:-----|
-| [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint-2013.md)|Learn about Business Connectivity Services and how you can expose external data in SharePoint 2013.|
-| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx)|Learn about the new app model in SharePoint 2013 that enables you to create apps, which are small, easy-to-use solutions for end users.|
-| [Choose patterns for developing and hosting your SharePoint Add-in](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457%28Office.15%29.aspx)|Learn about the different ways that you can host SharePoint Add-ins.|
+| [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |Learn about Business Connectivity Services and how you can expose external data in SharePoint 2013.  <br/> |
+| [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx) <br/> |Learn about the new app model in SharePoint 2013 that enables you to create apps, which are small, easy-to-use solutions for end users.  <br/> |
+| [Choose patterns for developing and hosting your SharePoint Add-in](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457%28Office.15%29.aspx) <br/> |Learn about the different ways that you can host SharePoint Add-ins.  <br/> |
    
 
 ## Create a new external list

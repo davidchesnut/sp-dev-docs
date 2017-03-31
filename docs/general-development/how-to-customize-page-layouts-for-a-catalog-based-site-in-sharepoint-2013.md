@@ -36,12 +36,12 @@ Table 1 lists useful articles that can help you understand the concepts and step
 **Table 1. Core concepts for creating and customizing page layouts for a catalog-based site**
 
 
-|**Article title**|**Description**|
+|**Article title **|**Description **|
 |:-----|:-----|
-| [Overview of cross-site publishing in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj635883.aspx)|Learn about how to use cross-site publishing and Search Web Parts to create adaptive SharePoint Internet, intranet, and extranet sites.|
-| [How to: Create a page layout in SharePoint 2013](how-to-create-a-page-layout-in-sharepoint-2013.md)|Learn about how to create page layouts in SharePoint Server 2013.|
-| [How to: Resolve errors and warnings when previewing a page in SharePoint 2013](how-to-resolve-errors-and-warnings-when-previewing-a-page-in-sharepoint-2013.md)|Learn about how to resolve any issues that prevent the server-side preview from rendering your page.|
-| [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md)|Learn about how to use snippets to add SharePoint functionality to your HTML master page or page layout.|
+| [Overview of cross-site publishing in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj635883.aspx) <br/> |Learn about how to use cross-site publishing and Search Web Parts to create adaptive SharePoint Internet, intranet, and extranet sites.  <br/> |
+| [How to: Create a page layout in SharePoint 2013](how-to-create-a-page-layout-in-sharepoint-2013.md) <br/> |Learn about how to create page layouts in SharePoint Server 2013.  <br/> |
+| [How to: Resolve errors and warnings when previewing a page in SharePoint 2013](how-to-resolve-errors-and-warnings-when-previewing-a-page-in-sharepoint-2013.md) <br/> |Learn about how to resolve any issues that prevent the server-side preview from rendering your page.  <br/> |
+| [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md) <br/> |Learn about how to use snippets to add SharePoint functionality to your HTML master page or page layout.  <br/> |
    
 
 ## Introduction to category page layouts and catalog item page layouts
@@ -79,8 +79,8 @@ The simplest way to create a category page layout is to let SharePoint create th
   
 3. Replace the markup inside the content placeholder that has **id="PlaceHolderMain"** with the markup that you want to use in the page layout.
     
-   > [!IMPORTANT]
-   > You must keep the Content Search Snippet markup so that the category page can display search results.
+    > [!IMPORTANT]
+      > You must keep the Content Search Snippet markup so that the category page can display search results. 
 4. To configure and copy the HTML for any snippets you want to add to the page, follow step 1 through step 11 in the "Insert a snippet from the Snippet Gallery" section of  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md).
     
   
@@ -144,8 +144,8 @@ The simplest way to create a category page layout is to let SharePoint create th
   
 9. To configure and copy the HTML for the Content Search Snippet and any other snippets you want to add to the page, follow step 1 through step 11 in the "Insert a snippet from the Snippet Gallery" section of  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md).
     
-   > [!NOTE]
-   > When you add the Content Search Snippet to the page layout, be sure to change the query to use the result source that was created when you connected the publishing site to a catalog. For more information, see  [Configure result sources for web content management in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj715262.aspx).
+    > [!NOTE]
+      > When you add the Content Search Snippet to the page layout, be sure to change the query to use the result source that was created when you connected the publishing site to a catalog. For more information, see  [Configure result sources for web content management in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj715262.aspx). 
 10. Make any other required changes to the markup, and then save the file.
     
   
@@ -256,8 +256,8 @@ As with the category page layout, the simplest way to create a catalog item page
   
 4. Delete any snippets that you do not want to use in the page layout, and move the remaining snippets to places in the markup where you want the property values to appear.
     
-   > [!CAUTION]
-   > By default, a Web Part Zone Snippet that contains a Catalog-Item Reuse Snippet is added to the page layout. This snippet contains the data provider that returns query results that are used by all other snippets on the page. We recommend that you keep the Catalog-Item Reuse Snippet in this default Web Part Zone Snippet. (You can move the Catalog-Item Reuse Snippet outside the Web Part Zone, and you can change the property that it displays. But, you must keep the Catalog-Item Reuse Snippet in the page layout.) For more information, see  [Page fields](how-to-customize-page-layouts-for-a-catalog-based-site-in-sharepoint-2013.md#bk_pagefields), later in this article.
+    > [!CAUTION]
+      > By default, a Web Part Zone Snippet that contains a Catalog-Item Reuse Snippet is added to the page layout. This snippet contains the data provider that returns query results that are used by all other snippets on the page. We recommend that you keep the Catalog-Item Reuse Snippet in this default Web Part Zone Snippet. (You can move the Catalog-Item Reuse Snippet outside the Web Part Zone, and you can change the property that it displays. But, you must keep the Catalog-Item Reuse Snippet in the page layout.) For more information, see  [Page fields](how-to-customize-page-layouts-for-a-catalog-based-site-in-sharepoint-2013.md#bk_pagefields), later in this article. 
 5. To configure and copy the HTML snippet for any snippets you want to use in the page, follow step 1 through step 11 in the "Insert a snippet from the Snippet Gallery" section of  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md).
     
   
@@ -300,8 +300,8 @@ As with the category page layout, the simplest way to create a catalog item page
   
 7. Delete any snippets that you do not want to use in the page layout, and move the remaining snippets to places in the markup where you want the property values to appear.
     
-   > [!CAUTION]
-   > By default, a Web Part Zone Snippet that contains a Catalog-Item Reuse Snippet is added to the page layout. This snippet contains the data provider that returns query results that are used by all other snippets on the page. We recommend that you keep the Catalog-Item Reuse Snippet in this default Web Part Zone Snippet. (You can move the Catalog-Item Reuse Snippet outside the Web Part Zone, and you can change the property that it displays. But, you must keep the Catalog-Item Reuse Snippet in the page layout.) For more information, see  [Page fields](how-to-customize-page-layouts-for-a-catalog-based-site-in-sharepoint-2013.md#bk_pagefields), later in this article.
+    > [!CAUTION]
+      > By default, a Web Part Zone Snippet that contains a Catalog-Item Reuse Snippet is added to the page layout. This snippet contains the data provider that returns query results that are used by all other snippets on the page. We recommend that you keep the Catalog-Item Reuse Snippet in this default Web Part Zone Snippet. (You can move the Catalog-Item Reuse Snippet outside the Web Part Zone, and you can change the property that it displays. But, you must keep the Catalog-Item Reuse Snippet in the page layout.) For more information, see  [Page fields](how-to-customize-page-layouts-for-a-catalog-based-site-in-sharepoint-2013.md#bk_pagefields), later in this article. 
 8. To configure and copy the HTML snippet for any snippets you want to use in the page, follow step 1 through step 11 in the "Insert a snippet from the Snippet Gallery" section of  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md).
     
   
@@ -465,18 +465,18 @@ If the catalog item page layout was created automatically when the publishing si
 **Table 2. Default managed properties Catalog-Item Reuse Snippets**
 
 
-|**Managed property**|**Description**|**Used by**|
+|**Managed property **|**Description **|**Used by **|
 |:-----|:-----|:-----|
-|**AuthorOWSUSER**|The name of the user who created the page.|Pages library only|
-|**CreatedOWSDATE**|The date the page or list item was created.|Pages library and list|
-|**EditorOWSUSER**|The name of the user who last changed the page or list item.|Pages library and list|
-|**ListItemID**|The ID for the page or list item.|Pages library and list|
-|**ModifiedOWSDATE**|The date the page or list item was last changed.|Pages library and list|
-|**PublishingContactOWSUSER**|Contact is a site column created by the Publishing feature. It is used on the Page Content Type as the person or group who is the contact person for the page.|Pages library only|
-|**PublishingIsFurlPageOWSBOOL**|A Boolean value that indicates whether the page is associated with a friendly URL.|Pages library only|
-|**PublishingPageContentOWSHTML**|The HTML content of the page.|Pages library only|
-|**PublishingPageLayoutOWSURLH**|The URL to the page layout that was used to create the page.|Pages library only|
-|**Title**|The title of the page or list item.|Pages library and list|
+|**AuthorOWSUSER** <br/> |The name of the user who created the page.  <br/> |Pages library only  <br/> |
+|**CreatedOWSDATE** <br/> |The date the page or list item was created.  <br/> |Pages library and list  <br/> |
+|**EditorOWSUSER** <br/> |The name of the user who last changed the page or list item.  <br/> |Pages library and list  <br/> |
+|**ListItemID** <br/> |The ID for the page or list item.  <br/> |Pages library and list  <br/> |
+|**ModifiedOWSDATE** <br/> |The date the page or list item was last changed.  <br/> |Pages library and list  <br/> |
+|**PublishingContactOWSUSER** <br/> |Contact is a site column created by the Publishing feature. It is used on the Page Content Type as the person or group who is the contact person for the page.  <br/> |Pages library only  <br/> |
+|**PublishingIsFurlPageOWSBOOL** <br/> |A Boolean value that indicates whether the page is associated with a friendly URL.  <br/> |Pages library only  <br/> |
+|**PublishingPageContentOWSHTML** <br/> |The HTML content of the page.  <br/> |Pages library only  <br/> |
+|**PublishingPageLayoutOWSURLH** <br/> |The URL to the page layout that was used to create the page.  <br/> |Pages library only  <br/> |
+|**Title** <br/> |The title of the page or list item.  <br/> |Pages library and list  <br/> |
    
 The managed properties for custom columns that you add to the Pages library or list are also included in Catalog-Item Reuse Snippets. The managed property name will vary, based on the site column type that you use when you create the site column. For more information, see  [Automatically created managed properties in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj613136.aspx), and  [Overview of the search schema in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj219669.aspx).
   

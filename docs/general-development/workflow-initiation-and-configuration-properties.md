@@ -90,7 +90,7 @@ Following is a list of association properties that are set by default for both *
   
 
 > [!IMPORTANT]
-> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values.
+> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values. 
   
     
     
@@ -114,14 +114,14 @@ In the case of **list** workflows, there are four additional association propert
   
 
 > [!IMPORTANT]
-> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values.
+> Properties marked with an asterisk (*) are not defined in the Workflow APIs, so to access them simply use their string values. 
   
     
     
 
 
 > [!NOTE]
-> You can add custom association properties by using an association form.
+> You can add custom association properties by using an association form. 
   
     
     

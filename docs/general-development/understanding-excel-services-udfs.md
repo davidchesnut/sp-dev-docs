@@ -1,6 +1,6 @@
 ---
 title: Understanding Excel Services UDFs
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: a1567278-fac4-4b3b-a814-56f2376c1217
 ---
 
@@ -119,7 +119,7 @@ Each Excel Services trusted location has an **AllowUdfs** flag.
     
 
 > [!NOTE]
-> The **AllowUdfs** flag is denoted by the **User-defined functions allowed** option on the Excel Services Trusted File Locations page. To learn how to navigate to the Trusted File Locations page, see [Step 3: Deploying and Enabling UDFs](step-3-deploying-and-enabling-udfs.md).
+> The **AllowUdfs** flag is denoted by the **User-defined functions allowed** option on the Excel Services Trusted File Locations page. To learn how to navigate to the Trusted File Locations page, see [Step 3: Deploying and Enabling UDFs](step-3-deploying-and-enabling-udfs.md). 
   
     
     
@@ -152,7 +152,7 @@ To reload a UDF assembly, you can run **iisreset** or restart the Excel Calculat
     
 
 > [!CAUTION]
-> Resetting IIS will end all current sessions.> For more information, see  [How to: Enable UDFs](how-to-enable-udfs.md).
+> Resetting IIS will end all current sessions. > For more information, see  [How to: Enable UDFs](how-to-enable-udfs.md). 
   
     
     

@@ -75,7 +75,7 @@ DefaultDisplayName="ReadSecurity">
 
 
 > [!NOTE]
-> If you return the security descriptor as a field of the external content type, you cannot use client caching. This is because cached items are limited to a specific size, which access control lists (ACL) can easily exceed. Therefore, the Search connector framework ignores requests to cache items if they contain a security descriptor field.
+> If you return the security descriptor as a field of the external content type, you cannot use client caching. This is because cached items are limited to a specific size, which access control lists (ACL) can easily exceed. Therefore, the Search connector framework ignores requests to cache items if they contain a security descriptor field. 
   
     
     

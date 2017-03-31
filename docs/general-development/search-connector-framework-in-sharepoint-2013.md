@@ -143,10 +143,10 @@ To crawl external data, you have to add one of the content source types that sup
 **Table 1. Content source types that support BCS indexing connectors**
 
 
-|**Content source type**|**Description**|
+|**Content source type **|**Description **|
 |:-----|:-----|
-|Line of Business Data|Use this content source for database and web service BCS indexing connectors.|
-|Custom Repository|Use this content source for .NET and custom BCS indexing connectors.|
+|Line of Business Data  <br/> |Use this content source for database and web service BCS indexing connectors.  <br/> |
+|Custom Repository  <br/> |Use this content source for .NET and custom BCS indexing connectors.  <br/> |
    
 The connector framework enables you to create BCS indexing connectors to connect to external content that you want to crawl and include in the content index. The BCS indexing connector is used by the crawler to communicate with the external data source. At crawl time, the crawler calls the BCS indexing connector to fetch the data from the external system and pass it back to the crawler. The BCS indexing connector also parses the access URLs understood by Search and the identifiers understood by BCS as they are passed between BCS and Search during the crawl process.
   
@@ -219,8 +219,8 @@ SharePoint 2013 supports the following types of BCS indexing connectors:
   
 - **WCF (web services) connector** SharePoint 2013 includes a predefined BCS connector that supports connecting to web services, so you can create a web service BCS indexing connector without writing any code—just create the BDC model file for the connector.
     
-   > [!NOTE]
-   > Although you don't have to write code to create a connector for web services, the web service must include methods that provide the same functionality that the .NET BCS connector provides, to pass the external business data to BCS. For information about creating a web service, see  [Creating .NET Connectivity Assemblies and Web Services](http://msdn.microsoft.com/library/9a6c6712-868a-4a9c-9645-3aa448ad5092%28Office.15%29.aspx). For code examples, see  [Sample Orders ASP.NET Web Service Sample](http://msdn.microsoft.com/library/10e46860-788f-4ed0-a4d8-1e17ada58e83%28Office.15%29.aspx) and [Sample Orders WCF Service Sample](http://msdn.microsoft.com/library/535277c8-9d5c-41eb-ab23-0ae141d726c5%28Office.15%29.aspx). 
+    > [!NOTE]
+      > Although you don't have to write code to create a connector for web services, the web service must include methods that provide the same functionality that the .NET BCS connector provides, to pass the external business data to BCS. For information about creating a web service, see  [Creating .NET Connectivity Assemblies and Web Services](http://msdn.microsoft.com/library/9a6c6712-868a-4a9c-9645-3aa448ad5092%28Office.15%29.aspx). For code examples, see  [Sample Orders ASP.NET Web Service Sample](http://msdn.microsoft.com/library/10e46860-788f-4ed0-a4d8-1e17ada58e83%28Office.15%29.aspx) and [Sample Orders WCF Service Sample](http://msdn.microsoft.com/library/535277c8-9d5c-41eb-ab23-0ae141d726c5%28Office.15%29.aspx). 
 - **.NET BCS connector** SharePoint 2013 does not include a predefined BCS connector for .NET connectors, so in addition to creating a BDC model file, you must also create a .NET component for the BCS indexing connector. You must implement the required stereotyped operations to support crawling the data, and implement methods for parsing the access URLs and BDC identifiers.
     
   
@@ -256,14 +256,14 @@ Table 2 describes the stereotyped operations that apply when you create a BCS in
 **Table 2. BCS stereotyped operations supported by Search in SharePoint 2013**
 
 
-|**Operation**|**Description**|
+|**Operation **|**Description **|
 |:-----|:-----|
-|Finder <br/> |Core operation required when creating a BCS connector. This operation retrieves the list of items of the external content source. See  [Implementing a Finder](http://msdn.microsoft.com/library/a0cb7cfe-8758-4057-aa85-03071536745e%28Office.15%29.aspx). <br/> |
-|SpecificFinder <br/> |Core operation required when creating a BCS connector. This operation retrieves individual items from the external content source. See  [Implementing a SpecificFinder](http://msdn.microsoft.com/library/9b6effa5-20ce-4ce7-a8dc-0fd601eb0f23%28Office.15%29.aspx). <br/> |
-|ChangedIdEnumerator <br/> |Required to implement changelog-based incremental crawls. See  [Implementing a ChangedIdEnumerator](http://msdn.microsoft.com/library/19d3c942-f6d7-49e7-853f-4d9b61b10422%28Office.15%29.aspx). <br/> |
-|DeletedIdEnumerator <br/> |Required to implement changelog-based incremental crawls. See  [Implementing a DeletedIdEnumerator](http://msdn.microsoft.com/library/aa1c521a-0c9b-4dc0-a32f-fb9e54c52bed%28Office.15%29.aspx). <br/> |
-|BinarySecurityDescriptorAccessor <br/> |Required to implement item-level security. Returns the security descriptor for an item from the external content source. See  [Implementing a BinarySecurityDescriptorAccessor](http://msdn.microsoft.com/library/6cf70490-dd3c-49cd-bb13-ed33e938435d%28Office.15%29.aspx). <br/> |
-|StreamAccessor <br/> |Required to enable crawling of attachments from the external content source. Returns the attachment as a data stream. See  [Implementing a StreamAccessor](http://msdn.microsoft.com/library/e3d8053b-90c0-4207-98e3-91e42db13cf1%28Office.15%29.aspx). <br/> |
+|Finder  <br/> |Core operation required when creating a BCS connector. This operation retrieves the list of items of the external content source. See  [Implementing a Finder](http://msdn.microsoft.com/library/a0cb7cfe-8758-4057-aa85-03071536745e%28Office.15%29.aspx).  <br/> |
+|SpecificFinder  <br/> |Core operation required when creating a BCS connector. This operation retrieves individual items from the external content source. See  [Implementing a SpecificFinder](http://msdn.microsoft.com/library/9b6effa5-20ce-4ce7-a8dc-0fd601eb0f23%28Office.15%29.aspx).  <br/> |
+|ChangedIdEnumerator  <br/> |Required to implement changelog-based incremental crawls. See  [Implementing a ChangedIdEnumerator](http://msdn.microsoft.com/library/19d3c942-f6d7-49e7-853f-4d9b61b10422%28Office.15%29.aspx).  <br/> |
+|DeletedIdEnumerator  <br/> |Required to implement changelog-based incremental crawls. See  [Implementing a DeletedIdEnumerator](http://msdn.microsoft.com/library/aa1c521a-0c9b-4dc0-a32f-fb9e54c52bed%28Office.15%29.aspx).  <br/> |
+|BinarySecurityDescriptorAccessor  <br/> |Required to implement item-level security. Returns the security descriptor for an item from the external content source. See  [Implementing a BinarySecurityDescriptorAccessor](http://msdn.microsoft.com/library/6cf70490-dd3c-49cd-bb13-ed33e938435d%28Office.15%29.aspx).  <br/> |
+|StreamAccessor  <br/> |Required to enable crawling of attachments from the external content source. Returns the attachment as a data stream. See  [Implementing a StreamAccessor](http://msdn.microsoft.com/library/e3d8053b-90c0-4207-98e3-91e42db13cf1%28Office.15%29.aspx).  <br/> |
    
 
   
