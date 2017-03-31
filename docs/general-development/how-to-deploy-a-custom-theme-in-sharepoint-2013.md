@@ -24,7 +24,7 @@ Table 1 lists articles that can help you understand the core concepts of deployi
 **Table 1. Core concepts to deploy a theme**
 
 
-|**Article title **|**Description **|
+|**Article title**|**Description**|
 |:-----|:-----|
 | [Themes overview for SharePoint 2013](themes-overview-for-sharepoint-2013.md) <br/> |Learn about the theming experience in SharePoint 2013.  <br/> |
 | [Feature Events](http://msdn.microsoft.com/en-us/library/ms469501.aspx) <br/> |Learn about feature events, which enable you to trap and respond to an event that occurs when a feature is installed in the server farm.  <br/> |

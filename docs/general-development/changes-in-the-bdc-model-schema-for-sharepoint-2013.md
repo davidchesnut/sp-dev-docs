@@ -24,7 +24,7 @@ The following table shows what changes have been made to the top-level elements 
 **Table 1. New complex types**
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 |IndividuallySecurableMetadataObject  <br/> |Used to designate that the specified **MetadataObject** is able to be secured explicitly and not by association to its parent. <br/> |
 |MetadataObject  <br/> |Used to store additional metadata about the connection to the external data source.  <br/> |
@@ -41,7 +41,7 @@ The following table lists the changes that have been made to the attributes of e
 **Table 2. Changes to simple types**
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 |No changes  <br/> ||
    
@@ -57,7 +57,7 @@ The following table lists the changes to the attributes of each element.
 **Table 3. Changes to attributes**
 
 
-|**Attribute **|**Parent **|**Description **|
+|**Attribute**|**Parent**|**Description**|
 |:-----|:-----|:-----|
 |No changes  <br/> |||
    

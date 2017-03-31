@@ -29,7 +29,7 @@ This article documents specific SharePoint Server implementations of XLIFF eleme
 **Table 1. Notable XLIFF elements and attributes in SharePoint 2013**
 
 
-|**Element **|**Attributes **|**Notes **|
+|**Element**|**Attributes**|**Notes**|
 |:-----|:-----|:-----|
 |Xml  <br/> | `version` <br/>  `encoding` <br/> |Declares the XML version and encoding.  <br/> |
 |Xliff  <br/> | `version` <br/>  `xmlns` <br/> |Contains the  `version` attribute and the schema validation mechanism. <br/> |

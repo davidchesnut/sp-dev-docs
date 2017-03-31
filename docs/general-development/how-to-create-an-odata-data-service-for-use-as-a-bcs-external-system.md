@@ -57,7 +57,7 @@ Table 1 lists articles that will help you understand the core concepts of buildi
 **Table 1. Core concepts for creating an OData service**
 
 
-|**Resource **|**Description **|
+|**Resource**|**Description**|
 |:-----|:-----|
 | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |Provides information to help you start creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.  <br/> |
 | [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md) <br/> |Learn how to use Visual Studio 2012 to discover a published OData source and create a reusable external content type to use in BCS in SharePoint 2013.  <br/> |

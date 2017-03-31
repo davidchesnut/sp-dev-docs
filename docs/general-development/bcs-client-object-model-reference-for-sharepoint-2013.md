@@ -41,7 +41,7 @@ The **Entity** object essentially represents a table in a database. The methods 
 **Methods**
 
 
-|**Methods **|**Method signature **|**Description **|
+|**Methods**|**Method signature**|**Description**|
 |:-----|:-----|:-----|
 |**Create** <br/> | `Identity Create(FieldValueDictionary fieldValues, LobSystemInstance lobSystemInstanceName)` <br/> ||
 |**FindSpecificDefault** <br/> | `EntityInstance FindSpecificDefault(Identity identity, LobSystemInstance lobSystemInstanceName)` <br/> ||
@@ -58,7 +58,7 @@ The **Entity** object essentially represents a table in a database. The methods 
 **Properties**
 
 
-|**Property **|**Description **|
+|**Property**|**Description**|
 |:-----|:-----|
 | `long EstimatedInstanceCount { get; }` <br/> |Gets the number of expected external items of this external content type.  <br/> |
 | `string Name { get; }` <br/> |Gets the name of the metadata object.  <br/> |
@@ -73,7 +73,7 @@ The **Entity** object essentially represents a table in a database. The methods 
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.Runtime** <br/> |**SP.BusinessData.Runtime** <br/> |
    
@@ -81,7 +81,7 @@ The **Entity** object essentially represents a table in a database. The methods 
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |**Delete** <br/> |void  <br/> |Deletes the External Item.  <br/> |
 |**FromXml** <br/> |void  <br/> |Sets the values in this dictionary from specified XML.  <br/> **Method signature**          `FromXml(string xml)` <br/> |
@@ -98,7 +98,7 @@ The **Entity** object essentially represents a table in a database. The methods 
 **Properties**
 
 
-|**Property **|**Return type **|**Description **|
+|**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 | `this[string fieldDotNotation] { get; set; }` <br/> |Object  <br/> |Gets or sets the value of the field referred to by the dot notation.  <br/> |
 | `RelatedSpecificFinderName { get; }` <br/> |string  <br/> ||
@@ -115,7 +115,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.MetadataModel** <br/> |**SP.BusinessData** <br/> |
    
@@ -123,7 +123,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |**GetDefaultValues_Client()** <br/> |**FieldValueDictionary** <br/> |Gets a field value dictionary that contains the default values for this view.  <br/> |
 |**GetXmlSchema()** <br/> |**string** <br/> |Gets the XML Schema of the view.  <br/> |
@@ -134,7 +134,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **||**Description **|
+|**Property**||**Description**|
 |:-----|:-----|:-----|
 | `Fields { get; }` <br/> |**FieldCollection** <br/> |Gets the collection of fields in the view.  <br/> |
 | `Name { get; }` <br/> |**string** <br/> |Gets the name of this **View** object <br/> |
@@ -152,7 +152,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.MetadataModel** <br/> |**SP.BusinessData** <br/> |
    
@@ -160,7 +160,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |**GetLobSystemInstances()** <br/> |**void** <br/> |Gives the list of LOB system instances.  <br/> |
 |**Name** <br/> |**void** <br/> |Gets the name of the **LobSystem**.  <br/> |
@@ -169,7 +169,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Description **|
+|**Property**|**Description**|
 |:-----|:-----|
 |None.  <br/> ||
    
@@ -185,7 +185,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.MetadataModel** <br/> |**SP.BusinessData** <br/> |
    
@@ -193,7 +193,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |None.  <br/> |**void** <br/> ||
    
@@ -201,7 +201,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Description **|
+|**Property**|**Description**|
 |:-----|:-----|
 |None.  <br/> ||
    
@@ -217,7 +217,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.MetadataModel** <br/> |**SP.BusinessData** <br/> |
    
@@ -225,7 +225,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |**ContainsLocalizedDisplayName** <br/> |**bool** <br/> |Determines whether the metadata object contains localized display name.  <br/> |
 |**GetDefaultDisplayName** <br/> |**string** <br/> |Returns the default display name.  <br/> |
@@ -235,7 +235,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Return type **|**Description **|
+|**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 | `IdentifierType {get;}` <br/> |**string** <br/> |Returns the type of identifier.  <br/> |
 | `Name {get;}` <br/> |**string** <br/> |Gets the name of the identifier.  <br/> |
@@ -252,7 +252,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.MetadataModel.Collections** <br/> |**SP.BusinessData.Collections** <br/> |
    
@@ -260,7 +260,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |None.  <br/> |**void** <br/> ||
    
@@ -268,7 +268,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Description **|
+|**Property**|**Description**|
 |:-----|:-----|
 |None.  <br/> ||
    
@@ -284,7 +284,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.Runtime** <br/> |**SP.BusinessData.Runtime** <br/> |
    
@@ -292,7 +292,7 @@ Specifies a customized view of the **Entity** data
 **Constructor**
 
 
-|**Constructor **|**Description **|
+|**Constructor**|**Description**|
 |:-----|:-----|
 | `public Identity (Object[] identifierValues)` <br/> |Constructs a new instance of the class by using an array of identifier values.  <br/> |
    
@@ -300,7 +300,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |**Serialize** <br/> |**string** <br/> |Gets a string representation of the identity.  <br/> |
    
@@ -308,7 +308,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Return type **|**Description **|
+|**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 | `IdentifierCount { get; }` <br/> |**int** <br/> |Returns the number of identifiers.  <br/> |
 | `IsTemporary { get; }` <br/> |**bool** <br/> |Checks whether the identity is temporary.  <br/> |
@@ -327,7 +327,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.Runtime** <br/> |**SP.BusinessData.Runtime** <br/> |
    
@@ -335,7 +335,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |**FromXml** <br/> |**void** <br/> |Sets the values in this dictionary from specified XML.  <br/> |
 |**GetCollectionSize** <br/> |int  <br/> |Returns the size of the collection that the dot notation refers to.  <br/> |
@@ -345,7 +345,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Description **|
+|**Property**|**Description**|
 |:-----|:-----|
 | `Object this[string fieldDotNotation] { get; set; }` <br/> |Gets or sets the value of the field referred to by the dot notation.  <br/> |
    
@@ -361,7 +361,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.Runtime** <br/> |**SP.BusinessData.Runtime** <br/> |
    
@@ -369,7 +369,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |None.  <br/> |**void** <br/> ||
    
@@ -377,7 +377,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Description **|
+|**Property**|**Description**|
 |:-----|:-----|
 |None.  <br/> ||
    
@@ -393,7 +393,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.Runtime** <br/> |**SP.BusinessData.Runtime** <br/> |
    
@@ -401,7 +401,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Description **|
+|**Method**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |None.  <br/> |void  <br/> ||
    
@@ -409,7 +409,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Return type **|**Read Only **|**Description **|
+|**Property**|**Return type**|**Read Only**|**Description**|
 |:-----|:-----|:-----|:-----|
 |**ContainsLocalizedDisplayName** <br/> |**Boolean** <br/> |Yes  <br/> |Determines whether the field contains a localized display name.  <br/> |
 |**DefaultDisplayName** <br/> |**string** <br/> |Yes  <br/> |Retrieves the default display name of the Field.  <br/> |
@@ -428,7 +428,7 @@ Specifies a customized view of the **Entity** data
 **Namespaces**
 
 
-|**Managed **|**JavaScript **|
+|**Managed**|**JavaScript**|
 |:-----|:-----|
 |**Microsoft.BusinessData.MetadataModel** <br/> |**SP.BusinessData** <br/> |
    
@@ -436,7 +436,7 @@ Specifies a customized view of the **Entity** data
 **Methods**
 
 
-|**Method **|**Return type **|**Read Only **|**Description **|
+|**Method**|**Return type**|**Read Only**|**Description**|
 |:-----|:-----|:-----|:-----|
 |**ContainsLocalizedDisplayName()** <br/> |**Boolean** <br/> |Yes  <br/> |Determines whether the type descriptor contains a localized display name.  <br/> |
 |**GetLocalizedDisplayName()** <br/> |**string** <br/> |Yes  <br/> |Returns the localized display name.  <br/> |
@@ -446,7 +446,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property **|**Return type **|**Description **|
+|**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 |**Name** <br/> |string  <br/> |Retrieves the name of the Field.  <br/> |
 |**TypeName** <br/> |string  <br/> |Retrieves the name of the data type represented by this type descriptor.  <br/> |
@@ -464,7 +464,7 @@ The namespace is **Microsoft.BusinessData.MetadataModel**.
     
 
 
-|**Interface **|**Description **|
+|**Interface**|**Description**|
 |:-----|:-----|
 |**IMetadataCatalog** <br/> |The entry point into the BDC object model. Use the **DatabaseBasedMetadataCatalog** on the server. <br/> |
 |**ILobSystem** <br/> |Contains the details about an external system.  <br/> |

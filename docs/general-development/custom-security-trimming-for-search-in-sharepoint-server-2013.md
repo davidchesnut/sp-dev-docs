@@ -230,7 +230,7 @@ The following table describes the parameters that the cmdlet uses.
 **Table 1. Parameters used by the SPEnterpriseSearchSecurityTrimmer cmdlet**
 
 
-|**Parameter **|**Description **|
+|**Parameter**|**Description**|
 |:-----|:-----|
 | _SearchApplication_ <br/> |Required. The name of the Search service application, for example "Search Service Application".  <br/> |
 | _typeName_ <br/> |Required. The strong name of the custom security trimmer assembly.  <br/> |

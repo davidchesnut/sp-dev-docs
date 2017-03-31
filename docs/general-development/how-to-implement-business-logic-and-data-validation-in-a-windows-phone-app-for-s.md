@@ -140,7 +140,7 @@ For the following code example, assume that an installation of SharePoint Server
 **Table 1. Product Orders list**
 
 
-|**Column **|**Type **|**Required **|
+|**Column**|**Type**|**Required**|
 |:-----|:-----|:-----|
 |Product (i.e., Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
 |Description  <br/> |Single line of text (Text)  <br/> |No  <br/> |

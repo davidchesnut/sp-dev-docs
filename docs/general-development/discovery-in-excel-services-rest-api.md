@@ -1,6 +1,6 @@
 ---
 title: Discovery in Excel Services REST API
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: e3a8e057-f803-446d-81c9-4eb8ef3691e1
 ---
 

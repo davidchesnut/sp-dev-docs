@@ -596,7 +596,7 @@ Specifies an authentication mode for an **Authenticator** object. This is an exi
     
 
 
-|**Default **||
+|**Default**||
 |:-----|:-----|
 |**FormsAuthentication** <br/> |Represents forms-based authentication mode  <br/> |
 |**Anonymous** <br/> |Represents anonymous access mode  <br/> |
@@ -776,7 +776,7 @@ No non-derived public properties are introduced with this class. There are stand
     
 
 
-|**Method **|**This override… **|
+|**Method**|**This override…**|
 |:-----|:-----|
 |CreateChildControls  <br/> |Creates the child controls including a JavaScript map control for Display mode.  <br/> |
 |Focus  <br/> |Gives focus to the longitude textbox child control.  <br/> |
@@ -792,7 +792,7 @@ No non-derived public properties are introduced with this class. There are stand
     
 
 
-|**Property **|**This override... **|
+|**Property**|**This override...**|
 |:-----|:-----|
 |CssClass  <br/> |Behaves just like the parent implementation.  <br/> |
 |DefaultTemplateName  <br/> |Returns "GeolocationField"  <br/> |
@@ -928,7 +928,7 @@ The following methods are standard overrides of inherited methods that were in S
     
 
 
-|**Method **|**This override... **|
+|**Method**|**This override...**|
 |:-----|:-----|
 |GetFieldValue(String s)  <br/> |Returns the specified value as an Object that is castable to SPFieldGeolocationValue.  <br/> |
 |GetFieldValueAsText(Object o)  <br/> |Wraps GetValidatedString.  <br/> |
@@ -988,7 +988,7 @@ The other properties are standard overrides of inherited properties that were in
     
 
 
-|**Property **|**The override... **|
+|**Property**|**The override...**|
 |:-----|:-----|
 |FieldValueType  <br/> |Returns **typeof(SPFieldGeolocationValue)**.  <br/> |
 |FieldRenderingControl  <br/> |Returns a **GeolocationFieldControl** object. <br/> |
@@ -1660,7 +1660,7 @@ Specifies a type of device that can receive notifications.
     
 
 
-|**Notification **|**Device **|
+|**Notification**|**Device**|
 |:-----|:-----|
 |||
 |**WP7** <br/> |Windows Phone 7.5  <br/> |

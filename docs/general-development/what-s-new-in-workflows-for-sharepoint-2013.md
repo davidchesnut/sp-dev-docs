@@ -102,7 +102,7 @@ Following are new workflow actions that are provided in SharePoint 2013. For a f
 **Table 1. New workflow actions in SharePoint 2013**
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Assign a Task  <br/> |Assigns a single workflow task to a user or group.  <br/> |
 |Start a Task Process  <br/> |Initiates execution of a task process.  <br/> |

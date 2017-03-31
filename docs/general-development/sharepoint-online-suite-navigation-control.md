@@ -52,7 +52,7 @@ For intranet sites, use the following master page markup for the Suite Navigatio
 **Table 1. Suite Navigation web controls for intranet sites**
 
 
-|**Web Control **|**Description **|
+|**Web Control**|**Description**|
 |:-----|:-----|
 |SharePoint:Menu  <br/> |Displays a menu in an ASP.NET web page.  <br/> |
 |SharePoint:MenuItemTemplate  <br/> |Represents a control that creates an item in a drop-down menu.  <br/> |
@@ -176,7 +176,7 @@ For public-facing sites, use the following master page markup for the Suite Navi
 **Table 2. Suite Navigation web controls for public-facing sites**
 
 
-|**Web Control **|**Description **|
+|**Web Control**|**Description**|
 |:-----|:-----|
 |SharePoint:DelegateControl  <br/> |Renders an ASP.NET web control. Delegate controls make their candidate controls pluggable and traceable.  <br/> |
 |SharePoint:FeatureMenuTemplate  <br/> |Represents a control that creates a template for a drop-down menu.  <br/> |

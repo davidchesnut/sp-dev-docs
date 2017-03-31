@@ -104,7 +104,7 @@ Table 1 describes the color slots that are available and where color slots are u
 **Table 1. Color slots**
 
 
-|**Annotation Name **|**Where the Color Is Used in the UI **|**Token Name **|
+|**Annotation Name**|**Where the Color Is Used in the UI**|**Token Name**|
 |:-----|:-----|:-----|
 |BodyText  <br/> |Normal body text.  <br/> |[T_THEME_COLOR_BODYTEXT]  <br/> |
 |SubtleBodyText  <br/> |Body text that must be lighter than normal. An example is metadata text.  <br/> |[T_THEME_COLOR_SUBTLEBODYTEXT]  <br/> |
@@ -394,7 +394,7 @@ Table 1 describes the available font slots and where they are used in a page.
 **Table 1. Font slots**
 
 
-|**Font Slot Name **|**Description **|
+|**Font Slot Name**|**Description**|
 |:-----|:-----|
 |title  <br/> |Used for the page title.  <br/> |
 |navigation  <br/> |Used for the horizontal and vertical navigation elements on the page.  <br/> |

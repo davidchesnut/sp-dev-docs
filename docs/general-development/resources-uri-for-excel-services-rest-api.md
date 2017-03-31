@@ -1,6 +1,6 @@
 ---
 title: Resources URI for Excel Services REST API
-ms.prod: OFFICE365
+ms.prod: SHAREPOINT
 ms.assetid: 79f95305-ec9e-4842-b937-85f66ced98e4
 ---
 
@@ -77,7 +77,7 @@ Table 1 shows all the accessible resources in the Excel Services REST API. To ac
 **Table 1. Accessible resources in the Excel Services REST API**
 
 
-|** **Resource Location****|** **Format****|** **Example****|** **Notes****|
+|****Resource Location****|****Format****|****Example****|****Notes****|
 |:-----|:-----|:-----|:-----|
 |/model  <br/> |Atom (default)  <br/> |/model  <br/> |Returns an Atom feed with the resources supported by the Excel Services REST API. The supported resources are ranges, charts, tables, and PivotTables.  <br/> |
 |/model  <br/> |workbook  <br/> |/model?$format=workbook  <br/> |This is the workbook. Supported workbook formats are xlsx, xlsb, and xlsm.  <br/> |

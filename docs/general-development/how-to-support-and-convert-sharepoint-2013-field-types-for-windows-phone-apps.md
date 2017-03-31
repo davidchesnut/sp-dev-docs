@@ -50,7 +50,7 @@ SharePoint field types cannot be bound directly to Silverlight controls in a Win
 **Table 1. Field types with provisions for default conversion**
 
 
-|**SharePoint field type **|**Silverlight data type **|
+|**SharePoint field type**|**Silverlight data type**|
 |:-----|:-----|
 |Attachments  <br/> |File  <br/> |
 |Boolean  <br/> |Boolean  <br/> |

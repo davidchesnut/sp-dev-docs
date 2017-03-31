@@ -21,7 +21,7 @@ The following articles were written for SharePoint Server 2010 and SharePoint De
     
 
 
-|**Task **|**Description **|
+|**Task**|**Description**|
 |:-----|:-----|
 | [Adding Associations Between External Content Types](http://msdn.microsoft.com/en-us/library/ff394528.aspx) <br/> |Provides overview information about associations.  <br/> |
 | [Tooling Associations in SharePoint Designer (BCS Team Blog)](http://blogs.msdn.com/b/bcs/archive/2010/01/15/tooling-associations-in-sharepoint-designer-2010.aspx) <br/> |Explains the concepts behind associations and contains two demos.  <br/> |

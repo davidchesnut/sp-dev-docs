@@ -76,7 +76,7 @@ General actions are actions that display in the Actions list in all workflow con
 ****
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |**Core Actions** <br/> |Actions in this category are the ones most commonly used in workflows.  <br/> |
 |Add a comment  <br/> | This action is initially displayed in a workflow step as **Comment: comment text**. Use this action to leave informative comments in the workflow designer for reference purposes. This is especially helpful when there are other users co-authoring the workflow. For example, if a variable in the current workflow doesn't have a user-friendly name, you can use this action to add a comment to indicate what the variable does in the workflow.  <br/>  Following is an example of what the action might look like in a workflow step: <br/>  Comment: This variable provides the department of the workflows initiator. <br/> > [!NOTE]>  Anyone editing the workflow in Microsoft Visio 2013 will also be able to view the comments.          |
@@ -123,7 +123,7 @@ Actions such as **Start Approval Process**, **Declare Record**, and **Lookup Man
 ****
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |**Document Set Actions** <br/> |Actions in this category pertain to a Document Set. A Document Set is a folder in which documents are stored. In a workflow, a Document Set is treated as a single item.  <br/> > [!NOTE]> To be able to use Document Sets in your library, you must add the Document Set content type from your Library Settings page in your SharePoint site.           |
 |Start Document Set Approval Process  <br/> | This action is initially displayed in workflow steps as **Start Approval process for the contents of this Document Set with the users specified by this column**. Use this action to start an approval action on a Document Set and all of the documents that it contains.  <br/>  When you use this action, both the status of the Document Set and the status of all of the documents that it contains it are changed (for example, to Approved or to Rejected). <br/>  If, on the other hand, you use the **Start Approval Process** action on the Document Set, only the status of the Document Set itself is changed, and not the statuses of the individual documents that it contains. <br/>  Following is an example of what the action might look like in a workflow step: <br/>  StartBill of material approval process for the contents of this Document Set with the users specified byVariable: Bill of Materials Approvers <br/> |
@@ -213,7 +213,7 @@ The following table presents a comparison between the three task actions on the 
 ****
 
 
-|**Feature **|**Task actions **|**Pre-build reusable workflows **|
+|**Feature**|**Task actions**|**Pre-build reusable workflows**|
 |:-----|:-----|:-----|
 |Number of users involved in the process  <br/> |A single user or group per task action.  <br/> |In the pre-built workflows, multiple users and groups can be specified in multiple assignment stages. Each assignment stage enables you to make two specifications: whether the tasks are assigned in serial or in parallel, and to which users, groups, and other participants the tasks are assigned.  <br/> |
 |Pre-loaded workflow logic  <br/> |The three task actions do not have built-in logic. You must use other actions and conditions to build out an approval or feedback mechanism.  <br/> |The pre-built workflows are already equipped with all of the built-in logic to provide a start-to-finish approval or feedback collection experience. You can use their default logic, or customize them to meet your needs.  <br/> |
@@ -234,7 +234,7 @@ Some workflow actions (such as **Shared Documents**) are available only when the
 ****
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |**Core Actions** <br/> ||
 |Send Document to Repository  <br/> | This action is initially displayed in a workflow step as **Submit File using this action to this destination router with this explanation (Output to Variable: submit file result)**. Use this action to move or copy the document associated to the list item to a document repository. A document repository can be a library in your SharePoint site, or an entire site (like the Document Center), that routes records to a specific destination by using rules that you define.  <br/>  Following is an example of what the action might look like in a workflow step: <br/>  Submit File usingMove toArchive:DocumentID Value withThe file is ready for archival (Output toVariable: Submit file for archival)  <br/> |
@@ -260,7 +260,7 @@ Some list actions are available only inside an impersonation step in. Impersonat
 
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Add List Item Permissions  <br/> | This action is initially displayed in a workflow step as **Add these permissions to item in list**. Use this action to grant the specified permission levels for the specified item to the specified user or users.  <br/>  Following is an example of what the action might look like in a workflow step: <br/>  AddContribute, Read to item inImages <br/> |
 |Inherit List Item Parent Permissions  <br/> | This action is initially displayed in a workflow step as **Inherit parent permissions from item in this list**. Use this action to force a list item that has unique permissions to inherit the parent permissions from its list.  <br/>  Following is an example of what the action might look like in a workflow step: <br/>  Inherit parent permissions from item inImages <br/> |

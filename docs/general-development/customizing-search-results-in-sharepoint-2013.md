@@ -62,7 +62,7 @@ The following table lists the fields of the  _Spec_ parameter.
 **Table 1. Spec parameter fields**
 
 
-|**Element in parameter **|**Description **|
+|**Element in parameter**|**Description**|
 |:-----|:-----|
 | _Spec_ <br/> | `Subspec(<space>Subspec)*` <br/> |
 | _Subspec_ <br/> | `Prop(','Prop)*[':'Dups]` <br/> |
@@ -90,7 +90,7 @@ The following table shows a product catalog from the Contoso company. The next s
     
 
 
-|**Category **|**Product **|**Variant **|**Title **|
+|**Category**|**Product**|**Variant**|**Title**|
 |:-----|:-----|:-----|:-----|
 |Laptops  <br/> |WWI  <br/> |19W X0196 Black  <br/> |Computer 1  <br/> |
 |Laptops  <br/> |Adventure Works  <br/> |12 M1201 Red  <br/> |Computer 2  <br/> |
@@ -127,7 +127,7 @@ This should return the following results.
     
 
 
-|**Category **|**Product **|**Variant **|**Title **|
+|**Category**|**Product**|**Variant**|**Title**|
 |:-----|:-----|:-----|:-----|
 |Laptops  <br/> |WWI  <br/> |19W X0196 Black  <br/> |Computer 1  <br/> |
 |Laptops  <br/> |Adventure  <br/> |12 M1201 Red  <br/> |Computer 2  <br/> |
@@ -185,7 +185,7 @@ This should return the following results.
     
 
 
-|**Category **|**Product **|**Variant **|**Title **|
+|**Category**|**Product**|**Variant**|**Title**|
 |:-----|:-----|:-----|:-----|
 |Laptops  <br/> |WWI  <br/> |19W X0196 Black  <br/> |Computer 1  <br/> |
 |Laptops  <br/> |Adventure Works  <br/> |12 M1201 Red  <br/> |Computer 2  <br/> |

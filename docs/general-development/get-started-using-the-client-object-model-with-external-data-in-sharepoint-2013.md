@@ -59,7 +59,7 @@ The following articles will help you understand more about the client object mod
 **Table 1. Core concepts for understanding the client object model**
 
 
-|**Article **|**Description **|
+|**Article**|**Description**|
 |:-----|:-----|
 | [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md) <br/> |Learn what you can do with external content types and what you need to start creating them in SharePoint 2013.  <br/> |
 | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |Provides information to help get started creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.  <br/> |
@@ -83,7 +83,7 @@ See the articles in Table 2 for more information about what you can do with the 
 **Table 2. Basic tasks for using the client object model with external data**
 
 
-|**Task **|**Description **|
+|**Task**|**Description**|
 |:-----|:-----|
 | [Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx) <br/> |Learn how to write code to perform basic operations with the SharePoint 2013 client object model.  <br/> |
 | [How to: Use the client code library to access external data in SharePoint 2013](how-to-use-the-client-code-library-to-access-external-data-in-sharepoint-2013.md) <br/> |Learn how to use the SharePoint 2013 client object model to work with SharePoint BCS objects using browser-based scripting.  <br/> |
@@ -203,7 +203,7 @@ For more information about using the client object model in SharePoint 2013, see
 **Table 3. Advanced concepts for the client object model**
 
 
-|**Article **|**Description **|
+|**Article**|**Description**|
 |:-----|:-----|
 | [BCS client object model reference for SharePoint 2013](bcs-client-object-model-reference-for-sharepoint-2013.md) <br/> |Summarizes the objects available for creating client-side scripts using the SharePoint 2013 client object model to access external data exposed by BCS.  <br/> |
    

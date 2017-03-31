@@ -22,7 +22,7 @@ If you need to retrieve the URL for the Pages list for a different web applicati
 **Table 1. Core concepts for retrieving the URL of a Pages library**
 
 
-|**Article title **|**Description **|
+|**Article title**|**Description**|
 |:-----|:-----|
 |Pages Library  <br/> |A document library that contains all the content pages for a publishing site.  <br/> |
 | [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) <br/> |Represents a SharePoint Foundation website.  <br/> |

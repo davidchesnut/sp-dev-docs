@@ -35,7 +35,7 @@ The following table shows high-level scenarios that apply to the services descri
 **Table 1. Scenarios for Office and SharePoint services in SharePoint 2013**
 
 
-||**BI/Insights **|**Simple apps **|**File conversion **|**Translation **|
+||**BI/Insights**|**Simple apps**|**File conversion**|**Translation**|
 |:-----|:-----|:-----|:-----|:-----|
 |Access Services  <br/> |X  <br/> |X  <br/> |||
 |Excel Services  <br/> |X  <br/> ||||
@@ -64,7 +64,7 @@ Use the links in Table 2 to learn more about developing with the Office and Shar
 **Table 2. Overview of Office and SharePoint services in this section**
 
 
-|**Service **|**Description **|
+|**Service**|**Description**|
 |:-----|:-----|
 |Access Services  <br/> See  [Develop Access web apps](develop-access-web-apps.md) <br/> |Enables users to create, deploy, and manage collaborative web-based Access applications.  <br/> |
 |Excel Services  <br/> See  [Excel Services in SharePoint 2013](excel-services-in-sharepoint-2013.md) <br/> |Enables users to load, calculate, and display Excel workbooks on SharePoint sites.  <br/> |

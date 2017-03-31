@@ -54,7 +54,7 @@ These are the most commonly-used actions and can be used in any type of workflow
 ****
 
 
-|**Visio Action Shape **|**Corresponding action in SharePoint Designer **|**Action description **|
+|**Visio Action Shape**|**Corresponding action in SharePoint Designer**|**Action description**|
 |:-----|:-----|:-----|
 |![Add a comment](images/spd15-addcomment-visio.JPG)|This Visio action is the same as the **Add a Comment** action in SharePoint Designer 2013 and appears as: <br/> ![Add comment](images/spd15-addcomment-txt.JPG)    > [!NOTE]> Comments remain visible when the workflow is exported to Visio.           |**Add a comment** <br/> Use this action to leave informative comments in the workflow designer for reference purposes. This is especially helpful when there are other users co-authoring the workflow. For example, if a variable in the current workflow doesn't have a user-friendly name, you use this action to add a comment to indicate what the variable does in the workflow.  <br/> |
 |![Add time to date](images/spd15-addtimetodate-visio.JPG)|This Visio action is the same as the **Add Time to Date** action in SharePoint Designer 2013 and appears as: <br/> ![Add time to date](images/spd15-addtimetodate-txt.JPG)|**Add time to date** <br/> Use this action to add a specific time in minutes, hours, days, months, or years to a date, and store the output value as a variable. The date can be a current date, specific date, or a lookup.  <br/> |
@@ -79,7 +79,7 @@ These actions are used on list items.
 ****
 
 
-|**VISIO ACTION SHAPE **|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER **|**ACTION DESCRIPTION **|
+|**VISIO ACTION SHAPE**|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER**|**ACTION DESCRIPTION**|
 |:-----|:-----|:-----|
 |![Add list item permissions](images/spd15-AddListItemPerms-visio.JPG)|This Visio action is the same as the **Add List Item Permissions** action in SharePoint Designer 2013 and appears as: <br/> ![Add permissions to item](images/spd15-AddListItemPerms-txt.JPG)    > [!NOTE]> This action is only available within an impersonation step.           |**Add list item permissions** <br/> This action grants specific permission levels for an item to specific users.  <br/> |
 |![Check in item](images/spd15-CheckInItem-visio.JPG)|This Visio action is the same as the **Check In Item** action in SharePoint Designer 2013 and appears as: <br/> ![Check in item](images/spd15-CheckInItem-txt.JPG)|**Check in item** <br/> This action checks in an item that is checked out.  <br/> > [!NOTE]> You can only check in items from a document library.           |
@@ -109,7 +109,7 @@ Actions in this category pertain to task items. These actions apply only to Shar
 ****
 
 
-|**VISIO ACTION SHAPE **|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER **|**ACTION DESCRIPTION **|
+|**VISIO ACTION SHAPE**|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER**|**ACTION DESCRIPTION**|
 |:-----|:-----|:-----|
 |![Assign a form to a group](images/spd15-AssignForm2Grp-visio.JPG)|This Visio action is the same as the **Assign a Form to a Group** action in SharePoint Designer 2013 and appears as: <br/> ![Assign a form to a group](images/spd15-AssignForm2Grp-txt.JPG)|**Assign a form to a group** <br/> Use this action to enable you to create a custom task form with customized fields.  <br/> You can use this action to assign a task to one or more participants or groups prompting them to perform their tasks. Participants provide their responses it the fields of the custom task form and, when they are done with the task, click **Complete Task** on the form. <br/> |
 |![Assign a to-do item](images/spd15-AssignToDoItem-visio.JPG)|This Visio action is the same as the **Assign a To-do Item** action in SharePoint Designer 2013 and appears as: <br/> ![Assign a to-do item](images/spd15-AssignToDoItem-txt.JPG)|**Assign a to-do item** <br/> Use this action to assign a task to each of the participants, prompting them to perform their tasks and then, when they are done, to click the **Complete Task** button on their task form. <br/> |
@@ -130,7 +130,7 @@ The single action in this category looks up a user's manager and stores that inf
 ****
 
 
-|**VISIO ACTION SHAPE **|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER **|**ACTION DESCRIPTION **|
+|**VISIO ACTION SHAPE**|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER**|**ACTION DESCRIPTION**|
 |:-----|:-----|:-----|
 |![Lookup manager of a user](images/spd15-LookupMgr4User-visio.JPG)|This Visio action is the same as the **Lookup Manager of a User** action in SharePoint Designer 2013 and appears as: <br/> ![Lookup manager of a user](images/spd15-LookupMgr4User-txt.JPG)|**Lookup manager of a user** <br/> Use this action to look up a user's manager. The output value is then stored in a variable.  <br/> > [!NOTE]> For this action to work properly, the User Profile service must be running in SharePoint.           |
    
@@ -146,7 +146,7 @@ Some workflow actions are only available when the workflow is associated to a do
 ****
 
 
-|**VISIO ACTION SHAPE **|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER **|**ACTION DESCRIPTION **|
+|**VISIO ACTION SHAPE**|**CORRESPONDING ACTION IN SHAREPOINT DESIGNER**|**ACTION DESCRIPTION**|
 |:-----|:-----|:-----|
 |![Send approval for document set](images/spd15-SendApproval4DocSet-visio.JPG)|This Visio action is the same as the **Start Document Set Approval Process** action in SharePoint Designer 2013 and appears as: <br/> ![Start approval process for document set](images/spd15-SendApproval4DocSet-txt.JPG)|**Send approval for document set** <br/> Use this action to begin the approval process for a document set.  <br/> |
 |![Send document set to repository](images/spd15-SendDocSet2Repos-visio.JPG)|This Visio action is the same as the **Send Document Set to Repository** action in SharePoint Designer 2013 and appears as: <br/> ![Send document set to repository](images/spd15-SendDocSet2Repos-txt.JPG)|**Send document set to repository** <br/> Use this action to allow you to move or copy the document set to a document repository. A document repository can be a library in your SharePoint site, or a site on its own like the Document Center, that routes records to a specific destination based on rules that you define.  <br/> |
@@ -179,7 +179,7 @@ This section describes the conditions that are available in SharePoint Designer 
 ****
 
 
-|**VISIO CONDITION SHAPE **|**CORRESPONDING CONDITION IN SHAREPOINT DESIGNER **|**CONDITION DESCRIPTION **|
+|**VISIO CONDITION SHAPE**|**CORRESPONDING CONDITION IN SHAREPOINT DESIGNER**|**CONDITION DESCRIPTION**|
 |:-----|:-----|:-----|
 |![Compare data source](images/spd15-CompareDataSrc-visio.JPG)|This Visio condition is the same as the **If any value equals value** condition in SharePoint Designer 2013 and appears as: <br/> ![If value equals value](images/spd15-CompareDataSrc-txt.JPG)|**Compare data source** <br/> This condition compares two values. You can specify whether the values should be equal or not equal.  <br/> |
 |![Compare document field](images/spd15-CompareDocField-visio.JPG)|This Visio condition is the same as the **If current item field equals value** condition in SharePoint Designer 2013 and appears as: <br/> ![If current item field equals value](images/spd15-CompareDocField-txt.JPG)|**Compare document field** <br/> This condition checks a field against a value that you specify. You can specify whether the values should be equal or not equal.  <br/> |
@@ -187,7 +187,7 @@ This section describes the conditions that are available in SharePoint Designer 
 |![Created in specific data span](images/spd15-CreatedInSpecDateSpan-visio.JPG)|This Visio condition is the same as the **Created in a specific date span** condition in SharePoint Designer 2013 and appears as: <br/> ![If created in a specific date span](images/spd15-CreatedInSpecDateSpan-txt.JPG)|**Created in specific date span** <br/> This condition checks if the item was created between the specified dates. You can use the current date, a specific date, or a lookup.  <br/> |
 |![Modified by a specific person](images/spd15-ModifiedBySpecPerson-visio.JPG)|This Visio condition is the same as the **Modified by a specific person** condition in SharePoint Designer 2013 and appears as: <br/> ![If modified by a specific person](images/spd15-ModifiedBySpecPerson-txt.JPG)|**Modified by a specific person** <br/> Use this condition to check if an item was modified by a specified user. The user can be specified as an e-mail address, such as olivier@contoso.com, or selected from SharePoint, Exchange, or Active Directory users.  <br/> > [!NOTE]> The user name and e-mail address are case sensitive. It is recommended that you select a user name or e-mail address to help ensure that you use the correct case. If you type a user name or e-mail address, you must match the case of the account. For example, If modified by contoso\\molly will not evaluate as true if the user account is Contoso\\Molly.           |
 |![Modified in a specific date span](images/spd15-ModifiedInSpecDateSpan-visio.JPG)|This Visio condition is the same as the **Modified in a specific date span** condition in SharePoint Designer 2013 and appears as: <br/> ![If modified in a specific date span](images/spd15-ModifiedInSpecDateSpan-txt.JPG)|**Modified in a specific date span** <br/> This condition checks if an item was modified between the specified dates. You can use the current date, a specific date, or a lookup.  <br/> |
-|![Title field contains keywords](images/spd15-TitleFieldKeywords-visio.JPG)|This Visio condition is the same as the **Title field contains keywords** condition in SharePoint Designer 2013 and appears as: <br/> ![If title field contains keywords](images/spd15-TitleFieldKeywords-txt.JPG)|**Title field contains keywords** <br/> This condition checks if the **Title** field for an item contains a specific word. You can either specify the keyword in the String Builder—which can be a static value or a dynamic string or a combination — or insert a lookup to a field or variable. <br/> > [!NOTE]> You cannot search for more than one keyword in the **Title field contains keywords** condition. However, you can use logical operators such as**||** ( or) or **&amp;&amp;** (and.          |
+|![Title field contains keywords](images/spd15-TitleFieldKeywords-visio.JPG)|This Visio condition is the same as the **Title field contains keywords** condition in SharePoint Designer 2013 and appears as: <br/> ![If title field contains keywords](images/spd15-TitleFieldKeywords-txt.JPG)|**Title field contains keywords** <br/> This condition checks if the **Title** field for an item contains a specific word. You can either specify the keyword in the String Builder—which can be a static value or a dynamic string or a combination — or insert a lookup to a field or variable. <br/> > [!NOTE]> You cannot search for more than one keyword in the **Title field contains keywords** condition. However, you can use logical operators such as**||**( or) or **&amp;&amp;** (and.          |
    
 
 ### Document set conditions
@@ -198,7 +198,7 @@ Some workflow conditions are only available when the workflow is associated to a
     
 
 
-|**VISIO CONDITION SHAPE **|**CORRESPONDING CONDITION IN SHAREPOINT DESIGNER **|**CONDITION DESCRIPTION **|
+|**VISIO CONDITION SHAPE**|**CORRESPONDING CONDITION IN SHAREPOINT DESIGNER**|**CONDITION DESCRIPTION**|
 |:-----|:-----|:-----|
 |![File size is in a specific range](images/spd15-FileSzInSpecRange-visio.JPG)|This Visio condition is the same as the **The file size in a specific range kilobytes** condition in SharePoint Designer 2013 and appears as: <br/> ![File size is in a specific range](images/spd15-FileSzInSpecRange-txt.JPG)|**File size is in a specific range** <br/> This condition checks if the file size of a document is between the specified sizes, in kilobytes. The condition does not include the specified sizes in the evaluation. You can enter a number or use a lookup for the first or the second size in the condition.  <br/> |
 |![File is a specific type](images/spd15-FileIsSpecType-visio.JPG)|This Visio condition is the same as the **The file type is a specific type** condition in SharePoint Designer 2013 and appears as: <br/> ![File is a specific type](images/spd15-FileIsSpecType-txt.JPG)|**File is a specific type** <br/> This condition checks if the file type of the current item is of the specified type, such as docx. You can enter the file type as a string or use a lookup.  <br/> |
@@ -214,7 +214,7 @@ Some workflow conditions are only available when the workflow is associated to a
 ****
 
 
-|**VISIO CONDITION SHAPE **|**CORRESPONDING CONDITION IN SHAREPOINT DESIGNER **|**CONDITION DESCRIPTION **|
+|**VISIO CONDITION SHAPE**|**CORRESPONDING CONDITION IN SHAREPOINT DESIGNER**|**CONDITION DESCRIPTION**|
 |:-----|:-----|:-----|
 |![Check exact user permissions](images/spd15-ChkExactUserPerms-visio.JPG)|This Visio condition is the same as the **Check list item permission levels** condition in SharePoint Designer 2013 and appears as: <br/> ![Check list item permission levels](images/spd15-ChkExactUserPerms-txt.JPG)|**Check exact user permissions** <br/> This condition checks that the specified user has the minimum necessary permission level.  <br/> |
 |![Check user permissions](images/spd15-ChkUserPerms-visio.JPG)|This Visio condition is the same as the **Check list item permissions** condition in SharePoint Designer 2013 and appears as: <br/> ![Check list item permissions](images/spd15-ChkUserPerms-txt.JPG)|**Check user permission** <br/> This condition checks if the specified user has the minimum necessary permissions.  <br/> |

@@ -31,7 +31,7 @@ For the following procedures, assume a server running SharePoint Server has a Pr
 **Table 1. Modified Product Orders list**
 
 
-|**Column **|**Type **|**Required **|
+|**Column**|**Type**|**Required**|
 |:-----|:-----|:-----|
 |Product (i.e., Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
 |Description  <br/> |Single line of text (Text)  <br/> |No  <br/> |

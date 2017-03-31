@@ -53,7 +53,7 @@ Each option has advantages and disadvantages. It helps to have an understanding 
     
 
 
-||**SharePoint 2013 On-Premises **|**Office 365 SharePoint Online **|
+||**SharePoint 2013 On-Premises**|**Office 365 SharePoint Online**|
 |:-----|:-----|:-----|
 |SharePoint Designer 2013, SharePoint Online  <br/> | Log to history list <br/>  Fiddler <br/> | Log to history list <br/> |
 |Visual Studio 2012  <br/> | Log to history list <br/>  Breakpoints <br/>  Console debug messages <br/>  Fiddler <br/> | Log to history list <br/>  Breakpoints <br/> |

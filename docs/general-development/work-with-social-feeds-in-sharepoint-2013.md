@@ -97,7 +97,7 @@ Table 2 shows common programming tasks for working with social feeds and the mem
 **Table 2. API for common programming tasks for working with social feeds in SharePoint Server 2013**
 
 
-|**Task **|**Members **|
+|**Task**|**Members**|
 |:-----|:-----|
 |Create an instance of the manager object in the context of the current user  <br/> |CSOM:  [SocialFeedManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.#ctor.aspx) <br/> JSOM:  [SocialFeedManager](http://msdn.microsoft.com/library/f7cf172f-970b-6b71-9eb4-b9a8bb7a0001%28Office.15%29.aspx) <br/> REST: **GET** [<siteUri>/_api/social.feed](social-feed-rest-api-reference-for-sharepoint-2013.md) <br/> SSOM:  [SPSocialFeedManager](https://msdn.microsoft.com/library/Microsoft.Office.Server.Social.SPSocialFeedManager.#ctor.aspx) <br/> |
 |Create an instance of the manager object in the context of a particular user  <br/> |CSOM: not implemented  <br/> JSOM: not implemented  <br/> REST: not implemented  <br/> SSOM:  [SPSocialFeedManager](https://msdn.microsoft.com/library/Microsoft.Office.Server.Social.SPSocialFeedManager.#ctor.aspx) <br/> |

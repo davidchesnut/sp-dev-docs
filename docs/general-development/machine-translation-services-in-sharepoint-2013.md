@@ -250,7 +250,7 @@ Table 1 shows the equivalent objects that the CSOM APIs provide for the Machine 
 **Table 1. Server object model APIs and their CSOM equivalents**
 
 
-|**Server **|**.NET Managed and Silverlight **|**JavaScript **|
+|**Server**|**.NET Managed and Silverlight**|**JavaScript**|
 |:-----|:-----|:-----|
 |Microsoft.Office.TranslationServices.TranslationJob  <br/> |Microsoft.Office.TranslationServices.Client.TranslationJob  <br/> |SP.Translation.TranslationJob  <br/> |
 |Microsoft.Office.TranslationServices.TranslationJobInfo  <br/> |Microsoft.Office.TranslationServices.Client.TranslationJobInfo  <br/> |SP.Translation.TranslationJobInfo  <br/> |

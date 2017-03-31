@@ -24,7 +24,7 @@ BCS is improved and enhanced for SharePoint 2013, including the new functionalit
 **Table 1. What's new in BCS**
 
 
-|**New feature **|**For more information **|
+|**New feature**|**For more information**|
 |:-----|:-----|
 |SharePoint can now connect to OData sources.  <br/> | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |
 |SharePoint can receive events from external systems.  <br/> | [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint-2013.md) <br/> |

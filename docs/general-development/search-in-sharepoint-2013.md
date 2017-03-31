@@ -219,7 +219,7 @@ Table 1 shows the APIs that you can use to program Search in SharePoint 2013 and
 **Table 1. Search APIs**
 
 
-|**API name **|**Class library or schema and path **|
+|**API name**|**Class library or schema and path**|
 |:-----|:-----|
 |.NET client object model (CSOM)  <br/> |Microsoft.SharePoint.Client.Search.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI  <br/> |
 |Silverlight CSOM  <br/> |Microsoft.SharePoint.Client.Search.Silverlight.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS\\ClientBin  <br/> |

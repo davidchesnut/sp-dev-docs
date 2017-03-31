@@ -24,7 +24,7 @@ Table 1 lists articles that can help you understand the core concepts for workin
 **Table 1. Core concepts for working with master page preview files**
 
 
-|**Article Title **|**Description **|
+|**Article Title**|**Description**|
 |:-----|:-----|
 | [Themes overview for SharePoint 2013](themes-overview-for-sharepoint-2013.md) <br/> |Learn about the theming experience in SharePoint 2013.  <br/> |
 | [Choose a theme for your publishing site](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/choose-a-theme-for-your-publishing-site-HA102891580.aspx) <br/> |Learn how to change the look and feel of a SharePoint site by using the **Change the look** wizard. <br/> |
@@ -106,7 +106,7 @@ The miscellaneous tokens are replaced with specified height and width values in 
 **Table 2. Miscellaneous tokens**
 
 
-|**Token Name **|**Description **|
+|**Token Name**|**Description**|
 |:-----|:-----|
 |[T_HEIGHT]  <br/> |The height of the preview.  <br/> |
 |[T_WIDTH]  <br/> |The width of the preview.  <br/> |
@@ -125,7 +125,7 @@ Color tokens are replaced with color values in the preview image. Table 3 descri
 **Table 3. Color tokens**
 
 
-|**Token Name **|**Description **|
+|**Token Name**|**Description**|
 |:-----|:-----|
 |[T_THEME_COLOR_ _ColorSlot_]  <br/> |Use this format if you want the color value of the color slot.  <br/> |
 |[T_THEME_COLOR_ _ColorSlot__AA]  <br/> |Use this format if you want the 8-digit hexadecimal value of the color slot. This format is useful for filter values to enable opacity and gradients in Internet Explorer.  <br/> |
@@ -156,7 +156,7 @@ The tokens listed in Table 4 are used in the HTML section of the master page pre
 **Table 4. Text content tokens**
 
 
-|**Token Name **|**Description **|
+|**Token Name**|**Description**|
 |:-----|:-----|
 |[BRANDSTRING]  <br/> |The brand text that appears on the page. In the preinstalled themes, it appears on the top-left corner "Brand".  <br/> |
 |[SUITELINK1]  <br/> [SUITELINK2]  <br/> [SUITELINK3]  <br/> |The suite links that appear in the suite bar. See "First Item", "Second Item", "Third Item" in Figure 1.  <br/> |

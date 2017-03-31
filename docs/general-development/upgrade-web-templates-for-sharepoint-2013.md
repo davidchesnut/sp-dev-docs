@@ -79,7 +79,7 @@ To add the default functionality back to the template, you must modify the Onet.
    **Table 1. Default web template features**
 
 
-|**DisplayName **|**Feature ID **|
+|**DisplayName**|**Feature ID**|
 |:-----|:-----|
 |AccSvcAddAccessApp  <br/> |d2b9ec23-526b-42c5-87b6-852bd83e0364  <br/> |
 |AnnouncementsList  <br/> |00bfea71-d1ce-42de-9c63-a44004ce0104  <br/> |

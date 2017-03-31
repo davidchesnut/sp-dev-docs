@@ -35,7 +35,7 @@ To replace each format, the DLL must be located in the same directory as the cor
 **Table 1. File names for fixed-format export DLLs**
 
 
-|**Format **|**File Name **|
+|**Format**|**File Name**|
 |:-----|:-----|
 |PDF  <br/> |Renderpdf.dll  <br/> |
 |XPS  <br/> |Renderxps.dll  <br/> |

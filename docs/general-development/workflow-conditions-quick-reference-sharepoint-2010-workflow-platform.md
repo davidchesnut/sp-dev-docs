@@ -97,7 +97,7 @@ The option that you choose for the second **value** in the condition also depend
     
 
 > [!NOTE]
-> You can use logical operators such as **||** (or) or **&amp;&amp;** (and) in the condition.
+> You can use logical operators such as**||**(or) or **&amp;&amp;** (and) in the condition.
   
     
     
@@ -142,7 +142,7 @@ The option that you choose for **value** also depends to some extent on what **f
     
 
 > [!NOTE]
-> You can use logical operators such as **||** (or) or **&amp;&amp;** (and) in the condition.
+> You can use logical operators such as**||**(or) or **&amp;&amp;** (and) in the condition.
   
     
     
@@ -264,7 +264,7 @@ This condition is initially displayed in a workflow step as **If title field con
     
 
 > [!NOTE]
-> When using the **Title field contains keywords** condition, you cannot search for more than a single keyword text. To search for multiple, alternative keyword texts, you can use logical operators such as**||** ( or) and **&amp;&amp;** (and) in either of the following two conditions: **If any value equals value** and **If current item field equals value**. (Use the latter condition if you want to search in the **Title** field only). For an example, see the following image:> 
+> When using the **Title field contains keywords** condition, you cannot search for more than a single keyword text. To search for multiple, alternative keyword texts, you can use logical operators such as**||**( or) and **&amp;&amp;** (and) in either of the following two conditions: **If any value equals value** and **If current item field equals value**. (Use the latter condition if you want to search in the **Title** field only). For an example, see the following image:> 
   
     
     

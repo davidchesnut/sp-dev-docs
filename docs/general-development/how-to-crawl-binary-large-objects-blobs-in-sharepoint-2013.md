@@ -26,7 +26,7 @@ The Microsoft SQL Server database table must have a column that specifies either
 **Table 1. Sample database table schema**
 
 
-|**Column Name **|**Data Type **|
+|**Column Name**|**Data Type**|
 |:-----|:-----|
 |Id  <br/> |Int  <br/> |
 |DisplayName  <br/> |nvarchar(50)  <br/> |
@@ -38,7 +38,7 @@ The Microsoft SQL Server database table must have a column that specifies either
 **Table 2. Sample database table values**
 
 
-|**Id **|**Display Name **|**Extension **|**Data **|**Content Type **|
+|**Id**|**Display Name**|**Extension**|**Data**|**Content Type**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |File1  <br/> |.docx  <br/> |0x504B…  <br/> |application/vnd.openxmlformats-officedocument.wordprocessingml.document  <br/> |
 |2  <br/> |File2  <br/> |.doc  <br/> |0xD…  <br/> |application/msword  <br/> |

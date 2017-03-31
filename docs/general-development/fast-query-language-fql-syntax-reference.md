@@ -23,7 +23,7 @@ A query language expression can contain nested subexpressions that include query
 **Table 1. Subexpressions in query language expressions**
 
 
-|**Item **|**Description **|
+|**Item**|**Description**|
 |:-----|:-----|
 |Token expressions  <br/> |One or more query terms, phrases, or numeric values to search for in a query.  <br/> |
 |Property specification  <br/> |A property or full-text index to match with the affected expression.  <br/> |
@@ -171,7 +171,7 @@ Each numeric term expression must include a property specification of a compatib
 **Table 2. Numeric data types that can be used in FQL**
 
 
-|**FQL type **|**Compatible index schema types **|**Description **|
+|**FQL type**|**Compatible index schema types**|**Description**|
 |:-----|:-----|:-----|
 |**Int** <br/> |**Integer** <br/> |64 bit integer.  <br/> |
 |**Float** <br/> |**Double** <br/> |64-bit (double precision) floating point.  <br/> |
@@ -334,7 +334,7 @@ Table 3 lists the types of operators supported by FQL.
 **Table 3. FQL supported operator types**
 
 
-|**Type **|**Description **|**Operators **|
+|**Type**|**Description**|**Operators**|
 |:-----|:-----|:-----|
 |String  <br/> |Enables you to specify query operations on a string of terms. This is the most common operator to use on text terms.  <br/> | [STRING](fast-query-language-fql-syntax-reference.md#fql_string_operator) <br/> |
 |Boolean  <br/> |Enables you to combine terms and sub-expressions in a query.  <br/> | [AND](fast-query-language-fql-syntax-reference.md#fql_and_operator),  [OR](fast-query-language-fql-syntax-reference.md#fql_or_operator),  [ANY](fast-query-language-fql-syntax-reference.md#fql_any_operator),  [ANDNOT](fast-query-language-fql-syntax-reference.md#fql_andnot_operator),  [NOT](fast-query-language-fql-syntax-reference.md#fql_not_operator),  [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator),  [COUNT](fast-query-language-fql-syntax-reference.md#fql_count_operator) <br/> |
@@ -350,7 +350,7 @@ Table 4 provides a list of the supported operators.
 **Table 4. FQL supported operators**
 
 
-|**Operator **|**Description **|**Type **|
+|**Operator**|**Description**|**Type**|
 |:-----|:-----|:-----|
 | [AND](fast-query-language-fql-syntax-reference.md#fql_and_operator) <br/> |Returns only items that match all **AND** operands. <br/> |Boolean  <br/> |
 | [ANDNOT](fast-query-language-fql-syntax-reference.md#fql_andnot_operator) <br/> |Returns only items that match the first operand and that don't match the subsequent operands.  <br/> |Boolean  <br/> |
@@ -529,7 +529,7 @@ Specifies the of number query term occurrences an item must include for the item
 
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _From_ <br/> | _<numeric_value>_ <br/> |The value of the  _from_ parameter must be a positive integer that specifies the minimum number of times that the specified operand must be matched. <br/> If the  _from_ parameter is not specified, no lower limit will exist. <br/> |
 | _to_ <br/> | _<numeric_value>_ <br/> |The value of the  _to_ parameter must be a positive integer that specifies the non-inclusive maximum number of times that the specified operand must be matched. For example, a _to_ value of **11** specifies 10 times or fewer. <br/> If the  _to_ parameter is not specified, no upper limit will exist. <br/> |
@@ -567,7 +567,7 @@ The following table contains examples of managed property string values and stat
     
 
 
-|**Match? **|**Text **|
+|**Match?**|**Text**|
 |:-----|:-----|
 |Yes  <br/> |My cat likes my dog, but my dog hates my cat.  <br/> |
 |No  <br/> |My bird likes my newt, but my dog hates my cat.  <br/> |
@@ -914,7 +914,7 @@ If multiple operands of the **NEAR** operator match the same indexed token, they
 
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _N_ <br/> | _<numeric_value>_ <br/> |Specifies the maximum number of words that is allowed to appear between the terms (explicit proximity).  <br/> If **NEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.  <br/> Default: **4** <br/> |
    
@@ -943,7 +943,7 @@ The following table contains examples of managed property string values and stat
     
 
 
-|**Match? **|**Text **|
+|**Match?**|**Text**|
 |:-----|:-----|
 |Yes  <br/> |The picture shows a cat, a dog, a fox, and a wolf.  <br/> |
 |Yes (with stemming)  <br/> |Dogs, foxes, and wolves are canines, but cats are felines.  <br/> |
@@ -1046,7 +1046,7 @@ The ordered variant of **NEAR**, and requires an ordered match of the terms. The
 
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _N_ <br/> | _<numeric_value>_ <br/> |Specifies the maximum number of words that are allowed to appear between the terms (explicit proximity).  <br/> If **ONEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.  <br/> Default: **4** <br/> |
    
@@ -1067,7 +1067,7 @@ The following table contains examples of managed property string values, and sta
     
 
 
-|**Match? **|**Text **|
+|**Match?**|**Text**|
 |:-----|:-----|
 |Yes  <br/> |The picture shows a cat, a dog, a fox, and a wolf.  <br/> |
 |No  <br/> |Dogs, foxes, and wolves are canines, but cats are felines.  <br/> |
@@ -1182,7 +1182,7 @@ Use the **RANGE** operator for numeric and date/time managed properties. The ope
 
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _start_ <br/> | _<numeric_value>|<date/time_value>_ <br/> |Start value for the range.  <br/> To specify that the range has no lower bound, use the reserved word **min**. <br/> |
 | _stop_ <br/> | _<numeric_value>|<date/time_value>_ <br/> |End value for the range.  <br/> To specify that the range has no upper bound, use the reserved word **max**. <br/> |
@@ -1288,9 +1288,9 @@ The **STRING** operator can also be used as a type conversion. The query `string
 
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _mode_ <br/> | _<mode>_ <br/> | The _mode_ parameter specifies how to evaluate the <text string> value. The following list shows valid values. <br/> **"PHRASE"** - `phrase(term [,term]*)` <br/> |** Mode**|** Equivalent operator expression**|
+| _mode_ <br/> | _<mode>_ <br/> | The _mode_ parameter specifies how to evaluate the <text string> value. The following list shows valid values. <br/> **"PHRASE"** - `phrase(term [,term]*)` <br/> |**Mode**|**Equivalent operator expression**|
 |:-----|:-----|
 |**"PHRASE"** <br/> | `phrase(term [,term]*)` <br/> |
 |**"AND"** <br/> | `and(term, term [,term]*)` <br/> |
@@ -1520,7 +1520,7 @@ Boosts the dynamic rank of items based on certain term occurrences within the  _
 
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _N_ <br/> | _<integer_value>_ <br/> |Specifies the number of results to compute statistics from.  <br/> This parameter does not affect the number of results that the dynamic rank contributes to; it is just a means to exclude irrelevant items from the statistics calculations.  <br/> Default: **0**. A zero value carries the sematic of *all documents*  . <br/> |
 | _Nb_ <br/> | _<float_value>_ <br/> |The  _nb_ parameter refers to normalized boost. This parameter specifies the factor that is multiplied with the product of the variance and average score of the rank values of the results set. <br/>  _f_ in the XRANK formula. <br/> |
@@ -1538,7 +1538,7 @@ The following advanced parameters are also available. However, typically they ar
     
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _cb_ <br/> | _<float_value>_ <br/> |The  _cb_ parameter refers to constant boost. <br/> Default: **0**. <br/>  _a_ in the XRANK formula. <br/> |
 | _stdb_ <br/> | _<float_value>_ <br/> |The  _stdb_ parameter refers to standard deviation boost. <br/> Default: **0**. <br/>  _e_ in the XRANK formula. <br/> |

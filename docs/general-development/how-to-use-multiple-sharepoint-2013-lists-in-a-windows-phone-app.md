@@ -205,7 +205,7 @@ Suppose, as in the preceding section, that you have a SharePoint list, Marketing
 **Table 1. Columns and fields for Orders list**
 
 
-|**Column **|**Field Type **|**Required **|
+|**Column**|**Field Type**|**Required**|
 |:-----|:-----|:-----|
 |Product (i.e., Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
 |Unit Price  <br/> |Currency  <br/> |Yes  <br/> |
@@ -381,7 +381,7 @@ Assume for the following procedures that you have a SharePoint list named Orders
 **Table 2. Columns and fields for Customers list**
 
 
-|**Column **|**Field Type **|**Required **|
+|**Column**|**Field Type**|**Required**|
 |:-----|:-----|:-----|
 |Customer Name (i.e., Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
 |Contact Number  <br/> |Single line of text (Text)  <br/> |No  <br/> |

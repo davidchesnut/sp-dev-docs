@@ -23,7 +23,7 @@ Table 1 lists the difference between the two scenarios available when you write 
 **Table 1. Scenarios for Excel Services JSOM**
 
 
-|**Location **|**Description **|
+|**Location**|**Description**|
 |:-----|:-----|
 |**OneDrive** <br/> |In this scenario, you embed a workbook that is stored on OneDrive into the host webpage using an HTML <div> element. Then you include code in the page that interacts with the embedded workbook.  <br/> |
 |**SharePoint** <br/> |In this scenario, you have a SharePoint page served by SharePoint 2013. You insert an Web Part into the SharePoint page that contains a workbook that is stored in an trusted location. Then you include code in the SharePoint page that interacts with the Web Part.  <br/> |

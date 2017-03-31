@@ -58,7 +58,7 @@ The information in Table 1 shows how to construct RESTful URLs and the correspon
 **Table 1. RESTful URL formats for accessing external data**
 
 
-|**URL **|**Description **|**HTTP method **|
+|**URL**|**Description**|**HTTP method**|
 |:-----|:-----|:-----|
 | `http://[sharepointsite]/_api` <br/> |The base of any REST request. The _api virtual directory is mapped to call into client.svc, where the client object model can be used.  <br/> |GET  <br/> |
 | `http://[sharepointsite]/_api/web/title` <br/> |Retrieves the title of the current web.  <br/> |GET  <br/> |
@@ -79,7 +79,7 @@ In order to limit the amount of data returned, or make it more relevant to the u
 **Table 2. Operators for filtering data**
 
 
-|**Operator **||
+|**Operator**||
 |:-----|:-----|
 |EQ  <br/> |Equals  <br/> > [!NOTE]> When you use **EQ** to filter, the filter criteria are passed to the external system where the filtering happens on the server.          |
 |GT  <br/> |Greater Than  <br/> > [!NOTE]> When you use the **GT** operator, only client-side filtering is executed.> For example:  `web/lists/getByTitle('ListName')/Items?$select=Title&amp;$filter=AverageRating gt 3` returns all titles with an average rating over 3.          |

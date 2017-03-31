@@ -91,7 +91,7 @@ SharePoint 2013 provides a Microsoft .NET server programming model that you can 
 **Table 1. eDiscovery types**
 
 
-|**Type **|**Description **|
+|**Type**|**Description**|
 |:-----|:-----|
 | [Case](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.Case.aspx) <br/> |Represents an eDiscovery case. Associated with a specified  [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) object, a case can be closed by a specified date or as a specific action. Cases can contain source groups, locations, mailboxes, custodians, saved searches, exports, export configurations for specified IDs, queries, and lists of all of the source groups, custodians, and locations in this **Case** object. <br/> |
 | [Custodian](https://msdn.microsoft.com/library/Microsoft.Office.Server.Discovery.Custodian.aspx) <br/> |Represents the person who is responsible for keeping records for an eDiscovery case.  <br/> |

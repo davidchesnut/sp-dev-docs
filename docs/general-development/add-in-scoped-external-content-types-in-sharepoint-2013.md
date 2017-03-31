@@ -65,7 +65,7 @@ Table 1 contains some core concepts that you should be familiar with when workin
 **Table 1. Core concepts for understanding add-in-scoped external content types**
 
 
-|**Article **|**Description **|
+|**Article**|**Description**|
 |:-----|:-----|
 | [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md) <br/> |Learn how to create BCS external content types.  <br/> |
 | [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx) <br/> |Learn about the new add-in model in SharePoint 2013 that enables you to create add-ins, which are small, easy-to-use solutions for end users.  <br/> |

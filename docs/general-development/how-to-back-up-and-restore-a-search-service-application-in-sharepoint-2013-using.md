@@ -17,7 +17,7 @@ To program a backup and restore solution for SharePoint 2013, you need to unders
 **Table 1. Core concepts for backing up and restoring SharePoint with the Volume Shadow Copy Service**
 
 
-|**Article **|**Description **|
+|**Article**|**Description**|
 |:-----|:-----|
 | [Volume Shadow Copy Service](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx) and its child articles. <br/> |Learn about the VSS and how to program for it.  <br/> |
 | [Windows SharePoint Services and the Volume Shadow Copy Service](http://msdn.microsoft.com/library/adae101a-078e-40b9-9cfa-db2cfb10270a%28Office.15%29.aspx) and its child articles. <br/> |Overview information and step-by-step, how-to procedures for backing up and restoring SharePoint 2013 data using the VSS and the SharePoint interface with VSS.  <br/> |
@@ -91,7 +91,7 @@ The following procedures are intended to help developers with creating a backup/
    **Table 2. SSA manifest file placeholders and values from writers.txt**
 
 
-|**Placeholder **|**Where the information is located in writers.txt. **|
+|**Placeholder**|**Where the information is located in writers.txt.**|
 |:-----|:-----|
 | _SharePoint Services Writer ID_ <br/> |The WriterId GUID listed under the "SharePoint Services Writer" entry  <br/> |
 | _PathSSA_ <br/> |The logical path entry listed with the name of the Search Service Application in the "SharePoint Services Writer" entry  <br/> |
@@ -129,7 +129,7 @@ The following procedures are intended to help developers with creating a backup/
    **Table 3. Search index manifest file placeholders and values from writer.txt**
 
 
-|**Placeholder **|**Where the information is located in writers.txt **|
+|**Placeholder**|**Where the information is located in writers.txt**|
 |:-----|:-----|
 | _SharePoint Services Writer ID_ <br/> |The WriterId GUID listed under the "SharePoint Services Writer" entry  <br/> |
 | _PathIndex_ <br/> |The logical path entry listed for the component whose name starts with "IndexComponentGroup" in the "SharePoint Services Writer" entry  <br/> |

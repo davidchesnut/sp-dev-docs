@@ -27,7 +27,7 @@ Core actions are those that are most commonly performed, and they are grouped to
 **Table 1. Core actions reference**
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Add a Comment  <br/> |Enables you to leave informative comments in the workflow designer for reference purposes. This is especially helpful when there are other users collaborating on the workflow.  <br/> |
 |Add Time to Date  <br/> |Adds a specific time in minutes, hours, days, or months to a date (Year is not supported), and stores the output value as a variable. The date can be a current data, specific date, or a lookup. The 'Current Date' value returns UTC midnight.  <br/> |
@@ -57,7 +57,7 @@ Coordination actions are used to invoke a workflow based on the SharePoint 2010 
 **Table2. Coordination actions reference**
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Start a List Workflow  <br/> |Starts a List workflow based on the SharePoint 2010 Workflow platform.  <br/> > [!NOTE]>  The Start a list workflow has the following issues:>  The 'Assignments' type field cannot be used as a parameter when the 2010 workflow has a TaskProcess action in it.>  When multiple calls are made to the same 2010 workflow the result will be multiple data sources in the 2013 workflow lookup functionality. These data sources are all the same.>  Variable names in 2013 cannot contain special characters such as '?' and '#'. If a 2010 workflow contains special characters then they will be converted to hexadecimal code in the 2013 workflow.          |
 |Start a Site Workflow  <br/> |Starts a Site workflow based on the SharePoint 2010 Workflow platform..  <br/> > [!NOTE]>  The Start a list workflow has the following issues:>  The 'Assignments' type field cannot be used as a parameter when the 2010 workflow has a TaskProcess action in it.>  When multiple calls are made to the same 2010 workflow the result will be multiple data sources in the 2013 workflow lookup functionality. These data sources are all the same.>  Variable names in 2013 cannot contain special characters such as '?' and '#'. If a 2010 workflow contains special characters then they will be converted to hexadecimal code in the 2013 workflow.          |
@@ -74,7 +74,7 @@ List actions group together actions that are used to manipulate lists and list i
 **Table3. List actions reference**
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Check In Item  <br/> |Checks in an item that is checked out. You can check in items only from a document library.  <br/> > [!CAUTION]> The workflow crashes if you try to check in an item that is not checked out.           |
 |Check Out Item  <br/> |Checks out an item. The workflow verifies whether the item is checked in before it checks out a document. You can check out items only from a library in your site.  <br/> > [!CAUTION]> The workflow crashes if you try to check out an item that is not checked in.           |
@@ -100,7 +100,7 @@ Project actions support the integration of Microsoft Project. They are used to b
 **Table4. Project actions reference**
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Create Project from Current Item  <br/> |Takes the current item and creates a new project in the SharePoint farm PWA site. Using App Steps with this action is not supported in Project Online.  <br/> |
 |Set Project Field  <br/> |Sets a value for a particular field on Project Server.  <br/> > [!NOTE]> This action requires the project to be checked in first. If the project is not checked in, the workflow will be terminated and users cannot open that project in Project Web App.           |
@@ -120,7 +120,7 @@ Task actions provide the ability to invoke a workflow based on the SharePoint 20
 **Table 5. Task actions reference**
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Assign a Task  <br/> |Assigns a workflow task to a user and establishes a due date for completion of the task.  <br/> |
 |Start a Task Process  <br/> |Creates tasks on multiple users and enables the tasks to be taken through a customized process.  <br/> |
@@ -137,7 +137,7 @@ Utility actions are actions that manipulate strings or find the interval between
 **Table 6. Utility actions reference**
 
 
-|**Action **|**Description **|
+|**Action**|**Description**|
 |:-----|:-----|
 |Extract Substring from End of String  <br/> |Copies a specified number of characters starting from the end of a string and stores the output in a variable.  <br/> |
 |Extract Substring from Index of String  <br/> |Copies a substring starting at a specified index in the string and places the value in a variable.  <br/> > [!NOTE]> Be aware that although the index value in Microsoft SharePoint Designer 2013 is zero-based, values in SharePoint Designer 2010 were indexed starting at 1.           |

@@ -589,7 +589,7 @@ You can evaluate the proximity rank feature by using several different options, 
 **Table 2. Attributes that control evaluation of proximity rank features**
 
 
-|**Attributes **|**Description **|
+|**Attributes**|**Description**|
 |:-----|:-----|
 | `isExact=0` <br/> |In this mode, the proximity algorithm attempts to find the minimal span (distance) of the subset of query terms in a document.  <br/> The proximity algorithm considers fragments that contain query terms in the same orders as they appear in the user query. If no fragment exists for all of the query terms, then the proximity algorithm considers fragments that contain all but one of the query terms. This process is iterated with the number of query terms reduced each time, until the length of the fragment exceeds  `maxMinSpan`.  <br/>  `maxMinSpan` is an attribute within the proximity rank feature that specifies a threshold defining the maximum length of a fragment. <br/> An ideal fragment is one that contains all query terms but is less than  `maxMinSpan`.  <br/> |
 | `isExact=1` <br/> |In this mode, the proximity algorithm attempts to find a consecutive snippet of document that contains all of the query terms (or query phrase).  <br/> |
@@ -945,7 +945,7 @@ Query properties is a ranking mechanism that populates additional information us
 **Table 3. Query properties for ranking**
 
 
-|**Query property **|**Description **|
+|**Query property**|**Description**|
 |:-----|:-----|
 |AnchortextCompleteQueryProperty  <br/> |Boosts complete anchor text.  <br/> |
 |DateTimeUtcNow  <br/> |Current date and time. This query property can be used by the freshness rank feature.  <br/> |

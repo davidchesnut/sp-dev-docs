@@ -49,7 +49,7 @@ The following articles provide background information about OData and the OData 
 **Table 1. Core concepts for OData external content types**
 
 
-|**Article title **|**Description **|
+|**Article title**|**Description**|
 |:-----|:-----|
 | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |Get started with creating external content types based on OData sources, and learn how to use that data in SharePoint or Office components.  <br/> |
 | [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md) <br/> |Learn about BCS external content types and what you need to start creating them in SharePoint 2013.  <br/> |

@@ -95,7 +95,7 @@ Table 2 shows common programming tasks for following content and the members tha
 **Table 2. API for common tasks for following content in SharePoint Server 2013**
 
 
-|**Task **|**Members **|
+|**Task**|**Members**|
 |:-----|:-----|
 |Create an instance of a manager object in the context of the current user  <br/> |CSOM:  [SocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFollowingManager.#ctor.aspx) <br/> JSOM:  [SocialFollowingManager](http://msdn.microsoft.com/library/9ee1c0c0-b864-f0c3-f0cb-4dd4f1870dfa%28Office.15%29.aspx) <br/> REST:  `<siteUri>/_api/social.following` <br/> SSOM:  [SPSocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.Office.Server.Social.SPSocialFollowingManager.#ctor.aspx) <br/> |
 |Create an instance of a manager object in the context of a specified user  <br/> |CSOM: not implemented  <br/> JSOM: not implemented  <br/> REST: not implemented  <br/> SSOM:  [SPSocialFollowingManager](https://msdn.microsoft.com/library/Microsoft.Office.Server.Social.SPSocialFollowingManager.#ctor.aspx) (overloaded) <br/> |

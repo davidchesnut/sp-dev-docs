@@ -29,7 +29,7 @@ The following table shows some benefits of using MDS.
 **Table 1. Benefits of using MDS**
 
 
-|**Performance **|**Visuals **|
+|**Performance**|**Visuals**|
 |:-----|:-----|
 |Fewer amounts of data downloaded per page request.  <br/> |No browser flashing caused by full page reload.  <br/> |
 |Browser needs to update only the regions of the page that changed since the last request.  <br/> |Easy to identify animations.  <br/> |
@@ -83,7 +83,7 @@ The following table shows some examples of URLs formatted in MDS mode.
 **Table 2. URLs formatted in MDS mode**
 
 
-|**Non-MDS URL **|**MDS URL **|
+|**Non-MDS URL**|**MDS URL**|
 |:-----|:-----|
 |http://server/SitePages/  <br/> |http://server/_layouts/15/start.aspx#/SitePages/  <br/> |
 |http://server/subsite/SitePages/home.aspx  <br/> |http://server/subsite/_layouts/15/start.aspx#/SitePages/home.aspx  <br/> |
@@ -267,7 +267,7 @@ In previous versions of SharePoint, some pages write content by using the **Resp
 **Table 3. Commonly used APIs and their MDS-compliant alternatives**
 
 
-|**Commonly used API **|**MDS-compliant alternative **|
+|**Commonly used API**|**MDS-compliant alternative**|
 |:-----|:-----|
 | [NoEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.NoEncode.aspx) <br/> | [WriteNoEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteNoEncode.aspx) <br/> |
 | [HtmlEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.HtmlEncode.aspx) <br/> | [WriteHtmlEncode()](https://msdn.microsoft.com/library/Microsoft.SharePoint.Utilities.SPHttpUtility.WriteHtmlEncode.aspx) <br/> |
@@ -767,7 +767,7 @@ The following table describes customizations that reduce the time that is requir
 **Table 8. Customizations that reduce the time required for the view to render**
 
 
-|**Item **|**Description **|
+|**Item**|**Description**|
 |:-----|:-----|
 |View type  <br/> |Create a view as a datasheet view instead of a standard view.  <br/> |
 |View: Item limit  <br/> |Anything over 1,000 will likely render slowly. Over a slow connection, it is important to experiment to find the right balance between the quantity of data shown at a time and the number of round trips necessary to view all the data. The more rows that display at a time, the fewer round trips, but larger pages.  <br/> |
@@ -782,7 +782,7 @@ The following table describes customizations that will increase the time that is
 **Table 9. Customizations that increase the time required for the view to render**
 
 
-|**Item **|**Description **|
+|**Item**|**Description**|
 |:-----|:-----|
 |Group By  <br/> |Grouping adds HTML and JScript, which slows down rendering for large lists. Making all groups collapsed by default actually increases rendering time further because of additional operations on the browser object model.  <br/> |
 |Column - title linked to item with edit menu  <br/> |The option "linked to item with edit menu" takes the longest; the similar option "linked to item" does not increase rendering time noticeably.  <br/> |

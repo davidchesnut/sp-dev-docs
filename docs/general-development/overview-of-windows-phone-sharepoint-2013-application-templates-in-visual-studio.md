@@ -128,7 +128,7 @@ The project files for are described in Table 1.
 **Table 1. Windows Phone SharePoint List Application project files**
 
 
-|**File **|**Description **|
+|**File**|**Description**|
 |:-----|:-----|
 |App.xaml  <br/> |Represents the overall Windows Phone application. Includes declarations of elements related to the application (instead of to individual pages within the application), such as application life-cycle events like **Application_Deactivated** and **Application_Closing**.  <br/> |
 |App.xaml.cs  <br/> |The code-behind file associated with App.xaml (using the partial-class mechanism, as is the case for the other code-behind files in the project). Includes procedural code to handle the operations in the life-cycle events, such as **Application_Deactivated** and **Application_Closing**. You write code in this file to manage offline (local) storage of data.  <br/> |

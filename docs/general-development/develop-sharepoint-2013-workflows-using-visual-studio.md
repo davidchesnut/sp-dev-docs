@@ -96,7 +96,7 @@ The following table provides a side-by-side comparison of the features and requi
 **Table 1. Workflow authoring tool comparison**
 
 
-|**Feature / Requirement **|**SharePoint Designer **|**Visual Studio **|
+|**Feature / Requirement**|**SharePoint Designer**|**Visual Studio**|
 |:-----|:-----|:-----|
 |Allows rapid workflow development  <br/> |Yes  <br/> |Yes  <br/> |
 |Enables reuse of workflows  <br/> |A workflow can be used only by the list or library on which it was developed. However, SharePoint Designer provides reusable workflows that can be used multiple times within the same site.  <br/> |A workflow can be written as a template so that after it is deployed, it can be reused and associated with any list or library.  <br/> |

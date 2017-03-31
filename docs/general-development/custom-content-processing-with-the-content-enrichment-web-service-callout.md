@@ -87,7 +87,7 @@ Table 1 lists the properties you can configure through the Windows PowerShell cm
 **Table 1. Properties that are configurable for the client by using Windows PowerShell cmdlets**
 
 
-|**Configuration property **|**Description **|**Default value **|
+|**Configuration property**|**Description**|**Default value**|
 |:-----|:-----|:-----|
 |**Endpoint** <br/> |Specifies the URL of the external web service.  <br/> |Empty.  <br/> |
 |**InputProperties** <br/> |The managed properties that the external web service receives.  <br/> |Empty.  <br/> |
@@ -135,7 +135,7 @@ Table 2 lists examples of trigger conditions.
 **Table 2. Trigger condition examples for configuring the Content Enrichment web service callout**
 
 
-|**Expression **|**Description **|**Requirements **|
+|**Expression**|**Description**|**Requirements**|
 |:-----|:-----|:-----|
 |MP1 > 2  <br/> |Returns **true** if the value of the managed property named MP1 is greater than 2. <br/> |MP1 must have a numeric type.  <br/> |
 |IsNull(MP2)  <br/> |Returns **true** if the managed property named MP2 is not present for the crawled item or is empty/null. <br/> |MP2 can be of any type.  <br/> |

@@ -28,7 +28,7 @@ The following articles describe how to create no-code solutions and provide link
     
 
 
-|**Article **|**Description **|
+|**Article**|**Description**|
 |:-----|:-----|
 | [SharePoint Composites Handbook](sharepoint-composites-handbook.md) <br/> |Provides in-depth guidance to help you learn how to create a no-code solution.  <br/> |
 | [No-code solutions using SharePoint 2013 Composites](http://technet.microsoft.com/en-us/sharepoint/dn594430) <br/> |Provides links to many practical articles, walkthroughs, demos, virtual labs, and other formats that show how to create no-code solutions.  <br/> |

@@ -124,7 +124,7 @@ The **Request** class is the most fundamental class within the **Microsoft.Offic
 **Table 1. Request base class members**
 
 
-|**Member name **|**Description **|
+|**Member name**|**Description**|
 |:-----|:-----|
 |**BeginConvert(Microsoft.SharePoint.SPServiceContext, System.AsyncCallback, System.Object)** method <br/> |Begins the conversion operation. The first parameter,  _serviceContext_, specifies the context of the SharePoint site where the file to be converted is located. Use the  _callback_ parameter to specify a delegate that references a method to execute once the operation has completed. Use the _state_ parameter if you need to pass any additional information from the calling code to the callback method. <br/> Returns an  [IAsyncResult](https://msdn.microsoft.com/library/System.IAsyncResult.aspx) object. <br/> |
 |**EndConvert(IAsyncResult)** method <br/> |Ends the conversion operation. The  _result_ parameter expects the resulting [IAsyncResult](https://msdn.microsoft.com/library/System.IAsyncResult.aspx) object that the corresponding **BeginConvert** conversion request returns. If that request has not been completed when **EndConvert** is called, the calling thread is blocked until the conversion operation is complete. <br/> Does not return a value.  <br/> |

@@ -68,7 +68,7 @@ The **StartPage** column specifies whether the token can be used in the **StartP
 **Tokens that can be used at the beginning of a URL**
 
 
-|**Token **|**Resolves to **|**StartPage **|**Custom Action **|**App Part **|**Remarks **|
+|**Token**|**Resolves to**|**StartPage**|**Custom Action**|**App Part**|**Remarks**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |~controlTemplates  <br/> |The URL of the ControlTemplates virtual folder for the current website.  <br/> |No  <br/> |No  <br/> |No  <br/> ||
 |~layouts  <br/> |The URL of the Layouts virtual folder for the current website.  <br/> |No  <br/> |No  <br/> |No  <br/> ||
@@ -83,7 +83,7 @@ Except where indicated otherwise, none of these tokens in the next table can be 
 **Tokens that can be used inside a URL**
 
 
-|**Token **|**Resolves to **|**StartPage **|**Custom Action **|**App Part **|**Remarks **|
+|**Token**|**Resolves to**|**StartPage**|**Custom Action**|**App Part**|**Remarks**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |{ControlTemplates}  <br/> |The URL of the ControlTemplates virtual folder for the current website.  <br/> |No  <br/> |No  <br/> |No  <br/> ||
 |{ItemId}  <br/> |The ID of an item in a list or library (an integer).  <br/> |No  <br/> |Yes  <br/> |No  <br/> ||

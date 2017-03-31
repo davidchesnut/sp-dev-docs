@@ -95,7 +95,7 @@ The following table provides guidance on which set of APIs to use for a selected
     
 
 
-|**If you want to do this ... **|**... use these APIs **|
+|**If you want to do this ...**|**... use these APIs**|
 |:-----|:-----|
 |Create an ASP.NET web application that performs create/read/update/deleted (CRUD) operations across a firewall on SharePoint data or external data that is surfaced in SharePoint by a Microsoft Business Connectivity Services (BCS) external content type  <br/> |JavaScript client object model  <br/> |
 |Create an ASP.NET web application that performs CRUD operations on SharePoint data or external data that is surfaced in SharePoint by a BCS external content type, but does not have to call SharePoint across a firewall  <br/> |.NET Framework client object model, Silverlight client object model, or REST/OData endpoints  <br/> |
@@ -280,7 +280,7 @@ In some situations, it might be preferable to use the REST endpoints even in app
     
 
 
-|**Feature **|**.NET Framework or Silverlight object models **|**JavaScript object model **|**REST/OData endpoints called from a Windows platform or JavaScript **|
+|**Feature**|**.NET Framework or Silverlight object models**|**JavaScript object model**|**REST/OData endpoints called from a Windows platform or JavaScript**|
 |:-----|:-----|:-----|:-----|
 |Object-oriented programming  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |
 |Batch processing  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |

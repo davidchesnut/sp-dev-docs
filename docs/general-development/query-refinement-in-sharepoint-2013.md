@@ -90,7 +90,7 @@ Where:
 **Table 1: List of parameters for refiners**
 
 
-|**Parameter **|**Description **|
+|**Parameter**|**Description**|
 |:-----|:-----|
 | _deephits_ <br/> |Overrides the default number of hits that is used as the basis for refinement computation. When refiners are produced, all results for the query will be evaluated. Normally, using this parameter will improve search performance.  <br/> **Syntax**          `deephits=<integer value>` <br/> **Example**          `price(deephits=1000)` <br/> > [!NOTE]> This limit applies within each index partition. The actual number of hits that are evaluated will be larger than this value due to the aggregation across search partitions.           |
 | _discretize_ <br/> | Specifies custom intervals (refinement bins) for numeric refiners. <br/> **Syntax**          `discretize=manual/<threshold>/<threshold>[/<threshold>]*` <br/> **Example**          `write(discretize=manual/2013-01-01/2013-08-22/2013-09-15/2013-09-21/2013-09-22)` <br/>  The `<threshold>` attribute specifies the threshold for each refinement bin. <br/>  There is one interval for everything below the first threshold specified, one interval between each consecutive threshold, and one interval for everything above the last threshold. <br/>  For a refiner of type **DateTime**, specify the threshold according to one of the following ISO 8601-compatible formats:  <br/>  _YYYY-MM-DD_ <br/>  _YYYY-MM-DDThh:mm:ss_ <br/>  _YYYY-MM-DDThh:mm:ss:Z_ <br/>  The format values specify the following: <br/>  _YYYY_ - Four-digit year. Only four-digit years are supported. <br/>  _MM_ - Two-digit month. 01 = January. <br/>  _DD_ - Two-digit day of month (01 through 31). <br/>  _T_ - The letter "T". <br/>  _hh_ - Two-digit hour (00 through 23). A.M. or P.M. indication is not allowed. <br/>  _mm_ - Two-digit minute (00 through 59). <br/>  _ss_ - Two-digit second (00 through 59). <br/> > [!IMPORTANT]>  All date/time values must be specified according to the Coordinated Universal Time (UTC), also known as Greenwich Mean Time (GMT) zone. The UTC zone identifier (a trailing "Z" character) is optional.          |
@@ -152,7 +152,7 @@ If you have enabled query refinement for a managed property in your query, the q
 **Table 2: Data returned for refinement bins**
 
 
-|**Parameter **|**Description **|
+|**Parameter**|**Description**|
 |:-----|:-----|
 |**RefinerName** <br/> |The name of the query refiner.  <br/> |
 |**RefinementName** <br/> |The string that represents the refinement bin. This string is typically used when presenting the refinement options to the users on a search result page.  <br/> |
@@ -172,7 +172,7 @@ Table 3 below contains two rows of refinement data. The first row holds refineme
 **Table 3: Format and contents of refinement data**
 
 
-|**RefinerName **|**RefinementName **|**RefinementValue **|**RefinementToken **|**RefinementCount **|
+|**RefinerName**|**RefinementName**|**RefinementValue**|**RefinementToken**|**RefinementCount**|
 |:-----|:-----|:-----|:-----|:-----|
 |FileType  <br/> |Html  <br/> |Html  <br/> |"ǂǂ68746d6c"  <br/> |50553  <br/> |
 |Write  <br/> |From 2013-09-21T00:00:00Z up to 2013-09-22T00:00:00Z  <br/> |From 2013-09-21T00:00:00Z up to 2013-09-22T00:00:00Z  <br/> |range(2013-09-21T00:00:00Z, 2013-09-22T00:00:00Z)  <br/> |37  <br/> |

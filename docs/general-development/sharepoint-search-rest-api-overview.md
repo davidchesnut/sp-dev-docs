@@ -71,7 +71,7 @@ The HTTP **POST** version of the Search REST service supports all parameters sup
 **Table 1. Query parameters with different data types for POST requests**
 
 
-|**Parameter **|**Data type **|
+|**Parameter**|**Data type**|
 |:-----|:-----|
 | [SelectProperties](#bk_SelectProperties) <br/> |string[]  <br/> |
 | [RefinementFilters](#bk_RefinementFilters) <br/> |string[]  <br/> |

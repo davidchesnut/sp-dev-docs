@@ -121,7 +121,7 @@ The following table lists the SharePoint components that cannot be deployed in a
     
 
 
-|**If you want the functionality of ... **|**... try these approaches. **|
+|**If you want the functionality of ...**|**... try these approaches.**|
 |:-----|:-----|
 |Custom Web Parts  <br/> |A SharePoint Add-in can have remote pages that contain custom Web Parts. Another option is to expose a page from a remote web application in an add-in part on a SharePoint site page. The remote page can have basically the same UI controls and functionality as a Web Part. For more information, see  [Create add-in parts to install with your SharePoint Add-in](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx).  <br/> |
 |Event receivers and Feature receivers  <br/> |A SharePoint Add-in can contain functionally equivalent remote event receivers. For more information, see  [Handle events in SharePoint Add-ins](http://msdn.microsoft.com/library/c050d056-8548-4496-a053-016779d723d9%28Office.15%29.aspx).  <br/> |

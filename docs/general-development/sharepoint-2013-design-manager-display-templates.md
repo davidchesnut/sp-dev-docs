@@ -184,7 +184,7 @@ These elements and their properties provide important information to the SharePo
 **Table 1. List of CustomDocumentProperties entries**
 
 
-|**Property **|**Description **|
+|**Property**|**Description**|
 |:-----|:-----|
 |**TemplateHidden** <br/> |Boolean value that indicates whether to hide the display template from the list of available templates in the Web Part. This value can be changed in the display template file properties.  <br/> |
 |**ManagedPropertyMapping** <br/> |Maps fields exposed by search result items into properties available for JavaScript. Used only in item templates.  <br/> |
@@ -219,7 +219,7 @@ By default, this line is included in all display templates. You can add more lin
 **Table 2. Examples for including external resources in the <script> tag**
 
 
-|**If you want to include the following: **|**Use the following code: **|
+|**If you want to include the following:**|**Use the following code:**|
 |:-----|:-----|
 |A JavaScript file that is part of the current site collection  <br/> | `$includeScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Content Web Parts/MyScripts.js");` <br/> |
 |An external JavaScript file  <br/> | `$includeScript(this.url, "http://www.contoso.com/ExternalScript.js");` <br/> |

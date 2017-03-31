@@ -64,7 +64,7 @@ You can use the wide range of search-related APIs that SharePoint offers for sea
 **SharePoint APIs for Search add-ins**
 
 
-|**API name **|**Class library **|
+|**API name**|**Class library**|
 |:-----|:-----|
 |.NET client object model (CSOM)  <br/> |Microsoft.SharePoint.Client.Search.dll  <br/> |
 |Silverlight CSOM  <br/> |Microsoft.SharePoint.Client.Search.Silverlight.dll  <br/> |

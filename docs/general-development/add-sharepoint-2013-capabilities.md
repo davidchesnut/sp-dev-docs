@@ -30,7 +30,7 @@ The following table shows SharePoint capabilities that you can add to your app, 
 **Table 1. SharePoint capabilities that you can add to apps in SharePoint 2013**
 
 
-|**Capability **|**Article title **|
+|**Capability**|**Article title**|
 |:-----|:-----|
 |Model and automate business processes  <br/> | [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md) <br/> |
 |Communicate and collaborate with people and track content  <br/> | [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint-2013.md) <br/> |

@@ -68,7 +68,7 @@ CMIS defines an object-type capability that is equivalent to the idea of content
 **Table 1. CMIS object-type values and their SharePoint 2013 equivalents**
 
 
-|**CMIS object-type **|**Supported in SharePoint Server? **|**SharePoint 2013 equivalent functionality **|**Description **|
+|**CMIS object-type**|**Supported in SharePoint Server?**|**SharePoint 2013 equivalent functionality**|**Description**|
 |:-----|:-----|:-----|:-----|
 |document  <br/> |yes  <br/> |**Document** objects <br/> |The CMIS document object-type maps directly to the **Document** object in SharePoint Server. <br/> Documents have properties and a content stream attached to them, can be versioned, and support basic create, read, update, and delete (CRUD) operations.  <br/> |
 |folder  <br/> |yes  <br/> | [SPFolder](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPFolder.aspx) objects <br/> |The CMIS folder object-type maps directly to the **SPFolder** object in SharePoint Server. <br/> Folders can contain documents and other folders, and must have a single parent folder. Folders have properties attached to them, and they support the same CRUD operations that the document object supports.  <br/> CMIS folders cannot be versioned.  <br/> |
@@ -126,7 +126,7 @@ Query is an optional part of the CMIS specification that SharePoint Server suppo
 **Table 2. CMIS query syntax examples**
 
 
-|**CMIS query statement **|**Description **|
+|**CMIS query statement**|**Description**|
 |:-----|:-----|
 | `SELECT * FROM cmis:document` <br/> |Selects all documents in the repository.  <br/> |
 | `SELECT cmis:name, cmis:author FROM cmis:document WHERE cmis:author='Tina Makovec'` <br/> |Selects the name and author of any document in the repository where the author is equal to Tina Makovec.  <br/> |

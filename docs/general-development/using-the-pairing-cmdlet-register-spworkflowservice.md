@@ -30,7 +30,7 @@ Also note that **Register-SPWorkflowService** uses the credentials of the curren
 ****
 
 
-|**Detail **|**Description **|
+|**Detail**|**Description**|
 |:-----|:-----|
 |Verb  <br/> |Register  <br/> |
 |Noun  <br/> |SPWorkflowService  <br/> |
@@ -43,7 +43,7 @@ Also note that **Register-SPWorkflowService** uses the credentials of the curren
 
 
 
-|**Parameter **|**Type **|**Description **|
+|**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |SPSite          (Required)  <br/> |**SPSitePipeBind** <br/> |The URL of a long-lasting site collection on the SharePoint Server farm that serves as the pairing endpoint. Information for pairing is deduced from this URL.  <br/> |
 |WorkflowHostUri          (Required)  <br/> |String  <br/> |The URL of the Workflow Manager endpoint for the pairing. Provides the workflow host URI along with port number.  <br/> |

@@ -84,7 +84,7 @@ Table 1 shows the resources for setting up a development environment and beginni
 **Table 1. Resources to help you get started with SharePoint farm solutions development**
 
 
-|**Topic **|**Description **|
+|**Topic**|**Description**|
 |:-----|:-----|
 | [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md) <br/> |Contains step-by-step instructions on how to install the components of a SharePoint 2013 development environment.  <br/> |
 | [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md) <br/> |Describes the several sets of APIs that are provided in SharePoint 2013, including the server object model and the various client-side object models, and the REST/OData web service.  <br/> |
@@ -108,7 +108,7 @@ When you know the kinds of SharePoint Add-in that you want to create, we provide
 **Table 2. Resources to help you get started with SharePoint Add-ins development**
 
 
-|**Topic **|**Description **|
+|**Topic**|**Description**|
 |:-----|:-----|
 |||
 | [Set up a development environment for SharePoint Add-ins on Office 365](http://msdn.microsoft.com/library/b22ce52a-ae9e-4831-9b68-c9210af6dc54%28Office.15%29.aspx) <br/> |Explains how to sign up for and use an Office 365 Developer Site for developing SharePoint Add-ins.  <br/> |

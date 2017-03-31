@@ -11,7 +11,7 @@ Find and download code samples for SharePoint 2013, including samples that demon
 
 
 
-|**Title **|**Summary **|**Subject **|
+|**Title**|**Summary**|**Subject**|
 |:-----|:-----|:-----|
 | [SharePoint 2013: Creating an OData source With BCS notifications](http://code.msdn.microsoft.com/SharePoint-2013-Creating-f47c3890) <br/> |Learn how to create a Windows Communication Foundation (WCF) data service that exposes data from the Northwind database using the OData protocol to provide data, as well as notifications of changes to that data found in the external system.  <br/> |BCS, OData, WCF  <br/> |
 | [SharePoint 2013: MyFileConnector custom BCS indexing connector sample](http://code.msdn.microsoft.com/SharePoint-2013-MyFileConne-79d2ea26) <br/> |Learn how to create a custom BCS indexing connector for Search in SharePoint 2013.  <br/> |BCS  <br/> |

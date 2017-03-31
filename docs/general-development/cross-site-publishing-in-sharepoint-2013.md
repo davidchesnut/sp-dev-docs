@@ -48,7 +48,7 @@ There are some cases where cross-site publishing is not efficient or appropriate
 **Table 1. Design considerations for cross-site publishing**
 
 
-|**Design Consideration **|**Description **|
+|**Design Consideration**|**Description**|
 |:-----|:-----|
 |**Lag time** <br/> |If the delay between the time an author publishes a page and when it shows up on the site is too long for someone who depends on it, you may want to consider using content deployment instead.  <br/> |
 |**Search database implementation** <br/> |If you connect your search database to an external data source and you use an external (non-SharePoint) connector, you can't use cross-site publishing. If you use business connection services (BCS), you can use cross-site publishing.  <br/> Using cross-site publishing with the search database makes sense in some cases but not others. You should not use cross-site publishing to publish from a source site directly to the Internet in a way that does not include your search database in the planning or custom code implementation.  <br/> |

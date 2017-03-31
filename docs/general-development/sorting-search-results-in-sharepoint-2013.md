@@ -286,7 +286,7 @@ Table 1 lists the functions you can use in the sort formula expression. The expr
 **Table 1. Functions for sort formula expressions**
 
 
-|**Function **|**Description **|
+|**Function**|**Description**|
 |:-----|:-----|
 |**+** <br/> |Specifies addition.  <br/> |
 |**-** <br/> |Specifies subtraction.  <br/> |
@@ -493,7 +493,7 @@ Table 2 explains the parameters to the random sort specification.
 **Table 2. Parameters for the random sort specification**
 
 
-|**Parameter **|**Description **|**Required **|
+|**Parameter**|**Description**|**Required**|
 |:-----|:-----|:-----|
 | _Seed_ <br/> |The seed for the random value generation.  <br/> The seed value is input to a function that generates a random number. This random number is used in the final sorting.Using only the  _seed_ option will give you a randomly sorted query result set. The sorting order for the same query (when using the same seed) may change after an index update. <br/> |Yes  <br/> |
 | _Hashfield_ <br/> |A managed property that is used as the hash value for the random generation. You can use this parameter to ensure that the sorting order for the same query (when using the same seed) does not change after an index update.  <br/> The managed property must be of type  [Integer](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Integer.aspx) and must be [Sortable()](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.Sortable.aspx) . You may fill this managed property with random or unique values (for example a sequence number populated by an item processing stage). <br/> |No  <br/> |

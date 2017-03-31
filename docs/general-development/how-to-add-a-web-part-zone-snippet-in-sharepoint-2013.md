@@ -102,7 +102,7 @@ Table 1 shows important properties to consider when you want to restrict a Web P
 **Table 1. Web Part zone properties used to restrict content authors**
 
 
-|**Property Name **|**Description **|
+|**Property Name**|**Description**|
 |:-----|:-----|
 |**AllowLayoutChange** <br/> |Specifies whether Web Parts within the zone can be closed, minimized, deleted, or restored.  <br/> If set to **False**, users cannot close, minimize, delete, or restore Web Parts in the zone, drag Web Parts to a different zone, or rearrange or move Web Parts within the zone. Users also cannot add Web Parts from the Web Part catalog, and several properties that affect the UI of Web Parts in the zone are disabled. This property does not affect the ability to change the layout programmatically.  <br/> If set to **True**, users with appropriate permissions can perform these actions.  <br/> |
 |**LockLayout** <br/> |Specifies whether Web Parts within the zone can be added, deleted, resized, or moved. This property works the same whether the Web Part Page is in personal view or shared view.  <br/> If set to **True**, the specific Web Part properties for each Web Part in the zone that are affected are: **Zone (ZoneID)**, **Part Order (PartOrder)**, **Visible on Page (IsVisible)**, **Height (Height)**, **Width (Width)**, **Allow Close (AllowRemove)**, and **IsIncluded** (the **Close** command on the **Web Part** menu). Other Web Part properties are not affected. <br/> If set to **False**, the Web Part properties determine whether modifications can be made (together with the appropriate site permissions).  <br/> |

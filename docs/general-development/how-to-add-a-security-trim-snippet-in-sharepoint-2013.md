@@ -67,7 +67,7 @@ For example, if you set a Security Trim panel to **Show to authors**, by default
 **Table 1. Mapping of panel options to default permission levels and groups**
 
 
-|**Security Trim panel option **|**Permissions property **|**Permission **|**Permission level **|**Group **|
+|**Security Trim panel option**|**Permissions property**|**Permission**|**Permission level**|**Group**|
 |:-----|:-----|:-----|:-----|:-----|
 |Show to authors  <br/> |**AddAndCustomizePages** <br/> |Add and Customize Pages  <br/> |Contribute (or higher)  <br/> |Members  <br/> |
 |Show to Authenticated Users  <br/> |**ViewPages** <br/> |View Pages  <br/> |Read (or higher)  <br/> |Visitors  <br/> |

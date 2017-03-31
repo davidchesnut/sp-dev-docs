@@ -125,7 +125,7 @@ Table 1 lists some examples of valid property restrictions syntax in KQL queries
 **Table 1. Valid property restriction syntax**
 
 
-|**Syntax **|**Returns **|
+|**Syntax**|**Returns**|
 |:-----|:-----|
 | `author:"John Smith"` <br/> |Returns content items authored by John Smith.  <br/> |
 | `filetype:docx` <br/> |Returns Microsoft Word documents.  <br/> |
@@ -185,7 +185,7 @@ Search in SharePoint 2013 supports several property operators for property restr
 **Table 2. Valid property operators for property restrictions**
 
 
-|**Operator **|**Description **|**Supported managed property type **|
+|**Operator**|**Description**|**Supported managed property type**|
 |:-----|:-----|:-----|
 |:  <br/> |Returns results where the value specified in the property restriction is equal to the property value that is stored in the Property Store database, or matches individual terms in the property value that is stored in the full-text index.  <br/> | [Text](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Text.aspx) <br/>  [DateTime](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.DateTime.aspx) <br/>  [Integer](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Integer.aspx) <br/>  [Decimal](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Decimal.aspx) <br/>  [Double](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Double.aspx) <br/>  [YesNo](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.YesNo.aspx) <br/> |
 |=  <br/> |Returns search results where the property value is equal to the value specified in the property restriction.  <br/> > [!NOTE]> We do not recommend combining the **=** operator together with asterisk ( *****) when you do exact matching.           | [Text](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Text.aspx) <br/>  [DateTime](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.DateTime.aspx) <br/>  [Integer](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Integer.aspx) <br/>  [Decimal](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Decimal.aspx) <br/>  [Double](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Double.aspx) <br/>  [YesNo](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.YesNo.aspx) <br/> |
@@ -207,7 +207,7 @@ You must specify a property value that is a valid data type for the managed prop
 **Table 3. Valid data type mappings for managed property types**
 
 
-|**Managed type **|**Data type **|
+|**Managed type**|**Data type**|
 |:-----|:-----|
 | [Text](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Text.aspx) <br/> | [String](https://msdn.microsoft.com/library/System.String.aspx) <br/> |
 | [Integer](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Administration.ManagedDataType.Integer.aspx) <br/> | [Int64](https://msdn.microsoft.com/library/System.Int64.aspx) <br/> |
@@ -348,7 +348,7 @@ KQL enables you to build search queries that support relative "day" range query,
     
 
 
-|**Name of date interval **|**Description **|
+|**Name of date interval**|**Description**|
 |:-----|:-----|
 |today  <br/> |Represents the time from the beginning of the current day until the end of the current day.  <br/> |
 |yesterday  <br/> |Represents the time from the beginning of the day until the end of the day that precedes the current day.  <br/> |
@@ -416,7 +416,7 @@ You use Boolean operators to broaden or narrow your search. You can use Boolean 
 **Table 5. Boolean operators supported in KQL**
 
 
-|**Operator **|**Description **|
+|**Operator**|**Description**|
 |:-----|:-----|
 |**AND** <br/> |Returns search results that include all of the free text expressions, or property restrictions specified with the **AND** operator. You must specify a valid free text expression and/or a valid property restriction both preceding and following the **AND** operator. This is the same as using the plus ("+") character. <br/> |
 |**NOT** <br/> |Returns search results that don't include the specified free text expressions or property restrictions. You must specify a valid free text expression and/or a valid property restriction following the **NOT** operator. This is the same as using the minus ("-") character. <br/> |
@@ -555,7 +555,7 @@ You can specify whether the results that are returned should include or exclude 
 **Table 6. Operators for including and excluding content in results**
 
 
-|**Name **|**Operator **|**Behavior **|
+|**Name**|**Operator**|**Behavior**|
 |:-----|:-----|:-----|
 |Inclusion  <br/> |" **+** " <br/> |Includes content with values that match the inclusion.  <br/> This is the default behavior if no character is specified. This is the same as using the **AND** operator. <br/> |
 |Exclusion  <br/> |" **-** " <br/> |Excludes content with values that match the exclusion. This is the same as using the **NOT** operator. <br/> |
@@ -606,7 +606,7 @@ Table 7 lists the basic parameters available for the **XRANK** operator.
 **Table 7. XRANK operator parameters**
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _n_ <br/> | _<integer_value>_ <br/> |Specifies the number of results to compute statistics from.  <br/> This parameter does not affect the number of results that the dynamic rank contributes to; it is just a means to exclude irrelevant items from the statistics calculations.  <br/> Default: **0**. A zero value carries the semantic of *all documents*  . <br/> |
 | _nb_ <br/> | _<float_value>_ <br/> |The  _nb_ parameter refers to normalized boost. This parameter specifies the factor that is multiplied with the product of the variance and average score of the rank values of the results set. <br/>  _f_ in the XRANK formula. <br/> |
@@ -623,7 +623,7 @@ The following advanced parameters are also available. However, typically they're
 **Table 8. Advanced parameters for XRANK**
 
 
-|**Parameter **|**Value **|**Description **|
+|**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
 | _cb_ <br/> | _<float_value>_ <br/> |The  _cb_ parameter refers to constant boost. <br/> Default: **0**. <br/>  _a_ in the XRANK formula. <br/> |
 | _stdb_ <br/> | _<float_value>_ <br/> |The  _stdb_ parameter refers to standard deviation boost. <br/> Default: **0**. <br/>  _e_ in the XRANK formula. <br/> |

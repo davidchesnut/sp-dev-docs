@@ -49,7 +49,7 @@ Table 1 describes the operators supported by the trigger expression language, wi
 **Table 1. Supported operators for trigger expression syntax**
 
 
-|**Category **|**Expression **|**Description **|
+|**Category**|**Expression**|**Description**|
 |:-----|:-----|:-----|
 |Unary  <br/> |-  <br/> !, NOT  <br/> |Arithmetic negation  <br/> Logical negation  <br/> |
 |Multiplicative  <br/> |*  <br/> /  <br/> %, mod  <br/> |Multiplication  <br/> Division  <br/> Remainder  <br/> |
@@ -236,7 +236,7 @@ There are two sets of constants that can be used with specific functions: **Date
 **Table 2. Trigger expression constants and usage in SharePoint 2013**
 
 
-|**Group of constants **|**Examples **|**Usage **|
+|**Group of constants**|**Examples**|**Usage**|
 |:-----|:-----|:-----|
 |**DatePartConstant** <br/> |**Day**, **Month**, **Year**, **Hour**, **Minute**, **Second**.  <br/> |With the **GetDatePart** function <br/> |
 |**RegexOptionConstant** <br/> |**IgnoreCase** <br/> |With the **IsMatch**, **Match**, **ReplaceRegex**, and **IndexOfRegex** functions. <br/> |

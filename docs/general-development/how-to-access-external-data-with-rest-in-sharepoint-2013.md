@@ -47,7 +47,7 @@ The SharePoint 2013 REST service provides a way to access external data using a 
 **Table 1. Core concepts for REST in SharePoint 2013**
 
 
-|**Article title **|**Description **|
+|**Article title**|**Description**|
 |:-----|:-----|
 | [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx) <br/> |Learn how to use the SharePoint 2013 REST service, which provides a REST programming interface comparable to the existing client object model.  <br/> |
 | [Get to know the SharePoint 2013 REST service](http://msdn.microsoft.com/library/2de035a0-ac75-43bd-9665-5c5a59c4c590%28Office.15%29.aspx) <br/> |Get the basics of using the SharePoint 2013 REST service to access and update SharePoint data, using the REST and OData web protocol standards.  <br/> |

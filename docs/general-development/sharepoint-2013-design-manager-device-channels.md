@@ -47,7 +47,7 @@ You can create and configure a device channel from the **Site Settings** menu un
 **Table 1. Required and optional fields for creating a device channel**
 
 
-|**Field **|**Required Value **|**Value **|
+|**Field**|**Required Value**|**Value**|
 |:-----|:-----|:-----|
 |Name  <br/> |Yes  <br/> |This is the name of your design channel. It can be a friendly name to identify the channel.  <br/> |
 |Alias  <br/> |Yes  <br/> |The alias name enables you to identify your device channel in code, device channel panels (discussed later in this article), previews, and other contexts.  <br/> > [!IMPORTANT]> If you later change the channel alias, you'll have to manually update master page mappings, device channel panels, and any custom code or markup.           |
@@ -101,7 +101,7 @@ When creating a device channel, you are asked to supply a user agent substring t
 **Table 2. Sample user agent substring values**
 
 
-|**Device **|**User agent substring(s) **|
+|**Device**|**User agent substring(s)**|
 |:-----|:-----|
 |Windows Phone  <br/> | Windows Phone OS 7.5 (Specific to Windows Phone 7.5 phone.) <br/>  Windows Phone OS (Generic substring for all Windows Phone versions.) <br/> |
 |iPhone  <br/> |iPhone  <br/> |
@@ -134,7 +134,7 @@ After they are created, device channels are ordered and stored in a list. It is 
 **Table 3. Sample ordering of device channels**
 
 
-|**Order 1 (Device Channels) **|**Order 2 (Device Channels) **|
+|**Order 1 (Device Channels)**|**Order 2 (Device Channels)**|
 |:-----|:-----|
 |device channel 1—Windows Phone OS 7.5  <br/> |device channel 1—Windows Phone OS  <br/> |
 |device channel 2—Windows Phone OS  <br/> |device channel 2—Windows Phone OS 7.5  <br/> |
@@ -240,7 +240,7 @@ There are some generic manufacturer user agent substrings that you can use for d
 **Table 4. Differentiating between user agent strings**
 
 
-|**Device **|**User Agent String **|
+|**Device**|**User Agent String**|
 |:-----|:-----|
 |Windows 8 desktop  <br/> |(compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)  <br/> |
 |Windows 8 tablet (example)  <br/> |(compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; touch)  <br/> |

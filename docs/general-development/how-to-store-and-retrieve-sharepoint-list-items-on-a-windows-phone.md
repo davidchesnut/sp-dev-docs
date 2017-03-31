@@ -131,7 +131,7 @@ For the procedures in this section, we assume you're working in the context of a
 **Table 1. Sample Product Orders list**
 
 
-|**Column **|**Type **|**Required **|
+|**Column**|**Type**|**Required**|
 |:-----|:-----|:-----|
 |Product (for example, Title)  <br/> |Single line of text (Text)  <br/> |Yes  <br/> |
 |Description  <br/> |Single line of text (Text)  <br/> |No  <br/> |

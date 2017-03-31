@@ -51,7 +51,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |Principal  <br/> |Required.  <br/> The name of the security principal that has this ACE.  <br/> Attribute type: **String** <br/> |
    
@@ -61,7 +61,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Right Element in AccessControlEntry (BDCMetadata Schema)](http://msdn.microsoft.com/library/a2e4bd6c-2306-b657-7290-cc9c9b262911%28Office.15%29.aspx) <br/> |A **Right** element that specifies the permissions available to the security principal. <br/> |
    
@@ -71,7 +71,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [AccessControlList Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/b7f97740-5d2c-f91a-1028-10e2890d4a99%28Office.15%29.aspx) <br/> |The access control list (ACL) that contains this ACE.  <br/> |
    
@@ -116,7 +116,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [AccessControlEntry Element in AccessControlList (BDCMetadata Schema)](http://msdn.microsoft.com/library/85e24489-0a6b-dfda-fb03-474fe7b0d947%28Office.15%29.aspx) <br/> |An access control entry (ACE).  <br/> |
    
@@ -126,7 +126,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Model Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/d7823090-b20d-2c96-c359-081c055d0e65%28Office.15%29.aspx) <br/> |A model that contains external content types in a business application.  <br/> |
 | [LobSystem Element in LobSystems (BDCMetadata Schema)](http://msdn.microsoft.com/library/d4e58d7d-a628-8093-97fe-7c3136e8f6f2%28Office.15%29.aspx) <br/> |The LobSystems contained inside the model.  <br/> |
@@ -180,7 +180,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**Position** <br/> |Required.  <br/> The suggested position of this action among the other actions of this external content type.  <br/> Attribute type: **Integer** <br/> |
 |**IsOpenedInNewWindow** <br/> |Optional.  <br/> Specifies whether the results of executing an action are presented in a new user interface window.  <br/> Default value: **false** <br/> Attribute type: **Boolean** <br/> |
@@ -196,7 +196,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized names of the action.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the action.  <br/> |
@@ -208,7 +208,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Actions Element in Entity (BDCMetadata Schema)](http://msdn.microsoft.com/library/c5a6c08d-a3df-61db-3ce3-1e6837bbf221%28Office.15%29.aspx) <br/> |The list of actions of an external content type.  <br/> |
    
@@ -254,7 +254,7 @@ The **ActionParameter** element accepts the following property.
 **Properties**
 
 
-|**Property **|**Type **|**Description **|**Required. **|**Default Value **|**Limits/Accepted Values **|
+|**Property**|**Type**|**Description**|**Required.**|**Default Value**|**Limits/Accepted Values**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |**IdOrdinal** <br/> |**System.Int32** <br/> |Specifies if the **ActionParameter** represents an identifier instead of a field. <br/> |Optional  <br/> |||
    
@@ -275,7 +275,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**Index** <br/> |Required.  <br/> An ordinal attribute that specifies the position of this **ActionParameter** among other **ActionParameters** in the URL. <br/> Attribute type: **Integer** <br/> |
 |**Name** <br/> |Required.  <br/> The name of the **ActionParameter**.  <br/> Attribute type: **String** <br/> |
@@ -288,7 +288,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized display names for the **ActionParameter**.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the **ActionParameter**.  <br/> |
@@ -299,7 +299,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|** **Element****|**Description **|
+|****Element****|**Description**|
 |:-----|:-----|
 | [ActionParameters Element in Action (BDCMetadata Schema)](http://msdn.microsoft.com/library/e14df901-621c-1851-db78-e99fd3cf31ae%28Office.15%29.aspx) <br/> |The **ActionParameters** element that contains this **ActionParameter**.  <br/> |
    
@@ -348,7 +348,7 @@ None.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [ActionParameter Element in ActionParameters (BDCMetadata Schema)](http://msdn.microsoft.com/library/1f5fa96a-1bff-f007-984d-a644cbbb2648%28Office.15%29.aspx) <br/> |An **ActionParameter**.  <br/> |
    
@@ -358,7 +358,7 @@ None.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Action Element in Actions (BDCMetadata Schema)](http://msdn.microsoft.com/library/f58b96c0-77a8-69d3-8710-fff03d4970b9%28Office.15%29.aspx) <br/> |The **Action** that these **ActionParameters** belong to. <br/> |
    
@@ -407,7 +407,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Action Element in Actions (BDCMetadata Schema)](http://msdn.microsoft.com/library/f58b96c0-77a8-69d3-8710-fff03d4970b9%28Office.15%29.aspx) <br/> |An action of an external content type.  <br/> |
    
@@ -417,7 +417,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Entity Element in Entities (BDCMetadata Schema)](http://msdn.microsoft.com/library/a8455bc4-12d8-85e0-146e-5d1d8579e1f5%28Office.15%29.aspx) <br/> |The external content type that these actions belong to.  <br/> |
    
@@ -452,7 +452,7 @@ The Association element links related external content types within a system. Fo
 **Properties**
 
 
-|**Property **|**Type **|**Description **|**Required **|**Default Value **|**Limits/Accepted Values **|
+|**Property**|**Type**|**Description**|**Required**|**Default Value**|**Limits/Accepted Values**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |**HideOnProfilePage** <br/> |**System.Boolean** <br/> |Specifies whether the related external content type should be added to the profile page of the master external content type.  <br/> |Optional  <br/> |||
    
@@ -473,9 +473,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|**Type** <br/> |Required.  <br/> The **MethodInstanceType** that specifies the type of the Association. <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|**Type** <br/> |Required.  <br/> The **MethodInstanceType** that specifies the type of the Association. <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |AssociationNavigator  <br/> |The **MethodInstance** is an **AssociationNavigator**.  <br/> |
 |Associator  <br/> |The **MethodInstance** is an **Associator**.  <br/> |
@@ -499,7 +499,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The **LocalizedDisplayNames** element specifies a list of localized names for the Association. <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The Properties element specifies the properties of the Association.  <br/> |
@@ -513,7 +513,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [MethodInstances Element in Method (BDCMetadata Schema)](http://msdn.microsoft.com/library/dae3aeae-e72a-0b52-1348-f5e5cd31109f%28Office.15%29.aspx) <br/> |The **MethodInstances** element that contains the Association. <br/> |
    
@@ -558,7 +558,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**Name** <br/> |Required.  <br/> The name of the **AssociationGroup**.  <br/> Attribute type: **String** <br/> |
 |**DefaultDisplayName** <br/> |Optional.  <br/> The default display name of the **AssociationGroup**.  <br/> Attribute type: **String** <br/> |
@@ -570,7 +570,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized names of the **AssociationGroup**.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the **AssociationGroup**.  <br/> |
@@ -582,7 +582,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [AssociationGroups Element in Entity (BDCMetadata Schema)](http://msdn.microsoft.com/library/b50c2648-daea-d8c0-039a-b95590b9924c%28Office.15%29.aspx) <br/> |The **AssociationGroups** element that contains this **AssociationGroup**.  <br/> |
    
@@ -631,7 +631,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [AssociationGroup Element in AssociationGroups (BDCMetadata Schema)](http://msdn.microsoft.com/library/db30622e-3c2b-2735-9360-a702196cbcff%28Office.15%29.aspx) <br/> |An **AssociationGroup**.  <br/> |
    
@@ -641,7 +641,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Entity Element in Entities (BDCMetadata Schema)](http://msdn.microsoft.com/library/a8455bc4-12d8-85e0-146e-5d1d8579e1f5%28Office.15%29.aspx) <br/> |The external content type that this **AssociationGroups** element is associated with. <br/> |
    
@@ -682,7 +682,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |EntityNamespace  <br/> |Optional.  <br/> The namespace of the external content type where the **Association** is defined. If **EntityName** is specified, **EntityNamespace** is required. <br/> Attribute type: **String** <br/> |
 |EntityName  <br/> |Optional.  <br/> The name of the external content type where the **Association** is defined. If **EntityNamespace** is specified, **EntityName** is required. <br/> Attribute type: **String** <br/> |
@@ -703,7 +703,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [AssociationGroup Element in AssociationGroups (BDCMetadata Schema)](http://msdn.microsoft.com/library/db30622e-3c2b-2735-9360-a702196cbcff%28Office.15%29.aspx) <br/> |The **AssociationGroup** that this **AssociationReference** belongs to. <br/> |
    
@@ -751,7 +751,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |LOBType  <br/> |Required.  <br/> The data type to convert the data value into when the rules are applied in reverse order.  <br/> Attribute type: **String** <br/> |
 |BDCType  <br/> |Required.  <br/> The data type to convert the data value into when the rules are applied in order.  <br/> Attribute type: **String** <br/> |
@@ -771,7 +771,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Interpretation Element in TypeDescriptor (BDCMetadata Schema)](http://msdn.microsoft.com/library/730f9590-ab40-85b8-eb97-8fd9d8e33c8a%28Office.15%29.aspx) <br/> |The rules to apply to the data stored in the data structures that are represented by a **TypeDescriptor**.  <br/> |
    
@@ -808,7 +808,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**MethodInstanceName** <br/> |Required.  <br/> The name of the **MethodInstance** to which this DefaultValue applies. <br/> Attribute type: **String** <br/> |
 |**Type** <br/> | Required. <br/>  The data type of the default value. <br/>  The following are the acceptable values for this attribute. <br/> **System.Int16** <br/> **System.Int32** <br/> **System.Int64** <br/> **System.Single** <br/> **System.Double** <br/> **System.Decimal** <br/> **System.Boolean** <br/> **System.Byte** <br/> **System.UInt16** <br/> **System.UInt32** <br/> **System.UInt64** <br/> **System.Guid** <br/> **System.String** <br/> **System.DateTime** <br/>  Any other serializable type (such as where `Type.IsSerializable == true`)  <br/>  Attribute type: **String** <br/> |
@@ -872,7 +872,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [DefaultValue Element in DefaultValues (BDCMetadata Schema)](http://msdn.microsoft.com/library/ddb67f64-6361-7b59-6724-4680484d585d%28Office.15%29.aspx) <br/> |The default value of a **TypeDescriptor** for a **MethodInstance**.  <br/> |
    
@@ -882,7 +882,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [TypeDescriptor Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/ae423de8-c13b-aea5-d47b-17ef786fb5a7%28Office.15%29.aspx) <br/> |The **TypeDescriptor** that these **DefaultValues** belong to. <br/> |
    
@@ -919,7 +919,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**Namespace** <br/> |Required.  <br/> The name of the entity namespace.  <br/> Attribute type: **String** <br/> |
 |**Name** <br/> |Required.  <br/> The name of the destination entity.  <br/> Attribute type: **String** <br/> |
@@ -987,7 +987,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Entity Element in Entities (BDCMetadata Schema)](http://msdn.microsoft.com/library/a8455bc4-12d8-85e0-146e-5d1d8579e1f5%28Office.15%29.aspx) <br/> |An external content type in an external system.  <br/> |
    
@@ -997,7 +997,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LobSystem Element in LobSystems (BDCMetadata Schema)](http://msdn.microsoft.com/library/d4e58d7d-a628-8093-97fe-7c3136e8f6f2%28Office.15%29.aspx) <br/> |An external system.  <br/> |
    
@@ -1038,12 +1038,12 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**Namespace** <br/> |Required.  <br/> The namespace that this external content type belongs to.  <br/> Attribute type: **String** <br/> > [!NOTE]> The namespace should not contain the asterisk special character " *****".           |
 |**Version** <br/> |Required.  <br/> The version number of this external content type.  <br/> Attribute type: **String** <br/> > [!CAUTION]> When the BDC model changes, you must increase the version number of the external content type. If the structure of an external content type changes, you should increase the major number. Examples of structural changes include adding a field to a **SpecificFinder** or changing an identifier field. If the change does not affect the structure of the external content type, for example, when adding a creator method, changing connection information, or when changing names of **LobSystems** and type descriptors, you should change the build number and revision number.          |
 |**EstimatedInstanceCount** <br/> |Optional.  <br/> The estimated number of external items contained by the external system.  <br/> Default value: 10000  <br/> Attribute type: **Integer** <br/> |
-|**DefaultOperationMode** <br/> |Optional.  <br/> Specifies the default behavior when interacting with the external system while creating, deleting, updating, or reading external items.  <br/> Default value: Default  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|**DefaultOperationMode** <br/> |Optional.  <br/> Specifies the default behavior when interacting with the external system while creating, deleting, updating, or reading external items.  <br/> Default value: Default  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |Online  <br/> |Bypass the cached external items for all operations and interact with the external system directly.  <br/> |
 |Cached  <br/> |Perform **Create**, **Read**, **Update**, and **Delete** operations directly against the cached external items. For **Read** operations, if the requested external items are available in the cache, use the external items in the cache. Otherwise, bypass the cache to obtain the external items from the external system, and put it in the cache for later use. <br/> |
@@ -1061,7 +1061,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized display names of this external content type.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of this external content type.  <br/> |
@@ -1077,7 +1077,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Entities Element in LobSystem (BDCMetadata Schema)](http://msdn.microsoft.com/library/fa121ed1-160a-03c9-df42-851ddc2528d5%28Office.15%29.aspx) <br/> |The list of external content types in this external system.  <br/> |
    
@@ -1118,9 +1118,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|Type  <br/> |Required.  <br/> The type of the filter descriptor.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|Type  <br/> |Required.  <br/> The type of the filter descriptor.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |Limit  <br/> |Used while querying an external system and the value of which can be interpreted as a limit on the number of external items ( **EntityInstances**) that are returned when the method that it belongs to is called.  <br/> |
 |PageNumber  <br/> ||
@@ -1153,7 +1153,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized display names of this filter descriptor.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of this filter descriptor.  <br/> |
@@ -1164,7 +1164,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [FilterDescriptors Element in Method (BDCMetadata Schema)](http://msdn.microsoft.com/library/33d8e418-ddbb-e1ac-b145-836ed9f36e5c%28Office.15%29.aspx) <br/> |A list of filter descriptors of a method.  <br/> |
    
@@ -1209,7 +1209,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [FilterDescriptor Element in FilterDescriptors (BDCMetadata Schema)](http://msdn.microsoft.com/library/8ce0a852-38f9-75d2-8258-27c57418f53c%28Office.15%29.aspx) <br/> |A filter descriptor.  <br/> |
    
@@ -1219,7 +1219,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Method Element in Methods (BDCMetadata Schema)](http://msdn.microsoft.com/library/70e87a9e-4959-0a7b-3f37-ddec36473ff4%28Office.15%29.aspx) <br/> |The method this list of filter descriptors belongs to.  <br/> |
    
@@ -1267,9 +1267,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|TypeName  <br/> |Required.  <br/> The data type of the value that corresponds to the identifier.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|TypeName  <br/> |Required.  <br/> The data type of the value that corresponds to the identifier.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |System.Boolean  <br/> |A bit.  <br/> |
 |System.Byte  <br/> |A number ranging from 0 to 255 inclusive.  <br/> |
@@ -1300,7 +1300,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized display names of the identifier.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the identifier.  <br/> |
@@ -1311,7 +1311,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Identifiers Element in Entity (BDCMetadata Schema)](http://msdn.microsoft.com/library/6566cb43-4f9e-9a2e-7ec0-89057d7daacc%28Office.15%29.aspx) <br/> |A list of identifiers of an external content type.  <br/> |
    
@@ -1356,7 +1356,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Identifier Element in Identifiers (BDCMetadata Schema)](http://msdn.microsoft.com/library/c4abf09b-10b6-0007-9214-35d5fe675be7%28Office.15%29.aspx) <br/> |Specifies an identifier.  <br/> |
    
@@ -1366,7 +1366,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Entity Element in Entities (BDCMetadata Schema)](http://msdn.microsoft.com/library/a8455bc4-12d8-85e0-146e-5d1d8579e1f5%28Office.15%29.aspx) <br/> |The external content type that contains this list of identifiers.  <br/> |
    
@@ -1411,7 +1411,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [ConvertType Element in Interpretation (BDCMetadata Schema)](http://msdn.microsoft.com/library/c474cf2c-b631-f3c9-daf1-f05d3e0d385f%28Office.15%29.aspx) <br/> |A **ConvertType** element that specifies the conversion of a data type to another data type. <br/> |
 | [NormalizeDateTime Element in Interpretation (BDCMetadata Schema)](http://msdn.microsoft.com/library/bbae3bfa-0754-d576-2bee-1ac0e8508a57%28Office.15%29.aspx) <br/> |A **NormalizeDateTime** element that specifies the conversion of the date and time representation of a value obtained from an external system into another representation. <br/> |
@@ -1423,7 +1423,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [TypeDescriptor Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/ae423de8-c13b-aea5-d47b-17ef786fb5a7%28Office.15%29.aspx) <br/> |The **TypeDescriptor** element. <br/> |
    
@@ -1464,9 +1464,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|Type  <br/> |The type of the **LobSystem**.  <br/> Required.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|Type  <br/> |The type of the **LobSystem**.  <br/> Required.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |Database  <br/> |The represented external data source is a database.  <br/> |
 |DotNetAssembly  <br/> |The represented external data source is a set of .NET Framework classes.  <br/> |
@@ -1485,7 +1485,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized names of the **LobSystem**.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |Specifies the properties of an **LobSystem**.  <br/> |
@@ -1500,7 +1500,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LobSystems Element in Model (BDCMetadata Schema)](http://msdn.microsoft.com/library/d9bf0ca9-fb79-e3a5-cc84-9510d93798cb%28Office.15%29.aspx) <br/> |Specifies a list of external systems in this model.  <br/> |
    
@@ -1537,7 +1537,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |Name  <br/> |Required.  <br/> The name of the external system instance.  <br/> Attribute type: **String** <br/> |
 |DefaultDisplayName  <br/> |Optional.  <br/> The default display name of the external system instance.  <br/> Attribute type: **String** <br/> |
@@ -1549,7 +1549,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized names of this external system instance.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of this external system instance.  <br/> |
@@ -1560,7 +1560,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LobSystemInstances Element in LobSystem (BDCMetadata Schema)](http://msdn.microsoft.com/library/122e419a-0497-afdf-1117-a82ab429f3eb%28Office.15%29.aspx) <br/> |A list of external system instances.  <br/> |
    
@@ -1605,7 +1605,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LobSystemInstance Element in LobSystemInstances (BDCMetadata Schema)](http://msdn.microsoft.com/library/a0c37891-ef4f-58af-445c-5ff4d5ad6cef%28Office.15%29.aspx) <br/> |An external system instance.  <br/> |
    
@@ -1615,7 +1615,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LobSystem Element in LobSystems (BDCMetadata Schema)](http://msdn.microsoft.com/library/d4e58d7d-a628-8093-97fe-7c3136e8f6f2%28Office.15%29.aspx) <br/> |An external system.  <br/> |
    
@@ -1660,7 +1660,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LobSystem Element in LobSystems (BDCMetadata Schema)](http://msdn.microsoft.com/library/d4e58d7d-a628-8093-97fe-7c3136e8f6f2%28Office.15%29.aspx) <br/> |A **LobSystem** element that specifies a external system. <br/> |
    
@@ -1670,7 +1670,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Model Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/d7823090-b20d-2c96-c359-081c055d0e65%28Office.15%29.aspx) <br/> |An application definition (BDC model).  <br/> |
    
@@ -1707,7 +1707,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |LCID  <br/> |Required.  <br/> The language code identifier (LCID).  <br/> Attribute type: **Integer** <br/> |
    
@@ -1725,7 +1725,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The **LocalizedDisplayNames** element that contains this **LocalizedDisplayName**.  <br/> |
    
@@ -1774,7 +1774,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayName Element in LocalizedDisplayNames (BDCMetadata Schema)](http://msdn.microsoft.com/library/93fb80ef-6347-b463-da90-4980d872678e%28Office.15%29.aspx) <br/> |A localized name.  <br/> |
    
@@ -1784,7 +1784,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Model Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/d7823090-b20d-2c96-c359-081c055d0e65%28Office.15%29.aspx) <br/> ||
 | [LobSystem Element in LobSystems (BDCMetadata Schema)](http://msdn.microsoft.com/library/d4e58d7d-a628-8093-97fe-7c3136e8f6f2%28Office.15%29.aspx) <br/> ||
@@ -1873,7 +1873,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |IsStatic  <br/> |Optional.  <br/> Specifies whether the execution of this method requires an external item ( **EntityInstance**) to serve as a context for execution. If set to **true**, the method represents a static method and does not require a specific **EntityInstance** to provide context for execution. If set to **false**, the method represents an instance method and requires an **EntityInstance** to provide the context for execution. <br/> Default value: **true** <br/> Attribute type: **Boolean** <br/> |
 |LobName  <br/> |Optional.  <br/> The name of the operation defined in the external system that is represented by this method.  <br/> Attribute type: **String** <br/> |
@@ -1887,7 +1887,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized display names of the method.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the method.  <br/> |
@@ -1902,7 +1902,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Methods Element in Entity (BDCMetadata Schema)](http://msdn.microsoft.com/library/42a24b32-bd97-4067-2e25-681d876d29fd%28Office.15%29.aspx) <br/> |A list of methods of an external content type.  <br/> |
    
@@ -1950,9 +1950,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|**Type** <br/> |Required.  <br/> Specifies the type of the **MethodInstance**.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|**Type** <br/> |Required.  <br/> Specifies the type of the **MethodInstance**.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |Finder  <br/> |A type of **MethodInstance** that can be called to return a collection of zero or more **EntityInstances** of a particular **Entity**. **Finder** input is defined by the **FilterDescriptors** that are contained in the **Method** that contains the **Finder**.  <br/> |
 |SpecificFinder  <br/> |A type of **MethodInstance** that can be called to return a specific **EntityInstance** of a specific **Entity** given its **EntityInstanceId**. **SpecificFinder** input is defined and ordered by the **Identifiers** that are associated with the **Entity**.  <br/> |
@@ -1985,7 +1985,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized display names of the **MethodInstance**.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the **MethodInstance**.  <br/> |
@@ -1997,7 +1997,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [MethodInstances Element in Method (BDCMetadata Schema)](http://msdn.microsoft.com/library/dae3aeae-e72a-0b52-1348-f5e5cd31109f%28Office.15%29.aspx) <br/> |The **MethodInstances** element that contains this **MethodInstance**.  <br/> |
    
@@ -2042,7 +2042,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Association Element in MethodInstances (BDCMetadata Schema)](http://msdn.microsoft.com/library/9659a1f5-1b12-03ef-f9e3-5c9904cc5dd0%28Office.15%29.aspx) <br/> |An association.  <br/> |
 | [MethodInstance Element in MethodInstances (BDCMetadata Schema)](http://msdn.microsoft.com/library/577ff9d0-706b-be7d-af5b-883e137cada8%28Office.15%29.aspx) <br/> |A method instance.  <br/> |
@@ -2053,7 +2053,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Method Element in Methods (BDCMetadata Schema)](http://msdn.microsoft.com/library/70e87a9e-4959-0a7b-3f37-ddec36473ff4%28Office.15%29.aspx) <br/> |The method that this method instance belongs to.  <br/> |
    
@@ -2102,7 +2102,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Method Element in Methods (BDCMetadata Schema)](http://msdn.microsoft.com/library/70e87a9e-4959-0a7b-3f37-ddec36473ff4%28Office.15%29.aspx) <br/> |Specifies a method.  <br/> |
    
@@ -2112,7 +2112,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Entity Element in Entities (BDCMetadata Schema)](http://msdn.microsoft.com/library/a8455bc4-12d8-85e0-146e-5d1d8579e1f5%28Office.15%29.aspx) <br/> |The external content type that this list of methods belongs to.  <br/> |
    
@@ -2149,7 +2149,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |Name  <br/> |The name of the **Model**.  <br/> Required.  <br/> Attribute type: **String** <br/> |
 |DefaultDisplayName  <br/> |The default display name of the **Model**.  <br/> Optional.  <br/> Attribute type: **String** <br/> |
@@ -2161,7 +2161,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized names of the **Model**.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the **Model**.  <br/> |
@@ -2209,9 +2209,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|**LobDateTimeMode** <br/> |Required.  <br/> Specifies the conversion to apply.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|**LobDateTimeMode** <br/> |Required.  <br/> Specifies the conversion to apply.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |UTC  <br/> |The value that is received from the external system is UTC (Coordinated Universal Time). If the value received is **Local**, it is converted to UTC. BDC sends UTC to the external system.  <br/> |
 |Local  <br/> |The value received from the external system is **Local**. If the value received from the external system is **Local**, then it will be converted to UTC. BDC sends **Local** to the external system. <br/> |
@@ -2233,7 +2233,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Interpretation Element in TypeDescriptor (BDCMetadata Schema)](http://msdn.microsoft.com/library/730f9590-ab40-85b8-eb97-8fd9d8e33c8a%28Office.15%29.aspx) <br/> |An **Interpretation** element that specifies the rules to apply to the data that is stored in the data structures represented by a **TypeDescriptor**.  <br/> |
    
@@ -2309,9 +2309,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|Direction  <br/> |Required.  <br/> The direction of the parameter.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|Direction  <br/> |Required.  <br/> The direction of the parameter.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |In  <br/> |The represented **Parameter** is an input parameter. <br/> |
 |Out  <br/> |The represented parameter is an output parameter.  <br/> |
@@ -2329,7 +2329,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized names of the parameter.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the parameter.  <br/> |
@@ -2341,7 +2341,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Parameters Element in Method (BDCMetadata Schema)](http://msdn.microsoft.com/library/343f4c25-e122-1a4c-2b80-bb8f25e3cc82%28Office.15%29.aspx) <br/> |The **Parameters** element that contains this parameter. <br/> |
    
@@ -2390,7 +2390,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Parameter Element in Parameters (BDCMetadata Schema)](http://msdn.microsoft.com/library/811cad0b-ba71-8be0-0765-3e0dec18a0d3%28Office.15%29.aspx) <br/> |A parameter.  <br/> |
    
@@ -2400,7 +2400,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Method Element in Methods (BDCMetadata Schema)](http://msdn.microsoft.com/library/70e87a9e-4959-0a7b-3f37-ddec36473ff4%28Office.15%29.aspx) <br/> |The method these parameters belong to.  <br/> |
    
@@ -2445,7 +2445,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Property Element in Properties (BDCMetadata Schema)](http://msdn.microsoft.com/library/2e6e8d5d-ef3b-c536-f3d1-ad2039b92c24%28Office.15%29.aspx) <br/> |Specifies a property.  <br/> |
    
@@ -2455,7 +2455,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Model Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/d7823090-b20d-2c96-c359-081c055d0e65%28Office.15%29.aspx) <br/> ||
 | [LobSystem Element in LobSystems (BDCMetadata Schema)](http://msdn.microsoft.com/library/d4e58d7d-a628-8093-97fe-7c3136e8f6f2%28Office.15%29.aspx) <br/> ||
@@ -2506,7 +2506,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**Name** <br/> |Required.  <br/> Specifies the name of the property.  <br/> Attribute type: **String** <br/> |
 |**Type** <br/> |Required.  <br/> Specifies data type of the property.  <br/> Attribute type: **String** <br/> |
@@ -2525,7 +2525,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The **Properties** element that contains this property. <br/> |
    
@@ -2578,7 +2578,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LobSystem Element in LobSystems (BDCMetadata Schema)](http://msdn.microsoft.com/library/d4e58d7d-a628-8093-97fe-7c3136e8f6f2%28Office.15%29.aspx) <br/> |The **LobSystem** element that this proxy applies to. <br/> |
    
@@ -2615,9 +2615,9 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
-|BdcRight  <br/> |Required.  <br/> The permission available to the security principal holding the right.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value **|**Description **|
+|BdcRight  <br/> |Required.  <br/> The permission available to the security principal holding the right.  <br/> The following table lists the possible values for this attribute.  <br/> |**Value**|**Description**|
 |:-----|:-----|
 |None  <br/> |No permissions.  <br/> |
 |Execute  <br/> |The represented security principal has the permission to invoke a **MethodInstance**.  <br/> |
@@ -2641,7 +2641,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [AccessControlEntry Element in AccessControlList (BDCMetadata Schema)](http://msdn.microsoft.com/library/85e24489-0a6b-dfda-fb03-474fe7b0d947%28Office.15%29.aspx) <br/> |The **AccessControlEntry** element that contains this right. <br/> |
    
@@ -2678,7 +2678,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |Namespace  <br/> |Required.  <br/> The namespace of the external content type that is the source of the **Association** that contains this element. <br/> Attribute type: String  <br/> |
 |Name  <br/> |Required.  <br/> The name of the external content type that is the source of the **Association** that contains this element. <br/> Attribute type: **String** <br/> |
@@ -2697,7 +2697,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [Association Element in MethodInstances (BDCMetadata Schema)](http://msdn.microsoft.com/library/9659a1f5-1b12-03ef-f9e3-5c9904cc5dd0%28Office.15%29.aspx) <br/> |The **Association** that contains this element. <br/> |
    
@@ -2734,7 +2734,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Attribute **|**Description **|
+|**Attribute**|**Description**|
 |:-----|:-----|
 |**TypeName** <br/> |Required.  <br/> The identifier of the data type of the data structure that is represented by the **TypeDescriptor**.  <br/> Attribute type: **String** <br/> |
 |**LobName** <br/> |Optional.  <br/> The data structure that is represented by the **TypeDescriptor**. The default value of this attribute is the name of the **TypeDescriptor**. For example, a line-of-business (LOB) system data structure named "CN1A" can be represented by a **TypeDescriptor** with **Name** attribute equal to "Customer Name", if the **LobName** attribute of this **TypeDescriptor** is equal to "CN1A". <br/> Attribute type: **String** <br/> |
@@ -2761,7 +2761,7 @@ The following sections describe attributes, child elements, and parent elements.
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [LocalizedDisplayNames Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/3202aecf-f98f-20cb-1fdd-f3a054cb24aa%28Office.15%29.aspx) <br/> |The localized names of the **TypeDescriptor**.  <br/> |
 | [Properties Element in MetadataObject (BDCMetadata Schema)](http://msdn.microsoft.com/library/9901904f-96ee-0cbb-64a9-c2aad9d72128%28Office.15%29.aspx) <br/> |The properties of the **TypeDescriptor**.  <br/> When the **TypeDescriptor** is of type **System.String**, the **Properties** element can contain a **Property** of type **System.Int32** with the **Name** attribute set to **Size**. The value of the **Property** specifies the expected maximum string length of the value of the data structure described by this **TypeDescriptor**.  <br/> |
@@ -2820,7 +2820,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [TypeDescriptor Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/ae423de8-c13b-aea5-d47b-17ef786fb5a7%28Office.15%29.aspx) <br/> |A **TypeDescriptor**.  <br/> |
    
@@ -2830,7 +2830,7 @@ None
     
 
 
-|**Element **|**Description **|
+|**Element**|**Description**|
 |:-----|:-----|
 | [TypeDescriptor Element (BDCMetadata Schema)](http://msdn.microsoft.com/library/ae423de8-c13b-aea5-d47b-17ef786fb5a7%28Office.15%29.aspx) <br/> ||
 | [TypeDescriptor](http://msdn.microsoft.com/library/30e38d7f-af18-20ec-45ab-0bece071ce67.aspx) <br/> ||

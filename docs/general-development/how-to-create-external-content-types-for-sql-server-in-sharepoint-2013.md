@@ -240,7 +240,7 @@ If your external content type maps to an Outlook item type, you must map one or 
 **Table: Outlook item type mapped to Outlook item field**
 
 
-|**Outlook item type **|**Outlook item field **|
+|**Outlook item type**|**Outlook item field**|
 |:-----|:-----|
 |Contact  <br/> |LastName  <br/> |
 |Task  <br/> |Subject  <br/> |

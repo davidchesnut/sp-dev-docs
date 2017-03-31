@@ -89,7 +89,7 @@ Although you have programmatic access to nine languages, you can run your ShareP
 **Table 1. Supported display/run-time languages in the SharePoint SDK for Windows Phone**
 
 
-|**Culture name **|**Culture code **|
+|**Culture name**|**Culture code**|
 |:-----|:-----|
 |Chinese Simplified (PRC)  <br/> |zh-CN  <br/> |
 |Chinese Traditional (Taiwan)  <br/> |zh-TW  <br/> |

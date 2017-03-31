@@ -97,7 +97,7 @@ You can approach an end-to-end packaging workflow several ways, with much of the
 **Table 1. Sample design package workflow**
 
 
-|**Step **|**Action **|**Description **|
+|**Step**|**Action**|**Description**|
 |:-----|:-----|:-----|
 |1  <br/> |Customer contracts vendor agency to create visual design.  <br/> | The vendor designer creates site, based on company requirements. <br/> > [!NOTE]>  The vendor designer must have the **Designers** permission level to use Design Manager and create and export packages. More specifically, the **Design** permission that allows viewing, adding, updating, deleting, approving, and customizing visual designs.          |
 |2  <br/> |Vendor designer exports visual design into a design package.  <br/> | The vendor designer exports the SharePoint solution package (.wsp file) after completing the other required branding and publishing steps. <br/>  The design package is delivered to the customer via a secure channel. <br/> |
@@ -115,7 +115,7 @@ Several files are included in the design package .wsp file when it is created th
 **Table 2. Summary of design package contents and file exportation locations**
 
 
-|**Export Location **|**Exported Assets **|
+|**Export Location**|**Exported Assets**|
 |:-----|:-----|
 |Document libraries  <br/> | Master Pages Gallery <br/>  Themes Gallery <br/>  Style Library <br/>  Site Assets Library <br/> |
 |Content types, fields  <br/> | Content types that inherit from the Page content type <br/> |

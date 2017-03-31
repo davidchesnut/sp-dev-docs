@@ -18,7 +18,7 @@ SharePoint Designer 2013 provides the capability to save a workflow as a templat
 **Support, by platform, for saving a workflow as a template**
 
 
-|**Workflow type **|**SharePoint 2010 Workflow platform **|**SharePoint 2013 Workflow platform **|
+|**Workflow type**|**SharePoint 2010 Workflow platform**|**SharePoint 2013 Workflow platform**|
 |:-----|:-----|:-----|
 |List Workflow  <br/> |No  <br/> |Yes  <br/> |
 |Site Workflow  <br/> |No  <br/> |Yes  <br/> |

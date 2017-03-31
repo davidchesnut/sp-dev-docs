@@ -85,7 +85,7 @@ You must have the following:
 **Table 1. Core concepts for extending the Geolocation field type**
 
 
-|**Article title **|**Description **|
+|**Article title**|**Description**|
 |:-----|:-----|
 | [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md) <br/> |Learn how to integrate location information and maps in SharePoint lists and location-based web and mobile apps by using the new Geolocation field, and by creating your own Geolocation-based field types.  <br/> |
 | [How to: Customize a field type using client-side rendering](how-to-customize-a-field-type-using-client-side-rendering.md) <br/> |Learn more about the new client-side rendering introduced in SharePoint 2013.  <br/> |

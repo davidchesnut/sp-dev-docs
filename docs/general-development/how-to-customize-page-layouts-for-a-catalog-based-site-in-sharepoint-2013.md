@@ -36,7 +36,7 @@ Table 1 lists useful articles that can help you understand the concepts and step
 **Table 1. Core concepts for creating and customizing page layouts for a catalog-based site**
 
 
-|**Article title **|**Description **|
+|**Article title**|**Description**|
 |:-----|:-----|
 | [Overview of cross-site publishing in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj635883.aspx) <br/> |Learn about how to use cross-site publishing and Search Web Parts to create adaptive SharePoint Internet, intranet, and extranet sites.  <br/> |
 | [How to: Create a page layout in SharePoint 2013](how-to-create-a-page-layout-in-sharepoint-2013.md) <br/> |Learn about how to create page layouts in SharePoint Server 2013.  <br/> |
@@ -465,7 +465,7 @@ If the catalog item page layout was created automatically when the publishing si
 **Table 2. Default managed properties Catalog-Item Reuse Snippets**
 
 
-|**Managed property **|**Description **|**Used by **|
+|**Managed property**|**Description**|**Used by**|
 |:-----|:-----|:-----|
 |**AuthorOWSUSER** <br/> |The name of the user who created the page.  <br/> |Pages library only  <br/> |
 |**CreatedOWSDATE** <br/> |The date the page or list item was created.  <br/> |Pages library and list  <br/> |
