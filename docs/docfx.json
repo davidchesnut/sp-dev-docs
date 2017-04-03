@@ -30,7 +30,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "author": "VesaJuvonen" 
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "sharepoint-test"
