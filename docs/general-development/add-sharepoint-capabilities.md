@@ -37,7 +37,7 @@ The following table shows SharePoint capabilities that you can add to your app, 
 |Add location and mapping features  <br/> | [Integrating location and map functionality in SharePoint](integrating-location-and-map-functionality-in-sharepoint.md) <br/> |
 |Make search results more relevant  <br/> | [Search in SharePoint](search-in-sharepoint.md) <br/> |
 |Access data from external data systems  <br/> | [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md) <br/> |
-|Work with data, convert file formats, and translate sites  <br/> | [Office 2013 and SharePoint application services](office-2013-and-sharepoint-application-services.md) <br/> |
+|Work with data, convert file formats, and translate sites  <br/> | [Office and SharePoint application services](office-and-sharepoint-application-services.md) <br/> |
 |Work with user access, roles, rights, and claims.  <br/> | [Authentication, authorization, and security in SharePoint](authentication-authorization-and-security-in-sharepoint.md) <br/> |
 |Discover content in electronic format for legal purposes  <br/> | [eDiscovery in SharePoint](ediscovery-in-sharepoint.md) <br/> |
    
@@ -46,19 +46,19 @@ The following table shows SharePoint capabilities that you can add to your app, 
 <a name="bk_addresources"> </a>
 
 
--  [What's new for developers in SharePoint ](what’s-new-for-developers-in-sharepoint-.md)
+-  [What's new for developers in SharePoint](what’s-new-for-developers-in-sharepoint.md)
     
   
--  [SharePoint  development overview](sharepoint--development-overview.md)
+-  [SharePoint development overview](sharepoint-development-overview.md)
     
   
--  [Set up a general development environment for SharePoint ](set-up-a-general-development-environment-for-sharepoint-.md)
+-  [Set up a general development environment for SharePoint](set-up-a-general-development-environment-for-sharepoint.md)
     
   
--  [Programming models in SharePoint ](programming-models-in-sharepoint-.md)
+-  [Programming models in SharePoint](programming-models-in-sharepoint.md)
     
   
--  [Accessibility in SharePoint ](accessibility-in-sharepoint-.md)
+-  [Accessibility in SharePoint](accessibility-in-sharepoint.md)
     
   
 
