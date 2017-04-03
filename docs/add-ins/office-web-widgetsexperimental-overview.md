@@ -7,7 +7,7 @@ Learn about the Office Web Widgets - Experimental that you can use in Office Add
  
 
 
- **Caution**  The Office Web Widgets - Experimental are only provided for research and feedback purposes. Do not use in production scenarios. The Office Web Widgets behavior may change significantly in future releases. Read and review the  [Office Web Widgets - Experimental License Terms](office-web-widgets--experimental-license-terms.md).
+ **Caution**  The Office Web Widgets - Experimental are only provided for research and feedback purposes. Do not use in production scenarios. The Office Web Widgets behavior may change significantly in future releases. Read and review the  [Office Web Widgets - Experimental License Terms](office-web-widgetsexperimental-license-terms.md).
  
 
 
@@ -148,8 +148,7 @@ Widgets can help to speed up the development process and reduce the cost and tim
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
--  [Office Web Widgets - Experimental License Terms](office-web-widgets--experimental-license-terms.md)
+-  [Office Web Widgets - Experimental License Terms](office-web-widgetsexperimental-license-terms.md)
     
  
 -  [Office Web Widgets - Experimental NuGet gallery page](http://www.nuget.org/packages/Microsoft.Office.WebWidgets.Experimental/)
