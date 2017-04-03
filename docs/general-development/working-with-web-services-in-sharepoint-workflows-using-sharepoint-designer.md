@@ -379,7 +379,7 @@ SharePoint 2013introduced a new workflow architecture facilitated by a new produ
 <a name="bk_addresources"> </a>
 
 
--  [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)
+-  [Workflows in SharePoint 2013](workflows-in-sharepoint.md)
     
   
 -  [OData](http://www.odata.org/)

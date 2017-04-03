@@ -538,7 +538,7 @@ Following are resources that provide guidance for packaging and deploying your w
 <a name="bk_addresources"> </a>
 
 
--  [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)
+-  [Workflows in SharePoint 2013](workflows-in-sharepoint.md)
     
   
 -  [Prepare to set up and configure a SharePoint workflow development environment](prepare-to-set-up-and-configure-a-sharepoint-workflow-development-environment.md)
@@ -547,7 +547,7 @@ Following are resources that provide guidance for packaging and deploying your w
 -  [SharePoint workflow development best practices](sharepoint-workflow-development-best-practices.md)
     
   
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
 

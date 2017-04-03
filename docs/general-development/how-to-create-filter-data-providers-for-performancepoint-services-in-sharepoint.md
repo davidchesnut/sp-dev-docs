@@ -305,10 +305,10 @@ After you create a data provider and a filter editor (including its user interfa
 <a name="bk_next"> </a>
 
 
--  [How to: Create filter editors for PerformancePoint Services in SharePoint 2013](how-to-create-filter-editors-for-performancepoint-services-in-sharepoint-2013.md)
+-  [How to: Create filter editors for PerformancePoint Services in SharePoint 2013](how-to-create-filter-editors-for-performancepoint-services-in-sharepoint.md)
     
   
--  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint-2013.md)
+-  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint.md)
     
   
 

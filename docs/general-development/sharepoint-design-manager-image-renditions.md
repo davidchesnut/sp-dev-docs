@@ -353,10 +353,10 @@ When an image rendition is deleted, that image rendition is no longer generated 
 <a name="Additional"> </a>
 
 
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
--  [SharePoint 2013 Design Manager branding and design capabilities](sharepoint-2013-design-manager-branding-and-design-capabilities.md)
+-  [SharePoint 2013 Design Manager branding and design capabilities](sharepoint-design-manager-branding-and-design-capabilities.md)
     
   
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)

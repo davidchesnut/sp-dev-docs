@@ -424,7 +424,7 @@ After you create a data source provider and a data source editor (including its 
 -  [How to: Create tabular data source editors for PerformancePoint Services in SharePoint 2013](how-to-create-tabular-data-source-editors-for-performancepoint-services-in-share.md)
     
   
--  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint-2013.md)
+-  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint.md)
     
   
 

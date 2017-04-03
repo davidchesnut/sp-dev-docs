@@ -16,7 +16,7 @@ SharePoint Designer is tool used to connect to and work with a SharePoint site. 
     
 
 > [!NOTE]
-> The latest version of the product is SharePoint Designer 2013. To learn how to find and install SharePoint Designer 2013, see  [Creating a workflow by using SharePoint Designer 2013 and the SharePoint 2013 Workflow platform](creating-a-workflow-by-using-sharepoint-designer-2013-and-the-sharepoint-2013-wo.md). If you already have an older version of SharePoint Designer installed on your computer we recommend that you uninstall it before installing the new version. 
+> The latest version of the product is SharePoint Designer 2013. To learn how to find and install SharePoint Designer 2013, see  [Creating a workflow by using SharePoint Designer 2013 and the SharePoint 2013 Workflow platform](creating-a-workflow-by-using-sharepoint-designer-and-the-sharepoint-wo.md). If you already have an older version of SharePoint Designer installed on your computer we recommend that you uninstall it before installing the new version. 
   
     
     

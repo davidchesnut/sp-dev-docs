@@ -229,7 +229,7 @@ namespace Microsoft.PerformancePoint.SDK.Samples
 <a name="bk_addResources"> </a>
 
 
--  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint-2013.md)
+-  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint.md)
     
   
 -  [PerformancePoint Services Scorecards](http://msdn.microsoft.com/library/e77eccdb-82b3-483a-bb91-dfdc716400dd%28Office.15%29.aspx)

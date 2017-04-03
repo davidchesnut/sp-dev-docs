@@ -46,7 +46,7 @@ SharePoint 2013 makes it easy for any web developer, including those who work on
   
     
     
-](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) [![REST](images/wn_WebStandards_3.png)
+](using-odata-sources-with-business-connectivity-services-in-sharepoint.md) [![REST](images/wn_WebStandards_3.png)
   
     
     
@@ -98,7 +98,7 @@ On a broader scale, SharePoint 2013 has been improved and enhanced to support th
   
     
     
-](choose-the-right-api-set-in-sharepoint-2013.md) [![Client-side rendering](images/wn_Platform_3.png)
+](choose-the-right-api-set-in-sharepoint.md) [![Client-side rendering](images/wn_Platform_3.png)
   
     
     
@@ -122,15 +122,15 @@ With SharePoint 2013, you can combine Windows Phone 7 applications with on-premi
   
     
     
-](overview-of-windows-phone-sharepoint-2013-application-templates-in-visual-studio.md) [![Push notifications](images/wn_Mobility_2.png)
+](overview-of-windows-phone-sharepoint-application-templates-in-visual-studio.md) [![Push notifications](images/wn_Mobility_2.png)
   
     
     
-](how-to-configure-and-use-push-notifications-in-sharepoint-2013-apps-for-windows.md) [![Location and maps](images/wn_Mobility_3.png)
+](how-to-configure-and-use-push-notifications-in-sharepoint-apps-for-windows.md) [![Location and maps](images/wn_Mobility_3.png)
   
     
     
-](integrating-location-and-map-functionality-in-sharepoint-2013.md)
+](integrating-location-and-map-functionality-in-sharepoint.md)
   
     
     
@@ -146,7 +146,7 @@ New and improved social and collaboration features make it easy for users to com
   
     
     
-](work-with-social-feeds-in-sharepoint-2013.md) [![Community site](images/wn_Social_2.png)
+](work-with-social-feeds-in-sharepoint.md) [![Community site](images/wn_Social_2.png)
   
     
     
@@ -154,11 +154,11 @@ New and improved social and collaboration features make it easy for users to com
   
     
     
-](follow-people-in-sharepoint-2013.md) [![Follow sites](images/wn_Social_4.png)
+](follow-people-in-sharepoint.md) [![Follow sites](images/wn_Social_4.png)
   
     
     
-](follow-content-in-sharepoint-2013.md)
+](follow-content-in-sharepoint.md)
   
     
     
@@ -178,11 +178,11 @@ Search functionality in SharePoint 2013 includes several enhancements, custom co
   
     
     
-](what-s-new-in-sharepoint-2013-search-for-developers.md) [![KQL enhnacements](images/wn_search_3.png)
+](what-s-new-in-sharepoint-search-for-developers.md) [![KQL enhnacements](images/wn_search_3.png)
   
     
     
-](building-search-queries-in-sharepoint-2013.md)
+](building-search-queries-in-sharepoint.md)
   
     
     
@@ -198,11 +198,11 @@ Workflow Manager Client 1.0 is a redesigned workflow infrastructure that is buil
   
     
     
-](what-s-new-in-workflows-for-sharepoint-2013.md) [![Workflow 4-based infrastructure](images/wn_workflow_2.png)
+](what-s-new-in-workflows-for-sharepoint.md) [![Workflow 4-based infrastructure](images/wn_workflow_2.png)
   
     
     
-](sharepoint-2013-workflow-fundamentals.md) [![Declarative authoring](images/wn_workflow_3.png)
+](sharepoint-workflow-fundamentals.md) [![Declarative authoring](images/wn_workflow_3.png)
   
     
     
@@ -210,7 +210,7 @@ Workflow Manager Client 1.0 is a redesigned workflow infrastructure that is buil
   
     
     
-](develop-sharepoint-2013-workflows-using-visual-studio.md)
+](develop-sharepoint-workflows-using-visual-studio.md)
   
     
     
@@ -226,19 +226,19 @@ In SharePoint 2013, you can now use .NET client, Silverlight, Windows Phone, and
   
     
     
-](what-s-new-with-sharepoint-2013-site-development.md) [![Managed navigation](images/wn_ecm_2.png)
+](what-s-new-with-sharepoint-site-development.md) [![Managed navigation](images/wn_ecm_2.png)
   
     
     
-](managed-navigation-in-sharepoint-2013.md) [![Cross-site publishing](images/wn_ecm_3.png)
+](managed-navigation-in-sharepoint.md) [![Cross-site publishing](images/wn_ecm_3.png)
   
     
     
-](cross-site-publishing-in-sharepoint-2013.md) [![EDiscovery](images/wn_ecm_4.png)
+](cross-site-publishing-in-sharepoint.md) [![EDiscovery](images/wn_ecm_4.png)
   
     
     
-](ediscovery-in-sharepoint-2013.md)
+](ediscovery-in-sharepoint.md)
   
     
     
@@ -254,15 +254,15 @@ Business Connectivity Services (BCS) enables SharePoint to access data from exte
   
     
     
-](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) [![External data in apps](images/wn_bcs_2.png)
+](using-odata-sources-with-business-connectivity-services-in-sharepoint.md) [![External data in apps](images/wn_bcs_2.png)
   
     
     
-](add-in-scoped-external-content-types-in-sharepoint-2013.md) [![External events in SharePoint](images/wn_bcs_3.png)
+](add-in-scoped-external-content-types-in-sharepoint.md) [![External events in SharePoint](images/wn_bcs_3.png)
   
     
     
-](external-events-and-alerts-in-sharepoint-2013.md)
+](external-events-and-alerts-in-sharepoint.md)
   
     
     
@@ -278,11 +278,11 @@ SharePoint Server 2013 includes several services for working with data in your S
   
     
     
-](machine-translation-services-in-sharepoint-2013.md) [![PowerPoint Automation Services](images/wn_appServices_2.png)
+](machine-translation-services-in-sharepoint.md) [![PowerPoint Automation Services](images/wn_appServices_2.png)
   
     
     
-](powerpoint-automation-services-in-sharepoint-2013.md) [![Enhanced Access Services](images/wn_appServices_3.png)
+](powerpoint-automation-services-in-sharepoint.md) [![Enhanced Access Services](images/wn_appServices_3.png)
   
     
     
@@ -299,7 +299,7 @@ SharePoint Server 2013 includes several services for working with data in your S
 <a name="bm_Addres"> </a>
 
 
--  [SharePoint 2013 development overview](sharepoint-2013-development-overview.md)
+-  [SharePoint 2013 development overview](sharepoint-development-overview.md)
     
   
 -  [Develop SharePoint Add-ins](http://msdn.microsoft.com/library/71ddde4b-fac4-4d8c-aa2e-524f9c2c4c99%28Office.15%29.aspx)
@@ -308,10 +308,10 @@ SharePoint Server 2013 includes several services for working with data in your S
 -  [SharePoint Add-ins compared with SharePoint solutions](sharepoint-add-ins-compared-with-sharepoint-solutions.md)
     
   
--  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)
+-  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint.md)
     
   
--  [Accessibility in SharePoint 2013](accessibility-in-sharepoint-2013.md)
+-  [Accessibility in SharePoint 2013](accessibility-in-sharepoint.md)
     
   
 

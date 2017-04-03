@@ -12,7 +12,7 @@ Social and collaboration features in SharePoint 2013 make it easy for users to c
     
     
 
-For an in-depth overview of the new social and collaboration features in SharePoint 2013, see  [What's new in social computing in SharePoint 2013](http://technet.microsoft.com/en-us/library/jj219766%28v=office.15%29) on TechNet. For more information about programming with social and collaboration features, see [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint-2013.md).
+For an in-depth overview of the new social and collaboration features in SharePoint 2013, see  [What's new in social computing in SharePoint 2013](http://technet.microsoft.com/en-us/library/jj219766%28v=office.15%29) on TechNet. For more information about programming with social and collaboration features, see [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint.md).
 ## New and changed My Site features in SharePoint Server 2013
 <a name="bkmk_Social"> </a>
 
@@ -49,7 +49,7 @@ Not all server-side functionality in the Microsoft.Office.Server.UserProfiles as
   
     
     
-For information about how to access the My Site Social client APIs, see  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md). For more information about the API sets in SharePoint 2013 and when to use them, see  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md).
+For information about how to access the My Site Social client APIs, see  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md). For more information about the API sets in SharePoint 2013 and when to use them, see  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint.md).
   
     
     
@@ -293,13 +293,13 @@ while (retries <= 10)
 <a name="SP15NewSocial_addlresources"> </a>
 
 
--  [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint-2013.md)
+-  [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint.md)
     
   
--  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)
+-  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md)
     
   
--  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md)
+-  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint.md)
     
   
 -  [What's new in social computing in SharePoint 2013](http://technet.microsoft.com/en-us/library/jj219766%28v=office.15%29)

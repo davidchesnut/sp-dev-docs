@@ -42,7 +42,7 @@ The following are required to create the OData service in this article:
 - Office Developer Tools for Visual Studio 2012
     
   
-For information about setting up your development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
+For information about setting up your development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint.md).
   
     
     
@@ -59,8 +59,8 @@ Table 1 lists articles that will help you understand the core concepts of buildi
 
 |**Resource**|**Description**|
 |:-----|:-----|
-| [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |Provides information to help you start creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.  <br/> |
-| [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md) <br/> |Learn how to use Visual Studio 2012 to discover a published OData source and create a reusable external content type to use in BCS in SharePoint 2013.  <br/> |
+| [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint.md) <br/> |Provides information to help you start creating external content types based on OData sources and using that data in SharePoint 2013 or Office 2013 components.  <br/> |
+| [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint.md) <br/> |Learn how to use Visual Studio 2012 to discover a published OData source and create a reusable external content type to use in BCS in SharePoint 2013.  <br/> |
 | [Open Data Protocol](http://www.odata.org) <br/> |Provides information about the Open Data protocol, including protocol definitions, architectural information and usage examples.  <br/> |
 | [WCF Data Services Overview](http://msdn.microsoft.com/en-us/library/cc668794.aspx) <br/> |WCF Data Services enables creation and consumption of data services for the web or an intranet by using OData. OData enables you to expose your data as resources that are addressable by URIs.  <br/> |
 | [Developing and Deploying WCF Data Services](http://msdn.microsoft.com/en-us/library/gg258442) <br/> |Provides information about developing and deploying WCF Data Services.  <br/> |
@@ -303,22 +303,22 @@ To notify SharePoint that changes have been made, you also need to create a serv
 <a name="bkmk_Addresources"> </a>
 
 
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
--  [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md)
+-  [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint.md)
     
   
--  [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md)
+-  [External content types in SharePoint 2013](external-content-types-in-sharepoint.md)
     
   
--  [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint-2013.md)
+-  [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint.md)
     
   
--  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md)
+-  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint.md)
     
   
--  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint-2013.md)
+-  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint.md)
     
   
 

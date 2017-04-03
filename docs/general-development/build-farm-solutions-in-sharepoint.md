@@ -65,10 +65,10 @@ The topics in this section describe the ways in which development of SharePoint 
 -  [How to: Customize a field type using client-side rendering](how-to-customize-a-field-type-using-client-side-rendering.md)
     
   
--  [URLs and tokens in SharePoint 2013](urls-and-tokens-in-sharepoint-2013.md)
+-  [URLs and tokens in SharePoint 2013](urls-and-tokens-in-sharepoint.md)
     
   
--  [Virtual directories in SharePoint 2013 solutions](virtual-directories-in-sharepoint-2013-solutions.md)
+-  [Virtual directories in SharePoint 2013 solutions](virtual-directories-in-sharepoint-solutions.md)
     
   
 
@@ -76,7 +76,7 @@ The topics in this section describe the ways in which development of SharePoint 
 <a name="SP15buildfarm_addlresources"> </a>
 
 
--  [Programming models in SharePoint 2013](programming-models-in-sharepoint-2013.md)
+-  [Programming models in SharePoint 2013](programming-models-in-sharepoint.md)
     
   
 

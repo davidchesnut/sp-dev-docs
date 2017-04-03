@@ -15,7 +15,7 @@ In SharePoint 2013, a master page defines the shared framing elements such as th
     
 
 > [!NOTE]
-> For more information about Design Manager and master pages, see  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md). For more information about how to create device channels, see  [SharePoint 2013 Design Manager device channels](sharepoint-2013-design-manager-device-channels.md). 
+> For more information about Design Manager and master pages, see  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md). For more information about how to create device channels, see  [SharePoint 2013 Design Manager device channels](sharepoint-design-manager-device-channels.md). 
   
     
     
@@ -46,13 +46,13 @@ In SharePoint 2013, a master page defines the shared framing elements such as th
 <a name="bk_addresources"> </a>
 
 
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
--  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md)
+-  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md)
     
   
--  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-2013-site-development.md)
+-  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-site-development.md)
     
   
 

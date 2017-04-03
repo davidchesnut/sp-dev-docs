@@ -181,7 +181,7 @@ To add a BDC model or external content type to your project, do the following.
 8. Modify the  `ODataServiceUrl` property with the URL that allows access through the reverse proxy.
     
   
-For information about how to add an OData-based external content type, see  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md).
+For information about how to add an OData-based external content type, see  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint.md).
   
     
     
@@ -216,10 +216,10 @@ You can also take the BDCM file created for the external content type and extrac
 -  [Hybrid for SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj838715.aspx)
     
   
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
--  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md)
+-  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint.md)
     
   
 -  [Publish SharePoint Add-ins by using Visual Studio](http://msdn.microsoft.com/library/8137d0fa-52e2-4771-8639-60af80f693bb%28Office.15%29.aspx)

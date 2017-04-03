@@ -404,16 +404,16 @@ Here is a breakdown of the types of markup that are included in a snippet.
 <a name="Resources"> </a>
 
 
--  [How to: Convert an HTML file into a master page in SharePoint 2013](how-to-convert-an-html-file-into-a-master-page-in-sharepoint-2013.md)
+-  [How to: Convert an HTML file into a master page in SharePoint 2013](how-to-convert-an-html-file-into-a-master-page-in-sharepoint.md)
     
   
--  [How to: Create a page layout in SharePoint 2013](how-to-create-a-page-layout-in-sharepoint-2013.md)
+-  [How to: Create a page layout in SharePoint 2013](how-to-create-a-page-layout-in-sharepoint.md)
     
   
--  [How to: Add an Edit Mode Panel snippet in SharePoint 2013](how-to-add-an-edit-mode-panel-snippet-in-sharepoint-2013.md)
+-  [How to: Add an Edit Mode Panel snippet in SharePoint 2013](how-to-add-an-edit-mode-panel-snippet-in-sharepoint.md)
     
   
--  [How to: Add a Security Trim snippet in SharePoint 2013](how-to-add-a-security-trim-snippet-in-sharepoint-2013.md)
+-  [How to: Add a Security Trim snippet in SharePoint 2013](how-to-add-a-security-trim-snippet-in-sharepoint.md)
     
   
 

@@ -134,7 +134,7 @@ Review the following to ensure that you have correctly configured incoming and o
     
     
 
--  [Deployment guide for Microsoft SharePoint 2013](http://download.microsoft.com/download/1/F/6/1F6D3BE4-1174-4320-A1D1-C0E2681CCCF3/Deployment-guide-for-SharePoint-2013.pdf)
+-  [Deployment guide for Microsoft SharePoint 2013](http://download.microsoft.com/download/1/F/6/1F6D3BE4-1174-4320-A1D1-C0E2681CCCF3/Deployment-guide-for-SharePoint.pdf)
     
   
 -  [How to configure Incoming and Outgoing emails in SharePoint Server](http://blogs.msdn.com/b/pareshg/archive/2010/04/23/how-to-configure-incoming-and-outgoing-emails-in-sharepoint-server-2010.aspx)
@@ -203,7 +203,7 @@ See  [Microsoft Support Knowledge Base article ID 2557533](http://support.micros
 -  [SharePoint workflow development best practices](sharepoint-workflow-development-best-practices.md)
     
   
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
 

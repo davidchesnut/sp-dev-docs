@@ -115,10 +115,10 @@ Reference content for SharePoint 2013 schemas is contained in the reference node
 -  [Windows Workflow Foundation (WF) Screencasts](http://msdn.microsoft.com/en-us/netframework/dd733248)
     
   
--  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint-2013.md)
+-  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint.md)
     
   
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
 

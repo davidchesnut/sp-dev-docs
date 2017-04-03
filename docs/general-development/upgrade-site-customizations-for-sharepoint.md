@@ -34,7 +34,7 @@ Table 1 lists the possible after-upgrade problems for custom components and info
 |:-----|:-----|
 |CSS styles  <br/> |During upgrade, your site will revert to the CSS files referred to in the default.master page. As a result, any customizations you have made to the appearance of your pages will change, and pages will render with the default styles found in a default installation.  <br/> |
 |Themes  <br/> |For SharePoint 2010, you may have created custom themes that define a corporate branding for an entire site. You create these as .thmx files that can be uploaded to the site collection and applied by the administrator.  <br/> In SharePoint 2013, the theming engine has been completely redesigned to be more flexible and powerful and to provide for easier future upgrades. As a result of this redesign, upgrading from SharePoint 2010 to SharePoint 2013 themes is not supported and will require you to re-create them for SharePoint 2013.  <br/> |
-|Web templates  <br/> |Web templates were introduced in SharePoint 2010 to provide a way to package features, layouts, styles, and other components that you can then use to create new webs. They are similar in function to creating site definitions, but with web templates, you can add publishing features.  <br/> Due to the changes made in SharePoint 2013, your customized web templates will not work immediately after upgrade.  <br/> To see what changes have been made to web templates and to fix issues resulting from this, see  [Upgrade web templates for SharePoint 2013](upgrade-web-templates-for-sharepoint-2013.md) for recommendations and best practices. <br/> |
+|Web templates  <br/> |Web templates were introduced in SharePoint 2010 to provide a way to package features, layouts, styles, and other components that you can then use to create new webs. They are similar in function to creating site definitions, but with web templates, you can add publishing features.  <br/> Due to the changes made in SharePoint 2013, your customized web templates will not work immediately after upgrade.  <br/> To see what changes have been made to web templates and to fix issues resulting from this, see  [Upgrade web templates for SharePoint 2013](upgrade-web-templates-for-sharepoint.md) for recommendations and best practices. <br/> |
 |Master pages  <br/> |During upgrade, any references to custom master pages you have created are reverted back to the default.master page. This may cause errors in SharePoint due to references on the custom page to missing components.  <br/> To fix this, you have to change the references to any custom master pages.  <br/> |
    
 
@@ -45,7 +45,7 @@ Table 1 lists the possible after-upgrade problems for custom components and info
 -  [Plan to upgrade a site collection](https://technet.microsoft.com/en-us/library/ff191199.aspx)
     
   
--  [Branding issues that may occur when upgrading to SharePoint 2013](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/branding-issues-that-may-occur-when-upgrading-to-sharepoint-2013-HA104052656.aspx?CTT=5&amp;origin=HA104034491)
+-  [Branding issues that may occur when upgrading to SharePoint 2013](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/branding-issues-that-may-occur-when-upgrading-to-sharepoint-HA104052656.aspx?CTT=5&amp;origin=HA104034491)
     
   
 -  [Upgrade a site collection](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/upgrade-a-site-collection-HA102865473.aspx?CTT=5&amp;origin=HA104034491)

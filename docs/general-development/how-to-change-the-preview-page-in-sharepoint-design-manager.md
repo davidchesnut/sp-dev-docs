@@ -98,19 +98,19 @@ Use this procedure to return to the preview page.
 <a name="addresources"> </a>
 
 
--  [Master pages, the Master Page Gallery, and page layouts in SharePoint 2013](master-pages-the-master-page-gallery-and-page-layouts-in-sharepoint-2013.md)
+-  [Master pages, the Master Page Gallery, and page layouts in SharePoint 2013](master-pages-the-master-page-gallery-and-page-layouts-in-sharepoint.md)
     
   
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
--  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md)
+-  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-master-page-gallery.md)
     
   
--  [SharePoint 2013 Design Manager device channels](sharepoint-2013-design-manager-device-channels.md)
+-  [SharePoint 2013 Design Manager device channels](sharepoint-design-manager-device-channels.md)
     
   
--  [SharePoint 2013 Design Manager image renditions](sharepoint-2013-design-manager-image-renditions.md)
+-  [SharePoint 2013 Design Manager image renditions](sharepoint-design-manager-image-renditions.md)
     
   
 

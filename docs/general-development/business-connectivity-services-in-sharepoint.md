@@ -78,7 +78,7 @@ For example, consider a business entity, such as a customer. You want to be able
   
     
     
-For more information about using external content types in BCS, see  [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md).
+For more information about using external content types in BCS, see  [External content types in SharePoint 2013](external-content-types-in-sharepoint.md).
   
     
     
@@ -94,7 +94,7 @@ BCS empowers business users to quickly and easily address a broad array of exter
   
     
     
-For information about how to get started, see  [Setting up a development environment for BCS in SharePoint 2013](setting-up-a-development-environment-for-bcs-in-sharepoint-2013.md).
+For information about how to get started, see  [Setting up a development environment for BCS in SharePoint 2013](setting-up-a-development-environment-for-bcs-in-sharepoint.md).
   
     
     
@@ -106,7 +106,7 @@ The Open Data Protocol (OData) is a web protocol that lets you expose data to th
   
     
     
-For more information, see  [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md).
+For more information, see  [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint.md).
   
     
     
@@ -115,28 +115,28 @@ For more information, see  [Using OData sources with Business Connectivity Servi
 <a name="bkmk_inthissection"> </a>
 
 
--  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint-2013.md)
+-  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint.md)
     
   
--  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint-2013.md)
+-  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint.md)
     
   
--  [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md)
+-  [External content types in SharePoint 2013](external-content-types-in-sharepoint.md)
     
   
--  [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md)
+-  [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint.md)
     
   
--  [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint-2013.md)
+-  [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint.md)
     
   
--  [Add-in-scoped external content types in SharePoint 2013](add-in-scoped-external-content-types-in-sharepoint-2013.md)
+-  [Add-in-scoped external content types in SharePoint 2013](add-in-scoped-external-content-types-in-sharepoint.md)
     
   
--  [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md)
+-  [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint.md)
     
   
--  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint-2013.md)
+-  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint.md)
     
   
 
@@ -144,13 +144,13 @@ For more information, see  [Using OData sources with Business Connectivity Servi
 <a name="bkmk_AdditionalResources"> </a>
 
 
--  [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)
+-  [Add SharePoint 2013 capabilities](add-sharepoint-capabilities.md)
     
   
--  [Setting up a development environment for BCS in SharePoint 2013](setting-up-a-development-environment-for-bcs-in-sharepoint-2013.md)
+-  [Setting up a development environment for BCS in SharePoint 2013](setting-up-a-development-environment-for-bcs-in-sharepoint.md)
     
   
--  [SharePoint 2013 development overview](sharepoint-2013-development-overview.md)
+-  [SharePoint 2013 development overview](sharepoint-development-overview.md)
     
   
 

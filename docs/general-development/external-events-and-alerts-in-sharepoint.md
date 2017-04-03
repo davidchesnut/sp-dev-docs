@@ -102,7 +102,7 @@ To use event receivers for external lists, you need the following:
 - Visual Studio 2012
     
   
-For more information about setting up a SharePoint 2013 development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
+For more information about setting up a SharePoint 2013 development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint.md).
   
     
     
@@ -652,13 +652,13 @@ For more information about external events and alerts, see the following.
 <a name="Externalevents_Addres"> </a>
 
 
--  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint-2013.md)
+-  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint.md)
     
   
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
--  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint-2013.md)
+-  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint.md)
     
   
 -  [How to: Create external event receivers](how-to-create-external-event-receivers.md)

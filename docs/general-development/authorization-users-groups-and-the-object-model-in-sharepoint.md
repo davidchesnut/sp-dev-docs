@@ -249,19 +249,19 @@ The only way to remove a user from all scopes is to delete that user from the si
 <a name="SP15_AuthorizationUsersGroupsAndObjectModel_AdditionalResources"> </a>
 
 
--  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md)
+-  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint.md)
     
   
--  [Role, inheritance, elevation of privilege, and password changes in SharePoint 2013](role-inheritance-elevation-of-privilege-and-password-changes-in-sharepoint-2013.md)
+-  [Role, inheritance, elevation of privilege, and password changes in SharePoint 2013](role-inheritance-elevation-of-privilege-and-password-changes-in-sharepoint.md)
     
   
--  [Claims-based identity in SharePoint 2013](claims-based-identity-in-sharepoint-2013.md)
+-  [Claims-based identity in SharePoint 2013](claims-based-identity-in-sharepoint.md)
     
   
--  [Claims-based identity and concepts in SharePoint 2013](claims-based-identity-and-concepts-in-sharepoint-2013.md)
+-  [Claims-based identity and concepts in SharePoint 2013](claims-based-identity-and-concepts-in-sharepoint.md)
     
   
--  [Configuration, administration, and resources in SharePoint 2013](configuration-administration-and-resources-in-sharepoint-2013.md)
+-  [Configuration, administration, and resources in SharePoint 2013](configuration-administration-and-resources-in-sharepoint.md)
     
   
 

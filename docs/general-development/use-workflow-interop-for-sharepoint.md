@@ -14,7 +14,7 @@ Provides a discussion of using SharePoint workflow Interop in the Visual Studio 
 
 
 > [!IMPORTANT]
-> To learn about using SharePoint workflow interop functionality in SharePoint Designer 2013, see  [Understanding Coordination actions in SharePoint Designer 2013](understanding-coordination-actions-in-sharepoint-designer-2013.md). 
+> To learn about using SharePoint workflow interop functionality in SharePoint Designer 2013, see  [Understanding Coordination actions in SharePoint Designer 2013](understanding-coordination-actions-in-sharepoint-designer.md). 
   
     
     
@@ -162,13 +162,13 @@ The activity is in fact a sequence of messages that take place between the Workf
 <a name="bk_addresources"> </a>
 
 
--  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint-2013.md)
+-  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint.md)
     
   
--  [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md)
+-  [SharePoint 2013 workflow fundamentals](sharepoint-workflow-fundamentals.md)
     
   
--  [Understanding Coordination actions in SharePoint Designer 2013](understanding-coordination-actions-in-sharepoint-designer-2013.md)
+-  [Understanding Coordination actions in SharePoint Designer 2013](understanding-coordination-actions-in-sharepoint-designer.md)
     
   
 -  [WorkflowInteropService](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.WorkflowInteropService.aspx)

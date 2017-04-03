@@ -12,7 +12,7 @@ External event receivers are classes that enable SharePoint Add-ins to respond t
     
     
 
-This article accompanies the code sample  [SharePoint 2013: Create a remote event receiver for external data](http://code.msdn.microsoft.com/SharePoint-2013-Create-a-095c594c). It shows how to create all the components needed to configure and use external system event notifications.
+This article accompanies the code sample  [SharePoint 2013: Create a remote event receiver for external data](http://code.msdn.microsoft.com/SharePoint-Create-a-095c594c). It shows how to create all the components needed to configure and use external system event notifications.
 In this example, you will do the following:
   
     
@@ -98,7 +98,7 @@ However, if you don't have Northwind installed, see  [Installing the Northwind S
   
     
     
-The database is also included with the code sample:  [SharePoint 2013: Create a remote event receiver for external data](http://code.msdn.microsoft.com/SharePoint-2013-Create-a-095c594c).
+The database is also included with the code sample:  [SharePoint 2013: Create a remote event receiver for external data](http://code.msdn.microsoft.com/SharePoint-Create-a-095c594c).
   
     
     
@@ -699,7 +699,7 @@ Office Developer Tools for Visual Studio 2013 added an autogeneration wizard tha
     
     This starts the **SharePoint Customization Wizard**, which is used to build the external content type automatically.
     
-    For more information about how to create external content types, see  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md).
+    For more information about how to create external content types, see  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint.md).
     
   
 You will now modify the XML that was generated in the previous step to add a method for Subscribe. This will allow BCS to communicate with the external system when someone subscribes to be notified about external data changes.
@@ -959,22 +959,22 @@ Now you can see the app in action.
 <a name="bkmk_additionalresources"> </a>
 
 
--  [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint-2013.md)
+-  [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint.md)
     
   
--  [How to: Create an add-in-scoped external content type in SharePoint 2013](how-to-create-an-add-in-scoped-external-content-type-in-sharepoint-2013.md)
+-  [How to: Create an add-in-scoped external content type in SharePoint 2013](how-to-create-an-add-in-scoped-external-content-type-in-sharepoint.md)
     
   
--  [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md)
+-  [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint.md)
     
   
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
--  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint-2013.md)
+-  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint.md)
     
   
--  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint-2013.md)
+-  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint.md)
     
   
 

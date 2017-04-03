@@ -56,7 +56,7 @@ Workflow Manager Client 1.0, SharePoint 2013, and SharePoint Designer 2013 each 
 ## Platform architecture
 <a name="bkm_Architecture"> </a>
 
-Figure 1 depicts a high-level view of the SharePoint 2013 workflow framework. Notice, first, how the new workflow infrastructure introduces Workflow Manager Client 1.0 as the new workflow execution host. Whereas in previous versions workflow execution was hosted in SharePoint itself, this has changed in SharePoint 2013. Workflow Manager Client 1.0 is external to SharePoint and communicates using common protocols over the Microsoft Azure service bus, mediated by OAuth. Otherwise, SharePoint includes the feature that you would expect to see: content items, events, apps, and so on. But notice that there is also an implementation of the SharePoint 2010 workflow host (that is, the Windows Workflow Foundation 3 engine) for backward compatibility. You can read more about this in  [Use workflow interop for SharePoint 2013](use-workflow-interop-for-sharepoint-2013.md).
+Figure 1 depicts a high-level view of the SharePoint 2013 workflow framework. Notice, first, how the new workflow infrastructure introduces Workflow Manager Client 1.0 as the new workflow execution host. Whereas in previous versions workflow execution was hosted in SharePoint itself, this has changed in SharePoint 2013. Workflow Manager Client 1.0 is external to SharePoint and communicates using common protocols over the Microsoft Azure service bus, mediated by OAuth. Otherwise, SharePoint includes the feature that you would expect to see: content items, events, apps, and so on. But notice that there is also an implementation of the SharePoint 2010 workflow host (that is, the Windows Workflow Foundation 3 engine) for backward compatibility. You can read more about this in  [Use workflow interop for SharePoint 2013](use-workflow-interop-for-sharepoint.md).
   
     
     
@@ -229,7 +229,7 @@ This is important because you may have SharePoint 2010 that you may use to reuse
   
     
     
-For a full discussion of SharePoint workflow interop, see  [Use workflow interop for SharePoint 2013](use-workflow-interop-for-sharepoint-2013.md).
+For a full discussion of SharePoint workflow interop, see  [Use workflow interop for SharePoint 2013](use-workflow-interop-for-sharepoint.md).
   
     
     
@@ -238,22 +238,22 @@ For a full discussion of SharePoint workflow interop, see  [Use workflow interop
 <a name="bk_additional"> </a>
 
 
--  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint-2013.md)
+-  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint.md)
     
   
--  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint-2013.md)
+-  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint.md)
     
   
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
 -  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md)
     
   
--  [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)
+-  [Workflows in SharePoint 2013](workflows-in-sharepoint.md)
     
   
--  [Use workflow interop for SharePoint 2013](use-workflow-interop-for-sharepoint-2013.md)
+-  [Use workflow interop for SharePoint 2013](use-workflow-interop-for-sharepoint.md)
     
   
 

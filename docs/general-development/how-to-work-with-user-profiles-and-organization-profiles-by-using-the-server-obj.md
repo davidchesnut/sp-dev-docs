@@ -15,7 +15,7 @@ In SharePoint 2013, user profiles represent SharePoint users. User profile prope
     
 
 > [!NOTE]
-> For more information about common programming tasks for working with user profiles and the API that you use to perform the tasks, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md). 
+> For more information about common programming tasks for working with user profiles and the API that you use to perform the tasks, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md). 
   
     
     
@@ -512,7 +512,7 @@ namespace UserProfilesSSOM
 <a name="bk_addresources"> </a>
 
 
--  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md)
+-  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md)
     
   
 -  [How to: Retrieve user profile properties by using the .NET client object model in SharePoint 2013](how-to-retrieve-user-profile-properties-by-using-the-net-client-object-model-in.md)

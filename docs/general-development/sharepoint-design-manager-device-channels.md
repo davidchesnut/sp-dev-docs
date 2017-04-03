@@ -15,7 +15,7 @@ Browsing the web on a mobile device is now so common that a SharePoint site must
   
     
     
-Device channels are available only for SharePoint 2013 publishing sites. Before you implement device channels, you should already have a general understanding of the parts of a SharePoint site, how a SharePoint page is put together, and a general understanding of design manager. For more information about the SharePoint page model, including master page and page layouts, see  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-2013-page-model.md). For more information about design manager, see  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md).
+Device channels are available only for SharePoint 2013 publishing sites. Before you implement device channels, you should already have a general understanding of the parts of a SharePoint site, how a SharePoint page is put together, and a general understanding of design manager. For more information about the SharePoint page model, including master page and page layouts, see  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-page-model.md). For more information about design manager, see  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md).
   
     
     
@@ -62,7 +62,7 @@ You can create and configure a device channel from the **Site Settings** menu un
 
     
 > [!NOTE]
-> For more information and steps for creating a device channel, see the  [Create a device channel](sharepoint-2013-design-manager-device-channels.md#create) section of this article.
+> For more information and steps for creating a device channel, see the  [Create a device channel](sharepoint-design-manager-device-channels.md#create) section of this article.
   
     
     
@@ -114,7 +114,7 @@ In the **Device Inclusion Rules** field, you add just the substring value or val
     
 
 > [!IMPORTANT]
-> User agent substring values differ from device manufacturer to device manufacturer, and possibly throughout a set of similarly branded devices, as seen above with Windows Phone. To achieve successful traffic redirection to a specific pool, you must provide a unique identifier for the user agent substring. For more information about how to isolate a substring across different devices, see the  [Planning your device channels experience](sharepoint-2013-design-manager-device-channels.md#plan) section of this article.
+> User agent substring values differ from device manufacturer to device manufacturer, and possibly throughout a set of similarly branded devices, as seen above with Windows Phone. To achieve successful traffic redirection to a specific pool, you must provide a unique identifier for the user agent substring. For more information about how to isolate a substring across different devices, see the  [Planning your device channels experience](sharepoint-design-manager-device-channels.md#plan) section of this article.
   
     
     
@@ -125,7 +125,7 @@ After they are created, device channels are ordered and stored in a list. It is 
     
 
 > [!NOTE]
-> For more information about how to reorder device channels see the  [Create a device channel](sharepoint-2013-design-manager-device-channels.md#create) section of this article.
+> For more information about how to reorder device channels see the  [Create a device channel](sharepoint-design-manager-device-channels.md#create) section of this article.
   
     
     
@@ -146,7 +146,7 @@ If you choose Order 1, where the device inclusion rule substring is set to **Win
     
 
 > [!NOTE]
-> For more information and steps for ordering device channels, see the  [Change the order of device channels](sharepoint-2013-design-manager-device-channels.md#reorder) section of this article.
+> For more information and steps for ordering device channels, see the  [Change the order of device channels](sharepoint-design-manager-device-channels.md#reorder) section of this article.
   
     
     
@@ -184,7 +184,7 @@ This paragraph of content shows up only in the default channel, which means that
 </div>
 ```
 
-If you want the content to be displayed on more than one channel, the aliases should be separated by commas within the quotation marks:  `IncludedChannels="alias1, alias2"` For more information about the device channel panel container, see [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-2013-page-model.md). For more information about using Design Manager snippets, see  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md).
+If you want the content to be displayed on more than one channel, the aliases should be separated by commas within the quotation marks:  `IncludedChannels="alias1, alias2"` For more information about the device channel panel container, see [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-page-model.md). For more information about using Design Manager snippets, see  [SharePoint 2013 Design Manager snippets](sharepoint-design-manager-snippets.md).
   
     
     
@@ -434,12 +434,12 @@ Use this procedure to change the order of device channels.
 <a name="PlanDeviceChannels_addresources"> </a>
 
 
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
--  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-2013-page-model.md)
+-  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-page-model.md)
     
   
--  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md)
+-  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md)
     
   

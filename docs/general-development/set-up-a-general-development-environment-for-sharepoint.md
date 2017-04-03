@@ -157,7 +157,7 @@ The registry path will change in future versions of Visual Studio.
 ## Next steps
 <a name="SP15_bk_devenvazure"> </a>
 
-If you will be creating workflows, continue with  [Set up and configure SharePoint 2013 Workflow Manager](set-up-and-configure-sharepoint-2013-workflow-manager.md).
+If you will be creating workflows, continue with  [Set up and configure SharePoint 2013 Workflow Manager](set-up-and-configure-sharepoint-workflow-manager.md).
   
     
     

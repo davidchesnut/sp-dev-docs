@@ -1177,7 +1177,7 @@ After you create a filter editor (including its user interface, if required) and
 -  [How to: Create filter data providers for PerformancePoint Services in SharePoint 2013](how-to-create-filter-data-providers-for-performancepoint-services-in-sharepoint.md)
     
   
--  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint-2013.md)
+-  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint.md)
     
   
 

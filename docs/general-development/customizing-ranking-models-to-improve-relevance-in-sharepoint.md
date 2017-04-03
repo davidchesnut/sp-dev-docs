@@ -7,7 +7,7 @@ ms.assetid: c166ecdd-7f93-4bbb-b543-2687992dd2bc
 
 # Customizing ranking models to improve relevance in SharePoint 2013
 Improve search relevance by customizing ranking models to calculate rank scores (relevance rank) accurately using rank features in SharePoint Server 2013.
-You can  [sort search results in SharePoint 2013](sorting-search-results-in-sharepoint-2013.md) in four ways, one of which is by rank score. When you sort search results by rank score, SharePoint Server 2013 places the most relevant results on top in the search result set.
+You can  [sort search results in SharePoint 2013](sorting-search-results-in-sharepoint.md) in four ways, one of which is by rank score. When you sort search results by rank score, SharePoint Server 2013 places the most relevant results on top in the search result set.
   
     
     
@@ -1085,7 +1085,7 @@ This ranking model with one linear stage contains these four rank features:
 <a name="bk_addresources"> </a>
 
 
--  [Search in SharePoint 2013](search-in-sharepoint-2013.md)
+-  [Search in SharePoint 2013](search-in-sharepoint.md)
     
   
 -  [Keyword Query Language (KQL) syntax reference](keyword-query-language-kql-syntax-reference.md)

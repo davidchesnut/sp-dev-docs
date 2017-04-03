@@ -245,7 +245,7 @@ SharePoint 2013 Search enables you to retrieve claims information for content st
   
     
     
-The connector framework also provides improved exception capturing and logging to help you troubleshoot errors encountered when crawling content sources using custom connectors that are built on top of the connector framework. For information about the connector framework, see  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint-2013.md).
+The connector framework also provides improved exception capturing and logging to help you troubleshoot errors encountered when crawling content sources using custom connectors that are built on top of the connector framework. For information about the connector framework, see  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint.md).
   
     
     
@@ -257,10 +257,10 @@ The connector framework also provides improved exception capturing and logging t
 -  [Searching new content with SharePoint Search](searching-new-content-with-sharepoint-search.md)
     
   
--  [Configure search in SharePoint 2013](configure-search-in-sharepoint-2013.md)
+-  [Configure search in SharePoint 2013](configure-search-in-sharepoint.md)
     
   
--  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint-2013.md)
+-  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint.md)
     
   
 -  [How to: Use a custom security trimmer for SharePoint Server search results](how-to-use-a-custom-security-trimmer-for-sharepoint-server-search-results.md)

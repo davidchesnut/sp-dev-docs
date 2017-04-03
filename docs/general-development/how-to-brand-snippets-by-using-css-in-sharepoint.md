@@ -20,7 +20,7 @@ After you copy a snippet into the HTML file in your mapped drive and then save t
     
 
 > [!NOTE]
-> For more information about mapping a network drive, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md). 
+> For more information about mapping a network drive, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-master-page-gallery.md). 
   
     
     
@@ -331,19 +331,19 @@ Instead of using only custom styles, you may have a scenario where you want to o
 <a name="Additional"> </a>
 
 
--  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md)
+-  [SharePoint 2013 Design Manager snippets](sharepoint-design-manager-snippets.md)
     
   
--  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md)
+-  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md)
     
   
--  [How to: Convert an HTML file into a master page in SharePoint 2013](how-to-convert-an-html-file-into-a-master-page-in-sharepoint-2013.md)
+-  [How to: Convert an HTML file into a master page in SharePoint 2013](how-to-convert-an-html-file-into-a-master-page-in-sharepoint.md)
     
   
--  [How to: Create a page layout in SharePoint 2013](how-to-create-a-page-layout-in-sharepoint-2013.md)
+-  [How to: Create a page layout in SharePoint 2013](how-to-create-a-page-layout-in-sharepoint.md)
     
   
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
 

@@ -1596,6 +1596,6 @@ The following advanced parameters are also available. However, typically they ar
 <a name="SP15FQL_addlresources"> </a>
 
 
--  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint-2013.md)
+-  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint.md)
     
   

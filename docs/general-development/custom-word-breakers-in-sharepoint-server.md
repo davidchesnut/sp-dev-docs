@@ -279,7 +279,7 @@ Vietnamese
 <a name="SP15wordbreakers_addresources"> </a>
 
 
--  [Configure search in SharePoint 2013](configure-search-in-sharepoint-2013.md)
+-  [Configure search in SharePoint 2013](configure-search-in-sharepoint.md)
     
   
 -  [Implementing a Word Breaker](http://msdn.microsoft.com/en-us/library/ms693186%28v=vs.85%29.aspx)

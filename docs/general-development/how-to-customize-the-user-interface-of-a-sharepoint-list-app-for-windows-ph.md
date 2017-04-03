@@ -42,7 +42,7 @@ For the following procedures, assume a server running SharePoint Server has a Pr
 |Rush  <br/> |Boolean  <br/> |No  <br/> |
 |Contact Number  <br/> |Single line of text (Text)  <br/> |No  <br/> |
    
-Follow the procedures in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md) to use the Windows Phone SharePoint List Application template to generate a SharePoint list app as a starting point for the following UI customizations. Specify as the target SharePoint list for the app a list that has a schema similar to what is represented in Table 1.
+Follow the procedures in  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-list-app.md) to use the Windows Phone SharePoint List Application template to generate a SharePoint list app as a starting point for the following UI customizations. Specify as the target SharePoint list for the app a list that has a schema similar to what is represented in Table 1.
   
     
     
@@ -244,7 +244,7 @@ In the following procedures, you will:
   
 
 > [!NOTE]
-> For more information about field value converters, see  [How to: Support and convert SharePoint 2013 field types for Windows Phone apps](how-to-support-and-convert-sharepoint-2013-field-types-for-windows-phone-apps.md). 
+> For more information about field value converters, see  [How to: Support and convert SharePoint 2013 field types for Windows Phone apps](how-to-support-and-convert-sharepoint-field-types-for-windows-phone-apps.md). 
   
     
     
@@ -509,7 +509,7 @@ For items in the Product Orders list that are already associated with a custom P
 <a name="BKMK_AddingControlsForChoiceFields"> </a>
 
 
--  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md)
+-  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint.md)
     
   
 -  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md)

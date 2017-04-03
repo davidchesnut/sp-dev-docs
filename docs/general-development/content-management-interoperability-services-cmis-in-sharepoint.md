@@ -289,7 +289,7 @@ CMIS 1.1 is not supported in SharePoint 2013, but the newer version of the CMIS 
 <a name="SP15CMIS_AdditionalResources"> </a>
 
 
--  [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)
+-  [Add SharePoint 2013 capabilities](add-sharepoint-capabilities.md)
     
   
 -  [Manage blocked file types](http://technet.microsoft.com/en-us/library/cc262496.aspx)

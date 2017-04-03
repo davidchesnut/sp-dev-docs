@@ -47,7 +47,7 @@ Following are the SharePoint Foundation VSS solution features and characteristic
 - **Full rollback.** The SPF-VSS Writer handles all components within a SharePoint Foundation deployment, including the configuration database and the content databases and the Search database and index. As mentioned previously, the writer also has a dependency on the Search writer, which handles all the Search index files for backup and recovery. At the time of recovery, the writer can roll back the entire SharePoint Foundation deployment by restoring a previous farm backup. (The IIS configuration store is not included. It must be backed up and restored separately.)
     
     > [!NOTE]
-      > See "Restoring" in  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint-2013.md) for important information about restorations.
+      > See "Restoring" in  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint.md) for important information about restorations.
 - **Post-restore synchronization of databases.** To ensure that all databases are synchronized with the farm after a restore operation is complete, each of the databases are automatically detached and reattached to the farm post recovery. Administrators do not need to run additional procedures to resynchronize the restored databases.
     
   
@@ -117,7 +117,7 @@ Learn how to create and use a VSS requestor for SharePoint 2013:
     
     
 
--  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint-2013.md)
+-  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint.md)
     
   
 
@@ -125,7 +125,7 @@ Learn how to create and use a VSS requestor for SharePoint 2013:
 <a name="bk_addresources"> </a>
 
 
--  [Overview of SharePoint 2013 and the Volume Shadow Copy Service](overview-of-sharepoint-2013-and-the-volume-shadow-copy-service.md)
+-  [Overview of SharePoint 2013 and the Volume Shadow Copy Service](overview-of-sharepoint-and-the-volume-shadow-copy-service.md)
     
   
 

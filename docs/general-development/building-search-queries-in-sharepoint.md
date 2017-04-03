@@ -56,7 +56,7 @@ For more information about result sources and how they work, see to:  [Understan
 -  [FAST Query Language (FQL) syntax reference](fast-query-language-fql-syntax-reference.md)
     
   
--  [Using the SharePoint 2013 search Query APIs](using-the-sharepoint-2013-search-query-apis.md)
+-  [Using the SharePoint 2013 search Query APIs](using-the-sharepoint-search-query-apis.md)
     
   
 
@@ -64,7 +64,7 @@ For more information about result sources and how they work, see to:  [Understan
 <a name="SP15Buildquery_addlresources"> </a>
 
 
--  [Search in SharePoint 2013](search-in-sharepoint-2013.md)
+-  [Search in SharePoint 2013](search-in-sharepoint.md)
     
   
 -  [Overview of query processing in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/jj219620%28v=office.15%29.aspx)

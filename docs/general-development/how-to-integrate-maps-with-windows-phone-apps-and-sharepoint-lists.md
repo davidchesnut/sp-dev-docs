@@ -40,7 +40,7 @@ Ensure that you have the following installed:
 - Access to a SharePoint 2013 list, with sufficient privileges to add a column
     
   
-- The Bing Maps key deployed to your server; see  [How to: Set the Bing Maps key at the web and farm level in SharePoint 2013](how-to-set-the-bing-maps-key-at-the-web-and-farm-level-in-sharepoint-2013.md)
+- The Bing Maps key deployed to your server; see  [How to: Set the Bing Maps key at the web and farm level in SharePoint 2013](how-to-set-the-bing-maps-key-at-the-web-and-farm-level-in-sharepoint.md)
     
   
 
@@ -269,16 +269,16 @@ In this step, you can run your app and validate it.
 <a name="SP15Integmaps_addlresources"> </a>
 
 
--  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md)
+-  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint.md)
     
   
--  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md)
+-  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint.md)
     
   
 -  [How to: Extend the Geolocation field type using client-side rendering](how-to-extend-the-geolocation-field-type-using-client-side-rendering.md)
     
   
--  [How to: Add a Geolocation column to a list programmatically in SharePoint 2013](how-to-add-a-geolocation-column-to-a-list-programmatically-in-sharepoint-2013.md)
+-  [How to: Add a Geolocation column to a list programmatically in SharePoint 2013](how-to-add-a-geolocation-column-to-a-list-programmatically-in-sharepoint.md)
     
   
 -  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md)

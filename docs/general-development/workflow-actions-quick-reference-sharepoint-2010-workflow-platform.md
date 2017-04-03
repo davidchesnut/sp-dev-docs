@@ -7,7 +7,7 @@ ms.assetid: b033f79f-2179-4cfd-9d1c-7c04f83d4a4b
 
 
 # Workflow actions quick reference (SharePoint 2010 Workflow platform)
-Learn about the workflow actions that are available in the SharePoint 2010 Workflow Platform in Microsoft SharePoint Designer 2013.Use this article  *only*  if you are working in SharePoint Designer 2013, but want to continue to use the SharePoint 2010 Workflow Platform.If instead you want to use the SharePoint 2013 Workflow Platform, see  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-2013-workflow-platform.md), along with other articles (mentioned in the "Additional resources" section) about new features that are available in the newer platform.To begin creating a workflow by using the 2010 Workflow Platform, select **SharePoint 2010 Workflow** in the **Platform Type** box in the **Create Workflow** dialog box.
+Learn about the workflow actions that are available in the SharePoint 2010 Workflow Platform in Microsoft SharePoint Designer 2013.Use this article  *only*  if you are working in SharePoint Designer 2013, but want to continue to use the SharePoint 2010 Workflow Platform.If instead you want to use the SharePoint 2013 Workflow Platform, see  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-workflow-platform.md), along with other articles (mentioned in the "Additional resources" section) about new features that are available in the newer platform.To begin creating a workflow by using the 2010 Workflow Platform, select **SharePoint 2010 Workflow** in the **Platform Type** box in the **Create Workflow** dialog box.
 ## Where to find the workflow actions
 <a name="section1"> </a>
 
@@ -280,13 +280,13 @@ A site workflow operates at a site-level and is not attached to any more specifi
 <a name="bk_addresources"> </a>
 
 
--  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-2013-workflow-platform.md)
+-  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-workflow-platform.md)
     
   
--  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint-2013.md)
+-  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint.md)
     
   
--  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint-2013.md)
+-  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint.md)
     
   
 -  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md)

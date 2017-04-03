@@ -341,7 +341,7 @@ Remove-SPEnterpriseSearchContentEnrichmentConfiguration -SearchApplication $ssa
 -  [Start, pause, resume, or stop a crawl](http://technet.microsoft.com/en-us/library/jj219814%28office.15%29.aspx)
     
   
--  [Configure search in SharePoint 2013](configure-search-in-sharepoint-2013.md)
+-  [Configure search in SharePoint 2013](configure-search-in-sharepoint.md)
     
   
 -  [Custom content processing with the Content Enrichment web service callout](custom-content-processing-with-the-content-enrichment-web-service-callout.md)

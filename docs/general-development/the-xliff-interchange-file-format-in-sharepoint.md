@@ -41,7 +41,7 @@ This article documents specific SharePoint Server implementations of XLIFF eleme
 |Trans-unit  <br/> | `id` <br/>  `datatype` <br/> |The  `id` attribute contains a GUID that identifies the location of the import. <br/> The  `datatype` attribute defines the type of data contained in the **trans-unit** element. For a list of available `datatype` attribute values, see the XLIFF open standard document. <br/> |
 |Source  <br/> ||HTML content often contains markup that has to be preserved. For this reason, SharePoint 2013 wraps markup in HTML content with tags that are defined in the  [XLIFF 1.2 representation guide for HTML](http://docs.oasis-open.org/xliff/v1.2/xliff-profile-html/xliff-profile-html-1.2-cd02.mdl).  <br/> |
 |Target  <br/> |ph (optional)  <br/> bpt (optional)  <br/> ept (optional)  <br/> sub (optional)  <br/> |HTML content often contains markup that has to be preserved. For this reason, SharePoint 2013 wraps markup in HTML content with tags that are defined in the  [XLIFF 1.2 representation guide for HTML](http://docs.oasis-open.org/xliff/v1.2/xliff-profile-html/xliff-profile-html-1.2-cd02.mdl).  <br/> |
-|Bin-unit  <br/> ||Files stored in SharePoint 2013 can be sent for localization via XLIFF through the **bin-unit** elements. The file can be extracted back into its original file format by using the [SharePoint 2013: Extract and insert bin-unit elements in XLIFF files](http://code.msdn.microsoft.com/SharePoint-2013-Extract-fe686878) code sample. <br/> |
+|Bin-unit  <br/> ||Files stored in SharePoint 2013 can be sent for localization via XLIFF through the **bin-unit** elements. The file can be extracted back into its original file format by using the [SharePoint 2013: Extract and insert bin-unit elements in XLIFF files](http://code.msdn.microsoft.com/SharePoint-Extract-fe686878) code sample. <br/> |
 |Bin-source  <br/> |||
 |Bin-target  <br/> |||
 |Internalfile  <br/> |form  <br/> ||
@@ -94,13 +94,13 @@ The following example of an XML document in XLIFF interchange file format demons
 <a name="bk_addresources"> </a>
 
 
--  [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)
+-  [Add SharePoint 2013 capabilities](add-sharepoint-capabilities.md)
     
   
-- Code sample:  [SharePoint 2013: Extract and insert bin-unit elements in XLIFF files](http://code.msdn.microsoft.com/SharePoint-2013-Extract-fe686878)
+- Code sample:  [SharePoint 2013: Extract and insert bin-unit elements in XLIFF files](http://code.msdn.microsoft.com/SharePoint-Extract-fe686878)
     
   
--  [Machine Translation Services in SharePoint 2013](machine-translation-services-in-sharepoint-2013.md)
+-  [Machine Translation Services in SharePoint 2013](machine-translation-services-in-sharepoint.md)
     
   
 

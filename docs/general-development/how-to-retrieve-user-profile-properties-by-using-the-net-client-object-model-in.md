@@ -36,7 +36,7 @@ User profile properties from client APIs are read-only (except the profile pictu
     
     
 
-For more information about working with profiles, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md).
+For more information about working with profiles, see  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md).
   
     
     
@@ -333,7 +333,7 @@ namespace UserProfilesCSOM
 <a name="bk_addresources"> </a>
 
 
--  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md)
+-  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md)
     
   
 -  [How to: Retrieve user profile properties by using the JavaScript object model in SharePoint 2013](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md)

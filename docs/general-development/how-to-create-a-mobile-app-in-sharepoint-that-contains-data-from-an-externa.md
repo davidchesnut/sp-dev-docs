@@ -30,7 +30,7 @@ SharePoint 2013 enables you to build mobile applications that can access externa
 - Microsoft Visual Studio Express with the new SharePoint 2013 phone templates from  [Microsoft SharePoint SDK for Windows Phone 7.1](http://www.microsoft.com/en-us/download/details.aspx?id=30476)
     
   
-- The BDC model for our exampleNorthwind_oData.bdmc (download from  [SharePoint 2013: Create a simple external list-based phone app](http://code.msdn.microsoft.com/sharepoint/SharePoint-2013-Create-a-88800202))
+- The BDC model for our exampleNorthwind_oData.bdmc (download from  [SharePoint 2013: Create a simple external list-based phone app](http://code.msdn.microsoft.com/sharepoint/SharePoint-Create-a-88800202))
     
   
 - A SharePoint 2013 installation with administrative privileges to upload the BDC model for the Northwind database and a SharePoint site where you create the external list
@@ -148,7 +148,7 @@ Next you need to set permissions on the BDC model to specify who can execute the
 ## Step 3: Create an external list
 <a name="HowToCreateSimpleExternalListBasedPhoneApp_Step3"> </a>
 
-Now that you've uploaded the BDC model and set permissions, you can create an external list based on the external content type defined in the BDC model. In this step, you will create an external list based on the Customer external content type defined in the Northwind BDC model you uploaded in  [Step 1: Upload a BDC metadata model](how-to-create-a-mobile-app-in-sharepoint-2013-that-contains-data-from-an-externa.md#HowToCreateSimpleExternalListBasedPhoneApp_Step1).
+Now that you've uploaded the BDC model and set permissions, you can create an external list based on the external content type defined in the BDC model. In this step, you will create an external list based on the Customer external content type defined in the Northwind BDC model you uploaded in  [Step 1: Upload a BDC metadata model](how-to-create-a-mobile-app-in-sharepoint-that-contains-data-from-an-externa.md#HowToCreateSimpleExternalListBasedPhoneApp_Step1).
   
     
     
@@ -181,7 +181,7 @@ Now that you've uploaded the BDC model and set permissions, you can create an ex
 ## Step 4: Create a mobile app using the Windows Phone SharePoint List Application template
 <a name="HowToCreateSimpleExternalListBasedPhoneApp_Step4"> </a>
 
-Your external list is ready and you can now create a Windows Phone 7 app that connects to the external list you created in  [Step 3: Create an external list](how-to-create-a-mobile-app-in-sharepoint-2013-that-contains-data-from-an-externa.md#HowToCreateSimpleExternalListBasedPhoneApp_Step3) and display Customer data from the Northwind database.
+Your external list is ready and you can now create a Windows Phone 7 app that connects to the external list you created in  [Step 3: Create an external list](how-to-create-a-mobile-app-in-sharepoint-that-contains-data-from-an-externa.md#HowToCreateSimpleExternalListBasedPhoneApp_Step3) and display Customer data from the Northwind database.
   
     
     
@@ -274,16 +274,16 @@ Now that the app is ready to run, you can test it using phone emulator.
     
     
 
--  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md)
+-  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint.md)
     
   
--  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-2013-application-templates-in-visual-studio.md)
+-  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-application-templates-in-visual-studio.md)
     
   
 -  [How to: Create External Lists in SharePoint](http://msdn.microsoft.com/en-us/library/ee558778.aspx)
     
   
--  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md)
+-  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-list-app.md)
     
   
 -  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md)

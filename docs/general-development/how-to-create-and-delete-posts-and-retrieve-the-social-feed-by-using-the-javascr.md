@@ -14,7 +14,7 @@ In SharePoint Server 2013, a social feed is a collection of threads that represe
   
     
     
-For more information about working with  [SocialFeedManager](http://msdn.microsoft.com/library/651fdf0f-841d-88f9-1e07-fcb3ad8c9410%28Office.15%29.aspx) or for information about using other APIs to work with social feeds, see [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md).
+For more information about working with  [SocialFeedManager](http://msdn.microsoft.com/library/651fdf0f-841d-88f9-1e07-fcb3ad8c9410%28Office.15%29.aspx) or for information about using other APIs to work with social feeds, see [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md).
   
     
     
@@ -207,7 +207,7 @@ The following code example retrieves feeds for the current user and a target use
 - Iterate through the feeds to find all non-reference threads and to get information about threads and posts. Reference threads represent notifications that contain information about another thread. For example, if a user mentions someone in a post, the server generates a **MentionReference**-type thread that contains the link to the original post and other metadata about the post.
     
   
-For more information about feed types, see  [Overview of feed types in the My Site Social API](work-with-social-feeds-in-sharepoint-2013.md#bkmk_FeedTypes). For more information about reference threads, see  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md).
+For more information about feed types, see  [Overview of feed types in the My Site Social API](work-with-social-feeds-in-sharepoint.md#bkmk_FeedTypes). For more information about reference threads, see  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-social-feeds.md).
   
     
     
@@ -439,7 +439,7 @@ function RequestFailed(sender, args) {
 <a name="bk_addResources"> </a>
 
 
--  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)
+-  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md)
     
   
 -  [SP.Social namespace (sp.userprofiles)](http://msdn.microsoft.com/library/43d47f01-c085-0e77-bd01-48bcb7d5bb35%28Office.15%29.aspx)
@@ -451,7 +451,7 @@ function RequestFailed(sender, args) {
 -  [How to: Learn to read and write to the social feed by using the REST service in SharePoint 2013](how-to-learn-to-read-and-write-to-the-social-feed-by-using-the-rest-service-in-s.md)
     
   
--  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-2013-social-feeds.md)
+-  [Reference threads and digest threads in SharePoint Server 2013 social feeds](reference-threads-and-digest-threads-in-sharepoint-server-social-feeds.md)
     
   
 

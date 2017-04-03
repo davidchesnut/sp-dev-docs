@@ -583,7 +583,7 @@ using (var context = new ClientContext("http://localhost"))
 <a name="bk_addresources"> </a>
 
 
--  [Search in SharePoint 2013](search-in-sharepoint-2013.md)
+-  [Search in SharePoint 2013](search-in-sharepoint.md)
     
   
 -  [Keyword Query Language (KQL) syntax reference](keyword-query-language-kql-syntax-reference.md)

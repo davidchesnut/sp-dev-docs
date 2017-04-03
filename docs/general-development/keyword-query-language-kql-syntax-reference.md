@@ -688,6 +688,6 @@ You can combine different parts of a keyword query by using the opening parenthe
 <a name="SP15KQL_addlresources"> </a>
 
 
--  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint-2013.md)
+-  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint.md)
     
   

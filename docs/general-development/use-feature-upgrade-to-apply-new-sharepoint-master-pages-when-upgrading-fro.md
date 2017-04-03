@@ -137,7 +137,7 @@ Once you're done with the upgrade, you'll want to think about the future and lon
 -  [Deploy custom features to upgraded site collections in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/dn673579%28v=office.15%29.aspx)
     
   
--  [Upgrade site customizations for SharePoint 2013](upgrade-site-customizations-for-sharepoint-2013.md)
+-  [Upgrade site customizations for SharePoint 2013](upgrade-site-customizations-for-sharepoint.md)
     
   
 -  [Upgrade to SharePoint 2013](http://technet.microsoft.com/en-us/library/cc303420%28v=office.15%29.aspx)

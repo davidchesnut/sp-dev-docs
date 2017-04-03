@@ -48,19 +48,19 @@ The key concept is that a claim is not just a unique identifier that identifies 
 <a name="SP15_RoleInheritance_AdditionalResources"> </a>
 
 
--  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md)
+-  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint.md)
     
   
--  [Incoming claims: Signing into SharePoint 2013](incoming-claims-signing-into-sharepoint-2013.md)
+-  [Incoming claims: Signing into SharePoint 2013](incoming-claims-signing-into-sharepoint.md)
     
   
--  [Claims provider in SharePoint 2013](claims-provider-in-sharepoint-2013.md)
+-  [Claims provider in SharePoint 2013](claims-provider-in-sharepoint.md)
     
   
--  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint-2013.md)
+-  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint.md)
     
   
--  [How to: Deploy a claims provider in SharePoint 2013](how-to-deploy-a-claims-provider-in-sharepoint-2013.md)
+-  [How to: Deploy a claims provider in SharePoint 2013](how-to-deploy-a-claims-provider-in-sharepoint.md)
     
   
 

@@ -14,7 +14,7 @@ SharePoint Designer provides a collection of workflow actions that are available
 
 Recognizing that business processes often have specialized requirements, SharePoint 2013 lets you create custom workflow actions. You can develop these custom actions by using Visual Studio, and then package and deploy them to SharePoint. At that point, the custom action becomes available to workflow authors in SharePoint Designer, exactly as if it were among the library of existing actions. This capability lets you customize the functionality in your workflow authoring environment to match any of your specialized business processes.
 > [!NOTE]
-> A sample is provided that illustrates creating a custom action. The sample, along with a readme file, is available here:  [SharePoint 2013 workflow: Create a custom action](http://code.msdn.microsoft.com/SharePoint-2013-workflow-41e5c0f9) (http://code.msdn.microsoft.com/SharePoint-2013-workflow-41e5c0f9).
+> A sample is provided that illustrates creating a custom action. The sample, along with a readme file, is available here:  [SharePoint 2013 workflow: Create a custom action](http://code.msdn.microsoft.com/SharePoint-workflow-41e5c0f9) (http://code.msdn.microsoft.com/SharePoint-workflow-41e5c0f9).
   
     
     
@@ -174,13 +174,13 @@ Activating a custom action feature on a site collection (that is, on an **SPWeb*
 <a name="bk_addlresources"> </a>
 
 
--  [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md)
+-  [SharePoint 2013 workflow fundamentals](sharepoint-workflow-fundamentals.md)
     
   
--  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint-2013.md)
+-  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint.md)
     
   
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
 

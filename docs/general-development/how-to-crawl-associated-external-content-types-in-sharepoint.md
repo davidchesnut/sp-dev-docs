@@ -117,7 +117,7 @@ To mark an association so that it is crawled as a child external content type, a
 <a name="SP15crawlects_addlresources"> </a>
 
 
--  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint-2013.md)
+-  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint.md)
     
   
 -  [Adding Associations Between External Content Types](http://msdn.microsoft.com/library/791e95ab-9b3c-413b-be12-bd0e59962c93%28Office.15%29.aspx)

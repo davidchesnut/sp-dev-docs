@@ -164,7 +164,7 @@ You can use the following code examples to complete basic operations with the ta
 ## Pinning
 <a name="SP15_ManagedMetadataAndNav_Pinning"> </a>
 
-In Microsoft SharePoint Server 2010, users could reuse terms (and all terms nested under the reused terms) in other locations in the term hierarchy. After these terms were reused, they could be modified and changes would be seen everywhere the terms were reused. SharePoint 2013 introduces term pinning. A pinned term is just like a term that is reused, except it is read only and cannot be changed in the locations where the term is reused. For an example, see  [How to: Use code to pin terms to navigation term sets in SharePoint 2013](how-to-use-code-to-pin-terms-to-navigation-term-sets-in-sharepoint-2013.md).
+In Microsoft SharePoint Server 2010, users could reuse terms (and all terms nested under the reused terms) in other locations in the term hierarchy. After these terms were reused, they could be modified and changes would be seen everywhere the terms were reused. SharePoint 2013 introduces term pinning. A pinned term is just like a term that is reused, except it is read only and cannot be changed in the locations where the term is reused. For an example, see  [How to: Use code to pin terms to navigation term sets in SharePoint 2013](how-to-use-code-to-pin-terms-to-navigation-term-sets-in-sharepoint.md).
   
     
     
@@ -234,10 +234,10 @@ A term store manager can enhance and expand term usage models based on more flex
 <a name="SP15_ManagedMetadataAndNav_AdditionalResources"> </a>
 
 
--  [Managed navigation in SharePoint 2013](managed-navigation-in-sharepoint-2013.md)
+-  [Managed navigation in SharePoint 2013](managed-navigation-in-sharepoint.md)
     
   
--  [Content Search Web Part in SharePoint 2013](content-search-web-part-in-sharepoint-2013.md)
+-  [Content Search Web Part in SharePoint 2013](content-search-web-part-in-sharepoint.md)
     
   
 

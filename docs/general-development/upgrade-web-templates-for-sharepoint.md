@@ -141,7 +141,7 @@ To add the default functionality back to the template, you must modify the Onet.
 <a name="bk_addresources"> </a>
 
 
--  [Upgrade site customizations for SharePoint 2013](upgrade-site-customizations-for-sharepoint-2013.md)
+-  [Upgrade site customizations for SharePoint 2013](upgrade-site-customizations-for-sharepoint.md)
     
   
 -  [SharePoint 2010 and web templates](http://blogs.msdn.com/b/vesku/archive/2010/10/14/sharepoint-2010-and-web-templates.aspx)

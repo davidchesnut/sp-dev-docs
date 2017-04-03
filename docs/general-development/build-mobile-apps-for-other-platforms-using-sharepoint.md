@@ -83,7 +83,7 @@ To authenticate your mobile app with SharePoint, you can use the MS-OFBA protoco
   
     
     
-When a user signs in to SharePoint 2013, the user's token is validated and then used to sign in to SharePoint. The user's token is a security token that is issued by an identity provider. SharePoint 2013 supports several kinds of authentication. For more information, see  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md). To authenticate a user, you can use the REST interface. The authorization process verifies that an authenticated subject (an app or a user the app is acting on behalf of) has permission to perform certain operations or to access specific resources (for example, a list or a SharePoint document folder).
+When a user signs in to SharePoint 2013, the user's token is validated and then used to sign in to SharePoint. The user's token is a security token that is issued by an identity provider. SharePoint 2013 supports several kinds of authentication. For more information, see  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint.md). To authenticate a user, you can use the REST interface. The authorization process verifies that an authenticated subject (an app or a user the app is acting on behalf of) has permission to perform certain operations or to access specific resources (for example, a list or a SharePoint document folder).
   
     
     
@@ -297,16 +297,16 @@ For more information, see  [Complete basic operations using SharePoint 2013 REST
 <a name="bk_addresources"> </a>
 
 
--  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md)
+-  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint.md)
     
   
 -  [Using the SharePoint 2013 REST service](http://msdn.microsoft.com/library/e1ff2979-1c16-4cb0-a57e-9168dfe20a7c.aspx)
     
   
--  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md)
+-  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint.md)
     
   
--  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)
+-  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint.md)
     
   
 -  [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx)

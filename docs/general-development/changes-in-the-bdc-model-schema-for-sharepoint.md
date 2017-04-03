@@ -12,7 +12,7 @@ The number of changes in the schema (BDCMetadata.xsd) for creating BDC models in
     
     
 
-For more information about the BDCMetadata schema, see  [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint-2013.md).
+For more information about the BDCMetadata schema, see  [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint.md).
 ## Changes to complex type elements in BDCMetadata.xsd
 <a name="bkmk_ChangesToElements"> </a>
 
@@ -66,19 +66,19 @@ The following table lists the changes to the attributes of each element.
 <a name="bkmk_AdditionalResources"> </a>
 
 
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
--  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint-2013.md)
+-  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint.md)
     
   
--  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint-2013.md)
+-  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint.md)
     
   
--  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint-2013.md)
+-  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint.md)
     
   
--  [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint-2013.md)
+-  [BDC model schema reference for SharePoint 2013](bdc-model-schema-reference-for-sharepoint.md)
     
   
 

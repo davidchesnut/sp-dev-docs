@@ -17,7 +17,7 @@ The social and collaboration features on My Sites, team sites, and Community Sit
 ### My Site and team site features in SharePoint Server 2013
 <a name="bkmk_Social"> </a>
 
-On My Site and team sites, the interactive newsfeed can help users keep current with people and content through real-time microblog messages and status updates. My Site also acts as a central location where users can track their tasks and access the documents and sites they are following. See  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md) to learn about SharePoint Server 2013 APIs that you can use to develop with My Site features.
+On My Site and team sites, the interactive newsfeed can help users keep current with people and content through real-time microblog messages and status updates. My Site also acts as a central location where users can track their tasks and access the documents and sites they are following. See  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md) to learn about SharePoint Server 2013 APIs that you can use to develop with My Site features.
   
     
     
@@ -37,19 +37,19 @@ People can use the rich, forum-like experience in Community Sites to find and sh
 -  [What's new for developers in social and collaboration features in SharePoint 2013](what-s-new-for-developers-in-social-and-collaboration-features-in-sharepoint-201.md)
     
   
--  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)
+-  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md)
     
   
--  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)
+-  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md)
     
   
--  [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md)
+-  [Follow people in SharePoint 2013](follow-people-in-sharepoint.md)
     
   
--  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md)
+-  [Follow content in SharePoint 2013](follow-content-in-sharepoint.md)
     
   
--  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md)
+-  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md)
     
   
 

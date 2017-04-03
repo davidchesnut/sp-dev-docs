@@ -46,7 +46,7 @@ During a recovery, the backup/restore application instructs the SPF-VSS Writer t
 
     
 > [!NOTE]
-> See "Restoring" in  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint-2013.md) for important information about restorations.
+> See "Restoring" in  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint.md) for important information about restorations.
   
     
     
@@ -95,19 +95,19 @@ The following is the high-level sequence of events during backup or restore oper
 <a name="bk_addresources"> </a>
 
 
--  [SharePoint 2013 VSS Writer](sharepoint-2013-vss-writer.md)
+-  [SharePoint 2013 VSS Writer](sharepoint-vss-writer.md)
     
   
--  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint-2013.md)
+-  [VSS requestors and SharePoint 2013](vss-requestors-and-sharepoint.md)
     
   
--  [How to: Create a VSS requestor for use with SharePoint 2013](how-to-create-a-vss-requestor-for-use-with-sharepoint-2013.md)
+-  [How to: Create a VSS requestor for use with SharePoint 2013](how-to-create-a-vss-requestor-for-use-with-sharepoint.md)
     
   
--  [How to: Back up and restore SharePoint 2013 using a VSS requestor](how-to-back-up-and-restore-sharepoint-2013-using-a-vss-requestor.md)
+-  [How to: Back up and restore SharePoint 2013 using a VSS requestor](how-to-back-up-and-restore-sharepoint-using-a-vss-requestor.md)
     
   
--  [How to: Back up and restore a search service application in SharePoint 2013 using VSS](how-to-back-up-and-restore-a-search-service-application-in-sharepoint-2013-using.md)
+-  [How to: Back up and restore a search service application in SharePoint 2013 using VSS](how-to-back-up-and-restore-a-search-service-application-in-sharepoint-using.md)
     
   
 -  [Starting and Configuring the WSS Writer Service](http://msdn.microsoft.com/library/c9243dd6-e61e-4783-9fef-48d0122f1c09.aspx)

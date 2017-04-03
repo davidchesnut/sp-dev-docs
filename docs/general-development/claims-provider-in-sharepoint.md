@@ -19,7 +19,7 @@ A claims provider in SharePoint has two roles: augmentation and picking.
     
 
 > [!NOTE]
-> For information about how to create a claims provider, see  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint-2013.md). 
+> For information about how to create a claims provider, see  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint.md). 
   
     
     
@@ -101,16 +101,16 @@ Assume a scenario where your system has some specific requirements for people pi
 <a name="bk_addresources"> </a>
 
 
--  [Claims-based identity in SharePoint 2013](claims-based-identity-in-sharepoint-2013.md)
+-  [Claims-based identity in SharePoint 2013](claims-based-identity-in-sharepoint.md)
     
   
--  [Incoming claims: Signing into SharePoint 2013](incoming-claims-signing-into-sharepoint-2013.md)
+-  [Incoming claims: Signing into SharePoint 2013](incoming-claims-signing-into-sharepoint.md)
     
   
--  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint-2013.md)
+-  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint.md)
     
   
--  [How to: Deploy a claims provider in SharePoint 2013](how-to-deploy-a-claims-provider-in-sharepoint-2013.md)
+-  [How to: Deploy a claims provider in SharePoint 2013](how-to-deploy-a-claims-provider-in-sharepoint.md)
     
   
 

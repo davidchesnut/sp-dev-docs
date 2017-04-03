@@ -150,7 +150,7 @@ When using impersonation steps in a workflow, you should author the workflow usi
   
     
     
-For more information, see  [Create a workflow with elevated permissions by using the SharePoint 2013 Workflow platform](create-a-workflow-with-elevated-permissions-by-using-the-sharepoint-2013-workflo.md).
+For more information, see  [Create a workflow with elevated permissions by using the SharePoint 2013 Workflow platform](create-a-workflow-with-elevated-permissions-by-using-the-sharepoint-workflo.md).
   
     
     
@@ -183,13 +183,13 @@ Where possible, instead of creating multiple **Approval** actions, it is more ef
 <a name="bk_addresources"> </a>
 
 
--  [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)
+-  [Workflows in SharePoint 2013](workflows-in-sharepoint.md)
     
   
--  [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md)
+-  [SharePoint 2013 workflow fundamentals](sharepoint-workflow-fundamentals.md)
     
   
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
 

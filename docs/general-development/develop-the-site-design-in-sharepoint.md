@@ -13,16 +13,16 @@ If you want your SharePoint 2013 site to represent your organization's brand and
     
 
 For more information about using Design Manager to customize your sites, see the following articles and their subtopics:
--  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md) : Get an overview of using Design Manager to brand your SharePoint 2013 site. Design Manager is a publishing feature that is available in publishing sites in both SharePoint Server 2013 and Office 365.
+-  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md) : Get an overview of using Design Manager to brand your SharePoint 2013 site. Design Manager is a publishing feature that is available in publishing sites in both SharePoint Server 2013 and Office 365.
     
   
--  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-2013-page-model.md) : Learn about the revised page model—including master pages and page layouts—redesigned for SharePoint 2013.
+-  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-page-model.md) : Learn about the revised page model—including master pages and page layouts—redesigned for SharePoint 2013.
     
   
--  [Master pages, the Master Page Gallery, and page layouts in SharePoint 2013](master-pages-the-master-page-gallery-and-page-layouts-in-sharepoint-2013.md) : Find links to information about using Design Manager to work with master pages, page layouts, and display templates in publishing sites in SharePoint 2013.
+-  [Master pages, the Master Page Gallery, and page layouts in SharePoint 2013](master-pages-the-master-page-gallery-and-page-layouts-in-sharepoint.md) : Find links to information about using Design Manager to work with master pages, page layouts, and display templates in publishing sites in SharePoint 2013.
     
   
--  [SharePoint 2013 Design Manager branding and design capabilities](sharepoint-2013-design-manager-branding-and-design-capabilities.md) : Find links to information about using Design Manager branding and design capabilities in SharePoint 2013.
+-  [SharePoint 2013 Design Manager branding and design capabilities](sharepoint-design-manager-branding-and-design-capabilities.md) : Find links to information about using Design Manager branding and design capabilities in SharePoint 2013.
     
   
 
@@ -33,7 +33,7 @@ For more information about using Design Manager to customize your sites, see the
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)
     
   
--  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-2013-site-development.md)
+-  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-site-development.md)
     
   
 

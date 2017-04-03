@@ -376,7 +376,7 @@ You need to add your custom Web Part to your SharePoint page.
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)
     
   
--  [Set up User Segmentation to drive adaptive experiences in a Product Catalog in SharePoint 2013](http://blogs.msdn.com/b/adaptive_experiences_in_sharepoint_2013/archive/2012/11/14/set-up-user-segmentation-to-drive-adaptive-experiences-in-a-product-catalog-in-sharepoint-2013.aspx)
+-  [Set up User Segmentation to drive adaptive experiences in a Product Catalog in SharePoint 2013](http://blogs.msdn.com/b/adaptive_experiences_in_sharepoint_2013/archive/2012/11/14/set-up-user-segmentation-to-drive-adaptive-experiences-in-a-product-catalog-in-sharepoint.aspx)
     
   
 

@@ -11,7 +11,7 @@ ms.assetid: a2643cd7-474d-4e4c-85bb-00f0b6685a1d
 # Get started with workflows in SharePoint 2013
 Learn about the newly engineered Workflow Manager Client 1.0, which provides the infrastructure for workflows in SharePoint 2013, and how SharePoint workflows are integrated with the new model for SharePoint Add-ins.
 > [!IMPORTANT]
-> For instructions on setting up and configuring SharePoint Server 2013 and Microsoft Azure, see  [Set up and configure SharePoint 2013 Workflow Manager](set-up-and-configure-sharepoint-2013-workflow-manager.md). 
+> For instructions on setting up and configuring SharePoint Server 2013 and Microsoft Azure, see  [Set up and configure SharePoint 2013 Workflow Manager](set-up-and-configure-sharepoint-workflow-manager.md). 
   
     
     
@@ -42,7 +42,7 @@ Workflows in SharePoint 2013 allow you to model and automate business processes.
   
     
     
-SharePoint 2013 marks the introduction of Workflow Manager Client 1.0 as the powerful new foundation for Visual Studio workflows. Build on Windows Workflow Foundation 4, Workflow Manager Client 1.0 provides advantages over previous versions that reflect the commitment of SharePoint to the model for SharePoint Add-ins and cloud-based computing. For details of these changes, see  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint-2013.md) and [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md).
+SharePoint 2013 marks the introduction of Workflow Manager Client 1.0 as the powerful new foundation for Visual Studio workflows. Build on Windows Workflow Foundation 4, Workflow Manager Client 1.0 provides advantages over previous versions that reflect the commitment of SharePoint to the model for SharePoint Add-ins and cloud-based computing. For details of these changes, see  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint.md) and [SharePoint 2013 workflow fundamentals](sharepoint-workflow-fundamentals.md).
   
     
     
@@ -50,7 +50,7 @@ Perhaps most importantly for workflow authors, the way that your create workflow
   
     
     
-The key enhancements to workflows in SharePoint 2013 include the following. For a more detail overview of what's new in workflows for SharePoint 2013, see  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint-2013.md).
+The key enhancements to workflows in SharePoint 2013 include the following. For a more detail overview of what's new in workflows for SharePoint 2013, see  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint.md).
   
     
     
@@ -58,7 +58,7 @@ The key enhancements to workflows in SharePoint 2013 include the following. For 
 - Enhanced connectivity to enable cloud-based execution of workflows. In fact, there is 100 percent parity in SharePoint 2013 between on-premises and Office 365 -based workflows.
     
   
-- There is full interoperability in SharePoint 2013 with SharePoint 2010 workflows, which is enabled by using the  [SharePoint workflow interop ](sharepoint-2013-workflow-fundamentals.md#bkm_InteropBridge).
+- There is full interoperability in SharePoint 2013 with SharePoint 2010 workflows, which is enabled by using the  [SharePoint workflow interop ](sharepoint-workflow-fundamentals.md#bkm_InteropBridge).
     
   
 - Enhanced authoring expressiveness by using Visual Studio events and action, web services, and classic programming structures, all in a declarative, no-code environment.
@@ -99,7 +99,7 @@ There are two primary authoring environments for Workflow Manager Client 1.0: Sh
   
     
     
-However, the primary authoring environments are Visual Studio 2012 and SharePoint Designer 2013. To help you decide which of these best suits your needs, see the decision matrix in  [Comparing SharePoint Designer with Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md#bkm_Comparing).
+However, the primary authoring environments are Visual Studio 2012 and SharePoint Designer 2013. To help you decide which of these best suits your needs, see the decision matrix in  [Comparing SharePoint Designer with Visual Studio](develop-sharepoint-workflows-using-visual-studio.md#bkm_Comparing).
   
     
     
@@ -185,7 +185,7 @@ For more information about developing workflows using **Visual Studio 2012** and
     
     
 
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
 -  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md)

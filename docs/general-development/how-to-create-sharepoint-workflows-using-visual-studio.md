@@ -78,7 +78,7 @@ The stage construct within a SharePoint Designer 2013 based workflow is based on
 
     
 > [!NOTE]
-> You can find the workflow depicted in Figure 1 as a workflow sample on MSDN here:  [SharePoint 2013: Approval workflow that uses a custom initiation form](http://code.msdn.microsoft.com/officeapps/SharePoint-2013-Approval-f5ac5eb2). 
+> You can find the workflow depicted in Figure 1 as a workflow sample on MSDN here:  [SharePoint 2013: Approval workflow that uses a custom initiation form](http://code.msdn.microsoft.com/officeapps/SharePoint-Approval-f5ac5eb2). 
   
     
     
@@ -107,7 +107,7 @@ State machine workflows, like flowchart workflows, do not typically follow a spe
 
     
 > [!NOTE]
-> You can find the workflow depicted in Figure 1 as a workflow sample on MSDN here:  [SharePoint 2013: Route workflows to states depending on actions and events](http://code.msdn.microsoft.com/officeapps/SharePoint-2013-Route-25a25d87). 
+> You can find the workflow depicted in Figure 1 as a workflow sample on MSDN here:  [SharePoint 2013: Route workflows to states depending on actions and events](http://code.msdn.microsoft.com/officeapps/SharePoint-Route-25a25d87). 
   
     
     
@@ -454,13 +454,13 @@ This article first explained the different types of workflows that can be create
 <a name="bk_addresources"> </a>
 
 
--  [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)
+-  [Workflows in SharePoint 2013](workflows-in-sharepoint.md)
     
   
 -  [SharePoint workflow development best practices](sharepoint-workflow-development-best-practices.md)
     
   
--  [SharePoint 2013 workflow samples](sharepoint-2013-workflow-samples.md)
+-  [SharePoint 2013 workflow samples](sharepoint-workflow-samples.md)
     
   
 

@@ -2268,16 +2268,16 @@ public string MessageId
 <a name="SP15MobileOM_addlresources"> </a>
 
 
--  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md)
+-  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint.md)
     
   
--  [How to: Configure and use push notifications in SharePoint 2013 apps for Windows Phone](how-to-configure-and-use-push-notifications-in-sharepoint-2013-apps-for-windows.md)
+-  [How to: Configure and use push notifications in SharePoint 2013 apps for Windows Phone](how-to-configure-and-use-push-notifications-in-sharepoint-apps-for-windows.md)
     
   
--  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md)
+-  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint.md)
     
   
--  [Overview of the SharePoint 2013 mobile client authentication object model](overview-of-the-sharepoint-2013-mobile-client-authentication-object-model.md)
+-  [Overview of the SharePoint 2013 mobile client authentication object model](overview-of-the-sharepoint-mobile-client-authentication-object-model.md)
     
   
 

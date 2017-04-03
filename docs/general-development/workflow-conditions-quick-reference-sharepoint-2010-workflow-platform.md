@@ -6,7 +6,7 @@ ms.assetid: 71fab25b-d4f3-4871-b9ad-08d3537098fc
 
 
 # Workflow conditions quick reference (SharePoint 2010 Workflow platform)
-Learn about the workflow conditions that are available in the SharePoint 2010 Workflow Platform in Microsoft SharePoint Designer 2013.Use this article  *only*  if you are working in SharePoint Designer 2013, but want to continue to use the SharePoint 2010 Workflow Platform.If instead you want to use the SharePoint 2013 Workflow Platform, see  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint-2013.md), and other articles listed in the "Additional resources" section, which describe new features that are available in the newer platform.To begin creating a workflow by using the 2010 Workflow Platform, select **SharePoint 2010 Workflow** in the **Platform Type** box in the **Create Workflow** dialog box.
+Learn about the workflow conditions that are available in the SharePoint 2010 Workflow Platform in Microsoft SharePoint Designer 2013.Use this article  *only*  if you are working in SharePoint Designer 2013, but want to continue to use the SharePoint 2010 Workflow Platform.If instead you want to use the SharePoint 2013 Workflow Platform, see  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint.md), and other articles listed in the "Additional resources" section, which describe new features that are available in the newer platform.To begin creating a workflow by using the 2010 Workflow Platform, select **SharePoint 2010 Workflow** in the **Platform Type** box in the **Create Workflow** dialog box.
 ## Where to find the workflow conditions
 <a name="section1"> </a>
 
@@ -450,10 +450,10 @@ For more information about conditions, see the  [General conditions](workflow-co
 <a name="bk_addresources"> </a>
 
 
--  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint-2013.md)
+-  [What's new in workflows for SharePoint 2013](what-s-new-in-workflows-for-sharepoint.md)
     
   
--  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint-2013.md)
+-  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint.md)
     
   
 -  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md)

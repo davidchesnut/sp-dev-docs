@@ -166,7 +166,7 @@ with the following line of code:
 <a name="SP15Crawlblobs_addlresources"> </a>
 
 
--  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint-2013.md)
+-  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint.md)
     
   
 -  [How to: Create External Content Types](http://msdn.microsoft.com/library/811b458c-e209-46df-ba02-8db02bc658db%28Office.15%29.aspx)

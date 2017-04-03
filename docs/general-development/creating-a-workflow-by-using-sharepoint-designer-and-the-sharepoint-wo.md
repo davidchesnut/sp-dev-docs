@@ -188,7 +188,7 @@ Now that the workflow is created, you can add Actions, Conditions, Stages, Steps
     
     
 
-To learn more about the available components of workflow development, see  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-2013-workflow-platform.md).
+To learn more about the available components of workflow development, see  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-workflow-platform.md).
   
     
     

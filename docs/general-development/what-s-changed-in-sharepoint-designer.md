@@ -175,7 +175,7 @@ If you want to visually design or brand your site, and you want a WYSIWYG ("what
 <a name="WhatsChangedSharePointDesigner2013_AdditionalResources"> </a>
 
 
--  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-2013-workflow-platform.md)
+-  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-workflow-platform.md)
     
   
 -  [Changes from SharePoint 2010 to SharePoint 2013](http://technet.microsoft.com/en-us/library/ff607742%28v=office.15%29.aspx)

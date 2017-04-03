@@ -145,10 +145,10 @@ Suppose that you have a web farm that consists of a server that runs an ASP.NET 
 <a name="bk_addresources"> </a>
 
 
--  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md)
+-  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint.md)
     
   
--  [Sample delegation, federation, and authentication scenario in SharePoint 2013](sample-delegation-federation-and-authentication-scenario-in-sharepoint-2013.md)
+-  [Sample delegation, federation, and authentication scenario in SharePoint 2013](sample-delegation-federation-and-authentication-scenario-in-sharepoint.md)
     
   
 -  [Claims-based identity term definitions](claims-based-identity-term-definitions.md)

@@ -510,7 +510,7 @@ You should categorize page optimization techniques into one of two categories: f
 - Use consolidated images and files; for example, combine multiple CSS files into one. Combine images into an image strip or cluster.
     
   
-- Use compression (crunch) techniques. For more information, see  [Compress (crunch) JavaScript and CSS files](optimize-page-performance-in-sharepoint-2013.md#OptimizingPagePerformance_Crunch).
+- Use compression (crunch) techniques. For more information, see  [Compress (crunch) JavaScript and CSS files](optimize-page-performance-in-sharepoint.md#OptimizingPagePerformance_Crunch).
     
   
 - Verify that you are referencing the production version of common JavaScript libraries, such as jQuery, instead of the debug versions.
@@ -860,12 +860,12 @@ Much of the guidance for SharePoint 2010 page performance optimization applies t
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)
     
   
--  [SharePoint 2013 Design Manager image renditions](sharepoint-2013-design-manager-image-renditions.md)
+-  [SharePoint 2013 Design Manager image renditions](sharepoint-design-manager-image-renditions.md)
     
   
--  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md)
+-  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md)
     
   
--  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-2013-page-model.md)
+-  [Overview of the SharePoint 2013 page model](overview-of-the-sharepoint-page-model.md)
     
   

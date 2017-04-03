@@ -1659,13 +1659,13 @@ When an anonymous Search REST query is submitted, the query object is constructe
 <a name="bk_addresources"> </a>
 
 
--  [Search in SharePoint 2013](search-in-sharepoint-2013.md)
+-  [Search in SharePoint 2013](search-in-sharepoint.md)
     
   
--  [SharePoint 2013: Using the search REST service from an app for SharePoint](http://code.msdn.microsoft.com/sharepoint/SharePoint-2013-Perform-a-1bf3e87d)
+-  [SharePoint 2013: Using the search REST service from an app for SharePoint](http://code.msdn.microsoft.com/sharepoint/SharePoint-Perform-a-1bf3e87d)
     
   
--  [What's new in SharePoint 2013 search for developers](what-s-new-in-sharepoint-2013-search-for-developers.md)
+-  [What's new in SharePoint 2013 search for developers](what-s-new-in-sharepoint-search-for-developers.md)
     
   
 -  [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx)

@@ -190,13 +190,13 @@ unchecked((int)0xffffffffL), InheritanceFlags.None, PropagationFlags.None);
 <a name="SP15Itemlevelsec_addlresources"> </a>
 
 
--  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint-2013.md)
+-  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint.md)
     
   
 -  [Implementing a BinarySecurityDescriptorAccessor](http://msdn.microsoft.com/library/6cf70490-dd3c-49cd-bb13-ed33e938435d%28Office.15%29.aspx)
     
   
--  [Enhancing the BDC model file for Search in SharePoint 2013](enhancing-the-bdc-model-file-for-search-in-sharepoint-2013.md)
+-  [Enhancing the BDC model file for Search in SharePoint 2013](enhancing-the-bdc-model-file-for-search-in-sharepoint.md)
     
   
 

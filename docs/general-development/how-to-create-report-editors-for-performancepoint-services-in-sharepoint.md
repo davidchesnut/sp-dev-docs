@@ -73,7 +73,7 @@ We recommend that you use the sample editor as a template. The sample shows how 
   
 
     > [!NOTE]
-      > The sample report obtains data from a filter, so it does not use **DataSourceConsumerHelper** or **IDataSourceConsumer** objects. However, if your report obtains data from a PerformancePoint Services data source, you can use the methods that are exposed by the **DataSourceConsumerHelper** class to retrieve data sources as described in [How to: Create filter editors for PerformancePoint Services in SharePoint 2013](how-to-create-filter-editors-for-performancepoint-services-in-sharepoint-2013.md). 
+      > The sample report obtains data from a filter, so it does not use **DataSourceConsumerHelper** or **IDataSourceConsumer** objects. However, if your report obtains data from a PerformancePoint Services data source, you can use the methods that are exposed by the **DataSourceConsumerHelper** class to retrieve data sources as described in [How to: Create filter editors for PerformancePoint Services in SharePoint 2013](how-to-create-filter-editors-for-performancepoint-services-in-sharepoint.md). 
 5. In your editor class, add **using** directives for the following PerformancePoint Services namespaces:
     
   - **Microsoft.PerformancePoint.Scorecards**
@@ -475,10 +475,10 @@ After you create a report editor (including its user interface, if required) and
 <a name="bk_addResources"> </a>
 
 
--  [How to: Create report renderers for PerformancePoint Services in SharePoint 2013](how-to-create-report-renderers-for-performancepoint-services-in-sharepoint-2013.md)
+-  [How to: Create report renderers for PerformancePoint Services in SharePoint 2013](how-to-create-report-renderers-for-performancepoint-services-in-sharepoint.md)
     
   
--  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint-2013.md)
+-  [PerformancePoint Services in SharePoint 2013](performancepoint-services-in-sharepoint.md)
     
   
 

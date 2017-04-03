@@ -81,7 +81,7 @@ To develop OData-based external content types, you will need the following:
 - Office Developer Tools for Visual Studio 2012
     
   
-For information about how to set up your development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
+For information about how to set up your development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint.md).
   
     
     
@@ -93,7 +93,7 @@ For SharePoint to use the data exposed by a specific OData producer, an external
   
     
     
-Creating an external content type that uses an OData data source is similar to creating any external content type. You can use Visual Studio 2012 to automatically generate OData external content types. You merely provide the Representational State Transfer (REST) endpoint of the OData source when you create the external content type. For more information see  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md).
+Creating an external content type that uses an OData data source is similar to creating any external content type. You can use Visual Studio 2012 to automatically generate OData external content types. You merely provide the Representational State Transfer (REST) endpoint of the OData source when you create the external content type. For more information see  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint.md).
   
     
     
@@ -102,13 +102,13 @@ Creating an external content type that uses an OData data source is similar to c
 <a name="SP15GetstartedOdata_inthissect"> </a>
 
 
--  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint-2013.md)
+-  [How to: Create an external content type from an OData source in SharePoint 2013](how-to-create-an-external-content-type-from-an-odata-source-in-sharepoint.md)
     
   
 -  [How to: Create an OData data service for use as a BCS external system](how-to-create-an-odata-data-service-for-use-as-a-bcs-external-system.md)
     
   
--  [How to: Create an external list using an OData data source in SharePoint 2013](how-to-create-an-external-list-using-an-odata-data-source-in-sharepoint-2013.md)
+-  [How to: Create an external list using an OData data source in SharePoint 2013](how-to-create-an-external-list-using-an-odata-data-source-in-sharepoint.md)
     
   
 
@@ -116,16 +116,16 @@ Creating an external content type that uses an OData data source is similar to c
 <a name="SP15GetstartedOdata_addres"> </a>
 
 
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
--  [External content types in SharePoint 2013](external-content-types-in-sharepoint-2013.md)
+-  [External content types in SharePoint 2013](external-content-types-in-sharepoint.md)
     
   
--  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint-2013.md)
+-  [What's new in Business Connectivity Services in SharePoint 2013](what-s-new-in-business-connectivity-services-in-sharepoint.md)
     
   
--  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint-2013.md)
+-  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint.md)
     
   
 

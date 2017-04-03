@@ -57,8 +57,8 @@ The SharePoint-hosted app that you create in this article uses JavaScript to bui
 |**Article title**|**Description**|
 |:-----|:-----|
 | [SharePoint Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx) <br/> |Learn about SharePoint Add-ins and fundamental concepts for building them.  <br/> |
-| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md) <br/> |Find out how to start programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.  <br/> |
-| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md) <br/> |Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.  <br/> |
+| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md) <br/> |Find out how to start programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.  <br/> |
+| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md) <br/> |Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.  <br/> |
    
 
 ## Create the SharePoint Add-in project
@@ -326,7 +326,7 @@ function feedRetrieved(data) {
 ## Next steps
 <a name="bkmk_PubPosts1"> </a>
 
-See  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint-2013.md) and [Following people and content REST API reference for SharePoint 2013](following-people-and-content-rest-api-reference-for-sharepoint-2013.md) for other REST endpoints that you can use to access social features.
+See  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint.md) and [Following people and content REST API reference for SharePoint 2013](following-people-and-content-rest-api-reference-for-sharepoint.md) for other REST endpoints that you can use to access social features.
   
     
     
@@ -335,13 +335,13 @@ See  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-r
 <a name="bk_addResources"> </a>
 
 
--  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint-2013.md)
+-  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint.md)
     
   
--  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)
+-  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md)
     
   
--  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)
+-  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md)
     
   
 

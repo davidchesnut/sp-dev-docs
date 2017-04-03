@@ -15,7 +15,7 @@ After you design or develop site components and content, you can deploy them to 
 
 ## Cross-site publishing
 
-Learn about  [cross-site publishing](cross-site-publishing-in-sharepoint-2013.md) and how it affects how you plan and publish sites and their content and associated design elements.
+Learn about  [cross-site publishing](cross-site-publishing-in-sharepoint.md) and how it affects how you plan and publish sites and their content and associated design elements.
   
     
     
@@ -58,7 +58,7 @@ Different markets have different tastes. The variations feature helps accommodat
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)
     
   
--  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-2013-site-development.md)
+-  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-site-development.md)
     
   
 

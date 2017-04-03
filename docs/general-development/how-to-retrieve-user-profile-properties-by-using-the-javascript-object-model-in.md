@@ -25,7 +25,7 @@ The  [PeopleManager](http://msdn.microsoft.com/library/985fd2df-0e31-6ece-b846-b
 - The  [getUserProfilePropertiesFor](http://msdn.microsoft.com/library/8674e96f-d320-4a50-1580-9a4568842ee5%28Office.15%29.aspx) method and the [getUserProfilePropertyFor](http://msdn.microsoft.com/library/da048bfa-54c6-8216-e8ef-09bd84f68d8d%28Office.15%29.aspx) method return the values of the user profile properties that you specify.
     
   
-User profile properties from client APIs are read-only (except the profile picture, which you can change by using the  [PeopleManager.setMyProfilePicture](http://msdn.microsoft.com/library/a4f8d745-f211-e750-4fd0-047091804683%28Office.15%29.aspx) method). If you want to change other user profile properties, you must use the server object model. For more information about working with user profiles, see [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md).
+User profile properties from client APIs are read-only (except the profile picture, which you can change by using the  [PeopleManager.setMyProfilePicture](http://msdn.microsoft.com/library/a4f8d745-f211-e750-4fd0-047091804683%28Office.15%29.aspx) method). If you want to change other user profile properties, you must use the server object model. For more information about working with user profiles, see [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md).
   
     
     
@@ -268,7 +268,7 @@ function onRequestFail(sender, args) {
 <a name="bk_addresources"> </a>
 
 
--  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md)
+-  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md)
     
   
 -  [How to: Retrieve user profile properties by using the .NET client object model in SharePoint 2013](how-to-retrieve-user-profile-properties-by-using-the-net-client-object-model-in.md)

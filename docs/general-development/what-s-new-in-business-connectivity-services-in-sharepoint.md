@@ -26,26 +26,26 @@ BCS is improved and enhanced for SharePoint 2013, including the new functionalit
 
 |**New feature**|**For more information**|
 |:-----|:-----|
-|SharePoint can now connect to OData sources.  <br/> | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint-2013.md) <br/> |
-|SharePoint can receive events from external systems.  <br/> | [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint-2013.md) <br/> |
-|External content types can now be scoped at the application level.  <br/> | [Add-in-scoped external content types in SharePoint 2013](add-in-scoped-external-content-types-in-sharepoint-2013.md) <br/> |
-|Support for Representational State Transfer (REST) and the client object model is enhanced.  <br/> | [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint-2013.md) <br/> |
+|SharePoint can now connect to OData sources.  <br/> | [Using OData sources with Business Connectivity Services in SharePoint 2013](using-odata-sources-with-business-connectivity-services-in-sharepoint.md) <br/> |
+|SharePoint can receive events from external systems.  <br/> | [External events and alerts in SharePoint 2013](external-events-and-alerts-in-sharepoint.md) <br/> |
+|External content types can now be scoped at the application level.  <br/> | [Add-in-scoped external content types in SharePoint 2013](add-in-scoped-external-content-types-in-sharepoint.md) <br/> |
+|Support for Representational State Transfer (REST) and the client object model is enhanced.  <br/> | [Get started using the client object model with external data in SharePoint 2013](get-started-using-the-client-object-model-with-external-data-in-sharepoint.md) <br/> |
    
 
 ## Additional resources
 <a name="SP15whatsnewBCS_addresources"> </a>
 
 
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
--  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint-2013.md)
+-  [Get started with Business Connectivity Services in SharePoint 2013](get-started-with-business-connectivity-services-in-sharepoint.md)
     
   
--  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint-2013.md)
+-  [Business Connectivity Services programmers reference for SharePoint 2013](business-connectivity-services-programmers-reference-for-sharepoint.md)
     
   
--  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md)
+-  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint.md)
     
   
 

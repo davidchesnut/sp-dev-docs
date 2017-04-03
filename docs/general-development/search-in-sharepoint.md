@@ -14,10 +14,10 @@ Search in SharePoint 2013 enables users to find relevant information more quickl
     
 
 See the following articles for a good introduction to general SharePoint 2013 development concepts; you may find it helpful to review these before proceeding:
--  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md)
+-  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint.md)
     
   
--  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)
+-  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint.md)
     
   
 -  [SharePoint Add-ins compared with SharePoint solutions](sharepoint-add-ins-compared-with-sharepoint-solutions.md)
@@ -193,14 +193,14 @@ The Search in SharePoint 2013 architecture provides several extensibility points
 
 ### Connector framework
 
-The crawl component crawls content by invoking connectors or protocol handlers that interact with content sources to retrieve data. Search in SharePoint 2013 includes a connector framework that you can use to customize and build connectors to crawl new content sources. For detailed information about the connector framework architecture and how to extend it, see  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint-2013.md).
+The crawl component crawls content by invoking connectors or protocol handlers that interact with content sources to retrieve data. Search in SharePoint 2013 includes a connector framework that you can use to customize and build connectors to crawl new content sources. For detailed information about the connector framework architecture and how to extend it, see  [Search connector framework in SharePoint 2013](search-connector-framework-in-sharepoint.md).
   
     
     
 
 ### Custom content processing
 
-Within the content processing component, you can use the Content Enrichment web service callout to modify the managed properties of crawled items before they are added to the search index. This web service callout calls out to any external content enrichment web service that you create. For more information, see  [Custom content processing with the Content Enrichment web service callout](custom-content-processing-with-the-content-enrichment-web-service-callout.md). For a step-by-step implementation of a content enrichment web service, see  [How to: Use the Content Enrichment web service callout for SharePoint Server](how-to-use-the-content-enrichment-web-service-callout-for-sharepoint-server.md). The blog post  [Customize the SharePoint 2013 search experience with a Content Enrichment web service](http://blogs.msdn.com/b/sharepointdev/archive/2012/11/13/customize-the-sharepoint-2013-search-experience-with-a-content-enrichment-web-service.aspx) is also a good resource
+Within the content processing component, you can use the Content Enrichment web service callout to modify the managed properties of crawled items before they are added to the search index. This web service callout calls out to any external content enrichment web service that you create. For more information, see  [Custom content processing with the Content Enrichment web service callout](custom-content-processing-with-the-content-enrichment-web-service-callout.md). For a step-by-step implementation of a content enrichment web service, see  [How to: Use the Content Enrichment web service callout for SharePoint Server](how-to-use-the-content-enrichment-web-service-callout-for-sharepoint-server.md). The blog post  [Customize the SharePoint 2013 search experience with a Content Enrichment web service](http://blogs.msdn.com/b/sharepointdev/archive/2012/11/13/customize-the-sharepoint-search-experience-with-a-content-enrichment-web-service.aspx) is also a good resource
   
     
     
@@ -227,7 +227,7 @@ Table 1 shows the APIs that you can use to program Search in SharePoint 2013 and
 |Representational State Transfer (REST) service endpoints  <br/> |http://server/_api/search/query          http://server/_api/search/suggest  <br/> |
 |Server object model  <br/> |Microsoft.Office.Server.Search.dll          %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI  <br/> |
    
-For more information, see  [Using the SharePoint 2013 search Query APIs](using-the-sharepoint-2013-search-query-apis.md).
+For more information, see  [Using the SharePoint 2013 search Query APIs](using-the-sharepoint-search-query-apis.md).
   
     
     
@@ -241,7 +241,7 @@ To help identify and surface the content that users consider to be the most usef
 
 ### Custom ranking models
 
-Search results can be ordered in various ways, one of which is by rank score. Rank scores are calculated by the search engine using ranking models. SharePoint Server 2013 provides fourteen ranking models by default. However, if you are not satisfied with the way your search results are ordered, you can use a custom ranking model. To learn more about the process of creating a custom ranking model and tuning it, see  [Customizing ranking models to improve relevance in SharePoint 2013](customizing-ranking-models-to-improve-relevance-in-sharepoint-2013.md).
+Search results can be ordered in various ways, one of which is by rank score. Rank scores are calculated by the search engine using ranking models. SharePoint Server 2013 provides fourteen ranking models by default. However, if you are not satisfied with the way your search results are ordered, you can use a custom ranking model. To learn more about the process of creating a custom ranking model and tuning it, see  [Customizing ranking models to improve relevance in SharePoint 2013](customizing-ranking-models-to-improve-relevance-in-sharepoint.md).
   
     
     
@@ -252,14 +252,14 @@ Search in SharePoint Server 2013 performs security trimming of search results th
   
     
     
-The pre-trimmer interface ( **ISecurityTrimmerPre**) carries out pre-query evaluation, where the search query is rewritten to add security information before the search query is matched to the search index. In contrast, the post-trimmer interface ( **ISecurityTrimmerPost**) carries out post-query evaluation, where the search results are pruned before they are returned to the user. For more information about the two interfaces, see  [Custom security trimming for Search in SharePoint Server 2013](custom-security-trimming-for-search-in-sharepoint-server-2013.md). For step-by-step information on how to implement a security trimmer interface, see  [How to: Use a custom security trimmer for SharePoint Server search results](how-to-use-a-custom-security-trimmer-for-sharepoint-server-search-results.md).
+The pre-trimmer interface ( **ISecurityTrimmerPre**) carries out pre-query evaluation, where the search query is rewritten to add security information before the search query is matched to the search index. In contrast, the post-trimmer interface ( **ISecurityTrimmerPost**) carries out post-query evaluation, where the search results are pruned before they are returned to the user. For more information about the two interfaces, see  [Custom security trimming for Search in SharePoint Server 2013](custom-security-trimming-for-search-in-sharepoint-server.md). For step-by-step information on how to implement a security trimmer interface, see  [How to: Use a custom security trimmer for SharePoint Server search results](how-to-use-a-custom-security-trimmer-for-sharepoint-server-search-results.md).
   
     
     
 
 ### Content Search Web Part
 
-The Content Search Web Part is a Web Part that can display dynamic content that was previously crawled and added to the search index. Each instance of the Web Part is associated with a search query and shows the results for that particular search query. When users browse to a page that contains a Content Search Web Part, a search query is automatically issued, and the corresponding search results are returned from the search index. You can use the Content Search Web Part whenever you want to display content that is populated by automatically generated search queries. In some cases, you may want to extend the Content Search Web Part, which is exposed through the  [Microsoft.Office.Server.Search.WebControls](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.WebControls.aspx) namespace as [ContentBySearchWebPart](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.WebControls.ContentBySearchWebPart.aspx) . To learn about how to extend the [ContentBySearchWebPart](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.WebControls.ContentBySearchWebPart.aspx) so that the Web Part understands custom properties, see [User segmentation in SharePoint 2013](user-segmentation-in-sharepoint-2013.md).
+The Content Search Web Part is a Web Part that can display dynamic content that was previously crawled and added to the search index. Each instance of the Web Part is associated with a search query and shows the results for that particular search query. When users browse to a page that contains a Content Search Web Part, a search query is automatically issued, and the corresponding search results are returned from the search index. You can use the Content Search Web Part whenever you want to display content that is populated by automatically generated search queries. In some cases, you may want to extend the Content Search Web Part, which is exposed through the  [Microsoft.Office.Server.Search.WebControls](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.WebControls.aspx) namespace as [ContentBySearchWebPart](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.WebControls.ContentBySearchWebPart.aspx) . To learn about how to extend the [ContentBySearchWebPart](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.WebControls.ContentBySearchWebPart.aspx) so that the Web Part understands custom properties, see [User segmentation in SharePoint 2013](user-segmentation-in-sharepoint.md).
   
     
     
@@ -274,34 +274,34 @@ SharePoint Server 2013 provides two new REST interfaces: Navigation and Event Lo
 ## In this section
 
 
--  [What's new in SharePoint 2013 search for developers](what-s-new-in-sharepoint-2013-search-for-developers.md)
+-  [What's new in SharePoint 2013 search for developers](what-s-new-in-sharepoint-search-for-developers.md)
     
   
 -  [Searching new content with SharePoint Search](searching-new-content-with-sharepoint-search.md)
     
   
--  [Configure search in SharePoint 2013](configure-search-in-sharepoint-2013.md)
+-  [Configure search in SharePoint 2013](configure-search-in-sharepoint.md)
     
   
--  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint-2013.md)
+-  [Building search queries in SharePoint 2013](building-search-queries-in-sharepoint.md)
     
   
 -  [SharePoint Search REST API overview](sharepoint-search-rest-api-overview.md)
     
   
--  [Customizing search results in SharePoint 2013](customizing-search-results-in-sharepoint-2013.md)
+-  [Customizing search results in SharePoint 2013](customizing-search-results-in-sharepoint.md)
     
   
--  [Sorting search results in SharePoint 2013](sorting-search-results-in-sharepoint-2013.md)
+-  [Sorting search results in SharePoint 2013](sorting-search-results-in-sharepoint.md)
     
   
--  [Customizing ranking models to improve relevance in SharePoint 2013](customizing-ranking-models-to-improve-relevance-in-sharepoint-2013.md)
+-  [Customizing ranking models to improve relevance in SharePoint 2013](customizing-ranking-models-to-improve-relevance-in-sharepoint.md)
     
   
--  [Custom security trimming for Search in SharePoint Server 2013](custom-security-trimming-for-search-in-sharepoint-server-2013.md)
+-  [Custom security trimming for Search in SharePoint Server 2013](custom-security-trimming-for-search-in-sharepoint-server.md)
     
   
--  [Exporting and importing search configuration settings in SharePoint 2013](exporting-and-importing-search-configuration-settings-in-sharepoint-2013.md)
+-  [Exporting and importing search configuration settings in SharePoint 2013](exporting-and-importing-search-configuration-settings-in-sharepoint.md)
     
   
 
@@ -314,6 +314,6 @@ SharePoint Server 2013 provides two new REST interfaces: Navigation and Event Lo
 -  [Technical Diagrams -- Search](http://technet.microsoft.com/en-us/library/cc263199.aspx#search)
     
   
--  [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)
+-  [Add SharePoint 2013 capabilities](add-sharepoint-capabilities.md)
     
   

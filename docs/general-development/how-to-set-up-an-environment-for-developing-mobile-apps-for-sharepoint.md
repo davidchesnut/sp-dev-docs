@@ -71,7 +71,7 @@ To develop SharePoint Add-ins for use on Windows Phone 8, you need to set up you
 
     > [!NOTE]
       > The templates in the SharePoint SDK for Windows Phone are currently available for C# projects only. 
-For more information about the templates in SharePoint SDK for Windows Phone, see  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-2013-application-templates-in-visual-studio.md).
+For more information about the templates in SharePoint SDK for Windows Phone, see  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-application-templates-in-visual-studio.md).
   
     
     
@@ -114,7 +114,7 @@ To develop SharePoint Add-ins for use on Windows Phone 7, you need to set up you
 
     > [!NOTE]
       > The templates in the SharePoint SDK for Windows Phone are currently available for C# projects only. 
-For more information about the templates in SharePoint SDK for Windows Phone, see  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-2013-application-templates-in-visual-studio.md).
+For more information about the templates in SharePoint SDK for Windows Phone, see  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-application-templates-in-visual-studio.md).
   
     
     
@@ -123,7 +123,7 @@ For more information about the templates in SharePoint SDK for Windows Phone, se
 <a name="SP15Setupmobile_addlresources"> </a>
 
 
--  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint-2013.md)
+-  [Build Windows Phone apps that access SharePoint 2013](build-windows-phone-apps-that-access-sharepoint.md)
     
   
 -  [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)

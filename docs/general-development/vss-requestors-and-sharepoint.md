@@ -82,13 +82,13 @@ Learn how to create and use a VSS requestor for SharePoint 2013:
     
     
 
--  [How to: Create a VSS requestor for use with SharePoint 2013](how-to-create-a-vss-requestor-for-use-with-sharepoint-2013.md)
+-  [How to: Create a VSS requestor for use with SharePoint 2013](how-to-create-a-vss-requestor-for-use-with-sharepoint.md)
     
   
--  [How to: Back up and restore SharePoint 2013 using a VSS requestor](how-to-back-up-and-restore-sharepoint-2013-using-a-vss-requestor.md)
+-  [How to: Back up and restore SharePoint 2013 using a VSS requestor](how-to-back-up-and-restore-sharepoint-using-a-vss-requestor.md)
     
   
--  [How to: Back up and restore a search service application in SharePoint 2013 using VSS](how-to-back-up-and-restore-a-search-service-application-in-sharepoint-2013-using.md)
+-  [How to: Back up and restore a search service application in SharePoint 2013 using VSS](how-to-back-up-and-restore-a-search-service-application-in-sharepoint-using.md)
     
   
 
@@ -96,16 +96,16 @@ Learn how to create and use a VSS requestor for SharePoint 2013:
 <a name="bk_addresources"> </a>
 
 
--  [Overview of SharePoint 2013 and the Volume Shadow Copy Service](overview-of-sharepoint-2013-and-the-volume-shadow-copy-service.md)
+-  [Overview of SharePoint 2013 and the Volume Shadow Copy Service](overview-of-sharepoint-and-the-volume-shadow-copy-service.md)
     
   
--  [How to: Create a VSS requestor for use with SharePoint 2013](how-to-create-a-vss-requestor-for-use-with-sharepoint-2013.md)
+-  [How to: Create a VSS requestor for use with SharePoint 2013](how-to-create-a-vss-requestor-for-use-with-sharepoint.md)
     
   
--  [How to: Back up and restore SharePoint 2013 using a VSS requestor](how-to-back-up-and-restore-sharepoint-2013-using-a-vss-requestor.md)
+-  [How to: Back up and restore SharePoint 2013 using a VSS requestor](how-to-back-up-and-restore-sharepoint-using-a-vss-requestor.md)
     
   
--  [How to: Back up and restore a search service application in SharePoint 2013 using VSS](how-to-back-up-and-restore-a-search-service-application-in-sharepoint-2013-using.md)
+-  [How to: Back up and restore a search service application in SharePoint 2013 using VSS](how-to-back-up-and-restore-a-search-service-application-in-sharepoint-using.md)
     
   
 

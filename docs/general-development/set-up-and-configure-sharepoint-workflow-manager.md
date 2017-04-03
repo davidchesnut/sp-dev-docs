@@ -32,7 +32,7 @@ Instructions for installing and configuring SharePoint 2013 workflow components 
 -  [Workflow Resource Center](http://technet.microsoft.com/en-US/sharepoint/jj556245)
     
   
--  [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)
+-  [Workflows in SharePoint 2013](workflows-in-sharepoint.md)
     
   
 

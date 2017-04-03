@@ -59,7 +59,7 @@ Alternatively, you can import a design package from another SharePoint 2013 site
 
     
 > [!NOTE]
-> For more information about Design Manager and the publishing process, see  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md). 
+> For more information about Design Manager and the publishing process, see  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md). 
   
     
     
@@ -164,12 +164,12 @@ When importing a design package, an alternate CSS URL is not set, even if one wa
 <a name="addresources"> </a>
 
 
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
--  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint-2013.md)
+-  [Overview of Design Manager in SharePoint 2013](overview-of-design-manager-in-sharepoint.md)
     
   
--  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-2013-site-development.md)
+-  [What's new with SharePoint 2013 site development](what-s-new-with-sharepoint-site-development.md)
     
   

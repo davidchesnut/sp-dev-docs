@@ -83,15 +83,15 @@ SharePoint 2013 adds several new classes to both the server and client object mo
   
     
     
-To enable location-aware apps, there is a new native field type class, **SPFieldGeoLocation**, along with several associated classes for structuring the value of location fields and rendering them. These classes are also callable in the SharePoint 2013 client object model for Silverlight. The new field type also has a definition added to the standard SharePoint fldtypes.xml file and new user controls for rendering the field on the Display, Edit, and New forms. For an overview, see  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md). 
+To enable location-aware apps, there is a new native field type class, **SPFieldGeoLocation**, along with several associated classes for structuring the value of location fields and rendering them. These classes are also callable in the SharePoint 2013 client object model for Silverlight. The new field type also has a definition added to the standard SharePoint fldtypes.xml file and new user controls for rendering the field on the Display, Edit, and New forms. For an overview, see  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint.md). 
   
     
     
-To enable SharePoint 2013 authentication for Windows Phone users, the client object model includes a new **Authenticator** class and several associated classes. For an overview, see [Overview of the SharePoint 2013 mobile client authentication object model](overview-of-the-sharepoint-2013-mobile-client-authentication-object-model.md).
+To enable SharePoint 2013 authentication for Windows Phone users, the client object model includes a new **Authenticator** class and several associated classes. For an overview, see [Overview of the SharePoint 2013 mobile client authentication object model](overview-of-the-sharepoint-mobile-client-authentication-object-model.md).
   
     
     
-To enable automatic notifications to Windows Phone users of events on a SharePoint farm, the server object model includes several new classes, each of which is also callable from the client object model. These classes include methods that enable phone apps to register with SharePoint 2013 server apps for notifications about specified types of events. There are also methods that the server apps use to send notifications to registered subscribers. For an overview, see  [Create a Windows Phone SharePoint list app to receive push notifications](how-to-configure-and-use-push-notifications-in-sharepoint-2013-apps-for-windows.md#BKMK_NotificationPhoneApp).
+To enable automatic notifications to Windows Phone users of events on a SharePoint farm, the server object model includes several new classes, each of which is also callable from the client object model. These classes include methods that enable phone apps to register with SharePoint 2013 server apps for notifications about specified types of events. There are also methods that the server apps use to send notifications to registered subscribers. For an overview, see  [Create a Windows Phone SharePoint list app to receive push notifications](how-to-configure-and-use-push-notifications-in-sharepoint-apps-for-windows.md#BKMK_NotificationPhoneApp).
   
     
     
@@ -183,13 +183,13 @@ The following how-tos and overviews delve into the specific information you need
 -  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md)
     
   
--  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-2013-application-templates-in-visual-studio.md)
+-  [Overview of Windows Phone SharePoint 2013 application templates in Visual Studio](overview-of-windows-phone-sharepoint-application-templates-in-visual-studio.md)
     
   
 -  [Architecture of the Windows Phone SharePoint List Application template](architecture-of-the-windows-phone-sharepoint-list-application-template.md)
     
   
--  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-2013-list-app.md)
+-  [How to: Create a Windows Phone SharePoint 2013 list app](how-to-create-a-windows-phone-sharepoint-list-app.md)
     
   
 -  [How to: Store and retrieve SharePoint list items on a Windows Phone](how-to-store-and-retrieve-sharepoint-list-items-on-a-windows-phone.md)
@@ -198,28 +198,28 @@ The following how-tos and overviews delve into the specific information you need
 -  [How to: Implement business logic and data validation in a Windows Phone app for SharePoint 2013](how-to-implement-business-logic-and-data-validation-in-a-windows-phone-app-for-s.md)
     
   
--  [How to: Support and convert SharePoint 2013 field types for Windows Phone apps](how-to-support-and-convert-sharepoint-2013-field-types-for-windows-phone-apps.md)
+-  [How to: Support and convert SharePoint 2013 field types for Windows Phone apps](how-to-support-and-convert-sharepoint-field-types-for-windows-phone-apps.md)
     
   
 -  [How to: Customize list item queries and filter data for Windows Phone apps](how-to-customize-list-item-queries-and-filter-data-for-windows-phone-apps.md)
     
   
--  [How to: Customize the user interface of a SharePoint 2013 list app for Windows Phone](how-to-customize-the-user-interface-of-a-sharepoint-2013-list-app-for-windows-ph.md)
+-  [How to: Customize the user interface of a SharePoint 2013 list app for Windows Phone](how-to-customize-the-user-interface-of-a-sharepoint-list-app-for-windows-ph.md)
     
   
--  [How to: Use multiple SharePoint 2013 lists in a Windows Phone app](how-to-use-multiple-sharepoint-2013-lists-in-a-windows-phone-app.md)
+-  [How to: Use multiple SharePoint 2013 lists in a Windows Phone app](how-to-use-multiple-sharepoint-lists-in-a-windows-phone-app.md)
     
   
--  [How to: Configure and use push notifications in SharePoint 2013 apps for Windows Phone](how-to-configure-and-use-push-notifications-in-sharepoint-2013-apps-for-windows.md)
+-  [How to: Configure and use push notifications in SharePoint 2013 apps for Windows Phone](how-to-configure-and-use-push-notifications-in-sharepoint-apps-for-windows.md)
     
   
--  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint-2013.md)
+-  [Integrating location and map functionality in SharePoint 2013](integrating-location-and-map-functionality-in-sharepoint.md)
     
   
--  [How to: Create a mobile app in SharePoint 2013 that contains data from an external data source](how-to-create-a-mobile-app-in-sharepoint-2013-that-contains-data-from-an-externa.md)
+-  [How to: Create a mobile app in SharePoint 2013 that contains data from an external data source](how-to-create-a-mobile-app-in-sharepoint-that-contains-data-from-an-externa.md)
     
   
--  [How to: Integrate maps with Windows Phone apps and SharePoint 2013 lists](how-to-integrate-maps-with-windows-phone-apps-and-sharepoint-2013-lists.md)
+-  [How to: Integrate maps with Windows Phone apps and SharePoint 2013 lists](how-to-integrate-maps-with-windows-phone-apps-and-sharepoint-lists.md)
     
   
 -  [How to: Build search-driven mobile apps with the Navigation and Event Logging REST interfaces](how-to-build-search-driven-mobile-apps-with-the-navigation-and-event-logging-res.md)
@@ -234,7 +234,7 @@ The following how-tos and overviews delve into the specific information you need
     
     
 
--  [Programming models in SharePoint 2013](programming-models-in-sharepoint-2013.md)
+-  [Programming models in SharePoint 2013](programming-models-in-sharepoint.md)
     
   
 -  [How to: Set up an environment for developing mobile apps for SharePoint](how-to-set-up-an-environment-for-developing-mobile-apps-for-sharepoint.md)

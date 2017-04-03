@@ -214,19 +214,19 @@ For more information about the managed account API, see the following links:
 <a name="SP15_RoleInheritance_AdditionalResources"> </a>
 
 
--  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint-2013.md)
+-  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint.md)
     
   
--  [Authorization, users, groups, and the object model in SharePoint 2013](authorization-users-groups-and-the-object-model-in-sharepoint-2013.md)
+-  [Authorization, users, groups, and the object model in SharePoint 2013](authorization-users-groups-and-the-object-model-in-sharepoint.md)
     
   
--  [Claims-based identity in SharePoint 2013](claims-based-identity-in-sharepoint-2013.md)
+-  [Claims-based identity in SharePoint 2013](claims-based-identity-in-sharepoint.md)
     
   
--  [Claims-based identity and concepts in SharePoint 2013](claims-based-identity-and-concepts-in-sharepoint-2013.md)
+-  [Claims-based identity and concepts in SharePoint 2013](claims-based-identity-and-concepts-in-sharepoint.md)
     
   
--  [Configuration, administration, and resources in SharePoint 2013](configuration-administration-and-resources-in-sharepoint-2013.md)
+-  [Configuration, administration, and resources in SharePoint 2013](configuration-administration-and-resources-in-sharepoint.md)
     
   
 

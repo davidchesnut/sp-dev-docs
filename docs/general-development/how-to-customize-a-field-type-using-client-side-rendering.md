@@ -31,7 +31,7 @@ To follow the steps in this example, you need the following:
 - A SharePoint 2013 development environment
     
   
-For information about setting up your SharePoint development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md).
+For information about setting up your SharePoint development environment, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint.md).
   
     
     
@@ -48,7 +48,7 @@ The following table lists useful articles that can help you understand the conce
 
 |**Article title**|**Description**|
 |:-----|:-----|
-| [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint-2013.md) <br/> |Learn about developing, packaging, and deploying administrative extensions to SharePoint 2013 using farm solutions.  <br/> |
+| [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint.md) <br/> |Learn about developing, packaging, and deploying administrative extensions to SharePoint 2013 using farm solutions.  <br/> |
 | [Custom Field Types](http://msdn.microsoft.com/en-us/library/ms446361.aspx) <br/> |Learn about creating custom field types. As you store your business information in SharePoint 2013, there may be times when your data does not conform to the field types that are available in SharePoint FoundationOr, you might just want to customize those field types. Custom fields can include custom data validation and custom field rendering.  <br/> |
    
 
@@ -356,18 +356,18 @@ This article demonstrated how to customize the rendering process for a custom fi
 <a name="SP15CustomizeafieldtypeusingCSR_AddResources"> </a>
 
 
--  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md)
+-  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint.md)
     
   
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)
     
   
--  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint-2013.md)
+-  [What's new for developers in SharePoint 2013](what’s-new-for-developers-in-sharepoint.md)
     
   
--  [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)
+-  [Add SharePoint 2013 capabilities](add-sharepoint-capabilities.md)
     
   
--  [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint-2013.md)
+-  [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint.md)
     
   

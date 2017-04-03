@@ -339,10 +339,10 @@ Two API sets are still supported in the SharePoint 2013 framework for backward c
 <a name="bk_addresources"> </a>
 
 
--  [SharePoint 2013 development overview](sharepoint-2013-development-overview.md)
+-  [SharePoint 2013 development overview](sharepoint-development-overview.md)
     
   
--  [Programming models in SharePoint 2013](programming-models-in-sharepoint-2013.md)
+-  [Programming models in SharePoint 2013](programming-models-in-sharepoint.md)
     
   
 -  [SharePoint Add-ins compared with SharePoint solutions](sharepoint-add-ins-compared-with-sharepoint-solutions.md)

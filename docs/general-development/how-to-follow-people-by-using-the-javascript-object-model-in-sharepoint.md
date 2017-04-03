@@ -100,10 +100,10 @@ To create the farm solution that uses the JavaScript object model to work with F
       > The "Get followers and followed people" example doesn't use the button control or the form digest control, which is only required for operations that update server content. A form digest generates a message digest used for security validation. 
 10. Replace the comment between the **script** tags with the code example from one of the following scenarios:
     
-  -  [Start or stop following people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint-2013.md#bk_FollowPeople)
+  -  [Start or stop following people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md#bk_FollowPeople)
     
   
-  -  [Get followers and followed people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint-2013.md#bk_GetFollowers)
+  -  [Get followers and followed people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md#bk_GetFollowers)
     
   
 11. To test the solution, on the menu bar, choose **Debug**, **Start Debugging**.
@@ -132,7 +132,7 @@ The following code example makes the current user start following or stop follow
   
 
 > [!NOTE]
-> Paste the following code between the **script** tags that you added in the [Create a farm solution and application page](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint-2013.md#bk_CreateSolution) procedure. Then, change the placeholder value for the **targetUser** variable before you run the code.
+> Paste the following code between the **script** tags that you added in the [Create a farm solution and application page](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md#bk_CreateSolution) procedure. Then, change the placeholder value for the **targetUser** variable before you run the code.
   
     
     
@@ -228,7 +228,7 @@ The following code example gets the people who the current user is following and
   
 
 > [!NOTE]
-> Paste the following code between the **script** tags that you added in the [Create a farm solution and application page](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint-2013.md#bk_CreateSolution) procedure.
+> Paste the following code between the **script** tags that you added in the [Create a farm solution and application page](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md#bk_CreateSolution) procedure.
   
     
     
@@ -301,10 +301,10 @@ function requestFailed(sender, args) {
 <a name="bk_AdditionalResources"> </a>
 
 
--  [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md)
+-  [Follow people in SharePoint 2013](follow-people-in-sharepoint.md)
     
   
--  [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint-2013.md)
+-  [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint.md)
     
   
 

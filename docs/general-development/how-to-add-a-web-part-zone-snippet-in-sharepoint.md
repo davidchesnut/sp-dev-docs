@@ -111,7 +111,7 @@ Table 1 shows important properties to consider when you want to restrict a Web P
    
 
 > [!NOTE]
-> You cannot insert a Web Part zone inside a Device Channel Panel. If you want to allow authors to add Web Parts to a page, and if you are not concerned about the page weight for mobile devices, you can add a Rich Text Editor page field to a Device Channel Panel, and then instruct authors to add Web Parts there. You can add Web Parts directly to a Device Channel Panel (without a Web Part zone). For more information, see  [How to: Add a Device Channel Panel snippet in SharePoint 2013](how-to-add-a-device-channel-panel-snippet-in-sharepoint-2013.md). 
+> You cannot insert a Web Part zone inside a Device Channel Panel. If you want to allow authors to add Web Parts to a page, and if you are not concerned about the page weight for mobile devices, you can add a Rich Text Editor page field to a Device Channel Panel, and then instruct authors to add Web Parts there. You can add Web Parts directly to a Device Channel Panel (without a Web Part zone). For more information, see  [How to: Add a Device Channel Panel snippet in SharePoint 2013](how-to-add-a-device-channel-panel-snippet-in-sharepoint.md). 
   
     
     
@@ -162,7 +162,7 @@ Like all snippets, you add this snippet from the Snippet Gallery. To navigate to
   
 10. In your HTML editor, open the mapped network drive on your computer, and then open the HTML file for the master page or page layout that you're adding the snippet to.
     
-    For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md).
+    For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-master-page-gallery.md).
     
   
 11. In the HTML file, paste the snippet where you want the markup to appear.
@@ -223,7 +223,7 @@ Additional properties that can be used to restrict how content authors can use z
 <a name="AdditionalResources"> </a>
 
 
--  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md)
+-  [SharePoint 2013 Design Manager snippets](sharepoint-design-manager-snippets.md)
     
   
 -  [WebPartZone class](http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.webparts.webpartzone.aspx)
@@ -235,7 +235,7 @@ Additional properties that can be used to restrict how content authors can use z
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)
     
   
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
 

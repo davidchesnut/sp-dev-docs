@@ -96,7 +96,7 @@ In order to limit the amount of data returned, or make it more relevant to the u
 <a name="bkmk_AdditionalResources"> </a>
 
 
--  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint-2013.md)
+-  [Business Connectivity Services in SharePoint 2013](business-connectivity-services-in-sharepoint.md)
     
   
 -  [Complete basic operations using SharePoint 2013 REST endpoints](http://msdn.microsoft.com/library/e3000415-50a0-426e-b304-b7de18f2f7d9%28Office.15%29.aspx)
@@ -105,10 +105,10 @@ In order to limit the amount of data returned, or make it more relevant to the u
 -  [Use OData query operations in SharePoint REST requests](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx)
     
   
--  [SharePoint 2013: Perform basic data access operations by using REST in apps](http://code.msdn.microsoft.com/SharePoint-2013-Perform-335d925b)
+-  [SharePoint 2013: Perform basic data access operations by using REST in apps](http://code.msdn.microsoft.com/SharePoint-Perform-335d925b)
     
   
--  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md)
+-  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint.md)
     
   
 -  [Complete basic operations using JavaScript library code in SharePoint 2013](http://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826%28Office.15%29.aspx)

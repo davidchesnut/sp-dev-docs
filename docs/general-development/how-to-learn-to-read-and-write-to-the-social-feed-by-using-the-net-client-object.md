@@ -49,8 +49,8 @@ Table 1 contains links to articles that describe core concepts you should know b
 
 |**Article title**|**Description**|
 |:-----|:-----|
-| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md) <br/> |Find out how to get started programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.  <br/> |
-| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md) <br/> |Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.  <br/> |
+| [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md) <br/> |Find out how to get started programming with social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.  <br/> |
+| [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md) <br/> |Learn about common programming tasks for working with social feeds and the API that you use to perform the tasks.  <br/> |
    
 
 ## Create the console application in Visual Studio 2012 and add references to client assemblies
@@ -326,10 +326,10 @@ To learn how to do more read tasks and write tasks with the social feed by using
 <a name="SP15ReadWriteSocial_addlresources"> </a>
 
 
--  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)
+-  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md)
     
   
--  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)
+-  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md)
     
   
 

@@ -14,7 +14,7 @@ Workflow activities represent the code-level objects that handle method calls to
   
     
     
-For a list of available activities, see  [Workflow activity classes in SharePoint 2013](workflow-activity-classes-in-sharepoint-2013.md).
+For a list of available activities, see  [Workflow activity classes in SharePoint 2013](workflow-activity-classes-in-sharepoint.md).
   
     
     
@@ -22,7 +22,7 @@ On the other hand, workflow actions are wrapper objects that encapsulate these u
   
     
     
-For a list of available workflow actions, see  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-2013-workflow-platform.md) and [Workflow actions available using the workflow interop bridge](workflow-actions-available-using-the-workflow-interop-bridge.md).
+For a list of available workflow actions, see  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-workflow-platform.md) and [Workflow actions available using the workflow interop bridge](workflow-actions-available-using-the-workflow-interop-bridge.md).
   
     
     
@@ -43,10 +43,10 @@ The WF 4.0 activity classes provide some useful features that you may not find i
 <a name="bkm_inthissection"> </a>
 
 
--  [Workflow activity classes in SharePoint 2013](workflow-activity-classes-in-sharepoint-2013.md)
+-  [Workflow activity classes in SharePoint 2013](workflow-activity-classes-in-sharepoint.md)
     
   
--  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-2013-workflow-platform.md)
+-  [Workflow actions quick reference (SharePoint 2013 Workflow platform)](workflow-actions-quick-reference-sharepoint-workflow-platform.md)
     
   
 -  [Workflow actions available using the workflow interop bridge](workflow-actions-available-using-the-workflow-interop-bridge.md)
@@ -57,13 +57,13 @@ The WF 4.0 activity classes provide some useful features that you may not find i
 <a name="bkm_addlres"> </a>
 
 
--  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-2013-workflows-using-visual-studio.md)
+-  [Develop SharePoint 2013 workflows using Visual Studio](develop-sharepoint-workflows-using-visual-studio.md)
     
   
--  [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md)
+-  [SharePoint 2013 workflow fundamentals](sharepoint-workflow-fundamentals.md)
     
   
--  [Workflows in SharePoint 2013](workflows-in-sharepoint-2013.md)
+-  [Workflows in SharePoint 2013](workflows-in-sharepoint.md)
     
   
 

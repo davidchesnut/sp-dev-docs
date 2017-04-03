@@ -307,22 +307,22 @@ The connector framework also provides improved exception capturing and logging t
 <a name="SP15searchconnect_addlresources"> </a>
 
 
--  [Enhancing the BDC model file for Search in SharePoint 2013](enhancing-the-bdc-model-file-for-search-in-sharepoint-2013.md)
+-  [Enhancing the BDC model file for Search in SharePoint 2013](enhancing-the-bdc-model-file-for-search-in-sharepoint.md)
     
   
--  [SharePoint 2013: MyFileConnector custom BCS indexing connector sample](http://code.msdn.microsoft.com/SharePoint-2013-MyFileConne-79d2ea26)
+-  [SharePoint 2013: MyFileConnector custom BCS indexing connector sample](http://code.msdn.microsoft.com/SharePoint-MyFileConne-79d2ea26)
     
   
--  [How to: Crawl associated external content types in SharePoint 2013](how-to-crawl-associated-external-content-types-in-sharepoint-2013.md)
+-  [How to: Crawl associated external content types in SharePoint 2013](how-to-crawl-associated-external-content-types-in-sharepoint.md)
     
   
--  [How to: Crawl binary large objects (BLOBs) in SharePoint 2013](how-to-crawl-binary-large-objects-blobs-in-sharepoint-2013.md)
+-  [How to: Crawl binary large objects (BLOBs) in SharePoint 2013](how-to-crawl-binary-large-objects-blobs-in-sharepoint.md)
     
   
--  [How to: Crawl associated external content types in SharePoint 2013](how-to-crawl-associated-external-content-types-in-sharepoint-2013.md)
+-  [How to: Crawl associated external content types in SharePoint 2013](how-to-crawl-associated-external-content-types-in-sharepoint.md)
     
   
--  [How to: Configure item-level security in SharePoint 2013](how-to-configure-item-level-security-in-sharepoint-2013.md)
+-  [How to: Configure item-level security in SharePoint 2013](how-to-configure-item-level-security-in-sharepoint.md)
     
   
 

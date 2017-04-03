@@ -77,7 +77,7 @@ Like all snippets, you add a Device Channel Panel snippet from the Snippet Galle
   
 10. In your HTML editor, open the mapped network drive on your computer, and then open the HTML file for the master page or page layout that you're adding the snippet to.
     
-    For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-2013-master-page-gallery.md).
+    For more information, see  [How to: Map a network drive to the SharePoint 2013 Master Page Gallery](how-to-map-a-network-drive-to-the-sharepoint-master-page-gallery.md).
     
   
 11. In the HTML file, paste the snippet where you want the markup to appear.
@@ -139,16 +139,16 @@ The **<div>** where `class="DefaultContentBlock"` should be replaced with whatev
 <a name="AdditionalResources"> </a>
 
 
--  [SharePoint 2013 Design Manager snippets](sharepoint-2013-design-manager-snippets.md)
+-  [SharePoint 2013 Design Manager snippets](sharepoint-design-manager-snippets.md)
     
   
--  [SharePoint 2013 Design Manager device channels](sharepoint-2013-design-manager-device-channels.md)
+-  [SharePoint 2013 Design Manager device channels](sharepoint-design-manager-device-channels.md)
     
   
 -  [Build sites for SharePoint](build-sites-for-sharepoint.md)
     
   
--  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint-2013.md)
+-  [Develop the site design in SharePoint 2013](develop-the-site-design-in-sharepoint.md)
     
   
 

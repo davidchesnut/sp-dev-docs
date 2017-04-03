@@ -33,10 +33,10 @@ If you need to make your solution compatible with site collections of either mod
 <a name="bk_addresources"> </a>
 
 
--  [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint-2013.md)
+-  [Build farm solutions in SharePoint 2013](build-farm-solutions-in-sharepoint.md)
     
   
--  [Planning Deployment of Farm Solutions for SharePoint 2013](http://blogs.technet.com/b/mspfe/archive/2013/02/04/planning-deployment-of-farm-solutions-for-sharepoint-2013.aspx)
+-  [Planning Deployment of Farm Solutions for SharePoint 2013](http://blogs.technet.com/b/mspfe/archive/2013/02/04/planning-deployment-of-farm-solutions-for-sharepoint.aspx)
     
   
 -  [SPUtility properties](http://msdn.microsoft.com/library/Properties.T:Microsoft.SharePoint.Utilities.SPUtility.aspx)

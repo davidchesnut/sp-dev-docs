@@ -75,10 +75,10 @@ SharePoint Server 2010 introduced the REST API for use in getting and setting in
 <a name="bk_addresources"> </a>
 
 
--  [Add SharePoint 2013 capabilities](add-sharepoint-2013-capabilities.md)
+-  [Add SharePoint 2013 capabilities](add-sharepoint-capabilities.md)
     
   
--  [Office 2013 and SharePoint 2013 application services](office-2013-and-sharepoint-2013-application-services.md)
+-  [Office 2013 and SharePoint 2013 application services](office-and-sharepoint-application-services.md)
     
   
 

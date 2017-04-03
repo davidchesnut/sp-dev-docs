@@ -31,8 +31,8 @@ Core actions are those that are most commonly performed, and they are grouped to
 |:-----|:-----|
 |Add a Comment  <br/> |Enables you to leave informative comments in the workflow designer for reference purposes. This is especially helpful when there are other users collaborating on the workflow.  <br/> |
 |Add Time to Date  <br/> |Adds a specific time in minutes, hours, days, or months to a date (Year is not supported), and stores the output value as a variable. The date can be a current data, specific date, or a lookup. The 'Current Date' value returns UTC midnight.  <br/> |
-|Build Dictionary  <br/> |Builds a Dictionary variable of key/value pairs.  <br/> > [!NOTE]> The Dictionary uses JSON notation to store data.           For more information on the Dictionary variable, see  [Understanding Dictionary actions in SharePoint Designer 2013](understanding-dictionary-actions-in-sharepoint-designer-2013.md) <br/> |
-|Call HTTP Web Service  <br/> |Functions as a method call to an HTTP web service and returns data using the JSON format. Basic authentication is supported through the RequestHeader.  <br/> For more information on the Dictionary variable, see  [Understanding Dictionary actions in SharePoint Designer 2013](understanding-dictionary-actions-in-sharepoint-designer-2013.md) <br/> |
+|Build Dictionary  <br/> |Builds a Dictionary variable of key/value pairs.  <br/> > [!NOTE]> The Dictionary uses JSON notation to store data.           For more information on the Dictionary variable, see  [Understanding Dictionary actions in SharePoint Designer 2013](understanding-dictionary-actions-in-sharepoint-designer.md) <br/> |
+|Call HTTP Web Service  <br/> |Functions as a method call to an HTTP web service and returns data using the JSON format. Basic authentication is supported through the RequestHeader.  <br/> For more information on the Dictionary variable, see  [Understanding Dictionary actions in SharePoint Designer 2013](understanding-dictionary-actions-in-sharepoint-designer.md) <br/> |
 |Count Items in a Dictionary  <br/> |Returns a count of the number of items in a specified dictionary.  <br/> |
 |Do Calculation  <br/> |Performs an arithmetic calculation and stores the output value in a variable.  <br/> > [!NOTE]> For SharePoint 2013, this action supports only the **Double** numeric type. Integers are not supported. Use of the "+" operator (concatenation) for strings is not supported.          |
 |Get an Item from a Dictionary  <br/> |Returns a particular item from a dictionary variable.  <br/> |
@@ -49,7 +49,7 @@ Core actions are those that are most commonly performed, and they are grouped to
 ### Coordination actions
 <a name="bkm_CoreActions"> </a>
 
-Coordination actions are used to invoke a workflow based on the SharePoint 2010 Workflow platform. For more information on Coordination actions, see  [Understanding Coordination actions in SharePoint Designer 2013](understanding-coordination-actions-in-sharepoint-designer-2013.md)
+Coordination actions are used to invoke a workflow based on the SharePoint 2010 Workflow platform. For more information on Coordination actions, see  [Understanding Coordination actions in SharePoint Designer 2013](understanding-coordination-actions-in-sharepoint-designer.md)
   
     
     
@@ -162,13 +162,13 @@ For a list of actions from SharePoint 2010 that are deprecated and will not appe
 <a name="bkm_addlresource"> </a>
 
 
--  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint-2013.md)
+-  [Workflow actions and activities reference for SharePoint 2013](workflow-actions-and-activities-reference-for-sharepoint.md)
     
   
--  [SharePoint 2013 workflow fundamentals](sharepoint-2013-workflow-fundamentals.md)
+-  [SharePoint 2013 workflow fundamentals](sharepoint-workflow-fundamentals.md)
     
   
--  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint-2013.md)
+-  [Get started with workflows in SharePoint 2013](get-started-with-workflows-in-sharepoint.md)
     
   
 -  [Workflow development in SharePoint Designer and Visio](workflow-development-in-sharepoint-designer-and-visio.md)
