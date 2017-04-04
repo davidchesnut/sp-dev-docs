@@ -79,7 +79,7 @@ In order to limit the amount of data returned, or make it more relevant to the u
 **Table 2. Operators for filtering data**
 
 
-|**Operator**||
+|**Operator**|**Description**|
 |:-----|:-----|
 |EQ  <br/> |Equals  <br/> > [!NOTE]> When you use **EQ** to filter, the filter criteria are passed to the external system where the filtering happens on the server.          |
 |GT  <br/> |Greater Than  <br/> > [!NOTE]> When you use the **GT** operator, only client-side filtering is executed.> For example:  `web/lists/getByTitle('ListName')/Items?$select=Title&amp;$filter=AverageRating gt 3` returns all titles with an average rating over 3.          |

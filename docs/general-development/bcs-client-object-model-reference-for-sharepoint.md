@@ -134,7 +134,7 @@ Specifies a customized view of the **Entity** data
 **Properties**
 
 
-|**Property**||**Description**|
+|**Property**|**Return type**|**Description**|
 |:-----|:-----|:-----|
 | `Fields { get; }` <br/> |**FieldCollection** <br/> |Gets the collection of fields in the view.  <br/> |
 | `Name { get; }` <br/> |**string** <br/> |Gets the name of this **View** object <br/> |
