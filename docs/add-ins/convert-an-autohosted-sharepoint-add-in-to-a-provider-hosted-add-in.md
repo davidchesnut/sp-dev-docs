@@ -19,7 +19,7 @@ This article explains how to convert and migrate an autohosted add-in to a provi
 ## Prerequisites for converting an autohosted add-in to a provider-hosted add-in
 
 
-- All of the  [prerequisites for developing provider-hosted add-ins](get-started-creating-provider-hosted-sharepoint-add-ins.md#SP15createselfhostapp_bk_prereq).
+- All of the  [prerequisites for developing provider-hosted add-ins](get-started-creating-provider-hosted-sharepoint-add-ins.md).
     
  
 - Azure SDK v2.3. Install it from here  [this Download Center page](http://azure.microsoft.com/downloads).

@@ -8,7 +8,7 @@ Learn how to use the Desktop List View widget on any web page, even if the page 
  
 
 
- **Note**  The Office Web Widgets - Experimental are only provided for research and feedback purposes. Do not use in production scenarios. The Office Web Widgets behavior may change significantly in future releases. Read and review the  [Office Web Widgets - Experimental License Terms](office-web-widgets--experimental-license-terms.md).
+ **Note**  The Office Web Widgets - Experimental are only provided for research and feedback purposes. Do not use in production scenarios. The Office Web Widgets behavior may change significantly in future releases. Read and review the  [Office Web Widgets - Experimental License Terms](office-web-widgetsexperimental-license-terms.md).
  
 
 
@@ -423,10 +423,10 @@ You can use the experimental Desktop List View widget to display data in SharePo
 <a name="bk_addresources"> </a>
 
 
--  [Office Web Widgets - Experimental overview](office-web-widgets--experimental-overview.md)
+-  [Office Web Widgets - Experimental overview](office-web-widgetsexperimental-overview.md)
     
  
--  [Office Web Widgets - Experimental License Terms](office-web-widgets--experimental-license-terms.md)
+-  [Office Web Widgets - Experimental License Terms](office-web-widgetsexperimental-license-terms.md)
     
  
 -  [Office Web Widgets - Experimental NuGet gallery page](http://www.nuget.org/packages/Microsoft.Office.WebWidgets.Experimental/)

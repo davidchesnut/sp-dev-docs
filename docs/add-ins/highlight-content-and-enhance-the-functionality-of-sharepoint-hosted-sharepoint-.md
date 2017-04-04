@@ -406,7 +406,7 @@ callout.set({positionAlgorithm: tryDownAndRightThenGoDefault});
 -  [Get started creating SharePoint-hosted SharePoint Add-ins](get-started-creating-sharepoint-hosted-sharepoint-add-ins.md)
     
  
--  [Create a basic SharePoint-hosted add-in by using Napa Office 365 Development Tools](create-a-basic-sharepoint-hosted-add-in-by-using-napa-office-365-development-tools.md)
+-  [Create a basic SharePoint-hosted add-in by using Napa Office 365 Development Tools](create-a-basic-sharepoint-hosted-add-in-by-using-napa-office-365-development-too.md)
     
  
 -  [UX design for SharePoint Add-ins](ux-design-for-sharepoint-add-ins.md)
