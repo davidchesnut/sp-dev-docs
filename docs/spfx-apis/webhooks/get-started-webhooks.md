@@ -305,7 +305,7 @@ Postman makes it really simple to work with APIs. The first step is to configure
 * Select the option to **Add token to header**.
 * Double-click the **access\_token** variable to add the token to the header for the request.
 
-![Postman get new access token](../../../images/postman-get-new-access-token.png)
+![Postman get new access token](../../images/postman-get-new-access-token.png)
 
 ### Get Documents list Id
 
@@ -354,7 +354,7 @@ Now that you have the required information, construct the query and the request 
 	}
 	```
 
-	![postman add webhook body](../../../images/postman-add-webhook-body.png)
+	![postman add webhook body](../../images/postman-add-webhook-body.png)
 
 > Make sure the **expirationDateTime** is at most 6 months from today. 
 
