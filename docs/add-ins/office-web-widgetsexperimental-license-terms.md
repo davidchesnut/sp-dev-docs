@@ -142,7 +142,7 @@ It also applies even if Microsoft knew or should have known about the possibilit
 <a name="bk_addresources"> </a>
 
 
--  [Office Web Widgets - Experimental overview](office-web-widgets--experimental-overview.md)
+-  [Office Web Widgets - Experimental overview](office-web-widgetsexperimental-overview.md)
     
  
 -  [Use the experimental People Picker widget in SharePoint Add-ins](use-the-experimental-people-picker-widget-in-sharepoint-add-ins.md)

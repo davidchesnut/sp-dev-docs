@@ -51,7 +51,7 @@ There are three major categories of choices that need to be made when a SharePoi
     
  
 
-    For more information on data storage and access in SharePoint Add-ins, see  [Data storage in SharePoint Add-ins](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscape.md#Data),  [Secure data access and client object models for SharePoint Add-ins](secure-data-access-and-client-object-models-for-sharepoint-add-ins.md), and  [Work with external data in SharePoint 2013](work-with-external-data-in-sharepoint-2013.md).
+    For more information on data storage and access in SharePoint Add-ins, see  [Data storage in SharePoint Add-ins](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md#Data),  [Secure data access and client object models for SharePoint Add-ins](secure-data-access-and-client-object-models-for-sharepoint-add-ins.md), and  [Work with external data in SharePoint 2013](work-with-external-data-in-sharepoint-2013.md).
     
  
 -  **UI:** There are three ways to surface a SharePoint Add-in in SharePoint: at a minimum, all add-ins are surfaced in a full web page. Optionally, an add-in can also be surfaced through an add-in part, and through a menu item or ribbon button. For more information, see [UX design for SharePoint Add-ins](ux-design-for-sharepoint-add-ins.md).
@@ -126,7 +126,7 @@ The SharePoint Add-in model enables so many possibilities for design that a simp
 -  [Design SharePoint Add-ins](design-sharepoint-add-ins.md)
     
  
--  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscape.md)
+-  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md)
     
  
 

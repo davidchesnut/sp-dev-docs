@@ -8,7 +8,7 @@ Learn about the low-trust authorization system for SharePoint Add-ins.
 Remote components in a SharePoint Add-in (or external application) can gain authorization to SharePoint resources by passing an access token to SharePoint with each HTTP request. The remote components obtain the access token from a Microsoft Azure Access Control Service (ACS) account that is associated with the customer's Office 365 tenancy. Azure ACS acts as the authorization server in an  [OAuth 2.0](http://oauth.net/) transaction, called aflow, with SharePoint as the resource server and the remote components as the client. For related protocol specifications, see  [Web Authorization Protocol (oauth)](http://datatracker.ietf.org/doc/active/#oauth). 
  
 
-Provider-hosted SharePoint Add-ins that use low-trust authorization system can be sold in the Office Store and installed on either Microsoft SharePoint Online or an on-premise SharePoint farm that has been configured to use the customer's Office 365 tenancy to establish trust with Azure ACS. The customer must have an Office 365 tenancy to install SharePoint Add-ins that use the low-trust system. However, it is not necessary for the customer to use the tenancy for any other purpose. For instructions about linking an on-premise farm to a Office 365 tenancy, see  [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-premises-sharepoint-site.md).
+Provider-hosted SharePoint Add-ins that use low-trust authorization system can be sold in the Office Store and installed on either Microsoft SharePoint Online or an on-premise SharePoint farm that has been configured to use the customer's Office 365 tenancy to establish trust with Azure ACS. The customer must have an Office 365 tenancy to install SharePoint Add-ins that use the low-trust system. However, it is not necessary for the customer to use the tenancy for any other purpose. For instructions about linking an on-premise farm to a Office 365 tenancy, see  [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-.md).
  
 
 
@@ -186,7 +186,7 @@ clientContext.ExecuteQuery();
 ## In this section
 <a name="Trouble"> </a>
 
- [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-premises-sharepoint-site.md)
+ [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-.md)
  
 
  

@@ -8,7 +8,7 @@ Learn how to create an add-in part in SharePoint 2013 that is available in the W
 With add-in parts, you can show your add-in user experience right in the SharePoint website pages. An add-in part displays the webpage (which is typically an interactive form or a dynamic display of data) that you specify by using an  **IFrame** (also referred to as a frame) in a page in the [host web](http://msdn.microsoft.com/library/fp179925.aspx). For more background about add-in parts, see the following articles:
  
 
--  [Accessing the add-in from the UI](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscape.md#AccessingApp)
+-  [Accessing the add-in from the UI](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md#AccessingApp)
     
  
 -  [UX design for SharePoint Add-ins](ux-design-for-sharepoint-add-ins.md)
@@ -510,6 +510,6 @@ The  **_editMode_** token lets your content page determine if the add-in part is
 -  [Three ways to think about design options for SharePoint Add-ins](three-ways-to-think-about-design-options-for-sharepoint-add-ins.md)
     
  
--  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscape.md)
+-  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md)
     
  

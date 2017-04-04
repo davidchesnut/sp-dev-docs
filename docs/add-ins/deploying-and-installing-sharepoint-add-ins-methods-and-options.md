@@ -110,7 +110,7 @@ The  [UninstallingEventEndpoint](http://msdn.microsoft.com/library/4194e44b-f2af
 -  [Publish SharePoint Add-ins](publish-sharepoint-add-ins.md)
     
  
--  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscape.md)
+-  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md)
     
  
 -  [SharePoint Add-ins update process](sharepoint-add-ins-update-process.md)

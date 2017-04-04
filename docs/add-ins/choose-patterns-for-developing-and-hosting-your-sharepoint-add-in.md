@@ -42,7 +42,7 @@ You can combine a SharePoint-hosted add-in with add-ins that have remotely hoste
 |Where the add-in components are hosted|In the isolated add-in domain of your SharePoint farm|
 |How the add-in gets authorized|The privileges of the signed-in user|
 |What language the add-in can use|JavaScript (with the SharePoint 2013 JSOM library) + HTML|
-This pattern is the easiest to deploy, and you can use the  [Create a basic SharePoint-hosted add-in by using Napa Office 365 Development Tools](create-a-basic-sharepoint-hosted-add-in-by-using-napa-office-365-development-tools.md). You'll want to consider the following before deciding to create a SharePoint-hosted add-in.
+This pattern is the easiest to deploy, and you can use the  [Create a basic SharePoint-hosted add-in by using Napa Office 365 Development Tools](create-a-basic-sharepoint-hosted-add-in-by-using-napa-office-365-development-too.md). You'll want to consider the following before deciding to create a SharePoint-hosted add-in.
  
 
  
@@ -139,7 +139,7 @@ OAuth is an open protocol for authorization that enables secure authorization fr
 
 ### OAuth with on-premises SharePoint farms
 
-If you are using an on-premises deployment of SharePoint 2013, you can use OAuth, but you will have to choose between creating high-trust add-ins and using an Office 365 tenancy. Office 365 uses Microsoft Azure Access Control Service (ACS) as the trust broker, and if you do not have access to an Office 365 tenancy, you'll need to use  [Create high-trust SharePoint Add-ins](create-high-trust-sharepoint-add-ins.md), which uses certificates to establish trust between your add-in and SharePoint. You can add high trust add-ins to the add-in catalog of your SharePoint farm, but you can't sell them in the Office Store. If you do have access to an Office 365 tenancy, you can link it to your on-premises installation of SharePoint 2013 and  [use ACS as the trust broker for add-ins that are installed to your on-premises SharePoint](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-premises-sharepoint-site.md).
+If you are using an on-premises deployment of SharePoint 2013, you can use OAuth, but you will have to choose between creating high-trust add-ins and using an Office 365 tenancy. Office 365 uses Microsoft Azure Access Control Service (ACS) as the trust broker, and if you do not have access to an Office 365 tenancy, you'll need to use  [Create high-trust SharePoint Add-ins](create-high-trust-sharepoint-add-ins.md), which uses certificates to establish trust between your add-in and SharePoint. You can add high trust add-ins to the add-in catalog of your SharePoint farm, but you can't sell them in the Office Store. If you do have access to an Office 365 tenancy, you can link it to your on-premises installation of SharePoint 2013 and  [use ACS as the trust broker for add-ins that are installed to your on-premises SharePoint](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-.md).
  
 
  
@@ -159,7 +159,7 @@ The following table lists all of the possible patterns for hosting both the Shar
 ## Combine provider hosting and SharePoint hosting
 <a name="Combined"> </a>
 
-You can also build add-ins that include both SharePoint-hosted and cloud-hosted components. For example, you can create a  [cloud-hosted add-in that includes a custom SharePoint list and content type](create-a-provider-hosted-add-in-that-includes-a-custom-sharepoint-list-and-content-type.md). If you choose to use this architecture, your design and approach must account for security limitations that are built into the model. You can use only JavaScript in the code components that are hosted by SharePoint, and the remotely hosted components must use either OAuth or the cross-domain library to interact with the SharePoint website. When considering this approach, make sure that you understand how  [add-in authorization works in SharePoint 2013](authorization-and-authentication-of-sharepoint-add-ins.md). Figure 4 shows you how this architecture works if you use Microsoft Azure to host the remote components of your add-in, and you use OAuth.
+You can also build add-ins that include both SharePoint-hosted and cloud-hosted components. For example, you can create a  [cloud-hosted add-in that includes a custom SharePoint list and content type](create-a-provider-hosted-add-in-that-includes-a-custom-sharepoint-list-and-conte.md). If you choose to use this architecture, your design and approach must account for security limitations that are built into the model. You can use only JavaScript in the code components that are hosted by SharePoint, and the remotely hosted components must use either OAuth or the cross-domain library to interact with the SharePoint website. When considering this approach, make sure that you understand how  [add-in authorization works in SharePoint 2013](authorization-and-authentication-of-sharepoint-add-ins.md). Figure 4 shows you how this architecture works if you use Microsoft Azure to host the remote components of your add-in, and you use OAuth.
  
 
  
@@ -171,7 +171,7 @@ You can also build add-ins that include both SharePoint-hosted and cloud-hosted 
  
 ![Server to server communication restrictions](../images/SP15HelloWorldSPApp_Fig01.png)
  
- [Learn how to create an add-in that combines cloud hosting and SharePoint hosting.](create-a-provider-hosted-add-in-that-includes-a-custom-sharepoint-list-and-content-type.md)
+ [Learn how to create an add-in that combines cloud hosting and SharePoint hosting.](create-a-provider-hosted-add-in-that-includes-a-custom-sharepoint-list-and-conte.md)
  
 
  
@@ -237,7 +237,7 @@ For more information, see the following resources:
 
  
 
--  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscape.md)
+-  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md)
     
  
 -  [SharePoint Add-ins](sharepoint-add-ins.md)
@@ -252,7 +252,7 @@ For more information, see the following resources:
 -  [Context Token OAuth flow for SharePoint Add-ins](context-token-oauth-flow-for-sharepoint-add-ins.md)
     
  
--  [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-premises-sharepoint-site.md)
+-  [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-.md)
     
  
 -  [SharePoint Add-ins compared with SharePoint solutions](http://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8%28Office.15%29.aspx)
@@ -264,7 +264,7 @@ For more information, see the following resources:
 -  [Get started creating SharePoint-hosted SharePoint Add-ins](get-started-creating-sharepoint-hosted-sharepoint-add-ins.md)
     
  
--  [Create a provider-hosted add-in that includes a custom SharePoint list and content type](create-a-provider-hosted-add-in-that-includes-a-custom-sharepoint-list-and-content-type.md)
+-  [Create a provider-hosted add-in that includes a custom SharePoint list and content type](create-a-provider-hosted-add-in-that-includes-a-custom-sharepoint-list-and-conte.md)
     
  
 

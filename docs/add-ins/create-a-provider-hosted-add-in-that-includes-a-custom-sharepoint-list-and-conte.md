@@ -65,7 +65,7 @@ Before you create your first add-in, you should have a basic understanding of wh
 |**Article title**|**Description**|
 |:-----|:-----|
 | [SharePoint Add-ins](sharepoint-add-ins.md)|Learn about the new add-in model in SharePoint 2013 that enables you to create add-ins, which are small, easy-to-use solutions for end users.|
-| [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscape.md)|Learn about aspects of the architecture of SharePoint Add-ins and the model for SharePoint Add-ins, including the add-in hosting options, user interface (UI) options, deployment system, security system, and life cycle.|
+| [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md)|Learn about aspects of the architecture of SharePoint Add-ins and the model for SharePoint Add-ins, including the add-in hosting options, user interface (UI) options, deployment system, security system, and life cycle.|
 | [Choose patterns for developing and hosting your SharePoint Add-in](choose-patterns-for-developing-and-hosting-your-sharepoint-add-in.md)|Learn about the various ways that you can host SharePoint Add-ins.|
 
 ## Develop the SharePoint Add-in

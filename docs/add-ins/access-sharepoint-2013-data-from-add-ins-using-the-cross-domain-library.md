@@ -284,7 +284,7 @@ If you prefer downloadable code samples, you can get this one from code gallery.
 
 |**If you see…**|**Then try…**|
 |:-----|:-----|
-|Error message: Sorry, we had some trouble accessing your site.There is also a button to fix the error, but it doesn't correct the problem.|You may have hit a known problem with security zones in Internet Explorer, see  [Work with the cross-domain library across different Internet Explorer security zones in SharePoint Add-ins](work-with-the-cross-domain-library-across-different-internet-explorer-security-zones-in-sharepoint-add-ins.md).|
+|Error message: Sorry, we had some trouble accessing your site.There is also a button to fix the error, but it doesn't correct the problem.|You may have hit a known problem with security zones in Internet Explorer, see  [Work with the cross-domain library across different Internet Explorer security zones in SharePoint Add-ins](work-with-the-cross-domain-library-across-different-internet-explorer-security-z.md).|
 |Error message: The required functionalities are not supported by your browser. Please make sure you are using IE 8 or above, or other modern browser. Please make sure the 'X-UA-Compatible' meta tag is set to be 'IE=8' or above.|The cross-domain library requires a document mode of  **IE8** or above. In some scenarios, the document mode is set to **IE7** by default. You can use the Internet Explorer developer tools to determine and change the document mode of your page. For more information, see [Defining Document Compatibility](http://msdn.microsoft.com/library/cc288325.aspx).|
 |Error message: 'Type' is undefined.Additionally, your add-in uses the JavaScript Object Model (JSOM).|The JSOM uses the  **Type.registerNamespace** method in the Microsoft Ajax library to register the **SP** namespace. Use the following code to add a reference to the Microsoft Ajax library from your page:```HTML<script  type="text/javascript"  src="//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js"></script>```|
 
@@ -453,7 +453,7 @@ The cross-domain library uses a proxy page that is hosted in an  **IFrame** on t
  
 
  
-However, there is a solution for these scenarios. The solution is the  **apphost pattern**, which consists in wrapping the add-in pages in a page hosted in the add-in web. It's a good idea to use the apphost pattern in add-ins that use the cross-domain library, even if there are no evident security boundaries. For more information, see [Work with the cross-domain library across different Internet Explorer security zones in SharePoint Add-ins](work-with-the-cross-domain-library-across-different-internet-explorer-security-zones-in-sharepoint-add-ins.md).
+However, there is a solution for these scenarios. The solution is the  **apphost pattern**, which consists in wrapping the add-in pages in a page hosted in the add-in web. It's a good idea to use the apphost pattern in add-ins that use the cross-domain library, even if there are no evident security boundaries. For more information, see [Work with the cross-domain library across different Internet Explorer security zones in SharePoint Add-ins](work-with-the-cross-domain-library-across-different-internet-explorer-security-z.md).
  
 
  
@@ -504,7 +504,7 @@ To download a sample of a SharePoint-hosted add-in that uses the cross-domain li
 -  [Secure data access and client object models for SharePoint Add-ins](secure-data-access-and-client-object-models-for-sharepoint-add-ins.md)
     
  
--  [Work with the cross-domain library across different Internet Explorer security zones in SharePoint Add-ins](work-with-the-cross-domain-library-across-different-internet-explorer-security-zones-in-sharepoint-add-ins.md)
+-  [Work with the cross-domain library across different Internet Explorer security zones in SharePoint Add-ins](work-with-the-cross-domain-library-across-different-internet-explorer-security-z.md)
     
  
 -  [Create a custom proxy page for the cross-domain library in SharePoint 2013](create-a-custom-proxy-page-for-the-cross-domain-library-in-sharepoint-2013.md)
