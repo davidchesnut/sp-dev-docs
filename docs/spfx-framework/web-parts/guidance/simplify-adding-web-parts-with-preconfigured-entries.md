@@ -82,7 +82,7 @@ A **ILocalizedString** value that is not valid because the **default** key is mi
 
 To see how you can use preconfigured entries when building web parts, you will build a sample gallery web part. Using several properties, users can configure this web part to show items from a selected list in a specific way. For brevity, you will omit the actual implementation of the web part logic and will focus on using the **preconfiguredEntries** property to provide preconfigured versions of the gallery web part.
 
-![Web part property pane showing the different properties users need to configure for the web part to work](../../../../images/preconfiguredentries-needs-configuration.png)
+![Web part property pane showing the different properties users need to configure for the web part to work](../../../images/preconfiguredentries-needs-configuration.png)
 
 ### Create a new project
 
@@ -112,11 +112,11 @@ When prompted, enter the following values:
 - **Shows items from the selected list** as your web part description
 - **React** as the starting point to build the web part
 
-![SharePoint Framework Yeoman generator with the default choices](../../../../images/preconfiguredentries-yeoman.png)
+![SharePoint Framework Yeoman generator with the default choices](../../../images/preconfiguredentries-yeoman.png)
 
 Once the scaffolding completes, open your project folder in your code editor. This article uses Visual Studio Code in the steps and screenshots but you can use any editor you prefer.
 
-![SharePoint Framework project open in Visual Studio Code](../../../../images/preconfiguredentries-visual-studio-code.png)
+![SharePoint Framework project open in Visual Studio Code](../../../images/preconfiguredentries-visual-studio-code.png)
 
 ### Add web part properties
 
@@ -369,7 +369,7 @@ gulp serve
 
 In the web browser add the web part to the canvas and open its property pane. You should see all properties available for users to configure.
 
-![Web part property pane showing the different properties users need to configure for the web part to work](../../../../images/preconfiguredentries-needs-configuration.png)
+![Web part property pane showing the different properties users need to configure for the web part to work](../../../images/preconfiguredentries-needs-configuration.png)
 
 Because you didn't specify any default values for the web part, every time users add the web part to the page they have to configure it first. You can simplify this experience by providing default values for the most common scenarios.
 
@@ -408,11 +408,11 @@ gulp serve
 
 When you open the web part toolbox to add the web part to the canvas, you will see that its name and icon changed to reflect the preconfigured settings.
 
-![Web part toolbox showing the preconfigured version of the web part](../../../../images/preconfiguredentries-recent-images-toolbox.png)
+![Web part toolbox showing the preconfigured version of the web part](../../../images/preconfiguredentries-recent-images-toolbox.png)
 
 After adding the web part to the page, it works immediately using the preconfigured settings.
 
-![Preconfigured web part working immediately after being added to the page](../../../../images/preconfiguredentries-recent-images-canvas.png)
+![Preconfigured web part working immediately after being added to the page](../../../images/preconfiguredentries-recent-images-canvas.png)
 
 ### Specify multiple preconfigured web part entries
 
@@ -462,11 +462,11 @@ gulp serve
 
 When you open the web part toolbox to add the web part to the canvas, you will see that there are two web parts for you to choose from.
 
-![Web part toolbox showing the preconfigured version of the web part](../../../../images/preconfiguredentries-multiple-web-parts-toolbox.png)
+![Web part toolbox showing the preconfigured version of the web part](../../../images/preconfiguredentries-multiple-web-parts-toolbox.png)
 
 After adding the **Recent documents** web part to the page, it works immediately using its specific preconfigured settings.
 
-![Preconfigured recent documents web part working immediately after being added to the page](../../../../images/preconfiguredentries-recent-documents-canvas.png)
+![Preconfigured recent documents web part working immediately after being added to the page](../../../images/preconfiguredentries-recent-documents-canvas.png)
 
 ### Specify an unconfigured instance of the web part
 
@@ -531,4 +531,4 @@ gulp serve
 
 When you open the web part toolbox to add the web part to the canvas, you will see that there are now three web parts that users can choose from.
 
-![Web part toolbox showing the preconfigured version of the web part](../../../../images/preconfiguredentries-three-configurations-toolbox.png)
+![Web part toolbox showing the preconfigured version of the web part](../../../images/preconfiguredentries-three-configurations-toolbox.png)

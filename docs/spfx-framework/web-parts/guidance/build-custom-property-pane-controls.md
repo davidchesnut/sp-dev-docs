@@ -6,7 +6,7 @@ The SharePoint Framework contains a set of standard controls for the property pa
 
 In this article you will learn how to build a custom control for the property pane. You will build a custom dropdown control that loads its data asynchronously from an external service without blocking the user interface of the web part.
 
-![Item dropdown loading available items after selecting a list in the list dropdown](../../../../images/custom-property-pane-control-cascading-loading-items.png)
+![Item dropdown loading available items after selecting a list in the list dropdown](../../../images/custom-property-pane-control-cascading-loading-items.png)
 
 The source of the working web part is available on GitHub at [https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-custompropertypanecontrols](https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-custompropertypanecontrols).
 
@@ -40,11 +40,11 @@ When prompted, enter the following values:
 - **Shows list items from the selected list** as your web part description
 - **React** as the starting point to build the web part
 
-![SharePoint Framework Yeoman generator with the default choices](../../../../images/custom-property-pane-control-yeoman.png)
+![SharePoint Framework Yeoman generator with the default choices](../../../images/custom-property-pane-control-yeoman.png)
 
 Once the scaffolding completes, open your project folder in your code editor. This article uses Visual Studio Code in the steps and screenshots but you can use any editor you prefer.
 
-![SharePoint Framework project open in Visual Studio Code](../../../../images/custom-property-pane-control-visual-studio-code.png)
+![SharePoint Framework project open in Visual Studio Code](../../../images/custom-property-pane-control-visual-studio-code.png)
 
 ## Define web part property for storing the selected list
 
@@ -52,7 +52,7 @@ The Web part you are building will show list items from the selected SharePoint 
 
 In the code editor open the **src/webparts/listItems/ListItemsWebPartManifest.json** file. Replace the default **description** property with a new property named `listName`.
 
-![Web part manifest with the 'listName' web part property highlighted](../../../../images/custom-property-pane-control-list-property-web-part-manifest.png)
+![Web part manifest with the 'listName' web part property highlighted](../../../images/custom-property-pane-control-list-property-web-part-manifest.png)
 
 Next, open the **src/webparts/listItems/IListItemsWebPartProps.ts** file and replace its contents with:
 
@@ -172,7 +172,7 @@ gulp serve
 
 In the web browser, add the **List items** web part to the canvas and open its properties. Verify that the value set for the **List** property is displayed in the web part body.
 
-![Web part showing the value of the 'listName' property](../../../../images/custom-property-pane-control-web-part-first-run.png)
+![Web part showing the value of the 'listName' property](../../../images/custom-property-pane-control-web-part-first-run.png)
 
 ## Create asynchronous dropdown property pane control
 
@@ -198,7 +198,7 @@ When creating a custom property pane control that uses React in the SharePoint F
 
 In the project **src** folder, create a hierarchy of three new folders so that your folder structure appears as **src/controls/PropertyPaneAsyncDropdown/components**.
 
-![Components folder highlighted in Visual Studio Code](../../../../images/custom-property-pane-control-components-folder.png)
+![Components folder highlighted in Visual Studio Code](../../../images/custom-property-pane-control-components-folder.png)
 
 #### Define asynchronous dropdown React component properties
 
@@ -462,7 +462,7 @@ import { IDropdownOption } from 'office-ui-fabric-react';
 import { update, get } from '@microsoft/sp-lodash-subset';
 ```
 
-![References to the 'PropertyPaneAsyncDropdown' class and the 'IDropdownOption' interface highlighted in Visual Studio Code](../../../../images/custom-property-pane-control-web-part-imports.png)
+![References to the 'PropertyPaneAsyncDropdown' class and the 'IDropdownOption' interface highlighted in Visual Studio Code](../../../images/custom-property-pane-control-web-part-imports.png)
 
 #### Add method to load available lists
 
@@ -548,9 +548,9 @@ At this point you should be able to select a list using the newly created asynch
 gulp serve
 ```
 
-![Asynchronous dropdown property pane control loading its options without blocking the web part user interface](../../../../images/custom-property-pane-control-loading-options.png)
+![Asynchronous dropdown property pane control loading its options without blocking the web part user interface](../../../images/custom-property-pane-control-loading-options.png)
 
-![Selecting one of the options in the asynchronous dropdown property pane control](../../../../images/custom-property-pane-control-selecting-option.png)
+![Selecting one of the options in the asynchronous dropdown property pane control](../../../images/custom-property-pane-control-selecting-option.png)
 
 ## Implement cascading dropdowns using the asynchronous dropdown property pane control
 
@@ -569,7 +569,7 @@ In the code editor open the **src/webparts/listItems/ListItemsWebPart.manifest.j
 // ...
 ```
 
-![Web part manifest with the 'item' web part property highlighted](../../../../images/custom-property-pane-control-item-property-web-part-manifest.png)
+![Web part manifest with the 'item' web part property highlighted](../../../images/custom-property-pane-control-item-property-web-part-manifest.png)
 
 Change the code in the **src/webparts/listItems/IListItemsWebPartProps.ts** file to:
 
@@ -822,20 +822,20 @@ gulp serve
 
 After adding the web part to the page for the first time and opening its property pane, you should see both dropdowns disabled and loading their options.
 
-![Dropdowns in web part property pane loading their data](../../../../images/custom-property-pane-control-cascading-loading-lists.png)
+![Dropdowns in web part property pane loading their data](../../../images/custom-property-pane-control-cascading-loading-lists.png)
 
 After the options have been loaded, the list dropdown becomes enabled. Because no list has been selected yet, the item dropdown remains disabled.
 
-![List dropdown in web part property pane enabled. Item dropdown disabled](../../../../images/custom-property-pane-control-cascading-lists-loaded-items-disabled.png)
+![List dropdown in web part property pane enabled. Item dropdown disabled](../../../images/custom-property-pane-control-cascading-lists-loaded-items-disabled.png)
 
 After selecting a list in the list dropdown the item dropdown will load items available in that list.
 
-![Item dropdown loading available items after selecting a list in the list dropdown](../../../../images/custom-property-pane-control-cascading-loading-items.png)
+![Item dropdown loading available items after selecting a list in the list dropdown](../../../images/custom-property-pane-control-cascading-loading-items.png)
 
 After the available items have been loaded, the item dropdown becomes enabled.
 
-![Selecting a list item from the item dropdown in the web part property pane](../../../../images/custom-property-pane-control-cascading-items-loaded-enabled.png)
+![Selecting a list item from the item dropdown in the web part property pane](../../../images/custom-property-pane-control-cascading-items-loaded-enabled.png)
 
 After selecting an item in the item dropdown the web part is refreshed showing the selected item in its body.
 
-![Selected list and item rendered in the web part](../../../../images/custom-property-pane-control-cascading-selected-list-item.png)
+![Selected list and item rendered in the web part](../../../images/custom-property-pane-control-cascading-selected-list-item.png)

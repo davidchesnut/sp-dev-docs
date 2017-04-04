@@ -5,7 +5,7 @@ In this article, you will deploy the **HelloWorld** assets to a remote CDN inste
 You can also follow these steps by watching the video on the [SharePoint PnP YouTube Channel](https://www.youtube.com/watch?v=FDGatKnjNeM&list=PLR9nK3mnD-OXvSWvS2zglCzz4iplhVrKq). 
 
 <a href="https://www.youtube.com/watch?v=FDGatKnjNeM&list=PLR9nK3mnD-OXvSWvS2zglCzz4iplhVrKq">
-<img src="../../../../images/spfx-youtube-tutorial4.png" alt="Screenshot of the YouTube video player for this tutorial" />
+<img src="../../../images/spfx-youtube-tutorial4.png" alt="Screenshot of the YouTube video player for this tutorial" />
 </a>
 
 ## Prerequisites
@@ -28,7 +28,7 @@ This is the name you used to create your storage account, as described in [Step 
 
 For example, in the following screenshot, **spfxsamples** is the storage account name.
 
-![Screenshot that shows the Create a new storage account page](../../../../images/deploy-create-storage-account.png)
+![Screenshot that shows the Create a new storage account page](../../../images/deploy-create-storage-account.png)
 
 This will create a new storage account endpoint **spfxsamples.blob.core.windows.net**. 
 
@@ -44,13 +44,13 @@ Select the **+ Container** and create a new container with the following:
 * Name: **helloworld-webpart**
 * Access type: Container
 
-![Image that shows the option to create blob container](../../../../images/deploy-option-blob-container.png)
+![Image that shows the option to create blob container](../../../images/deploy-option-blob-container.png)
 
 ### Storage account access key
 
 In the storage account dashboard, choose **Access Key** in the dashboard and copy one of the access keys.
 
-![Image that shows the storage account access key](../../../../images/deploy-storage-account-accesskey.png)
+![Image that shows the storage account access key](../../../images/deploy-storage-account-accesskey.png)
 
 ### CDN profile and endpoint
 
@@ -60,13 +60,13 @@ Create a new CDN profile as described in [Step 2: Create a new CDN profile](http
 
 For example, in the following screenshot, **spfxwebparts** is the CDN profile name.
 
-![Screenshot of create a new CDN profile](../../../../images/deploy-create-cdn-profile.png)
+![Screenshot of create a new CDN profile](../../../images/deploy-create-cdn-profile.png)
 
 Create a CDN endpoint as described in [Step 3: Create a new CDN endpoint](https://azure.microsoft.com/en-us/documentation/articles/cdn-create-a-storage-account-with-cdn/#step-3-create-a-new-cdn-endpoint).
 
 For example, in the following screenshot, **spfxsamples** is the endpoint name, **Storage** is the origin type, and **spfxsamples.blob.core.windows.net** is the storage account.
 
-![Screenshot of create CDN endpoint](../../../../images/deploy-create-cdn-endpoint.png)
+![Screenshot of create CDN endpoint](../../../images/deploy-create-cdn-endpoint.png)
 
 The CDN endpoint will be created with the following URL: http://spfxsamples.azureedge.net
 
@@ -199,7 +199,7 @@ Upload or drag & drop the client-side solution package to the App Catalog.
 
 Because you already  deployed the package, you will be prompted as to whether to replace the existing package.
 
-![Screenshot of replace client-side solution package prompt](../../../../images/sp-app-replace-pkg.png)
+![Screenshot of replace client-side solution package prompt](../../../images/sp-app-replace-pkg.png)
 
 Choose **Replace It**.
 

@@ -32,11 +32,11 @@ When prompted, enter the following values:
 - **SharePoint lists** as your web part name.
 - **Shows names of lists in the current site** as your web part description.
 
-![The SharePoint Framework Yeoman generator with the default choices](../../../../images/tutorial-spjsom-yo-sharepoint.png)
+![The SharePoint Framework Yeoman generator with the default choices](../../../images/tutorial-spjsom-yo-sharepoint.png)
 
 Once the scaffolding completes, open your project folder in your code editor. This article uses Visual Studio Code in the steps and screenshots but you can use any editor you prefer.
 
-![The SharePoint Framework project open in Visual Studio Code](../../../../images/tutorial-spjsom-vscode.png)
+![The SharePoint Framework project open in Visual Studio Code](../../../images/tutorial-spjsom-vscode.png)
 
 ## Reference JSOM declaratively
 
@@ -217,7 +217,7 @@ export default class SharePointLists extends React.Component<ISharePointListsPro
 
 The sample client-side web part used in this article loads information about SharePoint lists in the current site after clicking a button.
 
-![SharePoint Framework client-side web part showing titles of SharePoint lists in the current site](../../../../images/tutorial-spjsom-web-part-list-titles.png)
+![SharePoint Framework client-side web part showing titles of SharePoint lists in the current site](../../../images/tutorial-spjsom-web-part-list-titles.png)
 
 In the code editor, open the **./src/webparts/sharePointLists/components/SharePointLists.tsx** file. In the **SharePointLists** class add a new method named **getListsTitles**:
 
@@ -335,7 +335,7 @@ gulp serve --nobrowser
 
 As you are using SharePoint JSOM to communicate with SharePoint, you have to test the web part using the hosted version of the SharePoint workbench.
 
-![SharePoint Framework client-side web part showing titles of SharePoint lists in the current site](../../../../images/tutorial-spjsom-web-part-list-titles.png)
+![SharePoint Framework client-side web part showing titles of SharePoint lists in the current site](../../../images/tutorial-spjsom-web-part-list-titles.png)
 
 Referencing SharePoint JSOM scripts declaratively as external scripts is convenient and allows you to keep your code clean. One disadvantage that it has, is that it requires specifying absolute URLs to the location from which SharePoint JSOM scripts should be loaded. If you're using separate SharePoint tenants for development, testing and production, then it would require some additional work from you to change these URLs for the different environments accordingly. In such cases you could also consider using the [SPComponentLoader](https://dev.office.com/sharepoint/reference/spfx/sp-loader/spcomponentloader) to load the scripts in the web part's code.
 
@@ -547,7 +547,7 @@ gulp serve --nobrowser
 
 Just as previously, you should see the web part show the titles of SharePoint lists in the current site.
 
-![SharePoint Framework client-side web part showing titles of SharePoint lists in the current site](../../../../images/tutorial-spjsom-web-part-list-titles.png)
+![SharePoint Framework client-side web part showing titles of SharePoint lists in the current site](../../../images/tutorial-spjsom-web-part-list-titles.png)
 
 While using the SPComponentLoader requires some additional effort, it allows you to use server-relative URLs, which is beneficial in scenarios when you're using different tenants for development, testing and production.
 

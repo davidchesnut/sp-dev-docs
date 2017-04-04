@@ -36,17 +36,17 @@ When prompted, enter the following values:
 - **Shows recently modified documents** as your web part description.
 - **React** as the starting point to build the web part.
 
-![The SharePoint Framework Yeoman generator with the default choices](../../../../images/tutorial-sharingdata-yo-sharepoint-recent-documents.png)
+![The SharePoint Framework Yeoman generator with the default choices](../../../images/tutorial-sharingdata-yo-sharepoint-recent-documents.png)
 
 Once the scaffolding completes, open your project folder in your code editor. This article uses Visual Studio Code in the steps and screenshots but you can use any editor you prefer.
 
-![The SharePoint Framework project open in Visual Studio Code](../../../../images/tutorial-sharingdata-vscode.png)
+![The SharePoint Framework project open in Visual Studio Code](../../../images/tutorial-sharingdata-vscode.png)
 
 ## Show the recently modified documents
 
 The Recent documents web part shows information about most recently modified documents displayed as cards using Office UI Fabric.
 
-![The Recent documents web part showing three small document cards representing the three most recently modified documents](../../../../images/tutorial-sharingdata-recent-documents.png)
+![The Recent documents web part showing three small document cards representing the three most recently modified documents](../../../images/tutorial-sharingdata-recent-documents.png)
 
 ### Remove the standard _description_ property
 
@@ -331,7 +331,7 @@ gulp serve
 
 In the SharePoint workbench add the Recent Documents web part to the canvas.
 
-![The recent documents web part showing three most recently modified documents as document cards](../../../../images/tutorial-sharingdata-recent-documents.png)
+![The recent documents web part showing three most recently modified documents as document cards](../../../images/tutorial-sharingdata-recent-documents.png)
 
 ## Show the most recently modified document
 
@@ -354,7 +354,7 @@ When prompted, enter the following values:
 - **Recent document** as your web part name.
 - **Shows information about the most recently modified document** as your web part description.
 
-![The SharePoint Framework Yeoman generator with information to scaffold the second web part](../../../../images/tutorial-sharingdata-yo-sharepoint-recent-document.png)
+![The SharePoint Framework Yeoman generator with information to scaffold the second web part](../../../images/tutorial-sharingdata-yo-sharepoint-recent-document.png)
 
 ### Remove the standard _description_ property
 
@@ -439,7 +439,7 @@ The Recent document web part displays information about the most recently modifi
 
 In Visual Studio Code, activate the Explorer pane, and from the **./src/webparts/recentDocuments** folder, move the **IDocument.ts** and **IDocumentActivity.ts** files one level up, to the **./src/webparts** folder.
 
-![Visual Studio Code Explorer pane with the IDocument.ts and IDocumentActivity.ts files highlighted](../../../../images/tutorial-sharingdata-interfaces.png)
+![Visual Studio Code Explorer pane with the IDocument.ts and IDocumentActivity.ts files highlighted](../../../images/tutorial-sharingdata-interfaces.png)
 
 #### Update references to the moved files
 
@@ -593,7 +593,7 @@ gulp serve
 
 In the SharePoint workbench add the Recent document web part to the canvas.
 
-![The recent document web part showing document card with the information about the most recently modified document](../../../../images/tutorial-sharingdata-recent-document.png)
+![The recent document web part showing document card with the information about the most recently modified document](../../../images/tutorial-sharingdata-recent-document.png)
 
 The current implementation is a typical example of two web parts being developed independently. If they were both placed on the same page and were loading data from SharePoint, they would execute two separate requests to retrieve similar information. If at some point you had to change where the information about the recently modified documents is loaded from, you would have to update both web parts. To improve the performance of loading the page, and simplify maintaining the web part code, you can centralize the logic of retrieving the data and make the once retrieved data available to both web parts.
 
@@ -605,7 +605,7 @@ To centralize loading the information about recently modified documents, build a
 
 In the project folder create the **./src/services/documentsService** folder path. From the **./src/webparts** folder, move the **IDocument.ts** and **IDocumentActivity.ts** files to the **./src/services/documentsService** folder.
 
-![The IDocument.ts and IDocumentActivity.ts files highlighted in the Explorer pane in Visual Studio Code](../../../../images/tutorial-sharingdata-interfaces-documentsservice.png)
+![The IDocument.ts and IDocumentActivity.ts files highlighted in the Explorer pane in Visual Studio Code](../../../images/tutorial-sharingdata-interfaces-documentsservice.png)
 
 ### Build the data access service
 
@@ -779,7 +779,7 @@ Verify, that your changes work as expected, by running the following command:
 gulp serve
 ```
 
-![The Recent document and Recent documents web parts showing information about recently modified documents](../../../../images/tutorial-sharingdata-recent-document-recent-documents.png)
+![The Recent document and Recent documents web parts showing information about recently modified documents](../../../images/tutorial-sharingdata-recent-document-recent-documents.png)
 
 ### Load web part data using the data service
 
@@ -857,7 +857,7 @@ Confirm, that both web parts are working correctly, by running the following com
 gulp serve
 ```
 
-![The Recent document and Recent documents web parts showing information about recently modified documents](../../../../images/tutorial-sharingdata-recent-document-recent-documents.png)
+![The Recent document and Recent documents web parts showing information about recently modified documents](../../../images/tutorial-sharingdata-recent-document-recent-documents.png)
 
 ### Share the data between web parts
 
@@ -986,11 +986,11 @@ Confirm, that both web parts are working correctly, by running the following com
 gulp serve
 ```
 
-![The Recent document and Recent documents web parts showing information about recently modified documents](../../../../images/tutorial-sharingdata-recent-document-recent-documents.png)
+![The Recent document and Recent documents web parts showing information about recently modified documents](../../../images/tutorial-sharingdata-recent-document-recent-documents.png)
 
 If you added logging statements in the different parts of the **DocumentsService.ensureRecentDocuments** method, you would see, that the data is loaded once and reused for the second web part.
 
-![Developer console showing different logging statements in Microsoft Edge](../../../../images/tutorial-sharingdata-console-log.png)
+![Developer console showing different logging statements in Microsoft Edge](../../../images/tutorial-sharingdata-console-log.png)
 
 ## See also
 

@@ -39,7 +39,7 @@ Enter the following values when prompted during the setup of your new project:
 - **SPPnPJSExample** as the name of the web part
 - **Example of using sp-pnp-js within SPFx** as the description
 
-![Completed Project Scaffolding](../../../../images/sp-pnp-js-guide-completed-setup.png)
+![Completed Project Scaffolding](../../../images/sp-pnp-js-guide-completed-setup.png)
 
 
 Once the scaffolding completes open the project in your code editor of choice, the screen shots here show [Visual Studio Code](https://code.visualstudio.com/).
@@ -48,7 +48,7 @@ Once the scaffolding completes open the project in your code editor of choice, t
 code .
 ```
 
-![Project as first opened in visual studio code](../../../../images/sp-pnp-js-guide-first-open.png)
+![Project as first opened in visual studio code](../../../images/sp-pnp-js-guide-first-open.png)
 
 ## Install And Setup sp-pnp-js
 
@@ -350,7 +350,7 @@ If you now start the sample and add then add the web part to your site's /_layou
 gulp serve
 ```
 
-![Project as it appears on first run](../../../../images/sp-pnp-js-guide-first-run.png)
+![Project as it appears on first run](../../../images/sp-pnp-js-guide-first-run.png)
 
 You can delete existing items by clicking on the trashcan icon, or add items by putting values in both fields and clicking the add button.
 
@@ -507,7 +507,7 @@ Finally type gulp serve in the console to bring up the local workbench, which no
 gulp serve
 ```
 
-![Project as it appears running in the local workbench with mock data](../../../../images/sp-pnp-js-guide-with-mock-data.png)
+![Project as it appears running in the local workbench with mock data](../../../images/sp-pnp-js-guide-with-mock-data.png)
 
 
 ## Download Full Example Code

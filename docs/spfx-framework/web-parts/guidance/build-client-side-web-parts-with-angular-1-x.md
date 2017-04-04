@@ -4,7 +4,7 @@
 
 If you are using Angular, you can also use this extremely popular framework to build client-side web parts. Thanks to its modularity it can be used for anything ranging from complex multi-view Single Page Applications to smaller components such as web parts. Many organizations have been using Angular for building SharePoint solutions in the past. This article shows how to use Angular v1.x to build a SharePoint Framework client-side web part and have it styled using [ngOfficeUIFabric](http://ngofficeuifabric.com) - Angular directives for Office UI Fabric. During this tutorial you will build a simple web part that manages to do items.
 
-![SharePoint Framework client-side web part built using Angular and ngOfficeUIFabric displayed in SharePoint workbench](../../../../images/ng-intro-hide-finished-tasks.png)
+![SharePoint Framework client-side web part built using Angular and ngOfficeUIFabric displayed in SharePoint workbench](../../../images/ng-intro-hide-finished-tasks.png)
 
 The source of the working web part is available on GitHub at [https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-ngofficeuifabric-todo](https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-ngofficeuifabric-todo).
 
@@ -37,11 +37,11 @@ When prompted, define values as follows:
 - **Simple management of to do tasks** as your web part description
 - **No JavaScript web framework** as the starting point to build the web part
 
-![SharePoint Framework Yeoman generator with the default choices](../../../../images/ng-intro-yeoman-generator.png)
+![SharePoint Framework Yeoman generator with the default choices](../../../images/ng-intro-yeoman-generator.png)
 
 Once the scaffolding completes, open your project folder in your code editor. In this tutorial, you will use Visual Studio Code.
 
-![SharePoint Framework project open in Visual Studio Code](../../../../images/ng-intro-project-visual-studio-code.png)
+![SharePoint Framework project open in Visual Studio Code](../../../images/ng-intro-project-visual-studio-code.png)
 
 ## Add Angular and ngOfficeUIFabric
 
@@ -55,7 +55,7 @@ In this tutorial you will load both Angular and ngOfficeUIFabric from CDN. To do
 "ng-office-ui-fabric": "https://cdnjs.cloudflare.com/ajax/libs/ngOfficeUiFabric/0.12.3/ngOfficeUiFabric.js"
 ```
 
-![Angular and ngOfficeUIFabric added to the config.json file](../../../../images/ng-intro-angular-ngofficeuifabric-config.png)
+![Angular and ngOfficeUIFabric added to the config.json file](../../../images/ng-intro-angular-ngofficeuifabric-config.png)
 
 ## Add Angular typings for TypeScript
 
@@ -69,7 +69,7 @@ tsd install angular --save
 
 With all prerequisites in place you can start implementing the sample Angular application. Because it will consist of a few files, create a separate folder for it called **app**.
 
-![The app folder highlighted in Visual Studio Code](../../../../images/ng-intro-app-folder.png)
+![The app folder highlighted in Visual Studio Code](../../../images/ng-intro-app-folder.png)
 
 ### Implement to do data service
 
@@ -183,7 +183,7 @@ export default class DataService implements IDataService {
 }
 ```
 
-![The DataService.ts file opened in Visual Studio Code](../../../../images/ng-intro-dataservice.png)
+![The DataService.ts file opened in Visual Studio Code](../../../images/ng-intro-dataservice.png)
 
 In the previous code snippet you implement three types: the **ITodo** interface which represents a to do item in your application, the **IDataService** interface which defines the signature of the data service and the **DataService** class which is responsible for retrieving and manipulating to do items. The data service implements simple methods for adding and modifying to do items. Even though the operations are instantaneous, for consistency each CRUD function returns a promise. 
 
@@ -300,7 +300,7 @@ export default class HomeController {
 }
 ```
 
-![The HomeController.ts file opened in Visual Studio Code](../../../../images/ng-intro-homecontroller.png)
+![The HomeController.ts file opened in Visual Studio Code](../../../images/ng-intro-homecontroller.png)
 
 You start by loading the previously implemented data service. The controller needs it in order to get the list of items and modify items as requested by the user. Using Angular's dependency injection the service is injected into the controller. The controller implements a number of functions that are exposed to the view model and will be called from the template. Using these functions users will be able to add new items, mark items as finished, to do, or delete items.
 
@@ -324,7 +324,7 @@ todoapp
   .service('DataService', DataService);
 ```
 
-![The app-module.ts file opened in Visual Studio Code](../../../../images/ng-intro-app-module.png)
+![The app-module.ts file opened in Visual Studio Code](../../../images/ng-intro-app-module.png)
 
 You start by referencing Angular and ngOfficeUIFabric and by loading previously implemented controller and data service. Next, you define the module for your application and load the **officeuifabric.core** and **officeuifabric.components** modules as depedencies for your application. That way you will be able to use ngOfficeUIFabric directives in your template. Finally, you register the controller and data service with your application.
 
@@ -341,7 +341,7 @@ import * as angular from 'angular';
 import './app/app-module';
 ```
 
-![Import statements in the ToDoWebPart.ts file highlighted in Visual Studio Code](../../../../images/ng-intro-web-part-import-angular.png)
+![Import statements in the ToDoWebPart.ts file highlighted in Visual Studio Code](../../../images/ng-intro-web-part-import-angular.png)
 
 This allows us to load a reference to Angular and your application, both of which you need to bootstrap your Angular application.
 
@@ -383,7 +383,7 @@ public render(): void {
 }
 ```
 
-![Web part's render function in Visual Studio Code](../../../../images/ng-intro-web-part-render-angular.png)
+![Web part's render function in Visual Studio Code](../../../images/ng-intro-web-part-render-angular.png)
 
 The code first assigns the template of your application directly to the web part's DOM element. On the root element you specify the name of the controller that will handle events and data binding in the template. Then, you bootstrap your application using the **todoapp** name you used previously when declaring the main module. Using the **renderedOnce** web part property you ensure that your Angular application is bootstrapped only once. Without it, if you changed one of the web part's properties, the **render** function would be invoked again bootstrapping the Angular application again, which would lead to an error.
 
@@ -402,7 +402,7 @@ You also need to implement CSS styles that you are using the template. In the co
 }
 ```
 
-![The ToDo.module.scss file open in Visual Studio Code](../../../../images/ng-intro-web-part-css.png)
+![The ToDo.module.scss file open in Visual Studio Code](../../../images/ng-intro-web-part-css.png)
 
 ## Load newer version of Office UI Fabric
 
@@ -414,7 +414,7 @@ gulp serve
 
 In the browser you should see your To do web part showing to do items.
 
-![To do web part showing to do items rendered using an older version of Office UI Fabric](../../../../images/ng-intro-workbench-old-office-ui-fabric.png)
+![To do web part showing to do items rendered using an older version of Office UI Fabric](../../../images/ng-intro-workbench-old-office-ui-fabric.png)
 
 Looking closely you can notice a bullet sign rendered in front of each item. This is because ngOfficeUIFabric uses a newer version of Office UI Fabric than the version available in the SharePoint workbench. You can fix this issue, by loading a newer version of Office UI Fabric in your web part.
 
@@ -426,7 +426,7 @@ In the code editor open the **ToDoWebPart.ts** file. Before the `import styles` 
 import ModuleLoader from '@microsoft/sp-module-loader';
 ```
 
-![The 'import ModuleLoader' statement highlighted in Visual Studio Code](../../../../images/ng-intro-module-loader.png)
+![The 'import ModuleLoader' statement highlighted in Visual Studio Code](../../../images/ng-intro-module-loader.png)
 
 Next, change the web part's constructor to the following:
 
@@ -439,7 +439,7 @@ public constructor(context: IWebPartContext) {
 }
 ```
 
-![Web part's constructor in Visual Studio Code](../../../../images/ng-intro-constructor-office-ui-fabric.png)
+![Web part's constructor in Visual Studio Code](../../../images/ng-intro-constructor-office-ui-fabric.png)
 
 Before you can preview your web part you have to install additional TypeScript typings required by the **ModuleLoader** class. In the command line run:
 
@@ -455,7 +455,7 @@ gulp serve
 
 You should now see the web part rendered correctly.
 
-![To do web part showing to do items rendered correctly](../../../../images/ng-intro-workbench-new-office-ui-fabric.png)
+![To do web part showing to do items rendered correctly](../../../images/ng-intro-workbench-new-office-ui-fabric.png)
 
 ## Make web part configurable
 
@@ -469,7 +469,7 @@ Start by adding configuration property in the web part manifest. In the code edi
 "hideFinishedTasks": false
 ```
 
-![The hideFinishedTasks property highlighted in web part manifest](../../../../images/ng-intro-manifest-property.png)
+![The hideFinishedTasks property highlighted in web part manifest](../../../images/ng-intro-manifest-property.png)
 
 ### Update the signature of the web part properties interface
 
@@ -483,7 +483,7 @@ export interface IToDoWebPartProps {
 }
 ```
 
-![The IToDoWebPartProps.ts file open in Visual Studio Code](../../../../images/ng-intro-property-interface.png)
+![The IToDoWebPartProps.ts file open in Visual Studio Code](../../../images/ng-intro-property-interface.png)
 
 ### Add the property to the web part property pane
 
@@ -500,7 +500,7 @@ import {
 } from '@microsoft/sp-client-preview';
 ```
 
-![PropertyPaneToggle import statement highlighted in Visual Studio Code](../../../../images/ng-intro-property-pane-toggle.png)
+![PropertyPaneToggle import statement highlighted in Visual Studio Code](../../../images/ng-intro-property-pane-toggle.png)
 
 Change the implementation of the `propertyPaneSettings` function to:
 
@@ -543,7 +543,7 @@ declare module 'toDoStrings' {
 }
 ```
 
-![The loc/mystrings.d.ts file open in Visual Studio Code](../../../../images/ng-intro-strings-interface.png)
+![The loc/mystrings.d.ts file open in Visual Studio Code](../../../images/ng-intro-strings-interface.png)
 
 Next, you need to provide the actual values for the newly defined strings. In the code editor open the **loc/en-us.js** file and change its contents to:
 
@@ -557,7 +557,7 @@ define([], function() {
 });
 ```
 
-![The loc/en-us.js file open in Visual Studio Code](../../../../images/ng-intro-strings.png)
+![The loc/en-us.js file open in Visual Studio Code](../../../images/ng-intro-strings.png)
 
 Run the following command to confirm that everything is working as expected:
 
@@ -567,7 +567,7 @@ gulp serve
 
 In the web part property pane you should see a toggle button for your newly defined property.
 
-![Toggle button displayed on the web part property pane](../../../../images/ng-intro-property-pane-toggle-browser.png)
+![Toggle button displayed on the web part property pane](../../../images/ng-intro-property-pane-toggle-browser.png)
 
 At this point clicking the toggle button doesn't have any effect on your web part as it hasn't been connected to Angular. You will do that in the next step.
 
@@ -583,7 +583,7 @@ In the code editor open the **ToDoWebPart.ts** file. Right before web part's con
 private $injector: ng.auto.IInjectorService;
 ```
 
-![$injector class variable highlighted in Visual Studio Code](../../../../images/ng-intro-injector-class-variable.png)
+![$injector class variable highlighted in Visual Studio Code](../../../images/ng-intro-injector-class-variable.png)
 
 Next, change the web part's **render** function to the following:
 
@@ -644,7 +644,7 @@ constructor(private dataService: IDataService, private $window: ng.IWindowServic
 }
 ```
 
-![Constructor definition in the HomeController.ts file highlighted in Visual Studio Code](../../../../images/ng-intro-homecontroller-event.png)
+![Constructor definition in the HomeController.ts file highlighted in Visual Studio Code](../../../images/ng-intro-homecontroller-event.png)
 
 To verify that the Angular application is working as expected and correctly responds to property changed, in the command line run:
 
@@ -654,4 +654,4 @@ gulp serve
 
 If you toggle the value of the **Hide finished tasks** property, web part should show or hide finished tasks accordingly.
 
-![web part showing only unfinished task with the 'Hide finished tasks' option enabled](../../../../images/ng-intro-hide-finished-tasks.png)
+![web part showing only unfinished task with the 'Hide finished tasks' option enabled](../../../images/ng-intro-hide-finished-tasks.png)

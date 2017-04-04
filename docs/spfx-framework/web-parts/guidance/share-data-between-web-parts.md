@@ -8,7 +8,7 @@ When building clien-side web parts, loading the data once and reusing them acros
 
 Often, when you build web parts, a number of them will be used together on one page. If you consider each web part as a standalone part of the page, then you will end up in a situation, where you will be loading a similar or even the same set of data multiple times on the same page. This will unnecessarily slow down loading the page and increase traffic on your network.
 
-![Two web parts on one page loading similar set of data separately](../../../../images/guidance-sharingdata-loading-data-separately.png)
+![Two web parts on one page loading similar set of data separately](../../../images/guidance-sharingdata-loading-data-separately.png)
 
 A sample service responsible for loading the data could look like:
 
@@ -124,11 +124,11 @@ Notice, how loading the data has been moved from the specific methods to the **e
 
 If you look at the log in the developer tools, you will notice, that the remote API is now called only once.
 
-![One log statement referring to loading data for both web parts](../../../../images/guidance-sharingdata-reusing-data-global-variable-loading-message.png)
+![One log statement referring to loading data for both web parts](../../../images/guidance-sharingdata-reusing-data-global-variable-loading-message.png)
 
 Looking at the information messages, you can confirm, that when the second web part tries to load the data, it detects that the data is already being loaded. Once the data is loaded, it reuses the existing data rather than loading it itself.
 
-![Information message from the log showing how the second web part waits on data to be loaded](../../../../images/guidance-sharingdata-reusing-data-global-variable-waiting-message.png)
+![Information message from the log showing how the second web part waits on data to be loaded](../../../images/guidance-sharingdata-reusing-data-global-variable-waiting-message.png)
 
 Using a globally-scoped variable is the easiest way to exchange data between different web parts on the page. One downside of using this approach is, that the data is exposed not only to web parts but also to all other elements on the page. This introduces the risk of other elements on the page using the same variable as you to store their data, eventually overwriting your data.
 
@@ -201,15 +201,15 @@ In the example above the [js-cookie](https://www.npmjs.com/package/js-cookie) pa
 
 When you load the page in Microsoft Edge the first time, you will see that the data is retrieved once and reused by both web parts.
 
-![Log messages showing data being loaded once and the other web part waiting for the data to be loaded on the first request in Microsoft Edge](../../../../images/guidance-sharingdata-cookie-edge-first-request.png)
+![Log messages showing data being loaded once and the other web part waiting for the data to be loaded on the first request in Microsoft Edge](../../../images/guidance-sharingdata-cookie-edge-first-request.png)
 
 On subsequent requests, web part could directly reuse the previously loaded data without calling the remote API.
 
-![Log message showing data being loaded directly without calling the remote API on subsequent requests in Microsoft Edge](../../../../images/guidance-sharingdata-cookie-edge-subsequent-request.png)
+![Log message showing data being loaded directly without calling the remote API on subsequent requests in Microsoft Edge](../../../images/guidance-sharingdata-cookie-edge-subsequent-request.png)
 
 When loading the page in Google Chrome, you could see that the data is loaded twice from the remote API and is not being cached at all.
 
-![Log message showing data being loaded twice from the remote API despite using cookies](../../../../images/guidance-sharingdata-cookie-chrome.png)
+![Log message showing data being loaded twice from the remote API despite using cookies](../../../images/guidance-sharingdata-cookie-chrome.png)
 
 Different web browsers have different limits regarding how much data can be stored in a cookie. In this example, the retrieved data exceeds the maximum length of what can be stored in a cookie in Google Chrome. As a result, no cookie is being set and the data is loaded twice.
 
