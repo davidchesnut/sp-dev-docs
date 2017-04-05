@@ -79,12 +79,12 @@ You use the following Windows PowerShell cmdlets to customize ranking models:
   
 2. Run the following sequence of Windows PowerShell cmdlets.
     
-  ```
+```powershell
   
 $ssa = Get-SPEnterpriseSearchServiceApplication -Identity "Search Service Application"
 $owner = Get-SPenterpriseSearchOwner -Level ssa
 Get-SPEnterpriseSearchRankingModel -SearchApplication $ssa -Owner $owner
-  ```
+```
 
 
 ### To retrieve a default ranking model to use as a template
@@ -95,7 +95,7 @@ Get-SPEnterpriseSearchRankingModel -SearchApplication $ssa -Owner $owner
   
 2. Run the following sequence of Windows PowerShell cmdlets;  *filename.xml*  is the name of a file in which you want to save the ranking model.
     
-  ```
+  ```powershell
   
 $ssa = Get-SPEnterpriseSearchServiceApplication
 $owner = Get-SPenterpriseSearchOwner -Level ssa
@@ -117,7 +117,7 @@ If you install the SharePoint Server 2013 cumulative update of August 2013, you 
   
 2. Run the following sequence of Windows PowerShell cmdlets;  *filename.xml*  is the name of a file in which you want to save the ranking model.
     
-  ```
+  ```powershell
   
 $ssa = Get-SPEnterpriseSearchServiceApplication
 $owner = Get-SPenterpriseSearchOwner -Level ssa 
@@ -135,7 +135,7 @@ $twoLinearStagesRankingModel.RankingModelXML > filename.xml
   
 2. Run the following sequence of Windows PowerShell cmdlets using the GUID copied in step 1 for  _<GUID>_.
     
-  ```
+  ```powershell
   
 $ssa = Get-SPEnterpriseSearchServiceApplication
 $owner = Get-SPenterpriseSearchOwner -Level ssa
@@ -149,7 +149,7 @@ $rm.RankingModelXML > myrm.xml
   
 4. Create a new ranking model with the  [New-SPEnterpriseSearchRankingModel](http://technet.microsoft.com/en-us/library/ff607980.aspx) cmdlet by running the following commands.
     
-  ```
+  ```powershell
   
 $myRankingModel = Get-Content .\\myrm.xml
 $myRankingModel = [String]$myRankingModel
@@ -183,7 +183,7 @@ Conceptually, the overall format of the rank detail looks like the following exa
 
 
 
-```XML
+```xml
 
 <rank_log version='15.0.0000.1000' id='[internal guid of ranking model used for calculation]' >
     <query tree='[representation of user query used for ranking]'/>
@@ -215,7 +215,7 @@ To retrieve the rank detail, you need to be the administrator of the Search serv
   
 2. Run the following sequence of Windows PowerShell cmdlets, and substitute  _<query_text>_ and _<url>_ with actual values.
     
-  ```
+  ```powershell
   
 $app = Get-SPEnterpriseSearchServiceApplication
 $searchAppProxy =  Get-spenterprisesearchserviceapplicationproxy | Where-Object { ($_.ServiceEndpointUri.PathAndQuery -like $app.Uri.PathAndQuery)}
@@ -353,7 +353,7 @@ In addition, query terms that are under scope, for example,  `title:apple AND bo
 
 
 
-```XML
+```xml
 
 <BM25Main name="ContentRank" k1="1">
     <Layer1Weights>
@@ -378,7 +378,7 @@ In addition, query terms that are under scope, for example,  `title:apple AND bo
 
 
 
-```
+```xml
 
 <bm25 name='ContentRank'>
 <schema pid_mapping='[1:content::7:%default] [2:content::1:%default] [3:content::5:%default] [56:content::2:%default] [100:content::3:link] [10:content::6:link] [264:content::14:link] ' pids_not_mapped=''/>
@@ -444,11 +444,6 @@ Before the static rank feature can be aggregated with other rank features, each 
 
 **Table 1. Supported transform functions for the static and proximity rank features**
 
-  
-    
-    
-
-  
     
     
 ![Transform functions supported for rank features](images/sp15_transform_table_ranking_model.gif)
@@ -462,7 +457,7 @@ Before the static rank feature can be aggregated with other rank features, each 
 
 
 
-```XML
+```xml
 
 <Static name="clickdistance" default="5" propertyName="clickdistance">
     <Transform type="InvRational" k="0.27618729159042193" />
@@ -480,7 +475,7 @@ Before the static rank feature can be aggregated with other rank features, each 
 
 
 
-```
+```xml
 
 <static_feature name='clickdistance' property_name='clickdistance'
     used_default='1' raw_value='5' raw_value_transformed='5' 
@@ -511,7 +506,7 @@ Every document has an associated file type that the content processing component
 
 
 
-```XML
+```xml
 
 <BucketedStatic name="InternalFileType" default="0" propertyName="InternalFileType">
     <Bucket name="Html" value="0">
@@ -609,7 +604,7 @@ The following example is an excerpt from the default SharePoint Server 2013 rank
 
 
 
-```XML
+```xml
 
 <MinSpan name="Title_MinSpanExactDiscounted" default="0.43654446989518952" maxMinSpan="1" isExact="1" isDiscounted="1" propertyName="Title">
     <Normalize SDev="0.20833333333333334" Mean="0.375" />
@@ -637,7 +632,7 @@ You must map the managed properties used in proximity rank features to the defau
 
 
 
-```XML
+```xml
 
 <proximity_feature name='Title_MinSpanExactDiscounted' pid='2'
                    proximity_type='exact_discounted' 
@@ -668,7 +663,7 @@ The dynamic rank feature ranks an item depending on whether the query property m
 
 
 
-```XML
+```xml
 
 <Dynamic name="AnchortextComplete" pid="501" default="0" property="AnchortextCompleteQueryProperty">
     <Transform type="Rational" k="0.91495552365614574" />
@@ -718,7 +713,7 @@ Where:
 
 
 
-```XML
+```xml
 
 <Static name='freshboost' propertyName='LastModifiedTime' default='-1' convertPropertyToDatetime='1' rawValueTransform='compare' property='DateTimeUtcNow'>
     <Transform type="Freshness" constant="0.0333" futureValue="2" />
@@ -735,7 +730,7 @@ Where:
 
 
 
-```XML
+```xml
 
 <static_feature name='freshboost' property_name='LastModifiedTime' raw_value_transform='compare' used_default='0' property_value_found='1' property_value='9807115930137649186' raw_value='9.80661e+018' raw_value_transformed='-5.03135e+014' transformed='0.0490396' normalized='0.0490396' hidden_nodes_adds='0.0490396 '/>
 
@@ -748,7 +743,7 @@ Where:
 
 
 
-```XML
+```xml
 
 <static_feature name='freshboost' property_name='LastModifiedTime' raw_value_transform='compare' used_default='0' property_value_found='1' property_value='9807115934928966979' raw_value='9.80712e+018' raw_value_transformed='-2.55529e+011' transformed='0.990248' normalized='0.990248'hidden_nodes_adds='0.990248 '/>
 
@@ -962,7 +957,7 @@ This ranking model assumes that the customer has created a managed property name
     
     
 
-```XML
+```xml
 
 <?xml version="1.0"?>
 <RankingModel2Stage name="RankModel1"
@@ -1013,7 +1008,7 @@ This ranking model with one linear stage contains these four rank features:
     > [!NOTE]
       > The  `InternalFileType` managed property, available by default, uses the value zero ( `0`) to encode HTML documents, value  `1` for DOC, value `2` for XLS and so on. See the definition of the Default SharePoint rank model for a list of all file types used for the **FileType** managed property.
 
-```XML
+```xml
 
 <?xml version="1.0"?>
 <RankingModel2Stage name=" RankModel2"
