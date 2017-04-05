@@ -10,10 +10,6 @@ Demonstrates how SharePoint Server 2013 now relies on Workflow Manager 1.0 for a
  **Provided by:** [Andrew Connell](http://social.msdn.microsoft.com/profile/andrew%20connell%20%5bmvp%5d/),  [www.AndrewConnell.com](http://www.andrewconnell.com)
   
     
-    
-
-
-## 
 
 Microsoft has taken a different approach to workflows in SharePoint Server 2013 than in previous versions of SharePoint. The workflow team worked with the Azure team to create a new product called Workflow Manager. Workflow Manager hosts the latest version of the Windows Workflow Foundation runtime and all the necessary services in an available and scalable way. It takes advantage of the Microsoft Azure Service Bus for performance and scalability, and when deployed, it runs exactly the same in an on-premises deployment as in the cloud, similar to Office 365. SharePoint 2013 is then connected and configured to hand off all workflow execution and related tasks to the Workflow Manager farm.
   
@@ -266,7 +262,7 @@ Next, add the following markup to the bottom of each file, just before the closi
 
 
 
-```
+```xml
 
 <system.net>
   <defaultProxy enabled="true">
@@ -337,7 +333,7 @@ Next, configure Fiddler's connection options.
 
   
 
-     ![Figure 6. Fiddler connection options](images/ngDebuggingSP2013Workflows06.png)
+  ![Figure 6. Fiddler connection options](images/ngDebuggingSP2013Workflows06.png)
   
 
   
@@ -382,7 +378,8 @@ This process will configure Windows to trust the certificate, although SharePoin
   
     
     
- **Note**: If a security WRning appears with a message instructing not to trust the Fiddler certificate, click **Yes** to continue installing the certificate.
+ >[!NOTE]
+ > If a security WRning appears with a message instructing not to trust the Fiddler certificate, click **Yes** to continue installing the certificate.
   
     
     
@@ -402,14 +399,14 @@ The last step is to configure SharePoint to trust the Fiddler certificate that w
   
 3. Load the SharePoint 2013 Snap-In.
     
-  ```
+  ```powershell
   
 PS C:\\> Add-PSSnapIn Microsoft.SharePoint.PowerShell
   ```
 
 4. Use the certificate utility to install the Fiddler certificate.
     
-  ```
+  ```powershell
   PS C:\\> $fidderCertificatePath = [full path to exported FiddlerRoot.cer certificate file]
 PS C:\\> certutil.exe -addstore -enterprise -f -v root $fidderCertificatePath
 PS C:\\> $fiddlerCertificate = Get-PfxCertificate -FilePath $fidderCertificatePath
@@ -454,12 +451,10 @@ This walkthrough has the following prerequisites:
   
 2. Start Fiddler. While Fiddler will now intercept traffic from the current user, if there are any existing connections or processes running, Fiddler may miss those as it was not running when the connections were initially established. To force both Workflow Manager and SharePoint Server to recycle and have their traffic to each other get intercepted by Fiddler, recycle SharePoint by running an IISRESET and recycle Workflow Manager by stopping and starting the Windows service **Workflow Manager Backend**. This can be done with the following two commands at an administrative command prompt.
     
-  ```
-  
+  ```powershell  
 PS C:\\> IISRESET
 PS C:\\> net stop WorkflowServiceBackend
 PS C:\\> net start WorkflowServiceBackend
-
   ```
 
 3. Start the workflow.
