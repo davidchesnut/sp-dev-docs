@@ -243,11 +243,11 @@ Developers can write CMIS clients in any language. For example, a SharePoint dev
 ## Finding and interoperating with open source CMIS implementations
 <a name="SP15CMIS_OpenSource"> </a>
 
-Many open source projects exist and can be tested with the SharePoint 2013 implementation of the CMIS 1.0 standard. Some examples include the  [Apache Chemistry Project](http://chemistry.apache.org); the  [Open CMIS project](http://chemistry.apache.org/java/opencmis.mdl), which tests both client and server CMIS implementations with Java; the  [DotCMIS](http://chemistry.apache.org/dotnet/dotcmis.mdl) project for .NET client, the [cmislib, a CMIS client library for Python](http://code.google.com/p/cmislib/) project; and the [phpclient, a CMIS client library for PHP](http://chemistry.apache.org/php/phpclient.mdl).
+Many open source projects exist and can be tested with the SharePoint 2013 implementation of the CMIS 1.0 standard. Some examples include the  [Apache Chemistry Project](http://chemistry.apache.org); the  [Open CMIS project](http://chemistry.apache.org/java/opencmis.html), which tests both client and server CMIS implementations with Java; the  [DotCMIS](http://chemistry.apache.org/dotnet/dotcmis.mdl) project for .NET client, the [cmislib, a CMIS client library for Python](http://chemistry.apache.org/python/cmislib.html) project; and the [phpclient, a CMIS client library for PHP](http://chemistry.apache.org/php/phpclient.html).
   
     
     
-The  [CMIS Workbench](http://chemistry.apache.org/java/developing/tools/dev-tools-workbench.mdl) is a CMIS desktop client application for developers that supports browsing CMIS repositories and interactively testing CMIS development projects for Open CMIS. The Workbench is configurable through system properties. Using the expert login dialog box, developers can also configure additional properties.
+The  [CMIS Workbench](http://chemistry.apache.org/java/developing/tools/dev-tools-workbench.html) is a CMIS desktop client application for developers that supports browsing CMIS repositories and interactively testing CMIS development projects for Open CMIS. The Workbench is configurable through system properties. Using the expert login dialog box, developers can also configure additional properties.
   
     
     
@@ -295,10 +295,10 @@ CMIS 1.1 is not supported in SharePoint 2013, but the newer version of the CMIS 
 -  [Manage blocked file types](http://technet.microsoft.com/en-us/library/cc262496.aspx)
     
   
--  [OASIS Content Management Interoperability Specification (CMIS) version 1.0](http://docs.oasis-open.org/cmis/CMIS/v1.0/os/cmis-spec-v1.0.mdl)
+-  [OASIS Content Management Interoperability Specification (CMIS) version 1.0](http://docs.oasis-open.org/cmis/CMIS/v1.0/os/cmis-spec-v1.0.html)
     
   
--  [OASIS Content Management Interoperability Specification (CMIS) version 1.1](http://docs.oasis-open.org/cmis/CMIS/v1.1/cs01/CMIS-v1.1-cs01.mdl) (not supported in SharePoint 2013)
+-  [OASIS Content Management Interoperability Specification (CMIS) version 1.1](http://docs.oasis-open.org/cmis/CMIS/v1.1/cs01/CMIS-v1.1-cs01.html) (not supported in SharePoint 2013)
     
   
 
