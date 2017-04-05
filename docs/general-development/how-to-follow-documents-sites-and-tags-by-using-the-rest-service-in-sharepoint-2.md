@@ -53,7 +53,7 @@ To perform Following Content tasks by using the REST API, you send HTTP **GET** 
   
 
 > [!NOTE]
-> You also use these endpoints for Following People tasks, but the **followers** and **suggestions** resources available from **SocialRestFollowingManager** only support following people, not content. For more information about how you can use **SocialRestFollowingManager**, see  [Follow content in SharePoint 2013](follow-content-in-sharepoint.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint.md). 
+> You also use these endpoints for Following People tasks, but the **followers** and **suggestions** resources available from **SocialRestFollowingManager** only support following people, not content. For more information about how you can use **SocialRestFollowingManager**, see  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md) and [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md). 
   
     
     
@@ -122,19 +122,19 @@ If you're not using Napa on an Office 365 Developer Site, you'll need to meet th
   
 3. Set the permissions for your app:
     
-1. Choose the **Properties** button at the bottom of the page.
+   1. Choose the **Properties** button at the bottom of the page.
     
   
-2. In the **Properties** window, choose **Permissions**.
+   2. In the **Properties** window, choose **Permissions**.
     
   
-3. In the **Content** category, set **Write** permissions for the **Tenant** scope.
+   3. In the **Content** category, set **Write** permissions for the **Tenant** scope.
     
   
-4. In the **Social** category, set **Read** permissions for the **User Profiles** scope.
+   4. In the **Social** category, set **Read** permissions for the **User Profiles** scope.
     
   
-5. Close the **Properties** window.
+   5. Close the **Properties** window.
     
   
 4. Expand the **Scripts** node, choose the App.js file and replace its contents with the code from one of the following scenarios:
@@ -505,7 +505,7 @@ The following code example represents the contents of the App.js file and shows 
 - Read the JSON response returned by the  `isfollowed` request and the `follow` request. (The `stopfollowing` request doesn't return anything in the response.) For more information, see [Example JSON responses](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bk_exampleResponses).
     
   
-Before you run the code, change the placeholder value for the **tagGuid** variable to the GUID of an existing tag. The taxonomy API that you use to retrieve a tag from the **HashTagsTermSet** doesn't have a REST interface, so you have to use the .NET client object model or the JavaScript object model. See [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint.md#bk_getTagGuid) for an example.
+Before you run the code, change the placeholder value for the **tagGuid** variable to the GUID of an existing tag. The taxonomy API that you use to retrieve a tag from the **HashTagsTermSet** doesn't have a REST interface, so you have to use the .NET client object model or the JavaScript object model. See [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid) for an example.
   
     
     
@@ -644,7 +644,7 @@ function requestFailed(xhr, ajaxOptions, thrownError) {
 ```
 
 
-## Code example Get followed content by using the SharePoint 2013 REST service
+## Code example: Get followed content by using the SharePoint 2013 REST service
 <a name="bkmk_GetFollowed"> </a>
 
 The following code example represents the contents of the App.js file and shows how to:
@@ -777,12 +777,12 @@ Table 1 shows **SocialFollowResult** status codes and their values.
 
 **Table 1. SocialFollowResult codes and values**
 
-|||
+|**Status code**|**Value**|
 |:-----|:-----|
-|0  <br/> |**OK**. The current user is now following the actor.  <br/> |
-|1  <br/> |**AlreadyFollowing**. The current user is already following the actor.  <br/> |
-|2  <br/> |**LimitReached**. The request failed because an internal limit was reached.  <br/> |
-|3  <br/> |**InternalError**. The request failed due to an internal error.  <br/> |
+|0|**OK**. The current user is now following the actor.|
+|1|**AlreadyFollowing**. The current user is already following the actor.|
+|2|**LimitReached**. The request failed because an internal limit was reached.|
+|3|**InternalError**. The request failed due to an internal error.|
    
 
 > [!NOTE]
@@ -913,10 +913,10 @@ The following response represents a count of three followed documents, sites, an
 <a name="bkmk_AddtionalResources"> </a>
 
 
--  [Follow content in SharePoint 2013](follow-content-in-sharepoint.md)
+-  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md)
     
   
--  [Following people and content REST API reference for SharePoint 2013](following-people-and-content-rest-api-reference-for-sharepoint.md)
+-  [Following people and content REST API reference for SharePoint 2013](following-people-and-content-rest-api-reference-for-sharepoint-2013.md)
     
   
 -  [How to: Follow documents and sites by using the .NET client object model in SharePoint 2013](how-to-follow-documents-and-sites-by-using-the-net-client-object-model-in-sharep.md)

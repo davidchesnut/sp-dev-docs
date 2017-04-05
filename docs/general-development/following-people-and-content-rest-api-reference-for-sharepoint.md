@@ -25,9 +25,21 @@ We recommend that you use the **SocialRestFollowingManager** API for Following P
 <a name="bk_Overview"> </a>
 
 
-||
-|:-----|
-| [Follow](#bk_Follow)           [StopFollowing](#bk_StopFollowing)           [IsFollowed](#bk_IsFollowed)           [My](#bk_My)           [My/FollowedDocumentsUri](#bk_MyFollowedDocumentsUri)           [My/FollowedSitesUri](#bk_MyFollowedSitesUri)           [My/Followed](#bk_Followed)           [My/FollowedCount](#bk_FollowedCount)           [My/Followers](#bk_Followers)           [My/Suggestions](#bk_Suggestions)           [GetMySuggestions](#bk_GetMySuggestions)           [IsMyPeopleListPublic](#bk_IsMyPeopleListPublic)           [AmIFollowedBy](#bk_AmIFollowedBy)           [GetPeopleFollowedBy](#bk_GetPeopleFollowedBy)           [GetFollowersFor](#bk_GetFollowersFor)|
+[Follow](#bk_Follow)  
+[StopFollowing](#bk_StopFollowing)  
+[IsFollowed](#bk_IsFollowed)  
+[My](#bk_My)  
+[My/FollowedDocumentsUri](#bk_MyFollowedDocumentsUri)  
+[My/FollowedSitesUri](#bk_MyFollowedSitesUri)  
+[My/Followed](#bk_Followed)  
+[My/FollowedCount](#bk_FollowedCount)  
+[My/Followers](#bk_Followers)  
+[My/Suggestions](#bk_Suggestions)  
+[GetMySuggestions](#bk_GetMySuggestions)  
+[IsMyPeopleListPublic](#bk_IsMyPeopleListPublic)  
+[AmIFollowedBy](#bk_AmIFollowedBy)  
+[GetPeopleFollowedBy](#bk_GetPeopleFollowedBy)  
+[GetFollowersFor](#bk_GetFollowersFor)  
    
 
 ## Follow
@@ -82,7 +94,7 @@ http://<siteCollection>/<site>/_api/social.following/follow(ActorType=0,AccountN
 "actor":{
   "__metadata":{"type":"SP.Social.SocialActorInfo"},
   "ActorType":0,
-  "AccountName":"domain\\\\user",
+  "AccountName":"domain\\user",
   "Id":null
 }
 ```
@@ -175,7 +187,7 @@ http://<siteCollection>/<site>/_api/social.following/follow(ActorType=3,TagGuid=
 }
 ```
 
-You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint.md#bk_getTagGuid).
+You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid).
   
     
     
@@ -258,7 +270,7 @@ http://<siteCollection>/<site>/_api/social.following/stopfollowing(ActorType=0,A
 "actor":{
   "__metadata":{"type":"SP.Social.SocialActorInfo"},
   "ActorType":0,
-  "AccountName":"domain\\\\user",
+  "AccountName":"domain\\user",
   "Id":null
 }
 ```
@@ -351,7 +363,7 @@ http://<siteCollection>/<site>/_api/social.following/stopfollowing(ActorType=3,T
 }
 ```
 
-You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint.md#bk_getTagGuid).
+You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid).
   
     
     
@@ -420,7 +432,7 @@ http://<siteCollection>/<site>/_api/social.following/isfollowed(ActorType=0,Acco
 "actor":{
   "__metadata":{"type":"SP.Social.SocialActorInfo"},
   "ActorType":0,
-  "AccountName":"domain\\\\user",
+  "AccountName":"domain\\user",
   "Id":null
 }
 ```
@@ -513,7 +525,7 @@ http://<siteCollection>/<site>/_api/social.following/isfollowed(ActorType=3,TagG
 }
 ```
 
-You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint.md#bk_getTagGuid).
+You need the tag GUID to start following a tag. You can't get the GUID by using the REST service, but you can use the .NET client object model or the JavaScript object model. See  [How to get a tag's GUID based on the tag's name by using the JavaScript object model](follow-content-in-sharepoint-2013.md#bk_getTagGuid).
   
     
     
@@ -929,7 +941,7 @@ The following response represents one user who is following the current user.
 ```
 {"d":{"Followers":{"results":[
   {"__metadata":{"type":"SP.Social.SocialActor"},
-  "AccountName":"domain\\\\user",
+  "AccountName":"domain\\user",
   "ActorType":0, 
   "CanFollow":true, 
   "ContentUri":null, 
@@ -959,7 +971,7 @@ Gets users who the current user might want to follow.
     
 
 > [!NOTE]
-> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint.md#bk_PeopleSuggestions). 
+> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint-2013.md#bk_PeopleSuggestions). 
   
     
     
@@ -1003,7 +1015,7 @@ Gets users who the current user might want to follow.
     
 
 > [!NOTE]
-> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint.md#bk_PeopleSuggestions). 
+> People Suggestions functionality depends on users' following activities, search crawls, and search analytics. See  [How People Suggestions works on SharePoint Online](follow-people-in-sharepoint-2013.md#bk_PeopleSuggestions). 
   
     
     
@@ -1209,12 +1221,12 @@ The following response represents two users followed by the specified user.
     "uri":"http://server/sites/dev/_api/SP.UserProfiles.PersonPropertiesa776ccd0-5566-47d2-9d59-3422cf1fb362",
     "type":"SP.UserProfiles.PersonProperties"
   },
-  "AccountName":"domain\\\\user1",
+  "AccountName":"domain\\user1",
   "DirectReports":{"results":[]},
   "DisplayName":"User Name",
   "Email":"user@domain.com",
   "ExtendedManagers":{"results":[]},
-  "ExtendedReports":{"results":["domain\\\\user1"]},
+  "ExtendedReports":{"results":["domain\\user1"]},
   "IsFollowed":true,
   "LatestPost":null,
   "Peers":{"results":[]},
@@ -1225,7 +1237,7 @@ The following response represents two users followed by the specified user.
     {"__metadata":{"type":"SP.KeyValue"},"Key":"UserProfile_GUID","Value":"00093edb-336e-47ac-8791-bab0a0b77c5d","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SID","Value":"S-1-5-09-4830882673-197582990-1037597527-29477","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"ADGuid","Value":"","ValueType":"Edm.String"},
-    {"__metadata":{"type":"SP.KeyValue"},"Key":"AccountName","Value":"domain\\\\user1","ValueType":"Edm.String"},
+    {"__metadata":{"type":"SP.KeyValue"},"Key":"AccountName","Value":"domain\\user1","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"FirstName","Value":"User","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SPS-PhoneticFirstName","Value":"","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"LastName","Value":"Name","ValueType":"Edm.String"},
@@ -1293,12 +1305,12 @@ The following response represents two users followed by the specified user.
     "id":"http://server/sites/dev/_api/SP.UserProfiles.PersonPropertiesf0ddf6e4-e69c-453f-9a7f-44e0e47d89d4",
     "uri":"http://server/sites/dev/_api/SP.UserProfiles.PersonPropertiesf0ddf6e4-e69c-453f-9a7f-44e0e47d89d4",
     "type":"SP.UserProfiles.PersonProperties"},
-  "AccountName":"domain\\\\user2",
+  "AccountName":"domain\\user2",
   "DirectReports":{"results":[]},
   "DisplayName":"User Name",
   "Email":"user2@company.com", 
   "ExtendedManagers":{"results":[]},
-  "ExtendedReports":{"results":["domain\\\\user2"]},
+  "ExtendedReports":{"results":["domain\\user2"]},
   "IsFollowed":true,"LatestPost":null, 
   "Peers":{"results":[]},
   "PersonalUrl":"http://server/my/Person.aspx?accountname=domain%5Cuser2",
@@ -1308,7 +1320,7 @@ The following response represents two users followed by the specified user.
     {"__metadata":{"type":"SP.KeyValue"},"Key":"UserProfile_GUID","Value":"40deca2e-6231-43f9-9559-9a51b0135067","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SID","Value":" S-1-5-09-4830882673-197582990-1037597527-0688328","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"ADGuid","Value":"","ValueType":"Edm.String"},
-    {"__metadata":{"type":"SP.KeyValue"},"Key":"AccountName","Value":"domain\\\\user2","ValueType":"Edm.String"},
+    {"__metadata":{"type":"SP.KeyValue"},"Key":"AccountName","Value":"domain\\user2","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"FirstName","Value":"User","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SPS-PhoneticFirstName","Value":"","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"LastName","Value":"Name","ValueType":"Edm.String"},
@@ -1439,12 +1451,12 @@ The following response represents a user who is following the specified user.
     "uri":"http://server/sites/dev/_api/SP.UserProfiles.PersonPropertiesabe0c40e-ce77-4631-9fc9-ec20b859061c",
     "type":"SP.UserProfiles.PersonProperties"
   },
-  "AccountName":"domain\\\\user",
+  "AccountName":"domain\\user",
   "DirectReports":{"results":[]},
   "DisplayName":"User Name",
   "Email":"user@domain.com",
   "ExtendedManagers":{"results":[]},
-  "ExtendedReports":{"results":["domain\\\\user"]},
+  "ExtendedReports":{"results":["domain\\user"]},
   "IsFollowed":false,
   "LatestPost":"#tally",
   "Peers":{"results":[]},
@@ -1455,7 +1467,7 @@ The following response represents a user who is following the specified user.
     {"__metadata":{"type":"SP.KeyValue"},"Key":"UserProfile_GUID","Value":"fa59ba73-edd4-4dc9-97d1-8ada702aae7f","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SID","Value":" S-1-5-09-4830882673-197582990-1037597527-002428","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"ADGuid","Value":"","ValueType":"Edm.String"},
-    {"__metadata":{"type":"SP.KeyValue"},"Key":"AccountName","Value":"domain\\\\user","ValueType":"Edm.String"},
+    {"__metadata":{"type":"SP.KeyValue"},"Key":"AccountName","Value":"domain\\user","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"FirstName","Value":"User","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SPS-PhoneticFirstName","Value":"","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"LastName","Value":"Name","ValueType":"Edm.String"},
@@ -1467,7 +1479,7 @@ The following response represents a user who is following the specified user.
     {"__metadata":{"type":"SP.KeyValue"},"Key":"Title","Value":"MARKETING DIRECTOR","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SPS-JobTitle","Value":"MARKETING DIRECTOR","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"SPS-Department","Value":"Marketing","ValueType":"Edm.String"},
-    {"__metadata":{"type":"SP.KeyValue"},"Key":"Manager","Value":"DOMAIN\\\\randalli","ValueType":"Edm.String"},
+    {"__metadata":{"type":"SP.KeyValue"},"Key":"Manager","Value":"DOMAIN\\randalli","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"AboutMe","Value":"","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"PersonalSpace","Value":"/my/personal/user/","ValueType":"Edm.String"},
     {"__metadata":{"type":"SP.KeyValue"},"Key":"PictureURL","Value":"","ValueType":"Edm.String"},
@@ -1556,12 +1568,12 @@ The following response represents a user who is following the specified user.
 -  [How to: Follow documents, sites, and tags by using the REST service in SharePoint 2013](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md)
     
   
--  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint.md)
+-  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint-2013.md)
     
   
 -  [SharePoint User Profiles JavaScript Reference (sp.userprofiles.js)](http://msdn.microsoft.com/library/80cf5436-6aa2-6f11-a782-66a04f6e2fb0%28Office.15%29.aspx)
     
   
--  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint.md)
+-  [Get started developing with social features in SharePoint 2013](get-started-developing-with-social-features-in-sharepoint-2013.md)
     
   

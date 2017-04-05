@@ -8,35 +8,33 @@ ms.assetid: 8852ce36-8309-45a7-a141-2e10ac17a123
 
 # Get started developing with social features in SharePoint 2013
 Get started programming with SharePoint 2013 social feeds and microblog posts, following people and content (documents, sites, and tags), and working with user profiles.
- **In this article**
+
+    
+ [How can I use social features in apps and solutions?](get-started-developing-with-social-features-in-sharepoint-2013.md#bk_HowToUseSocialFeatures)
   
     
     
- [How can I use social features in apps and solutions?](get-started-developing-with-social-features-in-sharepoint.md#bk_HowToUseSocialFeatures)
+ [Setting up the development environment](get-started-developing-with-social-features-in-sharepoint-2013.md#DevEnvironment)
   
     
     
- [Setting up the development environment](get-started-developing-with-social-features-in-sharepoint.md#DevEnvironment)
+ [Development scenarios for social features](get-started-developing-with-social-features-in-sharepoint-2013.md#DevScenarios)
   
     
     
- [Development scenarios for social features](get-started-developing-with-social-features-in-sharepoint.md#DevScenarios)
+ [How-tos for programming with social features](get-started-developing-with-social-features-in-sharepoint-2013.md#bk_GetStarted)
   
     
     
- [How-tos for programming with social features](get-started-developing-with-social-features-in-sharepoint.md#bk_GetStarted)
+ [APIs for programming with social features](get-started-developing-with-social-features-in-sharepoint-2013.md#SocialApis)
   
     
     
- [APIs for programming with social features](get-started-developing-with-social-features-in-sharepoint.md#SocialApis)
+ [App permission requests for accessing social features](get-started-developing-with-social-features-in-sharepoint-2013.md#bkmk_AppPerms)
   
     
     
- [App permission requests for accessing social features](get-started-developing-with-social-features-in-sharepoint.md#bkmk_AppPerms)
-  
-    
-    
- [Additional resources](get-started-developing-with-social-features-in-sharepoint.md#bk_AddResources)
+ [Additional resources](get-started-developing-with-social-features-in-sharepoint-2013.md#bk_AddResources)
   
     
     
@@ -53,7 +51,7 @@ The features described in this article align to the people, feeds, and following
   
     
     
-Before you start developing, you should know where your code will run, what SharePoint environment it will run on, and what functionality it will provide. These factors help you choose the kind of app to create and which API or APIs to use. See  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint.md),  [SharePoint Add-ins compared with SharePoint solutions](sharepoint-add-ins-compared-with-sharepoint-solutions.md), and  [Deciding between SharePoint Add-ins and SharePoint solutions](deciding-between-sharepoint-add-ins-and-sharepoint-solutions.md) for information that can help you decide.
+Before you start developing, you should know where your code will run, what SharePoint environment it will run on, and what functionality it will provide. These factors help you choose the kind of app to create and which API or APIs to use. See  [Choose the right API set in SharePoint 2013](choose-the-right-api-set-in-sharepoint-2013.md) and [SharePoint Add-ins compared with SharePoint solutions](sharepoint-add-ins-compared-with-sharepoint-solutions.md) for information that can help you decide.
   
     
     
@@ -80,7 +78,7 @@ To get started developing with social features, you'll need:
 Napa (only for developing SharePoint-hosted apps on an Office 365 Developer Site)
     
   
-For more guidance, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint.md) and [Configure social computing features in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/fp161267%28v=office.15%29.aspx).
+For more guidance, see  [Set up a general development environment for SharePoint 2013](set-up-a-general-development-environment-for-sharepoint-2013.md) and [Configure social computing features in SharePoint Server 2013](http://technet.microsoft.com/en-us/library/fp161267%28v=office.15%29.aspx).
   
     
     
@@ -97,16 +95,16 @@ The following articles describe the primary APIs and programming tasks for the p
     
     
 
--  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint.md)
+-  [Work with social feeds in SharePoint 2013](work-with-social-feeds-in-sharepoint-2013.md)
     
   
--  [Follow people in SharePoint 2013](follow-people-in-sharepoint.md)
+-  [Follow people in SharePoint 2013](follow-people-in-sharepoint-2013.md)
     
   
--  [Follow content in SharePoint 2013](follow-content-in-sharepoint.md)
+-  [Follow content in SharePoint 2013](follow-content-in-sharepoint-2013.md)
     
   
--  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint.md)
+-  [Work with user profiles in SharePoint 2013](work-with-user-profiles-in-sharepoint-2013.md)
     
   
 
@@ -123,19 +121,19 @@ After you set up your development environment and choose your scenario, you can 
 
 |**Feature area**|**Description**|
 |:-----|:-----|
-| [How to: Learn to read and write to the social feed by using the .NET client object model in SharePoint 2013](how-to-learn-to-read-and-write-to-the-social-feed-by-using-the-net-client-object.md) <br/> |Walk through detailed steps for creating an application that reads and writes to the social feed by using the .NET client object model.  <br/> |
-| [How to: Learn to read and write to the social feed by using the REST service in SharePoint 2013](how-to-learn-to-read-and-write-to-the-social-feed-by-using-the-rest-service-in-s.md) <br/> |Walk through detailed steps for creating an application that reads and writes to the social feed by using the REST service.  <br/> |
-| [How to: Create and delete posts and retrieve the social feed by using the .NET client object model in SharePoint 2013](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-net-cli.md) <br/> |Learn how to create and delete and microblog posts and retrieve social feeds by using the .NET client object model.  <br/> |
-| [How to: Create and delete posts and retrieve the social feed by using the JavaScript object model in SharePoint 2013](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-javascr.md) <br/> |Learn how to create and delete and microblog posts and retrieve social feeds by using the JavaScript object model.  <br/> |
-| [How to: Include mentions, tags, and links to sites and documents in posts in SharePoint Server 2013](how-to-include-mentions-tags-and-links-to-sites-and-documents-in-posts-in-sharep.md) <br/> |Learn how to add **SocialDataItem** objects to microblog posts, which render as mentions, tags, and links in social feeds. <br/> |
-| [How to: Embed images, videos, and documents in posts in SharePoint Server 2013](how-to-embed-images-videos-and-documents-in-posts-in-sharepoint-server.md) <br/> |Learn how to add **SocialAttachment** objects to microblog posts, which render as embedded pictures, videos, and documents in social feeds. <br/> |
-| [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint.md) <br/> |Learn how to work with Following People features by using the .NET client object model.  <br/> |
-| [How to: Follow people by using the JavaScript object model in SharePoint 2013](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md) <br/> |Learn how to work with Following People features by using the JavaScript object model.  <br/> |
-| [How to: Follow documents and sites by using the .NET client object model in SharePoint 2013](how-to-follow-documents-and-sites-by-using-the-net-client-object-model-in-sharep.md) <br/> |Learn how to work with Following Content features by using the .NET client object model.  <br/> |
-| [How to: Follow documents, sites, and tags by using the REST service in SharePoint 2013](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md) <br/> |Learn how to work with Following Content features by using the REST service.  <br/> |
-| [How to: Retrieve user profile properties by using the .NET client object model in SharePoint 2013](how-to-retrieve-user-profile-properties-by-using-the-net-client-object-model-in.md) <br/> |Learn how to retrieve user profile properties by using the .NET client object model.  <br/> |
-| [How to: Retrieve user profile properties by using the JavaScript object model in SharePoint 2013](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md) <br/> |Learn how to retrieve user profile properties by using the JavaScript object model.  <br/> |
-| [How to: Work with user profiles and organization profiles by using the server object model in SharePoint 2013](how-to-work-with-user-profiles-and-organization-profiles-by-using-the-server-obj.md) <br/> |Learn how to create, retrieve, and manage user profiles and properties by using the server object model.  <br/> |
+| [How to: Learn to read and write to the social feed by using the .NET client object model in SharePoint 2013](how-to-learn-to-read-and-write-to-the-social-feed-by-using-the-net-client-object.md)|Walk through detailed steps for creating an application that reads and writes to the social feed by using the .NET client object model.|
+| [How to: Learn to read and write to the social feed by using the REST service in SharePoint 2013](how-to-learn-to-read-and-write-to-the-social-feed-by-using-the-rest-service-in-s.md)|Walk through detailed steps for creating an application that reads and writes to the social feed by using the REST service.|
+| [How to: Create and delete posts and retrieve the social feed by using the .NET client object model in SharePoint 2013](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-net-cli.md)|Learn how to create and delete and microblog posts and retrieve social feeds by using the .NET client object model.|
+| [How to: Create and delete posts and retrieve the social feed by using the JavaScript object model in SharePoint 2013](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-javascr.md)|Learn how to create and delete and microblog posts and retrieve social feeds by using the JavaScript object model.|
+| [How to: Include mentions, tags, and links to sites and documents in posts in SharePoint Server 2013](how-to-include-mentions-tags-and-links-to-sites-and-documents-in-posts-in-sharep.md)|Learn how to add **SocialDataItem** objects to microblog posts, which render as mentions, tags, and links in social feeds.|
+| [How to: Embed images, videos, and documents in posts in SharePoint Server 2013](how-to-embed-images-videos-and-documents-in-posts-in-sharepoint-server-2013.md)|Learn how to add **SocialAttachment** objects to microblog posts, which render as embedded pictures, videos, and documents in social feeds.|
+| [How to: Follow people by using the .NET client object model in SharePoint 2013](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint-2013.md)|Learn how to work with Following People features by using the .NET client object model.|
+| [How to: Follow people by using the JavaScript object model in SharePoint 2013](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint-2013.md)|Learn how to work with Following People features by using the JavaScript object model.|
+| [How to: Follow documents and sites by using the .NET client object model in SharePoint 2013](how-to-follow-documents-and-sites-by-using-the-net-client-object-model-in-sharep.md)|Learn how to work with Following Content features by using the .NET client object model.|
+| [How to: Follow documents, sites, and tags by using the REST service in SharePoint 2013](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md)|Learn how to work with Following Content features by using the REST service.|
+| [How to: Retrieve user profile properties by using the .NET client object model in SharePoint 2013](how-to-retrieve-user-profile-properties-by-using-the-net-client-object-model-in.md)|Learn how to retrieve user profile properties by using the .NET client object model.|
+| [How to: Retrieve user profile properties by using the JavaScript object model in SharePoint 2013](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md)|Learn how to retrieve user profile properties by using the JavaScript object model.|
+| [How to: Work with user profiles and organization profiles by using the server object model in SharePoint 2013](how-to-work-with-user-profiles-and-organization-profiles-by-using-the-server-obj.md)|Learn how to create, retrieve, and manage user profiles and properties by using the server object model.|
    
 
 ### APIs for programming with SharePoint 2013 social features
@@ -151,12 +149,12 @@ Although apps and solutions access SharePoint differently, after you do access S
 
 |**API name**|**Source and path**|
 |:-----|:-----|
-| [.NET client object model](http://msdn.microsoft.com/library/9cc3f70c-78ac-4d2d-b46e-77522ee5d937%28Office.15%29.aspx) <br/> |Microsoft.SharePoint.Client.UserProfiles.dll          in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI  <br/> |
-|Silverlight client object model  <br/> |Microsoft.SharePoint.Client.UserProfiles.Silverlight.dll          in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS\\ClientBin  <br/> |
-|Mobile client object model  <br/> |Microsoft.SharePoint.Client.UserProfiles.Phone.dll          in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS\\ClientBin  <br/> |
-| [JavaScript object model](http://msdn.microsoft.com/library/95cb5427-8514-4e9a-8eee-7ed4b82ec01b%28Office.15%29.aspx) <br/> |SP.UserProfiles.js          in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS  <br/> |
-|Representational State Transfer (REST) service  <br/> | [http://<site url>/_api/social.feed](social-feed-rest-api-reference-for-sharepoint.md)           [http://<site url>/_api/social.following](following-people-and-content-rest-api-reference-for-sharepoint.md)           [http://<site url>/_api/SP.UserProfiles.PeopleManager](http://msdn.microsoft.com/library/10757ed1-6e86-474f-89e0-6dec6aa66a2b%28Office.15%29.aspx#bk_PeopleManager) <br/> |
-| [Server object model](http://msdn.microsoft.com/library/87c5118c-ac0e-4bd9-a75f-7452a9eb0e41%28Office.15%29.aspx) <br/> |Microsoft.Office.Server.UserProfiles.dll          in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI  <br/> |
+| [.NET client object model](http://msdn.microsoft.com/library/9cc3f70c-78ac-4d2d-b46e-77522ee5d937%28Office.15%29.aspx)|Microsoft.SharePoint.Client.UserProfiles.dll<br/>in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI|
+|Silverlight client object model|Microsoft.SharePoint.Client.UserProfiles.Silverlight.dll<br/>in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS\\ClientBin|
+|Mobile client object model|Microsoft.SharePoint.Client.UserProfiles.Phone.dll<br/>in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS\\ClientBin|
+| [JavaScript object model](http://msdn.microsoft.com/library/95cb5427-8514-4e9a-8eee-7ed4b82ec01b%28Office.15%29.aspx)|SP.UserProfiles.js<br/>in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\TEMPLATE\\LAYOUTS|
+|Representational State Transfer (REST) service| [`http://<site url>/_api/social.feed`](social-feed-rest-api-reference-for-sharepoint-2013.md)<br/>[`http://<site url>/_api/social.following`](following-people-and-content-rest-api-reference-for-sharepoint-2013.md)<br/>[`http://<site url>/_api/SP.UserProfiles.PeopleManager`](http://msdn.microsoft.com/library/10757ed1-6e86-474f-89e0-6dec6aa66a2b%28Office.15%29.aspx#bk_PeopleManager)|
+| [Server object model](http://msdn.microsoft.com/library/87c5118c-ac0e-4bd9-a75f-7452a9eb0e41%28Office.15%29.aspx)|Microsoft.Office.Server.UserProfiles.dll<br/>in %ProgramFiles%\\Common Files\\Microsoft Shared\\web server extensions\\15\\ISAPI|
    
 
 > [!NOTE]
@@ -183,10 +181,10 @@ App permission requests are scoped to the SharePoint deployment landscape. Table
 
 |**Scope name**|**Description**|**Available rights**|
 |:-----|:-----|:-----|
-|User Profiles          ( `http://sharepoint/social/tenant`)  <br/> |The permission request scope used to access all user profiles. Only the profile picture can be changed; all other user profile properties are read-only for SharePoint Add-ins. Must be installed by a tenant administrator.  <br/> |Read, Write, Manage, FullControl  <br/> |
-|Core          ( `http://sharepoint/social/core`)  <br/> |The permission request scope used to access the user's followed content and shared metadata that is used by microblogging features. This scope applies only to personal sites that support following content. If the app installs on any other type of site, use the Tenant scope.  <br/> |Read, Write, Manage, FullControl  <br/> |
-|News Feed          ( `http://sharepoint/social/microfeed`)  <br/> |The permission request scope used to access the user's feed or the team feed. This scope applies to personal sites that support microblogging or to team sites where the **Site Feed** feature is activated. If the app installs on any other type of site, use the Tenant scope. <br/> |Read, Write, Manage, FullControl  <br/> |
-| `http://sharepoint/social/trimming` <br/> |This permission request scope used to determine whether to display security-trimmed content in the social feed to apps. If this high-trust permission is not granted, some content (such as activities about documents and sites that the app doesn't have permissions to) is trimmed from the feed data that's returned to the app, even if the user has sufficient permissions. This permission must be manually added to the app's manifest file.  <br/> |Read, Write, Manage, FullControl  <br/> |
+|User Profiles<br/>`http://sharepoint/social/tenant`|The permission request scope used to access all user profiles. Only the profile picture can be changed; all other user profile properties are read-only for SharePoint Add-ins. Must be installed by a tenant administrator.|Read, Write, Manage, FullControl|
+|Core<br/>`http://sharepoint/social/core`|The permission request scope used to access the user's followed content and shared metadata that is used by microblogging features. This scope applies only to personal sites that support following content. If the app installs on any other type of site, use the Tenant scope.|Read, Write, Manage, FullControl|
+|News Feed<br/>`http://sharepoint/social/microfeed`|The permission request scope used to access the user's feed or the team feed. This scope applies to personal sites that support microblogging or to team sites where the **Site Feed** feature is activated. If the app installs on any other type of site, use the Tenant scope.|Read, Write, Manage, FullControl|
+| `http://sharepoint/social/trimming`|This permission request scope used to determine whether to display security-trimmed content in the social feed to apps. If this high-trust permission is not granted, some content (such as activities about documents and sites that the app doesn't have permissions to) is trimmed from the feed data that's returned to the app, even if the user has sufficient permissions. This permission must be manually added to the app's manifest file.|Read, Write, Manage, FullControl|
    
 
 ### What you'll need to consider when requesting app permissions
@@ -226,7 +224,7 @@ You should be aware of the following considerations when you specify app permiss
     
     
 
--  [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint.md)
+-  [Social and collaboration features in SharePoint 2013](social-and-collaboration-features-in-sharepoint-2013.md)
     
   
 -  [What's new for developers in social and collaboration features in SharePoint 2013](what-s-new-for-developers-in-social-and-collaboration-features-in-sharepoint-201.md)
@@ -252,10 +250,10 @@ You should be aware of the following considerations when you specify app permiss
 -  [SP.UserProfiles.js JavaScript Reference](http://msdn.microsoft.com/library/80cf5436-6aa2-6f11-a782-66a04f6e2fb0%28Office.15%29.aspx)
     
   
--  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint.md)
+-  [Social feed REST API reference for SharePoint 2013](social-feed-rest-api-reference-for-sharepoint-2013.md)
     
   
--  [Following people and content REST API reference for SharePoint 2013](following-people-and-content-rest-api-reference-for-sharepoint.md)
+-  [Following people and content REST API reference for SharePoint 2013](following-people-and-content-rest-api-reference-for-sharepoint-2013.md)
     
   
 -  [User profiles REST API reference](http://msdn.microsoft.com/library/10757ed1-6e86-474f-89e0-6dec6aa66a2b%28Office.15%29.aspx)
