@@ -157,13 +157,11 @@ In order for the workflow to function properly it must be granted full control i
     The following figure shows an example.
     
 
-   **Figure: The appinv.aspx page and URL example**
+ **Figure: The appinv.aspx page and URL example**
 
   
 
-     ![The appinv.aspx URL example and page.](images/SPD15-WFAppPermissions4.png)
-  
-
+  ![The appinv.aspx URL example and page.](images/SPD15-WFAppPermissions4.png)
   
 
   
@@ -172,47 +170,36 @@ In order for the workflow to function properly it must be granted full control i
   
 7. Paste the following **Permissions Request** XML to grant full control permission.
     
-  ```
-  
+``` xml 
 <AppPermissionRequests>
     <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="FullControl" />
 </AppPermissionRequests>
 
-  ```
+```
 
 
-    > [!CAUTION]
-      > There are no placeholders in the **Scope** value above. It is a literal value. Enter it exactly as it appears here.
+> [!CAUTION]
+> There are no placeholders in the **Scope** value above. It is a literal value. Enter it exactly as it appears here.
 
-    The following figure shows an example of the completed page.
+  The following figure shows an example of the completed page.
     
 
-   **Figure: Looking up an App Id**
+  **Figure: Looking up an App Id**
 
   
 
-     ![Looking up an App Id.](images/SPD15-WFAppPermissions5.png)
-  
+  ![Looking up an App Id.](images/SPD15-WFAppPermissions5.png)
 
-  
 
-  
 8. Click **Create**.
     
   
 9. You will then be asked to trust the Workflow app, as shown in the figure. Click **Trust It**.
     
-   **Figure: Trust the Workflow app**
+  **Figure: Trust the Workflow app**
 
+  ![Trust the Workflow app.](images/SPD15-WFAppPermissions6.png)
   
-
-     ![Trust the Workflow app.](images/SPD15-WFAppPermissions6.png)
-  
-
-  
-
-  
-
 ### Wrapping actions inside an App Step
 
 Finally, you need to wrap the workflow actions inside an App Step. The following procedure wraps a **Send an Email** action inside an App Step. The workflow in this example sends an acknowledgement email message from a custom list.
@@ -234,11 +221,11 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
   
 4. Create a new List Workflow for the App Demo list, as shown in the figure.
     
-   **Figure: Create a new List workflow**
+  **Figure: Create a new List workflow**
 
   
 
-     ![Create a new List workflow.](images/SPD15-WFAppPermissions7.png)
+  ![Create a new List workflow.](images/SPD15-WFAppPermissions7.png)
   
 
   
@@ -246,11 +233,11 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
   
 5. Insert an **App Step**, as shown in the figure.
     
-   **Figure: Add an App Step**
+  **Figure: Add an App Step**
 
   
 
-     ![Adding an App Step.](images/SPD15-WFAppPermissions8.png)
+  ![Adding an App Step.](images/SPD15-WFAppPermissions8.png)
   
 
   
@@ -261,50 +248,33 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
   
 7. Click the **address book** button. In the **To** field select **Workflow lookup for a user** and click **add** as shown in the figure.
     
-   **Figure: Select Workflow lookup for a user**
+  **Figure: Select Workflow lookup for a user**
 
+  ![Select Workflow lookup for a user.](images/SPD15-WFAppPermissions9.png)
   
 
-     ![Select Workflow lookup for a user.](images/SPD15-WFAppPermissions9.png)
-  
-
-  
-
-  
 8. Enter the **Created By** field as the lookup value, as shown in the figure.
     
-   **Figure: Lookup for Person dialog box**
+  **Figure: Lookup for Person dialog box**
 
-  
-
-     ![Lookup for Person dialog.](images/SPD15-WFAppPermissions10.png)
-  
-
-  
-
+  ![Lookup for Person dialog.](images/SPD15-WFAppPermissions10.png)
   
 9. Enter Email from App Demo list in the email message body.
     
   
 10. Click **OK** to return to the workflow. The completed workflow is shown in the figure.
     
-   **Figure: Email action in App Step**
+  **Figure: Email action in App Step**
 
-  
-
-     ![Email action in App Step.](images/SPD15-WFAppPermissions11.png)
-  
-
-  
-
-  
+  ![Email action in App Step.](images/SPD15-WFAppPermissions11.png)
+    
 11. Click the **Workflow Settings** icon in the ribbon, as shown in the figure.
     
-   **Figure: Workflow Settings icon in ribbon**
+  **Figure: Workflow Settings icon in ribbon**
 
   
 
-     ![Workflow Settings icon in ribbon.](images/SPD15-WFAppPermissions12.png)
+  ![Workflow Settings icon in ribbon.](images/SPD15-WFAppPermissions12.png)
   
 
   
@@ -312,16 +282,13 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
   
 12. Clear the check box next to **Automatic updates to workflow status to the current stage name**, and then click **Publish**, as shown in the figure.
     
-   **Figure: Clear the automatic updates check mark and then publish**
+  **Figure: Clear the automatic updates check mark and then publish**
 
   
 
-     ![Clear automatic updates check mark and publish.](images/SPD15-WFAppPermissions13.png)
+  ![Clear automatic updates check mark and publish.](images/SPD15-WFAppPermissions13.png)
   
 
-  
-
-  
 
 ## Understanding how it works
 <a name="section2"> </a>
@@ -329,8 +296,6 @@ Finally, you need to wrap the workflow actions inside an App Step. The following
 To understand why elevating permissions for a workflow is required, consider that workflows are fundamentally apps for SharePoint and they follow the same authorization rules of the app model. The default configuration for workflow is that the effective permissions of the workflow are an intersection of user permissions and the app permissions, as shown in the figure.
   
     
-    
-
 **Figure: Permissions diagram**
 
   
