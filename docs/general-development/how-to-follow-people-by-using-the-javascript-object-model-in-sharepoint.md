@@ -15,8 +15,7 @@ In SharePoint Server 2013, Following People features help users to stay connecte
     
     
 
-> [!NOTE]
->  [SocialFollowingManager](http://msdn.microsoft.com/library/9ee1c0c0-b864-f0c3-f0cb-4dd4f1870dfa%28Office.15%29.aspx) is the recommended API to use for following people and content. However, the [PeopleManager](http://msdn.microsoft.com/library/985fd2df-0e31-6ece-b846-ba2ccb156d00%28Office.15%29.aspx) object contains additional functionality for following people, such as the [amIFollowedBy](http://msdn.microsoft.com/library/3641c469-0063-054d-355d-e56697cb08ae%28Office.15%29.aspx) method and methods that obtain the following status of other users.
+>Note: [SocialFollowingManager](http://msdn.microsoft.com/library/9ee1c0c0-b864-f0c3-f0cb-4dd4f1870dfa%28Office.15%29.aspx) is the recommended API to use for following people and content. However, the [PeopleManager](http://msdn.microsoft.com/library/985fd2df-0e31-6ece-b846-ba2ccb156d00%28Office.15%29.aspx) object contains additional functionality for following people, such as the [amIFollowedBy](http://msdn.microsoft.com/library/3641c469-0063-054d-355d-e56697cb08ae%28Office.15%29.aspx) method and methods that obtain the following status of other users.
   
     
     
@@ -70,15 +69,14 @@ To create the farm solution that uses the JavaScript object model to work with F
   
 7. In the **Layouts** folder, open the shortcut menu for the **FollowPeopleJSOM** folder, and then add a new SharePoint application page namedFollowPeople.aspx.
     
-    > [!NOTE]
-      > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page. 
+   >Note: The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page. 
+
 8. Open the shortcut menu for the FollowPeople.aspx page, and then choose **Set as Startup Item**.
     
   
 9. In the markup of the FollowPeople.aspx file, paste the following code between the "Main" **asp:Content** tags. This code defines controls and script references.
     
   ```HTML
-  
 <span id="followResults"></span><br/><br />
 <button id="sendRequest" type="button"></button><br/>
 <span id="message" style="color: #FF0000;"></span>
@@ -95,17 +93,13 @@ To create the farm solution that uses the JavaScript object model to work with F
 </script>
   ```
 
+   >Note: The "Get followers and followed people" example doesn't use the button control or the form digest control, which is only required for operations that update server content. A form digest generates a message digest used for security validation. 
 
-    > [!NOTE]
-      > The "Get followers and followed people" example doesn't use the button control or the form digest control, which is only required for operations that update server content. A form digest generates a message digest used for security validation. 
 10. Replace the comment between the **script** tags with the code example from one of the following scenarios:
     
-  -  [Start or stop following people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md#bk_FollowPeople)
-    
-  
+  -  [Start or stop following people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md#bk_FollowPeople)  
   -  [Get followers and followed people](how-to-follow-people-by-using-the-javascript-object-model-in-sharepoint.md#bk_GetFollowers)
     
-  
 11. To test the solution, on the menu bar, choose **Debug**, **Start Debugging**.
     
   

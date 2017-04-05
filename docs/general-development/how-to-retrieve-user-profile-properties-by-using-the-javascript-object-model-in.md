@@ -82,15 +82,14 @@ To create an application page that uses the JavaScript object model to retrieve 
   
 7. In the **Layouts** folder, open the shortcut menu for theUserProfilesJSOM folder, and then add a new SharePoint application page namedUserProfiles.aspx.
     
-    > [!NOTE]
-      > The code examples in this article define custom code in the page markup but do not use the code-behind class file that Visual Studio creates for the page. 
+   > Note: The code examples in this article define custom code in the page markup but do not use the code-behind class file that Visual Studio creates for the page. 
+
 8. Open the shortcut menu for the UserProfiles.aspx page, and then choose **Set as Startup Item**.
     
   
 9. In the markup for the UserProfiles.aspx page, paste the following code inside the "Main" **asp:Content** tags. This code adds a **span** control that displays the results of the query, **SharePoint:ScriptLink** controls that reference SharePoint JavaScript class library files, and **script** tags to contain your custom logic.
     
   ```HTML
-  
 <span id="results"></span><br />
 <SharePoint:ScriptLink ID="ScriptLink1" name="SP.js" runat="server"
     ondemand="false" localizable="false" loadafterui="true" />
@@ -101,14 +100,11 @@ To create an application page that uses the JavaScript object model to retrieve 
     // Replace this comment with the code for your scenario.
 
 </script>
-
   ```
 
 10. To add logic to retrieve user profile properties, replace the comment between the **script** tags with the code example from one of the following scenarios:
     
-  -  [Retrieve user profile properties from the PersonProperties object and its userProfileProperties property](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md#bk_examplePersonPropsObj)
-    
-  
+  -  [Retrieve user profile properties from the PersonProperties object and its userProfileProperties property](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md#bk_examplePersonPropsObj)  
   -  [Retrieve a set of user profile properties by using the getUserProfilePropertiesFor method](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md#bk_exampleGetUPMethod)
     
   

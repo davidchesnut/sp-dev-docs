@@ -54,36 +54,22 @@ To create a console application that uses the server object model to work with u
   
 4. Name the project UserProfilesSSOM, and then choose the **OK** button.
     
-    > [!NOTE]
-      > Make sure the **Prefer 32-bit** setting is not selected in the project's **Build** properties.
+  > Note: Make sure the **Prefer 32-bit** setting is not selected in the project's **Build** properties.
+
 5. Add references to the following assemblies:
     
   - Microsoft.Office.Server
-    
-  
   - Microsoft.Office.Server.UserProfiles
-    
-  
   - Microsoft.SharePoint
-    
-  
   - System.Web
-    
+
   
 6. Replace the contents of the **Program** class with the code example from one of the following scenarios:
     
   -  [Create a user profile](how-to-work-with-user-profiles-and-organization-profiles-by-using-the-server-obj.md#bkmk_CreateUP)
-    
-  
   -  [Create a user profile property](how-to-work-with-user-profiles-and-organization-profiles-by-using-the-server-obj.md#bkmk_CreateUPProp)
-    
-  
   -  [Retrieve and change user profiles](how-to-work-with-user-profiles-and-organization-profiles-by-using-the-server-obj.md#bkmk_GetChangeUP)
-    
-  
   -  [Retrieve and change attributes for user profile properties](how-to-work-with-user-profiles-and-organization-profiles-by-using-the-server-obj.md#bkmk_GetChangePropAttributes)
-    
-  
   -  [Retrieve and change values for user properties](how-to-work-with-user-profiles-and-organization-profiles-by-using-the-server-obj.md#bkmk_GetChangePropValues)
     
   

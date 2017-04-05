@@ -64,27 +64,25 @@ To create an application page that uses the JavaScript object model to work with
   
 7. In the **Layouts** folder, open the shortcut menu for theSocialFeedJSOM folder, and then add a new SharePoint application page namedSocialFeed.aspx.
     
-    > [!NOTE]
-      > The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page. 
+  > Note: The code examples in this article define custom code in the page markup but do not use the code-behind class that Visual Studio creates for the page. 
+
 8. Open the shortcut menu for the SocialFeed.aspx page, and then choose **Set as Startup Item**.
     
   
 9. In the markup for the SocialFeed.aspx page, define controls inside the "Main" **asp:Content** tags, as shown in the following code.
     
   ```HTML
-  
 <table width="100%" id="tblPosts"></table><br/>
 <button id="btnDelete" type="button"></button><br />
 <span id="spanMessage" style="color: #FF0000;"></span>
   ```
 
 
-    > [!NOTE]
-      > These controls may not be used in every scenario. For example, the "Publish posts and replies" scenario only uses the **span** control.
+  > Note: These controls may not be used in every scenario. For example, the "Publish posts and replies" scenario only uses the **span** control.
+
 10. After the closing **span** tag, add **SharePoint:ScriptLink** controls, a **SharePoint:FormDigest** control, and **script** tags, as shown in the following code. The **SharePoint:ScriptLink** tags reference the class library files that define the JavaScript object model that you can use for My Site Social development. The **SharePoint:FormDigest** tag generates a message digest for security validation when required by operations that update server content.
     
   ```HTML
-  
 <SharePoint:ScriptLink ID="ScriptLink1" name="SP.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
 <SharePoint:ScriptLink ID="ScriptLink2" name="SP.UserProfiles.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
 <SharePoint:FormDigest id="FormDigest" runat="server"/>
@@ -93,23 +91,18 @@ To create an application page that uses the JavaScript object model to work with
     // Replace this comment with the code for your scenario.
 
 </script>
-
   ```
 
 11. To add the logic to work with feeds, replace the comment between the **script** tags with the code example from one of the following scenarios:
     
   -  [Publish posts and replies to the social feed](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-javascr.md#bkmk_PubPosts)
-    
-  
   -  [Retrieve social feeds](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-javascr.md#bkmk_GetFeeds)
-    
-  
   -  [Delete posts and replies from the social feed](how-to-create-and-delete-posts-and-retrieve-the-social-feed-by-using-the-javascr.md#bkmk_DeletePosts)
     
   
 12. To test the application page, on the menu bar, choose **Debug**, **Start Debugging**. If you are prompted to modify the web.config file, choose the **OK** button.
     
-    If the response calls the failure callback method, set a breakpoint in the method and add a watch on the **args** object or check the ULS logs and the event viewer for more information.
+  If the response calls the failure callback method, set a breakpoint in the method and add a watch on the **args** object or check the ULS logs and the event viewer for more information.
     
   
 

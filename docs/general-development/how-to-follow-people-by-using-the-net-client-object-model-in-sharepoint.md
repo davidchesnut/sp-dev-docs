@@ -63,20 +63,14 @@ To create a console application that uses the .NET client object model to work w
   
 5. Add references to the following assemblies:
     
-  - **Microsoft.SharePoint.Client**
-    
-  
-  - **Microsoft.SharePoint.ClientRuntime**
-    
-  
+  - **Microsoft.SharePoint.Client**  
+  - **Microsoft.SharePoint.ClientRuntime** 
   - **Microsoft.SharePoint.Client.UserProfiles**
     
   
 6. Replace the contents of the **Program** class with the code example from one of the following scenarios:
     
-  -  [Start and stop following people](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint.md#bkmk_FollowPeople)
-    
-  
+  -  [Start and stop following people](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint.md#bkmk_FollowPeople)  
   -  [Get followers and followed people](how-to-follow-people-by-using-the-net-client-object-model-in-sharepoint.md#bkmk_GetFollowednFollowers)
     
   
