@@ -7,9 +7,6 @@ ms.assetid: c05e0127-c6f5-48b8-b8f2-cbcc30149c8b
 
 # Creating a workflow by using SharePoint Designer 2013 and the SharePoint 2013 Workflow platform
 Learn how to install, open, and create a workflow by using SharePoint Designer 2013 and the SharePoint 2013 Workflow platform. 
-||
-|:-----|
-||
    
 
 ## Install SharePoint Designer 2013
