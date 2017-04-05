@@ -139,17 +139,10 @@ If you're not using Napa on an Office 365 Developer Site, you'll need to meet th
   
 4. Expand the **Scripts** node, choose the App.js file and replace its contents with the code from one of the following scenarios:
     
-  -  [Start following and stop following a document](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_FollowDocs)
-    
-  
-  -  [Start following and stop following a site](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_FollowSites)
-    
-  
-  -  [Start following and stop following a tag](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_FollowTags)
-    
-  
-  -  [Get followed content](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_GetFollowed)
-    
+   -  [Start following and stop following a document](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_FollowDocs)
+   -  [Start following and stop following a site](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_FollowSites)
+   -  [Start following and stop following a tag](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_FollowTags)
+   -  [Get followed content](how-to-follow-documents-sites-and-tags-by-using-the-rest-service-in-sharepoint-2.md#bkmk_GetFollowed)
   
 5. To run the app, choose the **Run Project** button at the bottom of the page.
     
