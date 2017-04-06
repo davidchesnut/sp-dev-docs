@@ -73,21 +73,16 @@ The SharePoint-hosted app that you create in this article uses JavaScript to bui
   
 3. Specify the permissions that your app needs:
     
-1. Choose the **Properties** button at the bottom of the page.
+  a. Choose the **Properties** button at the bottom of the page.
+     
+  b. In the **Properties** window, choose **Permissions**.
     
-  
-2. In the **Properties** window, choose **Permissions**.
+  c. In the **Content** category, set **Write** permissions for the **Tenant** scope.
     
-  
-3. In the **Content** category, set **Write** permissions for the **Tenant** scope.
+  d. In the **Social** category, set **Read** permissions for the **User Profiles** scope.
     
-  
-4. In the **Social** category, set **Read** permissions for the **User Profiles** scope.
+  e. Close the **Properties** window.
     
-  
-5. Close the **Properties** window.
-    
-  
 4. Expand the **Scripts** node, choose the App.js file, and delete the contents of the file.
     
   
@@ -99,7 +94,6 @@ The SharePoint-hosted app that you create in this article uses JavaScript to bui
 1. In the App.js file, declare a global variable for the URL of the **SocialFeedManager** endpoint.
     
   ```
-  
 var feedManagerEndpoint;
   ```
 

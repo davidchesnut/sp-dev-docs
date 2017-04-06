@@ -96,9 +96,7 @@ To create an application page that uses the JavaScript object model to retrieve 
 <SharePoint:ScriptLink ID="ScriptLink2" name="SP.UserProfiles.js" runat="server"
     ondemand="false" localizable="false" loadafterui="true" />
 <script type="text/javascript">
-
     // Replace this comment with the code for your scenario.
-
 </script>
   ```
 
@@ -131,7 +129,7 @@ The following code example shows how to get user profile properties for a target
   
 
 > [!NOTE]
-> Paste the following code between the **script** tags that you added to the UserProfiles.aspx file in the [Create the application page](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md#bk_CreateAppPage) procedure. Replace the `domainName\\\\userName` placeholder value before you run the code. (This code example does not use the code-behind class file.)
+> Paste the following code between the **script** tags that you added to the UserProfiles.aspx file in the [Create the application page](how-to-retrieve-user-profile-properties-by-using-the-javascript-object-model-in.md#bk_CreateAppPage) procedure. Replace the `domainName\\userName` placeholder value before you run the code. (This code example does not use the code-behind class file.)
   
     
     
@@ -147,7 +145,7 @@ SP.SOD.executeOrDelayUntilScriptLoaded(getUserProperties, 'SP.UserProfiles.js');
 function getUserProperties() {
 
     // Replace the placeholder value with the target user's credentials.
-    var targetUser = "domainName\\\\userName";
+    var targetUser = "domainName\\userName";
 
     // Get the current client context and PeopleManager instance.
     var clientContext = new SP.ClientContext.get_current();
