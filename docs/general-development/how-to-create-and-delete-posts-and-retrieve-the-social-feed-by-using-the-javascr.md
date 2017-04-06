@@ -87,7 +87,7 @@ To create an application page that uses the JavaScript object model to work with
 <SharePoint:FormDigest id="FormDigest" runat="server"/>
 <script type="text/javascript">
 
-    // Replace this comment with the code for your scenario.
+  // Replace this comment with the code for your scenario.
 
 </script>
   ```
