@@ -104,12 +104,13 @@ using Microsoft.SharePoint.Client.Social;
     
   ```cs
 const string serverUrl = "http://serverName/";
-const string targetUser = "domainName\\\\userName";
+const string targetUser = "domainName\\userName";
   ```
 
 
    > [!NOTE]
-   > Remember to replace the  `http://serverName/` and `domainName\\\\userName` placeholder values before you run the code.
+   > Remember to replace the  `http://serverName/` and `domainName\\userName` placeholder values before you run the code.
+   
 2. In the **Main** method, initialize the SharePoint client context.
     
   ```cs
@@ -121,7 +122,6 @@ ClientContext clientContext = new ClientContext(serverUrl);
 3. Create the  [SocialFeedManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.aspx) instance.
     
   ```cs
-  
 SocialFeedManager feedManager = new SocialFeedManager(clientContext);
   ```
 
@@ -246,7 +246,7 @@ namespace ReadWriteMySite
             // Replace the following placeholder values with the target server running SharePoint and the
             // target thread owner.
             const string serverUrl = "http://serverName/";
-            const string targetUser = "domainName\\\\userName";
+            const string targetUser = "domainName\\userName";
 
             // Connect to the client context.
             ClientContext clientContext = new ClientContext(serverUrl);
