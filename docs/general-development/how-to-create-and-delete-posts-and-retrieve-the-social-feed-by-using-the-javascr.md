@@ -77,7 +77,6 @@ To create an application page that uses the JavaScript object model to work with
 <span id="spanMessage" style="color: #FF0000;"></span>
   ```
 
-
   > Note: These controls may not be used in every scenario. For example, the "Publish posts and replies" scenario only uses the **span** control.
 
 10. After the closing **span** tag, add **SharePoint:ScriptLink** controls, a **SharePoint:FormDigest** control, and **script** tags, as shown in the following code. The **SharePoint:ScriptLink** tags reference the class library files that define the JavaScript object model that you can use for My Site Social development. The **SharePoint:FormDigest** tag generates a message digest for security validation when required by operations that update server content.
