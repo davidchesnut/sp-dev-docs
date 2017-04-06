@@ -90,7 +90,7 @@ The following code example creates a  [UserProfile](https://msdn.microsoft.com/l
     
 
 > [!NOTE]
-> Change the domain\\\\username andservername placeholder values before you run the code.
+> Change the domain\\username andservername placeholder values before you run the code.
   
     
     
@@ -115,8 +115,8 @@ namespace UserProfilesSSOM
         static void Main(string[] args)
         {
 
-            // Replace "domain\\\\username" and "servername" with actual values.
-            string newAccountName = "domain\\\\username";
+            // Replace "domain\\username" and "servername" with actual values.
+            string newAccountName = "domain\\username";
             using (SPSite site = new SPSite("http://servername"))
             {
                 SPServiceContext serviceContext = SPServiceContext.GetContext(site);
@@ -257,7 +257,7 @@ The following code example retrieves all user profiles within the context and ch
     
 
 > [!NOTE]
-> Change the domain\\\\username andservername placeholder values before you run the code.
+> Change the domain\\username andservername placeholder values before you run the code.
   
     
     
@@ -281,8 +281,8 @@ namespace UserProfilesSSOM
         static void Main(string[] args)
         {
 
-            // Replace "domain\\\\username" and "servername" with actual values.
-            string targetAccountName = "domain\\\\username";
+            // Replace "domain\\username" and "servername" with actual values.
+            string targetAccountName = "domain\\username";
             using (SPSite site = new SPSite("http://servername"))
             {
                 SPServiceContext serviceContext = SPServiceContext.GetContext(site);
@@ -408,7 +408,7 @@ The following code example retrieves all **UserProfile** type properties and ret
     
 
 > [!NOTE]
-> Change the domain\\\\username, http://servername/docLib/pic.jpg, and servername placeholder values before you run the code.
+> Change the domain\\username, http://servername/docLib/pic.jpg, and servername placeholder values before you run the code.
   
     
     
@@ -431,8 +431,8 @@ namespace UserProfilesSSOM
         static void Main(string[] args)
         {
 
-            // Replace "domain\\\\username," "http://servername/docLib/pic.jpg," and "servername" with actual values.
-            string accountName = "domain\\\\username";
+            // Replace "domain\\username," "http://servername/docLib/pic.jpg," and "servername" with actual values.
+            string accountName = "domain\\username";
             string newPictureUrl = "http://servername/docLib/pic.jpg";
             using (SPSite site = new SPSite("http://servername"))
             {
