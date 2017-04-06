@@ -112,7 +112,7 @@ This example demonstrates enumerating against a database table with one million 
 
 
 
-```
+```sql
 
 SELECT DISTINCT( ISNULL(ColumnA,'unknown')) as ColumnA  FROM table
 ```
@@ -124,7 +124,7 @@ Next, define the specific finder using the following SQL statement.
 
 
 
-```
+```sql
 SELECT DISTINCT( ISNULL(ColumnA,'unknown')) as ColumnA  FROM table where ColumnA = @Value
 ```
 
@@ -135,7 +135,7 @@ Finally, you must define the association navigation operation, as follows.
 
 
 
-```
+```sql
 Select * from table where ColumnA=@value
 ```
 
