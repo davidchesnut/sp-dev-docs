@@ -91,7 +91,6 @@ Table 1 contains links to articles that describe core concepts you should know b
 7. In the Program.cs file, add the following **using** statements.
     
   ```cs
-  
 using Microsoft.SharePoint.Client;
 using Microsoft.SharePoint.Client.Social;
   ```
