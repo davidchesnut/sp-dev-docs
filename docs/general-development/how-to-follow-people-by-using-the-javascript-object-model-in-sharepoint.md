@@ -87,9 +87,7 @@ To create the farm solution that uses the JavaScript object model to work with F
 <SharePoint:ScriptLink name="SP.UserProfiles.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
 <SharePoint:FormDigest id="FormDigest" runat="server"/>
 <script type="text/javascript">
-
     // Replace this comment with the code for your scenario.
-
 </script>
   ```
 
