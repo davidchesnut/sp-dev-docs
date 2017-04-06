@@ -75,7 +75,6 @@ Table 1 contains links to articles that describe core concepts you should know b
 6. Add references to the client assemblies, as follows:
     
    a. In **Solution Explorer**, open the shortcut menu for the **ReadWriteMySite** project, and then choose **Add Reference**.
-    
   
    b. In the **Reference Manager** dialog box, choose the following assemblies:
     
@@ -107,16 +106,13 @@ const string serverUrl = "http://serverName/";
 const string targetUser = "domainName\\userName";
   ```
 
-
    > [!NOTE]
    > Remember to replace the  `http://serverName/` and `domainName\\userName` placeholder values before you run the code.
    
 2. In the **Main** method, initialize the SharePoint client context.
     
   ```cs
-  
 ClientContext clientContext = new ClientContext(serverUrl);
-
   ```
 
 3. Create the  [SocialFeedManager](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.aspx) instance.
@@ -132,18 +128,14 @@ SocialFeedManager feedManager = new SocialFeedManager(clientContext);
 feedOptions.MaxThreadCount = 10;
   ```
 
-
     The default options return the first 20 threads in the feed, sorted by last modified date.
-    
   
 5. Get the target user's feed.
     
-  ```cs
-  
+  ```cs 
 ClientResult<SocialFeed> feed = feedManager.GetFeedFor(targetUser, feedOptions);
 clientContext.ExecuteQuery();
   ```
-
 
      [GetFeedFor](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.GetFeedFor.aspx) returns a **ClientResult<T>** object that stores the collection of threads in its [Value](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.ClientResult`1.Value.aspx) property.
     
@@ -153,12 +145,8 @@ clientContext.ExecuteQuery();
 <a name="bkmk_ReadFeed"> </a>
 
 The following code iterates through the threads in the feed. It checks whether each thread has the  [CanReply](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThreadAttributes.CanReply.aspx) attribute and then gets the thread identifier and the text of the root post. The code also creates a dictionary to store the thread identifier (which is used to reply to a thread) and writes the text of the root post to the console.
-  
-    
-    
 
 ```cs
-
 Dictionary<int, string> idDictionary = new Dictionary<int, string>();
 for (int i = 0; i < feed.Value.Threads.Length; i++)
 {
@@ -180,7 +168,6 @@ for (int i = 0; i < feed.Value.Threads.Length; i++)
 1. (UI-related only) Get the thread to reply to and prompt for the user's reply.
     
   ```cs
-  
 Console.Write("Which post number do you want to reply to?  ");
 string threadToReplyTo = "";
 int threadNumber = int.Parse(Console.ReadLine()) - 1;
@@ -191,7 +178,6 @@ Console.Write("Type your reply:  ");
 2. Define the reply. The following code gets the reply's text from the console application.
     
   ```cs
-  
 SocialPostCreationData postCreationData = new SocialPostCreationData();
 postCreationData.ContentText = Console.ReadLine();
   ```
@@ -199,18 +185,15 @@ postCreationData.ContentText = Console.ReadLine();
 3. Publish the reply. The  _threadToReplyTo_ parameter represents of the thread's [Id](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialThread.Id.aspx) property.
     
   ```cs
-  
 feedManager.CreatePost(threadToReplyTo, postCreationData);
 clientContext.ExecuteQuery();
   ```
 
-
-    > [!NOTE]
-      > The  [CreatePost](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.CreatePost.aspx) method is also used to publish a root post to the current user's feed by passing **null** for the first parameter.
+   > [!NOTE]
+   > The  [CreatePost](https://msdn.microsoft.com/library/Microsoft.SharePoint.Client.Social.SocialFeedManager.CreatePost.aspx) method is also used to publish a root post to the current user's feed by passing **null** for the first parameter.
 4. (UI-related only) Exit the program.
     
   ```cs
-  
 Console.WriteLine("Your reply was published.");
 Console.ReadKey(false);
   ```
@@ -224,11 +207,7 @@ Console.ReadKey(false);
 
 The following example is the complete code from the Program.cs file.
   
-    
-    
-
 ```cs
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
