@@ -76,16 +76,20 @@ To create the farm solution that uses the JavaScript object model to work with F
   
 9. In the markup of the FollowPeople.aspx file, paste the following code between the "Main" **asp:Content** tags. This code defines controls and script references.
     
-  ```HTML
+  ```html
 <span id="followResults"></span><br/><br />
 <button id="sendRequest" type="button"></button><br/>
 <span id="message" style="color: #FF0000;"></span>
+
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js" type="text/javascript"></script>
+
 <SharePoint:ScriptLink name="SP.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
 <SharePoint:ScriptLink name="SP.UserProfiles.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
 <SharePoint:FormDigest id="FormDigest" runat="server"/>
 <script type="text/javascript">
+
     // Replace this comment with the code for your scenario.
+    
 </script>
   ```
 
