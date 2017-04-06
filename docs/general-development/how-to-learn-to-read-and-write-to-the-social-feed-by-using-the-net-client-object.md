@@ -81,13 +81,9 @@ Table 1 contains links to articles that describe core concepts you should know b
     
   - **Microsoft.SharePoint.Client**
     
-  
   - **Microsoft.SharePoint.Client.Runtime**
     
-  
-  - **Microsoft.SharePoint.Client.UserProfiles**
-    
-  
+  - **Microsoft.SharePoint.Client.UserProfiles**  
 
     If you are developing on the computer that is running SharePoint Server 2013, the assemblies are in the **Extensions** category. Otherwise, browse to the location that has the client assemblies you downloaded (see [SharePoint Client Components](http://www.microsoft.com/downloads/details.aspx?FamilyID=66da4a3e-e3b0-45d9-9e84-a84946fbf239)).
     
