@@ -74,18 +74,18 @@ Table 1 contains links to articles that describe core concepts you should know b
   
 6. Add references to the client assemblies, as follows:
     
-1. In **Solution Explorer**, open the shortcut menu for the **ReadWriteMySite** project, and then choose **Add Reference**.
+   a. In **Solution Explorer**, open the shortcut menu for the **ReadWriteMySite** project, and then choose **Add Reference**.
     
   
-2. In the **Reference Manager** dialog box, choose the following assemblies:
+   b. In the **Reference Manager** dialog box, choose the following assemblies:
     
-  - **Microsoft.SharePoint.Client**
+     - **Microsoft.SharePoint.Client**
     
-  - **Microsoft.SharePoint.Client.Runtime**
+     - **Microsoft.SharePoint.Client.Runtime**
     
-  - **Microsoft.SharePoint.Client.UserProfiles**  
+     - **Microsoft.SharePoint.Client.UserProfiles**  
 
-    If you are developing on the computer that is running SharePoint Server 2013, the assemblies are in the **Extensions** category. Otherwise, browse to the location that has the client assemblies you downloaded (see [SharePoint Client Components](http://www.microsoft.com/downloads/details.aspx?FamilyID=66da4a3e-e3b0-45d9-9e84-a84946fbf239)).
+   If you are developing on the computer that is running SharePoint Server 2013, the assemblies are in the **Extensions** category. Otherwise, browse to the location that has the client assemblies you downloaded (see [SharePoint Client Components](http://www.microsoft.com/downloads/details.aspx?FamilyID=66da4a3e-e3b0-45d9-9e84-a84946fbf239)).
     
   
 7. In the Program.cs file, add the following **using** statements.
@@ -103,14 +103,13 @@ using Microsoft.SharePoint.Client.Social;
 1. Declare variables for the server URL and target user's account credentials.
     
   ```cs
-  
 const string serverUrl = "http://serverName/";
 const string targetUser = "domainName\\\\userName";
   ```
 
 
-    > [!NOTE]
-      > Remember to replace the  `http://serverName/` and `domainName\\\\userName` placeholder values before you run the code.
+   > [!NOTE]
+   > Remember to replace the  `http://serverName/` and `domainName\\\\userName` placeholder values before you run the code.
 2. In the **Main** method, initialize the SharePoint client context.
     
   ```cs
