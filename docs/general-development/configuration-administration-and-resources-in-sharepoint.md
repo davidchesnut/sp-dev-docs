@@ -1,11 +1,11 @@
 ---
-title: Configuration, administration, and resources in SharePoint 2013
+title: Configuration, administration, and resources in SharePoint
 ms.prod: SHAREPOINT
 ms.assetid: e7d8c919-7aa6-466a-acb0-27366129061c
 ---
 
 
-# Configuration, administration, and resources in SharePoint 2013
+# Configuration, administration, and resources in SharePoint
 
 For information about planning, administration, configuration, deployment, migration, upgrades, setting up claims, or security in general, see the IT and administrators documentation and guidelines on  [Microsoft TechNet](http://technet.microsoft.com/en-us/sharepoint/ee263910.aspx).
   

@@ -1,12 +1,12 @@
 ---
-title: Claims-based identity in SharePoint 2013
+title: Claims-based identity in SharePoint
 ms.prod: SHAREPOINT
 ms.assetid: 32b6af2a-72f3-4302-a6af-5f00143cbf67
 ---
 
 
-# Claims-based identity in SharePoint 2013
-Learn about the fundamentals of claims-based identity architecture in SharePoint 2013.
+# Claims-based identity in SharePoint
+Learn about the fundamentals of claims-based identity architecture in SharePoint.
 ## Claims-based authentication
 
 Claims-based authentication enables systems and applications to authenticate a user without requiring the user to disclose more personal information (such as social security number and date of birth) than necessary. An example of claims-based authentication is someone claiming to be over 18 years old or someone claiming to be in a company's marketing group. An external system (relying party) needs only to trust the authentication authority that can validate those claims to allow the user to be authenticated for specific functions.
@@ -48,19 +48,19 @@ The key concept is that a claim is not just a unique identifier that identifies 
 <a name="SP15_RoleInheritance_AdditionalResources"> </a>
 
 
--  [Authentication, authorization, and security in SharePoint 2013](authentication-authorization-and-security-in-sharepoint.md)
+-  [Authentication, authorization, and security in SharePoint](authentication-authorization-and-security-in-sharepoint.md)
     
   
--  [Incoming claims: Signing into SharePoint 2013](incoming-claims-signing-into-sharepoint.md)
+-  [Incoming claims: Signing into SharePoint](incoming-claims-signing-into-sharepoint.md)
     
   
--  [Claims provider in SharePoint 2013](claims-provider-in-sharepoint.md)
+-  [Claims provider in SharePoint](claims-provider-in-sharepoint.md)
     
   
--  [How to: Create a claims provider in SharePoint 2013](how-to-create-a-claims-provider-in-sharepoint.md)
+-  [How to: Create a claims provider in SharePoint](how-to-create-a-claims-provider-in-sharepoint.md)
     
   
--  [How to: Deploy a claims provider in SharePoint 2013](how-to-deploy-a-claims-provider-in-sharepoint.md)
+-  [How to: Deploy a claims provider in SharePoint](how-to-deploy-a-claims-provider-in-sharepoint.md)
     
   
 

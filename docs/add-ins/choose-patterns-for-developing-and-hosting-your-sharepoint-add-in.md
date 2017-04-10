@@ -19,7 +19,7 @@ SharePoint Add-ins widen the range of possible programming languages and technol
 ### SharePoint-hosted add-ins
 <a name="SPHosted"> </a>
 
-Start with the simplest option: SharePoint-hosted add-ins, or add-ins where all components are hosted on either an on-premises or Office 365 SharePoint farm. SharePoint-hosted add-ins are installed on a SharePoint 2013 website, called the host web. They have their resources hosted on an isolated subsite of a host web, called the add-in web. It's important to know  [the difference between host webs and add-in webs](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint-2013.md). Figure 1 illustrates the basic architecture of a SharePoint-hosted add-in.
+Start with the simplest option: SharePoint-hosted add-ins, or add-ins where all components are hosted on either an on-premises or Office 365 SharePoint farm. SharePoint-hosted add-ins are installed on a SharePoint website, called the host web. They have their resources hosted on an isolated subsite of a host web, called the add-in web. It's important to know  [the difference between host webs and add-in webs](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint.md). Figure 1 illustrates the basic architecture of a SharePoint-hosted add-in.
  
 
  
@@ -124,7 +124,7 @@ One of the most important questions you need to ask when considering provider-ho
  
 
  
-The  [cross-domain library](access-sharepoint-2013-data-from-add-ins-using-the-cross-domain-library.md) lets you interact with more than one domain from the remote components of your add-in through a proxy. If client-side code and the permissions of a user who is signed in to SharePoint are sufficient, the cross-domain library is a good option. The cross-domain library is also convenient whenever you are making remote calls through a firewall.
+The  [cross-domain library](access-sharepoint-data-from-add-ins-using-the-cross-domain-library.md) lets you interact with more than one domain from the remote components of your add-in through a proxy. If client-side code and the permissions of a user who is signed in to SharePoint are sufficient, the cross-domain library is a good option. The cross-domain library is also convenient whenever you are making remote calls through a firewall.
  
 
  
@@ -243,7 +243,7 @@ For more information, see the following resources:
 -  [SharePoint Add-ins](sharepoint-add-ins.md)
     
  
--  [Host webs, add-in webs, and SharePoint components in SharePoint 2013](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint-2013.md)
+-  [Host webs, add-in webs, and SharePoint components in SharePoint](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint.md)
     
  
 -  [Authorization and authentication of SharePoint Add-ins](authorization-and-authentication-of-sharepoint-add-ins.md)

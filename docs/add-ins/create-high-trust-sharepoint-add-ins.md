@@ -497,7 +497,7 @@ When you are debugging in Visual Studio with  **F5**, Microsoft Office Developer
 -  [Troubleshooting Tips for High Trust Add-ins on SharePoint 2013](http://blogs.technet.com/b/speschka/archive/2012/11/01/more-troubleshooting-tips-for-high-trust-apps-on-sharepoint-2013.aspx)
     
  
--  [Register SharePoint Add-ins 2013](register-sharepoint-add-ins-2013.md)
+-  [Register SharePoint Add-ins](register-sharepoint-add-ins.md)
     
  
 -  [Authorization and authentication of SharePoint Add-ins](authorization-and-authentication-of-sharepoint-add-ins.md)
@@ -506,7 +506,7 @@ When you are debugging in Visual Studio with  **F5**, Microsoft Office Developer
 -  [Announcing the new SharePointContext helper in SharePoint Add-ins 2013](http://blogs.msdn.com/b/officeapps/archive/2013/11/07/announcing-the-new-sharepointcontext-helper-in-apps-for-sharepoint-2013.aspx)
     
  
--  [Add-in permissions in SharePoint 2013](add-in-permissions-in-sharepoint-2013.md)
+-  [Add-in permissions in SharePoint](add-in-permissions-in-sharepoint.md)
     
  
 -  [Get started creating provider-hosted SharePoint Add-ins](get-started-creating-provider-hosted-sharepoint-add-ins.md)

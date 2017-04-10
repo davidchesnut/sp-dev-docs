@@ -88,10 +88,10 @@ For details about the add-in-only policy (with code snippets), add-in permission
 
  
 
--  [Add-in authorization policy types in SharePoint 2013](add-in-authorization-policy-types-in-sharepoint-2013.md)
+-  [Add-in authorization policy types in SharePoint](add-in-authorization-policy-types-in-sharepoint.md)
     
  
--  [Add-in permissions in SharePoint 2013](add-in-permissions-in-sharepoint-2013.md)
+-  [Add-in permissions in SharePoint](add-in-permissions-in-sharepoint.md)
     
  
 -  [Explore the app manifest structure and the package of a SharePoint Add-in](explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in.md)
@@ -101,7 +101,7 @@ For details about the add-in-only policy (with code snippets), add-in permission
 ## Creating SharePoint-hosted add-ins that are anonymously accessible
 <a name="SP-hosted"> </a>
 
-Creating a SharePoint-hosted add-in that can be run by anonymous users does not require any special techniques. You create it the same way you would create any SharePoint-hosted add-in. For details, see  [Get started creating SharePoint-hosted SharePoint Add-ins](get-started-creating-sharepoint-hosted-sharepoint-add-ins.md) and [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint-2013.md).
+Creating a SharePoint-hosted add-in that can be run by anonymous users does not require any special techniques. You create it the same way you would create any SharePoint-hosted add-in. For details, see  [Get started creating SharePoint-hosted SharePoint Add-ins](get-started-creating-sharepoint-hosted-sharepoint-add-ins.md) and [Complete basic operations using JavaScript library code in SharePoint](complete-basic-operations-using-javascript-library-code-in-sharepoint.md).
  
 
  

@@ -1,4 +1,4 @@
-# Add-in permissions in SharePoint 2013
+# Add-in permissions in SharePoint
 Learn about add-in permissions in SharePoint, including types of add-in permissions, permission request scopes, and managing permissions. This article also discusses the differences in add-in permission rights, user rights, and Office Store app rights.
  
 
@@ -43,7 +43,7 @@ Permission request scopes indicate the location in the SharePoint hierarchy wher
 
  
 
- **Note**  A SharePoint Add-in has its own identity and is a security principal, called an add-in principal. Like users and groups, an add-in principal has certain permissions or rights. The add-in principal has full control rights to the add-in web so it only needs to request permissions to SharePoint resources in the host web or other locations outside the add-in web. For more information about add-in web, see  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md) and [Host webs, add-in webs, and SharePoint components in SharePoint 2013](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint-2013.md).
+ **Note**  A SharePoint Add-in has its own identity and is a security principal, called an add-in principal. Like users and groups, an add-in principal has certain permissions or rights. The add-in principal has full control rights to the add-in web so it only needs to request permissions to SharePoint resources in the host web or other locations outside the add-in web. For more information about add-in web, see  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md) and [Host webs, add-in webs, and SharePoint components in SharePoint](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint.md).
  
 
 SharePoint supports four different permission scopes within the content database and tenancy, as shown in Table 1. Permission scopes are named with URIs, including a "http:" prefix, but they are not URLs and they contain no placeholders. The permission scopes in this table and this article are literal strings.
@@ -249,7 +249,7 @@ Table 3 shows the permission request scope for Business Connectivity Services (B
 |**Scope URI**|**Available Rights**|
 |http://sharepoint/bcs/connection|Read|
 
- **Note**  For more information about the BCS add-in permission request scope, see  [Business Connectivity Services in SharePoint 2013](http://msdn.microsoft.com/library/64b7d032-4b83-4e9e-bc08-f0a161af5457%28Office.15%29.aspx).
+ **Note**  For more information about the BCS add-in permission request scope, see  [Business Connectivity Services in SharePoint](http://msdn.microsoft.com/library/64b7d032-4b83-4e9e-bc08-f0a161af5457%28Office.15%29.aspx).
  
 
 
@@ -268,7 +268,7 @@ Table 4 shows the permission request scope for Search. It also lists the rights 
 |**Scope URI**|**Available Rights**|
 |http://sharepoint/search|QueryAsUserIgnoreAppPrincipal|
 
- **Note**  For more information about the Search add-in permission request scope, see  [Search in SharePoint 2013](http://msdn.microsoft.com/library/59220f81-0e5e-4945-8056-cf0a116446cb%28Office.15%29.aspx).
+ **Note**  For more information about the Search add-in permission request scope, see  [Search in SharePoint](http://msdn.microsoft.com/library/59220f81-0e5e-4945-8056-cf0a116446cb%28Office.15%29.aspx).
  
 
 
@@ -333,7 +333,7 @@ Table 7 shows the permission request scope for taxonomy. It also lists the right
 |**Scope URI**|**Available Rights**|
 |http://sharepoint/taxonomy|Read, Write|
 
- **Note**  For more information about the taxonomy add-in permission request scope, see  [Add SharePoint 2013 capabilities](http://msdn.microsoft.com/library/11ecb65e-6dc5-4cf1-80ca-3c16418697b6%28Office.15%29.aspx).
+ **Note**  For more information about the taxonomy add-in permission request scope, see  [Add SharePoint capabilities](http://msdn.microsoft.com/library/11ecb65e-6dc5-4cf1-80ca-3c16418697b6%28Office.15%29.aspx).
  
 
 
@@ -416,7 +416,7 @@ An add-in's permissions for a specific scope are revoked when it is removed from
 ## Learn why add-ins cannot be hidden from users
 <a name="CannotBeHidden"> </a>
 
-Any user with browse rights to a SharePoint website can launch any SharePoint Add-in installed on the site. Whether the user can do anything with the add-in will depend on the user's other permissions and what  [authorization policy type](add-in-authorization-policy-types-in-sharepoint-2013.md) is being used by the add-in. If the user tries to do something with the add-in that the user does not have permission to do, and the call to SharePoint is using the user+add-in policy, then the call will fail.
+Any user with browse rights to a SharePoint website can launch any SharePoint Add-in installed on the site. Whether the user can do anything with the add-in will depend on the user's other permissions and what  [authorization policy type](add-in-authorization-policy-types-in-sharepoint.md) is being used by the add-in. If the user tries to do something with the add-in that the user does not have permission to do, and the call to SharePoint is using the user+add-in policy, then the call will fail.
  
 
  

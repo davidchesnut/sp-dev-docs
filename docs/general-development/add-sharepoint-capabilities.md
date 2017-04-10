@@ -1,11 +1,11 @@
 ---
-title: Add SharePoint 2013 capabilities
+title: Add SharePoint capabilities
 ms.prod: SHAREPOINT
 ms.assetid: 11ecb65e-6dc5-4cf1-80ca-3c16418697b6
 ---
 
 
-# Add SharePoint 2013 capabilities
+# Add SharePoint capabilities
 Find overview and how-to information about adding SharePoint 2013 features and capabilities to custom apps.
 ## What are SharePoint capabilities in SharePoint 2013?
 <a name="bkmk_whatIs"> </a>

@@ -33,7 +33,7 @@ You can use the SharePoint client object model to retrieve, update, and manage d
 - Silverlight redistributable assemblies
     
  
-For more information about the sets of APIs that are available for SharePoint 2013, see  [Choose the right API set in SharePoint 2013](http://msdn.microsoft.com/library/f36645da-77c5-47f1-a2ca-13d4b62b320d%28Office.15%29.aspx). 
+For more information about the sets of APIs that are available for SharePoint, see  [Choose the right API set in SharePoint](http://msdn.microsoft.com/library/f36645da-77c5-47f1-a2ca-13d4b62b320d%28Office.15%29.aspx). 
  
 
  
@@ -42,20 +42,20 @@ This article shows how to perform basic operations using the JavaScript object m
 
  
 
--  [Complete basic operations using SharePoint 2013 client library code](complete-basic-operations-using-sharepoint-2013-client-library-code.md)
+-  [Complete basic operations using SharePoint client library code](complete-basic-operations-using-sharepoint-client-library-code.md)
     
  
--  [Complete basic operations using SharePoint 2013 REST endpoints](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md)
+-  [Complete basic operations using SharePoint REST endpoints](complete-basic-operations-using-sharepoint-rest-endpoints.md)
     
  
--  [Build Windows Phone apps that access SharePoint 2013](http://msdn.microsoft.com/library/36681335-f772-4499-8445-f94481bc18e7%28Office.15%29.aspx)
+-  [Build Windows Phone apps that access SharePoint](http://msdn.microsoft.com/library/36681335-f772-4499-8445-f94481bc18e7%28Office.15%29.aspx)
     
  
 -  [Using the Silverlight Object Model](http://msdn.microsoft.com/library/cea7829d-f360-4052-8b76-91d90bcefd2a%28Office.15%29.aspx)
     
  
 
-## Perform basic tasks in SharePoint 2013 using the JavaScript client object model
+## Perform basic tasks in SharePoint using the JavaScript client object model
 <a name="BasicOps_SPJSOMOps"> </a>
 
 The following sections describe tasks that you can complete programmatically, and they include JavaScript code examples that demonstrate the operations.
@@ -766,7 +766,7 @@ You can manipulate files by using the JavaScript object model. The following sec
 
  
 
- **Note**  You can only work with files up to 1.5 MB by using the JavaScript object model. To upload larger files, use REST (Representational State Transfer). For more information, see  [](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md#LargeFiles).
+ **Note**  You can only work with files up to 1.5 MB by using the JavaScript object model. To upload larger files, use REST (Representational State Transfer). For more information, see  [](complete-basic-operations-using-sharepoint-rest-endpoints.md#LargeFiles).
  
 
 
@@ -1239,7 +1239,7 @@ function onQueryFailed(sender, args) {
 ## Access objects in the host web
 <a name="BasicOps_AccessHostweb"> </a>
 
-While developing your add-in, you might need to access the host web to interact with items in it. Use the  **AppContextSite** object to reference the host web or other SharePoint sites, as shown in the following example. For a full code sample, see [Get the host web title using the cross-domain library (JSOM)](http://code.msdn.microsoft.com/office/SharePoint-2013-Get-the-563f2a3d).
+While developing your add-in, you might need to access the host web to interact with items in it. Use the  **AppContextSite** object to reference the host web or other SharePoint sites, as shown in the following example. For a full code sample, see [Get the host web title using the cross-domain library (JSOM)](http://code.msdn.microsoft.com/office/SharePoint-Get-the-563f2a3d).
  
 
  
@@ -1283,7 +1283,7 @@ function execCrossDomainRequest(appweburl, hostweburl) {
 }
 ```
 
-The previous example uses the cross-domain library in SharePoint 2013 to access the host web. For more information, see  [Access SharePoint 2013 data from add-ins using the cross-domain library](access-sharepoint-2013-data-from-add-ins-using-the-cross-domain-library.md).
+The previous example uses the cross-domain library in SharePoint 2013 to access the host web. For more information, see  [Access SharePoint data from add-ins using the cross-domain library](access-sharepoint-data-from-add-ins-using-the-cross-domain-library.md).
  
 
  
@@ -1292,10 +1292,10 @@ The previous example uses the cross-domain library in SharePoint 2013 to access 
 <a name="BasicOps_AddRes"> </a>
 
 
--  [Complete basic operations using SharePoint 2013 client library code](complete-basic-operations-using-sharepoint-2013-client-library-code.md)
+-  [Complete basic operations using SharePoint client library code](complete-basic-operations-using-sharepoint-client-library-code.md)
     
  
--  [Complete basic operations using SharePoint 2013 REST endpoints](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md)
+-  [Complete basic operations using SharePoint REST endpoints](complete-basic-operations-using-sharepoint-rest-endpoints.md)
     
  
 -  [Develop SharePoint Add-ins](develop-sharepoint-add-ins.md)
@@ -1304,7 +1304,7 @@ The previous example uses the cross-domain library in SharePoint 2013 to access 
 -  [Secure data access and client object models for SharePoint Add-ins](secure-data-access-and-client-object-models-for-sharepoint-add-ins.md)
     
  
--  [Work with external data in SharePoint 2013](work-with-external-data-in-sharepoint-2013.md)
+-  [Work with external data in SharePoint](work-with-external-data-in-sharepoint.md)
     
  
 

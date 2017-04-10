@@ -28,7 +28,7 @@ SharePoint users three types of authorization policies. The user-only policy req
  
 
  
-For more information about authorization policies and how they work, see  [Add-in authorization policy types in SharePoint 2013](add-in-authorization-policy-types-in-sharepoint-2013.md).
+For more information about authorization policies and how they work, see  [Add-in authorization policy types in SharePoint](add-in-authorization-policy-types-in-sharepoint.md).
  
 
  
@@ -48,7 +48,7 @@ Add-ins can also have permissions revoked or granted by SharePoint Online tenant
  
 
  
-In the add-in manifest file, a SharePoint Add-in specifies the permissions that it needs to function correctly. The permission requests specify both the rights that an add-in needs and the scope at which they need the rights. Scopes indicate where in the SharePoint hierarchy a permission request applies. SharePoint supports four different content scopes: tenancy, site collection, website, and list. There are also special scopes for performing search queries, accessing taxonomy data, social features, Microsoft Business Connectivity Services (BCS) features, and Project Server 2013 features. For more information, see  [Add-in permissions in SharePoint 2013](add-in-permissions-in-sharepoint-2013.md).
+In the add-in manifest file, a SharePoint Add-in specifies the permissions that it needs to function correctly. The permission requests specify both the rights that an add-in needs and the scope at which they need the rights. Scopes indicate where in the SharePoint hierarchy a permission request applies. SharePoint supports four different content scopes: tenancy, site collection, website, and list. There are also special scopes for performing search queries, accessing taxonomy data, social features, Microsoft Business Connectivity Services (BCS) features, and Project Server 2013 features. For more information, see  [Add-in permissions in SharePoint](add-in-permissions-in-sharepoint.md).
  
 
  
@@ -72,7 +72,7 @@ You would not use OAuth to make a call from JavaScript on a page in the add-in w
 -  [Three authorization systems for SharePoint Add-ins](three-authorization-systems-for-sharepoint-add-ins.md)
     
  
--  [Add-in permissions in SharePoint 2013](add-in-permissions-in-sharepoint-2013.md)
+-  [Add-in permissions in SharePoint](add-in-permissions-in-sharepoint.md)
     
  
 -  [SharePoint Add-ins](sharepoint-add-ins.md)

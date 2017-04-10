@@ -77,7 +77,7 @@ For more details about how to create a handler for the add-in event, see  [Handl
 
   ```
 
-4. To use the REST interface, your code uses other methods in the  **TokenHelper** class to get an access token, which is then included in the requests it makes to SharePoint. For more information, see [Complete basic operations using SharePoint 2013 REST endpoints](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md). Your code should be structured similarly to the following.
+4. To use the REST interface, your code uses other methods in the  **TokenHelper** class to get an access token, which is then included in the requests it makes to SharePoint. For more information, see [Complete basic operations using SharePoint REST endpoints](complete-basic-operations-using-sharepoint-rest-endpoints.md). Your code should be structured similarly to the following.
     
   ```C#
   if (properties.EventType == SPRemoteEventType.AppUpgraded)
@@ -241,10 +241,10 @@ Return to  [Major steps in updating an add-in](update-sharepoint-add-ins.md#Majo
 
  
 
--  [Update add-in web components in SharePoint 2013](update-add-in-web-components-in-sharepoint-2013.md)
+-  [Update add-in web components in SharePoint](update-add-in-web-components-in-sharepoint.md)
     
  
--  [Update host web components in SharePoint 2013](update-host-web-components-in-sharepoint-2013.md)
+-  [Update host web components in SharePoint](update-host-web-components-in-sharepoint.md)
     
  
 -  [Update remote components in SharePoint Add-ins](update-remote-components-in-sharepoint-add-ins.md)

@@ -49,7 +49,7 @@ There are some preliminary steps that must be done before a SharePoint Add-in ca
   - The farm must be configured to share the trust relationship that Office 365 has with ACS. This is easily done with Windows PowerShell scripts. For details, see  [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](use-an-office-365-sharepoint-site-to-authorize-provider-hosted-add-ins-on-an-on-.md).
     
  
-- Regardless of whether the add-in is installed to SharePoint Online or to an on-premise SharePoint farm, the  **SharePoint Add-in must be registered with ACS**. For details about how this can be done, see [Register SharePoint Add-ins 2013](register-sharepoint-add-ins-2013.md). Among other things, the add-in provides ACS with its client ID and client secret as part of the registration.
+- Regardless of whether the add-in is installed to SharePoint Online or to an on-premise SharePoint farm, the  **SharePoint Add-in must be registered with ACS**. For details about how this can be done, see [Register SharePoint Add-ins](register-sharepoint-add-ins.md). Among other things, the add-in provides ACS with its client ID and client secret as part of the registration.
     
  
 
@@ -118,7 +118,7 @@ These are the steps that correspond to the numbers in the figure:
 -  [Authorization and authentication of SharePoint Add-ins](authorization-and-authentication-of-sharepoint-add-ins.md)
     
  
--  [Add-in permissions in SharePoint 2013](add-in-permissions-in-sharepoint-2013.md)
+-  [Add-in permissions in SharePoint](add-in-permissions-in-sharepoint.md)
     
  
 -  [Important aspects of the SharePoint Add-in architecture and development landscape](important-aspects-of-the-sharepoint-add-in-architecture-and-development-landscap.md)
