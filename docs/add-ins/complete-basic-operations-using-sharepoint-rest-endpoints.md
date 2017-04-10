@@ -9,7 +9,7 @@ Learn how to perform basic create, read, update, and delete (CRUD) operations wi
 ## Developing with the SharePoint client APIs and REST
 <a name="ClientAPIs"> </a>
 
-You can perform basic create, read, update, and delete (CRUD) operations by using the Representational State Transfer (REST) interface provided by SharePoint 2013. The REST interface exposes all of the SharePoint entities and operations that are available in the other SharePoint client APIs. One advantage of using REST is that you don't have to add references to any SharePoint 2013 libraries or client assemblies. Instead, you make HTTP requests to the appropriate endpoints to retrieve or update SharePoint entities, such as webs, lists, and list items. See  [Get to know the SharePoint 2013 REST service](get-to-know-the-sharepoint-2013-rest-service.md) for a thorough introduction to the SharePoint 2013 REST interface and its architecture.
+You can perform basic create, read, update, and delete (CRUD) operations by using the Representational State Transfer (REST) interface provided by SharePoint 2013. The REST interface exposes all of the SharePoint entities and operations that are available in the other SharePoint client APIs. One advantage of using REST is that you don't have to add references to any SharePoint 2013 libraries or client assemblies. Instead, you make HTTP requests to the appropriate endpoints to retrieve or update SharePoint entities, such as webs, lists, and list items. See  [Get to know the SharePoint 2013 REST service](get-to-know-the-sharepoint-rest-service.md) for a thorough introduction to the SharePoint 2013 REST interface and its architecture.
  
 
  
@@ -17,7 +17,7 @@ You can perform basic create, read, update, and delete (CRUD) operations by usin
  
 
  
-For more details about the sets of APIs available on the SharePoint 2013 platform, see  [Choose the right API set in SharePoint 2013](http://msdn.microsoft.com/library/f36645da-77c5-47f1-a2ca-13d4b62b320d%28Office.15%29.aspx). For information about how to use the other client APIs, see  [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint-2013.md),  [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint-2013.md), and  [Build Windows Phone apps that access SharePoint 2013](http://msdn.microsoft.com/library/36681335-f772-4499-8445-f94481bc18e7%28Office.15%29.aspx).
+For more details about the sets of APIs available on the SharePoint 2013 platform, see  [Choose the right API set in SharePoint 2013](http://msdn.microsoft.com/library/f36645da-77c5-47f1-a2ca-13d4b62b320d%28Office.15%29.aspx). For information about how to use the other client APIs, see  [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint.md),  [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint.md), and  [Build Windows Phone apps that access SharePoint 2013](http://msdn.microsoft.com/library/36681335-f772-4499-8445-f94481bc18e7%28Office.15%29.aspx).
  
 
  
@@ -86,7 +86,7 @@ HttpWebResponse endpointResponse =
 
 ```
 
-This request would look a little different if you are writing your add-in in JavaScript but using the SharePoint 2013 cross-domain library. In this case, you don't need to provide an access token. The following code demonstrates how this request would look if you are using the cross-domain library and want to receive the OData representation of the lists as XML instead of JSON. (Because Atom is the default response format, you don't have to include an  **Accept** header.) See [Access SharePoint 2013 data from add-ins using the cross-domain library](access-sharepoint-2013-data-from-add-ins-using-the-cross-domain-library.md) for more information about using the cross-domain library.
+This request would look a little different if you are writing your add-in in JavaScript but using the SharePoint 2013 cross-domain library. In this case, you don't need to provide an access token. The following code demonstrates how this request would look if you are using the cross-domain library and want to receive the OData representation of the lists as XML instead of JSON. (Because Atom is the default response format, you don't have to include an  **Accept** header.) See [Access SharePoint 2013 data from add-ins using the cross-domain library](access-sharepoint-data-from-add-ins-using-the-cross-domain-library.md) for more information about using the cross-domain library.
  
 
  
@@ -307,7 +307,7 @@ When you send a POST request, the request must include the form digest value in 
  "X-RequestDigest": $("#__REQUESTDIGEST").val()
     
  
-- In cloud-hosted add-ins that use OAuth, first retrieve the form digest value by sending a request to the  **contextinfo** endpoint, and then add it to requests, as shown in [Writing data by using the REST interface](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md#WritingData).
+- In cloud-hosted add-ins that use OAuth, first retrieve the form digest value by sending a request to the  **contextinfo** endpoint, and then add it to requests, as shown in [Writing data by using the REST interface](complete-basic-operations-using-sharepoint-rest-endpoints.md#WritingData).
     
  
 - In cloud-hosted add-ins that use the JavaScript cross-domain library, you don't need to specify the form digest value. By default, SP.RequestExecutor automatically handles this for you. (It also handles the content-length value.)
@@ -317,7 +317,7 @@ When you send a POST request, the request must include the form digest value in 
 ### Add-ins that use OAuth must pass access tokens in requests
 <a name="OAuthTokens"> </a>
 
-Cloud-hosted add-ins use either OAuth or the cross-domain library to authorize access to SharePoint data. Add-in components with code that runs on a remote web server must use OAuth to authorize access to SharePoint data. In this case, you need to include an  **Authorization** header to send the access token. See [Reading data with the SharePoint 2013 REST interface](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md#ReadingData) for an example that adds an authorization header to an **HTTPWebRequest** object.
+Cloud-hosted add-ins use either OAuth or the cross-domain library to authorize access to SharePoint data. Add-in components with code that runs on a remote web server must use OAuth to authorize access to SharePoint data. In this case, you need to include an  **Authorization** header to send the access token. See [Reading data with the SharePoint 2013 REST interface](complete-basic-operations-using-sharepoint-rest-endpoints.md#ReadingData) for an example that adds an authorization header to an **HTTPWebRequest** object.
  
 
  
@@ -359,7 +359,7 @@ Cross-domain library requests use this format when they access data on the add-i
 |Cloud-hosted|JavaScript add-in component accessing data in a site collection other than the host web by using the cross-domain library (tenant-scoped add-ins only)| _<app web url>_/_api/SP.AppContextSite(@target)/web/title?@target=' _<target site url>_'|
 |SharePoint-hosted|Add-in web component accessing data in another site collection (tenant-scoped add-ins only)| _<app web url>_/_api/SP.AppContextSite(@target)/web/title?@target=' _<target site url>_'|
 
- **Note**  Cross-domain data access scenarios also require appropriate add-in permissions. For more information, see  [Access data from the host web](access-sharepoint-2013-data-from-add-ins-using-the-cross-domain-library.md#SP15Accessdatafromremoteapp_Hostweb) and [Access data across site collections](access-sharepoint-2013-data-from-add-ins-using-the-cross-domain-library.md#SP15Accessdatafromremoteapp_TenantScope).
+ **Note**  Cross-domain data access scenarios also require appropriate add-in permissions. For more information, see  [Access data from the host web](access-sharepoint-data-from-add-ins-using-the-cross-domain-library.md#SP15Accessdatafromremoteapp_Hostweb) and [Access data across site collections](access-sharepoint-data-from-add-ins-using-the-cross-domain-library.md#SP15Accessdatafromremoteapp_TenantScope).
  
 
 SharePoint Add-ins can get the add-in web URL and host web URL from the query string of the add-in page, as shown in the following code example. The example also shows how to reference the cross-domain library, which is defined in the SP.RequestExecutor.js file on the host web. The example assumes that your add-in launches from SharePoint. See  [Authorization Code OAuth flow for SharePoint Add-ins](authorization-code-oauth-flow-for-sharepoint-add-ins.md) for guidance on setting your SharePoint context correctly when your add-in does not launch from SharePoint.
@@ -462,10 +462,10 @@ The SharePoint Online (and on-premise SharePoint 2016 and later) REST service su
 -  [SharePoint 2013: Perform basic data access operations on files and folders by using REST](http://code.msdn.microsoft.com/SharePoint-2013-Perform-ab9c4ae5)
     
  
--  [Complete basic operations using SharePoint 2013 client library code](complete-basic-operations-using-sharepoint-2013-client-library-code.md)
+-  [Complete basic operations using SharePoint 2013 client library code](complete-basic-operations-using-sharepoint-client-library-code.md)
     
  
--  [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint-2013.md)
+-  [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint.md)
     
  
 -  [Develop SharePoint Add-ins](develop-sharepoint-add-ins.md)
@@ -474,7 +474,7 @@ The SharePoint Online (and on-premise SharePoint 2016 and later) REST service su
 -  [Secure data access and client object models for SharePoint Add-ins](secure-data-access-and-client-object-models-for-sharepoint-add-ins.md)
     
  
--  [Work with external data in SharePoint 2013](work-with-external-data-in-sharepoint-2013.md)
+-  [Work with external data in SharePoint](work-with-external-data-in-sharepoint.md)
     
  
 -  [Open Data Protocol](http://www.odata.org/)
