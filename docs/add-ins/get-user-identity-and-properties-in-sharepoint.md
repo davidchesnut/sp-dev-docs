@@ -36,7 +36,7 @@ The following table lists some useful articles that can help you to understand t
 
 |**Article **|**Description**|
 |:-----|:-----|
-| [Add-in permissions in SharePoint 2013](add-in-permissions-in-sharepoint-2013.md)|Learn about SharePoint add-in permissions for working with SharePoint 2013, including types of add-in permissions, permission request scopes, and managing permissions. This article also discusses the differences in add-in permission rights, and user rights.|
+| [Add-in permissions in SharePoint](add-in-permissions-in-sharepoint.md)|Learn about SharePoint add-in permissions for working with SharePoint 2013, including types of add-in permissions, permission request scopes, and managing permissions. This article also discusses the differences in add-in permission rights, and user rights.|
 | [Context Token OAuth flow for SharePoint Add-ins](context-token-oauth-flow-for-sharepoint-add-ins.md)|Learn about the OAuth authentication and authorization flow for cloud-hosted add-ins.|
 | [Get started creating provider-hosted SharePoint Add-ins](get-started-creating-provider-hosted-sharepoint-add-ins.md)|Learn how to create a basic provider-hosted SharePoint Add-in with the Office Developer Tools for Visual Studio 2012, how to interact with Microsoft SharePoint 2013 sites by using the SharePoint CSOM, and how to implement OAuth in a SharePoint Add-in.|
 
@@ -189,7 +189,7 @@ clientContext.ExecuteQuery();
 <a name="AdditionalResources"> </a>
 
 
--  [Add-in permissions in SharePoint 2013](add-in-permissions-in-sharepoint-2013.md)
+-  [Add-in permissions in SharePoint](add-in-permissions-in-sharepoint.md)
     
  
 -  [Context Token OAuth flow for SharePoint Add-ins](context-token-oauth-flow-for-sharepoint-add-ins.md)

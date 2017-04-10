@@ -287,7 +287,7 @@ The following procedure configures the certificate as a trusted token issuer in 
 ### To configure the certificate
 
 
-1. If you have not done so already, create the high-trust configuration Windows PowerShell script or scripts that you need, as described in  [High-trust configuration scripts for SharePoint 2013](high-trust-configuration-scripts-for-sharepoint-2013.md).
+1. If you have not done so already, create the high-trust configuration Windows PowerShell script or scripts that you need, as described in  [High-trust configuration scripts for SharePoint](high-trust-configuration-scripts-for-sharepoint.md).
     
  
 2. Copy the scripts to the SharePoint server.
@@ -330,7 +330,7 @@ Edit the web.config file so that it contains new values for the following keys i
       - If the high-trust SharePoint Add-in has its own certificate that it is not sharing with other SharePoint Add-ins, the  `IssuerId` is the same as the `ClientId`.
     
  
-  - If the SharePoint Add-in is sharing the same certificate that other SharePoint Add-ins are using, the  `IssuerId` is an arbitrary GUID. The script for this scenario that you can find in [High-trust configuration scripts for SharePoint 2013](high-trust-configuration-scripts-for-sharepoint-2013.md) generates a text file with this GUID in it. The IT staff can pass the outputted file to the add-in developer for insertion as the `IssuerId` in the web.config file.
+  - If the SharePoint Add-in is sharing the same certificate that other SharePoint Add-ins are using, the  `IssuerId` is an arbitrary GUID. The script for this scenario that you can find in [High-trust configuration scripts for SharePoint](high-trust-configuration-scripts-for-sharepoint.md) generates a text file with this GUID in it. The IT staff can pass the outputted file to the add-in developer for insertion as the `IssuerId` in the web.config file.
     
  
 
@@ -593,7 +593,7 @@ private static X509Certificate2 GetCertificateFromStore()
 -  [Publish SharePoint Add-ins by using Visual Studio](publish-sharepoint-add-ins-by-using-visual-studio.md)
     
  
--  [Register SharePoint Add-ins 2013](register-sharepoint-add-ins-2013.md)
+-  [Register SharePoint Add-ins](register-sharepoint-add-ins.md)
     
  
 -  [Get started creating provider-hosted SharePoint Add-ins](get-started-creating-provider-hosted-sharepoint-add-ins.md)

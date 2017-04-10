@@ -33,7 +33,7 @@ With a SharePoint-hosted add-in, you can only use XML markup to update an add-in
  
 
  
-Adding components to an add-in is easy. Any component that is eligible to be included in an add-in can also be added in an update. (For details about what components can be in an add-in, see  [Types of SharePoint components that can be in a SharePoint Add-in](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint-2013.md#TypesOfSPComponentsInApps). ) But when you want to modify an existing component declaratively, consider the following points. 
+Adding components to an add-in is easy. Any component that is eligible to be included in an add-in can also be added in an update. (For details about what components can be in an add-in, see  [Types of SharePoint components that can be in a SharePoint Add-in](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint.md#TypesOfSPComponentsInApps). ) But when you want to modify an existing component declaratively, consider the following points. 
  
 
  
@@ -421,7 +421,7 @@ Return to  [Major steps in updating an add-in](update-sharepoint-add-ins.md#Majo
 
  
 
--  [Update host web components in SharePoint 2013](update-host-web-components-in-sharepoint-2013.md)
+-  [Update host web components in SharePoint](update-host-web-components-in-sharepoint.md)
     
  
 -  [Create a handler for the update event in SharePoint Add-ins](create-a-handler-for-the-update-event-in-sharepoint-add-ins.md)

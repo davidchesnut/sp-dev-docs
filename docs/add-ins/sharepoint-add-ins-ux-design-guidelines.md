@@ -798,7 +798,7 @@ Due to upgrades or site maintenance, there might be times when SharePoint is in 
 -  [UX design for SharePoint Add-ins](ux-design-for-sharepoint-add-ins.md)
     
  
--  [Create UX components in SharePoint 2013](create-ux-components-in-sharepoint-2013.md)
+-  [Create UX components in SharePoint](create-ux-components-in-sharepoint.md)
     
  
 -  [Use a SharePoint website's style sheet in SharePoint Add-ins](use-a-sharepoint-website-s-style-sheet-in-sharepoint-add-ins.md)

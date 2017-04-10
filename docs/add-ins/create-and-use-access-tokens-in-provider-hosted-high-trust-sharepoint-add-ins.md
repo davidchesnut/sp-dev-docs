@@ -194,7 +194,7 @@ Table 2 describes the claims your code must include in the body of the token and
 ```
 
 
- **Note**  If the high-trust add-in is using the  [add-in-only policy](add-in-authorization-policy-types-in-sharepoint-2013.md) and it makes an add-in-only call to SharePoint, then the token shown here is actually the access token. There is no outer token. Moreover, there is no **trustedfordelegation** claim, since the user's permissions are irrelevant for an add-in-only call.
+ **Note**  If the high-trust add-in is using the  [add-in-only policy](add-in-authorization-policy-types-in-sharepoint.md) and it makes an add-in-only call to SharePoint, then the token shown here is actually the access token. There is no outer token. Moreover, there is no **trustedfordelegation** claim, since the user's permissions are irrelevant for an add-in-only call.
  
 
 

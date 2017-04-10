@@ -29,7 +29,7 @@ The model for SharePoint Add-ins offers many UX components and mechanisms that h
 ## Next steps: Working with data in SharePoint Add-ins
 <a name="SP15CreateUX_Next"> </a>
 
-Have you finished designing a great UX for your add-in? Incorporate data with the mechanisms available to you in the model for SharePoint Add-ins. For more information, see  [Work with external data in SharePoint 2013](work-with-external-data-in-sharepoint-2013.md).
+Have you finished designing a great UX for your add-in? Incorporate data with the mechanisms available to you in the model for SharePoint Add-ins. For more information, see  [Work with external data in SharePoint](work-with-external-data-in-sharepoint.md).
  
 
  

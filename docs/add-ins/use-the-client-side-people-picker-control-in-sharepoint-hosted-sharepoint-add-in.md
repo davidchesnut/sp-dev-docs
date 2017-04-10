@@ -246,7 +246,7 @@ function onFail(sender, args) {
 <a name="bk_addresources"> </a>
 
 
--  [Create UX components in SharePoint 2013](create-ux-components-in-sharepoint-2013.md)
+-  [Create UX components in SharePoint](create-ux-components-in-sharepoint.md)
     
  
 -  [People Picker and claims providers overview (SharePoint 2013)](http://technet.microsoft.com/library/gg602078.aspx)

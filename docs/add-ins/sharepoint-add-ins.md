@@ -204,7 +204,7 @@ Ready to get started?
  
   - Your add-in will use SharePoint's REST/OData APIs to perform CRUD operations on SharePoint data:
     
-      - Find our explanatory documentation in the article  [Get to know the SharePoint 2013 REST service](get-to-know-the-sharepoint-2013-rest-service.md) and other articles to which it links.
+      - Find our explanatory documentation in the article  [Get to know the SharePoint REST service](get-to-know-the-sharepoint-rest-service.md) and other articles to which it links.
     
  
   - Find reference documentation at  [REST API reference for SharePoint 2013](http://msdn.microsoft.com/library/3514e753-19f9-4b41-a1ae-f35c5ffc17d2%28Office.15%29.aspx).

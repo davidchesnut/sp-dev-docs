@@ -181,7 +181,7 @@ Use the resources listed below to learn more about using the SharePoint REST ser
 
 |||
 |:-----|:-----|
-| [Complete basic operations using SharePoint 2013 REST endpoints](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md)|Learn how to perform basic create, read, update, and delete (CRUD) operations with the SharePoint 2013 REST interface.|
+| [Complete basic operations using SharePoint REST endpoints](complete-basic-operations-using-sharepoint-rest-endpoints.md)|Learn how to perform basic create, read, update, and delete (CRUD) operations with the SharePoint 2013 REST interface.|
 | [Working with lists and list items with REST](working-with-lists-and-list-items-with-rest.md)|Learn how to perform basic create, read, update, and delete (CRUD) operations on lists and list items with the SharePoint 2013 REST interface.|
 | [Working with folders and files with REST](working-with-folders-and-files-with-rest.md)|Learn how to perform basic create, read, update, and delete (CRUD) operations on folders and files with the SharePoint 2013 REST interface.|
 | [Navigate the SharePoint data structure represented in the REST service](navigate-the-sharepoint-data-structure-represented-in-the-rest-service.md)|Learn how to start from a REST endpoint for a given SharePoint item, and navigate to and access related items, such as parent sites or the library structure where that item resides.|

@@ -21,7 +21,7 @@ You can use the cross-domain library to access data in your remote web applicati
  
 
  
-For details about how to use the library in this way, see  [Create a custom proxy page for the cross-domain library in SharePoint 2013](create-a-custom-proxy-page-for-the-cross-domain-library-in-sharepoint-2013.md).
+For details about how to use the library in this way, see  [Create a custom proxy page for the cross-domain library in SharePoint](create-a-custom-proxy-page-for-the-cross-domain-library-in-sharepoint.md).
  
 
  
@@ -37,7 +37,7 @@ You can use the web proxy that is exposed in the JavaScript client object model 
  
 
  
-For details about how to use the proxy, see  [Query a remote service using the web proxy in SharePoint 2013](query-a-remote-service-using-the-web-proxy-in-sharepoint-2013.md).
+For details about how to use the proxy, see  [Query a remote service using the web proxy in SharePoint](query-a-remote-service-using-the-web-proxy-in-sharepoint.md).
  
 
  

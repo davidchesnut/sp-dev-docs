@@ -161,7 +161,7 @@ You can publish your add-in directly to a site using WebDeploy, or you can creat
 <a name="bk_addresources"> </a>
 
 
--  [Register SharePoint Add-ins 2013](register-sharepoint-add-ins-2013.md)
+-  [Register SharePoint Add-ins](register-sharepoint-add-ins.md)
     
  
 -  [Publish cloud business add-ins](publish-cloud-business-add-ins.md)

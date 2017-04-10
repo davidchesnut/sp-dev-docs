@@ -38,9 +38,9 @@ No matter what kind of SharePoint Add-in you decide to build, your add-in will a
 
 |**Topic**|**Description**|
 |:-----|:-----|
-| [Complete basic operations using SharePoint 2013 client library code](complete-basic-operations-using-sharepoint-2013-client-library-code.md)|Explains how to do common operations by using C# and the client object model.|
-| [Complete basic operations using JavaScript library code in SharePoint 2013](complete-basic-operations-using-javascript-library-code-in-sharepoint-2013.md)|Explains how to do common operations by using the JavaScript object model.|
-| [Complete basic operations using SharePoint 2013 REST endpoints](complete-basic-operations-using-sharepoint-2013-rest-endpoints.md)|Explains how to do common operations by using the REST interface.|
+| [Complete basic operations using SharePoint client library code](complete-basic-operations-using-sharepoint-client-library-code.md)|Explains how to do common operations by using C# and the client object model.|
+| [Complete basic operations using JavaScript library code in SharePoint](complete-basic-operations-using-javascript-library-code-in-sharepoint.md)|Explains how to do common operations by using the JavaScript object model.|
+| [Complete basic operations using SharePoint REST endpoints](complete-basic-operations-using-sharepoint-rest-endpoints.md)|Explains how to do common operations by using the REST interface.|
 
 ## Learn the fundamental concepts for development with SharePoint Add-ins
 <a name="bk_fundamentals"> </a>
@@ -53,8 +53,8 @@ In addition to understanding the basic operations, you should understand the fun
 |:-----|:-----|
 | [Authorization and authentication of SharePoint Add-ins](authorization-and-authentication-of-sharepoint-add-ins.md)|Guides you through core concepts related to acquiring the necessary privileges for working with SharePoint 2013 resources.|
 | [Explore the app manifest structure and the package of a SharePoint Add-in](explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in.md)|Explains how add-in manifests work and how add-in packages are built.|
-| [Create UX components in SharePoint 2013](create-ux-components-in-sharepoint-2013.md)|Explores the ways in which you can build a rich user experience in SharePoint Add-ins.|
-| [Work with external data in SharePoint 2013](work-with-external-data-in-sharepoint-2013.md)|Explains the data access options and techniques that are available in different kinds of SharePoint Add-ins.|
+| [Create UX components in SharePoint](create-ux-components-in-sharepoint.md)|Explores the ways in which you can build a rich user experience in SharePoint Add-ins.|
+| [Work with external data in SharePoint](work-with-external-data-in-sharepoint.md)|Explains the data access options and techniques that are available in different kinds of SharePoint Add-ins.|
 | [License your Office and SharePoint Add-ins](http://msdn.microsoft.com/library/license-your-office-and-sharepoint-add-ins%28Office.15%29.aspx)|Guides you through the add-in license framework for Office and SharePoint Add-ins.|
 
 ## Put the pieces together: Building advanced SharePoint Add-ins by integrating capabilities

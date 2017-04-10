@@ -170,7 +170,7 @@ The registry path will change in future versions of Visual Studio.
 ## Configure an isolated add-in domain in SharePoint
 <a name="SP15appdevonprem_bk_configure"> </a>
 
-Please read  [Host webs, add-in webs, and the isolated domain](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint-2013.md#IsolatedDomain) before you carry out any procedures in this section.
+Please read  [Host webs, add-in webs, and the isolated domain](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint.md#IsolatedDomain) before you carry out any procedures in this section.
  
 
  
@@ -242,7 +242,7 @@ $proxyAppSvc = New-SPAppManagementServiceApplicationProxy -ServiceApplication $a
 
   ```
 
-7. Specify your add-in prefix (see  [Host webs, add-in webs, and the isolated domain](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint-2013.md#IsolatedDomain)) by typing the following code in the SharePoint Management Shell.
+7. Specify your add-in prefix (see  [Host webs, add-in webs, and the isolated domain](host-webs-add-in-webs-and-sharepoint-components-in-sharepoint.md#IsolatedDomain)) by typing the following code in the SharePoint Management Shell.
     
   ```
   Set-SPAppSiteSubscriptionName -Name "add-in" -Confirm:$false
