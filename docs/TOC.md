@@ -191,7 +191,7 @@
 
 
 # [SharePoint development overview](general-development/sharepoint-development-overview.md)
-## [What's new for developers in SharePoint](general-development/what’s-new-for-developers-in-sharepoint.md)
+## [What's new for developers in SharePoint](general-development/what-s-new-for-developers-in-sharepoint.md)
 ## [Protocol handler error due to deprecated interface SharePoint 2016](general-development/protocol-handler-error-due-to-deprecated-interface-in-sharepoint-2016.md)
 ## [Programming models](general-development/programming-models-in-sharepoint.md)
 ### [SharePoint Add-ins compared with SharePoint solutions](general-development/sharepoint-add-ins-compared-with-sharepoint-solutions.md)
