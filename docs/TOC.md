@@ -632,7 +632,7 @@
 ### [Set up an on-premises development environment for add-ins](add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins.md)
 ### [Create SharePoint Add-ins in Visual Studio](add-ins/create-sharepoint-add-ins-in-visual-studio.md)
 ### [Create a basic SharePoint-hosted add-in by using Napa](add-ins/create-a-basic-sharepoint-hosted-add-in-by-using-napa-office-365-development-too.md)
-### [What's new in Office Developer Tools for Visual Studio](add-ins/what-s-new-in-office-developer-tools-for-visual-studio.md)
+### [What's new in Office Developer Tools for Visual Studio 2013](add-ins/what-s-new-in-office-developer-tools-for-visual-studio-2013.md)
 ## [Create cloud business add-ins](add-ins/create-cloud-business-add-ins.md)
 ### [Start](add-ins/get-started-developing-cloud-business-add-ins.md)
 #### [Incident manager: A cloud business add-in tutorial](add-ins/incident-manager-a-cloud-business-add-in-tutorial.md)
