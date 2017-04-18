@@ -160,7 +160,14 @@ With the SharePoint 2013 Workflow template open, drag actions, conditions, and o
     
 
 > [!TIP]
->  When designing a workflow, keep the following additional considerations in mind:>  To quickly build a workflow, drop action and condition shapes onto the internal connector that is contained by new stage shapes. Visio 2013 automatically splits the connector into additional connectors, keeping the workflow connected from the Enter shape to the Exit shape.>  Do not use any shapes from a stencil other than the SharePoint 2013 Workflow Actions, SharePoint 2013 Workflow Conditions, and SharePoint 2013 Workflow Terminators stencils. Use only the Connector tool provided by the SharePoint 2013 Workflow template to add connections between shapes. All other connector shapes are not valid within a SharePoint 2013 workflow.>  Action shapes, steps, and loops must always be contained within a Stage shape. Some conditional shapes can be outside of a stage.>  A Stage shape must have exactly one Enter shape and one Exit shape. The workflow sub-process that is contained within the stage must start with the Enter shape and end with the Exit shape.>  A condition shape must have two connectors leaving the shape, one labeled "Yes" and the other labeled "No." You can right-click a connector to choose **Yes** or **No**. >  A workflow must have only one Start shape. The Start shape must be outside of a stage.>  You add text to shapes in the workflow, but the shape text will not affect the workflow.
+>  When designing a workflow, keep the following additional considerations in mind:
+>  - To quickly build a workflow, drop action and condition shapes onto the internal connector that is contained by new stage shapes. Visio 2013 automatically splits the connector into additional connectors, keeping the workflow connected from the Enter shape to the Exit shape.
+>  - Do not use any shapes from a stencil other than the SharePoint 2013 Workflow Actions, SharePoint 2013 Workflow Conditions, and SharePoint 2013 Workflow Terminators stencils. Use only the Connector tool provided by the SharePoint 2013 Workflow template to add connections between shapes. All other connector shapes are not valid within a SharePoint 2013 workflow.
+>  - Action shapes, steps, and loops must always be contained within a Stage shape. Some conditional shapes can be outside of a stage.
+>  - A Stage shape must have exactly one Enter shape and one Exit shape. The workflow sub-process that is contained within the stage must start with the Enter shape and end with the Exit shape.
+>  - A condition shape must have two connectors leaving the shape, one labeled "Yes" and the other labeled "No." You can right-click a connector to choose **Yes** or **No**. 
+>  - A workflow must have only one Start shape. The Start shape must be outside of a stage.
+>  - You add text to shapes in the workflow, but the shape text will not affect the workflow.
   
     
     
