@@ -58,7 +58,7 @@ Following is a list of association properties that are set by default for both *
 -  [LayoutsFolder](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.WorkflowConfigurationPropertyName.LayoutsFolder.aspx)
     
   
--  [ParentContentTypeId()](https://msdn.microsoft.com/library/Microsoft.SharePoint.WorkflowServices.WorkflowConfigurationPropertyName.ParentContentTypeId.aspx)
+-  ParentContentTypeId()
     
   
 - **HistoryListId***
