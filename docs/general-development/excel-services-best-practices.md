@@ -76,7 +76,7 @@ Use the **maxRequestLength** attribute in the **httpRuntime** element in the **s
   
     
     
-For more information, see  [<httpRuntime> Element](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369.aspx) and [<maxRequestLength> Element](http://msdn.microsoft.com/library/fd52b2c5-5014-4e6f-b869-4ea666dc83d6.aspx).
+For more information, see  [\<httpRuntime\> Element](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369.aspx) and [\<maxRequestLength\> Element](http://msdn.microsoft.com/library/fd52b2c5-5014-4e6f-b869-4ea666dc83d6.aspx).
   
     
     
