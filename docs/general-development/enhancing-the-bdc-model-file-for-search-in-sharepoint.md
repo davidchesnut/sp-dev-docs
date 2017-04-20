@@ -69,8 +69,8 @@ The following table describes the BDC model properties that are applicable to Se
 |EnumerateIdsOnly  <br/> |FilterDescriptor  <br/> |Specifies whether to return IDs only in the **IDEnumerator**.  <br/> |
 |CrawlStartTime  <br/> |FilterDescriptor  <br/> |Contains the start time of the last crawl.  <br/> |
 |SynchronizationCookie  <br/> |FilterDescriptor  <br/> |Specifies that the external content source returns a cookie after a crawl, which is then resent by the indexing connector during the next enumeration call. The external content source uses the cookie to determine what has changed since the last crawl. This property is used with **ChangedIDEnumerator** and **DeletedIDEnumerator** method instances. <br/> |
-|Property  <br/> |TypeDescriptor  <br/> | Specifies the **struct** array used by search for properties. Consists of the following: <br/> **PropertyName** <br/> **PropertyValue** <br/> **PropertyCulture** <br/> |
-|Text  <br/> |TypeDescriptor  <br/> | Specifies the **struct** array used by search for attachments. Consists of the following: <br/> **TextExtension** <br/> **TextContentType** <br/> **TextValue** <br/> |
+|Property  <br/> |TypeDescriptor  <br/> | Specifies the **struct** array used by search for properties. Consists of the following: <br/> <ul><li>**PropertyName**</li><li>**PropertyValue**</li><li>**PropertyCulture**</li></ul> |
+|Text  <br/> |TypeDescriptor  <br/> | Specifies the **struct** array used by search for attachments. Consists of the following: <br/> <ul><li>**TextExtension**</li><li>**TextContentType**</li><li>**TextValue**</li></ul> <br/> |
    
 
 ## BDC model file changes to improve performance when crawling external data
