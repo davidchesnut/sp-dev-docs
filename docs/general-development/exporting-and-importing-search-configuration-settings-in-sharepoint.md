@@ -17,7 +17,7 @@ Get code examples that show you how to export and import customized search confi
 ## Export search configuration settings
 <a name="SP15_exporting_search_configuration"> </a>
 
-The following code shows how to use  [SearchConfigurationPortability](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Portability.SearchConfigurationPortability.aspx) to export your site's search configuration settings. The code uses an example site _http://yoursite/sites/publishing1_, which you'd replace with your own site.  _fileName_ refers to the file where the search configuration settings are stored; _owner_ specifies the [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) level at which the search configuration settings are obtained.
+The following code shows how to use  [SearchConfigurationPortability](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Portability.SearchConfigurationPortability.aspx) to export your site's search configuration settings. The code uses an example site `http://yoursite/sites/publishing1`, which you'd replace with your own site.  _fileName_ refers to the file where the search configuration settings are stored; _owner_ specifies the [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) level at which the search configuration settings are obtained.
   
     
     
