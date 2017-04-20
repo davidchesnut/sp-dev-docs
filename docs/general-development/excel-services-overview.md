@@ -245,7 +245,7 @@ New in Microsoft Excel Services and Microsoft SharePoint 2013, by using the new 
   
     
     
-http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/SampleWorkbook.xlsx/model For more information about the REST API, see the 
+http://\<ServerName\>/_vti_bin/ExcelRest.aspx/Docs/Documents/SampleWorkbook.xlsx/model For more information about the REST API, see the 
   
     
     
@@ -257,7 +257,7 @@ To request metadata about available resources in the SampleWorkbook.xlsx workboo
   
     
     
-http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/OData
+http://\<ServerName\>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/OData
   
     
     
