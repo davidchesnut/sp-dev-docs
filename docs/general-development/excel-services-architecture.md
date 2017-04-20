@@ -85,7 +85,7 @@ Excel Web Access is a viewer page and an Excel Services Web Part that you can ad
   
     
     
-The Excel Web Access Web Part properties are also customizable. For more information, see the  [Microsoft.Office.Excel.Server.WebUI](https://msdn.microsoft.com/library/Microsoft.Office.Excel.Server.WebUI.aspx) namespace reference documentation.
+The Excel Web Access Web Part properties are also customizable. For more information, see the **Microsoft.Office.Excel.Server.WebUI** namespace reference documentation.
   
     
     
