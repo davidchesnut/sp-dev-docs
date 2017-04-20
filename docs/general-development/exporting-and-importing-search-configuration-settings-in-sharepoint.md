@@ -39,7 +39,7 @@ private static void Export(string fileName)
 ## Import search configuration settings
 <a name="SP15_importing_search_configuration"> </a>
 
-The following code shows how to import search configuration settings from a file by using  [SearchConfigurationPortability](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Portability.SearchConfigurationPortability.aspx) and replace the existing search settings on a specified site, _http://yoursite/sites/publishing1_.  _fileName_ refers to the file where the search configuration settings are stored; _owner_ specifies the [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) level at which the search configuration settings are obtained.
+The following code shows how to import search configuration settings from a file by using  [SearchConfigurationPortability](https://msdn.microsoft.com/library/Microsoft.Office.Server.Search.Portability.SearchConfigurationPortability.aspx) and replace the existing search settings on a specified site, `http://yoursite/sites/publishing1`.  _fileName_ refers to the file where the search configuration settings are stored; _owner_ specifies the [SPWeb](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb.aspx) level at which the search configuration settings are obtained.
   
     
     
