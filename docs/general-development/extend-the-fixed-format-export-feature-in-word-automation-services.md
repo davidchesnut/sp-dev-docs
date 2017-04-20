@@ -27,7 +27,7 @@ Word Automation Services allows third-party developers to replace either or both
 - XPS
     
   
-To replace each format, the DLL must be located in the same directory as the core library (Sword.dll) for Word Automation Services (install path: <<install root>>\\WebServices\\ConversionService\\Bin\\Converter\\), and must have the specific file name specified in table 1.
+To replace each format, the DLL must be located in the same directory as the core library (Sword.dll) for Word Automation Services (install path: \<\<install root\>\>\\WebServices\\ConversionService\\Bin\\Converter\\), and must have the specific file name specified in table 1.
   
     
     
