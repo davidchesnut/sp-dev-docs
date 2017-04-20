@@ -510,8 +510,8 @@ Specifies the of number query term occurrences an item must include for the item
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _From_ <br/> | _<numeric_value>_ <br/> |The value of the  _from_ parameter must be a positive integer that specifies the minimum number of times that the specified operand must be matched. <br/> If the  _from_ parameter is not specified, no lower limit will exist. <br/> |
-| _to_ <br/> | _<numeric_value>_ <br/> |The value of the  _to_ parameter must be a positive integer that specifies the non-inclusive maximum number of times that the specified operand must be matched. For example, a _to_ value of **11** specifies 10 times or fewer. <br/> If the  _to_ parameter is not specified, no upper limit will exist. <br/> |
+| _From_ <br/> | _\<numeric_value\>_ <br/> |The value of the  _from_ parameter must be a positive integer that specifies the minimum number of times that the specified operand must be matched. <br/> If the  _from_ parameter is not specified, no lower limit will exist. <br/> |
+| _to_ <br/> | _\<numeric_value\>_ <br/> |The value of the  _to_ parameter must be a positive integer that specifies the non-inclusive maximum number of times that the specified operand must be matched. For example, a _to_ value of **11** specifies 10 times or fewer. <br/> If the  _to_ parameter is not specified, no upper limit will exist. <br/> |
    
 
 #### Examples
@@ -895,7 +895,7 @@ If multiple operands of the **NEAR** operator match the same indexed token, they
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _N_ <br/> | _<numeric_value>_ <br/> |Specifies the maximum number of words that is allowed to appear between the terms (explicit proximity).  <br/> If **NEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.  <br/> Default: **4** <br/> |
+| _N_ <br/> | _\<numeric_value\>_ <br/> |Specifies the maximum number of words that is allowed to appear between the terms (explicit proximity).  <br/> If **NEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.  <br/> Default: **4** <br/> |
    
 
 #### Examples
@@ -1027,7 +1027,7 @@ The ordered variant of **NEAR**, and requires an ordered match of the terms. The
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _N_ <br/> | _<numeric_value>_ <br/> |Specifies the maximum number of words that are allowed to appear between the terms (explicit proximity).  <br/> If **ONEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.  <br/> Default: **4** <br/> |
+| _N_ <br/> | _\<numeric_value\>_ <br/> |Specifies the maximum number of words that are allowed to appear between the terms (explicit proximity).  <br/> If **ONEAR** includes more than two operands, the maximum number of words allowed between the terms ( _N_) is counted within the whole expression.  <br/> Default: **4** <br/> |
    
 
 #### Examples
@@ -1163,8 +1163,8 @@ Use the **RANGE** operator for numeric and date/time managed properties. The ope
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _start_ <br/> | _<numeric_value>|<date/time_value>_ <br/> |Start value for the range.  <br/> To specify that the range has no lower bound, use the reserved word **min**. <br/> |
-| _stop_ <br/> | _<numeric_value>|<date/time_value>_ <br/> |End value for the range.  <br/> To specify that the range has no upper bound, use the reserved word **max**. <br/> |
+| _start_ <br/> | _\<numeric_value\>\|\<date/time_value\>_ <br/> |Start value for the range.  <br/> To specify that the range has no lower bound, use the reserved word **min**. <br/> |
+| _stop_ <br/> | _\<numeric_value\>\|\<date/time_value\>_ <br/> |End value for the range.  <br/> To specify that the range has no upper bound, use the reserved word **max**. <br/> |
 | _from_ <br/> |**GE\|GT** <br/> | Optional parameter that indicates the open or close start interval. <br/>  Valid values: <br/><ul><li> **GE** Greater than or equal to the start value (>= start of interval). </li><li> **GT** Greater than the start value (> start of interval). </li></ul>  Default: **GE**  |
 | _to_ <br/> |**LE\|LT** <br/> | Optional parameter that indicates the open or close end interval. <br/>  Valid values: <br/><ul><li> **LE** Less than or equal to the end value (<= end of interval). </li><li> **LT** Less than the end value (< end of interval). </li></ul>  Default: **LT** |
    
@@ -1269,11 +1269,11 @@ The **STRING** operator can also be used as a type conversion. The query `string
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _mode_ <br/> | _<mode>_ <br/> | The _mode_ parameter specifies how to evaluate the <text string> value. The following list shows valid values. <br/> **"PHRASE"** - `phrase(term [,term]*)` <br/> <table><tr><th>**Mode**</th><th>**Equivalent operator expression**</th></tr><tr><td>**"PHRASE"**  </td><td> `phrase(term [,term]*)` </td></tr><tr><td>**"AND"** </td><td> `and(term, term [,term]*)` </td></tr><tr><td>**"OR"** </td><td> `or(term, term [,term]*)` </td></tr><tr><td>**"ANY"** </td><td> `any(term, term [,term]*)` </td></tr><tr><td>**"NEAR"** </td><td> `near(term, term [,term]*, N)` </td></tr><tr><td>**"ONEAR"** </td><td> `onear(term, term [,term]*, N)` </td></tr></table><br/>Default: **"PHRASE"** |
-| _n_ <br/> | _<numeric_value>_ <br/> |This parameter indicates the maximum term distance for  _mode_= **"NEAR"** or _mode_= **"ONEAR"**. <br/> The following expressions are equivalent:  <br/>  `string("hello world", mode="NEAR", n=5)` <br/>  `near(hello, world, n=5)` <br/> Default: **4** <br/> |
-| _weight_ <br/> | _<numeric_value>_ <br/> |This parameter is a positive numeric value indicating term weight for dynamic ranking.  <br/> A lower value indicates that a term should contribute less to the ranking. A higher value indicates that a term should contribute more to the ranking. A value of zero for the weight parameter specifies that a term should not affect dynamic rank.  <br/> The  _weight_ parameter applies to all the terms in the **STRING** expression. <br/> **TIP:** The weight parameter will affect only full-text index queries.           Default: **100**. <br/> |
+| _mode_ <br/> | _\<mode\>_ <br/> | The _mode_ parameter specifies how to evaluate the \<text string\> value. The following list shows valid values. <br/> **"PHRASE"** - `phrase(term [,term]*)` <br/> <table><tr><th>**Mode**</th><th>**Equivalent operator expression**</th></tr><tr><td>**"PHRASE"**  </td><td> `phrase(term [,term]*)` </td></tr><tr><td>**"AND"** </td><td> `and(term, term [,term]*)` </td></tr><tr><td>**"OR"** </td><td> `or(term, term [,term]*)` </td></tr><tr><td>**"ANY"** </td><td> `any(term, term [,term]*)` </td></tr><tr><td>**"NEAR"** </td><td> `near(term, term [,term]*, N)` </td></tr><tr><td>**"ONEAR"** </td><td> `onear(term, term [,term]*, N)` </td></tr></table><br/>Default: **"PHRASE"** |
+| _n_ <br/> | _\<numeric_value\>_ <br/> |This parameter indicates the maximum term distance for  _mode_= **"NEAR"** or _mode_= **"ONEAR"**. <br/> The following expressions are equivalent:  <br/>  `string("hello world", mode="NEAR", n=5)` <br/>  `near(hello, world, n=5)` <br/> Default: **4** <br/> |
+| _weight_ <br/> | _\<numeric_value\>_ <br/> |This parameter is a positive numeric value indicating term weight for dynamic ranking.  <br/> A lower value indicates that a term should contribute less to the ranking. A higher value indicates that a term should contribute more to the ranking. A value of zero for the weight parameter specifies that a term should not affect dynamic rank.  <br/> The  _weight_ parameter applies to all the terms in the **STRING** expression. <br/> **TIP:** The weight parameter will affect only full-text index queries.           Default: **100**. <br/> |
 | _linguistics_ <br/> |**on\|off** <br/> |Disables/enables all linguistics features for the string (lemmatization, synonyms, spelling checking) if they are enabled for the query.  <br/> You can use this parameter to switch off linguistic processing for a given term or string while you still want the term or string to contribute to ranking.  <br/> Default: **"ON"** <br/> |
-| _wildcard_ <br/> |**on\|off** <br/> | This parameter controls wildcard expansion of terms inside the _<text string>_. This setting overrides any wildcard settings in query parameters, and allows extended wildcard characters to be enabled or disabled on specific parts of the query.  <br/>  The following are valid values: <br/><ul><li> **"ON"** Specifies that the character "\*" is evaluated as wildcard. A "\*" character matches zero or more characters.  </li><li> **"OFF"** Specifies that the characters "\*" is not evaluated as wildcard.  </li></ul>  Default: **"ON"** <br/> |
+| _wildcard_ <br/> |**on\|off** <br/> | This parameter controls wildcard expansion of terms inside the _\<text string\>_. This setting overrides any wildcard settings in query parameters, and allows extended wildcard characters to be enabled or disabled on specific parts of the query.  <br/>  The following are valid values: <br/><ul><li> **"ON"** Specifies that the character "\*" is evaluated as wildcard. A "\*" character matches zero or more characters.  </li><li> **"OFF"** Specifies that the characters "\*" is not evaluated as wildcard.  </li></ul>  Default: **"ON"** <br/> |
    
 
 > [!NOTE]
@@ -1492,8 +1492,8 @@ Boosts the dynamic rank of items based on certain term occurrences within the  _
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _N_ <br/> | _<integer_value>_ <br/> |Specifies the number of results to compute statistics from.  <br/> This parameter does not affect the number of results that the dynamic rank contributes to; it is just a means to exclude irrelevant items from the statistics calculations.  <br/> Default: **0**. A zero value carries the sematic of *all documents*  . <br/> |
-| _Nb_ <br/> | _<float_value>_ <br/> |The  _nb_ parameter refers to normalized boost. This parameter specifies the factor that is multiplied with the product of the variance and average score of the rank values of the results set. <br/>  _f_ in the XRANK formula. <br/> |
+| _N_ <br/> | _\<integer_value\>_ <br/> |Specifies the number of results to compute statistics from.  <br/> This parameter does not affect the number of results that the dynamic rank contributes to; it is just a means to exclude irrelevant items from the statistics calculations.  <br/> Default: **0**. A zero value carries the sematic of *all documents*  . <br/> |
+| _Nb_ <br/> | _\<float_value\>_ <br/> |The  _nb_ parameter refers to normalized boost. This parameter specifies the factor that is multiplied with the product of the variance and average score of the rank values of the results set. <br/>  _f_ in the XRANK formula. <br/> |
    
 Typically normalized boost,  _nb_, is the only parameter that is modified. This parameter provides the necessary control to promote or demote a particular item, without taking standard deviation into account. 
   
@@ -1510,11 +1510,11 @@ The following advanced parameters are also available. However, typically they ar
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _cb_ <br/> | _<float_value>_ <br/> |The  _cb_ parameter refers to constant boost. <br/> Default: **0**. <br/>  _a_ in the XRANK formula. <br/> |
-| _stdb_ <br/> | _<float_value>_ <br/> |The  _stdb_ parameter refers to standard deviation boost. <br/> Default: **0**. <br/>  _e_ in the XRANK formula. <br/> |
-| _avgb_ <br/> | _<float_value>_ <br/> |The  _avgb_ parameter refers to average boost. This factor is multiplied with the average rank value of the results set. <br/> Default: **0**. <br/>  _d_ in the XRANK formula. <br/> |
-| _rb_ <br/> | _<float_value>_ <br/> |The  _rb_ parameter refers to range boost. This factor is multiplied with the range of rank values in the results set. <br/> Default: **0**. <br/>  _b_ in the XRANK formula. <br/> |
-| _pb_ <br/> | _<float_value>_ <br/> |The  _pb_ parameter refers to percentage boost. This factor is multiplied with the item's own rank compared to the minimum value in the corpus. <br/> Default: **0**. <br/>  _c_ in the XRANK formula. <br/> |
+| _cb_ <br/> | _\<float_value\>_ <br/> |The  _cb_ parameter refers to constant boost. <br/> Default: **0**. <br/>  _a_ in the XRANK formula. <br/> |
+| _stdb_ <br/> | _\<float_value\>_ <br/> |The  _stdb_ parameter refers to standard deviation boost. <br/> Default: **0**. <br/>  _e_ in the XRANK formula. <br/> |
+| _avgb_ <br/> | _\<float_value\>_ <br/> |The  _avgb_ parameter refers to average boost. This factor is multiplied with the average rank value of the results set. <br/> Default: **0**. <br/>  _d_ in the XRANK formula. <br/> |
+| _rb_ <br/> | _\<float_value\>_ <br/> |The  _rb_ parameter refers to range boost. This factor is multiplied with the range of rank values in the results set. <br/> Default: **0**. <br/>  _b_ in the XRANK formula. <br/> |
+| _pb_ <br/> | _\<float_value\>_ <br/> |The  _pb_ parameter refers to percentage boost. This factor is multiplied with the item's own rank compared to the minimum value in the corpus. <br/> Default: **0**. <br/>  _c_ in the XRANK formula. <br/> |
    
 
 #### Examples
