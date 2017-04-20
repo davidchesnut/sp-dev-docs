@@ -23,7 +23,7 @@ A query language expression can contain nested subexpressions that include query
 **Table 1. Subexpressions in query language expressions**
 
 
-|**Item**|**Description**|
+**Item**|**Description**|
 |:-----|:-----|
 |Token expressions  <br/> |One or more query terms, phrases, or numeric values to search for in a query.  <br/> |
 |Property specification  <br/> |A property or full-text index to match with the affected expression.  <br/> |
@@ -84,44 +84,23 @@ A property specification (the **In** Operator) may be applied to the following q
     
 
 - A single term or phrase, as follows:
-    
-     `author:shakespeare`
-  
-    
-    
- `title:"to be or not to be"`
-    
-  
+    `author:shakespeare`
+    `title:"to be or not to be"`
 - An operator, for example, the **STRING** operator, as follows:
-    
-  ```
-  
-title:string("to be or not to be")
-  ```
-
-
+    ```
+    title:string("to be or not to be")
+    ```
     In this case the property specification applies to the complete operator expression.
-    
-  
 
 ### Examples
 
 Each of the following expressions matches items that have both "much" and "nothing" in the **title** managed property.
-  
-    
-    
+
  `title:and(much, nothing)`
-  
-    
-    
+
  `and(title:much, title:nothing)`
-  
-    
-    
+
  `title:string("much nothing", mode="and")`
-  
-    
-    
 
 ## Token expressions in FQL
 <a name="token_expressions"> </a>
@@ -1186,8 +1165,8 @@ Use the **RANGE** operator for numeric and date/time managed properties. The ope
 |:-----|:-----|:-----|
 | _start_ <br/> | _<numeric_value>|<date/time_value>_ <br/> |Start value for the range.  <br/> To specify that the range has no lower bound, use the reserved word **min**. <br/> |
 | _stop_ <br/> | _<numeric_value>|<date/time_value>_ <br/> |End value for the range.  <br/> To specify that the range has no upper bound, use the reserved word **max**. <br/> |
-| _from_ <br/> |**GE|GT** <br/> | Optional parameter that indicates the open or close start interval. <br/>  Valid values: <br/> **GE** Greater than or equal to the start value (>= start of interval). <br/> **GT** Greater than the start value (> start of interval). <br/>  Default: **GE** <br/> |
-| _to_ <br/> |**LE|LT** <br/> | Optional parameter that indicates the open or close end interval. <br/>  Valid values: <br/> **LE** Less than or equal to the end value (<= end of interval). <br/> **LT** Less than the end value (< end of interval). <br/>  Default: **LT** <br/> |
+| _from_ <br/> |**GE\|GT** <br/> | Optional parameter that indicates the open or close start interval. <br/>  Valid values: <br/><ul><li> **GE** Greater than or equal to the start value (>= start of interval). </li><li> **GT** Greater than the start value (> start of interval). </li></ul>  Default: **GE**  |
+| _to_ <br/> |**LE\|LT** <br/> | Optional parameter that indicates the open or close end interval. <br/>  Valid values: <br/><ul><li> **LE** Less than or equal to the end value (<= end of interval). </li><li> **LT** Less than the end value (< end of interval). </li></ul>  Default: **LT** |
    
 
 #### Examples
@@ -1290,20 +1269,11 @@ The **STRING** operator can also be used as a type conversion. The query `string
 
 |**Parameter**|**Value**|**Description**|
 |:-----|:-----|:-----|
-| _mode_ <br/> | _<mode>_ <br/> | The _mode_ parameter specifies how to evaluate the <text string> value. The following list shows valid values. <br/> **"PHRASE"** - `phrase(term [,term]*)` <br/> |**Mode**|**Equivalent operator expression**|
-|:-----|:-----|
-|**"PHRASE"** <br/> | `phrase(term [,term]*)` <br/> |
-|**"AND"** <br/> | `and(term, term [,term]*)` <br/> |
-|**"OR"** <br/> | `or(term, term [,term]*)` <br/> |
-|**"ANY"** <br/> | `any(term, term [,term]*)` <br/> |
-|**"NEAR"** <br/> | `near(term, term [,term]*, N)` <br/> |
-|**"ONEAR"** <br/> | `onear(term, term [,term]*, N)` <br/> |
-   
- Default: **"PHRASE"** <br/> |
+| _mode_ <br/> | _<mode>_ <br/> | The _mode_ parameter specifies how to evaluate the <text string> value. The following list shows valid values. <br/> **"PHRASE"** - `phrase(term [,term]*)` <br/> <table><tr><th>**Mode**</th><th>**Equivalent operator expression**</th></tr><tr><td>**"PHRASE"**  </td><td> `phrase(term [,term]*)` </td></tr><tr><td>**"AND"** </td><td> `and(term, term [,term]*)` </td></tr><tr><td>**"OR"** </td><td> `or(term, term [,term]*)` </td></tr><tr><td>**"ANY"** </td><td> `any(term, term [,term]*)` </td></tr><tr><td>**"NEAR"** </td><td> `near(term, term [,term]*, N)` </td></tr><tr><td>**"ONEAR"** </td><td> `onear(term, term [,term]*, N)` </td></tr></table><br/>Default: **"PHRASE"** |
 | _n_ <br/> | _<numeric_value>_ <br/> |This parameter indicates the maximum term distance for  _mode_= **"NEAR"** or _mode_= **"ONEAR"**. <br/> The following expressions are equivalent:  <br/>  `string("hello world", mode="NEAR", n=5)` <br/>  `near(hello, world, n=5)` <br/> Default: **4** <br/> |
-| _weight_ <br/> | _<numeric_value>_ <br/> |This parameter is a positive numeric value indicating term weight for dynamic ranking.  <br/> A lower value indicates that a term should contribute less to the ranking. A higher value indicates that a term should contribute more to the ranking. A value of zero for the weight parameter specifies that a term should not affect dynamic rank.  <br/> The  _weight_ parameter applies to all the terms in the **STRING** expression. <br/> > [!TIP]> The weight parameter will affect only full-text index queries.           Default: **100**. <br/> |
-| _linguistics_ <br/> |**on|off** <br/> |Disables/enables all linguistics features for the string (lemmatization, synonyms, spelling checking) if they are enabled for the query.  <br/> You can use this parameter to switch off linguistic processing for a given term or string while you still want the term or string to contribute to ranking.  <br/> Default: **"ON"** <br/> |
-| _wildcard_ <br/> |**on|off** <br/> | This parameter controls wildcard expansion of terms inside the _<text string>_. This setting overrides any wildcard settings in query parameters, and allows extended wildcard characters to be enabled or disabled on specific parts of the query.  <br/>  The following are valid values: <br/> **"ON"** Specifies that the character " *****" is evaluated as wildcard. A " *****" character matches zero or more characters.  <br/> **"OFF"** Specifies that the characters " *****" is not evaluated as wildcard.  <br/>  Default: **"ON"** <br/> |
+| _weight_ <br/> | _<numeric_value>_ <br/> |This parameter is a positive numeric value indicating term weight for dynamic ranking.  <br/> A lower value indicates that a term should contribute less to the ranking. A higher value indicates that a term should contribute more to the ranking. A value of zero for the weight parameter specifies that a term should not affect dynamic rank.  <br/> The  _weight_ parameter applies to all the terms in the **STRING** expression. <br/> **TIP:** The weight parameter will affect only full-text index queries.           Default: **100**. <br/> |
+| _linguistics_ <br/> |**on\|off** <br/> |Disables/enables all linguistics features for the string (lemmatization, synonyms, spelling checking) if they are enabled for the query.  <br/> You can use this parameter to switch off linguistic processing for a given term or string while you still want the term or string to contribute to ranking.  <br/> Default: **"ON"** <br/> |
+| _wildcard_ <br/> |**on\|off** <br/> | This parameter controls wildcard expansion of terms inside the _<text string>_. This setting overrides any wildcard settings in query parameters, and allows extended wildcard characters to be enabled or disabled on specific parts of the query.  <br/>  The following are valid values: <br/><ul><li> **"ON"** Specifies that the character "\*" is evaluated as wildcard. A "\*" character matches zero or more characters.  </li><li> **"OFF"** Specifies that the characters "\*" is not evaluated as wildcard.  </li></ul>  Default: **"ON"** <br/> |
    
 
 > [!NOTE]
