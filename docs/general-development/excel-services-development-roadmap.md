@@ -206,7 +206,7 @@ For information about:
     
     
 
-- Excel Web Access extensible properties, see the  [Microsoft.Office.Excel.Server.WebUI](https://msdn.microsoft.com/library/Microsoft.Office.Excel.Server.WebUI.aspx) namespace reference documentation.
+- Excel Web Access extensible properties, see the **Microsoft.Office.Excel.Server.WebUI** namespace reference documentation.
     
   
 - Excel Web Access CSS, see the CSS reference documentation.
